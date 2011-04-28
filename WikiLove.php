@@ -14,6 +14,8 @@
  * GNU General Public License for more details.
  *
  * http://www.gnu.org/copyleft/gpl.html
+ *
+ * Heart icon by Mark James (Creative Commons Attribution 3.0 License)
  */
 
 /**
