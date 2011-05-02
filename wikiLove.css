@@ -1,0 +1,149 @@
+/* include fix from r87101 here for older versions */
+div.vectorTabs span {
+	display: inline-block;
+	/* @embed */
+	background-image: url(images/tab-break.png);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
+div.vectorTabs li a {
+	background-image: none;
+}
+
+#ca-unwatch.icon,
+#ca-watch.icon {
+	margin-right: 0px;
+}
+
+/* icon style */
+#ca-wikilove.icon a {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	display: block;
+	width: 26px;
+	/* This hides the text but shows the background image */
+	padding-top: 3.1em;
+	margin-top: 0;
+	/* Only applied in IE6 */
+	margin-top: -0.8em !ie;
+	height: 0;
+	overflow: hidden;
+	/* @embed */
+	background-image: url(images/heart-icons.png);
+}
+#ca-wikilove.icon a {
+	background-position: 5px 60%;
+}
+#ca-wikilove.icon a:hover,
+#ca-wikilove.icon a:focus {
+	background-position: -19px 60%;
+}
+
+/* dialog */
+#wikiLoveDialog {
+	margin: 10px;
+}
+
+/* dialog type selection */
+#wikiLoveDialog #wlSelectType {
+	float: left;
+	width: 250px;
+}
+
+#wikiLoveDialog #wlSelectType ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#wikiLoveDialog #wlSelectType ul li {
+	display: block;
+	background-color: #3060b0;
+	width: 250px;
+	padding: 10px 0;
+	
+	/* create a hand cursor, cross-browser hack: http://www.quirksmode.org/css/cursor.html */
+	cursor: pointer;
+	cursor: hand;
+}
+
+/* IGNORED BY IE6 */
+#wikiLoveDialog #wlSelectType ul > li {
+	display: inline-block;
+}
+
+#wikiLoveDialog #wlSelectType ul li:hover,
+#wikiLoveDialog #wlSelectType ul li:focus {
+	background-color: #3366bb;
+}
+
+#wikiLoveDialog #wlSelectType ul li.selected {
+	background-color: #e46020;
+}
+
+#wikiLoveDialog #wlSelectType ul li span {
+	font-size: 1.2em;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	margin-left: 10px;
+}
+
+/* dialog add details */
+#wikiLoveDialog #wlAddDetails {
+	float: right;
+	width: 480px;
+}
+
+#wikiLoveDialog #wlAddDetails label {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+#wikiLoveDialog #wlAddDetails .text {
+	display: block;
+	width: 300px;
+}
+
+#wikiLoveDialog #wlAddDetails .wlOmitSig {
+	font-weight: light;
+	font-size: 0.9em;
+	float: right;
+	color: #999;
+}
+
+#wikiLoveDialog #wlAddDetails input,
+#wikiLoveDialog #wlAddDetails textarea,
+#wikiLoveDialog #wlAddDetails select {
+	margin-top: 5px;
+	margin-left: 15px;
+	max-width: 460px;
+	display: block;
+}
+
+#wikiLoveDialog .wlSpinner {
+	float: right;
+	margin-top: 6px;
+	display: none;
+}
+
+/* dialog preview */
+#wikiLoveDialog #wlPreview {
+	float: right;
+	width: 480px;
+}
+
+#wikiLoveDialog #wlPreview div {
+	margin-left: 15px;
+}
+
+#wikiLoveDialog #wlPreview .editsection {
+	display: none;
+}
+
+/* dialog misc */
+#wikiLoveDialog .submit {
+	float: right;
+}

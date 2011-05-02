@@ -21,7 +21,7 @@
 /**
  * @file
  * @ingroup Extensions
- * @author Ryan Kaldari
+ * @author Ryan Kaldari, Jan Paul Posma
  */
 
 # Alert the user that this is not a valid entry point to MediaWiki if they try to access the file directly.
@@ -40,29 +40,64 @@ $wgExtensionCredits['other'][] = array(
 	'version' => '0.1',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:WikiLove',
 	'author' => array(
-		'Ryan Kaldari'
+		'Ryan Kaldari', 'Jan Paul Posma'
 	),
 	'descriptionmsg' => 'wikilove-desc',
 );
 
+// current directory including trailing slash
 $dir = dirname( __FILE__ ) . '/';
 
-$wgHooks['LoadExtensionSchemaUpdates'][] = 'efWikiLoveSchema';
+// add autoload classes
+$wgAutoloadClasses['WikiLoveApi']                 = $dir . 'WikiLove.api.php';
+$wgAutoloadClasses['WikiLoveHooks']               = $dir . 'WikiLove.hooks.php';
 
-$wgExtensionMessagesFiles['WikiLove'] = $dir . 'WikiLove.i18n.php';
+// i18n messages
+$wgExtensionMessagesFiles['WikiLove']             = $dir . 'WikiLove.i18n.php';
 
-function efWikiLoveSchema( $updater = null ) {
-	$dir = dirname( __FILE__ ) . '/';
-	if ( $updater === null ) {
-		global $wgDBtype, $wgExtNewTables;
+// register hooks
+$wgHooks['GetPreferences'][]                      = 'WikiLoveHooks::getPreferences';
+$wgHooks['SkinTemplateNavigation'][]              = 'WikiLoveHooks::skinTemplateNavigation';
+$wgHooks['SkinTemplateTabs'][]                    = 'WikiLoveHooks::skinTemplateTabs';
+$wgHooks['BeforePageDisplay'][]                   = 'WikiLoveHooks::beforePageDisplay';
+//$wgHooks['LoadExtensionSchemaUpdates'][]          = 'WikiLoveHooks::loadExtensionSchemaUpdates';
+// Not a final schema, please apply patches/WikiLoveLog.sql manually for now!
 
-		if ( $wgDBtype == 'mysql' ) {
-			$wgExtNewTables[] = array( 'wikilove_log', $dir . 'WikiLove.sql' );
-		}
-	} else {
-		if ( $updater->getDB()->getType() == 'mysql' ) {
-			$updater->addExtensionUpdate( array( 'addTable', 'wikilove_log', $dir . 'WikiLove.sql', true ) );
-		}
-	}
-	return true;
-}
+// api modules
+$wgAPIModules['wikiLove'] = 'WikiLoveApi';
+
+// default user options
+$wgWikiLoveTabIcon = true;
+
+// resources
+$wikiLoveTpl = array(
+	'localBasePath' => dirname( __FILE__ ),
+	'remoteExtPath' => 'WikiLove',
+	'group'         => 'ext.wikiLove',
+);
+
+$wgResourceModules += array(
+	'ext.wikiLove' => $wikiLoveTpl + array(
+		'scripts'      => 'wikiLove.js',
+		'styles'       => 'wikiLove.css',
+		'messages' => array(
+			'wikilove-dialog-title',
+			'wikilove-select-type',
+			'wikilove-add-details',
+			'wikilove-title',
+			'wikilove-enter-message',
+			'wikilove-omit-sig',
+			'wikilove-button-preview',
+			'wikilove-preview',
+			'wikilove-button-send',
+			'wikilove-type-makeyourown',
+		),
+		'dependencies' => array(
+			'jquery.ui.dialog',
+			'jquery.elastic',
+		),
+	),
+	'jquery.elastic' => $wikiLoveTpl + array(
+		'scripts' => 'jquery.elastic.js',
+	),
+);
