@@ -47,7 +47,6 @@ class WikiLoveApi extends ApiBase {
 			'wl_timestamp' => $dbw->timestamp(),
 			'wl_sender_id' => $wgUser->getId(),
 			'wl_receiver_id' => User::newFromName( $talk->getSubjectPage()->getBaseText() )->getId(),
-			'wl_wiki' => $wgSitename,
 			'wl_type' => $type,
 			'wl_template' => $template,
 			'wl_subject' => $subject,
