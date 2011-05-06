@@ -123,7 +123,6 @@
 					resizable: false
 				});
 
-			$( '#wlMessage' ).elastic(); // have the message textarea grow automatically
 			$( '#wlTypes li' ).click( $.wikiLove.clickType );
 			$( '#wlSubtype' ).change( $.wikiLove.changeSubtype );
 			$( '#wlButtonPreview' ).click( $.wikiLove.clickPreview );
