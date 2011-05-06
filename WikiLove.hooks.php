@@ -9,6 +9,8 @@
 class WikiLoveHooks {
 	/**
 	 * LoadExtensionSchemaUpdates hook
+	 *
+	 * @param $updater DatabaseUpdater
 	 */
 	public static function loadExtensionSchemaUpdates( $updater = null ) {
 		if ( $updater === null ) {
@@ -23,7 +25,7 @@ class WikiLoveHooks {
 	
 	/**
 	 * Add the preference in the user preferences with the GetPreferences hook.
-	 * @param $user
+	 * @param $user User
 	 * @param $preferences
 	 */
 	public static function getPreferences( $user, &$preferences ) {
@@ -40,6 +42,9 @@ class WikiLoveHooks {
 	
 	/**
 	 * Adds the required module and edit token JS if we are on a user (talk) page.
+	 *
+	 * @param $output
+	 * @param $skin Skin
 	 */
 	public static function beforePageDisplay( $out, $skin ) {
 		global $wgWikiLoveGlobal, $wgUser;
@@ -82,6 +87,9 @@ class WikiLoveHooks {
 	 * Configure views links.
 	 * Helper function for SkinTemplateTabs and SkinTemplateNavigation hooks
 	 * to configure views links.
+	 *
+	 * @param $skin Skin
+	 * @param $views
 	 */
 	private static function skinConfigViewsLinks( $skin, &$views ) {
 		global $wgWikiLoveGlobal, $wgUser;
@@ -101,6 +109,8 @@ class WikiLoveHooks {
 	
 	/**
 	 * Only show an icon when the global preference is enabled and the current skin is Vector.
+	 *
+	 * @param $skin Skin
 	 */
 	private static function showIcon( $skin ) {
 		global $wgWikiLoveTabIcon;
@@ -110,16 +120,25 @@ class WikiLoveHooks {
 	/**
 	 * Find the editable talk page of the user we're looking at, or null
 	 * if such page does not exist.
+	 *
+	 * @param $title Title
+	 *
+	 * @return Title|null
 	 */
 	public static function getUserTalkPage( $title ) {
 		global $wgUser;
-		if ( !$wgUser->isLoggedIn() ) return null;
+		if ( !$wgUser->isLoggedIn() ) {
+			return null;
+		}
 		
 		$ns = $title->getNamespace();
-		if ( $ns == NS_USER_TALK && $title->quickUserCan( 'edit' ) ) return $title;
-		elseif ( $ns == NS_USER ) {
+		if ( $ns == NS_USER_TALK && $title->quickUserCan( 'edit' ) ) {
+			return $title;
+		} elseif ( $ns == NS_USER ) {
 			$talk = $title->getTalkPage();
-			if ( $talk->quickUserCan( 'edit' ) ) return $talk;
+			if ( $talk->quickUserCan( 'edit' ) ) {
+				return $talk;
+			}
 		}
 		return null;
 	}

@@ -7,12 +7,12 @@ class WikiLoveApi extends ApiBase {
 		
 		$title = Title::newFromText( $params['title'] );
 		if ( is_null( $title ) ) {
-			// error
+			$this->dieUsageMsg( array( 'invalidtitle', $params['title'] ) );
 		}
 		
 		$talk = WikiLoveHooks::getUserTalkPage( $title );
 		if ( is_null( $talk ) ) {
-			// error
+			$this->dieUsageMsg( array( 'invalidtitle', $params['title'] ) );
 		}
 		
 		if ( stripos( $params['text'], $params['template'] ) === false ) {
@@ -28,6 +28,7 @@ class WikiLoveApi extends ApiBase {
 			'summary' => $params['subject'],
 			'notminor' => true,
 		), false, array( 'wsEditToken' => $wgRequest->getSessionData( 'wsEditToken' ) ) ), true );
+
 		$api->execute();
 		
 		$result = $api->getResult();
@@ -39,9 +40,17 @@ class WikiLoveApi extends ApiBase {
 		
 		$this->saveInDb( $talk, $params['subject'], $params['text'], $params['type'], $params['template'] );
 	}
-	
+
+	/**
+	 * @param $talk Title
+	 * @param $subject
+	 * @param $text
+	 * @param $type
+	 * @param $template
+	 * @return void
+	 */
 	private function saveInDb( $talk, $subject, $text, $type, $template ) {
-		global $wgUser, $wgSitename;
+		global $wgUser;
 		$dbw = wfGetDB( DB_MASTER );
 		$values = array(
 			'wl_timestamp' => $dbw->timestamp(),
@@ -103,15 +112,11 @@ class WikiLoveApi extends ApiBase {
 		);
 	}
 
-	/*
 	public function getPossibleErrors() {
 		return array_merge( parent::getPossibleErrors(), array(
-			array( 'code' => 'permissiondenied', 'info' => 'You don\'t have permission to view code diffs' ),
-			array( 'code' => 'invalidrepo', 'info' => "Invalid repo ``repo''" ),
-			array( 'code' => 'nosuchrev', 'info' => 'There is no revision with ID \'rev\'' ),
+			array( 'invalidtitle', 'title' ),
 		) );
 	}
-	*/
 
 	public function getExamples() {
 		return array(
