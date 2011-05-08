@@ -19,7 +19,8 @@
 					text: '{{subst:The Special Barnstarl|$1 ~~~~}}',
 					template: 'The Special Barnstar'
 				}
-			}
+			},
+			icon: 'http://upload.wikimedia.org/wikipedia/commons/2/27/Original_Barnstar.png'
 		},
 		// default type, nice to leave this one in place when adding other types
 		'makeyourown': {
@@ -34,6 +35,7 @@
 	currentTypeId: null, // id of the currently selected type (e.g. 'barnstar' or 'makeyourown')
 	currentSubtypeId: null, // id of the currently selected subtype (e.g. 'original' or 'special')
 	currentTypeOrSubtype: null, // content of the current (sub)type (i.e. an object with title, descr, text, etc.)
+	previewData: null, // data of the currently previewed thing is set here
 	
 	/*
 	 * Opens the dialog and builds it if necessary.
@@ -47,10 +49,24 @@
 			// </ul>
 			var $typeList = $( '<ul id="wlTypes"></ul>' );
 			for( var typeId in $.wikiLove.types ) {
-				$typeList.append(
-					$( '<li tabindex="0"><span>' + $.wikiLove.types[typeId].descr + '</span></li>' )
-					.data( 'typeId', typeId )
-				);
+				$button = $( '<a href="#"></a>' );
+				$buttonInside = $( '<div class="wlInside"></div>' );
+				
+				if( typeof $.wikiLove.types[typeId].icon == 'string' ) {
+					$buttonInside.append( '<div class="wlIconBox"><img src="'
+						+ $.wikiLove.types[typeId].icon + '"/></div>' );
+				}
+				else {
+					$buttonInside.addClass( 'wlNoIcon' );
+				}
+				
+				$buttonInside.append( '<div class="wlLinkText">' + $.wikiLove.types[typeId].descr + '</div>' );
+				
+				$button.append( '<div class="wlLeftCap"></div>');
+				$button.append( $buttonInside );
+				$button.append( '<div class="wlRightCap"></div>');
+				$button.data( 'typeId', typeId );
+				$typeList.append( $( '<li></li>' ).append( $button ) );
 			}
 			
 			// Build the left menu for selecting a type:
@@ -59,8 +75,17 @@
 			//   <ul id="wlTypes">...</ul>
 			// </div>
 			var $selectType = $( '<div id="wlSelectType"></div>' )
+				.append( '<span class="wlNumber">1</span>' )
 				.append( '<h3>' + mw.msg( 'wikilove-select-type' ) + '</h3>' )
 				.append( $typeList );
+				
+			var $getStarted = $( '<div id="wlGetStarted"></div>' )
+				.append( '<h2>' + mw.msg( 'wikilove-get-started-header' ) + '</h2>' )
+				.append( $( '<ol></ol>' )
+					.append( '<li>' + mw.msg( 'wikilove-get-started-list-1' ) + '</li>' )
+					.append( '<li>' + mw.msg( 'wikilove-get-started-list-2' ) + '</li>' )
+					.append( '<li>' + mw.msg( 'wikilove-get-started-list-3' ) + '</li>' )
+				);
 			
 			// Build the right top section for selecting a subtype and entering a title (optional) and message
 			// <div id="wlAddDetails">
@@ -80,18 +105,21 @@
 			//   <img class="wlSpinner" src="..."/>                       (spinner for the preview button)
 			// </div>
 			var $addDetails = $( '<div id="wlAddDetails"></div>' )
+				.append( '<span class="wlNumber">2</span>' )
 				.append( '<h3>' + mw.msg( 'wikilove-add-details' ) + '</h3>' )
 				.append( '<label for="wlSubtype" id="wlSubtypeLabel"></label>' )
-				.append( '<select id="wlSubtype"></select>' )				
-				.append( '<label for="wlTitle" id="wlTitleLabel">' + mw.msg( 'wikilove-title' ) + '</label>'  )
-				.append( '<input type="text" class="text" id="wlTitle"/>' )
-				.append( '<label for="wlMessage" id="wlMessageLabel">' + mw.msg( 'wikilove-enter-message' ) + '</label>'  )
-				.append( '<span class="wlOmitSig">' + mw.msg( 'wikilove-omit-sig' ) + '</span>'  )
-				.append( '<textarea id="wlMessage"></textarea>' )
-				.append( '<input id="wlButtonPreview" class="submit" type="submit" value="'
-					+ mw.msg( 'wikilove-button-preview' ) + '"/>' )
-				.append( '<img class="wlSpinner" src="' + mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' )
-					+ '/extensions/WikiLove/images/spinner.gif"/>' )
+				.append( $( '<form id="wlPreviewForm"></form>' )
+					.append( '<select id="wlSubtype"></select>' )				
+					.append( '<label for="wlTitle" id="wlTitleLabel">' + mw.msg( 'wikilove-title' ) + '</label>'  )
+					.append( '<input type="text" class="text" id="wlTitle"/>' )
+					.append( '<label for="wlMessage" id="wlMessageLabel">' + mw.msg( 'wikilove-enter-message' ) + '</label>'  )
+					.append( '<span class="wlOmitSig">' + mw.msg( 'wikilove-omit-sig' ) + '</span>'  )
+					.append( '<textarea id="wlMessage"></textarea>' )
+					.append( '<input id="wlButtonPreview" class="submit" type="submit" value="'
+						+ mw.msg( 'wikilove-button-preview' ) + '"/>' )
+					.append( '<img class="wlSpinner" src="' + mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' )
+						+ '/extensions/WikiLove/images/spinner.gif"/>' )
+				)
 				.hide();
 			
 			// Build the right bottom preview section
@@ -102,17 +130,21 @@
 			//   <img class="wlSpinner" src="..."/>                       (another spinner for the send button)
 			// </div>
 			var $preview = $( '<div id="wlPreview"></div>' )
+				.append( '<span class="wlNumber">3</span>' )
 				.append( '<h3>' + mw.msg( 'wikilove-preview' ) + '</h3>' )
 				.append( '<div id="wlPreviewArea"></div>' )
-				.append( '<input id="wlButtonSend" class="submit" type="submit" value="'
-					+ mw.msg( 'wikilove-button-send' ) + '"/>' )
-				.append( '<img class="wlSpinner" src="' + mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' )
-					+ '/extensions/WikiLove/images/spinner.gif"/>' )
+				.append( $( '<form id="wlSendForm"></form>' )
+					.append( '<input id="wlButtonSend" class="submit" type="submit" value="'
+						+ mw.msg( 'wikilove-button-send' ) + '"/>' )
+					.append( '<img class="wlSpinner" src="' + mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' )
+						+ '/extensions/WikiLove/images/spinner.gif"/>' )
+				)
 				.hide();
 			
 			// Build a modal, hidden dialog with the 3 different sections
 			$.wikiLove.$dialog = $( '<div id="wikiLoveDialog"></div>' )
 				.append( $selectType )
+				.append( $getStarted )
 				.append( $addDetails )
 				.append( $preview )
 				.dialog({
@@ -123,10 +155,10 @@
 					resizable: false
 				});
 
-			$( '#wlTypes li' ).click( $.wikiLove.clickType );
+			$( '#wlTypes a' ).click( $.wikiLove.clickType );
 			$( '#wlSubtype' ).change( $.wikiLove.changeSubtype );
-			$( '#wlButtonPreview' ).click( $.wikiLove.clickPreview );
-			$( '#wlButtonSend' ).click( $.wikiLove.clickSend );
+			$( '#wlPreviewForm' ).submit( $.wikiLove.submitPreview );
+			$( '#wlSendForm' ).click( $.wikiLove.submitSend );
 		}
 		
 		$.wikiLove.$dialog.dialog( 'open' );
@@ -138,13 +170,14 @@
 	 */
 	clickType: function( e ) {
 		e.preventDefault();
+		$( '#wlGetStarted' ).hide(); // always hide the get started section
 		
 		var newTypeId = $( this ).data( 'typeId' );
 		if( $.wikiLove.currentTypeId != newTypeId ) { // only do stuff when a different type is selected
 			$.wikiLove.currentTypeId = newTypeId;
 			$.wikiLove.currentSubtypeId = null; // reset the subtype id
 			
-			$( '#wlTypes li' ).removeClass( 'selected' );
+			$( '#wlTypes a' ).removeClass( 'selected' );
 			$( this ).addClass( 'selected' ); // highlight the new type in the menu
 			
 			if( typeof $.wikiLove.types[$.wikiLove.currentTypeId].subtypes == 'object' ) {
@@ -176,6 +209,7 @@
 			
 			$( '#wlAddDetails' ).show();
 			$( '#wlPreview' ).hide();
+			$.wikiLove.previewData = null;
 		}
 		return false;
 	},
@@ -192,6 +226,7 @@
 				.subtypes[$.wikiLove.currentSubtypeId];
 			$.wikiLove.updateAllDetails();
 			$( '#wlPreview' ).hide();
+			$.wikiLove.previewData = null;
 		}
 	},
 	
@@ -215,10 +250,19 @@
 	/*
 	 * Handler for clicking the preview button. Builds data for AJAX request.
 	 */
-	clickPreview: function() {
+	submitPreview: function( e ) {
+		e.preventDefault();
 		var title = '==' + $( '#wlTitle' ).val() + "==\n";
 		var msg = $.wikiLove.currentTypeOrSubtype.text.replace( '$1', $( '#wlMessage' ).val() );
 		$.wikiLove.doPreview( title + msg );
+		$.wikiLove.previewData = {
+			'title': title,
+			'msg': msg,
+			'type': $.wikiLove.currentTypeId
+				+ ($.wikiLove.currentSubtypeId != null ? '-' + $.wikiLove.currentSubtypeId : ''),
+			'template': $.wikiLove.currentTypeOrSubtype.template
+		};
+		return false;
 	},
 	
 	/*
@@ -257,12 +301,11 @@
 	 * The type sent for statistics is 'typeId-subtypeId' when using subtypes,
 	 * or simply 'typeId' otherwise.
 	 */
-	clickSend: function() {
-		var title = $( '#wlTitle' ).val();
-		var msg = $.wikiLove.currentTypeOrSubtype.text.replace( '$1', $( '#wlMessage' ).val() );
-		$.wikiLove.doSend( title, msg, $.wikiLove.currentTypeId
-			+ ($.wikiLove.currentSubtypeId == null ? '-' + $.wikiLove.currentSubtypeId : ''),
-			$.wikiLove.currentTypeOrSubtype.template);
+	submitSend: function( e ) {
+		e.preventDefault();
+		$.wikiLove.doSend( $.wikiLove.previewData.title, $.wikiLove.previewData.msg,
+			$.wikiLove.previewData.type, $.wikiLove.previewData.template);
+		return false;
 	},
 	
 	/*

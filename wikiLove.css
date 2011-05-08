@@ -58,37 +58,172 @@ div.vectorTabs li a {
 	padding: 0;
 }
 
-#wikiLoveDialog #wlSelectType ul li {
+#wikiLoveDialog #wlSelectType ul li,
+#wikiLoveDialog #wlSelectType a
+{
 	display: block;
-	background-color: #3060b0;
 	width: 250px;
-	padding: 10px 0;
-	
-	/* create a hand cursor, cross-browser hack: http://www.quirksmode.org/css/cursor.html */
-	cursor: pointer;
-	cursor: hand;
+	height: 66px;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	text-decoration: none;
+}
+
+#wikiLoveDialog #wlSelectType a:hover,
+#wikiLoveDialog #wlSelectType a:focus {
+	text-decoration:none;
 }
 
 /* IGNORED BY IE6 */
-#wikiLoveDialog #wlSelectType ul > li {
+#wikiLoveDialog #wlSelectType ul > li,
+#wikiLoveDialog #wlSelectType ul li > a {
 	display: inline-block;
 }
 
-#wikiLoveDialog #wlSelectType ul li:hover,
-#wikiLoveDialog #wlSelectType ul li:focus {
-	background-color: #3366bb;
+#wikiLoveDialog #wlSelectType a .wlLeftCap,
+#wikiLoveDialog #wlSelectType a .wlRightCap {
+	padding: 0;
+	margin: 0;
+	width: 6px;
+	height: 66px;
+	position: absolute;
+	top: 0px;
 }
 
-#wikiLoveDialog #wlSelectType ul li.selected {
-	background-color: #e46020;
+#wikiLoveDialog #wlSelectType a .wlLeftCap,
+#wikiLoveDialog #wlSelectType a .wlRightCap,
+#wikiLoveDialog #wlSelectType a .wlIconBox {
+	/* @embed */
+	background-image: url(images/select-sprite.png);
+	background-repeat: no-repeat;
 }
 
-#wikiLoveDialog #wlSelectType ul li span {
+#wikiLoveDialog #wlSelectType a .wlLeftCap {
+	/* @noflip */
+	left: 0px;
+	background-position: 0px 0px;
+}
+
+#wikiLoveDialog #wlSelectType a:hover .wlLeftCap,
+#wikiLoveDialog #wlSelectType a:focus .wlLeftCap {
+	background-position: -6px 0px;
+}
+
+#wikiLoveDialog #wlSelectType a.selected .wlLeftCap {
+	background-position: -12px 0px;
+}
+
+#wikiLoveDialog #wlSelectType a .wlRightCap {
+	/* @noflip */
+	right: 0px;
+	background-position: -18px 0px;
+}
+
+#wikiLoveDialog #wlSelectType a:hover .wlRightCap,
+#wikiLoveDialog #wlSelectType a:focus .wlRightCap {
+	background-position: -25px 0px;
+}
+
+#wikiLoveDialog #wlSelectType a.selected .wlRightCap {
+	background-position: -32px 0px;
+}
+
+#wikiLoveDialog #wlSelectType a .wlInside {
+	padding: 0;
+	margin: 0;
+	width: 238px;
+	height: 66px;
+	position: absolute;
+	top: 0px;
+	left: 6px;
+	
+	/* @embed */
+	background-image: url(images/select-bg-sprite.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+}
+
+#wikiLoveDialog #wlSelectType a:hover .wlInside,
+#wikiLoveDialog #wlSelectType a:focus .wlInside {
+	background-position: 0px -66px;
+}
+
+#wikiLoveDialog #wlSelectType a.selected .wlInside {
+	background-position: 0px -132px;
+}
+
+#wikiLoveDialog #wlSelectType a .wlIconBox {
+	padding: 0;
+	margin: 0;
+	width: 53px;
+	height: 53px;
+	position: absolute;
+	left: 0px;
+	top: 5px;
+	background-position: -42px 0px;
+}
+
+#wikiLoveDialog #wlSelectType a .wlIconBox img {
+	padding: 0;
+	margin: 0;
+	width: 53px;
+	height: 53px;
+	position: absolute:
+	top: 0px;
+	left: 0px;
+}
+
+#wikiLoveDialog #wlSelectType a:hover .wlIconBox,
+#wikiLoveDialog #wlSelectType a:focus .wlIconBox {
+	background-position: -97px 0px;
+}
+
+#wikiLoveDialog #wlSelectType a.selected .wlIconBox {
+	background-position: -152px 0px;
+}
+
+#wikiLoveDialog #wlSelectType a .wlLinkText {
+	padding: 0;
+	margin: 0;
+	width: 170px;
+	height: 53px;
+	position: absolute;
+	left: 64px;
+	top: 5px;
+	line-height: 53px;
 	font-size: 1.2em;
 	font-weight: bold;
 	text-decoration: none;
 	color: white;
-	margin-left: 10px;
+}
+
+#wikiLoveDialog #wlSelectType a .wlNoIcon .wlLinkText {
+	left: 3px;
+}
+
+/* dialog get started */
+#wikiLoveDialog #wlGetStarted {
+	float: right;
+	width: 380px;
+	margin-top: 40px;
+	padding-top: 4px;
+	padding-left: 70px;
+	font-size: 1.1em;
+	
+	/* @embed */
+	background-image: url(images/get-started-ltr.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+#wikiLoveDialog #wlGetStarted h2 {
+	border: none;
+	font-weight: bold;
+}
+
+#wikiLoveDialog #wlGetStarted ol {
+	margin-left: 1.5em;
 }
 
 /* dialog add details */
@@ -114,13 +249,8 @@ div.vectorTabs li a {
 	color: #999;
 }
 
-#wikiLoveDialog #wlAddDetails input,
-#wikiLoveDialog #wlAddDetails textarea,
-#wikiLoveDialog #wlAddDetails select {
-	margin-top: 5px;
-	margin-left: 15px;
-	max-width: 460px;
-	display: block;
+#wikiLoveDialog #wlAddDetails textarea {
+	resize: none;
 }
 
 #wikiLoveDialog .wlSpinner {
@@ -144,6 +274,32 @@ div.vectorTabs li a {
 }
 
 /* dialog misc */
+#wikiLoveDialog input,
+#wikiLoveDialog textarea,
+#wikiLoveDialog select {
+	margin: 5px 0px 5px 15px;
+	max-width: 460px;
+	display: block;
+}
+
 #wikiLoveDialog .submit {
 	float: right;
+}
+
+#wikiLoveDialog .wlNumber {
+	color: white;
+	float: left;
+	display: block;
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	margin-right: 5px;
+	font-size: 1.5em;
+	font-weight: bold;
+	
+	/* @embed */
+	background-image: url(images/number.png);
+	background-position: center;
+	background-repeat: no-repeat;
 }

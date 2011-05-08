@@ -83,6 +83,10 @@ $wgResourceModules += array(
 		'messages' => array(
 			'wikilove-dialog-title',
 			'wikilove-select-type',
+			'wikilove-get-started-header',
+			'wikilove-get-started-list-1',
+			'wikilove-get-started-list-2',
+			'wikilove-get-started-list-3',
 			'wikilove-add-details',
 			'wikilove-title',
 			'wikilove-enter-message',
