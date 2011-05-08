@@ -159,6 +159,7 @@
 			$( '#wlSubtype' ).change( $.wikiLove.changeSubtype );
 			$( '#wlPreviewForm' ).submit( $.wikiLove.submitPreview );
 			$( '#wlSendForm' ).click( $.wikiLove.submitSend );
+			$( '#wlMessage' ).elastic(); // have the message textarea grow automatically
 		}
 		
 		$.wikiLove.$dialog.dialog( 'open' );

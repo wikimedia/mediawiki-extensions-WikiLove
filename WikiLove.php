@@ -98,6 +98,10 @@ $wgResourceModules += array(
 		),
 		'dependencies' => array(
 			'jquery.ui.dialog',
+			'jquery.elastic',
 		),
+	),
+	'jquery.elastic' => $wikiLoveTpl + array(
+		'scripts' => 'jquery.elastic.js',
 	),
 );
