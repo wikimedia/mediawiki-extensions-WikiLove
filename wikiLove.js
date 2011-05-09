@@ -20,7 +20,7 @@
 					template: 'The Special Barnstar'
 				}
 			},
-			icon: 'http://upload.wikimedia.org/wikipedia/commons/2/27/Original_Barnstar.png'
+			icon: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/extensions/WikiLove/images/icons/wikilove-icon-barnstar.png'
 		},
 		// default type, nice to leave this one in place when adding other types
 		'makeyourown': {
