@@ -95,11 +95,14 @@ class WikiLoveApi extends ApiBase {
 	public function getParamDescription() {
 		return array(
 			'title' => 'Title of the user or user talk page to send WikiLove to',
-			'text' => 'Wikitext to add in the new section',
+			'text' => 'Raw ikitext to add in the new section',
 			'token' => 'Edit token. You can get one of these through prop=info',
 			'subject' => 'Subject header of the new section',
-			'template' => 'Template used in the wikitext (for statistics)',
-			'type' => 'Type of WikiLove (for statistics)',
+			'template' => 'Template name used in the wikitext (for statistics)',
+			'type' => array( 'Type of WikiLove (for statistics); this corresponds with a type',
+			                 'selected in the left menu, and optionally a subtype after that',
+			                 '(e.g. "barnstar-normal" or "kitten")',
+			                ),
 		);
 	}
 
@@ -107,8 +110,9 @@ class WikiLoveApi extends ApiBase {
 		return array(
 			'Give WikiLove to another user.',
 			"WikiLove is a positive message posted to a user's talk page through a",
-			'convenient interface with preset images and templates. For statistical',
-			'purposes, the type and template (among the other data) are logged.',
+			'convenient interface with preset images and templates. This action adds',
+			'the specified wikitext to a certain talk page. For statistical purposes,',
+			'the type and template (among the other data) are logged.',
 		);
 	}
 
