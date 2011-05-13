@@ -68,6 +68,7 @@ div.vectorTabs li a {
 	margin: 0;
 	position: relative;
 	text-decoration: none;
+	outline: none;
 }
 
 #wikiLoveDialog #wlSelectType a:hover,
@@ -280,6 +281,10 @@ div.vectorTabs li a {
 	margin: 5px 0px 5px 15px;
 	max-width: 460px;
 	display: block;
+}
+
+#wikiLoveDialog select {
+	padding: 1px 0;
 }
 
 #wikiLoveDialog .submit {
