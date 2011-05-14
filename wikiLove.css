@@ -275,7 +275,21 @@ div.vectorTabs li a {
 }
 
 /* dialog misc */
-#wikiLoveDialog input,
+#wikiLoveDialog input[type=text],
+#wikiLoveDialog textarea,
+#wikiLoveDialog select {
+	margin: 5px 0px 5px 15px;
+	max-width: 460px;
+	display: block;
+}
+
+#wikiLoveDialog input[type=checkbox] {
+	display:inline-box;
+	margin: 5px 0px 5px 0px;
+}
+
+/* dialog misc */
+#wikiLoveDialog input[type=text],
 #wikiLoveDialog textarea,
 #wikiLoveDialog select {
 	margin: 5px 0px 5px 15px;

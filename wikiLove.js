@@ -11,15 +11,18 @@
 					title: 'An Original Barnstar for you!', // subject title for the message
 					descr: 'Original barnstar', // description in the menu
 					text: '{{subst:The Original Barnstar|$1 ~~~~}}', // message text, $1 is replaced by the user message
-					template: 'The Original Barnstar' // template that is used, for statistics
+					template: 'The Original Barnstar', // template that is used, for statistics
+					message: 'Hello '+wgTitle+'!\n\nI just awarded you a barnstar.' // message to use in email notification
 				},
 				'special': {
 					title: null, // no predefined title, allows the user to enter a title
 					descr: 'Special barnstar',
 					text: '{{subst:The Special Barnstarl|$1 ~~~~}}',
-					template: 'The Special Barnstar'
+					template: 'The Special Barnstar',
+					message: 'Hello '+wgTitle+'!\n\nI just awarded you the special barnstar.'
 				}
 			},
+			email: true, // add email notices as an option for each award of this type
 			icon: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/extensions/WikiLove/images/icons/wikilove-icon-barnstar.png'
 		},
 		// default type, nice to leave this one in place when adding other types
@@ -36,12 +39,15 @@
 	currentSubtypeId: null, // id of the currently selected subtype (e.g. 'original' or 'special')
 	currentTypeOrSubtype: null, // content of the current (sub)type (i.e. an object with title, descr, text, etc.)
 	previewData: null, // data of the currently previewed thing is set here
+	emailable: false,
 	
 	/*
 	 * Opens the dialog and builds it if necessary.
 	 */
 	openDialog: function() {
 		if ( $.wikiLove.$dialog === null ) {
+			// Find out if we can email the user
+			$.wikiLove.getEmailable();
 			// Build a type list like this:
 			// <ul id="wlTypes">
 			//   <li tabindex="0"><span>Barnstar</span></li>
@@ -115,6 +121,7 @@
 					.append( '<label for="wlMessage" id="wlMessageLabel">' + mw.msg( 'wikilove-enter-message' ) + '</label>'  )
 					.append( '<span class="wlOmitSig">' + mw.msg( 'wikilove-omit-sig' ) + '</span>'  )
 					.append( '<textarea id="wlMessage"></textarea>' )
+					.append( $('<div id="wlNotify"></div>').html('<input type="checkbox" id="wlNotifyCheckbox" name="notify"/> Notify user by email') )
 					.append( '<input id="wlButtonPreview" class="submit" type="submit" value="'
 						+ mw.msg( 'wikilove-button-preview' ) + '"/>' )
 					.append( '<img class="wlSpinner" src="' + mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' )
@@ -231,6 +238,27 @@
 		}
 	},
 	
+	getEmailable: function() {
+		// Test to see if the 'E-mail this user' link exists
+		$.wikiLove.emailable = $('#t-emailuser').length ? true : false;
+	},
+	
+	sendEmail: function( subject, text ) {
+		$.ajax({
+			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php?',
+			data: {
+				'action': 'emailuser',
+				'target': wgTitle,
+				'subject': subject,
+				'text': text,
+				'format': 'json',
+				'token': $.wikiLove.editToken
+			},
+			dataType: 'json',
+			type: 'POST'
+		});
+	},
+	
 	/*
 	 * Called when type or subtype changes, updates controls. Currently only updates title label and textbox.
 	 */
@@ -240,11 +268,16 @@
 			$( '#wlTitleLabel').hide();
 			$( '#wlTitle' ).hide();
 			$( '#wlTitle' ).val( $.wikiLove.currentTypeOrSubtype.title );
-		}
-		else {
+		} else {
 			$( '#wlTitleLabel').show();
 			$( '#wlTitle' ).show();
 			$( '#wlTitle' ).val( '' );
+		}
+		if( $.wikiLove.types[$.wikiLove.currentTypeId].email ) {
+			$( '#wlNotify' ).show();
+		} else {
+			$( '#wlNotify' ).hide();
+			$( '#wlNotifyCheckbox' ).attr('checked', false);
 		}
 	},
 	
@@ -261,7 +294,8 @@
 			'msg': msg,
 			'type': $.wikiLove.currentTypeId
 				+ ($.wikiLove.currentSubtypeId != null ? '-' + $.wikiLove.currentSubtypeId : ''),
-			'template': $.wikiLove.currentTypeOrSubtype.template
+			'template': $.wikiLove.currentTypeOrSubtype.template,
+			'notify': $( '#wlNotifyCheckbox:checked' ).val()
 		};
 		return false;
 	},
@@ -305,14 +339,14 @@
 	submitSend: function( e ) {
 		e.preventDefault();
 		$.wikiLove.doSend( $.wikiLove.previewData.title, $.wikiLove.previewData.msg,
-			$.wikiLove.previewData.type, $.wikiLove.previewData.template);
+			$.wikiLove.previewData.type, $.wikiLove.previewData.template, $.wikiLove.previewData.notify );
 		return false;
 	},
 	
 	/*
 	 * Fires the final AJAX request and then redirects to the talk page where the content is added.
 	 */
-	doSend: function( subject, wikitext, type, template ) {
+	doSend: function( subject, wikitext, type, template, notify ) {
 		$( '#wlPreview .wlSpinner' ).fadeIn( 200 );
 		$.ajax({
 			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php?',
@@ -331,6 +365,11 @@
 			success: function( data ) {
 				mw.log( data );
 				mw.log( mw.config.get( 'wgPageName' ) );
+				
+				if ( notify && $.wikiLove.emailable ) {
+					$.wikiLove.sendEmail( $.wikiLove.currentTypeOrSubtype.title, $.wikiLove.currentTypeOrSubtype.message );
+				}
+				
 				$( '#wlPreview .wlSpinner' ).fadeOut( 200 );
 				
 				if ( data.redirect.pageName == mw.config.get( 'wgPageName' ) ) {
