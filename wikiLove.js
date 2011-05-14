@@ -10,14 +10,14 @@
 				'original': {
 					title: 'An Original Barnstar for you!', // subject title for the message
 					descr: 'Original barnstar', // description in the menu
-					text: '{{subst:The Original Barnstar|$1 ~~~~}}', // message text, $1 is replaced by the user message
+					text: '{{subst:The Original Barnstar|$1}}', // message text, $1 is replaced by the user message
 					template: 'The Original Barnstar', // template that is used, for statistics
 					message: 'Hello '+wgTitle+'!\n\nI just awarded you a barnstar.' // message to use in email notification
 				},
 				'special': {
 					title: null, // no predefined title, allows the user to enter a title
 					descr: 'Special barnstar',
-					text: '{{subst:The Special Barnstarl|$1 ~~~~}}',
+					text: '{{subst:The Special Barnstarl|$1}}',
 					template: 'The Special Barnstar',
 					message: 'Hello '+wgTitle+'!\n\nI just awarded you the special barnstar.'
 				}
@@ -29,7 +29,7 @@
 		'makeyourown': {
 			title: null,
 			descr: mw.msg( 'wikilove-type-makeyourown' ),
-			text: "$1\n\n~~~~",
+			text: "$1",
 			template: ''
 		}
 	},
@@ -287,7 +287,11 @@
 	submitPreview: function( e ) {
 		e.preventDefault();
 		var title = '==' + $( '#wlTitle' ).val() + "==\n";
-		var msg = $.wikiLove.currentTypeOrSubtype.text.replace( '$1', $( '#wlMessage' ).val() );
+		var rawMessage = $( '#wlMessage' ).val();
+		if ( rawMessage.indexOf( '~~~' ) == -1 ) {
+			rawMessage += ' ~~~~';
+		}
+		var msg = $.wikiLove.currentTypeOrSubtype.text.replace( '$1', rawMessage );
 		$.wikiLove.doPreview( title + msg );
 		$.wikiLove.previewData = {
 			'title': title,
