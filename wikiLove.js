@@ -288,6 +288,7 @@
 		e.preventDefault();
 		var title = '==' + $( '#wlTitle' ).val() + "==\n";
 		var rawMessage = $( '#wlMessage' ).val();
+		// If there isn't a signature already in the message, add one to the end.
 		if ( rawMessage.indexOf( '~~~' ) == -1 ) {
 			rawMessage += ' ~~~~';
 		}
