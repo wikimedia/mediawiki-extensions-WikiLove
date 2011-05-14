@@ -62,7 +62,12 @@ class WikiLoveApi extends ApiBase {
 			'wl_message' => $text,
 			'wl_email' => 0,
 		);
-		$dbw->insert( 'wikilove_log', $values, __METHOD__ );
+		try{
+			$dbw->insert( 'wikilove_log', $values, __METHOD__ );
+		} catch( DBQueryError $dbqe ) {
+			$this->dieUsage( 'Warning: action was not logged!', 'nologging' );
+			return false;
+		}
 	}
 
 	public function getAllowedParams() {
@@ -119,6 +124,10 @@ class WikiLoveApi extends ApiBase {
 	public function getPossibleErrors() {
 		return array_merge( parent::getPossibleErrors(), array(
 			array( 'invalidtitle', 'title' ),
+			array(
+				'code' => 'nologging',
+				'info' => 'Warning: action was not logged!'
+			),
 		) );
 	}
 

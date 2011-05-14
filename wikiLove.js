@@ -369,7 +369,7 @@
 			type: 'POST',
 			success: function( data ) {
 				mw.log( data );
-				mw.log( mw.config.get( 'wgPageName' ) );
+				mw.log( 'wgPageName: ' + mw.config.get( 'wgPageName' ) );
 				
 				if ( notify && $.wikiLove.emailable ) {
 					$.wikiLove.sendEmail( $.wikiLove.currentTypeOrSubtype.title, $.wikiLove.currentTypeOrSubtype.message );
@@ -377,10 +377,15 @@
 				
 				$( '#wlPreview .wlSpinner' ).fadeOut( 200 );
 				
-				if ( data.redirect.pageName == mw.config.get( 'wgPageName' ) ) {
+				if ( typeof data.redirect !== 'undefined'
+					&&  data.redirect.pageName == mw.config.get( 'wgPageName' ) ) {
 					// unfortunately, when on the talk page we cannot reload and then
 					// jump to the correct section, because when we set the hash (#...)
 					// the page won't reload...
+					window.location.reload();
+				}
+				else if ( typeof data.error !== 'undefined' ) {
+					$( '<div class="wlError">' + data.error.info + '<div>' ).insertBefore( '#wlSendForm' );
 					window.location.reload();
 				}
 				else {

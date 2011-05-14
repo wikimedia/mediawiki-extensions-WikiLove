@@ -322,3 +322,7 @@ div.vectorTabs li a {
 	background-position: center;
 	background-repeat: no-repeat;
 }
+
+#wikiLoveDialog .wlError {
+	color: red;
+}
