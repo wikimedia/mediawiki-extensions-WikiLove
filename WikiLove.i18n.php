@@ -18,12 +18,12 @@ $messages['en'] = array(
 	'wikilove-tab-text' => 'Show appreciation',
 	'tooltip-ca-wikilove' => 'Post a message for this user showing your appreciation',
 	'wikilove-dialog-title' => 'WikiLove',
-	'wikilove-select-type' => 'Select Type',
+	'wikilove-select-type' => 'Select type',
 	'wikilove-get-started-header' => "Let's get started!",
 	'wikilove-get-started-list-1' => 'Select the type of WikiLove you wish to send',
 	'wikilove-get-started-list-2' => 'Add details to your WikiLove',
 	'wikilove-get-started-list-3' => 'Send your WikiLove!',
-	'wikilove-add-details' => 'Add Details',
+	'wikilove-add-details' => 'Add details',
 	'wikilove-title' => 'Title:',
 	'wikilove-enter-message' => 'Enter a message:',
 	'wikilove-omit-sig' => '(without a signature)',
@@ -32,3 +32,4 @@ $messages['en'] = array(
 	'wikilove-button-send' => 'Send WikiLove',
 	'wikilove-type-makeyourown' => 'Make your own',
 );
+
