@@ -88,6 +88,7 @@ $wgResourceModules += array(
 			'wikilove-get-started-list-2',
 			'wikilove-get-started-list-3',
 			'wikilove-add-details',
+			'wikilove-gallery',
 			'wikilove-title',
 			'wikilove-enter-message',
 			'wikilove-omit-sig',
@@ -95,6 +96,10 @@ $wgResourceModules += array(
 			'wikilove-preview',
 			'wikilove-button-send',
 			'wikilove-type-makeyourown',
+			'wikilove-err-title',
+			'wikilove-err-msg',
+			'wikilove-err-image',
+			'wikilove-err-sig',
 		),
 		'dependencies' => array(
 			'jquery.ui.dialog',

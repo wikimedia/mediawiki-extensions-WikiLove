@@ -254,10 +254,30 @@ div.vectorTabs li a {
 	resize: none;
 }
 
+#wikiLoveDialog #wlAddDetails #wlNotify {
+	float: left;
+}
+
 #wikiLoveDialog .wlSpinner {
 	float: right;
 	margin-top: 6px;
 	display: none;
+}
+
+/* add details gallery */
+#wikiLoveDialog #wlGallery img {
+	margin-right: 5px;
+	margin-bottom: 5px;
+	padding: 5px;
+}
+
+#wikiLoveDialog #wlGallery a:hover img,
+#wikiLoveDialog #wlGallery a:focus img {
+	background-color: #aacfe9;
+}
+
+#wikiLoveDialog #wlGallery a.selected img {
+	background-color: #f56427;
 }
 
 /* dialog preview */
@@ -266,11 +286,13 @@ div.vectorTabs li a {
 	width: 480px;
 }
 
-#wikiLoveDialog #wlPreview div {
+#wikiLoveDialog #wlPreview #wlPreviewArea {
 	margin-left: 15px;
+	width: 465px;
+	overflow: auto;
 }
 
-#wikiLoveDialog #wlPreview .editsection {
+#wikiLoveDialog #wlPreview #wlPreviewArea .editsection {
 	display: none;
 }
 

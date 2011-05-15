@@ -10,20 +10,32 @@
 				'original': {
 					title: 'An Original Barnstar for you!', // subject title for the message
 					descr: 'Original barnstar', // description in the menu
-					text: '{{subst:The Original Barnstar|$1}}', // message text, $1 is replaced by the user message
+					text: '{{subst:The Original Barnstar|$1 ~~~~}}', // message text, $1 is replaced by the user message
 					template: 'The Original Barnstar', // template that is used, for statistics
 					message: 'Hello '+wgTitle+'!\n\nI just awarded you a barnstar.' // message to use in email notification
 				},
 				'special': {
 					title: null, // no predefined title, allows the user to enter a title
 					descr: 'Special barnstar',
-					text: '{{subst:The Special Barnstarl|$1}}',
+					text: '{{subst:The Special Barnstarl|$1 ~~~~}}',
 					template: 'The Special Barnstar',
 					message: 'Hello '+wgTitle+'!\n\nI just awarded you the special barnstar.'
 				}
 			},
 			email: true, // add email notices as an option for each award of this type
 			icon: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/extensions/WikiLove/images/icons/wikilove-icon-barnstar.png'
+		},
+		'cat': {
+			descr: 'Cat',
+			title: null,
+			text: "[[$2|left|150px]]\n$1\n\n~~~~",
+			template: '',
+			gallery: {
+				category: 'Category:Tropical',
+				total: 100,
+				num: 3,
+				width: 150
+			}
 		},
 		// default type, nice to leave this one in place when adding other types
 		'makeyourown': {
@@ -40,6 +52,8 @@
 	currentTypeOrSubtype: null, // content of the current (sub)type (i.e. an object with title, descr, text, etc.)
 	previewData: null, // data of the currently previewed thing is set here
 	emailable: false,
+	gallery: {},
+	imageTitle: '',
 	
 	/*
 	 * Opens the dialog and builds it if necessary.
@@ -115,7 +129,9 @@
 				.append( '<h3>' + mw.msg( 'wikilove-add-details' ) + '</h3>' )
 				.append( '<label for="wlSubtype" id="wlSubtypeLabel"></label>' )
 				.append( $( '<form id="wlPreviewForm"></form>' )
-					.append( '<select id="wlSubtype"></select>' )				
+					.append( '<select id="wlSubtype"></select>' )
+					.append( '<label id="wlGalleryLabel">' + mw.msg( 'wikilove-gallery' ) + '</label>'  )
+					.append( '<div id="wlGallery"/>' )
 					.append( '<label for="wlTitle" id="wlTitleLabel">' + mw.msg( 'wikilove-title' ) + '</label>'  )
 					.append( '<input type="text" class="text" id="wlTitle"/>' )
 					.append( '<label for="wlMessage" id="wlMessageLabel">' + mw.msg( 'wikilove-enter-message' ) + '</label>'  )
@@ -273,6 +289,17 @@
 			$( '#wlTitle' ).show();
 			$( '#wlTitle' ).val( '' );
 		}
+		
+		if( typeof $.wikiLove.currentTypeOrSubtype.gallery == 'object' ) {
+			$( '#wlGalleryLabel' ).show();
+			$( '#wlGallery' ).show();
+			$.wikiLove.makeGallery();
+		}
+		else {
+			$( '#wlGalleryLabel' ).hide();
+			$( '#wlGallery' ).hide();
+		}
+		
 		if( $.wikiLove.types[$.wikiLove.currentTypeId].email ) {
 			$( '#wlNotify' ).show();
 		} else {
@@ -286,13 +313,28 @@
 	 */
 	submitPreview: function( e ) {
 		e.preventDefault();
+		if( $( '#wlTitle' ).val().length <= 0 ) {
+			$.wikiLove.showError( 'wikilove-err-title' ); return false;
+		}
+		if( $( '#wlMessage' ).val().length <= 0 ) {
+			$.wikiLove.showError( 'wikilove-err-msg' ); return false;
+		}
+		
 		var title = '==' + $( '#wlTitle' ).val() + "==\n";
 		var rawMessage = $( '#wlMessage' ).val();
-		// If there isn't a signature already in the message, add one to the end.
-		if ( rawMessage.indexOf( '~~~' ) == -1 ) {
-			rawMessage += ' ~~~~';
+		// If there isn't a signature already in the message, throw an error
+		if ( rawMessage.indexOf( '~~~' ) >= 0 ) {
+			$.wikiLove.showError( 'wikilove-err-sig' ); return false;
 		}
 		var msg = $.wikiLove.currentTypeOrSubtype.text.replace( '$1', rawMessage );
+		if( typeof $.wikiLove.currentTypeOrSubtype.gallery == 'object' ) {
+			if ( $.wikiLove.imageTitle ) {
+				msg = msg.replace( '$2', $.wikiLove.imageTitle );
+			}
+			else {
+				$.wikiLove.showError( 'wikilove-err-img' ); return false;
+			}
+		}
 		$.wikiLove.doPreview( title + msg );
 		$.wikiLove.previewData = {
 			'title': title,
@@ -303,6 +345,10 @@
 			'notify': $( '#wlNotifyCheckbox:checked' ).val()
 		};
 		return false;
+	},
+	
+	showError: function( errmsg ) {
+		$.wikiLove.showPreview( mw.msg( errmsg ) );
 	},
 	
 	/*
@@ -391,6 +437,65 @@
 				else {
 					window.location = mw.config.get( 'wgArticlePath' ).replace('$1', data.redirect.pageName) 
 						+ data.redirect.fragment;
+				}
+			}
+		});
+	},
+	
+	makeGallery: function() {
+		$( '#wlGallery' ).html( '' );
+		$.wikiLove.gallery = {};
+		$.ajax({
+			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php?',
+			data: {
+				'action'      : 'query',
+				'format'      : 'json',
+				'prop'        : 'imageinfo',
+				'iiprop'      : 'mime|url',
+				'iiurlwidth'  : $.wikiLove.currentTypeOrSubtype.gallery.width,
+				'generator'   : 'categorymembers',
+				'gcmtitle'    : $.wikiLove.currentTypeOrSubtype.gallery.category,
+				'gcmnamespace': 6,
+				'gcmsort'     : 'timestamp',
+				'gcmlimit'    : $.wikiLove.currentTypeOrSubtype.gallery.total
+			},
+			dataType: 'json',
+			type: 'POST',
+			success: function( data ) {
+				$( '#wlGallery' ).html( '' );
+				$.wikiLove.gallery = {};
+				if( data.query) {
+					var keys = Object.keys( data.query.pages );
+					for( var i=0; i<$.wikiLove.currentTypeOrSubtype.gallery.num; i++ ) {
+						while( keys.length > 0 ) {
+							var id = Math.floor( Math.random() * keys.length );
+							var page = data.query.pages[keys[id]];
+							keys.splice(id, 1);
+							if( page.imageinfo[0].mime.substr(0,5) == 'image' ) {
+								$img = $( '<img/>' );
+								$img.attr( 'src', page.imageinfo[0].url );
+								$img.attr( 'width', $.wikiLove.currentTypeOrSubtype.gallery.width );
+								$( '#wlGallery' ).append( 
+									$( '<a href="#"></a>' )
+										.attr( 'id', 'wlGalleryImg' + i )
+										.append( $img )
+										.click( function( e ) {
+											e.preventDefault();
+											$( '#wlGallery a' ).removeClass( 'selected' );
+											$( this ).addClass( 'selected' );
+											$.wikiLove.imageTitle = $.wikiLove.gallery[$( this ).attr( 'id' )];
+											return false;
+										})
+								);
+								$.wikiLove.gallery['wlGalleryImg' + i] = page.title;
+								break;
+							}
+						}
+					}
+				}
+				if( $( '#wlGallery' ).html().length <= 0 ) {
+					$( '#wlGallery' ).hide();
+					$( '#wlGalleryTitle' ).hide();
 				}
 			}
 		});

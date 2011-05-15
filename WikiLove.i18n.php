@@ -24,6 +24,7 @@ $messages['en'] = array(
 	'wikilove-get-started-list-2' => 'Add details to your WikiLove',
 	'wikilove-get-started-list-3' => 'Send your WikiLove!',
 	'wikilove-add-details' => 'Add details',
+	'wikilove-gallery' => 'Picture:',
 	'wikilove-title' => 'Title:',
 	'wikilove-enter-message' => 'Enter a message:',
 	'wikilove-omit-sig' => '(without a signature)',
@@ -31,5 +32,9 @@ $messages['en'] = array(
 	'wikilove-preview' => 'Preview',
 	'wikilove-button-send' => 'Send WikiLove',
 	'wikilove-type-makeyourown' => 'Make your own',
+	'wikilove-err-title' => 'Please enter a title.',
+	'wikilove-err-msg' => 'Please enter a message.',
+	'wikilove-err-image' => 'Please select an image.',
+	'wikilove-err-sig' => 'Please do not include a signature in the message.',
 );
 
