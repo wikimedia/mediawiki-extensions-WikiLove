@@ -60,6 +60,9 @@
 	 */
 	openDialog: function() {
 		if ( $.wikiLove.$dialog === null ) {
+			// Load local configuration
+			var wikiLoveConfigUrl = wgServer + wgScript + '?' + $.param( { 'title': 'MediaWiki:WikiLove.js', 'action': 'raw', 'ctype': 'text/javascript' } );
+			mw.loader.load( wikiLoveConfigUrl );
 			// Find out if we can email the user
 			$.wikiLove.getEmailable();
 			// Build a type list like this:
