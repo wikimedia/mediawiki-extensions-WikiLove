@@ -266,6 +266,10 @@ div.vectorTabs li a {
 }
 
 /* add details gallery */
+#wikiLoveDialog #wlGallery {
+	min-height: 40px;
+}
+
 #wikiLoveDialog #wlGallery img {
 	margin-right: 5px;
 	margin-bottom: 5px;
@@ -279,6 +283,16 @@ div.vectorTabs li a {
 
 #wikiLoveDialog #wlGallery a.selected img {
 	background-color: #f56427;
+}
+
+#wikiLoveDialog #wlGallerySpinner {
+	position: relative;
+}
+
+#wikiLoveDialog #wlGallerySpinner .wlSpinner {
+	float: none;
+	position: absolute;
+	z-index: -1;
 }
 
 /* dialog preview */

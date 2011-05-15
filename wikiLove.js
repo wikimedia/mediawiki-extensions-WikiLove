@@ -33,10 +33,10 @@
 			template: '',
 			gallery: {
 				// right now we can only query the local wiki (not e.g. commons)
-				category: 'Category:Cat',
+				category: 'Category:Cats',
 				total: 100, // total number of pictures to retrieve, and to randomise
 				num: 3, // number of pictures to show from the randomised set
-				width: 150 // width of each picture in pixels in the interface (not in the template)
+				width: 145 // width of each picture in pixels in the interface (not in the template)
 			}
 		},
 		// default type, nice to leave this one in place when adding other types
@@ -69,11 +69,11 @@
 			// Find out if we can email the user
 			$.wikiLove.getEmailable();
 			
+			// Reusable spinner string
+			var spinner = '<img class="wlSpinner" src="' + mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' )
+						+ '/extensions/WikiLove/images/spinner.gif"/>';
+			
 			// Build a type list like this:
-			// <ul id="wlTypes">
-			//   <li tabindex="0"><span>Barnstar</span></li>
-			//   <li tabindex="0"><span>Make your own</span></li>
-			// </ul>
 			var $typeList = $( '<ul id="wlTypes"></ul>' );
 			for( var typeId in $.wikiLove.types ) {
 				$button = $( '<a href="#"></a>' );
@@ -97,10 +97,6 @@
 			}
 			
 			// Build the left menu for selecting a type:
-			// <div id="wlSelectType">
-			//   <h3>Select Type:</h3>
-			//   <ul id="wlTypes">...</ul>
-			// </div>
 			var $selectType = $( '<div id="wlSelectType"></div>' )
 				.append( '<span class="wlNumber">1</span>' )
 				.append( '<h3>' + mw.msg( 'wikilove-select-type' ) + '</h3>' )
@@ -115,22 +111,6 @@
 				);
 			
 			// Build the right top section for selecting a subtype and entering a title (optional) and message
-			// <div id="wlAddDetails">
-			//   <h3>Add Details:</h3>
-			//
-			//   <label for="wlSubtype" id="wlSubtypeLabel">...</label>   (label depends on type)
-			//   <select id="wlSubtype">...</select>                      (also depends on type)
-			//
-			//   <label for="wlTitle" id="wlTitleLabel">Title:</label>    (hidden for some (sub)types)
-			//   <input type="text" class="text" id="wlTitle"/>
-			//
-			//   <label for="wlMessage" id="wlMessageLabel">Enter a message:</label>
-			//   <span class="wlOmitSig">(without a signature)</span>     (this span floats right)
-			//   <textarea id="wlMessage"></textarea>                     (textarea grows automatically with content)
-			//
-			//   <input id="wlButtonPreview" class="submit" type="submit" value="Preview"/>
-			//   <img class="wlSpinner" src="..."/>                       (spinner for the preview button)
-			// </div>
 			var $addDetails = $( '<div id="wlAddDetails"></div>' )
 				.append( '<span class="wlNumber">2</span>' )
 				.append( '<h3>' + mw.msg( 'wikilove-add-details' ) + '</h3>' )
@@ -138,6 +118,7 @@
 				.append( $( '<form id="wlPreviewForm"></form>' )
 					.append( '<select id="wlSubtype"></select>' )
 					.append( '<label id="wlGalleryLabel">' + mw.msg( 'wikilove-gallery' ) + '</label>'  )
+					.append( '<div id="wlGallerySpinner">' + spinner + '</div>' )
 					.append( '<div id="wlGallery"/>' )
 					.append( '<label for="wlTitle" id="wlTitleLabel">' + mw.msg( 'wikilove-title' ) + '</label>'  )
 					.append( '<input type="text" class="text" id="wlTitle"/>' )
@@ -147,18 +128,11 @@
 					.append( $('<div id="wlNotify"></div>').html('<input type="checkbox" id="wlNotifyCheckbox" name="notify"/> <label for="wlNotifyCheckbox">Notify user by email</label>') )
 					.append( '<input id="wlButtonPreview" class="submit" type="submit" value="'
 						+ mw.msg( 'wikilove-button-preview' ) + '"/>' )
-					.append( '<img class="wlSpinner" src="' + mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' )
-						+ '/extensions/WikiLove/images/spinner.gif"/>' )
+					.append( spinner )
 				)
 				.hide();
 			
 			// Build the right bottom preview section
-			// <div id="wlPreview">
-			//   <h3>Preview:</h3>
-			//   <div id="wlPreviewArea">...</div>                        (preview gets loaded here)
-			//   <input id="wlButtonSend" class="submit" type="submit" value="Send WikiLove"/>
-			//   <img class="wlSpinner" src="..."/>                       (another spinner for the send button)
-			// </div>
 			var $preview = $( '<div id="wlPreview"></div>' )
 				.append( '<span class="wlNumber">3</span>' )
 				.append( '<h3>' + mw.msg( 'wikilove-preview' ) + '</h3>' )
@@ -166,8 +140,7 @@
 				.append( $( '<form id="wlSendForm"></form>' )
 					.append( '<input id="wlButtonSend" class="submit" type="submit" value="'
 						+ mw.msg( 'wikilove-button-send' ) + '"/>' )
-					.append( '<img class="wlSpinner" src="' + mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' )
-						+ '/extensions/WikiLove/images/spinner.gif"/>' )
+					.append( spinner )
 				)
 				.hide();
 			
@@ -488,6 +461,8 @@
 	makeGallery: function() {
 		$( '#wlGallery' ).html( '' );
 		$.wikiLove.gallery = {};
+		$( '#wlGallerySpinner .wlSpinner' ).fadeIn( 200 );
+		
 		$.ajax({
 			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php',
 			data: {
@@ -529,9 +504,12 @@
 							// only add the image if it's actually an image
 							if( page.imageinfo[0].mime.substr(0,5) == 'image' ) {
 								// build an image tag with the correct url and width
-								$img = $( '<img/>' );
-								$img.attr( 'src', page.imageinfo[0].url );
-								$img.attr( 'width', $.wikiLove.currentTypeOrSubtype.gallery.width );
+								$img = $( '<img/>' )
+									.attr( 'src', page.imageinfo[0].url )
+									.attr( 'width', $.wikiLove.currentTypeOrSubtype.gallery.width )
+									.hide()
+									.load( function() { $( this ).fadeIn( 400 ); } );
+								
 								
 								// append the image to the gallery and also make sure it's selectable
 								$( '#wlGallery' ).append( 
@@ -558,6 +536,8 @@
 					$( '#wlGallery' ).hide();
 					$( '#wlGalleryTitle' ).hide();
 				}
+				
+				$( '#wlGallerySpinner .wlSpinner' ).fadeOut( 200 );
 			}
 		});
 	},

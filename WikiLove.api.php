@@ -15,7 +15,7 @@ class WikiLoveApi extends ApiBase {
 			$this->dieUsageMsg( array( 'invalidtitle', $params['title'] ) );
 		}
 		
-		if ( stripos( $params['text'], $params['template'] ) === false ) {
+		if ( strlen( $params['template'] ) > 0 && stripos( $params['text'], $params['template'] ) === false ) {
 			$this->dieUsage( 'Template could not be found in the message!', 'invalidtemplate' );
 		}
 		
