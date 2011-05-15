@@ -1,7 +1,7 @@
 <?php
 class WikiLoveApi extends ApiBase {
 	public function execute() {
-		global $wgRequest;
+		global $wgRequest, $wgWikiLoveLogging;
 		
 		$params = $this->extractRequestParams();
 		
@@ -16,7 +16,11 @@ class WikiLoveApi extends ApiBase {
 		}
 		
 		if ( stripos( $params['text'], $params['template'] ) === false ) {
-			// error
+			$this->dieUsage( 'Template could not be found in the message!', 'invalidtemplate' );
+		}
+		
+		if ( $wgWikiLoveLogging ) {
+			$this->saveInDb( $talk, $params['subject'], $params['text'], $params['type'], $params['template'] );
 		}
 		
 		$api = new ApiMain( new FauxRequest( array(
@@ -37,8 +41,6 @@ class WikiLoveApi extends ApiBase {
 		$talk->setFragment( '#' . $params['subject'] );
 		$this->getResult()->addValue( 'redirect', 'pageName', $talk->getPrefixedDBkey() );
 		$this->getResult()->addValue( 'redirect', 'fragment', $talk->getFragmentForURL() );
-		
-		$this->saveInDb( $talk, $params['subject'], $params['text'], $params['type'], $params['template'] );
 	}
 
 	/**
@@ -127,6 +129,10 @@ class WikiLoveApi extends ApiBase {
 			array(
 				'code' => 'nologging',
 				'info' => 'Warning: action was not logged!'
+			),
+			array(
+				'code' => 'invalidtemplate',
+				'info' => 'Template could not be found in the message!'
 			),
 		) );
 	}

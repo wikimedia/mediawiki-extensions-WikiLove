@@ -67,7 +67,9 @@ $wgHooks['BeforePageDisplay'][]                   = 'WikiLoveHooks::beforePageDi
 $wgAPIModules['wikiLove'] = 'WikiLoveApi';
 
 // default user options
+$wgWikiLoveGlobal  = false;
 $wgWikiLoveTabIcon = true;
+$wgWikiLoveLogging = false;
 
 // resources
 $wikiLoveTpl = array(
