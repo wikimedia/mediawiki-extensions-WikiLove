@@ -12,14 +12,15 @@
 					descr: 'Original barnstar', // description in the menu
 					text: '{{subst:The Original Barnstar|$1 ~~~~}}', // message text, $1 is replaced by the user message
 					template: 'The Original Barnstar', // template that is used, for statistics
-					message: 'Hello '+wgTitle+'!\n\nI just awarded you a barnstar.' // message to use in email notification
+					mail: 'Hello $2!\n\nI just awarded you a barnstar.' // message to use in email notification
+					// $2 is replaced by the recipient's username
 				},
 				'special': {
 					title: null, // no predefined title, allows the user to enter a title
 					descr: 'Special barnstar',
 					text: '{{subst:The Special Barnstarl|$1 ~~~~}}',
 					template: 'The Special Barnstar',
-					message: 'Hello '+wgTitle+'!\n\nI just awarded you the special barnstar.'
+					mail: 'Hello $2!\n\nI just awarded you the special barnstar.'
 				}
 			},
 			email: true, // add email notices as an option for each award of this type
@@ -28,13 +29,14 @@
 		'cat': {
 			descr: 'Cat',
 			title: null,
-			text: "[[$2|left|150px]]\n$1\n\n~~~~",
+			text: "[[$3|left|150px]]\n$1\n\n~~~~", // $3 is the image filename
 			template: '',
 			gallery: {
+				// right now we can only query the local wiki (not e.g. commons)
 				category: 'Category:Tropical',
-				total: 100,
-				num: 3,
-				width: 150
+				total: 100, // total number of pictures to retrieve, and to randomise
+				num: 3, // number of pictures to show from the randomised set
+				width: 150 // width of each picture in pixels in the interface (not in the template)
 			}
 		},
 		// default type, nice to leave this one in place when adding other types
@@ -63,8 +65,10 @@
 			// Load local configuration
 			var wikiLoveConfigUrl = wgServer + wgScript + '?' + $.param( { 'title': 'MediaWiki:WikiLove.js', 'action': 'raw', 'ctype': 'text/javascript' } );
 			mw.loader.load( wikiLoveConfigUrl );
+			
 			// Find out if we can email the user
 			$.wikiLove.getEmailable();
+			
 			// Build a type list like this:
 			// <ul id="wlTypes">
 			//   <li tabindex="0"><span>Barnstar</span></li>
@@ -257,11 +261,17 @@
 		}
 	},
 	
+	/*
+	 * Find out whether we can e-mail this user. Probably needs to be moved to the API.
+	 */
 	getEmailable: function() {
 		// Test to see if the 'E-mail this user' link exists
 		$.wikiLove.emailable = $('#t-emailuser').length ? true : false;
 	},
 	
+	/*
+	 * Actually send the notification e-mail. Probably needs to be moved to the API.
+	 */
 	sendEmail: function( subject, text ) {
 		$.ajax({
 			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php?',
@@ -322,25 +332,24 @@
 		if( $( '#wlMessage' ).val().length <= 0 ) {
 			$.wikiLove.showError( 'wikilove-err-msg' ); return false;
 		}
+		if( typeof $.wikiLove.currentTypeOrSubtype.gallery == 'object' ) {
+			if ( !$.wikiLove.imageTitle ) {
+				$.wikiLove.showError( 'wikilove-err-img' ); return false;
+			}
+		}
 		
-		var title = '==' + $( '#wlTitle' ).val() + "==\n";
 		var rawMessage = $( '#wlMessage' ).val();
+		
 		// If there isn't a signature already in the message, throw an error
 		if ( rawMessage.indexOf( '~~~' ) >= 0 ) {
 			$.wikiLove.showError( 'wikilove-err-sig' ); return false;
 		}
-		var msg = $.wikiLove.currentTypeOrSubtype.text.replace( '$1', rawMessage );
-		if( typeof $.wikiLove.currentTypeOrSubtype.gallery == 'object' ) {
-			if ( $.wikiLove.imageTitle ) {
-				msg = msg.replace( '$2', $.wikiLove.imageTitle );
-			}
-			else {
-				$.wikiLove.showError( 'wikilove-err-img' ); return false;
-			}
-		}
-		$.wikiLove.doPreview( title + msg );
+		
+		var msg = $.wikiLove.prepareMsg( rawMessage );
+		
+		$.wikiLove.doPreview( '==' + $( '#wlTitle' ).val() + "==\n" + msg );
 		$.wikiLove.previewData = {
-			'title': title,
+			'title': $( '#wlTitle' ).val(),
 			'msg': msg,
 			'type': $.wikiLove.currentTypeId
 				+ ($.wikiLove.currentSubtypeId != null ? '-' + $.wikiLove.currentSubtypeId : ''),
@@ -352,6 +361,27 @@
 	
 	showError: function( errmsg ) {
 		$.wikiLove.showPreview( mw.msg( errmsg ) );
+	},
+	
+	/*
+	 * Prepares a message or e-mail body by replacing placeholders.
+	 * $1: message entered by the user
+	 * $2: username of the recipient
+	 * $3: title of the chosen image
+	 */
+	prepareMsg: function( msg ) {
+		// replace the raw message
+		msg = msg.replace( '$1', $( '#wlMessage' ).val() );
+		
+		// replace the username we're sending to
+		msg = msg.replace( '$2', wgTitle );
+		
+		// replace the image filename
+		if ( $.wikiLove.imageTitle ) {
+			msg = msg.replace( '$3', $.wikiLove.imageTitle );
+		}
+		
+		return msg;
 	},
 	
 	/*
@@ -421,7 +451,10 @@
 				mw.log( 'wgPageName: ' + mw.config.get( 'wgPageName' ) );
 				
 				if ( notify && $.wikiLove.emailable ) {
-					$.wikiLove.sendEmail( $.wikiLove.currentTypeOrSubtype.title, $.wikiLove.currentTypeOrSubtype.message );
+					$.wikiLove.sendEmail( 
+						$.wikiLove.currentTypeOrSubtype.title, 
+						$.wikiLove.prepareMsg( $.wikiLove.currentTypeOrSubtype.mail )
+					);
 				}
 				
 				$( '#wlPreview .wlSpinner' ).fadeOut( 200 );
@@ -445,11 +478,17 @@
 		});
 	},
 	
+	/*
+	 * This is a bit of a hack to show some random images. A predefined set of image infos are
+	 * retrieved using the API. Then we randomise this set ourselves and select some images to
+	 * show. Eventually we probably want to make a custom API call that does this properly and
+	 * also allows for using remote galleries such as Commons, which is now prohibited by JS.
+	 */
 	makeGallery: function() {
 		$( '#wlGallery' ).html( '' );
 		$.wikiLove.gallery = {};
 		$.ajax({
-			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php?',
+			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php',
 			data: {
 				'action'      : 'query',
 				'format'      : 'json',
@@ -465,19 +504,35 @@
 			dataType: 'json',
 			type: 'POST',
 			success: function( data ) {
+				// clear
 				$( '#wlGallery' ).html( '' );
 				$.wikiLove.gallery = {};
+				
+				// if we have any images at all
 				if( data.query) {
+					// get the page keys which are just ids
 					var keys = Object.keys( data.query.pages );
+					
+					// try to find "num" images to show
 					for( var i=0; i<$.wikiLove.currentTypeOrSubtype.gallery.num; i++ ) {
+						// continue looking for a new image until we have found one thats valid
+						// or until we run out of images
 						while( keys.length > 0 ) {
+							// get a random page
 							var id = Math.floor( Math.random() * keys.length );
 							var page = data.query.pages[keys[id]];
+							
+							// remove the random page from the keys array
 							keys.splice(id, 1);
+							
+							// only add the image if it's actually an image
 							if( page.imageinfo[0].mime.substr(0,5) == 'image' ) {
+								// build an image tag with the correct url and width
 								$img = $( '<img/>' );
 								$img.attr( 'src', page.imageinfo[0].url );
 								$img.attr( 'width', $.wikiLove.currentTypeOrSubtype.gallery.width );
+								
+								// append the image to the gallery and also make sure it's selectable
 								$( '#wlGallery' ).append( 
 									$( '<a href="#"></a>' )
 										.attr( 'id', 'wlGalleryImg' + i )
@@ -490,13 +545,15 @@
 											return false;
 										})
 								);
+								
+								// save the page title into an array so we know which image id maps to which title
 								$.wikiLove.gallery['wlGalleryImg' + i] = page.title;
 								break;
 							}
 						}
 					}
 				}
-				if( $( '#wlGallery' ).html().length <= 0 ) {
+				if( $.wikiLove.gallery.length <= 0 ) {
 					$( '#wlGallery' ).hide();
 					$( '#wlGalleryTitle' ).hide();
 				}
