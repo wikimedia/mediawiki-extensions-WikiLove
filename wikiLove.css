@@ -231,6 +231,7 @@ div.vectorTabs li a {
 #wikiLoveDialog #wlAddDetails {
 	float: right;
 	width: 480px;
+	margin-bottom: 5px;
 }
 
 #wikiLoveDialog #wlAddDetails label {
@@ -346,5 +347,13 @@ div.vectorTabs li a {
 }
 
 #wikiLoveDialog .wlError {
+	/* @embed */
+	background-image: url(images/alert.png);
+	background-position: center left;
+	background-repeat: no-repeat;
 	color: red;
+	font-weight: bold;
+	line-height: 32px;
+	padding-left: 34px;
+	padding-bottom: 3px;
 }

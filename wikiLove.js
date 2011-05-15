@@ -29,11 +29,11 @@
 		'cat': {
 			descr: 'Cat',
 			title: null,
-			text: "[[$3|left|150px]]\n$1\n\n~~~~", // $3 is the image filename
+			text: '[[$3|left|150px]]\n$1\n\n~~~~\n<br style="clear: both"/>', // $3 is the image filename
 			template: '',
 			gallery: {
 				// right now we can only query the local wiki (not e.g. commons)
-				category: 'Category:Tropical',
+				category: 'Category:Cat',
 				total: 100, // total number of pictures to retrieve, and to randomise
 				num: 3, // number of pictures to show from the randomised set
 				width: 150 // width of each picture in pixels in the interface (not in the template)
@@ -144,7 +144,7 @@
 					.append( '<label for="wlMessage" id="wlMessageLabel">' + mw.msg( 'wikilove-enter-message' ) + '</label>'  )
 					.append( '<span class="wlOmitSig">' + mw.msg( 'wikilove-omit-sig' ) + '</span>'  )
 					.append( '<textarea id="wlMessage"></textarea>' )
-					.append( $('<div id="wlNotify"></div>').html('<input type="checkbox" id="wlNotifyCheckbox" name="notify"/> Notify user by email') )
+					.append( $('<div id="wlNotify"></div>').html('<input type="checkbox" id="wlNotifyCheckbox" name="notify"/> <label for="wlNotifyCheckbox">Notify user by email</label>') )
 					.append( '<input id="wlButtonPreview" class="submit" type="submit" value="'
 						+ mw.msg( 'wikilove-button-preview' ) + '"/>' )
 					.append( '<img class="wlSpinner" src="' + mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' )
@@ -292,6 +292,8 @@
 	 * Called when type or subtype changes, updates controls. Currently only updates title label and textbox.
 	 */
 	updateAllDetails: function() {
+		$( '#wikiLoveDialog' ).find( '.wlError' ).remove();
+		
 		// show or hide title label and textbox depending on whether a predefined title exists
 		if( typeof $.wikiLove.currentTypeOrSubtype.title == 'string' ) {
 			$( '#wlTitleLabel').hide();
@@ -326,26 +328,27 @@
 	 */
 	submitPreview: function( e ) {
 		e.preventDefault();
+		$( '#wlPreview' ).hide();
+		$( '#wikiLoveDialog' ).find( '.wlError' ).remove();
+		
+		if( typeof $.wikiLove.currentTypeOrSubtype.gallery == 'object' ) {
+			if ( !$.wikiLove.imageTitle ) {
+				$.wikiLove.showError( 'wikilove-err-image' ); return false;
+			}
+		}
 		if( $( '#wlTitle' ).val().length <= 0 ) {
 			$.wikiLove.showError( 'wikilove-err-title' ); return false;
 		}
 		if( $( '#wlMessage' ).val().length <= 0 ) {
 			$.wikiLove.showError( 'wikilove-err-msg' ); return false;
 		}
-		if( typeof $.wikiLove.currentTypeOrSubtype.gallery == 'object' ) {
-			if ( !$.wikiLove.imageTitle ) {
-				$.wikiLove.showError( 'wikilove-err-img' ); return false;
-			}
-		}
-		
-		var rawMessage = $( '#wlMessage' ).val();
 		
 		// If there isn't a signature already in the message, throw an error
-		if ( rawMessage.indexOf( '~~~' ) >= 0 ) {
+		if ( $( '#wlMessage' ).val().indexOf( '~~~' ) >= 0 ) {
 			$.wikiLove.showError( 'wikilove-err-sig' ); return false;
 		}
 		
-		var msg = $.wikiLove.prepareMsg( rawMessage );
+		var msg = $.wikiLove.prepareMsg( $.wikiLove.currentTypeOrSubtype.text );
 		
 		$.wikiLove.doPreview( '==' + $( '#wlTitle' ).val() + "==\n" + msg );
 		$.wikiLove.previewData = {
@@ -360,7 +363,7 @@
 	},
 	
 	showError: function( errmsg ) {
-		$.wikiLove.showPreview( mw.msg( errmsg ) );
+		$( '#wlAddDetails' ).append( $( '<div class="wlError"></div>' ).html( mw.msg( errmsg ) ) );
 	},
 	
 	/*
@@ -447,9 +450,6 @@
 			dataType: 'json',
 			type: 'POST',
 			success: function( data ) {
-				mw.log( data );
-				mw.log( 'wgPageName: ' + mw.config.get( 'wgPageName' ) );
-				
 				if ( notify && $.wikiLove.emailable ) {
 					$.wikiLove.sendEmail( 
 						$.wikiLove.currentTypeOrSubtype.title, 
@@ -459,15 +459,16 @@
 				
 				$( '#wlPreview .wlSpinner' ).fadeOut( 200 );
 				
+				if ( typeof data.error !== 'undefined' ) {
+					$( '#wlPreview' ).append( '<div class="wlError">' + data.error.info + '<div>' );
+					return;
+				}
+				
 				if ( typeof data.redirect !== 'undefined'
 					&&  data.redirect.pageName == mw.config.get( 'wgPageName' ) ) {
 					// unfortunately, when on the talk page we cannot reload and then
 					// jump to the correct section, because when we set the hash (#...)
 					// the page won't reload...
-					window.location.reload();
-				}
-				else if ( typeof data.error !== 'undefined' ) {
-					$( '<div class="wlError">' + data.error.info + '<div>' ).insertBefore( '#wlSendForm' );
 					window.location.reload();
 				}
 				else {
