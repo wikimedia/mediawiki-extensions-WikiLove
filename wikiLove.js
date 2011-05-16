@@ -126,8 +126,7 @@
 					.append( '<span class="wlOmitSig">' + mw.msg( 'wikilove-omit-sig' ) + '</span>'  )
 					.append( '<textarea id="wlMessage"></textarea>' )
 					.append( $('<div id="wlNotify"></div>').html('<input type="checkbox" id="wlNotifyCheckbox" name="notify"/> <label for="wlNotifyCheckbox">Notify user by email</label>') )
-					.append( '<input id="wlButtonPreview" class="submit" type="submit" value="'
-						+ mw.msg( 'wikilove-button-preview' ) + '"/>' )
+					.append( $('<button class="submit" id="wlButtonPreview" type="submit"></button>').button({ label: mw.msg( 'wikilove-button-preview' ) }) )
 					.append( spinner )
 				)
 				.hide();
@@ -138,8 +137,7 @@
 				.append( '<h3>' + mw.msg( 'wikilove-preview' ) + '</h3>' )
 				.append( '<div id="wlPreviewArea"></div>' )
 				.append( $( '<form id="wlSendForm"></form>' )
-					.append( '<input id="wlButtonSend" class="submit" type="submit" value="'
-						+ mw.msg( 'wikilove-button-send' ) + '"/>' )
+					.append( $('<button class="submit" id="wlButtonSend" type="submit"></button>').button({ label: mw.msg( 'wikilove-button-send' ) }) )
 					.append( spinner )
 				)
 				.hide();

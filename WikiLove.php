@@ -105,6 +105,7 @@ $wgResourceModules += array(
 		),
 		'dependencies' => array(
 			'jquery.ui.dialog',
+			'jquery.ui.button',
 			'jquery.elastic',
 		),
 	),
