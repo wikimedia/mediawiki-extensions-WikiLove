@@ -423,7 +423,7 @@
 			dataType: 'json',
 			type: 'POST',
 			success: function( data ) {
-				if ( notify && $.wikiLove.emailable ) {
+				if ( notify && $.wikiLove.emailable && typeof $.wikiLove.currentTypeOrSubtype.mail != 'undefined' ) {
 					$.wikiLove.sendEmail( 
 						$.wikiLove.currentTypeOrSubtype.title, 
 						$.wikiLove.prepareMsg( $.wikiLove.currentTypeOrSubtype.mail )
