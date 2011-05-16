@@ -62,6 +62,7 @@ $messages['de'] = array(
 	'wikilove-get-started-list-2' => 'Persönliche Wertschätzung ergänzen',
 	'wikilove-get-started-list-3' => 'Persönliche Wertschätzung senden',
 	'wikilove-add-details' => 'Ergänzungen hinzufügen',
+	'wikilove-gallery' => 'Bild:',
 	'wikilove-title' => 'Titel:',
 	'wikilove-enter-message' => 'Eine Nachricht erfassen:',
 	'wikilove-omit-sig' => '(ohne Signatur)',
@@ -69,15 +70,22 @@ $messages['de'] = array(
 	'wikilove-preview' => 'Vorschau',
 	'wikilove-button-send' => 'Persönliche Wertschätzung senden',
 	'wikilove-type-makeyourown' => 'Eigene Art der Wertschätzung erstellen',
+	'wikilove-err-title' => 'Bitte einen Titel eingeben.',
+	'wikilove-err-msg' => 'Bitte eine Nachricht eingeben.',
+	'wikilove-err-image' => 'Bitte ein Bild auswählen.',
+	'wikilove-err-sig' => 'Bitte keine Signatur im Nachrichtentext eingeben.',
 );
 
 /** French (Français)
  * @author Crochet.david
+ * @author IAlex
  */
 $messages['fr'] = array(
 	'wikilove-tab-text' => 'Montrer l’appréciation',
 	'wikilove-select-type' => 'Sélectionnez le type',
+	'wikilove-get-started-header' => 'Commençons !',
 	'wikilove-add-details' => 'Ajouter des détails',
+	'wikilove-gallery' => 'Image :',
 	'wikilove-title' => 'Titre :',
 	'wikilove-enter-message' => 'Entrez un message :',
 	'wikilove-omit-sig' => '(sans signature)',
@@ -101,6 +109,7 @@ $messages['gl'] = array(
 	'wikilove-get-started-list-2' => 'Engadir detalles ao seu amor wiki',
 	'wikilove-get-started-list-3' => 'Enviar o seu amor wiki!',
 	'wikilove-add-details' => 'Engadir detalles',
+	'wikilove-gallery' => 'Imaxe:',
 	'wikilove-title' => 'Título:',
 	'wikilove-enter-message' => 'Escriba unha mensaxe:',
 	'wikilove-omit-sig' => '(sen sinatura)',
@@ -108,6 +117,10 @@ $messages['gl'] = array(
 	'wikilove-preview' => 'Vista previa',
 	'wikilove-button-send' => 'Enviar o amor wiki',
 	'wikilove-type-makeyourown' => 'Faga o seu',
+	'wikilove-err-title' => 'Escriba un título.',
+	'wikilove-err-msg' => 'Escriba unha mensaxe.',
+	'wikilove-err-image' => 'Seleccione unha imaxe.',
+	'wikilove-err-sig' => 'Non incluír a sinatura na mensaxe.',
 );
 
 /** Interlingua (Interlingua)
@@ -185,6 +198,7 @@ $messages['mk'] = array(
 	'wikilove-get-started-list-2' => 'Внесете содржина на ВикиЉубов-та',
 	'wikilove-get-started-list-3' => 'Испратете ја вашата ВикиЉубов',
 	'wikilove-add-details' => 'Внесете содржина',
+	'wikilove-gallery' => 'Слика:',
 	'wikilove-title' => 'Наслов:',
 	'wikilove-enter-message' => 'Внесете порака:',
 	'wikilove-omit-sig' => '(без потпис)',
@@ -192,6 +206,10 @@ $messages['mk'] = array(
 	'wikilove-preview' => 'Преглед',
 	'wikilove-button-send' => 'Испрати ВикиЉубов',
 	'wikilove-type-makeyourown' => 'Направете своја',
+	'wikilove-err-title' => 'Внесете наслов.',
+	'wikilove-err-msg' => 'Внесете порака.',
+	'wikilove-err-image' => 'Одберете слика.',
+	'wikilove-err-sig' => 'Не ставајте потпис во пораката.',
 );
 
 /** Dutch (Nederlands)
@@ -235,6 +253,7 @@ $messages['pt'] = array(
 	'wikilove-get-started-list-2' => 'Acrescente detalhes ao seu WikiApreço',
 	'wikilove-get-started-list-3' => 'Enviar o seu WikiApreço!',
 	'wikilove-add-details' => 'Adicionar detalhes',
+	'wikilove-gallery' => 'Imagem:',
 	'wikilove-title' => 'Título:',
 	'wikilove-enter-message' => 'Introduza uma mensagem:',
 	'wikilove-omit-sig' => '(sem assinatura)',
@@ -242,6 +261,10 @@ $messages['pt'] = array(
 	'wikilove-preview' => 'Antevisão',
 	'wikilove-button-send' => 'Enviar WikiApreço',
 	'wikilove-type-makeyourown' => 'Crie o seu',
+	'wikilove-err-title' => 'Introduza um título, por favor.',
+	'wikilove-err-msg' => 'Introduza uma mensagem, por favor.',
+	'wikilove-err-image' => 'Escolha uma imagem, por favor.',
+	'wikilove-err-sig' => 'Não inclua uma assinatura na mensagem, por favor.',
 );
 
 /** Tagalog (Tagalog)
