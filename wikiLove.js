@@ -93,7 +93,7 @@
 				$button.append( $buttonInside );
 				$button.append( '<div class="wlRightCap"></div>');
 				$button.data( 'typeId', typeId );
-				$typeList.append( $( '<li></li>' ).append( $button ) );
+				$typeList.append( $( '<li tabindex="0"></li>' ).append( $button ) );
 			}
 			
 			// Build the left menu for selecting a type:
