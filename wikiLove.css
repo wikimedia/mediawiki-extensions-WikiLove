@@ -244,7 +244,7 @@ div.vectorTabs li a {
 	width: 300px;
 }
 
-#wikiLoveDialog #wlAddDetails .wlOmitSig {
+#wikiLoveDialog #wlAddDetails .wlNote {
 	font-weight: light;
 	font-size: 0.9em;
 	float: right;
@@ -255,13 +255,9 @@ div.vectorTabs li a {
 	resize: none;
 }
 
-#wikiLoveDialog #wlAddDetails #wlNotify {
-	float: left;
-}
-
 #wikiLoveDialog .wlSpinner {
 	float: right;
-	margin-top: 6px;
+	margin-top: 0.9em;
 	display: none;
 }
 
@@ -292,6 +288,9 @@ div.vectorTabs li a {
 #wikiLoveDialog #wlGallerySpinner .wlSpinner {
 	float: none;
 	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -8px;
 	z-index: -1;
 }
 
@@ -318,6 +317,12 @@ div.vectorTabs li a {
 	margin: 5px 0px 5px 15px;
 	max-width: 460px;
 	display: block;
+}
+
+#wikiLoveDialog #wlSubtypeDescription {
+	margin: 5px 0px 8px 15px;
+	font-size: 1.0em;
+	line-height: 1.2em;
 }
 
 #wikiLoveDialog input[type=checkbox] {

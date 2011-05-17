@@ -15,10 +15,6 @@ class WikiLoveApi extends ApiBase {
 			$this->dieUsageMsg( array( 'invalidtitle', $params['title'] ) );
 		}
 		
-		if ( strlen( $params['template'] ) > 0 && stripos( $params['text'], $params['template'] ) === false ) {
-			$this->dieUsage( 'Template could not be found in the message!', 'invalidtemplate' );
-		}
-		
 		if ( $wgWikiLoveLogging ) {
 			$this->saveInDb( $talk, $params['subject'], $params['text'], $params['type'], $params['template'] );
 		}
@@ -48,7 +44,6 @@ class WikiLoveApi extends ApiBase {
 	 * @param $subject
 	 * @param $text
 	 * @param $type
-	 * @param $template
 	 * @return void
 	 */
 	private function saveInDb( $talk, $subject, $text, $type, $template ) {
@@ -59,7 +54,6 @@ class WikiLoveApi extends ApiBase {
 			'wl_sender_id' => $wgUser->getId(),
 			'wl_receiver_id' => User::newFromName( $talk->getSubjectPage()->getBaseText() )->getId(),
 			'wl_type' => $type,
-			'wl_template' => $template,
 			'wl_subject' => $subject,
 			'wl_message' => $text,
 			'wl_email' => 0,
@@ -90,9 +84,6 @@ class WikiLoveApi extends ApiBase {
 				ApiBase::PARAM_TYPE => 'string',
 				ApiBase::PARAM_REQUIRED => true,
 			),
-			'template' => array(
-				ApiBase::PARAM_TYPE => 'string',
-			),
 			'type' => array(
 				ApiBase::PARAM_TYPE => 'string',
 			),
@@ -102,10 +93,9 @@ class WikiLoveApi extends ApiBase {
 	public function getParamDescription() {
 		return array(
 			'title' => 'Title of the user or user talk page to send WikiLove to',
-			'text' => 'Raw ikitext to add in the new section',
+			'text' => 'Raw wikitext to add in the new section',
 			'token' => 'Edit token. You can get one of these through prop=info',
 			'subject' => 'Subject header of the new section',
-			'template' => 'Template name used in the wikitext (for statistics)',
 			'type' => array( 'Type of WikiLove (for statistics); this corresponds with a type',
 			                 'selected in the left menu, and optionally a subtype after that',
 			                 '(e.g. "barnstar-normal" or "kitten")',
@@ -117,9 +107,9 @@ class WikiLoveApi extends ApiBase {
 		return array(
 			'Give WikiLove to another user.',
 			"WikiLove is a positive message posted to a user's talk page through a",
-			'convenient interface with preset images and templates. This action adds',
-			'the specified wikitext to a certain talk page. For statistical purposes,',
-			'the type and template (among the other data) are logged.',
+			'convenient interface with preset or locally defined templates. This action',
+			'adds the specified wikitext to a certain talk page. For statistical purposes,',
+			'the type and other data are logged.',
 		);
 	}
 
@@ -129,10 +119,6 @@ class WikiLoveApi extends ApiBase {
 			array(
 				'code' => 'nologging',
 				'info' => 'Warning: action was not logged!'
-			),
-			array(
-				'code' => 'invalidtemplate',
-				'info' => 'Template could not be found in the message!'
 			),
 		) );
 	}

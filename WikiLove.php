@@ -80,7 +80,10 @@ $wikiLoveTpl = array(
 
 $wgResourceModules += array(
 	'ext.wikiLove' => $wikiLoveTpl + array(
-		'scripts'      => 'wikiLove.js',
+		'scripts'      => array(
+			'wikiLove.js',
+			'defaultTypes.js',
+		),
 		'styles'       => 'wikiLove.css',
 		'messages' => array(
 			'wikilove-dialog-title',
@@ -90,7 +93,8 @@ $wgResourceModules += array(
 			'wikilove-get-started-list-2',
 			'wikilove-get-started-list-3',
 			'wikilove-add-details',
-			'wikilove-gallery',
+			'wikilove-image',
+			'wikilove-header',
 			'wikilove-title',
 			'wikilove-enter-message',
 			'wikilove-omit-sig',
@@ -98,10 +102,12 @@ $wgResourceModules += array(
 			'wikilove-preview',
 			'wikilove-button-send',
 			'wikilove-type-makeyourown',
+			'wikilove-err-header',
 			'wikilove-err-title',
 			'wikilove-err-msg',
 			'wikilove-err-image',
 			'wikilove-err-sig',
+			'wikilove-barnstar-header',
 		),
 		'dependencies' => array(
 			'jquery.ui.dialog',
