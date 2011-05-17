@@ -12,8 +12,7 @@
 					descr: 'Original barnstar', // description in the menu
 					text: '{{subst:The Original Barnstar|$1 ~~~~}}', // message text, $1 is replaced by the user message
 					template: 'The Original Barnstar', // template that is used, for statistics
-					mail: 'Hello $2!\n\nI just awarded you a barnstar.' // message to use in email notification
-					// $2 is replaced by the recipient's username
+					mail: 'Hello $2!\n\nI just awarded you a barnstar.' // message to use in email notification; $2 is replaced by the recipient's username
 				},
 				'special': {
 					title: null, // no predefined title, allows the user to enter a title
@@ -23,7 +22,7 @@
 					mail: 'Hello $2!\n\nI just awarded you the special barnstar.'
 				}
 			},
-			email: true, // add email notices as an option for each award of this type
+			showNotify: true, // add email notices as an option for each award of this type
 			icon: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/extensions/WikiLove/images/icons/wikilove-icon-barnstar.png'
 		},
 		'cat': {
@@ -286,7 +285,7 @@
 			$( '#wlGallery' ).hide();
 		}
 		
-		if( $.wikiLove.types[$.wikiLove.currentTypeId].email ) {
+		if( $.wikiLove.types[$.wikiLove.currentTypeId].showNotify ) {
 			$( '#wlNotify' ).show();
 		} else {
 			$( '#wlNotify' ).hide();
