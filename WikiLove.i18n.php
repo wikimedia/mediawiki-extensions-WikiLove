@@ -68,6 +68,7 @@ $messages['de'] = array(
 	'wikilove-get-started-list-3' => 'Persönliche Wertschätzung senden',
 	'wikilove-add-details' => 'Ergänzungen hinzufügen',
 	'wikilove-image' => 'Bild:',
+	'wikilove-header' => 'Kopfbereich:',
 	'wikilove-title' => 'Titel:',
 	'wikilove-enter-message' => 'Eine Nachricht erfassen:',
 	'wikilove-omit-sig' => '(ohne Signatur)',
@@ -75,10 +76,12 @@ $messages['de'] = array(
 	'wikilove-preview' => 'Vorschau',
 	'wikilove-button-send' => 'Persönliche Wertschätzung senden',
 	'wikilove-type-makeyourown' => 'Eigene Art der Wertschätzung erstellen',
+	'wikilove-err-header' => 'Bitte einen Kopfbereich eingeben.',
 	'wikilove-err-title' => 'Bitte einen Titel eingeben.',
 	'wikilove-err-msg' => 'Bitte eine Nachricht eingeben.',
 	'wikilove-err-image' => 'Bitte ein Bild auswählen.',
 	'wikilove-err-sig' => 'Bitte keine Signatur im Nachrichtentext eingeben.',
+	'wikilove-barnstar-header' => 'Ein Orden für Dich!',
 );
 
 /** French (Français)
@@ -151,6 +154,10 @@ $messages['ia'] = array(
 	'wikilove-preview' => 'Previsualisation',
 	'wikilove-button-send' => 'Inviar WikiLove',
 	'wikilove-type-makeyourown' => 'Crear le tue',
+	'wikilove-err-title' => 'Per favor entra un titulo.',
+	'wikilove-err-msg' => 'Per favor entra un message.',
+	'wikilove-err-image' => 'Per favor selige un imagine.',
+	'wikilove-err-sig' => 'Per favor non include un signatura in le message.',
 );
 
 /** Colognian (Ripoarisch)
@@ -217,6 +224,7 @@ $messages['mk'] = array(
 );
 
 /** Dutch (Nederlands)
+ * @author SPQRobin
  * @author Siebrand
  */
 $messages['nl'] = array(
@@ -232,6 +240,8 @@ $messages['nl'] = array(
 	'wikilove-get-started-list-2' => 'Voegt gegevens toe aan uw Wikiwaardering',
 	'wikilove-get-started-list-3' => 'Uw Wikiwaardering verzenden!',
 	'wikilove-add-details' => 'Gegevens toevoegen',
+	'wikilove-image' => 'Afbeelding:',
+	'wikilove-header' => 'Koptekst:',
 	'wikilove-title' => 'Onderwerp:',
 	'wikilove-enter-message' => 'Voer een bericht in:',
 	'wikilove-omit-sig' => '(zonder ondertekening)',
@@ -239,6 +249,11 @@ $messages['nl'] = array(
 	'wikilove-preview' => 'Voorvertoning',
 	'wikilove-button-send' => 'Wikiwaardering versturen',
 	'wikilove-type-makeyourown' => 'Uw eigen Wikiwaardering maken',
+	'wikilove-err-header' => 'Geef een koptekst op.',
+	'wikilove-err-title' => 'Geef een naam op.',
+	'wikilove-err-msg' => 'Geef een bericht op.',
+	'wikilove-err-image' => 'Selecteer een afbeelding.',
+	'wikilove-err-sig' => 'Neem geen ondertekening op in dit bericht.',
 );
 
 /** Portuguese (Português)
