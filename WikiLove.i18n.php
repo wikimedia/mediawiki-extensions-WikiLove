@@ -49,6 +49,7 @@ $messages['en'] = array(
 $messages['qqq'] = array(
 	'wikilove-button-preview' => 'Button text. Verb.',
 	'wikilove-preview' => 'Title. Noun.',
+	'wikilove-barnstar-header' => 'See [[:wikipedia:Barnstar]]. Probably not literally translatable.',
 );
 
 /** German (Deutsch)
@@ -118,6 +119,7 @@ $messages['gl'] = array(
 	'wikilove-get-started-list-3' => 'Enviar o seu amor wiki!',
 	'wikilove-add-details' => 'Engadir detalles',
 	'wikilove-image' => 'Imaxe:',
+	'wikilove-header' => 'Cabeceira:',
 	'wikilove-title' => 'Título:',
 	'wikilove-enter-message' => 'Escriba unha mensaxe:',
 	'wikilove-omit-sig' => '(sen sinatura)',
@@ -125,10 +127,41 @@ $messages['gl'] = array(
 	'wikilove-preview' => 'Vista previa',
 	'wikilove-button-send' => 'Enviar o amor wiki',
 	'wikilove-type-makeyourown' => 'Faga o seu',
+	'wikilove-err-header' => 'Escriba unha cabeceira.',
 	'wikilove-err-title' => 'Escriba un título.',
 	'wikilove-err-msg' => 'Escriba unha mensaxe.',
 	'wikilove-err-image' => 'Seleccione unha imaxe.',
 	'wikilove-err-sig' => 'Non incluír a sinatura na mensaxe.',
+	'wikilove-barnstar-header' => 'Unha medalla para vostede!',
+);
+
+/** Hebrew (עברית)
+ * @author Amire80
+ */
+$messages['he'] = array(
+	'wikilove-desc' => 'הוספת ממשק לשליחת תגובות חיוביות לדפי שיחת משתמש',
+	'wikilove' => 'ויקי־אהבה',
+	'wikilove-enable-preference' => 'הפעלה של הצגת הערכה למשתמשים אחרים באמצעות לשונית ויקי־אהבה (ניסיוני)',
+	'wikilove-tab-text' => 'להראות הערכה',
+	'tooltip-ca-wikilove' => 'לשלוח למשתמש הזה הודעה שמראה את הערכתך',
+	'wikilove-dialog-title' => 'ויקי־אהבה',
+	'wikilove-select-type' => 'בחירת סוג',
+	'wikilove-get-started-header' => 'בואו נתחיל!',
+	'wikilove-get-started-list-1' => 'איזה סוג של ויקי‏־אהבה לשלוח',
+	'wikilove-get-started-list-2' => 'להוסיף פרטים להודעת ויקי־‏אהבה',
+	'wikilove-get-started-list-3' => 'לשלוח ויקי־אהבה!',
+	'wikilove-add-details' => 'הוספת פרטים',
+	'wikilove-image' => 'תמונה:',
+	'wikilove-enter-message' => 'הודעה:',
+	'wikilove-omit-sig' => '(ללא חתימה)',
+	'wikilove-button-preview' => 'תצוגה מקדימה',
+	'wikilove-preview' => 'תצוגה מקדימה',
+	'wikilove-button-send' => 'לשלוח ויקי־אהבה',
+	'wikilove-type-makeyourown' => 'יצירה אישית',
+	'wikilove-err-msg' => 'נא להזין הודעה.',
+	'wikilove-err-image' => 'נא לבחור תמונה.',
+	'wikilove-err-sig' => 'נא לא לכתוב חתימה בהודעה.',
+	'wikilove-barnstar-header' => 'קיבלת צל"ש!',
 );
 
 /** Interlingua (Interlingua)
@@ -147,6 +180,8 @@ $messages['ia'] = array(
 	'wikilove-get-started-list-2' => 'Adde detalios a tu WikiLove',
 	'wikilove-get-started-list-3' => 'Invia tu WikiLove!',
 	'wikilove-add-details' => 'Adder detalios',
+	'wikilove-image' => 'Imagine:',
+	'wikilove-header' => 'Titulo:',
 	'wikilove-title' => 'Titulo:',
 	'wikilove-enter-message' => 'Entra un message:',
 	'wikilove-omit-sig' => '(sin signatura)',
@@ -154,10 +189,12 @@ $messages['ia'] = array(
 	'wikilove-preview' => 'Previsualisation',
 	'wikilove-button-send' => 'Inviar WikiLove',
 	'wikilove-type-makeyourown' => 'Crear le tue',
+	'wikilove-err-header' => 'Per favor entra un titulo.',
 	'wikilove-err-title' => 'Per favor entra un titulo.',
 	'wikilove-err-msg' => 'Per favor entra un message.',
 	'wikilove-err-image' => 'Per favor selige un imagine.',
 	'wikilove-err-sig' => 'Per favor non include un signatura in le message.',
+	'wikilove-barnstar-header' => 'Un medalia pro te!',
 );
 
 /** Colognian (Ripoarisch)
@@ -210,6 +247,8 @@ $messages['mk'] = array(
 	'wikilove-get-started-list-2' => 'Внесете содржина на ВикиЉубов-та',
 	'wikilove-get-started-list-3' => 'Испратете ја вашата ВикиЉубов',
 	'wikilove-add-details' => 'Внесете содржина',
+	'wikilove-image' => 'Слика:',
+	'wikilove-header' => 'Заглавие:',
 	'wikilove-title' => 'Наслов:',
 	'wikilove-enter-message' => 'Внесете порака:',
 	'wikilove-omit-sig' => '(без потпис)',
@@ -217,10 +256,12 @@ $messages['mk'] = array(
 	'wikilove-preview' => 'Преглед',
 	'wikilove-button-send' => 'Испрати ВикиЉубов',
 	'wikilove-type-makeyourown' => 'Направете своја',
+	'wikilove-err-header' => 'Внесете заглавие.',
 	'wikilove-err-title' => 'Внесете наслов.',
 	'wikilove-err-msg' => 'Внесете порака.',
 	'wikilove-err-image' => 'Одберете слика.',
 	'wikilove-err-sig' => 'Не ставајте потпис во пораката.',
+	'wikilove-barnstar-header' => 'Медал за заслуги',
 );
 
 /** Dutch (Nederlands)
@@ -273,6 +314,7 @@ $messages['pt'] = array(
 	'wikilove-get-started-list-3' => 'Enviar o seu WikiApreço!',
 	'wikilove-add-details' => 'Adicionar detalhes',
 	'wikilove-image' => 'Imagem:',
+	'wikilove-header' => 'Cabeçalho:',
 	'wikilove-title' => 'Título:',
 	'wikilove-enter-message' => 'Introduza uma mensagem:',
 	'wikilove-omit-sig' => '(sem assinatura)',
@@ -280,10 +322,20 @@ $messages['pt'] = array(
 	'wikilove-preview' => 'Antevisão',
 	'wikilove-button-send' => 'Enviar WikiApreço',
 	'wikilove-type-makeyourown' => 'Crie o seu',
+	'wikilove-err-header' => 'Introduza um cabeçalho, por favor.',
 	'wikilove-err-title' => 'Introduza um título, por favor.',
 	'wikilove-err-msg' => 'Introduza uma mensagem, por favor.',
 	'wikilove-err-image' => 'Escolha uma imagem, por favor.',
 	'wikilove-err-sig' => 'Não inclua uma assinatura na mensagem, por favor.',
+	'wikilove-barnstar-header' => 'Uma medalha para si!',
+);
+
+/** Telugu (తెలుగు)
+ * @author Veeven
+ */
+$messages['te'] = array(
+	'wikilove-add-details' => 'వివరాలను చేర్చు',
+	'wikilove-title' => 'శీర్షిక:',
 );
 
 /** Tagalog (Tagalog)
