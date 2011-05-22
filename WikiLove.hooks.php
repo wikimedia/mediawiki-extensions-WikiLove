@@ -41,23 +41,20 @@ class WikiLoveHooks {
 	}
 	
 	/**
-	 * Adds the required module and edit token JS if we are on a user (talk) page.
+	 * Adds the required module if we are on a user (talk) page.
 	 *
 	 * @param $output
 	 * @param $skin Skin
 	 */
 	public static function beforePageDisplay( $out, $skin ) {
 		global $wgWikiLoveGlobal, $wgUser;
-		if ( !$wgWikiLoveGlobal && !$wgUser->getOption( 'wikilove-enabled' ) ) return true;
+		if ( !$wgWikiLoveGlobal && !$wgUser->getOption( 'wikilove-enabled' ) ) {
+			return true;
+		}
 		
 		$title = self::getUserTalkPage( $skin->getTitle() );
 		if ( !is_null( $title ) ) {
 			$out->addModules( 'ext.wikiLove' );
-			$out->addInlineScript(
-			'jQuery( document ).ready( function() {
-				jQuery.wikiLove.editToken = ' . FormatJson::encode( $wgUser->edittoken() ) . ';
-			} );'
-		);
 		}
 		return true;
 	}

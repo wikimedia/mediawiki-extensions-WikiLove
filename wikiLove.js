@@ -1,7 +1,6 @@
 ( function( $ ) { $.wikiLove = {
 
 	$dialog: null, // dialog jQuery object
-	editToken: '', // edit token used for the final AJAX call
 	currentTypeId: null, // id of the currently selected type (e.g. 'barnstar' or 'makeyourown')
 	currentSubtypeId: null, // id of the currently selected subtype (e.g. 'original' or 'special')
 	currentTypeOrSubtype: null, // content of the current (sub)type (i.e. an object with title, descr, text, etc.)
@@ -213,14 +212,14 @@
 	 */
 	sendEmail: function( subject, text ) {
 		$.ajax({
-			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php?',
+			url: mw.util.wikiScript( 'api' ),
 			data: {
 				'action': 'emailuser',
 				'target': wgTitle,
 				'subject': subject,
 				'text': text,
 				'format': 'json',
-				'token': $.wikiLove.editToken
+				'token': mw.user.tokens.get( 'editToken' )
 			},
 			dataType: 'json',
 			type: 'POST'
@@ -445,7 +444,7 @@
 				'type': type,
 				'text': wikitext,
 				'subject': subject,
-				'token': $.wikiLove.editToken
+				'token': mw.user.tokens.get( 'editToken' )
 			},
 			dataType: 'json',
 			type: 'POST',
