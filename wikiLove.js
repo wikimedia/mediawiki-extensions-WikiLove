@@ -303,7 +303,7 @@
 			'header': $( '#wlHeader' ).val(),
 			'msg': msg,
 			'type': $.wikiLove.currentTypeId
-				+ ($.wikiLove.currentSubtypeId !== null ? '-' + $.wikiLove.currentSubtypeId : ''),
+				+ ($.wikiLove.currentSubtypeId !== null ? '-' + $.wikiLove.currentSubtypeId : '')
 		};
 		
 		if ( $( '#wlNotifyCheckbox:checked' ).val() && $.wikiLove.emailable ) {
