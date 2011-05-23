@@ -31,6 +31,7 @@ $messages['en'] = array(
 	'wikilove-omit-sig' => '(without a signature)',
 	'wikilove-button-preview' => 'Preview',
 	'wikilove-preview' => 'Preview',
+	'wikilove-notify' => 'Notify the user by e-mail',
 	'wikilove-button-send' => 'Send WikiLove',
 	'wikilove-type-makeyourown' => 'Make your own',
 	'wikilove-err-header' => 'Please enter a header.',
@@ -38,9 +39,6 @@ $messages['en'] = array(
 	'wikilove-err-msg' => 'Please enter a message.',
 	'wikilove-err-image' => 'Please select an image.',
 	'wikilove-err-sig' => 'Please do not include a signature in the message.',
-	
-	// messages for default types
-	'wikilove-barnstar-header' => 'A barnstar for you!',
 );
 
 /** Message documentation (Message documentation)

@@ -7,16 +7,16 @@ class WikiLoveApi extends ApiBase {
 		
 		$title = Title::newFromText( $params['title'] );
 		if ( is_null( $title ) ) {
-			$this->dieUsageMsg( array( 'invalidtitle', $params['title'] ) );
+			$this->dieUsageMsg( array( 'invaliduser', $params['title'] ) );
 		}
 		
 		$talk = WikiLoveHooks::getUserTalkPage( $title );
 		if ( is_null( $talk ) ) {
-			$this->dieUsageMsg( array( 'invalidtitle', $params['title'] ) );
+			$this->dieUsageMsg( array( 'invaliduser', $params['title'] ) );
 		}
 		
 		if ( $wgWikiLoveLogging ) {
-			$this->saveInDb( $talk, $params['subject'], $params['text'], $params['type'], $params['template'] );
+			$this->saveInDb( $talk, $params['subject'], $params['text'], $params['type'], isset( $params['email'] ) ? 1 : 0 );
 		}
 		
 		$api = new ApiMain( new FauxRequest( array(
@@ -28,15 +28,19 @@ class WikiLoveApi extends ApiBase {
 			'summary' => $params['subject'],
 			'notminor' => true,
 		), false, array( 'wsEditToken' => $wgRequest->getSessionData( 'wsEditToken' ) ) ), true );
+		
+		if ( isset( $params['email'] ) ) {
+			$this->emailUser( $talk, $params['subject'], $params['email'] );
+		}
 
 		$api->execute();
 		
 		$result = $api->getResult();
 		$data = $result->getData();
 		
-		$talk->setFragment( '#' . $params['subject'] );
 		$this->getResult()->addValue( 'redirect', 'pageName', $talk->getPrefixedDBkey() );
-		$this->getResult()->addValue( 'redirect', 'fragment', $talk->getFragmentForURL() );
+		$this->getResult()->addValue( 'redirect', 'fragment', Title::escapeFragmentForURL( $params['subject'] ) );
+		// note that we cannot use Title::makeTitle here as it doesn't sanitize the fragment
 	}
 
 	/**
@@ -46,23 +50,36 @@ class WikiLoveApi extends ApiBase {
 	 * @param $type
 	 * @return void
 	 */
-	private function saveInDb( $talk, $subject, $text, $type, $template ) {
+	private function saveInDb( $talk, $subject, $text, $type, $email ) {
 		global $wgUser;
 		$dbw = wfGetDB( DB_MASTER );
 		$values = array(
-			'wl_timestamp' => $dbw->timestamp(),
-			'wl_sender_id' => $wgUser->getId(),
-			'wl_receiver_id' => User::newFromName( $talk->getSubjectPage()->getBaseText() )->getId(),
-			'wl_type' => $type,
-			'wl_subject' => $subject,
-			'wl_message' => $text,
-			'wl_email' => 0,
+			'wll_timestamp' => $dbw->timestamp(),
+			'wll_sender' => $wgUser->getId(),
+			'wll_receiver' => User::newFromName( $talk->getSubjectPage()->getBaseText() )->getId(),
+			'wll_type' => $type,
+			'wll_subject' => $subject,
+			'wll_message' => $text,
+			'wll_email' => $email,
 		);
 		try{
 			$dbw->insert( 'wikilove_log', $values, __METHOD__ );
 		} catch( DBQueryError $dbqe ) {
-			$this->dieUsage( 'Warning: action was not logged!', 'nologging' );
-			return false;
+			$this->setWarning( 'Action was not logged' );
+		}
+	}
+	
+	private function emailUser( $talk, $subject, $text ) {
+		$api = new ApiMain( new FauxRequest( array(
+			'action' => 'emailuser',
+			'target'  =>  User::newFromName( $talk->getSubjectPage()->getBaseText() )->getName(),
+			'subject' => $subject,
+			'text'  => $text,
+		), false, array( 'wsEditToken' => $wgRequest->getSessionData( 'wsEditToken' ) ) ), true );
+		try{
+			$api->execute();
+		} catch( DBQueryError $dbqe ) {
+			$this->setWarning( 'E-mail was not sent' );
 		}
 	}
 
@@ -85,6 +102,9 @@ class WikiLoveApi extends ApiBase {
 				ApiBase::PARAM_REQUIRED => true,
 			),
 			'type' => array(
+				ApiBase::PARAM_TYPE => 'string',
+			),
+			'email' => array(
 				ApiBase::PARAM_TYPE => 'string',
 			),
 		);
@@ -125,7 +145,7 @@ class WikiLoveApi extends ApiBase {
 
 	public function getExamples() {
 		return array(
-			'api.php?action=wikiLove&title=User:Dummy&text=Love&subject=Hi&token=%2B\\',
+			'api.php?action=wikilove&title=User:Dummy&text=Love&subject=Hi&token=%2B\\',
 		);
 	}
 

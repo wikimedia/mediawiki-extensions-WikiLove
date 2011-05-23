@@ -45,6 +45,11 @@ $wgExtensionCredits['other'][] = array(
 	'descriptionmsg' => 'wikilove-desc',
 );
 
+// default user options
+$wgWikiLoveGlobal  = false; // enable the extension for all users, removing the user preference
+$wgWikiLoveTabIcon = true;  // use an icon for skins that support them (i.e. Vector)
+$wgWikiLoveLogging = false; // enable logging of giving of WikiLove
+
 // current directory including trailing slash
 $dir = dirname( __FILE__ ) . '/';
 
@@ -60,16 +65,10 @@ $wgHooks['GetPreferences'][]                      = 'WikiLoveHooks::getPreferenc
 $wgHooks['SkinTemplateNavigation'][]              = 'WikiLoveHooks::skinTemplateNavigation';
 $wgHooks['SkinTemplateTabs'][]                    = 'WikiLoveHooks::skinTemplateTabs';
 $wgHooks['BeforePageDisplay'][]                   = 'WikiLoveHooks::beforePageDisplay';
-//$wgHooks['LoadExtensionSchemaUpdates'][]          = 'WikiLoveHooks::loadExtensionSchemaUpdates';
-// Not a final schema, please apply patches/WikiLoveLog.sql manually for now!
+$wgHooks['LoadExtensionSchemaUpdates'][]          = 'WikiLoveHooks::loadExtensionSchemaUpdates';
 
 // api modules
-$wgAPIModules['wikiLove'] = 'WikiLoveApi';
-
-// default user options
-$wgWikiLoveGlobal  = false;
-$wgWikiLoveTabIcon = true;
-$wgWikiLoveLogging = false;
+$wgAPIModules['wikilove'] = 'WikiLoveApi';
 
 // resources
 $wikiLoveTpl = array(
@@ -100,6 +99,7 @@ $wgResourceModules += array(
 			'wikilove-omit-sig',
 			'wikilove-button-preview',
 			'wikilove-preview',
+			'wikilove-notify',
 			'wikilove-button-send',
 			'wikilove-type-makeyourown',
 			'wikilove-err-header',
@@ -113,6 +113,7 @@ $wgResourceModules += array(
 			'jquery.ui.dialog',
 			'jquery.ui.button',
 			'jquery.elastic',
+			'jquery.localize',
 		),
 	),
 	'jquery.elastic' => $wikiLoveTpl + array(
