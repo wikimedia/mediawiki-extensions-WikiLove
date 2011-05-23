@@ -88,18 +88,36 @@ $messages['de'] = array(
 /** French (Français)
  * @author Crochet.david
  * @author IAlex
+ * @author Sherbrooke
  */
 $messages['fr'] = array(
-	'wikilove-tab-text' => 'Montrer l’appréciation',
+	'wikilove-desc' => "Ajoute une interface pour faciliter la rétroaction positive sur la page de discussion d'un utilisateur",
+	'wikilove' => 'WikiLove',
+	'wikilove-enable-preference' => "Active l'onglet WikiLove servant à signifier aux autres contributeurs votre appréciation (expérimental)",
+	'wikilove-tab-text' => 'Montrer votre appréciation',
+	'tooltip-ca-wikilove' => 'Poster un message à cet utilisateur pour indiquer votre appréciation',
+	'wikilove-dialog-title' => 'WikiLove',
 	'wikilove-select-type' => 'Sélectionnez le type',
 	'wikilove-get-started-header' => 'Commençons !',
+	'wikilove-get-started-list-1' => 'Sélectionnez le type de WikiLove que vous souhaitez envoyer',
+	'wikilove-get-started-list-2' => 'Ajoutez des détails à votre WikiLove',
+	'wikilove-get-started-list-3' => 'Envoyez votre WikiLove !',
 	'wikilove-add-details' => 'Ajouter des détails',
 	'wikilove-image' => 'Image :',
+	'wikilove-header' => 'En-tête :',
 	'wikilove-title' => 'Titre :',
 	'wikilove-enter-message' => 'Entrez un message :',
 	'wikilove-omit-sig' => '(sans signature)',
 	'wikilove-button-preview' => 'Prévisualiser',
 	'wikilove-preview' => 'Prévisualiser',
+	'wikilove-button-send' => 'Envoyer le WikiLove',
+	'wikilove-type-makeyourown' => 'Créez votre propre',
+	'wikilove-err-header' => "S'il vous plaît inscrire un en-tête.",
+	'wikilove-err-title' => "S'il vous plaît inscrire un titre.",
+	'wikilove-err-msg' => "S'il vous plaît inscrire un message.",
+	'wikilove-err-image' => "S'il vous plaît sélectionner une image.",
+	'wikilove-err-sig' => "S'il vous plaît ne pas inclure une signature dans le message.",
+	'wikilove-barnstar-header' => 'UNe étoile pour vous !',
 );
 
 /** Galician (Galego)
@@ -230,9 +248,17 @@ $messages['ksh'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
+	'wikilove' => 'WikiLove',
+	'wikilove-tab-text' => 'Bewäertung weisen',
+	'wikilove-dialog-title' => 'WikiLove',
 	'wikilove-get-started-header' => 'Elo geet et lass!',
 	'wikilove-add-details' => 'Detailer derbäisetzen',
+	'wikilove-image' => 'Bild:',
 	'wikilove-title' => 'Titel:',
+	'wikilove-button-preview' => 'Kucken ouni ofzespäicheren',
+	'wikilove-preview' => 'Kucken ouni ofzespäicheren',
+	'wikilove-err-image' => 'Sicht w.e.g. e Bild eraus.',
+	'wikilove-barnstar-header' => 'Een Uerde fir Iech!',
 );
 
 /** Macedonian (Македонски)
@@ -299,6 +325,7 @@ $messages['nl'] = array(
 	'wikilove-err-msg' => 'Geef een bericht op.',
 	'wikilove-err-image' => 'Selecteer een afbeelding.',
 	'wikilove-err-sig' => 'Neem geen ondertekening op in dit bericht.',
+	'wikilove-barnstar-header' => 'Een ster voor jou!',
 );
 
 /** Portuguese (Português)
