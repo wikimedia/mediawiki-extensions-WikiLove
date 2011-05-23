@@ -1,4 +1,3 @@
-var mw;
 ( function( $ ) { $.wikiLove = {
 
 	$dialog: null, // dialog jQuery object
