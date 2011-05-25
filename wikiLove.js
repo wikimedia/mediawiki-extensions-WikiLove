@@ -178,7 +178,6 @@
 			$( '#wlPreview' ).hide();
 			$.wikiLove.previewData = null;
 		}
-		return false;
 	},
 	
 	/*
@@ -309,7 +308,6 @@
 		if ( $( '#wlNotifyCheckbox:checked' ).val() && $.wikiLove.emailable ) {
 			$.wikiLove.previewData.mail = $.wikiLove.prepareMsg( $.wikiLove.currentTypeOrSubtype.mail );
 		}
-		return false;
 	},
 	
 	showError: function( errmsg ) {
@@ -385,7 +383,6 @@
 		e.preventDefault();
 		$.wikiLove.doSend( $.wikiLove.previewData.header, $.wikiLove.previewData.msg,
 			$.wikiLove.previewData.type, $.wikiLove.previewData.notify );
-		return false;
 	},
 	
 	/*
@@ -482,7 +479,6 @@
 										$( '#wlGallery a' ).removeClass( 'selected' );
 										$( this ).addClass( 'selected' );
 										$( '#wlImage' ).val( $.wikiLove.gallery[$( this ).attr( 'id' )] );
-										return false;
 									}) 
 							);
 							$.wikiLove.gallery['wlGalleryImg' + index] = page.title;
@@ -562,7 +558,6 @@
 											$( '#wlGallery a' ).removeClass( 'selected' );
 											$( this ).addClass( 'selected' );
 											$( '#wlImage' ).val( $.wikiLove.gallery[$( this ).attr( 'id' )] );
-											return false;
 										})
 								);
 								
@@ -590,7 +585,6 @@
 		$( '#ca-wikilove a' ).click( function( e ) {
 			$.wikiLove.openDialog();
 			e.preventDefault();
-			return false;
 		});
 	}
 };
