@@ -1,3 +1,4 @@
+( function( $ ) {
 $.wikiLove.optionsHook = function() { return {
 	defaultText: '{| style="background-color: $5; border: 1px solid $6;"\n\
 |rowspan="2" style="vertical-align: middle; padding: 5px;" | [[Image:$3|$4]]\n\
@@ -78,3 +79,4 @@ $.wikiLove.optionsHook = function() { return {
 		}
 	}
 }; };
+} )( jQuery );
