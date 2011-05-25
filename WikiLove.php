@@ -71,19 +71,15 @@ $wgHooks['LoadExtensionSchemaUpdates'][]          = 'WikiLoveHooks::loadExtensio
 $wgAPIModules['wikilove'] = 'WikiLoveApi';
 
 // resources
-$wikiLoveTpl = array(
-	'localBasePath' => dirname( __FILE__ ),
-	'remoteExtPath' => 'WikiLove',
-	'group'         => 'ext.wikiLove',
-);
-
 $wgResourceModules += array(
-	'ext.wikiLove' => $wikiLoveTpl + array(
-		'scripts'      => array(
-			'wikiLove.js',
-			'defaultTypes.js',
+	'ext.wikiLove' => array(
+		'localBasePath' => dirname( __FILE__ ) . '/modules/ext.wikiLove',
+		'remoteExtPath' => 'WikiLove/modules/ext.wikiLove',
+		'scripts' => array(
+			'ext.wikiLove.core.js',
+			'ext.wikiLove.defaultOptions.js',
 		),
-		'styles'       => 'wikiLove.css',
+		'styles' => 'ext.wikiLove.css',
 		'messages' => array(
 			'wikilove-dialog-title',
 			'wikilove-select-type',
@@ -116,7 +112,9 @@ $wgResourceModules += array(
 			'jquery.localize',
 		),
 	),
-	'jquery.elastic' => $wikiLoveTpl + array(
+	'jquery.elastic' => array(
+		'localBasePath' => dirname( __FILE__ ) . '/modules/jquery.elastic',
+		'remoteExtPath' => 'WikiLove/modules/jquery.elastic',
 		'scripts' => 'jquery.elastic.js',
 	),
 );
