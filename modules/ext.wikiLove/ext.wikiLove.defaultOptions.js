@@ -46,20 +46,21 @@ $.wikiLove.optionsHook = function() { return {
 					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
 				}
 			},
-			icon: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/extensions/WikiLove/images/icons/wikilove-icon-barnstar.png' // icon for left-side menu
+			icon: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/extensions/WikiLove/modules/ext.wikiLove/images/icons/wikilove-icon-barnstar.png' // icon for left-side menu
 		},
-		'puppy': {
-			name: 'Puppy',
+		'beer': {
+			name: 'Beer',
 			fields: [ 'header' ],
-			header: 'A puppy for you!',
+			header: 'A beer for you!',
 			text: '[[$3|left|150px]]\n$1\n\n~~~~\n<br style="clear: both"/>', // custom text
 			gallery: {
 				// right now we can only query the local wiki (not e.g. commons)
-				category: 'Category:Puppies',
+				category: 'Category:Beer',
 				total: 100, // total number of pictures to retrieve, and to randomise
 				num: 3, // number of pictures to show from the randomised set
 				width: 145 // width of each picture in pixels in the interface (not in the template)
-			}
+			},
+			icon: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/extensions/WikiLove/modules/ext.wikiLove/images/icons/wikilove-icon-beer.png' // icon for left-side menu
 		},
 		'kitten': {
 			name: 'Kitten',
@@ -69,7 +70,8 @@ $.wikiLove.optionsHook = function() { return {
 			gallery: {
 				imageList: ['File:Cucciolo gatto Bibo.jpg','File:Kitten (06) by Ron.jpg','File:Kitten-stare.jpg'],
 				width: 145
-			}
+			},
+			icon: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/extensions/WikiLove/modules/ext.wikiLove/images/icons/wikilove-icon-kitten.png' // icon for left-side menu
 		},
 		// default type, nice to leave this one in place when adding other types
 		'makeyourown': {
