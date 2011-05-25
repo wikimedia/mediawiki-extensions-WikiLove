@@ -77,7 +77,8 @@ $.wikiLove.optionsHook = function() { return {
 		'makeyourown': {
 			name: mw.msg( 'wikilove-type-makeyourown' ),
 			fields: [ 'header', 'title', 'image', 'notify' ],
-			imageSize: '150px'
+			imageSize: '150px',
+			icon: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/extensions/WikiLove/modules/ext.wikiLove/images/icons/wikilove-icon-create.png' // icon for left-side menu
 		}
 	}
 }; };
