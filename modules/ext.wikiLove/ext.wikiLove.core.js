@@ -1,5 +1,7 @@
 ( function( $ ) { $.wikiLove = {
-
+	
+	options: {}, // options modifiable by the user
+	optionsHook: function() { return {}; }, // hook that can be overridden by the user to modify options
 	$dialog: null, // dialog jQuery object
 	currentTypeId: null, // id of the currently selected type (e.g. 'barnstar' or 'makeyourown')
 	currentSubtypeId: null, // id of the currently selected subtype (e.g. 'original' or 'special')
@@ -7,43 +9,30 @@
 	previewData: null, // data of the currently previewed thing is set here
 	emailable: false,
 	gallery: {},
-	defaultText: '{| style="background-color: $5; border: 1px solid $6;"\n\
-|rowspan="2" style="vertical-align: middle; padding: 5px;" | [[Image:$3|$4]]\n\
-|style="font-size: x-large; padding: 3px; height: 1.5em;" | \'\'\'$2\'\'\'\n\
-|-\n\
-|style="vertical-align: middle; padding: 3px;" | $1 ~~~~\n\
-|}',
-	defaultBackgroundColor: '#fdffe7',
-	defaultBorderColor: '#fceb92',
-	defaultImageSize: '100px',
 	
 	/*
 	 * Opens the dialog and builds it if necessary.
 	 */
 	openDialog: function() {
 		if ( $.wikiLove.$dialog === null ) {
-			// Load local configuration
-			var wikiLoveConfigUrl = wgServer + wgScript + '?' + $.param( { 'title': 'MediaWiki:WikiLove.js', 'action': 'raw', 'ctype': 'text/javascript' } );
-			mw.loader.load( wikiLoveConfigUrl );
-			
 			// Test to see if the 'E-mail this user' link exists
 			$.wikiLove.emailable = $( '#t-emailuser' ).length ? true : false;
 			
 			// Build a type list like this:
 			var $typeList = $( '<ul id="mw-wikilove-types"></ul>' );
-			for( var typeId in $.wikiLove.types ) {
+			for( var typeId in $.wikiLove.options.types ) {
 				var $button = $( '<a href="#"></a>' );
 				var $buttonInside = $( '<div class="mw-wikilove-inside"></div>' );
 				
-				if( typeof $.wikiLove.types[typeId].icon == 'string' ) {
+				if( typeof $.wikiLove.options.types[typeId].icon == 'string' ) {
 					$buttonInside.append( '<div class="mw-wikilove-icon-box"><img src="'
-						+ mw.html.escape( $.wikiLove.types[typeId].icon ) + '"/></div>' );
+						+ mw.html.escape( $.wikiLove.options.types[typeId].icon ) + '"/></div>' );
 				}
 				else {
 					$buttonInside.addClass( 'mw-wikilove-no-icon' );
 				}
 				
-				$buttonInside.append( '<div class="mw-wikilove-link-text">' + $.wikiLove.types[typeId].name + '</div>' );
+				$buttonInside.append( '<div class="mw-wikilove-link-text">' + $.wikiLove.options.types[typeId].name + '</div>' );
 				
 				$button.append( '<div class="mw-wikilove-left-cap"></div>');
 				$button.append( $buttonInside );
@@ -149,14 +138,14 @@
 			$( '#mw-wikilove-types a' ).removeClass( 'selected' );
 			$( this ).addClass( 'selected' ); // highlight the new type in the menu
 			
-			if( typeof $.wikiLove.types[$.wikiLove.currentTypeId].subtypes == 'object' ) {
+			if( typeof $.wikiLove.options.types[$.wikiLove.currentTypeId].subtypes == 'object' ) {
 				// we're dealing with subtypes here
 				$.wikiLove.currentTypeOrSubtype = null; // reset the (sub)type object until a subtype is selected
 				$( '#mw-wikilove-subtype' ).html( '' ); // clear the subtype menu
 				
-				for( var subtypeId in $.wikiLove.types[$.wikiLove.currentTypeId].subtypes ) {
+				for( var subtypeId in $.wikiLove.options.types[$.wikiLove.currentTypeId].subtypes ) {
 					// add all the subtypes to the menu while setting their subtype ids in jQuery data
-					var subtype = $.wikiLove.types[$.wikiLove.currentTypeId].subtypes[subtypeId];
+					var subtype = $.wikiLove.options.types[$.wikiLove.currentTypeId].subtypes[subtypeId];
 					$( '#mw-wikilove-subtype' ).append(
 						$( '<option></option>' ).text( subtype.option ).data( 'subtypeId', subtypeId )
 					);
@@ -164,13 +153,13 @@
 				$( '#mw-wikilove-subtype' ).show();
 				
 				// change and show the subtype label depending on the type
-				$( '#mw-wikilove-subtype-label' ).text( $.wikiLove.types[$.wikiLove.currentTypeId].select || mw.msg( 'wikilove-select-type' ) );
+				$( '#mw-wikilove-subtype-label' ).text( $.wikiLove.options.types[$.wikiLove.currentTypeId].select || mw.msg( 'wikilove-select-type' ) );
 				$( '#mw-wikilove-subtype-label' ).show();
 				$.wikiLove.changeSubtype(); // update controls depending on the currently selected (i.e. first) subtype
 			}
 			else {
 				// there are no subtypes, just use this type for the current (sub)type
-				$.wikiLove.currentTypeOrSubtype = $.wikiLove.types[$.wikiLove.currentTypeId];
+				$.wikiLove.currentTypeOrSubtype = $.wikiLove.options.types[$.wikiLove.currentTypeId];
 				$( '#mw-wikilove-subtype' ).hide();
 				$( '#mw-wikilove-subtype-label' ).hide();
 				$.wikiLove.updateAllDetails(); // update controls depending on this type
@@ -190,7 +179,7 @@
 		var newSubtypeId = $( '#mw-wikilove-subtype option:selected' ).first().data( 'subtypeId' );
 		if( $.wikiLove.currentSubtypeId != newSubtypeId ) { // only change stuff when a different subtype is selected
 			$.wikiLove.currentSubtypeId = newSubtypeId;
-			$.wikiLove.currentTypeOrSubtype = $.wikiLove.types[$.wikiLove.currentTypeId]
+			$.wikiLove.currentTypeOrSubtype = $.wikiLove.options.types[$.wikiLove.currentTypeId]
 				.subtypes[$.wikiLove.currentSubtypeId];
 			$( '#mw-wikilove-subtype-description' ).html( $.wikiLove.currentTypeOrSubtype.descr );
 			$.wikiLove.updateAllDetails();
@@ -293,7 +282,7 @@
 		}
 		
 		var msg = $.wikiLove.prepareMsg(
-			$.wikiLove.currentTypeOrSubtype.text || $.wikiLove.defaultText,
+			$.wikiLove.currentTypeOrSubtype.text || $.wikiLove.options.defaultText,
 			$.wikiLove.currentTypeOrSubtype.imageSize,
 			$.wikiLove.currentTypeOrSubtype.backgroundColor,
 			$.wikiLove.currentTypeOrSubtype.borderColor
@@ -332,9 +321,9 @@
 		msg = msg.replace( '$2', $( '#mw-wikilove-title' ).val() ); // replace the title
 		msg = msg.replace( '$3', $( '#mw-wikilove-image' ).val() ); // replace the image
 		
-		var myImageSize = imageSize || $.wikiLove.defaultImageSize;
-		var myBackgroundColor = backgroundColor || $.wikiLove.defaultBackgroundColor;
-		var myBorderColor = borderColor || $.wikiLove.defaultBorderColor;
+		var myImageSize = imageSize || $.wikiLove.options.defaultImageSize;
+		var myBackgroundColor = backgroundColor || $.wikiLove.options.defaultBackgroundColor;
+		var myBorderColor = borderColor || $.wikiLove.options.defaultBorderColor;
 		
 		msg = msg.replace( '$4', myImageSize ); // replace the image size
 		msg = msg.replace( '$5', myBackgroundColor ); // replace the background color
@@ -580,17 +569,7 @@
 			}
 		});
 	},
-	
-	/*
-	 * Init function which is called upon page load. Binds the WikiLove icon to opening the dialog.
-	 */
-	init: function() {
-		$( '#ca-wikilove a' ).click( function( e ) {
-			$.wikiLove.openDialog();
-			e.preventDefault();
-		});
-	}
 };
-
-$( document ).ready( $.wikiLove.init );
 } ) ( jQuery );
+
+mw.log( 'core loaded' );

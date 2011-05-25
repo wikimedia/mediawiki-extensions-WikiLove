@@ -56,6 +56,7 @@ $dir = dirname( __FILE__ ) . '/';
 // add autoload classes
 $wgAutoloadClasses['WikiLoveApi']                 = $dir . 'WikiLove.api.php';
 $wgAutoloadClasses['WikiLoveHooks']               = $dir . 'WikiLove.hooks.php';
+$wgAutoloadClasses['WikiLoveLocal']               = $dir . 'WikiLove.local.php';
 
 // i18n messages
 $wgExtensionMessagesFiles['WikiLove']             = $dir . 'WikiLove.i18n.php';
@@ -81,7 +82,7 @@ $wgResourceModules += array(
 		'styles' => 'ext.wikiLove.icon.css',
 		'position' => 'top',
 	),
-	'ext.wikiLove' => $extWikiLoveTpl + array(
+	'ext.wikiLove.startup' => $extWikiLoveTpl + array(
 		'scripts' => array(
 			'ext.wikiLove.core.js',
 			'ext.wikiLove.defaultOptions.js',
@@ -117,6 +118,20 @@ $wgResourceModules += array(
 			'jquery.ui.button',
 			'jquery.elastic',
 			'jquery.localize',
+		),
+	),
+	'ext.wikiLove.local' => array(
+		'class' => 'WikiLoveLocal',
+		/* for information only, this is actually in the class!
+		'dependencies' => array(
+			'ext.wikiLove.startup',
+		),
+		*/
+	),
+	'ext.wikiLove.init' => $extWikiLoveTpl + array(
+		'scripts' => 'ext.wikiLove.init.js',
+		'dependencies' => array(
+			'ext.wikiLove.local',
 		),
 	),
 	'jquery.elastic' => array(
