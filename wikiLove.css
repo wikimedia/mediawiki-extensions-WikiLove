@@ -42,24 +42,24 @@ div.vectorTabs li a {
 }
 
 /* dialog */
-#wikiLoveDialog {
+#mw-wikilove-dialog {
 	margin: 10px;
 }
 
 /* dialog type selection */
-#wikiLoveDialog #wlSelectType {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type {
 	float: left;
 	width: 250px;
 }
 
-#wikiLoveDialog #wlSelectType ul {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
-#wikiLoveDialog #wlSelectType ul li,
-#wikiLoveDialog #wlSelectType a
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type ul li,
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a
 {
 	display: block;
 	width: 250px;
@@ -71,19 +71,19 @@ div.vectorTabs li a {
 	outline: none;
 }
 
-#wikiLoveDialog #wlSelectType a:hover,
-#wikiLoveDialog #wlSelectType a:focus {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:hover,
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:focus {
 	text-decoration:none;
 }
 
 /* IGNORED BY IE6 */
-#wikiLoveDialog #wlSelectType ul > li,
-#wikiLoveDialog #wlSelectType ul li > a {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type ul > li,
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type ul li > a {
 	display: inline-block;
 }
 
-#wikiLoveDialog #wlSelectType a .wlLeftCap,
-#wikiLoveDialog #wlSelectType a .wlRightCap {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-left-cap,
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-right-cap {
 	padding: 0;
 	margin: 0;
 	width: 6px;
@@ -92,45 +92,45 @@ div.vectorTabs li a {
 	top: 0px;
 }
 
-#wikiLoveDialog #wlSelectType a .wlLeftCap,
-#wikiLoveDialog #wlSelectType a .wlRightCap,
-#wikiLoveDialog #wlSelectType a .wlIconBox {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-left-cap,
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-right-cap,
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-icon-box {
 	/* @embed */
 	background-image: url(images/select-sprite.png);
 	background-repeat: no-repeat;
 }
 
-#wikiLoveDialog #wlSelectType a .wlLeftCap {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-left-cap {
 	/* @noflip */
 	left: 0px;
 	background-position: 0px 0px;
 }
 
-#wikiLoveDialog #wlSelectType a:hover .wlLeftCap,
-#wikiLoveDialog #wlSelectType a:focus .wlLeftCap {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:hover .mw-wikilove-left-cap,
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:focus .mw-wikilove-left-cap {
 	background-position: -6px 0px;
 }
 
-#wikiLoveDialog #wlSelectType a.selected .wlLeftCap {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a.selected .mw-wikilove-left-cap {
 	background-position: -12px 0px;
 }
 
-#wikiLoveDialog #wlSelectType a .wlRightCap {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-right-cap {
 	/* @noflip */
 	right: 0px;
 	background-position: -18px 0px;
 }
 
-#wikiLoveDialog #wlSelectType a:hover .wlRightCap,
-#wikiLoveDialog #wlSelectType a:focus .wlRightCap {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:hover .mw-wikilove-right-cap,
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:focus .mw-wikilove-right-cap {
 	background-position: -25px 0px;
 }
 
-#wikiLoveDialog #wlSelectType a.selected .wlRightCap {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a.selected .mw-wikilove-right-cap {
 	background-position: -32px 0px;
 }
 
-#wikiLoveDialog #wlSelectType a .wlInside {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-inside {
 	padding: 0;
 	margin: 0;
 	width: 238px;
@@ -145,16 +145,16 @@ div.vectorTabs li a {
 	background-repeat: repeat-x;
 }
 
-#wikiLoveDialog #wlSelectType a:hover .wlInside,
-#wikiLoveDialog #wlSelectType a:focus .wlInside {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:hover .mw-wikilove-inside,
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:focus .mw-wikilove-inside {
 	background-position: 0px -66px;
 }
 
-#wikiLoveDialog #wlSelectType a.selected .wlInside {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a.selected .mw-wikilove-inside {
 	background-position: 0px -132px;
 }
 
-#wikiLoveDialog #wlSelectType a .wlIconBox {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-icon-box {
 	padding: 0;
 	margin: 0;
 	width: 53px;
@@ -165,7 +165,7 @@ div.vectorTabs li a {
 	background-position: -42px 0px;
 }
 
-#wikiLoveDialog #wlSelectType a .wlIconBox img {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-icon-box img {
 	padding: 0;
 	margin: 0;
 	width: 53px;
@@ -175,16 +175,16 @@ div.vectorTabs li a {
 	left: 0px;
 }
 
-#wikiLoveDialog #wlSelectType a:hover .wlIconBox,
-#wikiLoveDialog #wlSelectType a:focus .wlIconBox {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:hover .mw-wikilove-icon-box,
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:focus .mw-wikilove-icon-box {
 	background-position: -97px 0px;
 }
 
-#wikiLoveDialog #wlSelectType a.selected .wlIconBox {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a.selected .mw-wikilove-icon-box {
 	background-position: -152px 0px;
 }
 
-#wikiLoveDialog #wlSelectType a .wlLinkText {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-link-text {
 	padding: 0;
 	margin: 0;
 	width: 170px;
@@ -199,12 +199,12 @@ div.vectorTabs li a {
 	color: white;
 }
 
-#wikiLoveDialog #wlSelectType a .wlNoIcon .wlLinkText {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-no-icon .mw-wikilove-link-text {
 	left: 3px;
 }
 
 /* dialog get started */
-#wikiLoveDialog #wlGetStarted {
+/*#mw-wikilove-dialog*/ #mw-wikilove-get-started {
 	float: right;
 	width: 380px;
 	margin-top: 40px;
@@ -218,44 +218,44 @@ div.vectorTabs li a {
 	background-repeat: no-repeat;
 }
 
-#wikiLoveDialog #wlGetStarted h2 {
+/*#mw-wikilove-dialog*/ #mw-wikilove-get-started h2 {
 	border: none;
 	font-weight: bold;
 }
 
-#wikiLoveDialog #wlGetStarted ol {
+/*#mw-wikilove-dialog*/ #mw-wikilove-get-started ol {
 	margin-left: 1.5em;
 }
 
 /* dialog add details */
-#wikiLoveDialog #wlAddDetails {
+/*#mw-wikilove-dialog*/ #mw-wikilove-add-details {
 	float: right;
 	width: 480px;
 	margin-bottom: 5px;
 }
 
-#wikiLoveDialog #wlAddDetails label {
+/*#mw-wikilove-dialog*/ #mw-wikilove-add-details label {
 	font-weight: bold;
 	font-size: 1.1em;
 }
 
-#wikiLoveDialog #wlAddDetails .text {
+/*#mw-wikilove-dialog*/ #mw-wikilove-add-details .text {
 	display: block;
 	width: 300px;
 }
 
-#wikiLoveDialog #wlAddDetails .wlNote {
+/*#mw-wikilove-dialog*/ #mw-wikilove-add-details .mw-wikilove-note {
 	font-weight: light;
 	font-size: 0.9em;
 	float: right;
 	color: #999;
 }
 
-#wikiLoveDialog #wlAddDetails textarea {
+/*#mw-wikilove-dialog*/ #mw-wikilove-add-details textarea {
 	resize: none;
 }
 
-#wikiLoveDialog .wlSpinner {
+#mw-wikilove-dialog .mw-wikilove-spinner {
 	float: right;
 	margin-top: 0.9em;
 	display: none;
@@ -269,30 +269,27 @@ div.vectorTabs li a {
 }
 
 /* add details gallery */
-#wikiLoveDialog #wlGallery {
+/*#mw-wikilove-dialog*/ #mw-wikilove-gallery {
 	min-height: 40px;
+	position: relative;
 }
 
-#wikiLoveDialog #wlGallery img {
+/*#mw-wikilove-dialog*/ #mw-wikilove-gallery img {
 	margin-right: 5px;
 	margin-bottom: 5px;
 	padding: 5px;
 }
 
-#wikiLoveDialog #wlGallery a:hover img,
-#wikiLoveDialog #wlGallery a:focus img {
+/*#mw-wikilove-dialog*/ #mw-wikilove-gallery a:hover img,
+/*#mw-wikilove-dialog*/ #mw-wikilove-gallery a:focus img {
 	background-color: #aacfe9;
 }
 
-#wikiLoveDialog #wlGallery a.selected img {
+/*#mw-wikilove-dialog*/ #mw-wikilove-gallery a.selected img {
 	background-color: #f56427;
 }
 
-#wikiLoveDialog #wlGallerySpinner {
-	position: relative;
-}
-
-#wikiLoveDialog #wlGallerySpinner .wlSpinner {
+/*#mw-wikilove-dialog*/ #mw-wikilove-gallery-spinner {
 	float: none;
 	position: absolute;
 	top: 0;
@@ -302,59 +299,50 @@ div.vectorTabs li a {
 }
 
 /* dialog preview */
-#wikiLoveDialog #wlPreview {
+/*#mw-wikilove-dialog*/ #mw-wikilove-preview {
 	float: right;
 	width: 480px;
 }
 
-#wikiLoveDialog #wlPreview #wlPreviewArea {
+/*#mw-wikilove-dialog #mw-wikilove-preview*/ #mw-wikilove-preview-area {
 	margin-left: 15px;
 	width: 465px;
 	overflow: auto;
 }
 
-#wikiLoveDialog #wlPreview #wlPreviewArea .editsection {
+/*#mw-wikilove-dialog #mw-wikilove-preview*/ #mw-wikilove-preview-area .editsection {
 	display: none;
 }
 
 /* dialog misc */
-#wikiLoveDialog input[type=text],
-#wikiLoveDialog textarea,
-#wikiLoveDialog select {
+#mw-wikilove-dialog input[type=text],
+#mw-wikilove-dialog textarea,
+#mw-wikilove-dialog select {
 	margin: 5px 0px 5px 15px;
 	max-width: 460px;
 	display: block;
 }
 
-#wikiLoveDialog #wlSubtypeDescription {
+/*#mw-wikilove-dialog*/ #wlSubtypeDescription {
 	margin: 5px 0px 8px 15px;
 	font-size: 1.0em;
 	line-height: 1.2em;
 }
 
-#wikiLoveDialog input[type=checkbox] {
+#mw-wikilove-dialog input[type=checkbox] {
 	display:inline-box;
 	margin: 5px 0px 5px 0px;
 }
 
-/* dialog misc */
-#wikiLoveDialog input[type=text],
-#wikiLoveDialog textarea,
-#wikiLoveDialog select {
-	margin: 5px 0px 5px 15px;
-	max-width: 460px;
-	display: block;
-}
-
-#wikiLoveDialog select {
+#mw-wikilove-dialog select {
 	padding: 1px 0;
 }
 
-#wikiLoveDialog .submit {
+#mw-wikilove-dialog .submit {
 	float: right;
 }
 
-#wikiLoveDialog .wlNumber {
+#mw-wikilove-dialog .mw-wikilove-number {
 	color: white;
 	float: left;
 	display: block;
@@ -372,7 +360,7 @@ div.vectorTabs li a {
 	background-repeat: no-repeat;
 }
 
-#wikiLoveDialog .wlError {
+#mw-wikilove-dialog .mw-wikilove-error {
 	/* @embed */
 	background-image: url(images/alert.png);
 	background-position: center left;

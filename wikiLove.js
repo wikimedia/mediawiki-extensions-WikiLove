@@ -30,36 +30,36 @@
 			$.wikiLove.emailable = $( '#t-emailuser' ).length ? true : false;
 			
 			// Build a type list like this:
-			var $typeList = $( '<ul id="wlTypes"></ul>' );
+			var $typeList = $( '<ul id="mw-wikilove-types"></ul>' );
 			for( var typeId in $.wikiLove.types ) {
 				var $button = $( '<a href="#"></a>' );
-				var $buttonInside = $( '<div class="wlInside"></div>' );
+				var $buttonInside = $( '<div class="mw-wikilove-inside"></div>' );
 				
 				if( typeof $.wikiLove.types[typeId].icon == 'string' ) {
-					$buttonInside.append( '<div class="wlIconBox"><img src="'
+					$buttonInside.append( '<div class="mw-wikilove-icon-box"><img src="'
 						+ mw.html.escape( $.wikiLove.types[typeId].icon ) + '"/></div>' );
 				}
 				else {
-					$buttonInside.addClass( 'wlNoIcon' );
+					$buttonInside.addClass( 'mw-wikilove-no-icon' );
 				}
 				
-				$buttonInside.append( '<div class="wlLinkText">' + $.wikiLove.types[typeId].name + '</div>' );
+				$buttonInside.append( '<div class="mw-wikilove-link-text">' + $.wikiLove.types[typeId].name + '</div>' );
 				
-				$button.append( '<div class="wlLeftCap"></div>');
+				$button.append( '<div class="mw-wikilove-left-cap"></div>');
 				$button.append( $buttonInside );
-				$button.append( '<div class="wlRightCap"></div>');
+				$button.append( '<div class="mw-wikilove-right-cap"></div>');
 				$button.data( 'typeId', typeId );
 				$typeList.append( $( '<li tabindex="0"></li>' ).append( $button ) );
 			}
 			
 			$.wikiLove.$dialog = $( '\
-<div id="wikiLoveDialog">\
-<div id="wlSelectType">\
-	<span class="wlNumber">1</span>\
+<div id="mw-wikilove-dialog">\
+<div id="mw-wikilove-select-type">\
+	<span class="mw-wikilove-number">1</span>\
 	<h3><html:msg key="wikilove-select-type"/></h3>\
-	<ul id="wlTypes"></ul>\
+	<ul id="mw-wikilove-types"></ul>\
 </div>\
-<div id="wlGetStarted">\
+<div id="mw-wikilove-get-started">\
 	<h2><html:msg key="wikilove-get-started-header"/></h2>\
 	<ol>\
 		<li><html:msg key="wikilove-get-started-list-1"/></li>\
@@ -67,40 +67,42 @@
 		<li><html:msg key="wikilove-get-started-list-3"/></li>\
 	</ol>\
 </div>\
-<div id="wlAddDetails">\
-	<span class="wlNumber">2</span>\
+<div id="mw-wikilove-add-details">\
+	<span class="mw-wikilove-number">2</span>\
 	<h3><html:msg key="wikilove-add-details"/></h3>\
-	<form id="wlPreviewForm">\
-		<label for="wlSubtype" id="wlSubtypeLabel"></label>\
-		<select id="wlSubtype"></select>\
-		<div id="wlSubtypeDescription"></div>\
-		<label id="wlGalleryLabel"><html:msg key="wikilove-image"/></label>\
-		<div id="wlGallerySpinner" class="wlSpinner"></div>\
-		<div id="wlGallery"></div>\
-		<label for="wlHeader" id="wlHeaderLabel"><html:msg key="wikilove-header"/></label>\
-		<input type="text" class="text" id="wlHeader"/>\
-		<label for="wlTitle" id="wlTitleLabel"><html:msg key="wikilove-title"/></label>\
-		<input type="text" class="text" id="wlTitle"/>\
-		<label for="wlImage" id="wlImageLabel"><html:msg key="wikilove-image"/></label>\
-		<input type="text" class="text" id="wlImage"/>\
-		<label for="wlMessage" id="wlMessageLabel"><html:msg key="wikilove-enter-message"/></label>\
-		<span class="wlNote"><html:msg key="wikilove-omit-sig"/></span>\
-		<textarea id="wlMessage"></textarea>\
-		<div id="wlNotify">\
-			<input type="checkbox" id="wlNotifyCheckbox" name="notify"/>\
-			<label for="wlNotifyCheckbox"><html:msg key="wikilove-notify"/></label>\
+	<form id="mw-wikilove-preview-form">\
+		<label for="mw-wikilove-subtype" id="mw-wikilove-subtype-label"></label>\
+		<select id="mw-wikilove-subtype"></select>\
+		<div id="mw-wikilove-subtype-description"></div>\
+		<label id="mw-wikilove-gallery-label"><html:msg key="wikilove-image"/></label>\
+		<div id="mw-wikilove-gallery">\
+			<div id="mw-wikilove-gallery-spinner" class="mw-wikilove-spinner"></div>\
+			<div id="mw-wikilove-gallery-content"></div>\
 		</div>\
-		<button class="submit" id="wlButtonPreview" type="submit"></button>\
-		<div id="wlPreviewSpinner" class="wlSpinner"></div>\
+		<label for="mw-wikilove-header" id="mw-wikilove-header-label"><html:msg key="wikilove-header"/></label>\
+		<input type="text" class="text" id="mw-wikilove-header"/>\
+		<label for="mw-wikilove-title" id="mw-wikilove-title-label"><html:msg key="wikilove-title"/></label>\
+		<input type="text" class="text" id="mw-wikilove-title"/>\
+		<label for="mw-wikilove-image" id="mw-wikilove-image-label"><html:msg key="wikilove-image"/></label>\
+		<input type="text" class="text" id="mw-wikilove-image"/>\
+		<label for="mw-wikilove-message" id="mw-wikilove-message-label"><html:msg key="wikilove-enter-message"/></label>\
+		<span class="mw-wikilove-note"><html:msg key="wikilove-omit-sig"/></span>\
+		<textarea id="mw-wikilove-message"></textarea>\
+		<div id="mw-wikilove-notify">\
+			<input type="checkbox" id="mw-wikilove-notify-checkbox" name="notify"/>\
+			<label for="mw-wikilove-notify-checkbox"><html:msg key="wikilove-notify"/></label>\
+		</div>\
+		<button class="submit" id="mw-wikilove-button-preview" type="submit"></button>\
+		<div id="mw-wikilove-preview-spinner" class="mw-wikilove-spinner"></div>\
 	</form>\
 </div>\
-<div id="wlPreview">\
-	<span class="wlNumber">3</span>\
+<div id="mw-wikilove-preview">\
+	<span class="mw-wikilove-number">3</span>\
 	<h3><html:msg key="wikilove-preview"/></h3>\
-	<div id="wlPreviewArea"></div>\
-	<form id="wlSendForm">\
-		<button class="submit" id="wlButtonSend" type="submit"></button>\
-		<div id="wlSendSpinner" class="wlSpinner"></div>\
+	<div id="mw-wikilove-preview-area"></div>\
+	<form id="mw-wikilove-send-form">\
+		<button class="submit" id="mw-wikilove-button-send" type="submit"></button>\
+		<div id="mw-wikilove-send-spinner" class="mw-wikilove-spinner"></div>\
 	</form>\
 </div>\
 </div>' );
@@ -115,17 +117,17 @@
 					resizable: false
 				});
 			
-			$( '#wlButtonPreview' ).button( { label: mw.msg( 'wikilove-button-preview' ), icons: { primary:'ui-icon-search' } } );
-			$( '#wlButtonSend' ).button( { label: mw.msg( 'wikilove-button-send' ) } );
-			$( '#wlAddDetails' ).hide();
-			$( '#wlPreview' ).hide();
-			$( '#wlTypes' ).replaceWith( $typeList );
+			$( '#mw-wikilove-button-preview' ).button( { label: mw.msg( 'wikilove-button-preview' ), icons: { primary:'ui-icon-search' } } );
+			$( '#mw-wikilove-button-send' ).button( { label: mw.msg( 'wikilove-button-send' ) } );
+			$( '#mw-wikilove-add-details' ).hide();
+			$( '#mw-wikilove-preview' ).hide();
+			$( '#mw-wikilove-types' ).replaceWith( $typeList );
 			
-			$( '#wlTypes a' ).click( $.wikiLove.clickType );
-			$( '#wlSubtype' ).change( $.wikiLove.changeSubtype );
-			$( '#wlPreviewForm' ).submit( $.wikiLove.submitPreview );
-			$( '#wlSendForm' ).click( $.wikiLove.submitSend );
-			$( '#wlMessage' ).elastic(); // have the message textarea grow automatically
+			$( '#mw-wikilove-types a' ).click( $.wikiLove.clickType );
+			$( '#mw-wikilove-subtype' ).change( $.wikiLove.changeSubtype );
+			$( '#mw-wikilove-preview-form' ).submit( $.wikiLove.submitPreview );
+			$( '#mw-wikilove-send-form' ).click( $.wikiLove.submitSend );
+			$( '#mw-wikilove-message' ).elastic(); // have the message textarea grow automatically
 		}
 		
 		$.wikiLove.$dialog.dialog( 'open' );
@@ -137,45 +139,45 @@
 	 */
 	clickType: function( e ) {
 		e.preventDefault();
-		$( '#wlGetStarted' ).hide(); // always hide the get started section
+		$( '#mw-wikilove-get-started' ).hide(); // always hide the get started section
 		
 		var newTypeId = $( this ).data( 'typeId' );
 		if( $.wikiLove.currentTypeId != newTypeId ) { // only do stuff when a different type is selected
 			$.wikiLove.currentTypeId = newTypeId;
 			$.wikiLove.currentSubtypeId = null; // reset the subtype id
 			
-			$( '#wlTypes a' ).removeClass( 'selected' );
+			$( '#mw-wikilove-types a' ).removeClass( 'selected' );
 			$( this ).addClass( 'selected' ); // highlight the new type in the menu
 			
 			if( typeof $.wikiLove.types[$.wikiLove.currentTypeId].subtypes == 'object' ) {
 				// we're dealing with subtypes here
 				$.wikiLove.currentTypeOrSubtype = null; // reset the (sub)type object until a subtype is selected
-				$( '#wlSubtype' ).html( '' ); // clear the subtype menu
+				$( '#mw-wikilove-subtype' ).html( '' ); // clear the subtype menu
 				
 				for( var subtypeId in $.wikiLove.types[$.wikiLove.currentTypeId].subtypes ) {
 					// add all the subtypes to the menu while setting their subtype ids in jQuery data
 					var subtype = $.wikiLove.types[$.wikiLove.currentTypeId].subtypes[subtypeId];
-					$( '#wlSubtype' ).append(
+					$( '#mw-wikilove-subtype' ).append(
 						$( '<option></option>' ).text( subtype.option ).data( 'subtypeId', subtypeId )
 					);
 				}
-				$( '#wlSubtype' ).show();
+				$( '#mw-wikilove-subtype' ).show();
 				
 				// change and show the subtype label depending on the type
-				$( '#wlSubtypeLabel' ).text( $.wikiLove.types[$.wikiLove.currentTypeId].select || mw.msg( 'wikilove-select-type' ) );
-				$( '#wlSubtypeLabel' ).show();
+				$( '#mw-wikilove-subtype-label' ).text( $.wikiLove.types[$.wikiLove.currentTypeId].select || mw.msg( 'wikilove-select-type' ) );
+				$( '#mw-wikilove-subtype-label' ).show();
 				$.wikiLove.changeSubtype(); // update controls depending on the currently selected (i.e. first) subtype
 			}
 			else {
 				// there are no subtypes, just use this type for the current (sub)type
 				$.wikiLove.currentTypeOrSubtype = $.wikiLove.types[$.wikiLove.currentTypeId];
-				$( '#wlSubtype' ).hide();
-				$( '#wlSubtypeLabel' ).hide();
+				$( '#mw-wikilove-subtype' ).hide();
+				$( '#mw-wikilove-subtype-label' ).hide();
 				$.wikiLove.updateAllDetails(); // update controls depending on this type
 			}
 			
-			$( '#wlAddDetails' ).show();
-			$( '#wlPreview' ).hide();
+			$( '#mw-wikilove-add-details' ).show();
+			$( '#mw-wikilove-preview' ).hide();
 			$.wikiLove.previewData = null;
 		}
 	},
@@ -185,14 +187,14 @@
 	 */
 	changeSubtype: function() {
 		// find out which subtype is selected
-		var newSubtypeId = $( '#wlSubtype option:selected' ).first().data( 'subtypeId' );
+		var newSubtypeId = $( '#mw-wikilove-subtype option:selected' ).first().data( 'subtypeId' );
 		if( $.wikiLove.currentSubtypeId != newSubtypeId ) { // only change stuff when a different subtype is selected
 			$.wikiLove.currentSubtypeId = newSubtypeId;
 			$.wikiLove.currentTypeOrSubtype = $.wikiLove.types[$.wikiLove.currentTypeId]
 				.subtypes[$.wikiLove.currentSubtypeId];
-			$( '#wlSubtypeDescription' ).html( $.wikiLove.currentTypeOrSubtype.descr );
+			$( '#mw-wikilove-subtype-description' ).html( $.wikiLove.currentTypeOrSubtype.descr );
 			$.wikiLove.updateAllDetails();
-			$( '#wlPreview' ).hide();
+			$( '#mw-wikilove-preview' ).hide();
 			$.wikiLove.previewData = null;
 		}
 	},
@@ -201,67 +203,67 @@
 	 * Called when type or subtype changes, updates controls.
 	 */
 	updateAllDetails: function() {
-		$( '#wikiLoveDialog' ).find( '.wlError' ).remove();
+		$( '#wikiLoveDialog' ).find( '.mw-wikilove-error' ).remove();
 		
 		// only show the description if it exists for this type or subtype
 		if( typeof $.wikiLove.currentTypeOrSubtype.descr == 'string' ) {
-			$( '#wlSubtypeDescription').show();
+			$( '#mw-wikilove-subtype-description').show();
 		} else {
-			$( '#wlSubtypeDescription').hide();
+			$( '#mw-wikilove-subtype-description').hide();
 		}
 		
 		// show or hide header label and textbox depending on whether a predefined header exists
 		if( $.inArray( 'header', $.wikiLove.currentTypeOrSubtype.fields ) >= 0 ) {
-			$( '#wlHeaderLabel').show();
-			$( '#wlHeader' ).show();
+			$( '#mw-wikilove-header-label').show();
+			$( '#mw-wikilove-header' ).show();
 		} else {
-			$( '#wlHeaderLabel').hide();
-			$( '#wlHeader' ).hide();
+			$( '#mw-wikilove-header-label').hide();
+			$( '#mw-wikilove-header' ).hide();
 		}
-		$( '#wlHeader' ).val( $.wikiLove.currentTypeOrSubtype.header || '' );
+		$( '#mw-wikilove-header' ).val( $.wikiLove.currentTypeOrSubtype.header || '' );
 		
 		// show or hide title label and textbox depending on whether a predefined title exists
 		if( $.inArray( 'title', $.wikiLove.currentTypeOrSubtype.fields ) >= 0 ) {
-			$( '#wlTitleLabel').show();
-			$( '#wlTitle' ).show();
+			$( '#mw-wikilove-title-label').show();
+			$( '#mw-wikilove-title' ).show();
 		} else {
-			$( '#wlTitleLabel').hide();
-			$( '#wlTitle' ).hide();
+			$( '#mw-wikilove-title-label').hide();
+			$( '#mw-wikilove-title' ).hide();
 		}
-		$( '#wlTitle' ).val( $.wikiLove.currentTypeOrSubtype.title || '' );
+		$( '#mw-wikilove-title' ).val( $.wikiLove.currentTypeOrSubtype.title || '' );
 		
 		// show or hide image label and textbox depending on whether a predefined image exists
 		if( $.inArray( 'image', $.wikiLove.currentTypeOrSubtype.fields ) >= 0 ) {
-			$( '#wlImageLabel').show();
-			$( '#wlImage' ).show();
+			$( '#mw-wikilove-image-label').show();
+			$( '#mw-wikilove-image' ).show();
 		} else {
-			$( '#wlImageLabel').hide();
-			$( '#wlImage' ).hide();
+			$( '#mw-wikilove-image-label').hide();
+			$( '#mw-wikilove-image' ).hide();
 		}
-		$( '#wlImage' ).val( $.wikiLove.currentTypeOrSubtype.image || '' );
+		$( '#mw-wikilove-image' ).val( $.wikiLove.currentTypeOrSubtype.image || '' );
 		
 		if( typeof $.wikiLove.currentTypeOrSubtype.gallery == 'object' ) {
 			if( $.wikiLove.currentTypeOrSubtype.gallery.imageList instanceof Array) {
-				$( '#wlGalleryLabel' ).show();
-				$( '#wlGallery' ).show();
+				$( '#mw-wikilove-gallery-label' ).show();
+				$( '#mw-wikilove-gallery' ).show();
 				$.wikiLove.showGallery(); // build gallery from array of images
 			} else {
 				// gallery is a category
-				$( '#wlGalleryLabel' ).show();
-				$( '#wlGallery' ).show();
+				$( '#mw-wikilove-gallery-label' ).show();
+				$( '#mw-wikilove-gallery' ).show();
 				$.wikiLove.makeGallery(); // build gallery from category
 			}
 		}
 		else {
-			$( '#wlGalleryLabel' ).hide();
-			$( '#wlGallery' ).hide();
+			$( '#mw-wikilove-gallery-label' ).hide();
+			$( '#mw-wikilove-gallery' ).hide();
 		}
 		
 		if( $.inArray( 'notify', $.wikiLove.currentTypeOrSubtype.fields ) >= 0 && $.wikiLove.emailable ) {
-			$( '#wlNotify' ).show();
+			$( '#mw-wikilove-notify' ).show();
 		} else {
-			$( '#wlNotify' ).hide();
-			$( '#wlNotifyCheckbox' ).attr('checked', false);
+			$( '#mw-wikilove-notify' ).hide();
+			$( '#mw-wikilove-notify-checkbox' ).attr('checked', false);
 		}
 	},
 	
@@ -270,23 +272,23 @@
 	 */
 	submitPreview: function( e ) {
 		e.preventDefault();
-		$( '#wlPreview' ).hide();
+		$( '#mw-wikilove-preview' ).hide();
 		$( '#wikiLoveDialog' ).find( '.wlError' ).remove();
 		
 		if( typeof $.wikiLove.currentTypeOrSubtype.gallery == 'object' ) {
-			if ( $( '#wlImage' ).val().length <= 0 ) {
+			if ( $( '#mw-wikilove-image' ).val().length <= 0 ) {
 				$.wikiLove.showError( 'wikilove-err-image' ); return false;
 			}
 		}
-		if( $( '#wlHeader' ).val().length <= 0 ) {
+		if( $( '#mw-wikilove-header' ).val().length <= 0 ) {
 			$.wikiLove.showError( 'wikilove-err-header' ); return false;
 		}
-		if( $( '#wlMessage' ).val().length <= 0 ) {
+		if( $( '#mw-wikilove-message' ).val().length <= 0 ) {
 			$.wikiLove.showError( 'wikilove-err-msg' ); return false;
 		}
 		
 		// If there isn't a signature already in the message, throw an error
-		if ( $( '#wlMessage' ).val().indexOf( '~~~' ) >= 0 ) {
+		if ( $( '#mw-wikilove-message' ).val().indexOf( '~~~' ) >= 0 ) {
 			$.wikiLove.showError( 'wikilove-err-sig' ); return false;
 		}
 		
@@ -297,21 +299,21 @@
 			$.wikiLove.currentTypeOrSubtype.borderColor
 		);
 		
-		$.wikiLove.doPreview( '==' + $( '#wlHeader' ).val() + "==\n" + msg );
+		$.wikiLove.doPreview( '==' + $( '#mw-wikilove-header' ).val() + "==\n" + msg );
 		$.wikiLove.previewData = {
-			'header': $( '#wlHeader' ).val(),
+			'header': $( '#mw-wikilove-header' ).val(),
 			'msg': msg,
 			'type': $.wikiLove.currentTypeId
 				+ ($.wikiLove.currentSubtypeId !== null ? '-' + $.wikiLove.currentSubtypeId : '')
 		};
 		
-		if ( $( '#wlNotifyCheckbox:checked' ).val() && $.wikiLove.emailable ) {
+		if ( $( '#mw-wikilove-notify-checkbox:checked' ).val() && $.wikiLove.emailable ) {
 			$.wikiLove.previewData.mail = $.wikiLove.prepareMsg( $.wikiLove.currentTypeOrSubtype.mail );
 		}
 	},
 	
 	showError: function( errmsg ) {
-		$( '#wlAddDetails' ).append( $( '<div class="wlError"></div>' ).text( mw.msg( errmsg ) ) );
+		$( '#mw-wikilove-add-details' ).append( $( '<div class="mw-wikilove-error"></div>' ).text( mw.msg( errmsg ) ) );
 	},
 	
 	/*
@@ -326,9 +328,9 @@
 	 */
 	prepareMsg: function( msg, imageSize, backgroundColor, borderColor ) {
 		
-		msg = msg.replace( '$1', $( '#wlMessage' ).val() ); // replace the raw message
-		msg = msg.replace( '$2', $( '#wlTitle' ).val() ); // replace the title
-		msg = msg.replace( '$3', $( '#wlImage' ).val() ); // replace the image
+		msg = msg.replace( '$1', $( '#mw-wikilove-message' ).val() ); // replace the raw message
+		msg = msg.replace( '$2', $( '#mw-wikilove-title' ).val() ); // replace the title
+		msg = msg.replace( '$3', $( '#mw-wikilove-image' ).val() ); // replace the image
 		
 		var myImageSize = imageSize || $.wikiLove.defaultImageSize;
 		var myBackgroundColor = backgroundColor || $.wikiLove.defaultBackgroundColor;
@@ -347,7 +349,7 @@
 	 * Fires AJAX request for previewing wikitext.
 	 */
 	doPreview: function( wikitext ) {
-		$( '#wlPreviewSpinner' ).fadeIn( 200 );
+		$( '#mw-wikilove-preview-spinner' ).fadeIn( 200 );
 		$.ajax({
 			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php?',
 			data: {
@@ -361,7 +363,7 @@
 			type: 'POST',
 			success: function( data ) {
 				$.wikiLove.showPreview( data.parse.text['*'] );
-				$( '#wlPreviewSpinner' ).fadeOut( 200 );
+				$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
 			}
 		});
 	},
@@ -370,8 +372,8 @@
 	 * Callback for the preview function. Sets the preview area with the HTML and fades it in.
 	 */
 	showPreview: function( html ) {
-		$( '#wlPreviewArea' ).html( html );
-		$( '#wlPreview' ).fadeIn( 200 );
+		$( '#mw-wikilove-preview-area' ).html( html );
+		$( '#mw-wikilove-preview' ).fadeIn( 200 );
 	},
 	
 	/*
@@ -389,7 +391,7 @@
 	 * Fires the final AJAX request and then redirects to the talk page where the content is added.
 	 */
 	doSend: function( subject, wikitext, type, mail ) {
-		$( '#wlSendSpinner' ).fadeIn( 200 );
+		$( '#mw-wikilove-send-spinner' ).fadeIn( 200 );
 		
 		var sendData = {
 			'action': 'wikilove',
@@ -411,10 +413,10 @@
 			dataType: 'json',
 			type: 'POST',
 			success: function( data ) {
-				$( '#wlSendSpinner' ).fadeOut( 200 );
+				$( '#mw-wikilove-send-spinner' ).fadeOut( 200 );
 				
 				if ( typeof data.error !== 'undefined' ) {
-					$( '#wlPreview' ).append( '<div class="wlError">' + mw.html.escape( data.error.info ) + '<div>' );
+					$( '#mw-wikilove-preview' ).append( '<div class="wlError">' + mw.html.escape( data.error.info ) + '<div>' );
 					return;
 				}
 				
@@ -438,9 +440,9 @@
 	 * thumbnails from the API, and constructs a thumbnail gallery with them.
 	 */
 	showGallery: function() {
-		$( '#wlGallery' ).html( '' );
+		$( '#mw-wikilove-gallery-content' ).html( '' );
 		$.wikiLove.gallery = {};
-		$( '#wlGallerySpinner' ).fadeIn( 200 );
+		$( '#mw-wikilove-gallery-spinner' ).fadeIn( 200 );
 		
 		$.each( $.wikiLove.currentTypeOrSubtype.gallery.imageList, function(index, value) {
 		
@@ -457,7 +459,7 @@
 				dataType: 'json',
 				type: 'POST',
 				success: function( data ) {
-					$( '#wlGallerySpinner' ).fadeOut( 200 );
+					$( '#mw-wikilove-gallery-spinner' ).fadeOut( 200 );
 					
 					if ( !data || !data.query || !data.query.pages ) {
 						return;
@@ -470,18 +472,18 @@
 								.attr( 'width', $.wikiLove.currentTypeOrSubtype.gallery.width )
 								.hide()
 								.load( function() { $( this ).css( 'display', 'inline-block' ); } );
-							$( '#wlGallery' ).append( 
+							$( '#mw-wikilove-gallery-content' ).append( 
 								$( '<a href="#"></a>' )
-									.attr( 'id', 'wlGalleryImg' + index )
+									.attr( 'id', 'mw-wikilove-gallery-img-' + index )
 									.append( $img )
 									.click( function( e ) {
 										e.preventDefault();
-										$( '#wlGallery a' ).removeClass( 'selected' );
+										$( '#mw-wikilove-gallery a' ).removeClass( 'selected' );
 										$( this ).addClass( 'selected' );
-										$( '#wlImage' ).val( $.wikiLove.gallery[$( this ).attr( 'id' )] );
+										$( '#mw-wikilove-image' ).val( $.wikiLove.gallery[$( this ).attr( 'id' )] );
 									}) 
 							);
-							$.wikiLove.gallery['wlGalleryImg' + index] = page.title;
+							$.wikiLove.gallery['mw-wikilove-gallery-img-' + index] = page.title;
 						}
 					} );
 				}
@@ -497,9 +499,9 @@
 	 * also allows for using remote galleries such as Commons, which is now prohibited by JS.
 	 */
 	makeGallery: function() {
-		$( '#wlGallery' ).html( '' );
+		$( '#mw-wikilove-gallery-content' ).html( '' );
 		$.wikiLove.gallery = {};
-		$( '#wlGallerySpinner' ).fadeIn( 200 );
+		$( '#mw-wikilove-gallery-spinner' ).fadeIn( 200 );
 		
 		$.ajax({
 			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php',
@@ -519,7 +521,7 @@
 			type: 'POST',
 			success: function( data ) {
 				// clear
-				$( '#wlGallery' ).html( '' );
+				$( '#mw-wikilove-gallery-content' ).html( '' );
 				$.wikiLove.gallery = {};
 				
 				// if we have any images at all
@@ -549,31 +551,31 @@
 									.load( function() { $( this ).css( 'display', 'inline-block' ); } );
 								
 								// append the image to the gallery and also make sure it's selectable
-								$( '#wlGallery' ).append( 
+								$( '#mw-wikilove-gallery-content' ).append( 
 									$( '<a href="#"></a>' )
-										.attr( 'id', 'wlGalleryImg' + i )
+										.attr( 'id', 'mw-wikilove-gallery-img-' + i )
 										.append( $img )
 										.click( function( e ) {
 											e.preventDefault();
-											$( '#wlGallery a' ).removeClass( 'selected' );
+											$( '#mw-wikilove-gallery a' ).removeClass( 'selected' );
 											$( this ).addClass( 'selected' );
-											$( '#wlImage' ).val( $.wikiLove.gallery[$( this ).attr( 'id' )] );
+											$( '#mw-wikilove-image' ).val( $.wikiLove.gallery[$( this ).attr( 'id' )] );
 										})
 								);
 								
 								// save the page title into an array so we know which image id maps to which title
-								$.wikiLove.gallery['wlGalleryImg' + i] = page.title;
+								$.wikiLove.gallery['mw-wikilove-gallery-img-' + i] = page.title;
 								break;
 							}
 						}
 					}
 				}
 				if( $.wikiLove.gallery.length <= 0 ) {
-					$( '#wlGallery' ).hide();
-					$( '#wlGalleryTitle' ).hide();
+					$( '#mw-wikilove-gallery' ).hide();
+					$( '#mw-wikilove-gallery-label' ).hide();
 				}
 				
-				$( '#wlGallerySpinner' ).fadeOut( 200 );
+				$( '#mw-wikilove-gallery-spinner' ).fadeOut( 200 );
 			}
 		});
 	},
