@@ -259,6 +259,13 @@ div.vectorTabs li a {
 	float: right;
 	margin-top: 0.9em;
 	display: none;
+	
+	/* @embed */
+	background-image: url(images/spinner.gif);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	width: 16px;
+	height: 16px;
 }
 
 /* add details gallery */

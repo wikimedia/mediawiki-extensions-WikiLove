@@ -29,9 +29,6 @@
 			// Test to see if the 'E-mail this user' link exists
 			$.wikiLove.emailable = $( '#t-emailuser' ).length ? true : false;
 			
-			// Reusable spinner string
-			var spinner = '<img class="wlSpinner" src="' + mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/extensions/WikiLove/images/spinner.gif' + '"/>';
-			
 			// Build a type list like this:
 			var $typeList = $( '<ul id="wlTypes"></ul>' );
 			for( var typeId in $.wikiLove.types ) {
@@ -78,7 +75,7 @@
 		<select id="wlSubtype"></select>\
 		<div id="wlSubtypeDescription"></div>\
 		<label id="wlGalleryLabel"><html:msg key="wikilove-image"/></label>\
-		<div id="wlGallerySpinner">' + spinner + '</div>\
+		<div id="wlGallerySpinner" class="wlSpinner"></div>\
 		<div id="wlGallery"></div>\
 		<label for="wlHeader" id="wlHeaderLabel"><html:msg key="wikilove-header"/></label>\
 		<input type="text" class="text" id="wlHeader"/>\
@@ -94,7 +91,7 @@
 			<label for="wlNotifyCheckbox"><html:msg key="wikilove-notify"/></label>\
 		</div>\
 		<button class="submit" id="wlButtonPreview" type="submit"></button>\
-		' + spinner + '\
+		<div id="wlPreviewSpinner" class="wlSpinner"></div>\
 	</form>\
 </div>\
 <div id="wlPreview">\
@@ -103,7 +100,7 @@
 	<div id="wlPreviewArea"></div>\
 	<form id="wlSendForm">\
 		<button class="submit" id="wlButtonSend" type="submit"></button>\
-		' + spinner + '\
+		<div id="wlSendSpinner" class="wlSpinner"></div>\
 	</form>\
 </div>\
 </div>' );
@@ -248,20 +245,17 @@
 			if( $.wikiLove.currentTypeOrSubtype.gallery.imageList instanceof Array) {
 				$( '#wlGalleryLabel' ).show();
 				$( '#wlGallery' ).show();
-				$( '#wlGallerySpinner' ).show();
 				$.wikiLove.showGallery(); // build gallery from array of images
 			} else {
 				// gallery is a category
 				$( '#wlGalleryLabel' ).show();
 				$( '#wlGallery' ).show();
-				$( '#wlGallerySpinner' ).show();
 				$.wikiLove.makeGallery(); // build gallery from category
 			}
 		}
 		else {
 			$( '#wlGalleryLabel' ).hide();
 			$( '#wlGallery' ).hide();
-			$( '#wlGallerySpinner' ).hide();
 		}
 		
 		if( $.inArray( 'notify', $.wikiLove.currentTypeOrSubtype.fields ) >= 0 && $.wikiLove.emailable ) {
@@ -355,7 +349,7 @@
 	 * Fires AJAX request for previewing wikitext.
 	 */
 	doPreview: function( wikitext ) {
-		$( '#wlAddDetails .wlSpinner' ).fadeIn( 200 );
+		$( '#wlPreviewSpinner' ).fadeIn( 200 );
 		$.ajax({
 			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php?',
 			data: {
@@ -369,7 +363,7 @@
 			type: 'POST',
 			success: function( data ) {
 				$.wikiLove.showPreview( data.parse.text['*'] );
-				$( '#wlAddDetails .wlSpinner' ).fadeOut( 200 );
+				$( '#wlPreviewSpinner' ).fadeOut( 200 );
 			}
 		});
 	},
@@ -398,7 +392,7 @@
 	 * Fires the final AJAX request and then redirects to the talk page where the content is added.
 	 */
 	doSend: function( subject, wikitext, type, mail ) {
-		$( '#wlPreview .wlSpinner' ).fadeIn( 200 );
+		$( '#wlSendSpinner' ).fadeIn( 200 );
 		
 		var sendData = {
 			'action': 'wikilove',
@@ -420,7 +414,7 @@
 			dataType: 'json',
 			type: 'POST',
 			success: function( data ) {
-				$( '#wlPreview .wlSpinner' ).fadeOut( 200 );
+				$( '#wlSendSpinner' ).fadeOut( 200 );
 				
 				if ( typeof data.error !== 'undefined' ) {
 					$( '#wlPreview' ).append( '<div class="wlError">' + mw.html.escape( data.error.info ) + '<div>' );
@@ -449,7 +443,7 @@
 	showGallery: function() {
 		$( '#wlGallery' ).html( '' );
 		$.wikiLove.gallery = {};
-		$( '#wlGallerySpinner .wlSpinner' ).fadeIn( 200 );
+		$( '#wlGallerySpinner' ).fadeIn( 200 );
 		
 		$.each( $.wikiLove.currentTypeOrSubtype.gallery.imageList, function(index, value) {
 		
@@ -466,6 +460,8 @@
 				dataType: 'json',
 				type: 'POST',
 				success: function( data ) {
+					$( '#wlGallerySpinner' ).fadeOut( 200 );
+					
 					if ( !data || !data.query || !data.query.pages ) {
 						return;
 					}
@@ -507,7 +503,7 @@
 	makeGallery: function() {
 		$( '#wlGallery' ).html( '' );
 		$.wikiLove.gallery = {};
-		$( '#wlGallerySpinner .wlSpinner' ).fadeIn( 200 );
+		$( '#wlGallerySpinner' ).fadeIn( 200 );
 		
 		$.ajax({
 			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php',
@@ -582,7 +578,7 @@
 					$( '#wlGalleryTitle' ).hide();
 				}
 				
-				$( '#wlGallerySpinner .wlSpinner' ).fadeOut( 200 );
+				$( '#wlGallerySpinner' ).fadeOut( 200 );
 			}
 		});
 	},
