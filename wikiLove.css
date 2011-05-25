@@ -1,4 +1,4 @@
-/* include fix from r87101 here for older versions */
+/* include fix from r87101 here for older versions; these three blocks can become deprecated later */
 div.vectorTabs span {
 	display: inline-block;
 	/* @embed */

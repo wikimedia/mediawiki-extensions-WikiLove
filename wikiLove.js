@@ -428,8 +428,9 @@
 					window.location.reload();
 				}
 				else {
-					window.location = mw.config.get( 'wgArticlePath' ).replace( '$1', data.redirect.pageName ) 
-						+ '#' + data.redirect.fragment;
+					window.location = mw.util.wikiUrlencode( 
+						mw.config.get( 'wgArticlePath' ).replace( '$1', data.redirect.pageName ) 
+						+ '#' + data.redirect.fragment );
 				}
 			}
 		});
