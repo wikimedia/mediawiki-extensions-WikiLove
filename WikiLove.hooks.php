@@ -54,6 +54,7 @@ class WikiLoveHooks {
 		
 		$title = self::getUserTalkPage( $skin->getTitle() );
 		if ( !is_null( $title ) ) {
+			$out->addModules( 'ext.wikiLove.icon' );
 			$out->addModules( 'ext.wikiLove' );
 		}
 		return true;

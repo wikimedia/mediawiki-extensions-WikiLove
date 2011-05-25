@@ -70,11 +70,18 @@ $wgHooks['LoadExtensionSchemaUpdates'][]          = 'WikiLoveHooks::loadExtensio
 // api modules
 $wgAPIModules['wikilove'] = 'WikiLoveApi';
 
+$extWikiLoveTpl = array(
+	'localBasePath' => dirname( __FILE__ ) . '/modules/ext.wikiLove',
+	'remoteExtPath' => 'WikiLove/modules/ext.wikiLove',
+);
+
 // resources
 $wgResourceModules += array(
-	'ext.wikiLove' => array(
-		'localBasePath' => dirname( __FILE__ ) . '/modules/ext.wikiLove',
-		'remoteExtPath' => 'WikiLove/modules/ext.wikiLove',
+	'ext.wikiLove.icon' => $extWikiLoveTpl + array(
+		'styles' => 'ext.wikiLove.icon.css',
+		'position' => 'top',
+	),
+	'ext.wikiLove' => $extWikiLoveTpl + array(
 		'scripts' => array(
 			'ext.wikiLove.core.js',
 			'ext.wikiLove.defaultOptions.js',
