@@ -24,116 +24,114 @@
 		if ( $.wikiLove.$dialog === null ) {
 			// Load local configuration
 			var wikiLoveConfigUrl = wgServer + wgScript + '?' + $.param( { 'title': 'MediaWiki:WikiLove.js', 'action': 'raw', 'ctype': 'text/javascript' } );
-			$.getScript( wikiLoveConfigUrl, function() {
-				// Test to see if the 'E-mail this user' link exists
-				$.wikiLove.emailable = $( '#t-emailuser' ).length ? true : false;
+			mw.loader.load( wikiLoveConfigUrl );
+			
+			// Test to see if the 'E-mail this user' link exists
+			$.wikiLove.emailable = $( '#t-emailuser' ).length ? true : false;
+			
+			// Reusable spinner string
+			var spinner = '<img class="wlSpinner" src="' + mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/extensions/WikiLove/images/spinner.gif' + '"/>';
+			
+			// Build a type list like this:
+			var $typeList = $( '<ul id="wlTypes"></ul>' );
+			for( var typeId in $.wikiLove.types ) {
+				var $button = $( '<a href="#"></a>' );
+				var $buttonInside = $( '<div class="wlInside"></div>' );
 				
-				// Reusable spinner string
-				var spinner = '<img class="wlSpinner" src="' + mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/extensions/WikiLove/images/spinner.gif' + '"/>';
-				
-				// Build a type list like this:
-				var $typeList = $( '<ul id="wlTypes"></ul>' );
-				for( var typeId in $.wikiLove.types ) {
-					var $button = $( '<a href="#"></a>' );
-					var $buttonInside = $( '<div class="wlInside"></div>' );
-					
-					if( typeof $.wikiLove.types[typeId].icon == 'string' ) {
-						$buttonInside.append( '<div class="wlIconBox"><img src="'
-							+ mw.html.escape( $.wikiLove.types[typeId].icon ) + '"/></div>' );
-					}
-					else {
-						$buttonInside.addClass( 'wlNoIcon' );
-					}
-					
-					$buttonInside.append( '<div class="wlLinkText">' + $.wikiLove.types[typeId].name + '</div>' );
-					
-					$button.append( '<div class="wlLeftCap"></div>');
-					$button.append( $buttonInside );
-					$button.append( '<div class="wlRightCap"></div>');
-					$button.data( 'typeId', typeId );
-					$typeList.append( $( '<li tabindex="0"></li>' ).append( $button ) );
+				if( typeof $.wikiLove.types[typeId].icon == 'string' ) {
+					$buttonInside.append( '<div class="wlIconBox"><img src="'
+						+ mw.html.escape( $.wikiLove.types[typeId].icon ) + '"/></div>' );
+				}
+				else {
+					$buttonInside.addClass( 'wlNoIcon' );
 				}
 				
-				$.wikiLove.$dialog = $( '\
+				$buttonInside.append( '<div class="wlLinkText">' + $.wikiLove.types[typeId].name + '</div>' );
+				
+				$button.append( '<div class="wlLeftCap"></div>');
+				$button.append( $buttonInside );
+				$button.append( '<div class="wlRightCap"></div>');
+				$button.data( 'typeId', typeId );
+				$typeList.append( $( '<li tabindex="0"></li>' ).append( $button ) );
+			}
+			
+			$.wikiLove.$dialog = $( '\
 <div id="wikiLoveDialog">\
-	<div id="wlSelectType">\
-		<span class="wlNumber">1</span>\
-		<h3><html:msg key="wikilove-select-type"/></h3>\
-		<ul id="wlTypes"></ul>\
-	</div>\
-	<div id="wlGetStarted">\
-		<h2><html:msg key="wikilove-get-started-header"/></h2>\
-		<ol>\
-			<li><html:msg key="wikilove-get-started-list-1"/></li>\
-			<li><html:msg key="wikilove-get-started-list-2"/></li>\
-			<li><html:msg key="wikilove-get-started-list-3"/></li>\
-		</ol>\
-	</div>\
-	<div id="wlAddDetails">\
-		<span class="wlNumber">2</span>\
-		<h3><html:msg key="wikilove-add-details"/></h3>\
-		<form id="wlPreviewForm">\
-			<label for="wlSubtype" id="wlSubtypeLabel"></label>\
-			<select id="wlSubtype"></select>\
-			<div id="wlSubtypeDescription"></div>\
-			<label id="wlGalleryLabel"><html:msg key="wikilove-image"/></label>\
-			<div id="wlGallerySpinner">' + spinner + '</div>\
-			<div id="wlGallery"></div>\
-			<label for="wlHeader" id="wlHeaderLabel"><html:msg key="wikilove-header"/></label>\
-			<input type="text" class="text" id="wlHeader"/>\
-			<label for="wlTitle" id="wlTitleLabel"><html:msg key="wikilove-title"/></label>\
-			<input type="text" class="text" id="wlTitle"/>\
-			<label for="wlImage" id="wlImageLabel"><html:msg key="wikilove-image"/></label>\
-			<input type="text" class="text" id="wlImage"/>\
-			<label for="wlMessage" id="wlMessageLabel"><html:msg key="wikilove-enter-message"/></label>\
-			<span class="wlNote"><html:msg key="wikilove-omit-sig"/></span>\
-			<textarea id="wlMessage"></textarea>\
-			<div id="wlNotify">\
-				<input type="checkbox" id="wlNotifyCheckbox" name="notify"/>\
-				<label for="wlNotifyCheckbox"><html:msg key="wikilove-notify"/></label>\
-			</div>\
-			<button class="submit" id="wlButtonPreview" type="submit"></button>\
-			' + spinner + '\
-		</form>\
-	</div>\
-	<div id="wlPreview">\
-		<span class="wlNumber">3</span>\
-		<h3><html:msg key="wikilove-preview"/></h3>\
-		<div id="wlPreviewArea"></div>\
-		<form id="wlSendForm">\
-			<button class="submit" id="wlButtonSend" type="submit"></button>\
-			' + spinner + '\
-		</form>\
-	</div>\
+<div id="wlSelectType">\
+	<span class="wlNumber">1</span>\
+	<h3><html:msg key="wikilove-select-type"/></h3>\
+	<ul id="wlTypes"></ul>\
+</div>\
+<div id="wlGetStarted">\
+	<h2><html:msg key="wikilove-get-started-header"/></h2>\
+	<ol>\
+		<li><html:msg key="wikilove-get-started-list-1"/></li>\
+		<li><html:msg key="wikilove-get-started-list-2"/></li>\
+		<li><html:msg key="wikilove-get-started-list-3"/></li>\
+	</ol>\
+</div>\
+<div id="wlAddDetails">\
+	<span class="wlNumber">2</span>\
+	<h3><html:msg key="wikilove-add-details"/></h3>\
+	<form id="wlPreviewForm">\
+		<label for="wlSubtype" id="wlSubtypeLabel"></label>\
+		<select id="wlSubtype"></select>\
+		<div id="wlSubtypeDescription"></div>\
+		<label id="wlGalleryLabel"><html:msg key="wikilove-image"/></label>\
+		<div id="wlGallerySpinner">' + spinner + '</div>\
+		<div id="wlGallery"></div>\
+		<label for="wlHeader" id="wlHeaderLabel"><html:msg key="wikilove-header"/></label>\
+		<input type="text" class="text" id="wlHeader"/>\
+		<label for="wlTitle" id="wlTitleLabel"><html:msg key="wikilove-title"/></label>\
+		<input type="text" class="text" id="wlTitle"/>\
+		<label for="wlImage" id="wlImageLabel"><html:msg key="wikilove-image"/></label>\
+		<input type="text" class="text" id="wlImage"/>\
+		<label for="wlMessage" id="wlMessageLabel"><html:msg key="wikilove-enter-message"/></label>\
+		<span class="wlNote"><html:msg key="wikilove-omit-sig"/></span>\
+		<textarea id="wlMessage"></textarea>\
+		<div id="wlNotify">\
+			<input type="checkbox" id="wlNotifyCheckbox" name="notify"/>\
+			<label for="wlNotifyCheckbox"><html:msg key="wikilove-notify"/></label>\
+		</div>\
+		<button class="submit" id="wlButtonPreview" type="submit"></button>\
+		' + spinner + '\
+	</form>\
+</div>\
+<div id="wlPreview">\
+	<span class="wlNumber">3</span>\
+	<h3><html:msg key="wikilove-preview"/></h3>\
+	<div id="wlPreviewArea"></div>\
+	<form id="wlSendForm">\
+		<button class="submit" id="wlButtonSend" type="submit"></button>\
+		' + spinner + '\
+	</form>\
+</div>\
 </div>' );
-				$.wikiLove.$dialog.localize();
-				
-				$.wikiLove.$dialog.dialog({
-						width: 800,
-						position: ['center', 80],
-						autoOpen: false,
-						title: mw.msg( 'wikilove-dialog-title' ),
-						modal: true,
-						resizable: false
-					});
-				
-				$( '#wlButtonPreview' ).button( { label: mw.msg( 'wikilove-button-preview' ), icons: { primary:'ui-icon-search' } } );
-				$( '#wlButtonSend' ).button( { label: mw.msg( 'wikilove-button-send' ) } );
-				$( '#wlAddDetails' ).hide();
-				$( '#wlPreview' ).hide();
-				$( '#wlTypes' ).replaceWith( $typeList );
-				
-				$( '#wlTypes a' ).click( $.wikiLove.clickType );
-				$( '#wlSubtype' ).change( $.wikiLove.changeSubtype );
-				$( '#wlPreviewForm' ).submit( $.wikiLove.submitPreview );
-				$( '#wlSendForm' ).click( $.wikiLove.submitSend );
-				$( '#wlMessage' ).elastic(); // have the message textarea grow automatically
-				
-				$.wikiLove.$dialog.dialog( 'open' );
-			});			
-		} else {
-			$.wikiLove.$dialog.dialog( 'open' );
+			$.wikiLove.$dialog.localize();
+			
+			$.wikiLove.$dialog.dialog({
+					width: 800,
+					position: ['center', 80],
+					autoOpen: false,
+					title: mw.msg( 'wikilove-dialog-title' ),
+					modal: true,
+					resizable: false
+				});
+			
+			$( '#wlButtonPreview' ).button( { label: mw.msg( 'wikilove-button-preview' ), icons: { primary:'ui-icon-search' } } );
+			$( '#wlButtonSend' ).button( { label: mw.msg( 'wikilove-button-send' ) } );
+			$( '#wlAddDetails' ).hide();
+			$( '#wlPreview' ).hide();
+			$( '#wlTypes' ).replaceWith( $typeList );
+			
+			$( '#wlTypes a' ).click( $.wikiLove.clickType );
+			$( '#wlSubtype' ).change( $.wikiLove.changeSubtype );
+			$( '#wlPreviewForm' ).submit( $.wikiLove.submitPreview );
+			$( '#wlSendForm' ).click( $.wikiLove.submitSend );
+			$( '#wlMessage' ).elastic(); // have the message textarea grow automatically
 		}
+		
+		$.wikiLove.$dialog.dialog( 'open' );
 	},
 	
 	/*
