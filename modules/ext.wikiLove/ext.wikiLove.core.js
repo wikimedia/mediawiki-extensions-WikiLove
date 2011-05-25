@@ -146,9 +146,11 @@
 				for( var subtypeId in $.wikiLove.options.types[$.wikiLove.currentTypeId].subtypes ) {
 					// add all the subtypes to the menu while setting their subtype ids in jQuery data
 					var subtype = $.wikiLove.options.types[$.wikiLove.currentTypeId].subtypes[subtypeId];
-					$( '#mw-wikilove-subtype' ).append(
-						$( '<option></option>' ).text( subtype.option ).data( 'subtypeId', subtypeId )
-					);
+					if ( typeof subtype.option != 'undefined' ) {
+						$( '#mw-wikilove-subtype' ).append(
+							$( '<option></option>' ).text( subtype.option ).data( 'subtypeId', subtypeId )
+						);
+					}
 				}
 				$( '#mw-wikilove-subtype' ).show();
 				
