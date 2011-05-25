@@ -201,6 +201,12 @@
 	width: 300px;
 }
 
+/*#mw-wikilove-dialog #mw-wikilove-add-details*/ #mw-wikilove-subtype-description {
+	margin: 5px 0px 8px 15px;
+	font-size: 1.0em;
+	line-height: 1.2em;
+}
+
 /*#mw-wikilove-dialog*/ #mw-wikilove-add-details .mw-wikilove-note {
 	font-weight: light;
 	font-size: 0.9em;
@@ -210,19 +216,6 @@
 
 /*#mw-wikilove-dialog*/ #mw-wikilove-add-details textarea {
 	resize: none;
-}
-
-#mw-wikilove-dialog .mw-wikilove-spinner {
-	float: right;
-	margin-top: 0.9em;
-	display: none;
-	
-	/* @embed */
-	background-image: url(images/spinner.gif);
-	background-position: 0px 0px;
-	background-repeat: repeat-x;
-	width: 16px;
-	height: 16px;
 }
 
 /* add details gallery */
@@ -280,12 +273,6 @@
 	display: block;
 }
 
-/*#mw-wikilove-dialog*/ #wlSubtypeDescription {
-	margin: 5px 0px 8px 15px;
-	font-size: 1.0em;
-	line-height: 1.2em;
-}
-
 #mw-wikilove-dialog input[type=checkbox] {
 	display:inline-box;
 	margin: 5px 0px 5px 0px;
@@ -297,6 +284,19 @@
 
 #mw-wikilove-dialog .submit {
 	float: right;
+}
+
+#mw-wikilove-dialog .mw-wikilove-spinner {
+	float: right;
+	margin-top: 0.9em;
+	display: none;
+	
+	/* @embed */
+	background-image: url(images/spinner.gif);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	width: 16px;
+	height: 16px;
 }
 
 #mw-wikilove-dialog .mw-wikilove-number {
