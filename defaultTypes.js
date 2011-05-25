@@ -36,17 +36,27 @@ $.wikiLove.types = {
 		},
 		icon: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/extensions/WikiLove/images/icons/wikilove-icon-barnstar.png' // icon for left-side menu
 	},
-	'cats': {
-		name: 'Cat',
+	'puppy': {
+		name: 'Puppy',
 		fields: [ 'header' ],
-		header: 'A kitten for you!',
+		header: 'A puppy for you!',
 		text: '[[$3|left|150px]]\n$1\n\n~~~~\n<br style="clear: both"/>', // custom text
 		gallery: {
 			// right now we can only query the local wiki (not e.g. commons)
-			category: 'Category:Cats',
+			category: 'Category:Puppies',
 			total: 100, // total number of pictures to retrieve, and to randomise
 			num: 3, // number of pictures to show from the randomised set
 			width: 145 // width of each picture in pixels in the interface (not in the template)
+		}
+	},
+	'kitten': {
+		name: 'Kitten',
+		fields: [ 'header' ],
+		header: 'A kitten for you!',
+		text: '[[$3|left|150px]]\n$1\n\n~~~~\n<br style="clear: both"/>', // $3 is the image filename
+		gallery: {
+			imageList: ['File:Cucciolo gatto Bibo.jpg','File:Kitten (06) by Ron.jpg','File:Kitten-stare.jpg'],
+			width: 145
 		}
 	},
 	// default type, nice to leave this one in place when adding other types

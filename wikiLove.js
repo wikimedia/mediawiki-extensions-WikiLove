@@ -245,10 +245,18 @@
 		$( '#wlImage' ).val( $.wikiLove.currentTypeOrSubtype.image || '' );
 		
 		if( typeof $.wikiLove.currentTypeOrSubtype.gallery == 'object' ) {
-			$( '#wlGalleryLabel' ).show();
-			$( '#wlGallery' ).show();
-			$( '#wlGallerySpinner' ).show();
-			$.wikiLove.makeGallery();
+			if( $.wikiLove.currentTypeOrSubtype.gallery.imageList instanceof Array) {
+				$( '#wlGalleryLabel' ).show();
+				$( '#wlGallery' ).show();
+				$( '#wlGallerySpinner' ).show();
+				$.wikiLove.showGallery(); // build gallery from array of images
+			} else {
+				// gallery is a category
+				$( '#wlGalleryLabel' ).show();
+				$( '#wlGallery' ).show();
+				$( '#wlGallerySpinner' ).show();
+				$.wikiLove.makeGallery(); // build gallery from category
+			}
 		}
 		else {
 			$( '#wlGalleryLabel' ).hide();
@@ -431,6 +439,62 @@
 						+ '#' + data.redirect.fragment;
 				}
 			}
+		});
+	},
+	
+	/*
+	 * This function is called if the gallery is an array of images. It retrieves the image 
+	 * thumbnails from the API, and constructs a thumbnail gallery with them.
+	 */
+	showGallery: function() {
+		$( '#wlGallery' ).html( '' );
+		$.wikiLove.gallery = {};
+		$( '#wlGallerySpinner .wlSpinner' ).fadeIn( 200 );
+		
+		$.each( $.wikiLove.currentTypeOrSubtype.gallery.imageList, function(index, value) {
+		
+			$.ajax({
+				url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php',
+				data: {
+					'action'      : 'query',
+					'format'      : 'json',
+					'prop'        : 'imageinfo',
+					'iiprop'      : 'mime|url',
+					'titles'      : value,
+					'iiurlwidth'  : $.wikiLove.currentTypeOrSubtype.gallery.width
+				},
+				dataType: 'json',
+				type: 'POST',
+				success: function( data ) {
+					if ( !data || !data.query || !data.query.pages ) {
+						return;
+					}
+					$.each( data.query.pages, function( id, page ) {
+						if ( page.imageinfo && page.imageinfo.length ) {
+							// build an image tag with the correct url and width
+							$img = $( '<img/>' )
+								.attr( 'src', page.imageinfo[0].thumburl )
+								.attr( 'width', $.wikiLove.currentTypeOrSubtype.gallery.width )
+								.hide()
+								.load( function() { $( this ).css( 'display', 'inline-block' ); } );
+							$( '#wlGallery' ).append( 
+								$( '<a href="#"></a>' )
+									.attr( 'id', 'wlGalleryImg' + index )
+									.append( $img )
+									.click( function( e ) {
+										e.preventDefault();
+										$( '#wlGallery a' ).removeClass( 'selected' );
+										$( this ).addClass( 'selected' );
+										$( '#wlImage' ).val( $.wikiLove.gallery[$( this ).attr( 'id' )] );
+										return false;
+									}) 
+							);
+							$.wikiLove.gallery['wlGalleryImg' + index] = page.title;
+						}
+					} );
+				}
+			});
+		
 		});
 	},
 	
