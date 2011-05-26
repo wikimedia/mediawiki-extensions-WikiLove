@@ -264,7 +264,7 @@
 	submitPreview: function( e ) {
 		e.preventDefault();
 		$( '#mw-wikilove-preview' ).hide();
-		$( '#mw-wikilove-dialog' ).find( '.wlError' ).remove();
+		$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
 		
 		if( typeof $.wikiLove.currentTypeOrSubtype.gallery == 'object' ) {
 			if ( $( '#mw-wikilove-image' ).val().length <= 0 ) {
