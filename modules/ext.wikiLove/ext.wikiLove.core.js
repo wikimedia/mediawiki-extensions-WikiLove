@@ -194,7 +194,7 @@
 	 * Called when type or subtype changes, updates controls.
 	 */
 	updateAllDetails: function() {
-		$( '#wikiLoveDialog' ).find( '.mw-wikilove-error' ).remove();
+		$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
 		
 		// only show the description if it exists for this type or subtype
 		if( typeof $.wikiLove.currentTypeOrSubtype.descr == 'string' ) {
@@ -264,7 +264,7 @@
 	submitPreview: function( e ) {
 		e.preventDefault();
 		$( '#mw-wikilove-preview' ).hide();
-		$( '#wikiLoveDialog' ).find( '.wlError' ).remove();
+		$( '#mw-wikilove-dialog' ).find( '.wlError' ).remove();
 		
 		if( typeof $.wikiLove.currentTypeOrSubtype.gallery == 'object' ) {
 			if ( $( '#mw-wikilove-image' ).val().length <= 0 ) {
