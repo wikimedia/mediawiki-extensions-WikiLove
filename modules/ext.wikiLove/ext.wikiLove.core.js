@@ -440,60 +440,80 @@
 		$.wikiLove.gallery = {};
 		$( '#mw-wikilove-gallery-spinner' ).fadeIn( 200 );
 		
-		$.each( $.wikiLove.currentTypeOrSubtype.gallery.imageList, function(index, value) {
+		if( typeof $.wikiLove.currentTypeOrSubtype.gallery.number == 'undefined'
+		    || $.wikiLove.currentTypeOrSubtype.gallery.number <= 0
+		) {
+			$.wikiLove.currentTypeOrSubtype.gallery.number = $.wikiLove.currentTypeOrSubtype.gallery.imageList.length;
+		}
 		
-			$.ajax({
-				url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php',
-				data: {
-					'action'      : 'query',
-					'format'      : 'json',
-					'prop'        : 'imageinfo',
-					'iiprop'      : 'mime|url',
-					'titles'      : value,
-					'iiurlwidth'  : $.wikiLove.currentTypeOrSubtype.gallery.width
-				},
-				dataType: 'json',
-				type: 'POST',
-				success: function( data ) {
-					$( '#mw-wikilove-gallery-spinner' ).fadeOut( 200 );
-					
-					if ( !data || !data.query || !data.query.pages ) {
-						return;
-					}
-					$.each( data.query.pages, function( id, page ) {
-						if ( page.imageinfo && page.imageinfo.length ) {
-							// build an image tag with the correct url and width
-							$img = $( '<img/>' )
-								.attr( 'src', page.imageinfo[0].thumburl )
-								.attr( 'width', $.wikiLove.currentTypeOrSubtype.gallery.width )
-								.hide()
-								.load( function() { $( this ).css( 'display', 'inline-block' ); } );
-							$( '#mw-wikilove-gallery-content' ).append( 
-								$( '<a href="#"></a>' )
-									.attr( 'id', 'mw-wikilove-gallery-img-' + index )
-									.append( $img )
-									.click( function( e ) {
-										e.preventDefault();
-										$( '#mw-wikilove-gallery a' ).removeClass( 'selected' );
-										$( this ).addClass( 'selected' );
-										$( '#mw-wikilove-image' ).val( $.wikiLove.gallery[$( this ).attr( 'id' )] );
-									}) 
-							);
-							$.wikiLove.gallery['mw-wikilove-gallery-img-' + index] = page.title;
-						}
-					} );
+		var titles = '';
+		var imageList = $.wikiLove.currentTypeOrSubtype.gallery.imageList;
+		for( var i=0; i<$.wikiLove.currentTypeOrSubtype.gallery.number; i++ ) {
+			// get a randomimage
+			var id = Math.floor( Math.random() * imageList.length );
+			titles = titles + 'File:' + imageList[id] + '|';
+			
+			// remove the random page from the keys array
+			imageList.splice(id, 1);
+		}
+		
+		var index = 0;
+		$.ajax({
+			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php',
+			data: {
+				'action'      : 'query',
+				'format'      : 'json',
+				'prop'        : 'imageinfo',
+				'iiprop'      : 'mime|url',
+				'titles'      : titles,
+				'iiurlwidth'  : $.wikiLove.currentTypeOrSubtype.gallery.width
+			},
+			dataType: 'json',
+			type: 'POST',
+			success: function( data ) {
+				$( '#mw-wikilove-gallery-spinner' ).fadeOut( 200 );
+				
+				if ( !data || !data.query || !data.query.pages ) {
+					return;
 				}
-			});
-		
+				$.each( data.query.pages, function( id, page ) {
+					if ( page.imageinfo && page.imageinfo.length ) {
+						// build an image tag with the correct url and width
+						$img = $( '<img/>' )
+							.attr( 'src', page.imageinfo[0].thumburl )
+							.attr( 'width', $.wikiLove.currentTypeOrSubtype.gallery.width )
+							.hide()
+							.load( function() { $( this ).css( 'display', 'inline-block' ); } );
+						$( '#mw-wikilove-gallery-content' ).append( 
+							$( '<a href="#"></a>' )
+								.attr( 'id', 'mw-wikilove-gallery-img-' + index )
+								.append( $img )
+								.click( function( e ) {
+									e.preventDefault();
+									$( '#mw-wikilove-gallery a' ).removeClass( 'selected' );
+									$( this ).addClass( 'selected' );
+									$( '#mw-wikilove-image' ).val( $.wikiLove.gallery[$( this ).attr( 'id' )] );
+								}) 
+						);
+						$.wikiLove.gallery['mw-wikilove-gallery-img-' + index] = page.title;
+						index++;
+					}
+				} );
+			}
 		});
-	},
+	}
 	
 	/*
 	 * This is a bit of a hack to show some random images. A predefined set of image infos are
 	 * retrieved using the API. Then we randomise this set ourselves and select some images to
 	 * show. Eventually we probably want to make a custom API call that does this properly and
 	 * also allows for using remote galleries such as Commons, which is now prohibited by JS.
+	 *
+	 * For now this function is disabled. It also shares code with the current gallery function,
+	 * so when enabling it again it should be implemented cleaner with a custom API call, and
+	 * without duplicate code between functions
 	 */
+	/*
 	makeGallery: function() {
 		$( '#mw-wikilove-gallery-content' ).html( '' );
 		$.wikiLove.gallery = {};
@@ -575,6 +595,7 @@
 			}
 		});
 	},
+	*/
 };
 } ) ( jQuery );
 
