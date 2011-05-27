@@ -175,6 +175,7 @@ $messages['he'] = array(
 	'wikilove-omit-sig' => '(ללא חתימה)',
 	'wikilove-button-preview' => 'תצוגה מקדימה',
 	'wikilove-preview' => 'תצוגה מקדימה',
+	'wikilove-notify' => 'להודיע למשתמש בדואר אלקטרוני',
 	'wikilove-button-send' => 'לשלוח ויקי־אהבה',
 	'wikilove-type-makeyourown' => 'יצירה אישית',
 	'wikilove-err-header' => 'נא להזין כותרת פסקה.',
@@ -182,7 +183,6 @@ $messages['he'] = array(
 	'wikilove-err-msg' => 'נא להזין הודעה.',
 	'wikilove-err-image' => 'נא לבחור תמונה.',
 	'wikilove-err-sig' => 'נא לא לכתוב חתימה בהודעה.',
-	'wikilove-barnstar-header' => 'קיבלת צל"ש!',
 );
 
 /** Interlingua (Interlingua)
