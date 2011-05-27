@@ -16,7 +16,7 @@ class WikiLoveApi extends ApiBase {
 		}
 		
 		if ( $wgWikiLoveLogging ) {
-			$this->saveInDb( $talk, $params['subject'], $params['text'], $params['type'], isset( $params['email'] ) ? 1 : 0 );
+			$this->saveInDb( $talk, $params['subject'], $params['message'], $params['type'], isset( $params['email'] ) ? 1 : 0 );
 		}
 		
 		$api = new ApiMain( new FauxRequest( array(
@@ -30,7 +30,7 @@ class WikiLoveApi extends ApiBase {
 		), false, array( 'wsEditToken' => $wgRequest->getSessionData( 'wsEditToken' ) ) ), true );
 		
 		if ( isset( $params['email'] ) ) {
-			$this->emailUser( $talk, $params['subject'], $params['email'] );
+			$this->emailUser( $talk, $params['subject'], $params['email'], $params['token'] );
 		}
 
 		$api->execute();
@@ -46,11 +46,12 @@ class WikiLoveApi extends ApiBase {
 	/**
 	 * @param $talk Title
 	 * @param $subject
-	 * @param $text
+	 * @param $message
 	 * @param $type
+	 * @param $email
 	 * @return void
 	 */
-	private function saveInDb( $talk, $subject, $text, $type, $email ) {
+	private function saveInDb( $talk, $subject, $message, $type, $email ) {
 		global $wgUser;
 		$dbw = wfGetDB( DB_MASTER );
 		$values = array(
@@ -59,7 +60,7 @@ class WikiLoveApi extends ApiBase {
 			'wll_receiver' => User::newFromName( $talk->getSubjectPage()->getBaseText() )->getId(),
 			'wll_type' => $type,
 			'wll_subject' => $subject,
-			'wll_message' => $text,
+			'wll_message' => $message,
 			'wll_email' => $email,
 		);
 		try{
@@ -69,12 +70,14 @@ class WikiLoveApi extends ApiBase {
 		}
 	}
 	
-	private function emailUser( $talk, $subject, $text ) {
+	private function emailUser( $talk, $subject, $text, $token ) {
+		global $wgRequest;
 		$api = new ApiMain( new FauxRequest( array(
 			'action' => 'emailuser',
 			'target'  =>  User::newFromName( $talk->getSubjectPage()->getBaseText() )->getName(),
 			'subject' => $subject,
 			'text'  => $text,
+			'token' => $token,
 		), false, array( 'wsEditToken' => $wgRequest->getSessionData( 'wsEditToken' ) ) ), true );
 		try{
 			$api->execute();
@@ -90,6 +93,10 @@ class WikiLoveApi extends ApiBase {
 				ApiBase::PARAM_REQUIRED => true,
 			),
 			'text' => array(
+				ApiBase::PARAM_TYPE => 'string',
+				ApiBase::PARAM_REQUIRED => true,
+			),
+			'message' => array(
 				ApiBase::PARAM_TYPE => 'string',
 				ApiBase::PARAM_REQUIRED => true,
 			),
@@ -114,6 +121,7 @@ class WikiLoveApi extends ApiBase {
 		return array(
 			'title' => 'Title of the user or user talk page to send WikiLove to',
 			'text' => 'Raw wikitext to add in the new section',
+			'message' => 'Actual message the user has entered, for logging purposes',
 			'token' => 'Edit token. You can get one of these through prop=info',
 			'subject' => 'Subject header of the new section',
 			'type' => array( 'Type of WikiLove (for statistics); this corresponds with a type',

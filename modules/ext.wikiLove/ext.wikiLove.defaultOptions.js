@@ -26,7 +26,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!', // header that appears at the top of the talk page post (optional)
 					title: 'The Original Barnstar', // title that appears inside the award box (optional)
 					image: 'Original Barnstar Hires.png', // image for the award
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.' // message to use in email notification; $7 is replaced by the recipient's username
+					email: 'Hello $7!\n\nI just awarded you a barnstar.' // message to use in eemail notification; $7 is replaced by the recipient's username
 				},
 				'admins': {
 					fields: [ 'notify' ],
@@ -35,7 +35,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The Admin\'s Barnstar',
 					image: 'Administrator Barnstar Hires.png',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				},
 				'antivandalism': {
 					fields: [ 'notify' ],
@@ -44,7 +44,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The Anti-Vandalism Barnstar',
 					image: 'Barnstar of Reversion Hires.png',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				},
 				'diligence': {
 					fields: [ 'notify' ],
@@ -53,7 +53,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The Barnstar of Diligence',
 					image: 'Barnstar of Diligence Hires.png',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				},
 				'diplomacy': {
 					fields: [ 'notify' ],
@@ -62,7 +62,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The Barnstar of Diplomacy',
 					image: 'Peace Barnstar Hires.png',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				},
 				'goodhumor': {
 					fields: [ 'notify' ],
@@ -71,7 +71,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The Barnstar of Good Humor',
 					image: 'Barnstar of Reversion Hires.png',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				},
 				'brilliant': {
 					fields: [ 'notify' ],
@@ -80,7 +80,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The Brilliant Idea Barnstar',
 					image: 'Brilliant Idea Barnstar Hires.png',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				},
 				'citation': {
 					fields: [ 'notify' ],
@@ -89,7 +89,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The Citation Barnstar',
 					image: 'Citation Barnstar Hires.png',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				},
 				'civility': {
 					fields: [ 'notify' ],
@@ -98,7 +98,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The Civility Barnstar',
 					image: 'Civility Barnstar Hires.png',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				},
 				'copyeditor': {
 					fields: [ 'notify' ],
@@ -107,7 +107,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The Copyeditor\'s Barnstar',
 					image: 'Copyeditor Barnstar Hires.png',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				},
 				'defender': {
 					fields: [ 'notify' ],
@@ -116,7 +116,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The Defender of the Wiki Barnstar',
 					image: 'WikiDefender Barnstar Hires.png',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				},
 				'editors': {
 					fields: [ 'notify' ],
@@ -125,7 +125,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The Editor\'s Barnstar',
 					image: 'Editors Barnstar Hires.png',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				},
 				'designers': {
 					fields: [ 'notify' ],
@@ -134,7 +134,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The Graphic Designer\'s Barnstar',
 					image: 'Rosetta Barnstar Hires.png',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				},
 				'half': {
 					fields: [ 'notify' ],
@@ -143,7 +143,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The Half Barnstar',
 					image: 'Halfstar Hires.png',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				},
 				'minor': {
 					fields: [ 'notify' ],
@@ -152,7 +152,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The Minor barnstar',
 					image: 'Minor Barnstar Hires.png',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				},
 				'antispam': {
 					fields: [ 'notify' ],
@@ -161,7 +161,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The No Spam Barnstar',
 					image: 'No Spam Barnstar Hires.png',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				},
 				'photographers': {
 					fields: [ 'notify' ],
@@ -170,7 +170,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The Photographer\'s Barnstar',
 					image: 'Camera Barnstar Hires.png',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				},
 				'kindness': {
 					fields: [ 'notify' ],
@@ -179,7 +179,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The Random Acts of Kindness barnstar',
 					image: 'Kindness Barnstar Hires.png',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				},
 				'reallife': {
 					fields: [ 'notify' ],
@@ -188,7 +188,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The Real Life Barnstar',
 					image: 'Real Life Barnstar.jpg',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				},
 				'resilient': {
 					fields: [ 'notify' ],
@@ -197,7 +197,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The Resilient Barnstar',
 					image: 'Resilient Barnstar Hires.png',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				},
 				'rosetta': {
 					fields: [ 'notify' ],
@@ -206,7 +206,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The Rosetta Barnstar',
 					image: 'Rosetta Barnstar Hires.png',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				},
 				'special': {
 					fields: [ 'notify' ],
@@ -215,7 +215,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The Special Barnstar',
 					image: 'Special Barnstar Hires.png',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				},
 				'surreal': {
 					fields: [ 'notify' ],
@@ -224,7 +224,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The Surreal Barnstar',
 					image: 'Surreal Barnstar Hires.png',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				},
 				'teamwork': {
 					fields: [ 'notify' ],
@@ -233,7 +233,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The Teamwork Barnstar',
 					image: 'Team Barnstar Hires.png',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				},
 				'technical': {
 					fields: [ 'notify' ],
@@ -242,7 +242,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The Technical Barnstar',
 					image: 'Vitruvian Barnstar Hires.png',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				},
 				'tireless': {
 					fields: [ 'notify' ],
@@ -251,7 +251,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The Tireless Contributor Barnstar',
 					image: 'Tireless Contributor Barnstar Hires.gif',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				},
 				'writers': {
 					fields: [ 'notify' ],
@@ -260,7 +260,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!',
 					title: 'The Writer\'s Barnstar',
 					image: 'Writers Barnstar Hires.png',
-					mail: 'Hello $7!\n\nI just awarded you a barnstar.'
+					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				}
 			},
 			icon: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/extensions/WikiLove/modules/ext.wikiLove/images/icons/wikilove-icon-barnstar.png' // icon for left-side menu

@@ -240,9 +240,10 @@
 				$.wikiLove.showGallery(); // build gallery from array of images
 			} else {
 				// gallery is a category
-				$( '#mw-wikilove-gallery-label' ).show();
-				$( '#mw-wikilove-gallery' ).show();
-				$.wikiLove.makeGallery(); // build gallery from category
+				// not supported right now
+				$( '#mw-wikilove-gallery-label' ).hide();
+				$( '#mw-wikilove-gallery' ).hide();
+				//$.wikiLove.makeGallery(); // build gallery from category
 			}
 		}
 		else {
@@ -294,23 +295,24 @@
 			$.wikiLove.showError( 'wikilove-err-sig' ); return false;
 		}
 		
-		var msg = $.wikiLove.prepareMsg(
+		var text = $.wikiLove.prepareMsg(
 			$.wikiLove.currentTypeOrSubtype.text || $.wikiLove.options.defaultText,
 			$.wikiLove.currentTypeOrSubtype.imageSize,
 			$.wikiLove.currentTypeOrSubtype.backgroundColor,
 			$.wikiLove.currentTypeOrSubtype.borderColor
 		);
 		
-		$.wikiLove.doPreview( '==' + $( '#mw-wikilove-header' ).val() + "==\n" + msg );
+		$.wikiLove.doPreview( '==' + $( '#mw-wikilove-header' ).val() + "==\n" + text );
 		$.wikiLove.previewData = {
 			'header': $( '#mw-wikilove-header' ).val(),
-			'msg': msg,
+			'text': text,
+			'message': $( '#mw-wikilove-message' ).val(),
 			'type': $.wikiLove.currentTypeId
 				+ ($.wikiLove.currentSubtypeId !== null ? '-' + $.wikiLove.currentSubtypeId : '')
 		};
 		
 		if ( $( '#mw-wikilove-notify-checkbox:checked' ).val() && $.wikiLove.emailable ) {
-			$.wikiLove.previewData.mail = $.wikiLove.prepareMsg( $.wikiLove.currentTypeOrSubtype.mail );
+			$.wikiLove.previewData.email = $.wikiLove.prepareMsg( $.wikiLove.currentTypeOrSubtype.email );
 		}
 	},
 	
@@ -385,14 +387,14 @@
 	 */
 	submitSend: function( e ) {
 		e.preventDefault();
-		$.wikiLove.doSend( $.wikiLove.previewData.header, $.wikiLove.previewData.msg,
-			$.wikiLove.previewData.type, $.wikiLove.previewData.notify );
+		$.wikiLove.doSend( $.wikiLove.previewData.header, $.wikiLove.previewData.text,
+			$.wikiLove.previewData.message, $.wikiLove.previewData.type, $.wikiLove.previewData.email );
 	},
 	
 	/*
 	 * Fires the final AJAX request and then redirects to the talk page where the content is added.
 	 */
-	doSend: function( subject, wikitext, type, mail ) {
+	doSend: function( subject, wikitext, message, type, email ) {
 		$( '#mw-wikilove-send-spinner' ).fadeIn( 200 );
 		
 		var sendData = {
@@ -401,12 +403,13 @@
 			'title': mw.config.get( 'wgPageName' ),
 			'type': type,
 			'text': wikitext,
+			'message': message,
 			'subject': subject,
 			'token': mw.user.tokens.get( 'editToken' )
 		};
 		
-		if ( mail ) {
-			sendData.email = mail;
+		if ( email ) {
+			sendData.email = email;
 		}
 		
 		$.ajax({
@@ -418,7 +421,7 @@
 				$( '#mw-wikilove-send-spinner' ).fadeOut( 200 );
 				
 				if ( typeof data.error !== 'undefined' ) {
-					$( '#mw-wikilove-preview' ).append( '<div class="wlError">' + mw.html.escape( data.error.info ) + '<div>' );
+					$( '#mw-wikilove-preview' ).append( '<div class="mw-wikilove-error">' + mw.html.escape( data.error.info ) + '<div>' );
 					return;
 				}
 				
