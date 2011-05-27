@@ -266,9 +266,13 @@
 		$( '#mw-wikilove-preview' ).hide();
 		$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
 		
-		if( typeof $.wikiLove.currentTypeOrSubtype.gallery == 'object' ) {
-			if ( $( '#mw-wikilove-image' ).val().length <= 0 ) {
+		
+		if ( $( '#mw-wikilove-image' ).val().length <= 0 ) {
+			if( typeof $.wikiLove.currentTypeOrSubtype.gallery == 'object' ) {
 				$.wikiLove.showError( 'wikilove-err-image' ); return false;
+			}
+			else {
+				$( '#mw-wikilove-image' ).val( $.wikiLove.options.defaultImage );
 			}
 		}
 		if( $( '#mw-wikilove-header' ).val().length <= 0 ) {

@@ -1,7 +1,7 @@
 ( function( $ ) {
 $.wikiLove.optionsHook = function() { return {
 	defaultText: '{| style="background-color: $5; border: 1px solid $6;"\n\
-|rowspan="2" style="vertical-align: middle; padding: 5px;" | [[Image:$3|$4]]\n\
+|rowspan="2" style="vertical-align: middle; padding: 5px;" | [[File:$3|$4]]\n\
 |style="font-size: x-large; padding: 3px; height: 1.5em;" | \'\'\'$2\'\'\'\n\
 |-\n\
 |style="vertical-align: middle; padding: 3px;" | $1 ~~~~\n\
@@ -9,6 +9,7 @@ $.wikiLove.optionsHook = function() { return {
 	defaultBackgroundColor: '#fdffe7',
 	defaultBorderColor: '#fceb92',
 	defaultImageSize: '100px',
+	defaultImage: 'Emblem-fun.svg',
 	
 	types: {
 		// example type, could be removed later (also no i18n)
