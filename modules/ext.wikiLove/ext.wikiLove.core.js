@@ -278,9 +278,16 @@
 		if( $( '#mw-wikilove-header' ).val().length <= 0 ) {
 			$.wikiLove.showError( 'wikilove-err-header' ); return false;
 		}
+		
+		/*
+		Let's not show an error for not entering a message, making it always optional.
+		This is preferred over removing the field from the interface, so that users are
+		stimulated to enter a message, but are not required to do so if they want to leave
+		a quick gesture of appreciation.
 		if( $( '#mw-wikilove-message' ).val().length <= 0 ) {
 			$.wikiLove.showError( 'wikilove-err-msg' ); return false;
 		}
+		*/
 		
 		// If there isn't a signature already in the message, throw an error
 		if ( $( '#mw-wikilove-message' ).val().indexOf( '~~~' ) >= 0 ) {
