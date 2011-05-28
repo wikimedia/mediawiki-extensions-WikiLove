@@ -454,7 +454,9 @@ return {
 			imageList.splice(id, 1);
 		}
 		
-		var index = 0;
+		var	index = 0,
+			loadingType = currentTypeOrSubtype
+			loadingIndex = 0;
 		$.ajax({
 			url: mw.util.wikiScript( 'api' ),
 			data: {
@@ -468,11 +470,10 @@ return {
 			dataType: 'json',
 			type: 'POST',
 			success: function( data ) {
-				$( '#mw-wikilove-gallery-spinner' ).fadeOut( 200 );
-				
-				if ( !data || !data.query || !data.query.pages ) {
+				if ( !data || !data.query || !data.query.pages || loadingType != currentTypeOrSubtype ) {
 					return;
 				}
+				
 				$.each( data.query.pages, function( id, page ) {
 					if ( page.imageinfo && page.imageinfo.length ) {
 						// build an image tag with the correct url and width
@@ -480,7 +481,13 @@ return {
 							.attr( 'src', page.imageinfo[0].thumburl )
 							.attr( 'width', currentTypeOrSubtype.gallery.width )
 							.hide()
-							.load( function() { $( this ).css( 'display', 'inline-block' ); } );
+							.load( function() { 
+								$( this ).css( 'display', 'inline-block' );
+								loadingIndex++;
+								if ( loadingIndex >= currentTypeOrSubtype.gallery.number ) {
+									$( '#mw-wikilove-gallery-spinner' ).fadeOut( 200 );
+								}
+							} );
 						$( '#mw-wikilove-gallery-content' ).append( 
 							$( '<a href="#"></a>' )
 								.attr( 'id', 'mw-wikilove-gallery-img-' + index )
