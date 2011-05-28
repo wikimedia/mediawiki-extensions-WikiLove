@@ -460,7 +460,7 @@ return {
 		}
 		
 		var titles = '';
-		var imageList = currentTypeOrSubtype.gallery.imageList;
+		var imageList = currentTypeOrSubtype.gallery.imageList.slice( 0 );
 		for( var i=0; i<currentTypeOrSubtype.gallery.number; i++ ) {
 			// get a randomimage
 			var id = Math.floor( Math.random() * imageList.length );
