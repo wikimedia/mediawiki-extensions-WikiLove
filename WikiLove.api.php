@@ -98,7 +98,6 @@ class WikiLoveApi extends ApiBase {
 			),
 			'message' => array(
 				ApiBase::PARAM_TYPE => 'string',
-				ApiBase::PARAM_REQUIRED => true,
 			),
 			'token' => array(
 				ApiBase::PARAM_TYPE => 'string',

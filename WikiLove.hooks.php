@@ -56,6 +56,11 @@ class WikiLoveHooks {
 		if ( !is_null( $title ) ) {
 			$out->addModules( 'ext.wikiLove.icon' );
 			$out->addModules( 'ext.wikiLove.init' );
+			$out->addInlineScript(
+				'jQuery( document ).ready( function() {
+					jQuery.wikiLove.setUsername( ' . FormatJson::encode( $title->getText() ) . ' );
+				} );'
+			);
 		}
 		return true;
 	}
@@ -130,10 +135,15 @@ class WikiLoveHooks {
 		}
 		
 		$ns = $title->getNamespace();
-		if ( $ns == NS_USER_TALK && $title->quickUserCan( 'edit' ) ) {
-			return $title;
+		// return quickly if we're in the wrong namespace anyway
+		if ( $ns != NS_USER && $ns != NS_USER_TALK ) return null;
+		
+		$baseTitle = Title::newFromText( $title->getBaseText(), $ns );
+		
+		if ( $ns == NS_USER_TALK && $baseTitle->quickUserCan( 'edit' ) ) {
+			return $baseTitle;
 		} elseif ( $ns == NS_USER ) {
-			$talk = $title->getTalkPage();
+			$talk = $baseTitle->getTalkPage();
 			if ( $talk->quickUserCan( 'edit' ) ) {
 				return $talk;
 			}

@@ -8,7 +8,8 @@ var	options = {}, // options modifiable by the user
 	currentTypeOrSubtype = null, // content of the current (sub)type (i.e. an object with title, descr, text, etc.)
 	previewData = null, // data of the currently previewed thing is set here
 	emailable = false,
-	gallery = {};
+	gallery = {},
+	username = '';
 	
 return {
 	optionsHook: function() { return {}; }, // hook that can be overridden by the user to modify options
@@ -138,7 +139,7 @@ return {
 			currentTypeId = newTypeId;
 			currentSubtypeId = null; // reset the subtype id
 			
-			$( '#mw-wikilove-types a' ).removeClass( 'selected' );
+			$( '#mw-wikilove-types' ).find( 'a' ).removeClass( 'selected' );
 			$( this ).addClass( 'selected' ); // highlight the new type in the menu
 			
 			if( typeof options.types[currentTypeId].subtypes == 'object' ) {
@@ -207,51 +208,34 @@ return {
 		}
 		
 		// show or hide header label and textbox depending on whether a predefined header exists
-		if( $.inArray( 'header', currentTypeOrSubtype.fields ) >= 0 ) {
-			$( '#mw-wikilove-header-label').show();
-			$( '#mw-wikilove-header' ).show();
-		} else {
-			$( '#mw-wikilove-header-label').hide();
-			$( '#mw-wikilove-header' ).hide();
-		}
+		$( '#mw-wikilove-header, #mw-wikilove-header-label' )
+			.toggle( $.inArray( 'header', currentTypeOrSubtype.fields ) >= 0 );
+		
+		// set the new text for the header textbox
 		$( '#mw-wikilove-header' ).val( currentTypeOrSubtype.header || '' );
 		
 		// show or hide title label and textbox depending on whether a predefined title exists
-		if( $.inArray( 'title', currentTypeOrSubtype.fields ) >= 0 ) {
-			$( '#mw-wikilove-title-label').show();
-			$( '#mw-wikilove-title' ).show();
-		} else {
-			$( '#mw-wikilove-title-label').hide();
-			$( '#mw-wikilove-title' ).hide();
-		}
+		$( '#mw-wikilove-title, #mw-wikilove-title-label')
+			.toggle( $.inArray( 'title', currentTypeOrSubtype.fields ) >= 0 );
+		
+		// set the new text for the title textbox
 		$( '#mw-wikilove-title' ).val( currentTypeOrSubtype.title || '' );
 		
 		// show or hide image label and textbox depending on whether a predefined image exists
-		if( $.inArray( 'image', currentTypeOrSubtype.fields ) >= 0 ) {
-			$( '#mw-wikilove-image-label').show();
-			$( '#mw-wikilove-image' ).show();
-		} else {
-			$( '#mw-wikilove-image-label').hide();
-			$( '#mw-wikilove-image' ).hide();
-		}
+		$( '#mw-wikilove-image, #mw-wikilove-image-label')
+			.toggle( $.inArray( 'image', currentTypeOrSubtype.fields ) >= 0 );
+		
+		// set the new text for the image textbox
 		$( '#mw-wikilove-image' ).val( currentTypeOrSubtype.image || '' );
 		
-		if( typeof currentTypeOrSubtype.gallery == 'object' ) {
-			if( currentTypeOrSubtype.gallery.imageList instanceof Array) {
-				$( '#mw-wikilove-gallery-label' ).show();
-				$( '#mw-wikilove-gallery' ).show();
-				$.wikiLove.showGallery(); // build gallery from array of images
-			} else {
-				// gallery is a category
-				// not supported right now
-				$( '#mw-wikilove-gallery-label' ).hide();
-				$( '#mw-wikilove-gallery' ).hide();
-				//$.wikiLove.makeGallery(); // build gallery from category
-			}
+		if( typeof currentTypeOrSubtype.gallery == 'object' 
+			&& currentTypeOrSubtype.gallery.imageList instanceof Array
+		) {
+			$( '#mw-wikilove-gallery, #mw-wikilove-gallery-label' ).show();
+			$.wikiLove.showGallery(); // build gallery from array of images
 		}
 		else {
-			$( '#mw-wikilove-gallery-label' ).hide();
-			$( '#mw-wikilove-gallery' ).hide();
+			$( '#mw-wikilove-gallery, #mw-wikilove-gallery-label' ).hide();
 		}
 		
 		if( $.inArray( 'notify', currentTypeOrSubtype.fields ) >= 0 && emailable ) {
@@ -298,14 +282,14 @@ return {
 			$.wikiLove.showError( 'wikilove-err-sig' ); return false;
 		}
 		
-		var text = prepareMsg(
+		var text = $.wikiLove.prepareMsg(
 			currentTypeOrSubtype.text || options.defaultText,
 			currentTypeOrSubtype.imageSize,
 			currentTypeOrSubtype.backgroundColor,
 			currentTypeOrSubtype.borderColor
 		);
 		
-		doPreview( '==' + $( '#mw-wikilove-header' ).val() + "==\n" + text );
+		$.wikiLove.doPreview( '==' + $( '#mw-wikilove-header' ).val() + "==\n" + text );
 		previewData = {
 			'header': $( '#mw-wikilove-header' ).val(),
 			'text': text,
@@ -315,7 +299,7 @@ return {
 		};
 		
 		if ( $( '#mw-wikilove-notify-checkbox:checked' ).val() && emailable ) {
-			previewData.email = prepareMsg( currentTypeOrSubtype.email );
+			previewData.email = $.wikiLove.prepareMsg( currentTypeOrSubtype.email );
 		}
 	},
 	
@@ -347,7 +331,7 @@ return {
 		msg = msg.replace( '$5', myBackgroundColor ); // replace the background color
 		msg = msg.replace( '$6', myBorderColor ); // replace the border color
 		
-		msg = msg.replace( '$7', wgTitle ); // replace the username we're sending to
+		msg = msg.replace( '$7', username ); // replace the username we're sending to
 		
 		return msg;
 	},
@@ -358,7 +342,7 @@ return {
 	doPreview: function( wikitext ) {
 		$( '#mw-wikilove-preview-spinner' ).fadeIn( 200 );
 		$.ajax({
-			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php?',
+			url: mw.util.wikiScript( 'api' ),
 			data: {
 				'action': 'parse',
 				'format': 'json',
@@ -416,7 +400,7 @@ return {
 		}
 		
 		$.ajax({
-			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php?',
+			url: mw.util.wikiScript( 'api' ),
 			data: sendData,
 			dataType: 'json',
 			type: 'POST',
@@ -472,7 +456,7 @@ return {
 		
 		var index = 0;
 		$.ajax({
-			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php',
+			url: mw.util.wikiScript( 'api' ),
 			data: {
 				'action'      : 'query',
 				'format'      : 'json',
@@ -517,14 +501,21 @@ return {
 	},
 	
 	/*
-	* Init function which is called upon page load. Binds the WikiLove icon to opening the dialog.
-	*/
+	 * Init function which is called upon page load. Binds the WikiLove icon to opening the dialog.
+	 */
 	init: function() {
 		options = $.wikiLove.optionsHook();
-		$( '#ca-wikilove a' ).click( function( e ) {
+		$( '#ca-wikilove' ).find( 'a' ).click( function( e ) {
 			$.wikiLove.openDialog();
 			e.preventDefault();
 		});
+	},
+	
+	/*
+	 * Public function to set the username by finding the base title server-side.
+	 */
+	setUsername: function( name ) {
+		username = name;
 	}
 	
 	/*
@@ -544,7 +535,7 @@ return {
 		$( '#mw-wikilove-gallery-spinner' ).fadeIn( 200 );
 		
 		$.ajax({
-			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php',
+			url: mw.util.wikiScript( 'api' ),
 			data: {
 				'action'      : 'query',
 				'format'      : 'json',
