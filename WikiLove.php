@@ -67,6 +67,7 @@ $wgHooks['SkinTemplateNavigation'][]              = 'WikiLoveHooks::skinTemplate
 $wgHooks['SkinTemplateTabs'][]                    = 'WikiLoveHooks::skinTemplateTabs';
 $wgHooks['BeforePageDisplay'][]                   = 'WikiLoveHooks::beforePageDisplay';
 $wgHooks['LoadExtensionSchemaUpdates'][]          = 'WikiLoveHooks::loadExtensionSchemaUpdates';
+$wgHooks['MakeGlobalVariablesScript'][]           = 'WikiLoveHooks::makeGlobalVariablesScript';
 
 // api modules
 $wgAPIModules['wikilove'] = 'WikiLoveApi';

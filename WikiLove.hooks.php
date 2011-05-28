@@ -7,6 +7,8 @@
  */
 
 class WikiLoveHooks {
+	private static $recipient = '';
+	
 	/**
 	 * LoadExtensionSchemaUpdates hook
 	 *
@@ -56,12 +58,16 @@ class WikiLoveHooks {
 		if ( !is_null( $title ) ) {
 			$out->addModules( 'ext.wikiLove.icon' );
 			$out->addModules( 'ext.wikiLove.init' );
-			$out->addInlineScript(
-				'jQuery( document ).ready( function() {
-					jQuery.wikiLove.setUsername( ' . FormatJson::encode( $title->getText() ) . ' );
-				} );'
-			);
+			self::$recipient = $title->getText();
 		}
+		return true;
+	}
+	
+	/**
+	 * Exports wikilove-recipient variable to JS
+	 */
+	public static function makeGlobalVariablesScript( &$vars ) {
+		$vars['wikilove-recipient'] = self::$recipient;
 		return true;
 	}
 	

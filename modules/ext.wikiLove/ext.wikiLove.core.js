@@ -8,8 +8,7 @@ var	options = {}, // options modifiable by the user
 	currentTypeOrSubtype = null, // content of the current (sub)type (i.e. an object with title, descr, text, etc.)
 	previewData = null, // data of the currently previewed thing is set here
 	emailable = false,
-	gallery = {},
-	username = '';
+	gallery = {};
 	
 return {
 	optionsHook: function() { return {}; }, // hook that can be overridden by the user to modify options
@@ -331,7 +330,7 @@ return {
 		msg = msg.replace( '$5', myBackgroundColor ); // replace the background color
 		msg = msg.replace( '$6', myBorderColor ); // replace the border color
 		
-		msg = msg.replace( '$7', username ); // replace the username we're sending to
+		msg = msg.replace( '$7', mw.config.get( 'wikilove-recipient' ) ); // replace the username we're sending to
 		
 		return msg;
 	},
@@ -516,13 +515,6 @@ return {
 			$.wikiLove.openDialog();
 			e.preventDefault();
 		});
-	},
-	
-	/*
-	 * Public function to set the username by finding the base title server-side.
-	 */
-	setUsername: function( name ) {
-		username = name;
 	}
 	
 	/*
