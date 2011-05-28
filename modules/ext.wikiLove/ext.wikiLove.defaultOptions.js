@@ -263,7 +263,7 @@ $.wikiLove.optionsHook = function() { return {
 					email: 'Hello $7!\n\nI just awarded you a barnstar.'
 				}
 			},
-			icon: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/extensions/WikiLove/modules/ext.wikiLove/images/icons/wikilove-icon-barnstar.png' // icon for left-side menu
+			icon: mw.config.get( 'wgExtensionAssetsPath' ) + '/extensions/WikiLove/modules/ext.wikiLove/images/icons/wikilove-icon-barnstar.png' // icon for left-side menu
 		},
 		'beer': {
 			name: 'Beer',
@@ -275,7 +275,7 @@ $.wikiLove.optionsHook = function() { return {
 				width: 145,
 				number: 3
 			},
-			icon: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/extensions/WikiLove/modules/ext.wikiLove/images/icons/wikilove-icon-beer.png' // icon for left-side menu
+			icon: mw.config.get( 'wgExtensionAssetsPath' ) + '/extensions/WikiLove/modules/ext.wikiLove/images/icons/wikilove-icon-beer.png' // icon for left-side menu
 		},
 		'kitten': {
 			name: 'Kitten',
@@ -287,14 +287,14 @@ $.wikiLove.optionsHook = function() { return {
 				width: 145,
 				number: 3
 			},
-			icon: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/extensions/WikiLove/modules/ext.wikiLove/images/icons/wikilove-icon-kitten.png' // icon for left-side menu
+			icon: mw.config.get( 'wgExtensionAssetsPath' ) + '/extensions/WikiLove/modules/ext.wikiLove/images/icons/wikilove-icon-kitten.png' // icon for left-side menu
 		},
 		// default type, nice to leave this one in place when adding other types
 		'makeyourown': {
 			name: mw.msg( 'wikilove-type-makeyourown' ),
 			fields: [ 'header', 'title', 'image', 'notify' ],
 			imageSize: '150px',
-			icon: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/extensions/WikiLove/modules/ext.wikiLove/images/icons/wikilove-icon-create.png' // icon for left-side menu
+			icon: mw.config.get( 'wgExtensionAssetsPath' ) + '/extensions/WikiLove/modules/ext.wikiLove/images/icons/wikilove-icon-create.png' // icon for left-side menu
 		}
 	}
 }; };

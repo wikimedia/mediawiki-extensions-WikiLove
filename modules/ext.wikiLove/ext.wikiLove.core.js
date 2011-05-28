@@ -281,12 +281,7 @@ return {
 			$.wikiLove.showError( 'wikilove-err-sig' ); return false;
 		}
 		
-		var text = $.wikiLove.prepareMsg(
-			currentTypeOrSubtype.text || options.defaultText,
-			currentTypeOrSubtype.imageSize,
-			currentTypeOrSubtype.backgroundColor,
-			currentTypeOrSubtype.borderColor
-		);
+		var text = $.wikiLove.prepareMsg( currentTypeOrSubtype.text || options.defaultText );
 		
 		$.wikiLove.doPreview( '==' + $( '#mw-wikilove-header' ).val() + "==\n" + text );
 		previewData = {
@@ -316,20 +311,14 @@ return {
 	 * $6: border color
 	 * $7: username of the recipient
 	 */
-	prepareMsg: function( msg, imageSize, backgroundColor, borderColor ) {
+	prepareMsg: function( msg ) {
 		
 		msg = msg.replace( '$1', $( '#mw-wikilove-message' ).val() ); // replace the raw message
 		msg = msg.replace( '$2', $( '#mw-wikilove-title' ).val() ); // replace the title
 		msg = msg.replace( '$3', $( '#mw-wikilove-image' ).val() ); // replace the image
-		
-		var myImageSize = imageSize || options.defaultImageSize;
-		var myBackgroundColor = backgroundColor || options.defaultBackgroundColor;
-		var myBorderColor = borderColor || options.defaultBorderColor;
-		
-		msg = msg.replace( '$4', myImageSize ); // replace the image size
-		msg = msg.replace( '$5', myBackgroundColor ); // replace the background color
-		msg = msg.replace( '$6', myBorderColor ); // replace the border color
-		
+		msg = msg.replace( '$4', currentTypeOrSubtype.imageSize || options.defaultImageSize ); // replace the image size
+		msg = msg.replace( '$5', currentTypeOrSubtype.backgroundColor || options.defaultBackgroundColor ); // replace the background color
+		msg = msg.replace( '$6', currentTypeOrSubtype.borderColor || options.defaultBorderColor ); // replace the border color
 		msg = msg.replace( '$7', mw.config.get( 'wikilove-recipient' ) ); // replace the username we're sending to
 		
 		return msg;

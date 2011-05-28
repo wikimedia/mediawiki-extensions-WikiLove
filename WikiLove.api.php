@@ -123,6 +123,7 @@ class WikiLoveApi extends ApiBase {
 			'message' => 'Actual message the user has entered, for logging purposes',
 			'token' => 'Edit token. You can get one of these through prop=info',
 			'subject' => 'Subject header of the new section',
+			'email' => 'Content of the optional e-mail message to send to the user',
 			'type' => array( 'Type of WikiLove (for statistics); this corresponds with a type',
 			                 'selected in the left menu, and optionally a subtype after that',
 			                 '(e.g. "barnstar-normal" or "kitten")',
