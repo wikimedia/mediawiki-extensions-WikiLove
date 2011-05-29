@@ -112,7 +112,8 @@ $wgResourceModules += array(
 			'wikilove-err-msg',
 			'wikilove-err-image',
 			'wikilove-err-sig',
-			'wikilove-barnstar-header',
+			'wikilove-err-gallery',
+			'wikilove-err-gallery-again',
 		),
 		'dependencies' => array(
 			'jquery.ui.dialog',

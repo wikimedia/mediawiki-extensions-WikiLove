@@ -68,6 +68,10 @@ return {
 		<div id="mw-wikilove-subtype-description"></div>\
 		<label id="mw-wikilove-gallery-label"><html:msg key="wikilove-image"/></label>\
 		<div id="mw-wikilove-gallery">\
+			<div id="mw-wikilove-gallery-error">\
+				<html:msg key="wikilove-err-gallery"/>\
+				<a href="#" id="mw-wikilove-gallery-error-again"><html:msg key="wikilove-err-gallery-again"/></a>\
+			</div>\
 			<div id="mw-wikilove-gallery-spinner" class="mw-wikilove-spinner"></div>\
 			<div id="mw-wikilove-gallery-content"></div>\
 		</div>\
@@ -114,7 +118,7 @@ return {
 			$( '#mw-wikilove-add-details' ).hide();
 			$( '#mw-wikilove-preview' ).hide();
 			$( '#mw-wikilove-types' ).replaceWith( $typeList );
-			
+			$( '#mw-wikilove-gallery-error-again' ).click( $.wikiLove.showGallery );
 			$( '#mw-wikilove-types a' ).click( $.wikiLove.clickType );
 			$( '#mw-wikilove-subtype' ).change( $.wikiLove.changeSubtype );
 			$( '#mw-wikilove-preview-form' ).submit( $.wikiLove.submitPreview );
@@ -424,6 +428,7 @@ return {
 		$( '#mw-wikilove-gallery-content' ).html( '' );
 		gallery = {};
 		$( '#mw-wikilove-gallery-spinner' ).fadeIn( 200 );
+		$( '#mw-wikilove-gallery-error' ).hide();
 		
 		if( typeof currentTypeOrSubtype.gallery.number == 'undefined'
 		    || currentTypeOrSubtype.gallery.number <= 0
@@ -458,7 +463,13 @@ return {
 			dataType: 'json',
 			type: 'POST',
 			success: function( data ) {
-				if ( !data || !data.query || !data.query.pages || loadingType != currentTypeOrSubtype ) {
+				if ( !data || !data.query || !data.query.pages ) {
+					$( '#mw-wikilove-gallery-error' ).show();
+					$( '#mw-wikilove-gallery-spinner' ).fadeOut( 200 );
+					return;
+				}
+				
+				if ( loadingType != currentTypeOrSubtype ) {
 					return;
 				}
 				
@@ -491,6 +502,10 @@ return {
 						index++;
 					}
 				} );
+			},
+			error: function() {
+				$( '#mw-wikilove-gallery-error' ).show();
+				$( '#mw-wikilove-gallery-spinner' ).fadeOut( 200 );
 			}
 		});
 	},

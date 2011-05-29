@@ -224,6 +224,14 @@
 	position: relative;
 }
 
+/*#mw-wikilove-dialog #mw-wikilove-gallery*/ #mw-wikilove-gallery-error {
+	margin-left: 15px;
+}
+
+/*#mw-wikilove-dialog #mw-wikilove-gallery #mw-wikilove-gallery-error*/ #mw-wikilove-gallery-error-again {
+	color: #0645AD;
+}
+
 /*#mw-wikilove-dialog*/ #mw-wikilove-gallery img {
 	margin-right: 5px;
 	margin-bottom: 5px;
