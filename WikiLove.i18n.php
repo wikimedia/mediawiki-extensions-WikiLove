@@ -83,6 +83,8 @@ $messages['de'] = array(
 	'wikilove-err-msg' => 'Bitte eine Nachricht eingeben.',
 	'wikilove-err-image' => 'Bitte ein Bild auswählen.',
 	'wikilove-err-sig' => 'Bitte keine Signatur im Nachrichtentext eingeben.',
+	'wikilove-err-gallery' => 'Etwas ist beim Laden der Bilder schief gelaufen.',
+	'wikilove-err-gallery-again' => 'Bitte erneut versuchen',
 );
 
 /** French (Français)
@@ -152,6 +154,8 @@ $messages['gl'] = array(
 	'wikilove-err-msg' => 'Escriba unha mensaxe.',
 	'wikilove-err-image' => 'Seleccione unha imaxe.',
 	'wikilove-err-sig' => 'Non incluír a sinatura na mensaxe.',
+	'wikilove-err-gallery' => 'Houbo un problema ao cargar as imaxes!',
+	'wikilove-err-gallery-again' => 'Inténteo de novo',
 );
 
 /** Hebrew (עברית)
@@ -327,6 +331,8 @@ $messages['nl'] = array(
 	'wikilove-err-msg' => 'Geef een bericht op.',
 	'wikilove-err-image' => 'Selecteer een afbeelding.',
 	'wikilove-err-sig' => 'Neem geen ondertekening op in dit bericht.',
+	'wikilove-err-gallery' => 'Er iets misgegaan bij het laden van de afbeeldingen.',
+	'wikilove-err-gallery-again' => 'Probeer het opnieuw',
 );
 
 /** Portuguese (Português)
@@ -360,6 +366,8 @@ $messages['pt'] = array(
 	'wikilove-err-msg' => 'Introduza uma mensagem, por favor.',
 	'wikilove-err-image' => 'Escolha uma imagem, por favor.',
 	'wikilove-err-sig' => 'Não inclua uma assinatura na mensagem, por favor.',
+	'wikilove-err-gallery' => 'Ocorreu um erro ao carregar as imagens!',
+	'wikilove-err-gallery-again' => 'Tente novamente',
 );
 
 /** Telugu (తెలుగు)
