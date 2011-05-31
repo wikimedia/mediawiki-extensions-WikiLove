@@ -52,6 +52,19 @@ $messages['qqq'] = array(
 	'wikilove-barnstar-header' => 'See [[:wikipedia:Barnstar]]. Probably not literally translatable.',
 );
 
+/** Bulgarian (Български)
+ * @author DCLXVI
+ */
+$messages['bg'] = array(
+	'wikilove' => 'УикиОбич',
+	'wikilove-dialog-title' => 'УикиОбич',
+	'wikilove-omit-sig' => '(без подпис)',
+	'wikilove-button-preview' => 'Предварителен преглед',
+	'wikilove-preview' => 'Предварителен преглед',
+	'wikilove-button-send' => 'Изпращане на УикиОбич',
+	'wikilove-err-gallery-again' => 'Опитайте отново',
+);
+
 /** German (Deutsch)
  * @author Kghbln
  */
@@ -121,6 +134,37 @@ $messages['fr'] = array(
 	'wikilove-err-msg' => "S'il vous plaît inscrire un message.",
 	'wikilove-err-image' => "S'il vous plaît sélectionner une image.",
 	'wikilove-err-sig' => "S'il vous plaît ne pas inclure une signature dans le message.",
+);
+
+/** Franco-Provençal (Arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'wikilove' => 'VouiquiAmôr',
+	'wikilove-tab-text' => 'Montrar voutra aprèciacion',
+	'wikilove-dialog-title' => 'VouiquiAmôr',
+	'wikilove-select-type' => 'Chouèsésséd lo tipo',
+	'wikilove-get-started-header' => 'Comencens !',
+	'wikilove-get-started-list-1' => 'Chouèsésséd lo tipo de VouiquiAmôr que vos souhètâd mandar',
+	'wikilove-get-started-list-2' => 'Apondéd des dètalys a voutron VouiquiAmôr',
+	'wikilove-get-started-list-3' => 'Mandâd voutron VouiquiAmôr !',
+	'wikilove-add-details' => 'Apondre des dètalys',
+	'wikilove-image' => 'Émâge :',
+	'wikilove-header' => 'En-téta :',
+	'wikilove-title' => 'Titro :',
+	'wikilove-enter-message' => 'Buchiéd un mèssâjo :',
+	'wikilove-omit-sig' => '(sen signatura)',
+	'wikilove-button-preview' => 'Prèvisualisar',
+	'wikilove-preview' => 'Prèvisualisacion',
+	'wikilove-notify' => 'Notifiar l’utilisator per mèssageria èlèctronica',
+	'wikilove-button-send' => 'Mandar lo VouiquiAmôr',
+	'wikilove-type-makeyourown' => 'Féte voutron prôpro',
+	'wikilove-err-header' => 'Volyéd buchiér un en-téta.',
+	'wikilove-err-title' => 'Volyéd buchiér un titro.',
+	'wikilove-err-msg' => 'Volyéd buchiér un mèssâjo.',
+	'wikilove-err-image' => 'Volyéd chouèsir una émâge.',
+	'wikilove-err-sig' => 'Volyéd pas encllure una signatura dens lo mèssâjo.',
+	'wikilove-err-gallery-again' => 'Tornâd èprovar',
 );
 
 /** Galician (Galego)
@@ -222,6 +266,8 @@ $messages['ia'] = array(
 	'wikilove-err-msg' => 'Per favor entra un message.',
 	'wikilove-err-image' => 'Per favor selige un imagine.',
 	'wikilove-err-sig' => 'Per favor non include un signatura in le message.',
+	'wikilove-err-gallery' => 'Un problema occurreva durante le cargamento del imagines!',
+	'wikilove-err-gallery-again' => 'Reprobar',
 );
 
 /** Colognian (Ripoarisch)
@@ -297,6 +343,8 @@ $messages['mk'] = array(
 	'wikilove-err-msg' => 'Внесете порака.',
 	'wikilove-err-image' => 'Одберете слика.',
 	'wikilove-err-sig' => 'Не ставајте потпис во пораката.',
+	'wikilove-err-gallery' => 'Се појави грешка при вчитувањето на сликите!',
+	'wikilove-err-gallery-again' => 'Обиди се повторно',
 );
 
 /** Dutch (Nederlands)
