@@ -235,6 +235,36 @@ $messages['he'] = array(
 	'wikilove-err-sig' => 'נא לא לכתוב חתימה בהודעה.',
 );
 
+/** Hungarian (Magyar)
+ * @author Dani
+ */
+$messages['hu'] = array(
+	'wikilove' => 'Wikibók',
+	'wikilove-dialog-title' => 'Wikibók',
+	'wikilove-select-type' => 'Válassz típust',
+	'wikilove-get-started-list-1' => 'Válaszd ki a wikibók típusát',
+	'wikilove-get-started-list-2' => 'Töltsd ki a részleteket',
+	'wikilove-get-started-list-3' => 'Küldd el a wikibókot!',
+	'wikilove-add-details' => 'Részletek',
+	'wikilove-image' => 'Kép:',
+	'wikilove-header' => 'Fejléc:',
+	'wikilove-title' => 'Cím:',
+	'wikilove-enter-message' => 'Üzenet:',
+	'wikilove-omit-sig' => '(aláírás nélkül)',
+	'wikilove-button-preview' => 'Előnézet',
+	'wikilove-preview' => 'Előnézet',
+	'wikilove-notify' => 'Felhasználó értesítése e-mailben',
+	'wikilove-button-send' => 'Wikibók elküldése',
+	'wikilove-type-makeyourown' => 'Egyedi készítése',
+	'wikilove-err-header' => 'Add meg a fejlécet!',
+	'wikilove-err-title' => 'Add meg a címet!',
+	'wikilove-err-msg' => 'Add meg az üzenetet!',
+	'wikilove-err-image' => 'Válassz egy képet!',
+	'wikilove-err-sig' => 'Ne helyezz el aláírást az üzenetben!',
+	'wikilove-err-gallery' => 'Valami hiba történt a képek betöltése közben!',
+	'wikilove-err-gallery-again' => 'Újrapróbálkozás',
+);
+
 /** Interlingua (Interlingua)
  * @author McDutchie
  */
