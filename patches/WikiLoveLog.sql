@@ -8,11 +8,11 @@ CREATE TABLE IF NOT EXISTS /*_*/wikilove_log (
 	wll_id int NOT NULL PRIMARY KEY auto_increment,		-- unique id
 	wll_timestamp binary(14) NOT NULL,              	-- timestamp
 	wll_sender int(11) NOT NULL,                    	-- user id of the sender
-	wll_sender_registration varchar(32) default NULL,	-- registration date of the sender
+	wll_sender_registration varchar(16) default NULL,	-- registration date of the sender
 	wll_sender_totaledits mediumint(8) default NULL,	-- total number of edits for the sender
 	wll_sender_recentedits smallint(6) default NULL,	-- number of recent edits for the sender
 	wll_receiver int(11) NOT NULL,                  	-- user id of the receiver
-	wll_receiver_registration varchar(32) default NULL,	-- registration date of the receiver
+	wll_receiver_registration varchar(16) default NULL,	-- registration date of the receiver
 	wll_receiver_totaledits mediumint(8) default NULL,	-- total number of edits for the receiver
 	wll_receiver_recentedits smallint(6) default NULL,	-- number of recent edits for the receiver
 	wll_type varchar(64) NOT NULL,                  	-- type (and subtype) of message
