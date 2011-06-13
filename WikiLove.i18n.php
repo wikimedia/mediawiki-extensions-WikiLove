@@ -41,6 +41,7 @@ $messages['en'] = array(
 	'wikilove-err-sig' => 'Please do not include a signature in the message.',
 	'wikilove-err-gallery' => 'Something went wrong when loading the images!',
 	'wikilove-err-gallery-again' => 'Try again',
+	'wikilove-summary' => '/* $1 */ new WikiLove message'
 );
 
 /** Message documentation (Message documentation)

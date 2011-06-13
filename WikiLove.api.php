@@ -1,7 +1,7 @@
 <?php
 class WikiLoveApi extends ApiBase {
 	public function execute() {
-		global $wgRequest, $wgWikiLoveLogging;
+		global $wgRequest, $wgWikiLoveLogging, $wgParser;
 		
 		$params = $this->extractRequestParams();
 		
@@ -22,10 +22,9 @@ class WikiLoveApi extends ApiBase {
 		$api = new ApiMain( new FauxRequest( array(
 			'action' => 'edit',
 			'title'  => $talk->getFullText(),
-			'section' => 'new',
-			'text' => $params['text'],
+			'text' => Article::newFromTitle( $talk, new RequestContext() )->replaceSection( 'new', $params['text'], $params['subject'] ),
 			'token'  => $params['token'],
-			'summary' => $params['subject'],
+			'summary' => wfMsgForContent( 'wikilove-summary', $wgParser->stripSectionName( $params['subject'] ) ),
 			'notminor' => true,
 		), false, array( 'wsEditToken' => $wgRequest->getSessionData( 'wsEditToken' ) ) ), true );
 		
