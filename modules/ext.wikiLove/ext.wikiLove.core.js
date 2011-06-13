@@ -448,7 +448,7 @@ return {
 		}
 		
 		var	index = 0,
-			loadingType = currentTypeOrSubtype
+			loadingType = currentTypeOrSubtype,
 			loadingIndex = 0;
 		$.ajax({
 			url: mw.util.wikiScript( 'api' ),
@@ -476,7 +476,7 @@ return {
 				$.each( data.query.pages, function( id, page ) {
 					if ( page.imageinfo && page.imageinfo.length ) {
 						// build an image tag with the correct url and width
-						$img = $( '<img/>' )
+						var $img = $( '<img/>' )
 							.attr( 'src', page.imageinfo[0].thumburl )
 							.attr( 'width', currentTypeOrSubtype.gallery.width )
 							.hide()
