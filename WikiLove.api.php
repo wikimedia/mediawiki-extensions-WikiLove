@@ -56,15 +56,26 @@ class WikiLoveApi extends ApiBase {
 	private function saveInDb( $talk, $subject, $message, $type, $email ) {
 		global $wgUser;
 		$dbw = wfGetDB( DB_MASTER );
+		$receiver = User::newFromName( $talk->getSubjectPage()->getBaseText() );
+		if ( $receiver->isAnon() ) {
+			$this->setWarning( 'Not logging anonymous recipients' );
+			return;
+		}
+		
 		$values = array(
 			'wll_timestamp' => $dbw->timestamp(),
 			'wll_sender' => $wgUser->getId(),
-			'wll_receiver' => User::newFromName( $talk->getSubjectPage()->getBaseText() )->getId(),
+			'wll_sender_editcount' => $wgUser->getEditCount(),
+			'wll_sender_registration' => $wgUser->getRegistration(),
+			'wll_receiver' => $receiver->getId(),
+			'wll_receiver_editcount' => $receiver->getEditCount(),
+			'wll_receiver_registration' => $receiver->getRegistration(),
 			'wll_type' => $type,
 			'wll_subject' => $subject,
 			'wll_message' => $message,
 			'wll_email' => $email,
 		);
+				
 		try{
 			$dbw->insert( 'wikilove_log', $values, __METHOD__ );
 		} catch( DBQueryError $dbqe ) {
