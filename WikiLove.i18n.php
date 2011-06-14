@@ -99,6 +99,7 @@ $messages['de'] = array(
 	'wikilove-err-sig' => 'Bitte keine Signatur im Nachrichtentext eingeben.',
 	'wikilove-err-gallery' => 'Etwas ist beim Laden der Bilder schief gelaufen.',
 	'wikilove-err-gallery-again' => 'Bitte erneut versuchen',
+	'wikilove-summary' => '/* $1 */ neue persönliche Wertschätzung',
 );
 
 /** French (Français)
@@ -203,6 +204,7 @@ $messages['gl'] = array(
 	'wikilove-err-sig' => 'Non incluír a sinatura na mensaxe.',
 	'wikilove-err-gallery' => 'Houbo un problema ao cargar as imaxes!',
 	'wikilove-err-gallery-again' => 'Inténteo de novo',
+	'wikilove-summary' => '/* $1 */ nova mensaxe de amor wiki',
 );
 
 /** Hebrew (עברית)
@@ -378,6 +380,7 @@ $messages['mk'] = array(
 	'wikilove-err-sig' => 'Не ставајте потпис во пораката.',
 	'wikilove-err-gallery' => 'Се појави грешка при вчитувањето на сликите!',
 	'wikilove-err-gallery-again' => 'Обиди се повторно',
+	'wikilove-summary' => '/* $1 */ нова порака (ВикиЉубов)',
 );
 
 /** Dutch (Nederlands)
@@ -449,6 +452,7 @@ $messages['pt'] = array(
 	'wikilove-err-sig' => 'Não inclua uma assinatura na mensagem, por favor.',
 	'wikilove-err-gallery' => 'Ocorreu um erro ao carregar as imagens!',
 	'wikilove-err-gallery-again' => 'Tente novamente',
+	'wikilove-summary' => '/* $1 */ nova mensagem de WikiApreço',
 );
 
 /** Telugu (తెలుగు)
