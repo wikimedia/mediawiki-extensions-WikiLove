@@ -7,6 +7,7 @@ var	options = {}, // options modifiable by the user
 	currentSubtypeId = null, // id of the currently selected subtype (e.g. 'original' or 'special')
 	currentTypeOrSubtype = null, // content of the current (sub)type (i.e. an object with title, descr, text, etc.)
 	previewData = null, // data of the currently previewed thing is set here
+	editToken = '', // edit token used for the final AJAX call (deprecated after 1.17)
 	emailable = false,
 	gallery = {};
 	
@@ -384,7 +385,7 @@ return {
 			'text': wikitext,
 			'message': message,
 			'subject': subject,
-			'token': mw.user.tokens.get( 'editToken' )
+			'token': $.wikiLove.editToken // after 1.17 this can become mw.user.tokens.get( 'editToken' )
 		};
 		
 		if ( email ) {
