@@ -19,13 +19,13 @@ class WikiLoveApi extends ApiBase {
 			$this->saveInDb( $talk, $params['subject'], $params['message'], $params['type'], isset( $params['email'] ) ? 1 : 0 );
 		}
 		
-		$article = new Article( $talk, 0 );
-		
 		// not using section => 'new' here, as we like to give our own edit summary
 		$api = new ApiMain( new FauxRequest( array(
 			'action' => 'edit',
 			'title'  => $talk->getFullText(),
-			'text' => $article->replaceSection( 'new', $params['text'], $params['subject'] ),
+			// need to do this, as Article::replaceSection fails for non-existing pages
+			'appendtext' => ( $talk->exists() ? "\n\n" : '' ) . wfMsgForContent( 'newsectionheaderdefaultlevel', $params['subject'] )
+				. "\n\n" . $params['text'],
 			'token'  => $params['token'],
 			'summary' => wfMsgForContent( 'wikilove-summary', $wgParser->stripSectionName( $params['subject'] ) ),
 			'notminor' => true,
