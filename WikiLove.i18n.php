@@ -138,6 +138,7 @@ $messages['fr'] = array(
 	'wikilove-err-sig' => "S'il vous plaît ne pas inclure une signature dans le message.",
 	'wikilove-err-gallery' => "Quelque chose n'a pas fonctionné lors du chargement des images !",
 	'wikilove-err-gallery-again' => 'Essayez à nouveau',
+	'wikilove-summary' => '/* $1 */ nouveau message WikiLove',
 );
 
 /** Franco-Provençal (Arpetan)
