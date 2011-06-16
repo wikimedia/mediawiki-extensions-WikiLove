@@ -261,8 +261,7 @@ return {
 		if ( $( '#mw-wikilove-image' ).val().length <= 0 ) {
 			if( typeof currentTypeOrSubtype.gallery == 'object' ) {
 				$.wikiLove.showError( 'wikilove-err-image' ); return false;
-			}
-			else {
+			} else {
 				$( '#mw-wikilove-image' ).val( options.defaultImage );
 			}
 		}
@@ -319,7 +318,12 @@ return {
 		
 		msg = msg.replace( '$1', $( '#mw-wikilove-message' ).val() ); // replace the raw message
 		msg = msg.replace( '$2', $( '#mw-wikilove-title' ).val() ); // replace the title
-		msg = msg.replace( '$3', $( '#mw-wikilove-image' ).val() ); // replace the image
+		var imageName = $( '#mw-wikilove-image' ).val();
+		// if the image name doesn't start with a prefix, add one
+		if ( imageName.indexOf( 'File:' ) !== 0 && imageName.indexOf( 'Image:' ) !== 0 ) {
+			imageName = 'File:' + imageName;
+		}
+		msg = msg.replace( '$3', imageName ); // replace the image
 		msg = msg.replace( '$4', currentTypeOrSubtype.imageSize || options.defaultImageSize ); // replace the image size
 		msg = msg.replace( '$5', currentTypeOrSubtype.backgroundColor || options.defaultBackgroundColor ); // replace the background color
 		msg = msg.replace( '$6', currentTypeOrSubtype.borderColor || options.defaultBorderColor ); // replace the border color
@@ -439,11 +443,16 @@ return {
 		var titles = '';
 		var imageList = currentTypeOrSubtype.gallery.imageList.slice( 0 );
 		for( var i=0; i<currentTypeOrSubtype.gallery.number; i++ ) {
-			// get a randomimage
+			// get a random image from imageList and add it to the list of titles to be retrieved
 			var id = Math.floor( Math.random() * imageList.length );
-			titles = titles + 'File:' + imageList[id] + '|';
+			// make sure the image name has a prefix
+			if ( imageList[id].indexOf( 'File:' ) === 0 || imageList[id].indexOf( 'Image:' ) === 0 ) {
+				titles = titles + imageList[id] + '|';
+			} else {
+				titles = titles + 'File:' + imageList[id] + '|';
+			}
 			
-			// remove the random page from the keys array
+			// remove the randomly selected image from imageList so that it can't be added twice 
 			imageList.splice(id, 1);
 		}
 		

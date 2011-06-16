@@ -1,7 +1,7 @@
 ( function( $ ) {
 $.wikiLove.optionsHook = function() { return {
 	defaultText: '{| style="background-color: $5; border: 1px solid $6;"\n\
-|rowspan="2" style="vertical-align: middle; padding: 5px;" | [[File:$3|$4]]\n\
+|rowspan="2" style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n\
 |style="font-size: x-large; padding: 3px; height: 1.5em;" | \'\'\'$2\'\'\'\n\
 |-\n\
 |style="vertical-align: middle; padding: 3px;" | $1 ~~~~\n\
@@ -26,7 +26,7 @@ $.wikiLove.optionsHook = function() { return {
 					header: 'A barnstar for you!', // header that appears at the top of the talk page post (optional)
 					title: 'The Original Barnstar', // title that appears inside the award box (optional)
 					image: 'Original Barnstar Hires.png', // image for the award
-					email: 'Hello $7!\n\nI just awarded you a barnstar.' // message to use in eemail notification; $7 is replaced by the recipient's username
+					email: 'Hello $7!\n\nI just awarded you a barnstar.' // message to use in email notification; $7 is replaced by the recipient's username
 				},
 				'admins': {
 					fields: [ 'notify' ],
