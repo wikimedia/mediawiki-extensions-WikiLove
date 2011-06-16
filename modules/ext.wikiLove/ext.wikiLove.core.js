@@ -320,7 +320,7 @@ return {
 		msg = msg.replace( '$2', $( '#mw-wikilove-title' ).val() ); // replace the title
 		var imageName = $( '#mw-wikilove-image' ).val();
 		// if the image name doesn't start with a prefix, add one
-		if ( imageName.indexOf( 'File:' ) !== 0 && imageName.indexOf( 'Image:' ) !== 0 ) {
+		if ( imageName.indexOf( 'File:' ) !== 0 && imageName.indexOf( 'Image:' ) !== 0 && imageName.indexOf( wgFormattedNamespaces[6] !== 0 ) ) {
 			imageName = 'File:' + imageName;
 		}
 		msg = msg.replace( '$3', imageName ); // replace the image
@@ -446,7 +446,7 @@ return {
 			// get a random image from imageList and add it to the list of titles to be retrieved
 			var id = Math.floor( Math.random() * imageList.length );
 			// make sure the image name has a prefix
-			if ( imageList[id].indexOf( 'File:' ) === 0 || imageList[id].indexOf( 'Image:' ) === 0 ) {
+			if ( imageList[id].indexOf( 'File:' ) === 0 || imageList[id].indexOf( 'Image:' ) === 0 || imageList[id].indexOf( wgFormattedNamespaces[6] ) === 0) {
 				titles = titles + imageList[id] + '|';
 			} else {
 				titles = titles + 'File:' + imageList[id] + '|';
