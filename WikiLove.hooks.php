@@ -104,7 +104,9 @@ class WikiLoveHooks {
 	 */
 	private static function skinConfigViewsLinks( $skin, &$views ) {
 		global $wgWikiLoveGlobal, $wgUser;
-		if ( !$wgWikiLoveGlobal && !$wgUser->getOption( 'wikilove-enabled' ) ) return true;
+		if ( !$wgWikiLoveGlobal && !$wgUser->getOption( 'wikilove-enabled' ) ) {
+			return true;
+		}
 		
 		if ( !is_null( self::getUserTalkPage( $skin->getTitle() ) ) ) {
 			$views['wikilove'] = array(
@@ -144,7 +146,9 @@ class WikiLoveHooks {
 		
 		$ns = $title->getNamespace();
 		// return quickly if we're in the wrong namespace anyway
-		if ( $ns != NS_USER && $ns != NS_USER_TALK ) return null;
+		if ( $ns != NS_USER && $ns != NS_USER_TALK ) {
+			return null;
+		}
 		
 		$baseTitle = Title::newFromText( $title->getBaseText(), $ns );
 		

@@ -38,8 +38,7 @@ class WikiLoveApi extends ApiBase {
 		$api->execute();
 		
 		$result = $api->getResult();
-		$data = $result->getData();
-		
+
 		$this->getResult()->addValue( 'redirect', 'pageName', $talk->getPrefixedDBkey() );
 		$this->getResult()->addValue( 'redirect', 'fragment', Title::escapeFragmentForURL( $params['subject'] ) );
 		// note that we cannot use Title::makeTitle here as it doesn't sanitize the fragment
@@ -82,7 +81,13 @@ class WikiLoveApi extends ApiBase {
 			$this->setWarning( 'Action was not logged' );
 		}
 	}
-	
+
+	/**
+	 * @param $talk Title
+	 * @param $subject string
+	 * @param $text string
+	 * @param $token string
+	 */
 	private function emailUser( $talk, $subject, $text, $token ) {
 		global $wgRequest;
 		$api = new ApiMain( new FauxRequest( array(
