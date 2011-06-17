@@ -239,6 +239,9 @@ $messages['he'] = array(
 	'wikilove-err-msg' => 'נא להזין הודעה.',
 	'wikilove-err-image' => 'נא לבחור תמונה.',
 	'wikilove-err-sig' => 'נא לא לכתוב חתימה בהודעה.',
+	'wikilove-err-gallery' => 'משהו השתבש בעת טעינת התמונות!',
+	'wikilove-err-gallery-again' => 'לנסות שוב',
+	'wikilove-summary' => '/* $1 */ הודעת ויקי־אהבה חדשה',
 );
 
 /** Hungarian (Magyar)
@@ -418,6 +421,7 @@ $messages['nl'] = array(
 	'wikilove-err-sig' => 'Neem geen ondertekening op in dit bericht.',
 	'wikilove-err-gallery' => 'Er iets misgegaan bij het laden van de afbeeldingen.',
 	'wikilove-err-gallery-again' => 'Probeer het opnieuw',
+	'wikilove-summary' => '/* $1 */ nieuw Wikiwaardering-bericht',
 );
 
 /** Portuguese (Português)
@@ -456,6 +460,78 @@ $messages['pt'] = array(
 	'wikilove-summary' => '/* $1 */ nova mensagem de WikiApreço',
 );
 
+/** Russian (Русский)
+ * @author Александр Сигачёв
+ */
+$messages['ru'] = array(
+	'wikilove-desc' => 'Добавляет интерфейс для упрощения добавления положительных отзывов на страницы обсуждения участников',
+	'wikilove' => 'ВикиСимпатия',
+	'wikilove-enable-preference' => 'Включить вкладку ВикиСимпатия для выражения признательности другим пользователям (экспериментальная)',
+	'wikilove-tab-text' => 'Выразить признательность',
+	'tooltip-ca-wikilove' => 'Отправить сообщение для этого участника, выразить ему признательность',
+	'wikilove-dialog-title' => 'ВикиСимпатия',
+	'wikilove-select-type' => 'Выберите тип',
+	'wikilove-get-started-header' => 'Давайте начнём!',
+	'wikilove-get-started-list-1' => 'Выберите тип ВикиСимпатии, которую вы хотите выразить',
+	'wikilove-get-started-list-2' => 'Добавьте подробности к вашей ВикиСимпатии',
+	'wikilove-get-started-list-3' => 'Отправьте вашу ВикиСимпатию!',
+	'wikilove-add-details' => 'Добавить подробности',
+	'wikilove-image' => 'Изображение:',
+	'wikilove-header' => 'Заголовок:',
+	'wikilove-title' => 'Название:',
+	'wikilove-enter-message' => 'Введите сообщение:',
+	'wikilove-omit-sig' => '(без подписи)',
+	'wikilove-button-preview' => 'Предпросмотр',
+	'wikilove-preview' => 'Предпросмотр',
+	'wikilove-notify' => 'Уведомить участника по электронной почте',
+	'wikilove-button-send' => 'Отправить ВикиСимпатию',
+	'wikilove-type-makeyourown' => 'Сделать свой собственный',
+	'wikilove-err-header' => 'Пожалуйста, введите заголовок.',
+	'wikilove-err-title' => 'Пожалуйста, введите название.',
+	'wikilove-err-msg' => 'Пожалуйста, введите сообщение.',
+	'wikilove-err-image' => 'Пожалуйста, выберите изображение.',
+	'wikilove-err-sig' => 'Пожалуйста, не включайте подпись в сообщение.',
+	'wikilove-err-gallery' => 'Что-то пошло не так при загрузке изображений!',
+	'wikilove-err-gallery-again' => 'Попробуйте ещё раз',
+	'wikilove-summary' => '/ * $1 * / новая ВикиСимпатия',
+);
+
+/** Slovenian (Slovenščina)
+ * @author Dbc334
+ */
+$messages['sl'] = array(
+	'wikilove-desc' => 'Doda vmesnik za olajšanje pozitivne povratne informacije uporabnika na uporabniških pogovornih straneh',
+	'wikilove' => 'WikiLjubezen',
+	'wikilove-enable-preference' => 'Omogoči izkazovanje hvaležnosti drugim uporabnikom z zavihkom WikiLjubezen (preizkusno)',
+	'wikilove-tab-text' => 'Pokažite hvaležnost',
+	'tooltip-ca-wikilove' => 'Objavite sporočilo za tega uporabnika, s katerim boste izkazali svojo hvaležnost',
+	'wikilove-dialog-title' => 'WikiLjubezen',
+	'wikilove-select-type' => 'Izberite vrsto',
+	'wikilove-get-started-header' => 'Začnimo!',
+	'wikilove-get-started-list-1' => 'Izberite vrsto WikiLjubezni, ki jo želite poslati',
+	'wikilove-get-started-list-2' => 'Dodajte podrobnosti svoji WikiLjubezni',
+	'wikilove-get-started-list-3' => 'Pošljite svojo WikiLjubezen!',
+	'wikilove-add-details' => 'Dodaj podrobnosti',
+	'wikilove-image' => 'Slika:',
+	'wikilove-header' => 'Glava:',
+	'wikilove-title' => 'Naslov:',
+	'wikilove-enter-message' => 'Vnesite sporočilo:',
+	'wikilove-omit-sig' => '(brez podpisa)',
+	'wikilove-button-preview' => 'Predoglej',
+	'wikilove-preview' => 'Predogled',
+	'wikilove-notify' => 'Obvesti uporabnika po e-pošti',
+	'wikilove-button-send' => 'Pošljite WikiLjubezen',
+	'wikilove-type-makeyourown' => 'Naredite svojo',
+	'wikilove-err-header' => 'Prosimo, vnesite glavo.',
+	'wikilove-err-title' => 'Prosimo, vnesite naslov.',
+	'wikilove-err-msg' => 'Prosimo, vnesite sporočilo.',
+	'wikilove-err-image' => 'Prosimo, izberite sliko.',
+	'wikilove-err-sig' => 'Prosimo, da v sporočilo ne vključite svojega podpisa.',
+	'wikilove-err-gallery' => 'Nekaj je šlo narobe pri nalaganju slik!',
+	'wikilove-err-gallery-again' => 'Poskusite znova',
+	'wikilove-summary' => '/* $1 */ novo sporočilo WikiLjubezen',
+);
+
 /** Telugu (తెలుగు)
  * @author Veeven
  */
@@ -487,5 +563,22 @@ $messages['tl'] = array(
 	'wikilove-preview' => 'Paunang tingin',
 	'wikilove-button-send' => 'Ipadala ang WikiLove',
 	'wikilove-type-makeyourown' => 'Gumawa ng sarili mo',
+);
+
+/** Vietnamese (Tiếng Việt)
+ * @author Minh Nguyen
+ */
+$messages['vi'] = array(
+	'wikilove' => 'WikiLove',
+	'wikilove-tab-text' => 'Bày tỏ sự đánh giá cao',
+	'wikilove-dialog-title' => 'WikiLove',
+	'wikilove-select-type' => 'Chọn loại',
+	'wikilove-image' => 'Hình:',
+	'wikilove-omit-sig' => '(không ký tên)',
+	'wikilove-button-preview' => 'Xem trước',
+	'wikilove-preview' => 'Xem trước',
+	'wikilove-button-send' => 'Gửi WikiLove',
+	'wikilove-err-gallery-again' => 'Thử lại',
+	'wikilove-summary' => '/* $1 */ thông điệp WikiLove mới',
 );
 
