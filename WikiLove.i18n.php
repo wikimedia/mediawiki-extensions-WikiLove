@@ -387,6 +387,42 @@ $messages['mk'] = array(
 	'wikilove-summary' => '/* $1 */ нова порака (ВикиЉубов)',
 );
 
+/** Malayalam (മലയാളം)
+ * @author Praveenp
+ */
+$messages['ml'] = array(
+	'wikilove-desc' => 'ഉപയോക്താക്കൾക്ക് സംവാദം താളുകൾ വഴി ഗുണാത്മക അഭിപ്രായങ്ങൾ പ്രകടിപ്പിക്കാനുള്ള സമ്പർക്കമുഖം കൂട്ടിച്ചേർക്കുന്നു',
+	'wikilove' => 'വിക്കിലവ്',
+	'wikilove-enable-preference' => 'വിക്കിലവ് റ്റാബ് ഉപയോഗിച്ച് മറ്റ് ഉപയോക്താക്കളെ അഭിനന്ദനങ്ങൾ അറിയിക്കൽ സജ്ജമാക്കുക (പരീക്ഷണാടിസ്ഥാനം)',
+	'wikilove-tab-text' => 'അഭിനന്ദനങ്ങൾ പ്രദർശിപ്പിക്കുക',
+	'tooltip-ca-wikilove' => 'താങ്കളുടെ അഭിനന്ദനം അറിയിക്കാൻ ഈ ഉപയോക്താവിന് ഒരു സന്ദേശയമയ്ക്കുക',
+	'wikilove-dialog-title' => 'വിക്കിലവ്',
+	'wikilove-select-type' => 'ഇനം തിരഞ്ഞെടുക്കുക',
+	'wikilove-get-started-header' => 'നമുക്ക് തുടങ്ങാം!',
+	'wikilove-get-started-list-1' => 'താങ്കൾ അയയ്ക്കാനാഗ്രഹിക്കുന്ന തരം വിക്കിലവ് തിരഞ്ഞെടുക്കുക',
+	'wikilove-get-started-list-2' => 'താങ്കളുടെ വിക്കിലവിലേയ്ക്ക് കൂടുതൽ വിവരങ്ങൾ കൂട്ടിച്ചേർക്കുക',
+	'wikilove-get-started-list-3' => 'താങ്കളുടെ വിക്കിലവ് അയയ്ക്കുക!',
+	'wikilove-add-details' => 'അധികവിവരങ്ങൾ ചേർക്കുക',
+	'wikilove-image' => 'ചിത്രം:',
+	'wikilove-header' => 'തലക്കുറി:',
+	'wikilove-title' => 'തലക്കെട്ട്:',
+	'wikilove-enter-message' => 'സന്ദേശം നൽകുക:',
+	'wikilove-omit-sig' => '(ഒപ്പ് ചേർക്കേണ്ടതില്ല)',
+	'wikilove-button-preview' => 'എങ്ങനെയുണ്ടെന്നു കാണുക',
+	'wikilove-preview' => 'എങ്ങനെയുണ്ടെന്നു കാണുക',
+	'wikilove-notify' => 'ഉപയോക്താവിനെ ഇമെയിൽ വഴി അറിയിക്കുക',
+	'wikilove-button-send' => 'വിക്കിലവ് അയയ്ക്കുക',
+	'wikilove-type-makeyourown' => 'താങ്കളുടെ സ്വന്തമായ ഒരെണ്ണം സൃഷ്ടിക്കുക',
+	'wikilove-err-header' => 'ദയവായി ഒരു തലക്കുറി ചേർക്കുക.',
+	'wikilove-err-title' => 'ദയവായി തലക്കെട്ട് നൽകുക.',
+	'wikilove-err-msg' => 'ദയവായി ഒരു സന്ദേശം ചേർക്കുക.',
+	'wikilove-err-image' => 'ദയവായി ചിത്രം തിരഞ്ഞെടുക്കുക.',
+	'wikilove-err-sig' => 'ദയവായി സന്ദേശത്തിൽ ഒപ്പ് ഉൾപ്പെടുത്തരുത്.',
+	'wikilove-err-gallery' => 'ചിത്രങ്ങൾ ശേഖരിച്ചുകൊണ്ടിരിക്കെ എന്തോ കുഴപ്പമുണ്ടായി!',
+	'wikilove-err-gallery-again' => 'വീണ്ടും ശ്രമിക്കുക',
+	'wikilove-summary' => '/* $1 */ പുതിയ വിക്കിലവ് സന്ദേശം',
+);
+
 /** Dutch (Nederlands)
  * @author SPQRobin
  * @author Siebrand
@@ -421,7 +457,7 @@ $messages['nl'] = array(
 	'wikilove-err-sig' => 'Neem geen ondertekening op in dit bericht.',
 	'wikilove-err-gallery' => 'Er iets misgegaan bij het laden van de afbeeldingen.',
 	'wikilove-err-gallery-again' => 'Probeer het opnieuw',
-	'wikilove-summary' => '/* $1 */ nieuw Wikiwaardering-bericht',
+	'wikilove-summary' => '/* $1 */ nieuw Wikiwaarderingbericht',
 );
 
 /** Portuguese (Português)
@@ -570,14 +606,29 @@ $messages['tl'] = array(
  */
 $messages['vi'] = array(
 	'wikilove' => 'WikiLove',
+	'wikilove-enable-preference' => 'Cho phép bày tỏ sự biết ơn cho người dùng khác qua thẻ WikiLove (thử nghiệm)',
 	'wikilove-tab-text' => 'Bày tỏ sự đánh giá cao',
 	'wikilove-dialog-title' => 'WikiLove',
 	'wikilove-select-type' => 'Chọn loại',
+	'wikilove-get-started-header' => 'Hãy bắt đầu!',
+	'wikilove-get-started-list-1' => 'Chọn loại WikiLove để gửi',
+	'wikilove-get-started-list-2' => 'Thêm chi tiết vào WikiLove của bạn',
+	'wikilove-get-started-list-3' => 'Gửi WikiLove!',
+	'wikilove-add-details' => 'Thêm chi tiết',
 	'wikilove-image' => 'Hình:',
+	'wikilove-header' => 'Đầu đề:',
+	'wikilove-title' => 'Tựa đề:',
+	'wikilove-enter-message' => 'Nhập tin nhắn:',
 	'wikilove-omit-sig' => '(không ký tên)',
 	'wikilove-button-preview' => 'Xem trước',
 	'wikilove-preview' => 'Xem trước',
+	'wikilove-notify' => 'Báo người dùng qua thư điện tử',
 	'wikilove-button-send' => 'Gửi WikiLove',
+	'wikilove-type-makeyourown' => 'Làm lấy',
+	'wikilove-err-header' => 'Vui lòng đưa vào đầu đề.',
+	'wikilove-err-title' => 'Vui lòng đưa vào tựa đề.',
+	'wikilove-err-msg' => 'Vui lòng đưa vào tin nhắn.',
+	'wikilove-err-image' => 'Vui lòng chọn một hình ảnh.',
 	'wikilove-err-gallery-again' => 'Thử lại',
 	'wikilove-summary' => '/* $1 */ thông điệp WikiLove mới',
 );
