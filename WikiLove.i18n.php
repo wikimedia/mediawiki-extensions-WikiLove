@@ -605,9 +605,11 @@ $messages['tl'] = array(
  * @author Minh Nguyen
  */
 $messages['vi'] = array(
+	'wikilove-desc' => 'Thêm một giao diện cho phép gửi phản hồi khen ngợi cho người dùng khác qua các trang thảo luận cá nhân',
 	'wikilove' => 'WikiLove',
 	'wikilove-enable-preference' => 'Cho phép bày tỏ sự biết ơn cho người dùng khác qua thẻ WikiLove (thử nghiệm)',
 	'wikilove-tab-text' => 'Bày tỏ sự đánh giá cao',
+	'tooltip-ca-wikilove' => 'Đăng một thông điệp cho người dùng này để cho biết sự đánh giá cao của bạn',
 	'wikilove-dialog-title' => 'WikiLove',
 	'wikilove-select-type' => 'Chọn loại',
 	'wikilove-get-started-header' => 'Hãy bắt đầu!',
@@ -629,6 +631,8 @@ $messages['vi'] = array(
 	'wikilove-err-title' => 'Vui lòng đưa vào tựa đề.',
 	'wikilove-err-msg' => 'Vui lòng đưa vào tin nhắn.',
 	'wikilove-err-image' => 'Vui lòng chọn một hình ảnh.',
+	'wikilove-err-sig' => 'Xin vui lòng đừng đưa một chữ ký vào tin nhắn.',
+	'wikilove-err-gallery' => 'Đã gặp lỗi khi tải các hình ảnh!',
 	'wikilove-err-gallery-again' => 'Thử lại',
 	'wikilove-summary' => '/* $1 */ thông điệp WikiLove mới',
 );
