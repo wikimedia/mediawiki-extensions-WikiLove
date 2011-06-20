@@ -460,6 +460,14 @@ $messages['nl'] = array(
 	'wikilove-summary' => '/* $1 */ nieuw Wikiwaarderingbericht',
 );
 
+/** Pashto (پښتو)
+ * @author Ahmed-Najib-Biabani-Ibrahimkhel
+ */
+$messages['ps'] = array(
+	'wikilove-image' => 'انځور:',
+	'wikilove-title' => 'سرليک:',
+);
+
 /** Portuguese (Português)
  * @author Hamilton Abreu
  */
