@@ -307,6 +307,7 @@ $messages['ia'] = array(
 	'wikilove-err-sig' => 'Per favor non include un signatura in le message.',
 	'wikilove-err-gallery' => 'Un problema occurreva durante le cargamento del imagines!',
 	'wikilove-err-gallery-again' => 'Reprobar',
+	'wikilove-summary' => '/* $1 */ nove message de WikiLove',
 );
 
 /** Colognian (Ripoarisch)
