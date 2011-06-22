@@ -294,7 +294,7 @@ $.wikiLove.optionsHook = function() { return {
 					image: 'Choco_chip_cookie.png' // image for the award
 				}
 			},
-			icon: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/extensions/WikiLove/modules/ext.wikiLove/images/icons/wikilove-icon-cookie.png' // icon for left-side menu
+			icon: mw.config.get( 'wgExtensionAssetsPath' ) + '/WikiLove/modules/ext.wikiLove/images/icons/wikilove-icon-cookie.png' // icon for left-side menu
 		},
 		'kitten': {
 			name: 'Kitten',
