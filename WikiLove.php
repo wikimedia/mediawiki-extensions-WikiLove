@@ -98,6 +98,7 @@ $wgResourceModules += array(
 			'wikilove-get-started-list-3',
 			'wikilove-add-details',
 			'wikilove-image',
+			'wikilove-select-image',
 			'wikilove-header',
 			'wikilove-title',
 			'wikilove-enter-message',

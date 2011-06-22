@@ -66,7 +66,7 @@ return {
 		<label for="mw-wikilove-subtype" id="mw-wikilove-subtype-label"></label>\
 		<select id="mw-wikilove-subtype"></select>\
 		<div id="mw-wikilove-subtype-description"></div>\
-		<label id="mw-wikilove-gallery-label"><html:msg key="wikilove-image"/></label>\
+		<label id="mw-wikilove-gallery-label"><html:msg key="wikilove-select-image"/></label>\
 		<div id="mw-wikilove-gallery">\
 			<div id="mw-wikilove-gallery-error">\
 				<html:msg key="wikilove-err-gallery"/>\
@@ -82,7 +82,7 @@ return {
 		<label for="mw-wikilove-image" id="mw-wikilove-image-label"><html:msg key="wikilove-image"/></label>\
 		<input type="text" class="text" id="mw-wikilove-image"/>\
 		<label for="mw-wikilove-message" id="mw-wikilove-message-label"><html:msg key="wikilove-enter-message"/></label>\
-		<span class="mw-wikilove-note"><html:msg key="wikilove-omit-sig"/></span>\
+		<span class="mw-wikilove-note" id="mw-wikilove-message-note"><html:msg key="wikilove-omit-sig"/></span>\
 		<textarea id="mw-wikilove-message"></textarea>\
 		<div id="mw-wikilove-notify">\
 			<input type="checkbox" id="mw-wikilove-notify-checkbox" name="notify"/>\
@@ -210,21 +210,21 @@ return {
 			$( '#mw-wikilove-subtype-description').hide();
 		}
 		
-		// show or hide header label and textbox depending on whether a predefined header exists
+		// show or hide header label and textbox depending on fields configuration
 		$( '#mw-wikilove-header, #mw-wikilove-header-label' )
 			.toggle( $.inArray( 'header', currentTypeOrSubtype.fields ) >= 0 );
 		
 		// set the new text for the header textbox
 		$( '#mw-wikilove-header' ).val( currentTypeOrSubtype.header || '' );
 		
-		// show or hide title label and textbox depending on whether a predefined title exists
+		// show or hide title label and textbox depending on fields configuration
 		$( '#mw-wikilove-title, #mw-wikilove-title-label')
 			.toggle( $.inArray( 'title', currentTypeOrSubtype.fields ) >= 0 );
 		
 		// set the new text for the title textbox
 		$( '#mw-wikilove-title' ).val( currentTypeOrSubtype.title || '' );
 		
-		// show or hide image label and textbox depending on whether a predefined image exists
+		// show or hide image label and textbox depending on fields configuration
 		$( '#mw-wikilove-image, #mw-wikilove-image-label')
 			.toggle( $.inArray( 'image', currentTypeOrSubtype.fields ) >= 0 );
 		
@@ -240,6 +240,13 @@ return {
 		else {
 			$( '#mw-wikilove-gallery, #mw-wikilove-gallery-label' ).hide();
 		}
+		
+		// show or hide message label and textbox depending on fields configuration
+		$( '#mw-wikilove-message, #mw-wikilove-message-label, #mw-wikilove-message-note' )
+			.toggle( $.inArray( 'message', currentTypeOrSubtype.fields ) >= 0 );
+			
+		// set the new text for the message textbox
+		$( '#mw-wikilove-message' ).val( currentTypeOrSubtype.message || '' );
 		
 		if( $.inArray( 'notify', currentTypeOrSubtype.fields ) >= 0 && emailable ) {
 			$( '#mw-wikilove-notify' ).show();
