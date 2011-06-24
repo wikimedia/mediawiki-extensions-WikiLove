@@ -239,6 +239,7 @@ $messages['he'] = array(
 	'wikilove-get-started-list-3' => 'לשלוח ויקי־אהבה!',
 	'wikilove-add-details' => 'הוספת פרטים',
 	'wikilove-image' => 'תמונה:',
+	'wikilove-select-image' => 'בחירת תמונה:',
 	'wikilove-header' => 'כותרת פסקה:',
 	'wikilove-title' => 'שם הצל"ש:',
 	'wikilove-enter-message' => 'הודעה:',
