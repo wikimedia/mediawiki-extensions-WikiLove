@@ -67,6 +67,43 @@ $messages['bg'] = array(
 	'wikilove-err-gallery-again' => 'Опитайте отново',
 );
 
+/** Breton (Brezhoneg)
+ * @author Fulup
+ */
+$messages['br'] = array(
+	'wikilove-desc' => 'Ouzhpennañ a ra un etrefas evit aesaat merkañ evezhiadennoù pozitivel war pajenn gaozeal un implijer',
+	'wikilove' => 'WikiLove',
+	'wikilove-enable-preference' => 'Aotren a ra diskouez priziadennoù evit implijerien all gant an ivinell WikiLove (arnodel)',
+	'wikilove-tab-text' => 'Diskouez ho priziadenn',
+	'tooltip-ca-wikilove' => 'Lakaat ur gemennadenn evit an implijer-mañ da ziskouez e priziit an traoù',
+	'wikilove-dialog-title' => 'WikiLove',
+	'wikilove-select-type' => 'Diuzañ ur seurt',
+	'wikilove-get-started-header' => 'Krogomp ganti !',
+	'wikilove-get-started-list-1' => "Diuzit ar seurt WikiLove hoc'h eus c'hoant da gas",
+	'wikilove-get-started-list-2' => "Ouzhpennit titouroù d'ho WikiLove",
+	'wikilove-get-started-list-3' => 'Kasit ho WikiLove !',
+	'wikilove-add-details' => 'Ouzhpennañ titouroù',
+	'wikilove-image' => 'Lakaat ur skeudenn :',
+	'wikilove-select-image' => 'Diuzañ ur skeudenn :',
+	'wikilove-header' => 'Lakaat un talbenn :',
+	'wikilove-title' => 'Lakaat un titl :',
+	'wikilove-enter-message' => 'Lakaat ur gemennadenn',
+	'wikilove-omit-sig' => '(hep sinadur)',
+	'wikilove-button-preview' => 'Rakwelet',
+	'wikilove-preview' => 'Rakwelet',
+	'wikilove-notify' => "Kas ur c'hemenn dre bostel d'an implijer",
+	'wikilove-button-send' => 'Kas ar WikiLove',
+	'wikilove-type-makeyourown' => "Krouit ho-hini deoc'h-c'hwi",
+	'wikilove-err-header' => 'Merkit un talbenn.',
+	'wikilove-err-title' => 'Merkit un titl.',
+	'wikilove-err-msg' => 'Merkit ur gemennadenn.',
+	'wikilove-err-image' => 'Diuzit ur skeudenn.',
+	'wikilove-err-sig' => 'Arabat sinañ ar gemennadenn.',
+	'wikilove-err-gallery' => "Un dra bennak a-dreuz zo c'hoarvezet en ur gargañ ar skeudennoù !",
+	'wikilove-err-gallery-again' => 'Klask en-dro',
+	'wikilove-summary' => '/* $1 */ kemennadenn WikiLove nevez',
+);
+
 /** German (Deutsch)
  * @author Kghbln
  */
@@ -450,6 +487,7 @@ $messages['ml'] = array(
 /** Dutch (Nederlands)
  * @author SPQRobin
  * @author Siebrand
+ * @author Tjcool007
  */
 $messages['nl'] = array(
 	'wikilove-desc' => "Voegt een interface toe voor het geven van positieve terugkoppeling op overlegpagina's van gebruikers",
@@ -465,6 +503,7 @@ $messages['nl'] = array(
 	'wikilove-get-started-list-3' => 'Uw Wikiwaardering verzenden!',
 	'wikilove-add-details' => 'Gegevens toevoegen',
 	'wikilove-image' => 'Afbeelding:',
+	'wikilove-select-image' => 'Kies een afbeelding',
 	'wikilove-header' => 'Koptekst:',
 	'wikilove-title' => 'Onderwerp:',
 	'wikilove-enter-message' => 'Voer een bericht in:',
@@ -527,6 +566,13 @@ $messages['pt'] = array(
 	'wikilove-err-gallery' => 'Ocorreu um erro ao carregar as imagens!',
 	'wikilove-err-gallery-again' => 'Tente novamente',
 	'wikilove-summary' => '/* $1 */ nova mensagem de WikiApreço',
+);
+
+/** Tarandíne (Tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'wikilove-err-gallery-again' => 'Pruève arrete',
 );
 
 /** Russian (Русский)
