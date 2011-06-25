@@ -113,7 +113,11 @@ return {
 					resizable: false
 				});
 			
-			$( '#mw-wikilove-button-preview' ).button( { label: mw.msg( 'wikilove-button-preview' ), icons: { primary:'ui-icon-search' } } );
+			if ( skin == 'vector' ) {
+				$( '#mw-wikilove-button-preview' ).button( { label: mw.msg( 'wikilove-button-preview' ), icons: { primary:'ui-icon-search' } } );
+			} else {
+				$( '#mw-wikilove-button-preview' ).button( { label: mw.msg( 'wikilove-button-preview' ) } );
+			}
 			$( '#mw-wikilove-button-send' ).button( { label: mw.msg( 'wikilove-button-send' ) } );
 			$( '#mw-wikilove-add-details' ).hide();
 			$( '#mw-wikilove-preview' ).hide();
