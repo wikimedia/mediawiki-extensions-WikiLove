@@ -54,8 +54,8 @@ class WikiLoveHooks {
 			return true;
 		}
 		
-		$title = self::getUserTalkPage( $skin->getTitle() );
-		if ( !is_null( $title ) ) {
+		$title = $skin->getTitle();
+		if ( $title->getNamespace() == 3 ) {
 			$out->addModules( 'ext.wikiLove.icon' );
 			$out->addModules( 'ext.wikiLove.init' );
 			self::$recipient = $title->getText();
@@ -108,7 +108,8 @@ class WikiLoveHooks {
 			return true;
 		}
 		
-		if ( !is_null( self::getUserTalkPage( $skin->getTitle() ) ) ) {
+		$title = $skin->getTitle();
+		if ( $title->getNamespace() == 3 ) {
 			$views['wikilove'] = array(
 				'text' => wfMsg( 'wikilove-tab-text' ),
 				'href' => '#',
