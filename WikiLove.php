@@ -119,7 +119,6 @@ $wgResourceModules += array(
 		'dependencies' => array(
 			'jquery.ui.dialog',
 			'jquery.ui.button',
-			'jquery.elastic',
 			'jquery.localize',
 		),
 	),
@@ -136,10 +135,5 @@ $wgResourceModules += array(
 		'dependencies' => array(
 			'ext.wikiLove.local',
 		),
-	),
-	'jquery.elastic' => array(
-		'localBasePath' => dirname( __FILE__ ) . '/modules/jquery.elastic',
-		'remoteExtPath' => 'WikiLove/modules/jquery.elastic',
-		'scripts' => 'jquery.elastic.js',
 	),
 );
