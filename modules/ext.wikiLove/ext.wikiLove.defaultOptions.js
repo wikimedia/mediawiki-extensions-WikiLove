@@ -253,7 +253,7 @@ $.wikiLove.optionsHook = function() { return {
 					option: 'Beer', // option listed in the select list
 					header: 'A beer for you!', // header that appears at the top of the talk page post (optional)
 					image: 'Export hell seidel steiner.png', // image for the award
-					imageSize: '80px' // size to display image
+					imageSize: '70px' // size to display image
 				},
 				'brownie': {
 					text: '{| style="background-color: $5; border: 1px solid $6;"\n\
