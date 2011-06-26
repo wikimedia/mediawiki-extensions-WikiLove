@@ -31,7 +31,7 @@ div.vectorTabs li a {
 	height: 0;
 	overflow: hidden;
 	/* @embed */
-	background-image: url(images/heart-icons.png);
+	background-image: url(images/heart-icons-red.png);
 }
 #ca-wikilove.icon a {
 	background-position: 5px 60%;
