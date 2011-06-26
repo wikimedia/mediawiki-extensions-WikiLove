@@ -425,10 +425,9 @@ return {
 					// jump to the correct section, because when we set the hash (#...)
 					// the page won't reload...
 					window.location.reload();
-				}
-				else {
-					window.location = mw.util.wikiUrlencode( 
-						mw.config.get( 'wgArticlePath' ).replace( '$1', data.redirect.pageName ) 
+				} else {
+					window.location = encodeURI( 
+						wgServer + mw.config.get( 'wgArticlePath' ).replace( '$1', mw.util.wikiUrlencode( data.redirect.pageName ) ) 
 						+ '#' + data.redirect.fragment );
 				}
 			}
