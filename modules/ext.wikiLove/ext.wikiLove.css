@@ -1,6 +1,14 @@
+.ui-widget-overlay {
+	min-height: 750px;
+}
+
 /* dialog */
 #mw-wikilove-dialog {
 	margin: 10px;
+}
+
+#mw-wikilove-preview-form {
+	clear: both; /* for monobook skin */
 }
 
 /* dialog type selection */
