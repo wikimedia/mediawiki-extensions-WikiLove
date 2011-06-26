@@ -427,7 +427,7 @@ return {
 					window.location.reload();
 				} else {
 					window.location = encodeURI( 
-						wgServer + mw.config.get( 'wgArticlePath' ).replace( '$1', mw.util.wikiUrlencode( data.redirect.pageName ) ) 
+						mw.config.get( 'wgArticlePath' ).replace( '$1', mw.util.wikiUrlencode( data.redirect.pageName ) ) 
 						+ '#' + data.redirect.fragment );
 				}
 			}
