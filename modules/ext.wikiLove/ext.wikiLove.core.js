@@ -321,11 +321,7 @@ return {
 		
 		msg = msg.replace( '$1', $( '#mw-wikilove-message' ).val() ); // replace the raw message
 		msg = msg.replace( '$2', $( '#mw-wikilove-title' ).val() ); // replace the title
-		var imageName = $( '#mw-wikilove-image' ).val();
-		// if the image name doesn't start with a prefix, add one
-		if ( imageName.indexOf( 'File:' ) !== 0 && imageName.indexOf( 'Image:' ) !== 0 && imageName.indexOf( wgFormattedNamespaces[6] !== 0 ) ) {
-			imageName = 'File:' + imageName;
-		}
+		var imageName = $.wikiLove.addFilePrefix( $( '#mw-wikilove-image' ).val() );
 		msg = msg.replace( '$3', imageName ); // replace the image
 		msg = msg.replace( '$4', currentTypeOrSubtype.imageSize || options.defaultImageSize ); // replace the image size
 		msg = msg.replace( '$5', currentTypeOrSubtype.backgroundColor || options.defaultBackgroundColor ); // replace the background color
@@ -333,6 +329,16 @@ return {
 		msg = msg.replace( '$7', mw.config.get( 'wikilove-recipient' ) ); // replace the username we're sending to
 		
 		return msg;
+	},
+	
+	/*
+	 * Adds a "File:" prefix if there isn't already a media namespace prefix.
+	 */
+	addFilePrefix: function( filename ) {
+		if ( filename.indexOf( 'File:' ) !== 0 && filename.indexOf( 'Image:' ) !== 0 && filename.indexOf( wgFormattedNamespaces[6] + ':' ) !== 0  ) {
+			filename = 'File:' + filename;
+		}
+		return filename;
 	},
 	
 	/*
@@ -447,12 +453,7 @@ return {
 		for( var i=0; i<currentTypeOrSubtype.gallery.number; i++ ) {
 			// get a random image from imageList and add it to the list of titles to be retrieved
 			var id = Math.floor( Math.random() * imageList.length );
-			// make sure the image name has a prefix
-			if ( imageList[id].indexOf( 'File:' ) === 0 || imageList[id].indexOf( 'Image:' ) === 0 || imageList[id].indexOf( wgFormattedNamespaces[6] ) === 0) {
-				titles = titles + imageList[id] + '|';
-			} else {
-				titles = titles + 'File:' + imageList[id] + '|';
-			}
+			titles = titles + $.wikiLove.addFilePrefix( imageList[id] ) + '|';
 			
 			// remove the randomly selected image from imageList so that it can't be added twice 
 			imageList.splice(id, 1);
