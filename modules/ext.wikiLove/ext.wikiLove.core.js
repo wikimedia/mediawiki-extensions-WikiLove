@@ -236,7 +236,7 @@ return {
 		$( '#mw-wikilove-image' ).val( currentTypeOrSubtype.image || '' );
 		
 		if( typeof currentTypeOrSubtype.gallery == 'object' 
-			&& currentTypeOrSubtype.gallery.imageList instanceof Array
+			&& $.isArray( currentTypeOrSubtype.gallery.imageList )
 		) {
 			$( '#mw-wikilove-gallery, #mw-wikilove-gallery-label' ).show();
 			$.wikiLove.showGallery(); // build gallery from array of images
