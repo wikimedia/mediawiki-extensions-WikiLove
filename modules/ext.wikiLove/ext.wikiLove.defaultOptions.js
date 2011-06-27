@@ -343,6 +343,7 @@ $.wikiLove.optionsHook = function() { return {
 			gallery: {
 				imageList: [ 'Cucciolo gatto Bibo.jpg', 'Kitten (06) by Ron.jpg', 'Kitten-stare.jpg', 'Red Kitten 01.jpg', 'Kitten in a helmet.jpg', 'Cute grey kitten.jpg' ],
 				width: 145,
+				height: 150,
 				number: 3
 			},
 			icon: mw.config.get( 'wgExtensionAssetsPath' ) + '/WikiLove/modules/ext.wikiLove/images/icons/wikilove-icon-kitten.png'

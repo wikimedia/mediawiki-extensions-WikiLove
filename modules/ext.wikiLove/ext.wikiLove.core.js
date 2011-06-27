@@ -477,7 +477,8 @@ return {
 				'prop'        : 'imageinfo',
 				'iiprop'      : 'mime|url',
 				'titles'      : titles,
-				'iiurlwidth'  : currentTypeOrSubtype.gallery.width
+				'iiurlwidth'  : currentTypeOrSubtype.gallery.width,
+				'iiurlheight' : currentTypeOrSubtype.gallery.height
 			},
 			dataType: 'json',
 			type: 'POST',
@@ -494,10 +495,9 @@ return {
 				
 				$.each( data.query.pages, function( id, page ) {
 					if ( page.imageinfo && page.imageinfo.length ) {
-						// build an image tag with the correct url and width
+						// build an image tag with the correct url
 						var $img = $( '<img/>' )
 							.attr( 'src', page.imageinfo[0].thumburl )
-							.attr( 'width', currentTypeOrSubtype.gallery.width )
 							.hide()
 							.load( function() { 
 								$( this ).css( 'display', 'inline-block' );
