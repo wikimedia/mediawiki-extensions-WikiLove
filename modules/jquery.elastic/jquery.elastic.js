@@ -90,7 +90,7 @@
 						$textarea.css({'height': curratedHeight + 'px','overflow':overflow});
 						
 						// Fire the custom event resize
-						$textarea.trigger('resize');
+						//$textarea.trigger('resize');
 						
 					}
 				}

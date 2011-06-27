@@ -125,7 +125,7 @@ return {
 			$( '#mw-wikilove-subtype' ).change( $.wikiLove.changeSubtype );
 			$( '#mw-wikilove-preview-form' ).submit( $.wikiLove.submitPreview );
 			$( '#mw-wikilove-send-form' ).click( $.wikiLove.submitSend );
-			$( '#mw-wikilove-message' ); // have the message textarea grow automatically
+			$( '#mw-wikilove-message' ).elastic(); // have the message textarea grow automatically
 		}
 		
 		$dialog.dialog( 'open' );
