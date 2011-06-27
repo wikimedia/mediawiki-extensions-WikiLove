@@ -56,6 +56,9 @@ return {
 		<li><html:msg key="wikilove-get-started-list-2"/></li>\
 		<li><html:msg key="wikilove-get-started-list-3"/></li>\
 	</ol>\
+	<p><a target="_blank" href="http://www.mediawiki.org/wiki/WikiLove">\
+		<html:msg key="wikilove-what-is-this"/>\
+	</a></p>\
 </div>\
 <div id="mw-wikilove-add-details">\
 	<span class="mw-wikilove-number">2</span>\

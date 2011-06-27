@@ -121,6 +121,7 @@ $wgResourceModules += array(
 			'wikilove-err-sig',
 			'wikilove-err-gallery',
 			'wikilove-err-gallery-again',
+			'wikilove-what-is-this',
 		),
 		'dependencies' => array(
 			'jquery.ui.dialog',
