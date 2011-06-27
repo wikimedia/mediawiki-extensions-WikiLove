@@ -1,5 +1,5 @@
 ( function( $ ) {
-$.wikiLove.optionsHook = function() { return {
+$.wikiLoveOptions = function() { return {
 	defaultText: '{| style="background-color: $5; border: 1px solid $6;"\n\
 |rowspan="2" style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n\
 |style="font-size: x-large; padding: 3px; height: 1.5em;" | \'\'\'$2\'\'\'\n\
@@ -356,4 +356,9 @@ $.wikiLove.optionsHook = function() { return {
 		}
 	}
 }; };
+
+if( typeof $.wikiLove != 'undefined' ) $.wikiLove.init(); // this is required when copying this file to MediaWiki:WikiLove.js
+// because of https://bugzilla.wikimedia.org/29608 ; please leave it here as it does no harm being executed in defaultOptions.js
+// and it may be confusing if it is required to uncomment it when copying this to MediaWiki:WikiLove.js
+
 } )( jQuery );

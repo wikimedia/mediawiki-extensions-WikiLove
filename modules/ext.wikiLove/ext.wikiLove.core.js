@@ -11,8 +11,6 @@ var	options = {}, // options modifiable by the user
 	gallery = {};
 	
 return {
-	optionsHook: function() { return {}; }, // hook that can be overridden by the user to modify options
-	
 	/*
 	 * Opens the dialog and builds it if necessary.
 	 */
@@ -532,9 +530,12 @@ return {
 	/*
 	 * Init function which is called upon page load. Binds the WikiLove icon to opening the dialog.
 	 */
-	init: function() {
-		options = $.wikiLove.optionsHook();
-		$( '#ca-wikilove' ).find( 'a' ).click( function( e ) {
+	init: function( ) {
+		if( typeof $.wikiLoveOptions == 'function' ) options = $.wikiLoveOptions();
+		
+		var $wikiLoveLink = $( '#ca-wikilove' ).find( 'a' );
+		$wikiLoveLink.unbind( 'click' );
+		$wikiLoveLink.click( function( e ) {
 			$.wikiLove.openDialog();
 			e.preventDefault();
 		});
@@ -636,4 +637,6 @@ return {
 };
 
 }());
+
+$( document ).ready( $.wikiLove.init );
 } ) ( jQuery );

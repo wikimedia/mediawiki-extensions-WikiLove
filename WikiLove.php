@@ -77,7 +77,15 @@ $extWikiLoveTpl = array(
 	'remoteExtPath' => 'WikiLove/modules/ext.wikiLove',
 );
 
+// messages for default options, because we want to use them in the default
+// options module, but also for the user in the user options module
+$wgWikiLoveOptionMessages = array(
+	'wikilove-type-makeyourown',
+);
+
 // resources
+// it is much better to have a chain like: startup -> default -> local -> init,
+// but because of this bug that isn't possible right now: https://bugzilla.wikimedia.org/29608
 $wgResourceModules += array(
 	'ext.wikiLove.icon' => $extWikiLoveTpl + array(
 		'styles' => 'ext.wikiLove.icon.css',
@@ -86,7 +94,6 @@ $wgResourceModules += array(
 	'ext.wikiLove.startup' => $extWikiLoveTpl + array(
 		'scripts' => array(
 			'ext.wikiLove.core.js',
-			'ext.wikiLove.defaultOptions.js',
 		),
 		'styles' => 'ext.wikiLove.css',
 		'messages' => array(
@@ -107,7 +114,6 @@ $wgResourceModules += array(
 			'wikilove-preview',
 			'wikilove-notify',
 			'wikilove-button-send',
-			'wikilove-type-makeyourown',
 			'wikilove-err-header',
 			'wikilove-err-title',
 			'wikilove-err-msg',
@@ -125,15 +131,15 @@ $wgResourceModules += array(
 	'ext.wikiLove.local' => array(
 		'class' => 'WikiLoveLocal',
 		/* for information only, this is actually in the class!
-		'dependencies' => array(
-			'ext.wikiLove.startup',
-		),
+		'messages' => $wgWikiLoveOptionMessages,
+		'dependencies' => 'ext.wikiLove.startup'
 		*/
 	),
-	'ext.wikiLove.init' => $extWikiLoveTpl + array(
-		'scripts' => 'ext.wikiLove.init.js',
-		'dependencies' => array(
-			'ext.wikiLove.local',
+	'ext.wikiLove.defaultOptions' => $extWikiLoveTpl + array(
+		'scripts' => array(
+			'ext.wikiLove.defaultOptions.js',
 		),
+		'messages' => $wgWikiLoveOptionMessages,
+		'dependencies' => 'ext.wikiLove.startup'
 	),
 );

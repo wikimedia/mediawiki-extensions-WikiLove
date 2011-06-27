@@ -49,7 +49,7 @@ class WikiLoveHooks {
 	 * @param $skin Skin
 	 */
 	public static function beforePageDisplay( $out, $skin ) {
-		global $wgWikiLoveGlobal, $wgUser;
+		global $wgWikiLoveGlobal, $wgWikiLoveEnableLocalConfig, $wgUser;
 		if ( !$wgWikiLoveGlobal && !$wgUser->getOption( 'wikilove-enabled' ) ) {
 			return true;
 		}
@@ -57,7 +57,17 @@ class WikiLoveHooks {
 		$title = self::getUserTalkPage( $skin->getTitle() );
 		if ( !is_null( $title ) ) {
 			$out->addModules( 'ext.wikiLove.icon' );
-			$out->addModules( 'ext.wikiLove.init' );
+			
+			// it is much better to have a chain like: startup -> default -> local -> init,
+			// but because of this bug that isn't possible right now: https://bugzilla.wikimedia.org/29608
+			$optionsTitle = Title::newFromText( "MediaWiki:WikiLove.js" );
+			if( $optionsTitle->exists() && $optionsTitle->isCssOrJsPage() ) {
+				$out->addModules( 'ext.wikiLove.local' );
+			}
+			else {
+				$out->addModules( 'ext.wikiLove.defaultOptions' );
+			}
+			
 			self::$recipient = $title->getText();
 		}
 		return true;

@@ -14,4 +14,9 @@ class WikiLoveLocal extends ResourceLoaderWikiModule {
 			'ext.wikiLove.startup',
 		);
 	}
+	
+	public function getMessages() {
+		global $wgWikiLoveOptionMessages;
+		return $wgWikiLoveOptionMessages;
+	}
 }
