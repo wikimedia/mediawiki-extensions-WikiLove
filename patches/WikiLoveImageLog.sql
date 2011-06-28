@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS /*_*/wikilove_image_log (
 	wlil_timestamp binary(14) NOT NULL,
 	wlil_user_id int(11) NOT NULL,
 	wlil_image varchar(128) NOT NULL,
-	wlil_success bool DEFAULT NULL
+	wlil_success bool NOT NULL
 ) /*$wgDBTableOptions*/;
 
 CREATE INDEX /*i*/wlil_timestamp ON /*_*/wikilove_image_log (wlil_timestamp);
