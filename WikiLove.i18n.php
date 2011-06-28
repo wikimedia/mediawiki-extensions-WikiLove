@@ -30,6 +30,7 @@ $messages['en'] = array(
 	'wikilove-title' => 'Enter a title:',
 	'wikilove-enter-message' => 'Enter a message:',
 	'wikilove-omit-sig' => '(without a signature)',
+	'wikilove-image-example' => '(example: Trophy.png)',
 	'wikilove-button-preview' => 'Preview',
 	'wikilove-preview' => 'Preview',
 	'wikilove-notify' => 'Notify the user by e-mail',
@@ -55,6 +56,7 @@ $messages['qqq'] = array(
 	'wikilove-button-preview' => 'Button text. Verb.',
 	'wikilove-preview' => 'Title. Noun.',
 	'wikilove-barnstar-header' => 'See [[:wikipedia:Barnstar]]. Probably not literally translatable.',
+	'wikilove-image-example' => 'The filename should be an actual image on Wikimedia Commons.',
 );
 
 /** Bulgarian (Български)

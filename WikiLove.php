@@ -110,6 +110,7 @@ $wgResourceModules += array(
 			'wikilove-title',
 			'wikilove-enter-message',
 			'wikilove-omit-sig',
+			'wikilove-image-example',
 			'wikilove-button-preview',
 			'wikilove-preview',
 			'wikilove-notify',
