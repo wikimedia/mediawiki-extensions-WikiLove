@@ -9,7 +9,7 @@ $.wikiLoveOptions = function() { return {
 	defaultBackgroundColor: '#fdffe7',
 	defaultBorderColor: '#fceb92',
 	defaultImageSize: '100px',
-	defaultImage: 'Emblem-fun.svg',
+	defaultImage: 'Trophy.png',
 	
 	types: {
 		// example type, could be removed later (also no i18n)
