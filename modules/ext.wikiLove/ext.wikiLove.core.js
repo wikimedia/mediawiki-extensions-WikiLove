@@ -392,6 +392,7 @@ return {
 			url: mw.util.wikiScript( 'api' ),
 			data: {
 				'action': 'parse',
+				'title': mw.config.get( 'wgPageName' ),
 				'format': 'json',
 				'text': wikitext,
 				'prop': 'text',
