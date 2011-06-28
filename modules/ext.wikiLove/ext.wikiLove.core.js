@@ -440,7 +440,7 @@ return {
 		msg = msg.replace( '$4', currentTypeOrSubtype.imageSize || options.defaultImageSize ); // replace the image size
 		msg = msg.replace( '$5', currentTypeOrSubtype.backgroundColor || options.defaultBackgroundColor ); // replace the background color
 		msg = msg.replace( '$6', currentTypeOrSubtype.borderColor || options.defaultBorderColor ); // replace the border color
-		msg = msg.replace( '$7', mw.config.get( 'wikilove-recipient' ) ); // replace the username we're sending to
+		msg = msg.replace( '$7', '<nowiki>' + mw.config.get( 'wikilove-recipient' ) + '</nowiki>' ); // replace the username we're sending to
 		
 		return msg;
 	},
