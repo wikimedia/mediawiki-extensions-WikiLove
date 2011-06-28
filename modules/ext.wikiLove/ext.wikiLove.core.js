@@ -130,6 +130,16 @@ return {
 			$( '#mw-wikilove-preview-form' ).submit( $.wikiLove.validatePreviewForm );
 			$( '#mw-wikilove-send-form' ).click( $.wikiLove.submitSend );
 			$( '#mw-wikilove-message' ).elastic(); // have the message textarea grow automatically
+			
+			// when the input changes, we want to disable the send button
+			$( '#mw-wikilove-header' ).change( $.wikiLove.changeInput );
+			$( '#mw-wikilove-header' ).keyup( $.wikiLove.changeInput );
+			$( '#mw-wikilove-title' ).change( $.wikiLove.changeInput );
+			$( '#mw-wikilove-title' ).keyup( $.wikiLove.changeInput );
+			$( '#mw-wikilove-image' ).change( $.wikiLove.changeInput );
+			$( '#mw-wikilove-image' ).keyup( $.wikiLove.changeInput );
+			$( '#mw-wikilove-message' ).change( $.wikiLove.changeInput );
+			$( '#mw-wikilove-message' ).keyup( $.wikiLove.changeInput );
 		}
 		
 		$dialog.dialog( 'open' );
@@ -350,6 +360,8 @@ return {
 			'header': $( '#mw-wikilove-header' ).val(),
 			'text': text,
 			'message': $( '#mw-wikilove-message' ).val(),
+			'title':  $( '#mw-wikilove-title' ).val(),
+			'image': $( '#mw-wikilove-image' ).val(),
 			'type': currentTypeId
 				+ (currentSubtypeId !== null ? '-' + currentSubtypeId : '')
 		};
@@ -423,10 +435,26 @@ return {
 	
 	/*
 	 * Callback for the preview function. Sets the preview area with the HTML and fades it in.
+	 * It also (re-)enables the send button.
 	 */
 	showPreview: function( html ) {
 		$( '#mw-wikilove-preview-area' ).html( html );
 		$( '#mw-wikilove-preview' ).fadeIn( 200 );
+		$( '#mw-wikilove-button-send' ).button( 'enable' );
+	},
+	
+	changeInput: function() {
+		if( previewData !== null &&
+			( previewData.message   != $( '#mw-wikilove-message' ).val()
+			|| previewData.title  != $( '#mw-wikilove-title' ).val()
+			|| previewData.header != $( '#mw-wikilove-header' ).val()
+			|| previewData.image  != $( '#mw-wikilove-image' ).val()
+		)) {
+			$( '#mw-wikilove-button-send' ).button( 'disable' );
+		}
+		else {
+			$( '#mw-wikilove-button-send' ).button( 'enable' );
+		}
 	},
 	
 	/*
@@ -435,9 +463,13 @@ return {
 	 * or simply 'typeId' otherwise.
 	 */
 	submitSend: function( e ) {
-		e.preventDefault();
-		$.wikiLove.doSend( previewData.header, previewData.text,
-			previewData.message, previewData.type, previewData.email );
+		$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
+		
+		if( !$( '#mw-wikilove-button-send' ).button( 'option', 'disabled' ) ) {
+			e.preventDefault();
+			$.wikiLove.doSend( previewData.header, previewData.text,
+				previewData.message, previewData.type, previewData.email );
+		}
 	},
 	
 	/*
@@ -565,6 +597,7 @@ return {
 									$( '#mw-wikilove-gallery a' ).removeClass( 'selected' );
 									$( this ).addClass( 'selected' );
 									$( '#mw-wikilove-image' ).val( gallery[$( this ).attr( 'id' )] );
+									$.wikiLove.changeInput();
 								}) 
 						);
 						gallery['mw-wikilove-gallery-img-' + index] = page.title;
