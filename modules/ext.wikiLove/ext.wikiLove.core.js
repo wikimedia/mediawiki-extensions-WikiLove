@@ -328,7 +328,7 @@ return {
 		
 		// Check for a header if it is required
 		if( $.inArray( 'header', currentTypeOrSubtype.fields ) >= 0 && $( '#mw-wikilove-header' ).val().length <= 0 ) {
-			$.wikiLove.showError( 'wikilove-err-header' ); return false;
+			$.wikiLove.showAddDetailsError( 'wikilove-err-header' ); return false;
 		}
 		
 		// Check for a title if it is required, and otherwise use the header text
@@ -339,12 +339,12 @@ return {
 		if( $.inArray( 'message', currentTypeOrSubtype.fields ) >= 0 ) {
 			// Check for a message if it is required
 			if ( $( '#mw-wikilove-message' ).val().length <= 0 ) {
-				$.wikiLove.showError( 'wikilove-err-msg' ); return false;
+				$.wikiLove.showAddDetailsError( 'wikilove-err-msg' ); return false;
 			}
 			
 			// If there isn't a signature already in the message, throw an error
 			if ( $( '#mw-wikilove-message' ).val().indexOf( '~~~' ) >= 0 ) {
-				$.wikiLove.showError( 'wikilove-err-sig' ); return false;
+				$.wikiLove.showAddDetailsError( 'wikilove-err-sig' ); return false;
 			}
 		}
 		
@@ -371,7 +371,7 @@ return {
 					success: function( data ) {
 						if ( !data.query.pages[-1].imageinfo ) {
 							// Image does not exist
-							$.wikiLove.showError( 'wikilove-err-image-bad' );
+							$.wikiLove.showAddDetailsError( 'wikilove-err-image-bad' );
 							$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
 						} else {
 							// Image exists. Proceed with preview.
@@ -379,7 +379,7 @@ return {
 						}
 					},
 					error: function() {
-						$.wikiLove.showError( 'wikilove-err-image-api' );
+						$.wikiLove.showAddDetailsError( 'wikilove-err-image-api' );
 						$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
 					}
 				} );
@@ -387,7 +387,7 @@ return {
 		} else { // a gallery
 			if ( $( '#mw-wikilove-image' ).val().length <= 0 ) {
 				// Display an error telling them to select an image.
-				$.wikiLove.showError( 'wikilove-err-image' ); return false;
+				$.wikiLove.showAddDetailsError( 'wikilove-err-image' ); return false;
 			} else {
 				// Proceed with preview.
 				$.wikiLove.submitPreview();
@@ -417,8 +417,12 @@ return {
 		}
 	},
 	
-	showError: function( errmsg ) {
+	showAddDetailsError: function( errmsg ) {
 		$( '#mw-wikilove-add-details' ).append( $( '<div class="mw-wikilove-error"></div>' ).text( mw.msg( errmsg ) ) );
+	},
+	
+	showPreviewError: function( errmsg ) {
+		$( '#mw-wikilove-preview' ).append( $( '<div class="mw-wikilove-error"></div>' ).text( mw.msg( errmsg ) ) );
 	},
 	
 	/*
@@ -474,6 +478,10 @@ return {
 			type: 'POST',
 			success: function( data ) {
 				$.wikiLove.showPreview( data.parse.text['*'] );
+				$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
+			},
+			error: function() {
+				$.wikiLove.showAddDetailsError( 'wikilove-err-preview-api' );
 				$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
 			}
 		});
@@ -548,7 +556,7 @@ return {
 				$( '#mw-wikilove-send-spinner' ).fadeOut( 200 );
 				
 				if ( typeof data.error !== 'undefined' ) {
-					$( '#mw-wikilove-preview' ).append( '<div class="mw-wikilove-error">' + mw.html.escape( data.error.info ) + '<div>' );
+					$.wikiLove.showPreviewError( data.error.info );
 					return;
 				}
 				
@@ -563,6 +571,10 @@ return {
 						mw.config.get( 'wgArticlePath' ).replace( '$1', mw.util.wikiUrlencode( data.redirect.pageName ) ) 
 						+ '#' + data.redirect.fragment );
 				}
+			},
+			error: function() {
+				$.wikiLove.showPreviewError( 'wikilove-err-send-api' );
+				$( '#mw-wikilove-send-spinner' ).fadeOut( 200 );
 			}
 		});
 	},

@@ -31,13 +31,11 @@ class WikiLoveApi extends ApiBase {
 			'notminor' => true,
 		), false, array( 'wsEditToken' => $wgRequest->getSessionData( 'wsEditToken' ) ) ), true );
 		
+		$api->execute();
+		
 		if ( isset( $params['email'] ) ) {
 			$this->emailUser( $talk, $params['subject'], $params['email'], $params['token'] );
 		}
-
-		$api->execute();
-		
-		$result = $api->getResult();
 
 		$this->getResult()->addValue( 'redirect', 'pageName', $talk->getPrefixedDBkey() );
 		$this->getResult()->addValue( 'redirect', 'fragment', Title::escapeFragmentForURL( $params['subject'] ) );

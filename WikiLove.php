@@ -129,6 +129,8 @@ $wgResourceModules += array(
 			'wikilove-commons-text',
 			'wikilove-commons-link',
 			'wikilove-commons-url',
+			'wikilove-err-preview-api',
+			'wikilove-err-send-api',
 		),
 		'dependencies' => array(
 			'jquery.ui.dialog',
