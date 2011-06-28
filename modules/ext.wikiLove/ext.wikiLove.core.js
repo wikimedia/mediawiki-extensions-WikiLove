@@ -270,17 +270,26 @@ return {
 		$( '#mw-wikilove-preview' ).hide();
 		$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
 		
-		if( $( '#mw-wikilove-header' ).val().length <= 0 ) {
+		// Check for a header if it is required
+		if( $.inArray( 'header', currentTypeOrSubtype.fields ) >= 0 && $( '#mw-wikilove-header' ).val().length <= 0 ) {
 			$.wikiLove.showError( 'wikilove-err-header' ); return false;
 		}
 		
-		if( $( '#mw-wikilove-message' ).val().length <= 0 ) {
-			$.wikiLove.showError( 'wikilove-err-msg' ); return false;
+		// Check for a title if it is required
+		if( $.inArray( 'title', currentTypeOrSubtype.fields ) >= 0 && $( '#mw-wikilove-title' ).val().length <= 0 ) {
+			$.wikiLove.showError( 'wikilove-err-title' ); return false;
 		}
 		
-		// If there isn't a signature already in the message, throw an error
-		if ( $( '#mw-wikilove-message' ).val().indexOf( '~~~' ) >= 0 ) {
-			$.wikiLove.showError( 'wikilove-err-sig' ); return false;
+		if( $.inArray( 'message', currentTypeOrSubtype.fields ) >= 0 ) {
+			// Check for a message if it is required
+			if ( $( '#mw-wikilove-message' ).val().length <= 0 ) {
+				$.wikiLove.showError( 'wikilove-err-msg' ); return false;
+			}
+			
+			// If there isn't a signature already in the message, throw an error
+			if ( $( '#mw-wikilove-message' ).val().indexOf( '~~~' ) >= 0 ) {
+				$.wikiLove.showError( 'wikilove-err-sig' ); return false;
+			}
 		}
 		
 		// Split image validation depending on whether or not it is a gallery
@@ -315,6 +324,7 @@ return {
 					},
 					error: function() {
 						$.wikiLove.showError( 'wikilove-err-image-api' );
+						$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
 					}
 				} );
 			}
