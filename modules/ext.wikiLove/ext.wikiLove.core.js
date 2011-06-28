@@ -7,6 +7,7 @@ var	options = {}, // options modifiable by the user
 	currentSubtypeId = null, // id of the currently selected subtype (e.g. 'original' or 'special')
 	currentTypeOrSubtype = null, // content of the current (sub)type (i.e. an object with title, descr, text, etc.)
 	previewData = null, // data of the currently previewed thing is set here
+	rememberData = null, // input data to remember when switching types or subtypes
 	emailable = false,
 	gallery = {};
 	
@@ -157,6 +158,7 @@ return {
 	 */
 	clickType: function( e ) {
 		e.preventDefault();
+		$.wikiLove.rememberInputData(); // remember previously entered data
 		$( '#mw-wikilove-get-started' ).hide(); // always hide the get started section
 		
 		var newTypeId = $( this ).data( 'typeId' );
@@ -206,6 +208,8 @@ return {
 	 * Handler for changing the subtype.
 	 */
 	changeSubtype: function() {
+		$.wikiLove.rememberInputData(); // remember previously entered data
+		
 		// find out which subtype is selected
 		var newSubtypeId = $( '#mw-wikilove-subtype option:selected' ).first().data( 'subtypeId' );
 		if( currentSubtypeId != newSubtypeId ) { // only change stuff when a different subtype is selected
@@ -220,10 +224,46 @@ return {
 	},
 	
 	/*
+	 * Remember data the user entered if it is different from the default.
+	 */
+	rememberInputData: function() {
+		if( rememberData === null) {
+			rememberData = {
+				'header' : '',
+				'title'  : '',
+				'message': '',
+				'image'  : '',
+			};
+		}
+		if( currentTypeOrSubtype !== null ) {
+			if( !currentTypeOrSubtype.header || $( '#mw-wikilove-header' ).val()   != currentTypeOrSubtype.header  ) {
+				rememberData.header  = $( '#mw-wikilove-header' ).val();
+			}
+			if( !currentTypeOrSubtype.title  || $( '#mw-wikilove-title' ).val()    != currentTypeOrSubtype.title ) {
+				rememberData.title   = $( '#mw-wikilove-title' ).val();
+			}
+			if( !currentTypeOrSubtype.message || $( '#mw-wikilove-message' ).val() != currentTypeOrSubtype.message ) {
+				rememberData.message = $( '#mw-wikilove-message' ).val();
+			}
+			if( typeof currentTypeOrSubtype.gallery == undefined && $.inArray( 'image', currentTypeOrSubtype.fields ) >= 0 ) {
+				rememberData.image   = $( '#mw-wikilove-image' ).val();
+			}
+		}
+	},
+	
+	/*
 	 * Called when type or subtype changes, updates controls.
 	 */
 	updateAllDetails: function() {
 		$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
+		
+		// use remembered data for fields that can be set by the user
+		var currentRememberData = {
+			'header' : ( $.inArray( 'header', currentTypeOrSubtype.fields )  >= 0 ? rememberData.header : '' ),
+			'title'  : ( $.inArray( 'title', currentTypeOrSubtype.fields )   >= 0 ? rememberData.title : '' ),
+			'message': ( $.inArray( 'message', currentTypeOrSubtype.fields ) >= 0 ? rememberData.message : '' ),
+			'image'  : ( $.inArray( 'image', currentTypeOrSubtype.fields )   >= 0 ? rememberData.image : '' ),
+		};
 		
 		// only show the description if it exists for this type or subtype
 		if( typeof currentTypeOrSubtype.descr == 'string' ) {
@@ -237,21 +277,21 @@ return {
 			.toggle( $.inArray( 'header', currentTypeOrSubtype.fields ) >= 0 );
 		
 		// set the new text for the header textbox
-		$( '#mw-wikilove-header' ).val( currentTypeOrSubtype.header || '' );
+		$( '#mw-wikilove-header' ).val( currentRememberData.header || currentTypeOrSubtype.header || '' );
 		
 		// show or hide title label and textbox depending on fields configuration
 		$( '#mw-wikilove-title, #mw-wikilove-title-label')
 			.toggle( $.inArray( 'title', currentTypeOrSubtype.fields ) >= 0 );
 		
 		// set the new text for the title textbox
-		$( '#mw-wikilove-title' ).val( currentTypeOrSubtype.title || '' );
+		$( '#mw-wikilove-title' ).val( currentRememberData.title || currentTypeOrSubtype.title || '' );
 		
 		// show or hide image label and textbox depending on fields configuration
 		$( '#mw-wikilove-image, #mw-wikilove-image-label, #mw-wikilove-image-note, #mw-wikilove-commons-text' )
 			.toggle( $.inArray( 'image', currentTypeOrSubtype.fields ) >= 0 );
 		
 		// set the new text for the image textbox
-		$( '#mw-wikilove-image' ).val( currentTypeOrSubtype.image || '' );
+		$( '#mw-wikilove-image' ).val( currentRememberData.image || currentTypeOrSubtype.image || '' );
 		
 		if( typeof currentTypeOrSubtype.gallery == 'object' 
 			&& $.isArray( currentTypeOrSubtype.gallery.imageList )
@@ -268,7 +308,7 @@ return {
 			.toggle( $.inArray( 'message', currentTypeOrSubtype.fields ) >= 0 );
 			
 		// set the new text for the message textbox
-		$( '#mw-wikilove-message' ).val( currentTypeOrSubtype.message || '' );
+		$( '#mw-wikilove-message' ).val( currentRememberData.message || currentTypeOrSubtype.message || '' );
 		
 		if( $.inArray( 'notify', currentTypeOrSubtype.fields ) >= 0 && emailable ) {
 			$( '#mw-wikilove-notify' ).show();
