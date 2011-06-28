@@ -63,7 +63,8 @@ $messages['qqq'] = array(
 	'wikilove-preview' => 'Title. Noun.',
 	'wikilove-barnstar-header' => 'See [[:wikipedia:Barnstar]]. Probably not literally translatable.',
 	'wikilove-image-example' => 'The filename should be an actual image on Wikimedia Commons.',
-	'wikilove-commons-text' => '$1 gets replaced by a link with wikilove-commons-link as caption and wikilove-commons-url as URL',
+	'wikilove-commons-text' => '$1 gets replaced by a link with wikilove-commons-link as caption and wikilove-commons-url as URL.',
+	'wikilove-commons-url' => 'This URL can be changed to point at a localised page on Wikimedia Commons.',
 );
 
 /** Bulgarian (Български)
