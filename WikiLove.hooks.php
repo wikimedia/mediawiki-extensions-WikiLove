@@ -18,9 +18,12 @@ class WikiLoveHooks {
 		if ( $updater === null ) {
 			global $wgExtNewTables;
 			$wgExtNewTables[] = array( 'wikilove_log', dirname( __FILE__ ) . '/patches/WikiLoveLog.sql' );
+			$wgExtNewTables[] = array( 'wikilove_image_log', dirname( __FILE__ ) . '/patches/WikiLoveImageLog.sql' );
 		} else {
 			$updater->addExtensionUpdate( array( 'addTable', 'wikilove_log',
 				dirname( __FILE__ ) . '/patches/WikiLoveLog.sql', true ) );
+			$updater->addExtensionUpdate( array( 'addTable', 'wikilove_image_log', 
+				dirname( __FILE__ ) . '/patches/WikiLoveImageLog.sql', true ) );
 		}
 		return true;
 	}
