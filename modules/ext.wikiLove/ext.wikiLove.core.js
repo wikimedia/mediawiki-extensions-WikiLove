@@ -331,9 +331,9 @@ return {
 			$.wikiLove.showError( 'wikilove-err-header' ); return false;
 		}
 		
-		// Check for a title if it is required
+		// Check for a title if it is required, and otherwise use the header text
 		if( $.inArray( 'title', currentTypeOrSubtype.fields ) >= 0 && $( '#mw-wikilove-title' ).val().length <= 0 ) {
-			$.wikiLove.showError( 'wikilove-err-title' ); return false;
+			$( '#mw-wikilove-title' ).val( $( '#mw-wikilove-header' ).val() );
 		}
 		
 		if( $.inArray( 'message', currentTypeOrSubtype.fields ) >= 0 ) {
