@@ -59,10 +59,9 @@ $messages['en'] = array(
  * @author McDutchie
  */
 $messages['qqq'] = array(
+	'wikilove-image-example' => 'The filename should be an actual image on Wikimedia Commons.',
 	'wikilove-button-preview' => 'Button text. Verb.',
 	'wikilove-preview' => 'Title. Noun.',
-	'wikilove-barnstar-header' => 'See [[:wikipedia:Barnstar]]. Probably not literally translatable.',
-	'wikilove-image-example' => 'The filename should be an actual image on Wikimedia Commons.',
 	'wikilove-commons-text' => '$1 gets replaced by a link with wikilove-commons-link as caption and wikilove-commons-url as URL.',
 	'wikilove-commons-url' => 'This URL can be changed to point at a localised page on Wikimedia Commons.',
 );
@@ -72,12 +71,22 @@ $messages['qqq'] = array(
  */
 $messages['bg'] = array(
 	'wikilove' => 'УикиОбич',
-	'wikilove-dialog-title' => 'УикиОбич',
+	'wikilove-tab-text' => 'УикиОбич',
+	'wikilove-dialog-title' => 'УикиОбич - Изпращане на благодарствено съобщение на друг потребител',
+	'wikilove-add-details' => 'Добавяне на подробности',
+	'wikilove-select-image' => 'Избиране на изображение:',
 	'wikilove-omit-sig' => '(без подпис)',
+	'wikilove-image-example' => '(пример: Trophy.png)',
 	'wikilove-button-preview' => 'Предварителен преглед',
 	'wikilove-preview' => 'Предварителен преглед',
+	'wikilove-notify' => 'Уведомяване на потребителя на електронната поща',
 	'wikilove-button-send' => 'Изпращане на УикиОбич',
+	'wikilove-err-image-bad' => 'Изображението не съществува.',
+	'wikilove-err-sig' => 'В съобщението не трябва да се вклчва подпис.',
+	'wikilove-err-gallery' => 'Възникна грешка при зареждане на изображенията!',
 	'wikilove-err-gallery-again' => 'Опитайте отново',
+	'wikilove-summary' => '/* $1 */ ново съобщение за УикиОбич',
+	'wikilove-what-is-this' => 'Какво е това?',
 );
 
 /** Breton (Brezhoneg)
@@ -133,12 +142,13 @@ $messages['de'] = array(
 	'wikilove-get-started-list-2' => 'Persönliche Wertschätzung ergänzen',
 	'wikilove-get-started-list-3' => 'Persönliche Wertschätzung senden',
 	'wikilove-add-details' => 'Ergänzungen hinzufügen',
-	'wikilove-image' => 'Gib ein Bild aus aus Wikimedia Commons an:',
+	'wikilove-image' => 'Gib den Namen der Bilddatei an:',
 	'wikilove-select-image' => 'Wähle ein Bild aus:',
 	'wikilove-header' => 'Gib den Inhalt des Kopfbereichs ein:',
-	'wikilove-title' => 'Gib den Titel ein:',
+	'wikilove-title' => 'Gib den Titel für die Wertschätzung ein:',
 	'wikilove-enter-message' => 'Gibt eine Nachricht ein:',
 	'wikilove-omit-sig' => '(ohne Signatur)',
+	'wikilove-image-example' => '(Beispiel: Drei Sonnenblumen im Feld.JPG)',
 	'wikilove-button-preview' => 'Vorschau',
 	'wikilove-preview' => 'Vorschau',
 	'wikilove-notify' => 'Den Benutzer per E-Mail benachrichtigen',
@@ -148,21 +158,33 @@ $messages['de'] = array(
 	'wikilove-err-title' => 'Bitte einen Titel eingeben.',
 	'wikilove-err-msg' => 'Bitte eine Nachricht eingeben.',
 	'wikilove-err-image' => 'Bitte ein Bild auswählen.',
+	'wikilove-err-image-bad' => 'Das Bild ist nicht vorhanden.',
+	'wikilove-err-image-api' => 'Während des Abrufens des Bildes ist ein Fehler aufgetreten. Bitte versuche es erneut.',
 	'wikilove-err-sig' => 'Bitte keine Signatur im Nachrichtentext eingeben.',
-	'wikilove-err-gallery' => 'Etwas ist beim Laden der Bilder schief gelaufen.',
-	'wikilove-err-gallery-again' => 'Bitte erneut versuchen',
+	'wikilove-err-gallery' => 'Während des Ladens der Bilder ist ein Fehler aufgetreten.',
+	'wikilove-err-gallery-again' => 'Bitte versuche es erneut.',
+	'wikilove-err-preview-api' => 'Während der Vorschau ist ein Fehler aufgetreten. Bitte versuche es erneut.',
+	'wikilove-err-send-api' => 'Während des Sendens der Wertschätzung ist ein Fehler aufgetreten. Bitte versuche es erneut.',
 	'wikilove-summary' => '/* $1 */ neue persönliche Wertschätzung',
+	'wikilove-what-is-this' => 'Worum handelt es sich?',
+	'wikilove-anon-warning' => 'Hinweis: Es handelt sich um einen Benutzer ohne Benutzerkonto. Daher wird er oder sie die Nachricht wahrscheinlich nicht bemerken.',
+	'wikilove-commons-text' => 'Bilder können gefunden werden, indem man $1 durchsucht.',
 );
 
 /** German (formal address) (‪Deutsch (Sie-Form)‬)
  * @author Kghbln
  */
 $messages['de-formal'] = array(
-	'wikilove-image' => 'Geben Sie Bild aus aus Wikimedia Commons an:',
+	'wikilove-image' => 'Geben Sie den Namen der Bilddatei an:',
 	'wikilove-select-image' => 'Wählen Sie ein Bild aus:',
 	'wikilove-header' => 'Geben Sie den Inhalt des Kopfbereichs ein:',
-	'wikilove-title' => 'Geben Sie den Titel ein:',
+	'wikilove-title' => 'Geben Sie den Titel für die Wertschätzung ein:',
 	'wikilove-enter-message' => 'Geben Sie eine Nachricht ein:',
+	'wikilove-err-image-api' => 'Während des Abrufens des Bildes ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.',
+	'wikilove-err-gallery' => 'Während des Ladens der Bilder ist ein Fehler aufgetreten.',
+	'wikilove-err-gallery-again' => 'Bitte versuchen Sie es erneut.',
+	'wikilove-err-preview-api' => 'Während der Vorschau ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.',
+	'wikilove-err-send-api' => 'Während des Sendens der Wertschätzung ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.',
 );
 
 /** French (Français)
@@ -242,16 +264,16 @@ $messages['gl'] = array(
 	'wikilove-desc' => 'Engade unha interface para facilitar a mostra de aprecio cara a un usuario na súa páxina de conversa',
 	'wikilove' => 'Amor wiki',
 	'wikilove-enable-preference' => 'Activar o envío de mostras de aprecio aos outros usuarios mediante a lapela de amor wiki (experimental)',
-	'wikilove-tab-text' => 'Mostrar o aprecio',
+	'wikilove-tab-text' => 'Amor wiki',
 	'tooltip-ca-wikilove' => 'Déixelle unha mensaxe a este usuario mostrando o seu aprecio',
-	'wikilove-dialog-title' => 'Amor wiki',
+	'wikilove-dialog-title' => 'Amor wiki - Envíe unha mensaxe de aprecio a outro usuario',
 	'wikilove-select-type' => 'Seleccione o tipo',
 	'wikilove-get-started-header' => 'Comecemos!',
 	'wikilove-get-started-list-1' => 'Seleccione tipo de amor wiki que queira enviar',
 	'wikilove-get-started-list-2' => 'Engadir detalles ao seu amor wiki',
 	'wikilove-get-started-list-3' => 'Enviar o seu amor wiki!',
 	'wikilove-add-details' => 'Engadir detalles',
-	'wikilove-image' => 'Insira unha imaxe:',
+	'wikilove-image' => 'Insira unha imaxe da Wikimedia Commons:',
 	'wikilove-select-image' => 'Seleccione unha imaxe:',
 	'wikilove-header' => 'Insira unha cabeceira:',
 	'wikilove-title' => 'Insira un título:',
@@ -270,6 +292,7 @@ $messages['gl'] = array(
 	'wikilove-err-gallery' => 'Houbo un problema ao cargar as imaxes!',
 	'wikilove-err-gallery-again' => 'Inténteo de novo',
 	'wikilove-summary' => '/* $1 */ nova mensaxe de amor wiki',
+	'wikilove-what-is-this' => 'Que é isto?',
 );
 
 /** Hebrew (עברית)
@@ -288,7 +311,7 @@ $messages['he'] = array(
 	'wikilove-get-started-list-2' => 'להוסיף פרטים להודעת ויקי־‏אהבה',
 	'wikilove-get-started-list-3' => 'לשלוח ויקי־אהבה!',
 	'wikilove-add-details' => 'הוספת פרטים',
-	'wikilove-image' => 'תמונה מוויקישיתוף:',
+	'wikilove-image' => 'שם קובץ תמונה:',
 	'wikilove-select-image' => 'בחירת תמונה:',
 	'wikilove-header' => 'כותרת פסקה:',
 	'wikilove-title' => 'שם הצל"ש:',
@@ -307,6 +330,7 @@ $messages['he'] = array(
 	'wikilove-err-gallery' => 'משהו השתבש בעת טעינת התמונות!',
 	'wikilove-err-gallery-again' => 'לנסות שוב',
 	'wikilove-summary' => '/* $1 */ הודעת ויקי־אהבה חדשה',
+	'wikilove-what-is-this' => 'מה זה?',
 );
 
 /** Hungarian (Magyar)
@@ -329,6 +353,7 @@ $messages['hu'] = array(
 	'wikilove-title' => 'Cím:',
 	'wikilove-enter-message' => 'Üzenet:',
 	'wikilove-omit-sig' => '(aláírás nélkül)',
+	'wikilove-image-example' => '(példa: Trophy.png)',
 	'wikilove-button-preview' => 'Előnézet',
 	'wikilove-preview' => 'Előnézet',
 	'wikilove-notify' => 'Felhasználó értesítése e-mailben',
@@ -338,10 +363,13 @@ $messages['hu'] = array(
 	'wikilove-err-title' => 'Add meg a címet!',
 	'wikilove-err-msg' => 'Add meg az üzenetet!',
 	'wikilove-err-image' => 'Válassz egy képet!',
+	'wikilove-err-image-bad' => 'A kép nem létezik.',
+	'wikilove-err-image-api' => 'Képellenőrzés sikertelen.',
 	'wikilove-err-sig' => 'Ne helyezz el aláírást az üzenetben!',
 	'wikilove-err-gallery' => 'Valami hiba történt a képek betöltése közben!',
 	'wikilove-err-gallery-again' => 'Újrapróbálkozás',
 	'wikilove-summary' => '/* $1 */ Új wikibók',
+	'wikilove-what-is-this' => 'Mi ez?',
 );
 
 /** Interlingua (Interlingua)
@@ -360,12 +388,13 @@ $messages['ia'] = array(
 	'wikilove-get-started-list-2' => 'Adde detalios a tu WikiLove',
 	'wikilove-get-started-list-3' => 'Invia tu WikiLove!',
 	'wikilove-add-details' => 'Adder detalios',
-	'wikilove-image' => 'Specifica un imagine ex Wikimedia Commons:',
+	'wikilove-image' => 'Entra le nomine de file de un imagine:',
 	'wikilove-select-image' => 'Selige un imagine:',
 	'wikilove-header' => 'Entra un texto de capite:',
-	'wikilove-title' => 'Entra un titulo:',
+	'wikilove-title' => 'Entra le titulo de un premio:',
 	'wikilove-enter-message' => 'Entra un message:',
 	'wikilove-omit-sig' => '(sin signatura)',
+	'wikilove-image-example' => '(exemplo: Stella-Auro-Interlingua.jpg)',
 	'wikilove-button-preview' => 'Previsualisar',
 	'wikilove-preview' => 'Previsualisation',
 	'wikilove-notify' => 'Notificar le usator per e-mail',
@@ -375,10 +404,19 @@ $messages['ia'] = array(
 	'wikilove-err-title' => 'Per favor entra un titulo.',
 	'wikilove-err-msg' => 'Per favor entra un message.',
 	'wikilove-err-image' => 'Per favor selige un imagine.',
+	'wikilove-err-image-bad' => 'Le imagine non existe.',
+	'wikilove-err-image-api' => 'Le verification del imagine ha fallite.',
 	'wikilove-err-sig' => 'Per favor non include un signatura in le message.',
 	'wikilove-err-gallery' => 'Un problema occurreva durante le cargamento del imagines!',
 	'wikilove-err-gallery-again' => 'Reprobar',
+	'wikilove-err-preview-api' => 'Un problema occurreva durante le previsualisation. Per favor reproba.',
+	'wikilove-err-send-api' => 'Un problema occurreva durante le invio del message. Per favor reproba.',
 	'wikilove-summary' => '/* $1 */ nove message de WikiLove',
+	'wikilove-what-is-this' => 'Que es isto?',
+	'wikilove-anon-warning' => 'Nota: Iste usator non es registrate, e ille o illa non recipera notification de iste message.',
+	'wikilove-commons-text' => 'Tu pote trovar imagines in $1.',
+	'wikilove-commons-link' => 'Wikimedia Commons',
+	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/Pagina_principal?uselang=ia',
 );
 
 /** Colognian (Ripoarisch)
@@ -463,6 +501,7 @@ $messages['mk'] = array(
 	'wikilove-err-gallery' => 'Се појави грешка при вчитувањето на сликите!',
 	'wikilove-err-gallery-again' => 'Обиди се повторно',
 	'wikilove-summary' => '/* $1 */ нова порака (ВикиЉубов)',
+	'wikilove-what-is-this' => 'Што е ова?',
 );
 
 /** Malayalam (മലയാളം)
@@ -472,16 +511,16 @@ $messages['ml'] = array(
 	'wikilove-desc' => 'ഉപയോക്താക്കൾക്ക് സംവാദം താളുകൾ വഴി ഗുണാത്മക അഭിപ്രായങ്ങൾ പ്രകടിപ്പിക്കാനുള്ള സമ്പർക്കമുഖം കൂട്ടിച്ചേർക്കുന്നു',
 	'wikilove' => 'വിക്കിലവ്',
 	'wikilove-enable-preference' => 'വിക്കിലവ് റ്റാബ് ഉപയോഗിച്ച് മറ്റ് ഉപയോക്താക്കളെ അഭിനന്ദനങ്ങൾ അറിയിക്കൽ സജ്ജമാക്കുക (പരീക്ഷണാടിസ്ഥാനം)',
-	'wikilove-tab-text' => 'അഭിനന്ദനങ്ങൾ പ്രദർശിപ്പിക്കുക',
+	'wikilove-tab-text' => 'വിക്കിലവ്',
 	'tooltip-ca-wikilove' => 'താങ്കളുടെ അഭിനന്ദനം അറിയിക്കാൻ ഈ ഉപയോക്താവിന് ഒരു സന്ദേശയമയ്ക്കുക',
-	'wikilove-dialog-title' => 'വിക്കിലവ്',
+	'wikilove-dialog-title' => 'വിക്കിലവ് - മറ്റൊരു ഉപയോക്താവിനെ അഭിനന്ദനം അറിയിക്കാനൊരു സന്ദേശം നൽകുക',
 	'wikilove-select-type' => 'ഇനം തിരഞ്ഞെടുക്കുക',
 	'wikilove-get-started-header' => 'നമുക്ക് തുടങ്ങാം!',
 	'wikilove-get-started-list-1' => 'താങ്കൾ അയയ്ക്കാനാഗ്രഹിക്കുന്ന തരം വിക്കിലവ് തിരഞ്ഞെടുക്കുക',
 	'wikilove-get-started-list-2' => 'താങ്കളുടെ വിക്കിലവിലേയ്ക്ക് കൂടുതൽ വിവരങ്ങൾ കൂട്ടിച്ചേർക്കുക',
 	'wikilove-get-started-list-3' => 'താങ്കളുടെ വിക്കിലവ് അയയ്ക്കുക!',
 	'wikilove-add-details' => 'അധികവിവരങ്ങൾ ചേർക്കുക',
-	'wikilove-image' => 'ചിത്രം നൽകുക:',
+	'wikilove-image' => 'വിക്കിമീഡിയ കോമൺസിൽ നിന്നുമുള്ള ഒരു ചിത്രം നൽകുക:',
 	'wikilove-select-image' => 'ചിത്രം തിരഞ്ഞെടുക്കുക:',
 	'wikilove-header' => 'തലക്കുറി നൽകുക:',
 	'wikilove-title' => 'തലക്കെട്ട് നൽകുക:',
@@ -500,6 +539,7 @@ $messages['ml'] = array(
 	'wikilove-err-gallery' => 'ചിത്രങ്ങൾ ശേഖരിച്ചുകൊണ്ടിരിക്കെ എന്തോ കുഴപ്പമുണ്ടായി!',
 	'wikilove-err-gallery-again' => 'വീണ്ടും ശ്രമിക്കുക',
 	'wikilove-summary' => '/* $1 */ പുതിയ വിക്കിലവ് സന്ദേശം',
+	'wikilove-what-is-this' => 'എന്താണിത്?',
 );
 
 /** Dutch (Nederlands)
@@ -565,12 +605,13 @@ $messages['pt'] = array(
 	'wikilove-get-started-list-2' => 'Acrescente detalhes ao seu WikiApreço',
 	'wikilove-get-started-list-3' => 'Enviar o seu WikiApreço!',
 	'wikilove-add-details' => 'Adicionar detalhes',
-	'wikilove-image' => 'Introduza uma imagem da Wikimedia Commons:',
+	'wikilove-image' => 'Introduza o nome de uma imagem:',
 	'wikilove-select-image' => 'Seleccione uma imagem:',
 	'wikilove-header' => 'Introduza um cabeçalho:',
-	'wikilove-title' => 'Introduza um título:',
+	'wikilove-title' => 'Introduza o título de um prémio:',
 	'wikilove-enter-message' => 'Introduza uma mensagem:',
 	'wikilove-omit-sig' => '(sem assinatura)',
+	'wikilove-image-example' => '(exemplo: Troféu.png)',
 	'wikilove-button-preview' => 'Antever',
 	'wikilove-preview' => 'Antevisão',
 	'wikilove-notify' => 'Notificar o utilizador por correio electrónico',
@@ -580,10 +621,17 @@ $messages['pt'] = array(
 	'wikilove-err-title' => 'Introduza um título, por favor.',
 	'wikilove-err-msg' => 'Introduza uma mensagem, por favor.',
 	'wikilove-err-image' => 'Escolha uma imagem, por favor.',
+	'wikilove-err-image-bad' => 'A imagem não existe.',
+	'wikilove-err-image-api' => 'Ocorreu um erro ao aceder à imagem. Tente novamente, por favor.',
 	'wikilove-err-sig' => 'Não inclua uma assinatura na mensagem, por favor.',
 	'wikilove-err-gallery' => 'Ocorreu um erro ao carregar as imagens!',
 	'wikilove-err-gallery-again' => 'Tente novamente',
+	'wikilove-err-preview-api' => 'Ocorreu um erro durante a antevisão. Tente novamente, por favor.',
+	'wikilove-err-send-api' => 'Ocorreu um erro ao enviar a mensagem. Tente novamente, por favor.',
 	'wikilove-summary' => '/* $1 */ nova mensagem de WikiApreço',
+	'wikilove-what-is-this' => 'O que é isto?',
+	'wikilove-anon-warning' => 'Nota: Este utilizador não está registado e poderá não se aperceber desta mensagem.',
+	'wikilove-commons-text' => 'Pode encontrar imagens pesquisando-as em $1.',
 );
 
 /** Tarandíne (Tarandíne)
@@ -609,12 +657,13 @@ $messages['ru'] = array(
 	'wikilove-get-started-list-2' => 'Добавьте подробности к вашей ВикиСимпатии',
 	'wikilove-get-started-list-3' => 'Отправьте вашу ВикиСимпатию!',
 	'wikilove-add-details' => 'Добавить подробности',
-	'wikilove-image' => 'Введите изображение с Викисклада:',
+	'wikilove-image' => 'Введите имя файла с изображением:',
 	'wikilove-select-image' => 'Выберите изображение:',
 	'wikilove-header' => 'Введите заголовок:',
-	'wikilove-title' => 'Введите название:',
+	'wikilove-title' => 'Введите название награды:',
 	'wikilove-enter-message' => 'Введите сообщение:',
 	'wikilove-omit-sig' => '(без подписи)',
+	'wikilove-image-example' => '(например: Trophy.png)',
 	'wikilove-button-preview' => 'Предпросмотр',
 	'wikilove-preview' => 'Предпросмотр',
 	'wikilove-notify' => 'Уведомить участника по электронной почте',
@@ -624,10 +673,17 @@ $messages['ru'] = array(
 	'wikilove-err-title' => 'Пожалуйста, введите название.',
 	'wikilove-err-msg' => 'Пожалуйста, введите сообщение.',
 	'wikilove-err-image' => 'Пожалуйста, выберите изображение.',
+	'wikilove-err-image-bad' => 'Нет такого изображения.',
+	'wikilove-err-image-api' => 'Ошибка проверки изображения.',
 	'wikilove-err-sig' => 'Пожалуйста, не включайте подпись в сообщение.',
 	'wikilove-err-gallery' => 'Что-то пошло не так при загрузке изображений!',
 	'wikilove-err-gallery-again' => 'Попробуйте ещё раз',
 	'wikilove-summary' => '/ * $1 * / новая ВикиСимпатия',
+	'wikilove-what-is-this' => 'Что это?',
+	'wikilove-anon-warning' => 'Примечание. Этот участник не зарегистрирован, он или она может не заметить это сообщение.',
+	'wikilove-commons-text' => 'Вы можете найти изображения в проекте $1.',
+	'wikilove-commons-link' => 'Викисклад',
+	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/Main_Page?uselang=ru',
 );
 
 /** Slovenian (Slovenščina)
@@ -665,6 +721,7 @@ $messages['sl'] = array(
 	'wikilove-err-gallery' => 'Nekaj je šlo narobe pri nalaganju slik!',
 	'wikilove-err-gallery-again' => 'Poskusite znova',
 	'wikilove-summary' => '/* $1 */ novo sporočilo WikiLjubezen',
+	'wikilove-what-is-this' => 'Kaj je to?',
 );
 
 /** Telugu (తెలుగు)
@@ -735,5 +792,44 @@ $messages['vi'] = array(
 	'wikilove-err-gallery' => 'Đã gặp lỗi khi tải các hình ảnh!',
 	'wikilove-err-gallery-again' => 'Thử lại',
 	'wikilove-summary' => '/* $1 */ thông điệp WikiLove mới',
+	'wikilove-what-is-this' => 'Này là gì?',
+);
+
+/** Traditional Chinese (‪中文(繁體)‬)
+ * @author Waihorace
+ */
+$messages['zh-hant'] = array(
+	'wikilove-desc' => '加入一個界面以使用戶向其他用戶提供正面的意見',
+	'wikilove' => '維基友愛',
+	'wikilove-enable-preference' => '顯示維基友愛標籤以便讚賞其他用戶（試驗性）',
+	'wikilove-tab-text' => '維基友愛',
+	'tooltip-ca-wikilove' => '張貼一條信息以表示你的欣賞',
+	'wikilove-dialog-title' => '維基友愛－向其他用戶發送欣賞信息',
+	'wikilove-select-type' => '選擇類型',
+	'wikilove-get-started-header' => '開始吧！',
+	'wikilove-get-started-list-1' => '選擇想發送的維基友愛類型',
+	'wikilove-get-started-list-2' => '對你的維基友愛加入細節',
+	'wikilove-get-started-list-3' => '發送你的友愛！',
+	'wikilove-add-details' => '加入詳情',
+	'wikilove-image' => '輸入一個來自維基共享資源的圖像名：',
+	'wikilove-select-image' => '選擇一個圖片：',
+	'wikilove-header' => '輸入頭部：',
+	'wikilove-title' => '輸入標題：',
+	'wikilove-enter-message' => '輸入信息：',
+	'wikilove-omit-sig' => '（沒有簽名）',
+	'wikilove-button-preview' => '預覽',
+	'wikilove-preview' => '預覽',
+	'wikilove-notify' => '通過電郵通知這位用戶',
+	'wikilove-button-send' => '發送友愛',
+	'wikilove-type-makeyourown' => '製作你自己的',
+	'wikilove-err-header' => '請輸入頭部。',
+	'wikilove-err-title' => '請輸入標題。',
+	'wikilove-err-msg' => '請輸入信息。',
+	'wikilove-err-image' => '請選擇圖片。',
+	'wikilove-err-sig' => '請不要在信息中包含簽名。',
+	'wikilove-err-gallery' => '加載圖片時發生了錯誤。',
+	'wikilove-err-gallery-again' => '再試一次',
+	'wikilove-summary' => '/* $1 */ 新的維基友愛信息',
+	'wikilove-what-is-this' => '這是甚麼？',
 );
 
