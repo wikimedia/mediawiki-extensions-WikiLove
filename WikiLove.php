@@ -118,6 +118,8 @@ $wgResourceModules += array(
 			'wikilove-err-title',
 			'wikilove-err-msg',
 			'wikilove-err-image',
+			'wikilove-err-image-bad',
+			'wikilove-err-image-api',
 			'wikilove-err-sig',
 			'wikilove-err-gallery',
 			'wikilove-err-gallery-again',

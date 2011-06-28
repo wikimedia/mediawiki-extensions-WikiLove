@@ -126,7 +126,7 @@ return {
 			$( '#mw-wikilove-gallery-error-again' ).click( $.wikiLove.showGallery );
 			$( '#mw-wikilove-types a' ).click( $.wikiLove.clickType );
 			$( '#mw-wikilove-subtype' ).change( $.wikiLove.changeSubtype );
-			$( '#mw-wikilove-preview-form' ).submit( $.wikiLove.submitPreview );
+			$( '#mw-wikilove-preview-form' ).submit( $.wikiLove.validatePreviewForm );
 			$( '#mw-wikilove-send-form' ).click( $.wikiLove.submitSend );
 			$( '#mw-wikilove-message' ).elastic(); // have the message textarea grow automatically
 		}
@@ -262,21 +262,13 @@ return {
 	},
 	
 	/*
-	 * Handler for clicking the preview button. Builds data for AJAX request.
+	 * Handler for clicking the preview button.
 	 */
-	submitPreview: function( e ) {
+	validatePreviewForm: function( e ) {
 		e.preventDefault();
 		$( '#mw-wikilove-preview' ).hide();
 		$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
 		
-		
-		if ( $( '#mw-wikilove-image' ).val().length <= 0 ) {
-			if( typeof currentTypeOrSubtype.gallery == 'object' ) {
-				$.wikiLove.showError( 'wikilove-err-image' ); return false;
-			} else {
-				$( '#mw-wikilove-image' ).val( options.defaultImage );
-			}
-		}
 		if( $( '#mw-wikilove-header' ).val().length <= 0 ) {
 			$.wikiLove.showError( 'wikilove-err-header' ); return false;
 		}
@@ -290,6 +282,53 @@ return {
 			$.wikiLove.showError( 'wikilove-err-sig' ); return false;
 		}
 		
+		// Split image validation depending on whether or not it is a gallery
+		if ( typeof currentTypeOrSubtype.gallery == 'undefined' ) { // not a gallery
+			if ( $( '#mw-wikilove-image' ).val().length <= 0 ) {
+				// Give them the default image and continue with preview.
+				$( '#mw-wikilove-image' ).val( options.defaultImage );
+				$.wikiLove.submitPreview();
+			} else {
+				// Make sure the image exists
+				var imageTitle = $.wikiLove.addFilePrefix( $( '#mw-wikilove-image' ).val() );
+				$.ajax( {
+					url: mw.util.wikiScript( 'api' ),
+					data: {
+						'action': 'query',
+						'format': 'json',
+						'titles': imageTitle,
+						'prop': 'imageinfo'
+					},
+					dataType: 'json',
+					success: function( data ) {
+						if ( !data.query.pages[-1].imageinfo ) {
+							// Image does not exist
+							$.wikiLove.showError( 'wikilove-err-image-bad' );
+						} else {
+							// Image exists. Proceed with preview.
+							$.wikiLove.submitPreview();
+						}
+					},
+					error: function( xhr ) {
+						$.wikiLove.showError( 'wikilove-err-image-api' );
+					}
+				} );
+			}
+		} else { // a gallery
+			if ( $( '#mw-wikilove-image' ).val().length <= 0 ) {
+				// Display an error telling them to select an image.
+				$.wikiLove.showError( 'wikilove-err-image' ); return false;
+			} else {
+				// Proceed with preview.
+				$.wikiLove.submitPreview();
+			}
+		}
+	},
+	
+	/*
+	 * After the form is validated, perform preview, and build data for the final AJAX request.
+	 */
+	submitPreview: function() {
 		var text = $.wikiLove.prepareMsg( currentTypeOrSubtype.text || options.defaultText );
 		
 		$.wikiLove.doPreview( '==' + $( '#mw-wikilove-header' ).val() + "==\n" + text );
@@ -376,7 +415,7 @@ return {
 	},
 	
 	/*
-	 * Handler for the send (final submit) button. Builds data for AJAX request.
+	 * Handler for the send (final submit) button.
 	 * The type sent for statistics is 'typeId-subtypeId' when using subtypes,
 	 * or simply 'typeId' otherwise.
 	 */
