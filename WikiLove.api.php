@@ -56,7 +56,7 @@ class WikiLoveApi extends ApiBase {
 		global $wgUser;
 		$dbw = wfGetDB( DB_MASTER );
 		$receiver = User::newFromName( $talk->getSubjectPage()->getBaseText() );
-		if ( $receiver->isAnon() ) {
+		if ( $receiver === false || $receiver->isAnon() ) {
 			$this->setWarning( 'Not logging anonymous recipients' );
 			return;
 		}

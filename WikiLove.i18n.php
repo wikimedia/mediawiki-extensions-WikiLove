@@ -47,6 +47,7 @@ $messages['en'] = array(
 	'wikilove-err-gallery-again' => 'Try again',
 	'wikilove-summary' => '/* $1 */ new WikiLove message',
 	'wikilove-what-is-this' => "What is this?",
+	'wikilove-anon-warning' => 'Note: This user is not registered, he or she many not notice this message.',
 );
 
 /** Message documentation (Message documentation)

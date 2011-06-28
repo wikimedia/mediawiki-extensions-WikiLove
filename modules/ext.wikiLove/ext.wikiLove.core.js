@@ -59,6 +59,7 @@ return {
 	<p><a target="_blank" href="http://www.mediawiki.org/wiki/WikiLove">\
 		<html:msg key="wikilove-what-is-this"/>\
 	</a></p>\
+	<p id="mw-wikilove-anon-warning"><strong><html:msg key="wikilove-anon-warning"/></strong></p>\
 </div>\
 <div id="mw-wikilove-add-details">\
 	<span class="mw-wikilove-number">2</span>\
@@ -130,6 +131,8 @@ return {
 			$( '#mw-wikilove-preview-form' ).submit( $.wikiLove.validatePreviewForm );
 			$( '#mw-wikilove-send-form' ).click( $.wikiLove.submitSend );
 			$( '#mw-wikilove-message' ).elastic(); // have the message textarea grow automatically
+			
+			if ( mw.config.get( 'wikilove-anon' ) === 0 ) $( '#mw-wikilove-anon-warning' ).hide();
 			
 			// when the input changes, we want to disable the send button
 			$( '#mw-wikilove-header' ).change( $.wikiLove.changeInput );

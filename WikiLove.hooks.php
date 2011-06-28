@@ -71,7 +71,7 @@ class WikiLoveHooks {
 				$out->addModules( 'ext.wikiLove.defaultOptions' );
 			}
 			
-			self::$recipient = $title->getText();
+			self::$recipient = $title->getBaseText();
 		}
 		return true;
 	}
@@ -83,6 +83,12 @@ class WikiLoveHooks {
 		global $wgUser;
 		$vars['wikilove-recipient'] = self::$recipient;
 		$vars['wikilove-edittoken'] = $wgUser->edittoken();
+		
+		$vars['wikilove-anon'] = 0;
+		if ( self::$recipient !== '' ) {
+			$receiver = User::newFromName( self::$recipient );
+			if ( $receiver === false || $receiver->isAnon() ) $vars['wikilove-anon'] = 1;
+		}
 		return true;
 	}
 	
