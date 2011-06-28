@@ -226,6 +226,10 @@
 	resize: none;
 }
 
+/*#mw-wikilove-dialog*/ #mw-wikilove-commons-text {
+	margin: 5px 0px 5px 15px;
+}
+
 /* add details gallery */
 /*#mw-wikilove-dialog*/ #mw-wikilove-gallery {
 	min-height: 40px;

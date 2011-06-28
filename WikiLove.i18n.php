@@ -24,7 +24,7 @@ $messages['en'] = array(
 	'wikilove-get-started-list-2' => 'Add details to your WikiLove',
 	'wikilove-get-started-list-3' => 'Send your WikiLove!',
 	'wikilove-add-details' => 'Add details',
-	'wikilove-image' => 'Enter an image from Wikimedia Commons:',
+	'wikilove-image' => 'Enter an image filename:',
 	'wikilove-select-image' => 'Select an image:',
 	'wikilove-header' => 'Enter a header:',
 	'wikilove-title' => 'Enter a title:',
@@ -48,6 +48,9 @@ $messages['en'] = array(
 	'wikilove-summary' => '/* $1 */ new WikiLove message',
 	'wikilove-what-is-this' => "What is this?",
 	'wikilove-anon-warning' => 'Note: This user is not registered, he or she many not notice this message.',
+	'wikilove-commons-text' => 'You can find images by browsing $1.',
+	'wikilove-commons-link' => 'Wikimedia Commons',
+	'wikilove-commons-url' => 'http://commons.wikimedia.org',
 );
 
 /** Message documentation (Message documentation)
@@ -58,6 +61,7 @@ $messages['qqq'] = array(
 	'wikilove-preview' => 'Title. Noun.',
 	'wikilove-barnstar-header' => 'See [[:wikipedia:Barnstar]]. Probably not literally translatable.',
 	'wikilove-image-example' => 'The filename should be an actual image on Wikimedia Commons.',
+	'wikilove-commons-text' => '$1 gets replaced by a link with wikilove-commons-link as caption and wikilove-commons-url as URL',
 );
 
 /** Bulgarian (Български)

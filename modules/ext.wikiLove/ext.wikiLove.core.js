@@ -84,6 +84,9 @@ return {
 		<label for="mw-wikilove-image" id="mw-wikilove-image-label"><html:msg key="wikilove-image"/></label>\
 		<span class="mw-wikilove-note" id="mw-wikilove-image-note"><html:msg key="wikilove-image-example"/></span>\
 		<input type="text" class="text" id="mw-wikilove-image"/>\
+		<div id="mw-wikilove-commons-text">\
+		' + mw.msg( 'wikilove-commons-text', '<a href="' + mw.msg( 'wikilove-commons-url' ) +'" target="_blank">' + mw.msg( 'wikilove-commons-link' ) +'</a>' ) + '\
+		</div>\
 		<label for="mw-wikilove-message" id="mw-wikilove-message-label"><html:msg key="wikilove-enter-message"/></label>\
 		<span class="mw-wikilove-note" id="mw-wikilove-message-note"><html:msg key="wikilove-omit-sig"/></span>\
 		<textarea id="mw-wikilove-message"></textarea>\
@@ -244,7 +247,7 @@ return {
 		$( '#mw-wikilove-title' ).val( currentTypeOrSubtype.title || '' );
 		
 		// show or hide image label and textbox depending on fields configuration
-		$( '#mw-wikilove-image, #mw-wikilove-image-label, #mw-wikilove-image-note' )
+		$( '#mw-wikilove-image, #mw-wikilove-image-label, #mw-wikilove-image-note, #mw-wikilove-commons-text' )
 			.toggle( $.inArray( 'image', currentTypeOrSubtype.fields ) >= 0 );
 		
 		// set the new text for the image textbox
