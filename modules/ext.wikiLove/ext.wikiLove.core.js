@@ -292,6 +292,8 @@ return {
 			} else {
 				// Make sure the image exists
 				var imageTitle = $.wikiLove.addFilePrefix( $( '#mw-wikilove-image' ).val() );
+				$( '#mw-wikilove-preview-spinner' ).fadeIn( 200 );
+				
 				$.ajax( {
 					url: mw.util.wikiScript( 'api' ),
 					data: {
@@ -305,6 +307,7 @@ return {
 						if ( !data.query.pages[-1].imageinfo ) {
 							// Image does not exist
 							$.wikiLove.showError( 'wikilove-err-image-bad' );
+							$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
 						} else {
 							// Image exists. Proceed with preview.
 							$.wikiLove.submitPreview();
