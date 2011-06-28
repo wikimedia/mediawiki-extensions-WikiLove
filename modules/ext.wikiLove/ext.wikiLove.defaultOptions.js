@@ -333,7 +333,7 @@ $.wikiLoveOptions = function() { return {
 					imageSize: '120px'
 				}
 			},
-			icon: mw.config.get( 'wgExtensionAssetsPath' ) + '/WikiLove/modules/ext.wikiLove/images/icons/wikilove-icon-beer.png'
+			icon: mw.config.get( 'wgExtensionAssetsPath' ) + '/WikiLove/modules/ext.wikiLove/images/icons/wikilove-icon-food.png'
 		},
 		'kitten': {
 			name: 'Kittens',
