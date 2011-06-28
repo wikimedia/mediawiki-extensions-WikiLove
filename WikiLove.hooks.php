@@ -52,7 +52,7 @@ class WikiLoveHooks {
 	 * @param $skin Skin
 	 */
 	public static function beforePageDisplay( $out, $skin ) {
-		global $wgWikiLoveGlobal, $wgWikiLoveEnableLocalConfig, $wgUser;
+		global $wgWikiLoveGlobal, $wgUser;
 		if ( !$wgWikiLoveGlobal && !$wgUser->getOption( 'wikilove-enabled' ) ) {
 			return true;
 		}
