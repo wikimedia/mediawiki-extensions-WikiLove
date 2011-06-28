@@ -309,7 +309,7 @@ return {
 							$.wikiLove.submitPreview();
 						}
 					},
-					error: function( xhr ) {
+					error: function() {
 						$.wikiLove.showError( 'wikilove-err-image-api' );
 					}
 				} );
@@ -567,7 +567,7 @@ return {
 	/*
 	 * Init function which is called upon page load. Binds the WikiLove icon to opening the dialog.
 	 */
-	init: function( ) {
+	init: function() {
 		if( typeof $.wikiLoveOptions == 'function' ) options = $.wikiLoveOptions();
 		
 		var $wikiLoveLink = $( '#ca-wikilove' ).find( 'a' );
