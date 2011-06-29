@@ -489,17 +489,34 @@ return {
 	},
 	
 	/*
-	 * Handler for the send (final submit) button.
+	 * Handler for the send (final submit) button. Builds the data for the AJAX request.
 	 * The type sent for statistics is 'typeId-subtypeId' when using subtypes,
 	 * or simply 'typeId' otherwise.
 	 */
 	submitSend: function( e ) {
 		e.preventDefault();
 		$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
+		
 		// Check for a header if it is required
 		if( $.inArray( 'header', currentTypeOrSubtype.fields ) >= 0 && $( '#mw-wikilove-header' ).val().length <= 0 ) {
 			$.wikiLove.showAddDetailsError( 'wikilove-err-header' ); return false;
 		}
+		
+		// Check for a title if it is required, and otherwise use the header text
+		if( $.inArray( 'title', currentTypeOrSubtype.fields ) >= 0 && $( '#mw-wikilove-title' ).val().length <= 0 ) {
+			$( '#mw-wikilove-title' ).val( $( '#mw-wikilove-header' ).val() );
+		}
+		
+		if( $.inArray( 'message', currentTypeOrSubtype.fields ) >= 0 ) {
+			// If there's a signature already in the message, throw an error
+			if ( $( '#mw-wikilove-message' ).val().indexOf( '~~~' ) >= 0 ) {
+				$.wikiLove.showAddDetailsError( 'wikilove-err-sig' ); return false;
+			}
+		}
+		
+		// We don't need to do any image validation here since its not actually possible to click 
+		// Send WikiLove without having a valid image entered.
+		
 		var submitData = {
 			'header': $( '#mw-wikilove-header' ).val(),
 			'text': $.wikiLove.prepareMsg( currentTypeOrSubtype.text || options.defaultText ),
