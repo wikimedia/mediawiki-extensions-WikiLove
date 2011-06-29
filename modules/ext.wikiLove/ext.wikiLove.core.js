@@ -330,12 +330,7 @@ return {
 		}
 		
 		if( $.inArray( 'message', currentTypeOrSubtype.fields ) >= 0 ) {
-			// Check for a message if it is required
-			if ( $( '#mw-wikilove-message' ).val().length <= 0 ) {
-				$.wikiLove.showAddDetailsError( 'wikilove-err-msg' ); return false;
-			}
-			
-			// If there isn't a signature already in the message, throw an error
+			// If there's a signature already in the message, throw an error
 			if ( $( '#mw-wikilove-message' ).val().indexOf( '~~~' ) >= 0 ) {
 				$.wikiLove.showAddDetailsError( 'wikilove-err-sig' ); return false;
 			}
@@ -501,6 +496,10 @@ return {
 	submitSend: function( e ) {
 		e.preventDefault();
 		$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
+		// Check for a header if it is required
+		if( $.inArray( 'header', currentTypeOrSubtype.fields ) >= 0 && $( '#mw-wikilove-header' ).val().length <= 0 ) {
+			$.wikiLove.showAddDetailsError( 'wikilove-err-header' ); return false;
+		}
 		var submitData = {
 			'header': $( '#mw-wikilove-header' ).val(),
 			'text': $.wikiLove.prepareMsg( currentTypeOrSubtype.text || options.defaultText ),
