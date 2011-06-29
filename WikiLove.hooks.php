@@ -59,18 +59,7 @@ class WikiLoveHooks {
 		
 		$title = self::getUserTalkPage( $skin->getTitle() );
 		if ( !is_null( $title ) ) {
-			$out->addModules( 'ext.wikiLove.icon' );
-			
-			// it is much better to have a chain like: startup -> default -> local -> init,
-			// but because of this bug that isn't possible right now: https://bugzilla.wikimedia.org/29608
-			$optionsTitle = Title::newFromText( "MediaWiki:WikiLove.js" );
-			if( $optionsTitle->exists() && $optionsTitle->isCssOrJsPage() ) {
-				$out->addModules( 'ext.wikiLove.local' );
-			}
-			else {
-				$out->addModules( 'ext.wikiLove.defaultOptions' );
-			}
-			
+			$out->addModules( array( 'ext.wikiLove.icon', 'ext.wikiLove.init' ) );
 			self::$recipient = $title->getBaseText();
 		}
 		return true;

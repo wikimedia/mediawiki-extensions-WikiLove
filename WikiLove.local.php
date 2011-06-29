@@ -9,12 +9,6 @@ class WikiLoveLocal extends ResourceLoaderWikiModule {
 		);
 	}
 	
-	public function getDependencies() {
-		return array(
-			'ext.wikiLove.startup',
-		);
-	}
-	
 	public function getMessages() {
 		global $wgWikiLoveOptionMessages;
 		return $wgWikiLoveOptionMessages;

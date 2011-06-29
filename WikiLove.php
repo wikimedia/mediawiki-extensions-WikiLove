@@ -86,13 +86,18 @@ $wgWikiLoveOptionMessages = array(
 	'wikilove-type-makeyourown',
 );
 
-// resources
-// it is much better to have a chain like: startup -> default -> local -> init,
-// but because of this bug that isn't possible right now: https://bugzilla.wikimedia.org/29608
+// Because of bug 29608 we can't make a dependancy on a wiki module yet
+// For now using 'using' to load the wiki module from within init.
 $wgResourceModules += array(
 	'ext.wikiLove.icon' => $extWikiLoveTpl + array(
 		'styles' => 'ext.wikiLove.icon.css',
 		'position' => 'top',
+	),
+	'ext.wikiLove.defaultOptions' => $extWikiLoveTpl + array(
+		'scripts' => array(
+			'ext.wikiLove.defaultOptions.js',
+		),
+		'messages' => $wgWikiLoveOptionMessages,
 	),
 	'ext.wikiLove.startup' => $extWikiLoveTpl + array(
 		'scripts' => array(
@@ -136,6 +141,7 @@ $wgResourceModules += array(
 			'wikilove-err-send-api',
 		),
 		'dependencies' => array(
+			'ext.wikiLove.defaultOptions',
 			'jquery.ui.dialog',
 			'jquery.ui.button',
 			'jquery.localize',
@@ -144,17 +150,14 @@ $wgResourceModules += array(
 	),
 	'ext.wikiLove.local' => array(
 		'class' => 'WikiLoveLocal',
-		/* for information only, this is actually in the class!
-		'messages' => $wgWikiLoveOptionMessages,
-		'dependencies' => 'ext.wikiLove.startup'
-		*/
 	),
-	'ext.wikiLove.defaultOptions' => $extWikiLoveTpl + array(
+	'ext.wikiLove.init' => $extWikiLoveTpl + array(
 		'scripts' => array(
-			'ext.wikiLove.defaultOptions.js',
+			'ext.wikiLove.init.js',
 		),
-		'messages' => $wgWikiLoveOptionMessages,
-		'dependencies' => 'ext.wikiLove.startup'
+		'dependencies' => array(
+			'ext.wikiLove.startup',
+		),
 	),
 	'jquery.elastic' => array(
 		'localBasePath' => dirname( __FILE__ ) . '/modules/jquery.elastic',
