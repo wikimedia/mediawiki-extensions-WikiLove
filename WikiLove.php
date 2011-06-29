@@ -55,6 +55,7 @@ $dir = dirname( __FILE__ ) . '/';
 
 // add autoload classes
 $wgAutoloadClasses['WikiLoveApi']                 = $dir . 'WikiLove.api.php';
+$wgAutoloadClasses['WikiLoveImageLogApi']         = $dir . 'WikiLoveImageLog.api.php';
 $wgAutoloadClasses['WikiLoveHooks']               = $dir . 'WikiLove.hooks.php';
 $wgAutoloadClasses['WikiLoveLocal']               = $dir . 'WikiLove.local.php';
 
@@ -71,6 +72,7 @@ $wgHooks['MakeGlobalVariablesScript'][]           = 'WikiLoveHooks::makeGlobalVa
 
 // api modules
 $wgAPIModules['wikilove'] = 'WikiLoveApi';
+$wgAPIModules['wikiloveimagelog'] = 'WikiLoveImageLogApi';
 
 $extWikiLoveTpl = array(
 	'localBasePath' => dirname( __FILE__ ) . '/modules/ext.wikiLove',
