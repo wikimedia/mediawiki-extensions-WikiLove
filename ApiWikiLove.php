@@ -1,5 +1,5 @@
 <?php
-class WikiLoveApi extends ApiBase {
+class ApiWikiLove extends ApiBase {
 	public function execute() {
 		global $wgRequest, $wgWikiLoveLogging, $wgParser;
 		

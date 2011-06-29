@@ -5,7 +5,7 @@
  * feature. This is basically just to see if users can grok the concept. Once usage analysis is 
  * complete, this API can be deleted.
  */
-class WikiLoveImageLogApi extends ApiBase {
+class ApiWikiLoveImageLog extends ApiBase {
 	public function execute() {
 		global $wgRequest, $wgWikiLoveLogging, $wgParser;
 		

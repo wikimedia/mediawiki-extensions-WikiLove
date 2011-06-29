@@ -55,8 +55,8 @@ $wgWikiLoveLogging = false; // enable logging of giving of WikiLove
 $dir = dirname( __FILE__ ) . '/';
 
 // add autoload classes
-$wgAutoloadClasses['WikiLoveApi']                 = $dir . 'WikiLove.api.php';
-$wgAutoloadClasses['WikiLoveImageLogApi']         = $dir . 'WikiLoveImageLog.api.php';
+$wgAutoloadClasses['ApiWikiLove']                 = $dir . 'ApiWikiLove.php';
+$wgAutoloadClasses['ApiWikiLoveImageLog']         = $dir . 'ApiWikiLoveImageLog.php';
 $wgAutoloadClasses['WikiLoveHooks']               = $dir . 'WikiLove.hooks.php';
 $wgAutoloadClasses['WikiLoveLocal']               = $dir . 'WikiLove.local.php';
 
@@ -72,8 +72,8 @@ $wgHooks['LoadExtensionSchemaUpdates'][]          = 'WikiLoveHooks::loadExtensio
 $wgHooks['MakeGlobalVariablesScript'][]           = 'WikiLoveHooks::makeGlobalVariablesScript';
 
 // api modules
-$wgAPIModules['wikilove'] = 'WikiLoveApi';
-$wgAPIModules['wikiloveimagelog'] = 'WikiLoveImageLogApi';
+$wgAPIModules['wikilove'] = 'ApiWikiLove';
+$wgAPIModules['wikiloveimagelog'] = 'ApiWikiLoveImageLog';
 
 $extWikiLoveTpl = array(
 	'localBasePath' => dirname( __FILE__ ) . '/modules/ext.wikiLove',
