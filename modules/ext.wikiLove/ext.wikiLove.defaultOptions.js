@@ -253,7 +253,7 @@ $.wikiLoveOptions = function() { return {
 					option: 'Baklava', // option listed in the select list
 					header: 'Some baklava for you!', // header that appears at the top of the talk page post (optional)
 					image: 'Baklava - Turkish special, 80-ply.JPEG', // image for the award
-					imageSize: '120px' // size to display image
+					imageSize: '135px' // size to display image
 				},
 				'beer': {
 					text: '{| style="background-color: $5; border: 1px solid $6;"\n\
@@ -286,7 +286,7 @@ $.wikiLoveOptions = function() { return {
 					option: 'Bubble tea',
 					header: 'Some bubble tea for you!',
 					image: 'Bubble_Tea.png',
-					imageSize: '70px'
+					imageSize: '65px'
 				},
 				'cheeseburger': {
 					text: '{| style="background-color: $5; border: 1px solid $6;"\n\
@@ -363,7 +363,7 @@ $.wikiLoveOptions = function() { return {
 					option: 'Stroopwafels',
 					header: 'Some stroopwafels for you!',
 					image: 'Gaufre biscuit.jpg',
-					imageSize: '120px'
+					imageSize: '135px'
 				}
 			},
 			icon: mw.config.get( 'wgExtensionAssetsPath' ) + '/WikiLove/modules/ext.wikiLove/images/icons/wikilove-icon-food.png'
