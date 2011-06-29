@@ -411,7 +411,7 @@ $.wikiLove = {
 	 * After the form is validated, perform preview.
 	 */
 	submitPreview: function() {
-		var text = $.wikiLove.prepareMsg( currentTypeOrSubtype.text || options.defaultText );
+		var text = $.wikiLove.prepareMsg( currentTypeOrSubtype.text || options.types[currentTypeId].text || options.defaultText );
 		$.wikiLove.doPreview( '==' + $( '#mw-wikilove-header' ).val() + "==\n" + text );
 	},
 	
@@ -544,7 +544,7 @@ $.wikiLove = {
 		
 		var submitData = {
 			'header': $( '#mw-wikilove-header' ).val(),
-			'text': $.wikiLove.prepareMsg( currentTypeOrSubtype.text || options.defaultText ),
+			'text': $.wikiLove.prepareMsg( currentTypeOrSubtype.text || options.types[currentTypeId].text || options.defaultText ),
 			'message': $( '#mw-wikilove-message' ).val(),
 			'type': currentTypeId
 				+ (currentSubtypeId !== null ? '-' + currentSubtypeId : '')

@@ -241,14 +241,14 @@ $.wikiLoveOptions = {
 		'food': {
 			name: 'Food and drink', // name of the type (appears in the types menu)
 			select: 'Select food or drink item:', // subtype select label
+			text: '{| style="background-color: $5; border: 1px solid $6;"\n\
+|style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n\
+|style="vertical-align: middle; padding: 3px;" | $1 ~~~~\n\
+|}', // custom text
 			subtypes: { // some different subtypes
 				// note that when not using subtypes you should use these subtype options
 				// for the top-level type
 				'baklava': {
-					text: '{| style="background-color: $5; border: 1px solid $6;"\n\
-|style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n\
-|style="vertical-align: middle; padding: 3px;" | $1 ~~~~\n\
-|}', // custom text
 					fields: [ 'header', 'message' ], // fields to ask for in form
 					option: 'Baklava', // option listed in the select list
 					header: 'Some baklava for you!', // header that appears at the top of the talk page post (optional)
@@ -256,10 +256,6 @@ $.wikiLoveOptions = {
 					imageSize: '135px' // size to display image
 				},
 				'beer': {
-					text: '{| style="background-color: $5; border: 1px solid $6;"\n\
-|style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n\
-|style="vertical-align: middle; padding: 3px;" | $1 ~~~~\n\
-|}',
 					fields: [ 'header', 'message' ],
 					option: 'Beer',
 					header: 'A beer for you!',
@@ -267,10 +263,6 @@ $.wikiLoveOptions = {
 					imageSize: '70px'
 				},
 				'brownie': {
-					text: '{| style="background-color: $5; border: 1px solid $6;"\n\
-|style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n\
-|style="vertical-align: middle; padding: 3px;" | $1 ~~~~\n\
-|}',
 					fields: [ 'header', 'message' ],
 					option: 'Brownie',
 					header: 'A brownie for you!',
@@ -278,10 +270,6 @@ $.wikiLoveOptions = {
 					imageSize: '120px'
 				},
 				'bubble tea': {
-					text: '{| style="background-color: $5; border: 1px solid $6;"\n\
-|style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n\
-|style="vertical-align: middle; padding: 3px;" | $1 ~~~~\n\
-|}', // custom text
 					fields: [ 'header', 'message' ],
 					option: 'Bubble tea',
 					header: 'Some bubble tea for you!',
@@ -289,10 +277,6 @@ $.wikiLoveOptions = {
 					imageSize: '65px'
 				},
 				'cheeseburger': {
-					text: '{| style="background-color: $5; border: 1px solid $6;"\n\
-|style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n\
-|style="vertical-align: middle; padding: 3px;" | $1 ~~~~\n\
-|}',
 					fields: [ 'header', 'message' ],
 					option: 'Cheeseburger',
 					header: 'A cheeseburger for you!',
@@ -300,10 +284,6 @@ $.wikiLoveOptions = {
 					imageSize: '120px'
 				},
 				'cookie': {
-					text: '{| style="background-color: $5; border: 1px solid $6;"\n\
-|style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n\
-|style="vertical-align: middle; padding: 3px;" | $1 ~~~~\n\
-|}',
 					fields: [ 'header', 'message' ],
 					option: 'Cookie',
 					header: 'A cookie for you!',
@@ -311,10 +291,6 @@ $.wikiLoveOptions = {
 					imageSize: '120px'
 				},
 				'coffee': {
-					text: '{| style="background-color: $5; border: 1px solid $6;"\n\
-|style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n\
-|style="vertical-align: middle; padding: 3px;" | $1 ~~~~\n\
-|}',
 					fields: [ 'header', 'message' ],
 					option: 'Cup of coffee',
 					header: 'A cup of coffee for you!',
@@ -322,10 +298,6 @@ $.wikiLoveOptions = {
 					imageSize: '120px'
 				},
 				'tea': {
-					text: '{| style="background-color: $5; border: 1px solid $6;"\n\
-|style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n\
-|style="vertical-align: middle; padding: 3px;" | $1 ~~~~\n\
-|}',
 					fields: [ 'header', 'message' ],
 					option: 'Cup of tea',
 					header: 'A cup of tea for you!',
@@ -333,10 +305,6 @@ $.wikiLoveOptions = {
 					imageSize: '120px'
 				},
 				'cupcake': {
-					text: '{| style="background-color: $5; border: 1px solid $6;"\n\
-|style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n\
-|style="vertical-align: middle; padding: 3px;" | $1 ~~~~\n\
-|}',
 					fields: [ 'header', 'message' ],
 					option: 'Cupcake',
 					header: 'A cupcake for you!',
@@ -344,10 +312,6 @@ $.wikiLoveOptions = {
 					imageSize: '120px'
 				},
 				'pie': {
-					text: '{| style="background-color: $5; border: 1px solid $6;"\n\
-|style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n\
-|style="vertical-align: middle; padding: 3px;" | $1 ~~~~\n\
-|}',
 					fields: [ 'header', 'message' ],
 					option: 'Pie',
 					header: 'A pie for you!',
@@ -355,10 +319,6 @@ $.wikiLoveOptions = {
 					imageSize: '120px'
 				},
 				'stroopwafels': {
-					text: '{| style="background-color: $5; border: 1px solid $6;"\n\
-|style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n\
-|style="vertical-align: middle; padding: 3px;" | $1 ~~~~\n\
-|}',
 					fields: [ 'header', 'message' ],
 					option: 'Stroopwafels',
 					header: 'Some stroopwafels for you!',
