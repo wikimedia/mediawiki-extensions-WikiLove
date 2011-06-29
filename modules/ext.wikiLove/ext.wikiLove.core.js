@@ -346,49 +346,52 @@ return {
 		
 		// Split image validation depending on whether or not it is a gallery
 		if ( typeof currentTypeOrSubtype.gallery == 'undefined' ) { // not a gallery
-			if ( $( '#mw-wikilove-image' ).val().length <= 0 ) {
-				// Give them the default image and continue with preview.
-				$( '#mw-wikilove-image' ).val( options.defaultImage );
-				$.wikiLove.submitPreview();
-			} else {
-				// Make sure the image exists
-				var imageTitle = $.wikiLove.addFilePrefix( $( '#mw-wikilove-image' ).val() );
-				$( '#mw-wikilove-preview-spinner' ).fadeIn( 200 );
-				
-				$.ajax( {
-					url: mw.util.wikiScript( 'api' ),
-					data: {
-						'action': 'query',
-						'format': 'json',
-						'titles': imageTitle,
-						'prop': 'imageinfo'
-					},
-					dataType: 'json',
-					success: function( data ) {
-						// See if image exists locally or through InstantCommons
-						if ( !data.query.pages[-1] || data.query.pages[-1].imageinfo) {
-							// Image exists
-							$.wikiLove.submitPreview();
-							$.wikiLove.logCustomImageUse( imageTitle, 1 );
-						} else {
-							// Image does not exist
-							$.wikiLove.showAddDetailsError( 'wikilove-err-image-bad' );
-							$.wikiLove.logCustomImageUse( imageTitle, 0 );
+			if ( $.inArray( 'image', currentTypeOrSubtype.fields ) >= 0 ) { // asks for an image
+				if ( $( '#mw-wikilove-image' ).val().length <= 0 ) { // no image entered
+					// Give them the default image and continue with preview.
+					$( '#mw-wikilove-image' ).val( options.defaultImage );
+					$.wikiLove.submitPreview();
+				} else { // image was entered by user
+					// Make sure the image exists
+					var imageTitle = $.wikiLove.addFilePrefix( $( '#mw-wikilove-image' ).val() );
+					$( '#mw-wikilove-preview-spinner' ).fadeIn( 200 );
+					
+					$.ajax( {
+						url: mw.util.wikiScript( 'api' ),
+						data: {
+							'action': 'query',
+							'format': 'json',
+							'titles': imageTitle,
+							'prop': 'imageinfo'
+						},
+						dataType: 'json',
+						success: function( data ) {
+							// See if image exists locally or through InstantCommons
+							if ( !data.query.pages[-1] || data.query.pages[-1].imageinfo) {
+								// Image exists
+								$.wikiLove.submitPreview();
+								$.wikiLove.logCustomImageUse( imageTitle, 1 );
+							} else {
+								// Image does not exist
+								$.wikiLove.showAddDetailsError( 'wikilove-err-image-bad' );
+								$.wikiLove.logCustomImageUse( imageTitle, 0 );
+								$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
+							}
+						},
+						error: function() {
+							$.wikiLove.showAddDetailsError( 'wikilove-err-image-api' );
 							$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
 						}
-					},
-					error: function() {
-						$.wikiLove.showAddDetailsError( 'wikilove-err-image-api' );
-						$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
-					}
-				} );
+					} );
+				}
+			} else { // doesn't ask for an image
+				$.wikiLove.submitPreview();
 			}
 		} else { // a gallery
-			if ( $( '#mw-wikilove-image' ).val().length <= 0 ) {
+			if ( $( '#mw-wikilove-image' ).val().length <= 0 ) { // no image selected
 				// Display an error telling them to select an image.
 				$.wikiLove.showAddDetailsError( 'wikilove-err-image' ); return false;
-			} else {
-				// Proceed with preview.
+			} else { // image was selected
 				$.wikiLove.submitPreview();
 			}
 		}
