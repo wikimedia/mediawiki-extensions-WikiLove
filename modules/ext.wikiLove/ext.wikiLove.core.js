@@ -229,17 +229,25 @@ return {
 			};
 		}
 		if( currentTypeOrSubtype !== null ) {
-			if( !currentTypeOrSubtype.header || $( '#mw-wikilove-header' ).val()   != currentTypeOrSubtype.header  ) {
-				rememberData.header  = $( '#mw-wikilove-header' ).val();
+			if( $.inArray( 'header', currentTypeOrSubtype.fields ) >= 0 && 
+				( !currentTypeOrSubtype.header || $( '#mw-wikilove-header' ).val() != currentTypeOrSubtype.header ) )
+			{
+				rememberData.header = $( '#mw-wikilove-header' ).val();
 			}
-			if( !currentTypeOrSubtype.title  || $( '#mw-wikilove-title' ).val()    != currentTypeOrSubtype.title ) {
-				rememberData.title   = $( '#mw-wikilove-title' ).val();
+			if( $.inArray( 'title', currentTypeOrSubtype.fields ) >= 0 &&
+				( !currentTypeOrSubtype.title || $( '#mw-wikilove-title' ).val() != currentTypeOrSubtype.title ) )
+			{
+				rememberData.title = $( '#mw-wikilove-title' ).val();
 			}
-			if( !currentTypeOrSubtype.message || $( '#mw-wikilove-message' ).val() != currentTypeOrSubtype.message ) {
+			if( $.inArray( 'message', currentTypeOrSubtype.fields ) >= 0 && 
+				( !currentTypeOrSubtype.message || $( '#mw-wikilove-message' ).val() != currentTypeOrSubtype.message ) )
+			{
 				rememberData.message = $( '#mw-wikilove-message' ).val();
 			}
-			if( typeof currentTypeOrSubtype.gallery == undefined && $.inArray( 'image', currentTypeOrSubtype.fields ) >= 0 ) {
-				rememberData.image   = $( '#mw-wikilove-image' ).val();
+			if( typeof currentTypeOrSubtype.gallery == 'undefined' && $.inArray( 'image', currentTypeOrSubtype.fields ) >= 0  &&
+				( !currentTypeOrSubtype.image || $( '#mw-wikilove-image' ).val() != currentTypeOrSubtype.image ) )
+			{
+				rememberData.image = $( '#mw-wikilove-image' ).val();
 			}
 		}
 	},
