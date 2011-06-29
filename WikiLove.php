@@ -16,6 +16,7 @@
  * http://www.gnu.org/copyleft/gpl.html
  *
  * Heart icon by Mark James (Creative Commons Attribution 3.0 License)
+ * Interface design by Brandon Harris
  */
 
 /**
@@ -37,7 +38,7 @@ EOT;
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'WikiLove',
-	'version' => '0.1',
+	'version' => '1.0',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:WikiLove',
 	'author' => array(
 		'Ryan Kaldari', 'Jan Paul Posma'
