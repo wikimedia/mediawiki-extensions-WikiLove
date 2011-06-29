@@ -6,7 +6,6 @@ var	options = {}, // options modifiable by the user
 	currentTypeId = null, // id of the currently selected type (e.g. 'barnstar' or 'makeyourown')
 	currentSubtypeId = null, // id of the currently selected subtype (e.g. 'original' or 'special')
 	currentTypeOrSubtype = null, // content of the current (sub)type (i.e. an object with title, descr, text, etc.)
-	previewData = null, // data of the currently previewed thing is set here
 	rememberData = null, // input data to remember when switching types or subtypes
 	emailable = false,
 	gallery = {};
@@ -138,15 +137,11 @@ return {
 			
 			if ( mw.config.get( 'wikilove-anon' ) === 0 ) $( '#mw-wikilove-anon-warning' ).hide();
 			
-			// when the input changes, we want to disable the send button
-			$( '#mw-wikilove-header' ).change( $.wikiLove.changeInput );
-			$( '#mw-wikilove-header' ).keyup( $.wikiLove.changeInput );
-			$( '#mw-wikilove-title' ).change( $.wikiLove.changeInput );
-			$( '#mw-wikilove-title' ).keyup( $.wikiLove.changeInput );
-			$( '#mw-wikilove-image' ).change( $.wikiLove.changeInput );
-			$( '#mw-wikilove-image' ).keyup( $.wikiLove.changeInput );
-			$( '#mw-wikilove-message' ).change( $.wikiLove.changeInput );
-			$( '#mw-wikilove-message' ).keyup( $.wikiLove.changeInput );
+			// When the image changes, we want to reset the preview and error message.
+			$( '#mw-wikilove-image' ).change( function() {
+				$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
+				$( '#mw-wikilove-preview' ).hide();
+			} );
 		}
 		
 		$dialog.dialog( 'open' );
@@ -200,7 +195,6 @@ return {
 			
 			$( '#mw-wikilove-add-details' ).show();
 			$( '#mw-wikilove-preview' ).hide();
-			previewData = null;
 		}
 	},
 	
@@ -219,7 +213,6 @@ return {
 			$( '#mw-wikilove-subtype-description' ).html( currentTypeOrSubtype.descr );
 			$.wikiLove.updateAllDetails();
 			$( '#mw-wikilove-preview' ).hide();
-			previewData = null;
 		}
 	},
 	
@@ -371,11 +364,11 @@ return {
 					success: function( data ) {
 						// See if image exists locally or through InstantCommons
 						if ( !data.query.pages[-1] || data.query.pages[-1].imageinfo) {
-							 // Image exists
+							// Image exists
 							$.wikiLove.submitPreview();
 							$.wikiLove.logCustomImageUse( imageTitle, 1 );
 						} else {
-							 // Image does not exist
+							// Image does not exist
 							$.wikiLove.showAddDetailsError( 'wikilove-err-image-bad' );
 							$.wikiLove.logCustomImageUse( imageTitle, 0 );
 							$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
@@ -399,25 +392,11 @@ return {
 	},
 	
 	/*
-	 * After the form is validated, perform preview, and build data for the final AJAX request.
+	 * After the form is validated, perform preview.
 	 */
 	submitPreview: function() {
 		var text = $.wikiLove.prepareMsg( currentTypeOrSubtype.text || options.defaultText );
-		
 		$.wikiLove.doPreview( '==' + $( '#mw-wikilove-header' ).val() + "==\n" + text );
-		previewData = {
-			'header': $( '#mw-wikilove-header' ).val(),
-			'text': text,
-			'message': $( '#mw-wikilove-message' ).val(),
-			'title':  $( '#mw-wikilove-title' ).val(),
-			'image': $( '#mw-wikilove-image' ).val(),
-			'type': currentTypeId
-				+ (currentSubtypeId !== null ? '-' + currentSubtypeId : '')
-		};
-		
-		if ( $( '#mw-wikilove-notify-checkbox:checked' ).val() && emailable ) {
-			previewData.email = $.wikiLove.prepareMsg( currentTypeOrSubtype.email );
-		}
 	},
 	
 	showAddDetailsError: function( errmsg ) {
@@ -508,26 +487,10 @@ return {
 	
 	/*
 	 * Callback for the preview function. Sets the preview area with the HTML and fades it in.
-	 * It also (re-)enables the send button.
 	 */
 	showPreview: function( html ) {
 		$( '#mw-wikilove-preview-area' ).html( html );
 		$( '#mw-wikilove-preview' ).fadeIn( 200 );
-		$( '#mw-wikilove-button-send' ).button( 'enable' );
-	},
-	
-	changeInput: function() {
-		if( previewData !== null &&
-			( previewData.message   != $( '#mw-wikilove-message' ).val()
-			|| previewData.title  != $( '#mw-wikilove-title' ).val()
-			|| previewData.header != $( '#mw-wikilove-header' ).val()
-			|| previewData.image  != $( '#mw-wikilove-image' ).val()
-		)) {
-			$( '#mw-wikilove-button-send' ).button( 'disable' );
-		}
-		else {
-			$( '#mw-wikilove-button-send' ).button( 'enable' );
-		}
 	},
 	
 	/*
@@ -536,13 +499,20 @@ return {
 	 * or simply 'typeId' otherwise.
 	 */
 	submitSend: function( e ) {
+		e.preventDefault();
 		$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
-		
-		if( !$( '#mw-wikilove-button-send' ).button( 'option', 'disabled' ) ) {
-			e.preventDefault();
-			$.wikiLove.doSend( previewData.header, previewData.text,
-				previewData.message, previewData.type, previewData.email );
+		var submitData = {
+			'header': $( '#mw-wikilove-header' ).val(),
+			'text': $.wikiLove.prepareMsg( currentTypeOrSubtype.text || options.defaultText ),
+			'message': $( '#mw-wikilove-message' ).val(),
+			'type': currentTypeId
+				+ (currentSubtypeId !== null ? '-' + currentSubtypeId : '')
+		};
+		if ( $( '#mw-wikilove-notify-checkbox:checked' ).val() && emailable ) {
+			submitData.email = $.wikiLove.prepareMsg( currentTypeOrSubtype.email );
 		}
+		$.wikiLove.doSend( submitData.header, submitData.text,
+			submitData.message, submitData.type, submitData.email );
 	},
 	
 	/*
@@ -674,7 +644,6 @@ return {
 									$( '#mw-wikilove-gallery a' ).removeClass( 'selected' );
 									$( this ).addClass( 'selected' );
 									$( '#mw-wikilove-image' ).val( gallery[$( this ).attr( 'id' )] );
-									$.wikiLove.changeInput();
 								}) 
 						);
 						gallery['mw-wikilove-gallery-img-' + index] = page.title;
