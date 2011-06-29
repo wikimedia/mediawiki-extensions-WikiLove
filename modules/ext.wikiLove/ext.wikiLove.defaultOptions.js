@@ -238,7 +238,7 @@ $.wikiLoveOptions = function() { return {
 			},
 			icon: mw.config.get( 'wgExtensionAssetsPath' ) + '/WikiLove/modules/ext.wikiLove/images/icons/wikilove-icon-barnstar.png' // icon for left-side menu
 		},
-		'food and drink': {
+		'food': {
 			name: 'Food and drink', // name of the type (appears in the types menu)
 			select: 'Select food or drink item:', // subtype select label
 			subtypes: { // some different subtypes
