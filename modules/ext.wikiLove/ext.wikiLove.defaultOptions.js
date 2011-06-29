@@ -238,22 +238,33 @@ $.wikiLoveOptions = function() { return {
 			},
 			icon: mw.config.get( 'wgExtensionAssetsPath' ) + '/WikiLove/modules/ext.wikiLove/images/icons/wikilove-icon-barnstar.png' // icon for left-side menu
 		},
-		'food/drink': {
+		'food and drink': {
 			name: 'Food and drink', // name of the type (appears in the types menu)
 			select: 'Select food or drink item:', // subtype select label
 			subtypes: { // some different subtypes
 				// note that when not using subtypes you should use these subtype options
 				// for the top-level type
-				'beer': {
+				'baklava': {
 					text: '{| style="background-color: $5; border: 1px solid $6;"\n\
 |style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n\
 |style="vertical-align: middle; padding: 3px;" | $1 ~~~~\n\
 |}', // custom text
 					fields: [ 'header', 'message' ], // fields to ask for in form
-					option: 'Beer', // option listed in the select list
-					header: 'A beer for you!', // header that appears at the top of the talk page post (optional)
-					image: 'Export hell seidel steiner.png', // image for the award
-					imageSize: '70px' // size to display image
+					option: 'Baklava', // option listed in the select list
+					header: 'Some baklava for you!', // header that appears at the top of the talk page post (optional)
+					image: 'Baklava - Turkish special, 80-ply.JPEG', // image for the award
+					imageSize: '120px' // size to display image
+				},
+				'beer': {
+					text: '{| style="background-color: $5; border: 1px solid $6;"\n\
+|style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n\
+|style="vertical-align: middle; padding: 3px;" | $1 ~~~~\n\
+|}',
+					fields: [ 'header', 'message' ],
+					option: 'Beer',
+					header: 'A beer for you!',
+					image: 'Export hell seidel steiner.png',
+					imageSize: '70px'
 				},
 				'brownie': {
 					text: '{| style="background-color: $5; border: 1px solid $6;"\n\
@@ -266,6 +277,17 @@ $.wikiLoveOptions = function() { return {
 					image: 'Brownie transparent.png',
 					imageSize: '120px'
 				},
+				'bubble tea': {
+					text: '{| style="background-color: $5; border: 1px solid $6;"\n\
+|style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n\
+|style="vertical-align: middle; padding: 3px;" | $1 ~~~~\n\
+|}', // custom text
+					fields: [ 'header', 'message' ],
+					option: 'Bubble tea',
+					header: 'Some bubble tea for you!',
+					image: 'Bubble_Tea.png',
+					imageSize: '70px'
+				},
 				'cheeseburger': {
 					text: '{| style="background-color: $5; border: 1px solid $6;"\n\
 |style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n\
@@ -277,17 +299,6 @@ $.wikiLoveOptions = function() { return {
 					image: 'Cheeseburger.png',
 					imageSize: '120px'
 				},
-				'coffee': {
-					text: '{| style="background-color: $5; border: 1px solid $6;"\n\
-|style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n\
-|style="vertical-align: middle; padding: 3px;" | $1 ~~~~\n\
-|}',
-					fields: [ 'header', 'message' ],
-					option: 'Coffee',
-					header: 'A cup of coffee for you!',
-					image: 'A small cup of coffee.JPG',
-					imageSize: '120px'
-				},
 				'cookie': {
 					text: '{| style="background-color: $5; border: 1px solid $6;"\n\
 |style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n\
@@ -297,6 +308,28 @@ $.wikiLoveOptions = function() { return {
 					option: 'Cookie',
 					header: 'A cookie for you!',
 					image: 'Choco_chip_cookie.png',
+					imageSize: '120px'
+				},
+				'coffee': {
+					text: '{| style="background-color: $5; border: 1px solid $6;"\n\
+|style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n\
+|style="vertical-align: middle; padding: 3px;" | $1 ~~~~\n\
+|}',
+					fields: [ 'header', 'message' ],
+					option: 'Cup of coffee',
+					header: 'A cup of coffee for you!',
+					image: 'A small cup of coffee.JPG',
+					imageSize: '120px'
+				},
+				'tea': {
+					text: '{| style="background-color: $5; border: 1px solid $6;"\n\
+|style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n\
+|style="vertical-align: middle; padding: 3px;" | $1 ~~~~\n\
+|}',
+					fields: [ 'header', 'message' ],
+					option: 'Cup of tea',
+					header: 'A cup of tea for you!',
+					image: 'Meissen-teacup pinkrose01.jpg',
 					imageSize: '120px'
 				},
 				'cupcake': {
@@ -321,15 +354,15 @@ $.wikiLoveOptions = function() { return {
 					image: 'A very beautiful Nectarine Pie.jpg',
 					imageSize: '120px'
 				},
-				'tea': {
+				'stroopwafels': {
 					text: '{| style="background-color: $5; border: 1px solid $6;"\n\
 |style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n\
 |style="vertical-align: middle; padding: 3px;" | $1 ~~~~\n\
 |}',
 					fields: [ 'header', 'message' ],
-					option: 'Tea',
-					header: 'A cup of tea for you!',
-					image: 'Meissen-teacup pinkrose01.jpg',
+					option: 'Stroopwafels',
+					header: 'Some stroopwafels for you!',
+					image: 'Gaufre biscuit.jpg',
 					imageSize: '120px'
 				}
 			},
