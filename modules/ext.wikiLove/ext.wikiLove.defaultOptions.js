@@ -65,7 +65,7 @@ $.wikiLoveOptions = {
 					descr: 'The Barnstar of Good Humor may be awarded to Wikipedians who consistently lighten the mood, defuse conflicts, and make Wikipedia a better place to be.',
 					header: 'A barnstar for you!',
 					title: 'The Barnstar of Good Humor',
-					image: 'Barnstar of Reversion Hires.png'
+					image: 'Barnstar of Humour Hires.png'
 				},
 				'brilliant': {
 					fields: [ 'message' ],
@@ -251,6 +251,7 @@ $.wikiLoveOptions = {
 				'baklava': {
 					fields: [ 'header', 'message' ], // fields to ask for in form
 					option: 'Baklava', // option listed in the select list
+					descr: 'Baklava is a rich, sweet pastry made of layers of filo pastry filled with chopped nuts and sweetened with syrup or honey.',
 					header: 'Some baklava for you!', // header that appears at the top of the talk page post (optional)
 					image: 'Baklava - Turkish special, 80-ply.JPEG', // image for the award
 					imageSize: '135px' // size to display image
@@ -258,6 +259,7 @@ $.wikiLoveOptions = {
 				'beer': {
 					fields: [ 'header', 'message' ],
 					option: 'Beer',
+					descr: 'Beer is the world\'s most widely consumed and probably oldest alcoholic beverage. It is the third most popular drink after water and tea.',
 					header: 'A beer for you!',
 					image: 'Export hell seidel steiner.png',
 					imageSize: '70px'
@@ -265,6 +267,7 @@ $.wikiLoveOptions = {
 				'brownie': {
 					fields: [ 'header', 'message' ],
 					option: 'Brownie',
+					descr: 'A brownie is a flat, baked square or bar made of dense, rich chocolate cake.',
 					header: 'A brownie for you!',
 					image: 'Brownie transparent.png',
 					imageSize: '120px'
@@ -272,6 +275,7 @@ $.wikiLoveOptions = {
 				'bubble tea': {
 					fields: [ 'header', 'message' ],
 					option: 'Bubble tea',
+					descr: 'Bubble tea is a tea or juice beverage containing small chewy balls made of tapioca starch or jelly. First invented in Taiwan, it is now popular in many areas of the world.',
 					header: 'Some bubble tea for you!',
 					image: 'Bubble_Tea.png',
 					imageSize: '65px'
@@ -279,6 +283,7 @@ $.wikiLoveOptions = {
 				'cheeseburger': {
 					fields: [ 'header', 'message' ],
 					option: 'Cheeseburger',
+					descr: 'A staple of diners and fast-food restaurants, cheeseburgers were first popularized in the United States during the 1920s and 30s.',
 					header: 'A cheeseburger for you!',
 					image: 'Cheeseburger.png',
 					imageSize: '120px'
@@ -286,6 +291,7 @@ $.wikiLoveOptions = {
 				'cookie': {
 					fields: [ 'header', 'message' ],
 					option: 'Cookie',
+					descr: 'Cookies (known as biscuits in the UK) come in a wide array of flavors, shapes, and sizes.',
 					header: 'A cookie for you!',
 					image: 'Choco_chip_cookie.png',
 					imageSize: '120px'
@@ -293,6 +299,7 @@ $.wikiLoveOptions = {
 				'coffee': {
 					fields: [ 'header', 'message' ],
 					option: 'Cup of coffee',
+					descr: 'Appreciated the world over, coffee is known for its energizing effect on people.',
 					header: 'A cup of coffee for you!',
 					image: 'A small cup of coffee.JPG',
 					imageSize: '120px'
@@ -300,6 +307,7 @@ $.wikiLoveOptions = {
 				'tea': {
 					fields: [ 'header', 'message' ],
 					option: 'Cup of tea',
+					descr: 'After water, tea is the most widely consumed beverage in the world. It can be enjoyed hot or cold, with milk or sugar.',
 					header: 'A cup of tea for you!',
 					image: 'Meissen-teacup pinkrose01.jpg',
 					imageSize: '120px'
@@ -307,6 +315,7 @@ $.wikiLoveOptions = {
 				'cupcake': {
 					fields: [ 'header', 'message' ],
 					option: 'Cupcake',
+					descr: 'A cupcake is a small cake designed to serve one person. They are often served with frosting and sprikles on top.',
 					header: 'A cupcake for you!',
 					image: 'Choco-Nut Bake with Meringue Top cropped.jpg',
 					imageSize: '120px'
@@ -314,6 +323,7 @@ $.wikiLoveOptions = {
 				'pie': {
 					fields: [ 'header', 'message' ],
 					option: 'Pie',
+					descr: 'Pies can be filled with a wide variety of sweet or savoury ingredients.',
 					header: 'A pie for you!',
 					image: 'A very beautiful Nectarine Pie.jpg',
 					imageSize: '120px'
@@ -321,6 +331,7 @@ $.wikiLoveOptions = {
 				'stroopwafels': {
 					fields: [ 'header', 'message' ],
 					option: 'Stroopwafels',
+					descr: 'A stroopwafel is a Dutch snack made from two thin layers of baked batter with a caramel-like syrup filling in the middle.',
 					header: 'Some stroopwafels for you!',
 					image: 'Gaufre biscuit.jpg',
 					imageSize: '135px'
