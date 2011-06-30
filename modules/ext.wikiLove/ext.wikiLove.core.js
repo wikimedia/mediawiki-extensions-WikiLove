@@ -691,6 +691,8 @@ $.wikiLove = {
 						index++;
 					}
 				} );
+				// Pre-select first image
+				/* $('#mw-wikilove-gallery-img-0 img').trigger('click'); */
 			},
 			error: function() {
 				$( '#mw-wikilove-gallery-error' ).show();
