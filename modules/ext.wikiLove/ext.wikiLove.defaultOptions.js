@@ -267,7 +267,7 @@ $.wikiLoveOptions = {
 				'brownie': {
 					fields: [ 'header', 'message' ],
 					option: 'Brownie',
-					descr: 'A brownie is a flat, baked square or bar made of dense, rich chocolate cake.',
+					descr: 'A brownie is a flat, baked treat made of dense, rich chocolate cake. They are usually served as squares or bars.',
 					header: 'A brownie for you!',
 					image: 'Brownie transparent.png',
 					imageSize: '120px'
@@ -291,7 +291,7 @@ $.wikiLoveOptions = {
 				'cookie': {
 					fields: [ 'header', 'message' ],
 					option: 'Cookie',
-					descr: 'Cookies (known as biscuits in the UK) come in a wide array of flavors, shapes, and sizes.',
+					descr: 'Cookies (known as biscuits in the UK) are small baked treats that come in a wide array of flavors, shapes, and sizes.',
 					header: 'A cookie for you!',
 					image: 'Choco_chip_cookie.png',
 					imageSize: '120px'
@@ -315,7 +315,7 @@ $.wikiLoveOptions = {
 				'cupcake': {
 					fields: [ 'header', 'message' ],
 					option: 'Cupcake',
-					descr: 'A cupcake is a small cake designed to serve one person. They are often served with frosting and sprikles on top.',
+					descr: 'A cupcake is a small cake designed to serve one person. They are often served with frosting and sprinkles on top.',
 					header: 'A cupcake for you!',
 					image: 'Choco-Nut Bake with Meringue Top cropped.jpg',
 					imageSize: '120px'
@@ -323,7 +323,7 @@ $.wikiLoveOptions = {
 				'pie': {
 					fields: [ 'header', 'message' ],
 					option: 'Pie',
-					descr: 'Pies can be filled with a wide variety of sweet or savoury ingredients.',
+					descr: 'Pies can be filled with a wide variety of sweet or savoury ingredients. Popular varieties include apple, cherry, peach, chocolate, and pecan.',
 					header: 'A pie for you!',
 					image: 'A very beautiful Nectarine Pie.jpg',
 					imageSize: '120px'
