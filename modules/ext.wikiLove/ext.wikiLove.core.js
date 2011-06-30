@@ -64,6 +64,10 @@ $.wikiLove = {
 	<span class="mw-wikilove-number">2</span>\
 	<h3><html:msg key="wikilove-add-details"/></h3>\
 	<form id="mw-wikilove-preview-form">\
+		<div id="mw-wikilove-image-preview">\
+			<div id="mw-wikilove-image-preview-spinner" class="mw-wikilove-spinner"></div>\
+			<div id="mw-wikilove-image-preview-content"></div>\
+		</div>\
 		<label for="mw-wikilove-subtype" id="mw-wikilove-subtype-label"></label>\
 		<select id="mw-wikilove-subtype"></select>\
 		<div id="mw-wikilove-subtype-description"></div>\
@@ -200,6 +204,7 @@ $.wikiLove = {
 				currentTypeOrSubtype = options.types[currentTypeId];
 				$( '#mw-wikilove-subtype' ).hide();
 				$( '#mw-wikilove-subtype-label' ).hide();
+				$( '#mw-wikilove-image-preview' ).hide();
 				$.wikiLove.updateAllDetails(); // update controls depending on this type
 			}
 			
@@ -221,6 +226,13 @@ $.wikiLove = {
 			currentTypeOrSubtype = options.types[currentTypeId]
 				.subtypes[currentSubtypeId];
 			$( '#mw-wikilove-subtype-description' ).html( currentTypeOrSubtype.descr );
+			
+			if( currentTypeOrSubtype.gallery === undefined && currentTypeOrSubtype.image ) { // not a gallery
+				$.wikiLove.showImagePreview();
+			} else {
+				$( '#mw-wikilove-image-preview' ).hide();
+			}
+			
 			$.wikiLove.updateAllDetails();
 			$( '#mw-wikilove-preview' ).hide();
 		}
@@ -260,6 +272,56 @@ $.wikiLove = {
 				rememberData.image = $( '#mw-wikilove-image' ).val();
 			}
 		}
+	},
+	
+	/*
+	 * Show a preview of the image for a subtype.
+	 */
+	showImagePreview: function() {
+		$( '#mw-wikilove-image-preview' ).show();
+		$( '#mw-wikilove-image-preview-content' ).html( '' );
+		$( '#mw-wikilove-image-preview-spinner' ).fadeIn( 200 );
+		var title = $.wikiLove.addFilePrefix( currentTypeOrSubtype.image );
+		var loadingType = currentTypeOrSubtype;
+		$.ajax({
+			url: mw.util.wikiScript( 'api' ),
+			data: {
+				'action'      : 'query',
+				'format'      : 'json',
+				'prop'        : 'imageinfo',
+				'iiprop'      : 'mime|url',
+				'titles'      : title,
+				'iiurlwidth'  : 75,
+				'iiurlheight' : 68
+			},
+			dataType: 'json',
+			type: 'POST',
+			success: function( data ) {
+				if ( !data || !data.query || !data.query.pages ) {
+					$( '#mw-wikilove-image-preview-spinner' ).fadeOut( 200 );
+					return;
+				}
+				if ( loadingType != currentTypeOrSubtype ) {
+					return;
+				}
+				$.each( data.query.pages, function( id, page ) {
+					if ( page.imageinfo && page.imageinfo.length ) {
+						// build an image tag with the correct url
+						var $img = $( '<img/>' )
+							.attr( 'src', page.imageinfo[0].thumburl )
+							.hide()
+							.load( function() { 
+								$( '#mw-wikilove-image-preview-spinner' ).hide();
+								$( this ).css( 'display', 'inline-block' );
+							} );
+						$( '#mw-wikilove-image-preview-content' ).append( $img );
+					}
+				});
+			},
+			error: function() {
+				$( '#mw-wikilove-image-preview-spinner' ).fadeOut( 200 );
+			}
+		});
 	},
 	
 	/*
@@ -662,6 +724,7 @@ $.wikiLove = {
 				if ( loadingType != currentTypeOrSubtype ) {
 					return;
 				}
+				var galleryNumber = currentTypeOrSubtype.gallery.number;
 				
 				$.each( data.query.pages, function( id, page ) {
 					if ( page.imageinfo && page.imageinfo.length ) {
@@ -672,7 +735,7 @@ $.wikiLove = {
 							.load( function() { 
 								$( this ).css( 'display', 'inline-block' );
 								loadingIndex++;
-								if ( loadingIndex >= currentTypeOrSubtype.gallery.number ) {
+								if ( loadingIndex >= galleryNumber ) {
 									$( '#mw-wikilove-gallery-spinner' ).fadeOut( 200 );
 								}
 							} );

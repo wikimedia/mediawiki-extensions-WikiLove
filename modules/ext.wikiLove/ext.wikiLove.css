@@ -8,6 +8,7 @@
 }
 
 #mw-wikilove-preview-form {
+	position: relative;
 	clear: both; /* for monobook skin */
 }
 
@@ -210,7 +211,7 @@
 }
 
 /*#mw-wikilove-dialog #mw-wikilove-add-details*/ #mw-wikilove-subtype-description {
-	margin: 5px 0px 8px 15px;
+	margin: 5px 85px 8px 15px;
 	font-size: 1.0em;
 	line-height: 1.2em;
 }
@@ -218,7 +219,6 @@
 /*#mw-wikilove-dialog*/ #mw-wikilove-add-details .mw-wikilove-note {
 	font-weight: light;
 	font-size: 0.9em;
-	float: right;
 	color: #999;
 }
 
@@ -347,6 +347,24 @@
 	line-height: 32px;
 	padding-left: 34px;
 	padding-bottom: 3px;
+}
+
+#mw-wikilove-dialog #mw-wikilove-image-preview {
+	position: absolute;
+	top: 1em;
+	right: 0;
+	width: 75px;
+	height: 68px;
+}
+
+#mw-wikilove-dialog #mw-wikilove-image-preview-content {
+	text-align: center;
+}
+
+#mw-wikilove-dialog #mw-wikilove-image-preview-spinner {
+	float: none;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 #mw-wikilove-dialog a {
