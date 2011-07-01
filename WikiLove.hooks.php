@@ -112,6 +112,8 @@ class WikiLoveHooks {
 	 */
 	private static function skinConfigViewsLinks( $skin, &$views ) {
 		global $wgWikiLoveGlobal, $wgUser;
+		
+		// If WikiLove is turned off for this user, don't display tab.
 		if ( !$wgWikiLoveGlobal && !$wgUser->getOption( 'wikilove-enabled' ) ) {
 			return true;
 		}

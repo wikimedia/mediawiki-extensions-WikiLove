@@ -105,6 +105,7 @@ $wgResourceModules += array(
 		),
 		'styles' => 'ext.wikiLove.css',
 		'messages' => array(
+			'wikilove-tab-text',
 			'wikilove-dialog-title',
 			'wikilove-select-type',
 			'wikilove-get-started-header',

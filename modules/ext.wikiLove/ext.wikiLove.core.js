@@ -770,8 +770,12 @@ $.wikiLove = {
 	 */
 	init: function() {
 		options = $.wikiLoveOptions;	
-			
-		var $wikiLoveLink = $( '#ca-wikilove' ).find( 'a' );
+		
+		if ( mw.config.get( 'skin' ) == 'standard' ) {
+			var $wikiLoveLink = $( '#topbar a:contains(' + mw.msg( 'wikilove-tab-text' ) + ')' );
+		} else {
+			var $wikiLoveLink = $( '#ca-wikilove' ).find( 'a' );
+		}
 		$wikiLoveLink.unbind( 'click' );
 		$wikiLoveLink.click( function( e ) {
 			e.preventDefault();
