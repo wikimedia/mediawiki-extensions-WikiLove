@@ -284,7 +284,7 @@ $.wikiLove = {
 		var title = $.wikiLove.addFilePrefix( currentTypeOrSubtype.image );
 		var loadingType = currentTypeOrSubtype;
 		$.ajax({
-			url: mw.util.wikiScript( 'api' ),
+			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php?',
 			data: {
 				'action'      : 'query',
 				'format'      : 'json',
@@ -429,7 +429,7 @@ $.wikiLove = {
 					$( '#mw-wikilove-preview-spinner' ).fadeIn( 200 );
 					
 					$.ajax( {
-						url: mw.util.wikiScript( 'api' ),
+						url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php?',
 						data: {
 							'action': 'query',
 							'format': 'json',
@@ -528,7 +528,7 @@ $.wikiLove = {
 	 */
 	logCustomImageUse: function( imageTitle, success ) {
 		$.ajax( {
-			url: mw.util.wikiScript( 'api' ),
+			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php?',
 			data: {
 				'action': 'wikiloveimagelog',
 				'image': imageTitle,
@@ -545,7 +545,7 @@ $.wikiLove = {
 	doPreview: function( wikitext ) {
 		$( '#mw-wikilove-preview-spinner' ).fadeIn( 200 );
 		$.ajax({
-			url: mw.util.wikiScript( 'api' ),
+			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php?',
 			data: {
 				'action': 'parse',
 				'title': mw.config.get( 'wgPageName' ),
@@ -640,7 +640,7 @@ $.wikiLove = {
 		}
 		
 		$.ajax({
-			url: mw.util.wikiScript( 'api' ),
+			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php?',
 			data: sendData,
 			dataType: 'json',
 			type: 'POST',
@@ -702,7 +702,7 @@ $.wikiLove = {
 			loadingType = currentTypeOrSubtype,
 			loadingIndex = 0;
 		$.ajax({
-			url: mw.util.wikiScript( 'api' ),
+			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php?',
 			data: {
 				'action'      : 'query',
 				'format'      : 'json',
@@ -795,7 +795,7 @@ $.wikiLove = {
 		$( '#mw-wikilove-gallery-spinner' ).fadeIn( 200 );
 		
 		$.ajax({
-			url: mw.util.wikiScript( 'api' ),
+			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php?',
 			data: {
 				'action'      : 'query',
 				'format'      : 'json',
