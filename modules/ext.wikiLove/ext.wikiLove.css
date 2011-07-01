@@ -210,6 +210,10 @@
 	width: 300px;
 }
 
+/*#mw-wikilove-dialog*/ #mw-wikilove-add-details #mw-wikilove-message {
+	width: 100%; /* some old skins don't include this by default */
+}
+
 /*#mw-wikilove-dialog #mw-wikilove-add-details*/ #mw-wikilove-subtype-description {
 	margin: 5px 85px 8px 15px;
 	font-size: 1.0em;
