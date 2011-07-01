@@ -769,12 +769,12 @@ $.wikiLove = {
 	 * Init function which is called upon page load. Binds the WikiLove icon to opening the dialog.
 	 */
 	init: function() {
-		options = $.wikiLoveOptions;	
+		options = $.wikiLoveOptions;
 		
-		if ( mw.config.get( 'skin' ) == 'standard' ) {
-			var $wikiLoveLink = $( '#topbar a:contains(' + mw.msg( 'wikilove-tab-text' ) + ')' );
-		} else {
+		if ( $( '#ca-wikilove' ).length ) {
 			var $wikiLoveLink = $( '#ca-wikilove' ).find( 'a' );
+		} else { // legacy skins
+			var $wikiLoveLink = $( '#topbar a:contains(' + mw.msg( 'wikilove-tab-text' ) + ')' );
 		}
 		$wikiLoveLink.unbind( 'click' );
 		$wikiLoveLink.click( function( e ) {
