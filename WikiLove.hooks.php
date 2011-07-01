@@ -1,18 +1,20 @@
 <?php
 /**
  * Hooks for WikiLove extension
- * 
+ *
  * @file
  * @ingroup Extensions
  */
 
 class WikiLoveHooks {
 	private static $recipient = '';
-	
+
 	/**
 	 * LoadExtensionSchemaUpdates hook
 	 *
 	 * @param $updater DatabaseUpdater
+	 *
+	 * @return true
 	 */
 	public static function loadExtensionSchemaUpdates( $updater = null ) {
 		if ( $updater === null ) {
@@ -22,16 +24,18 @@ class WikiLoveHooks {
 		} else {
 			$updater->addExtensionUpdate( array( 'addTable', 'wikilove_log',
 				dirname( __FILE__ ) . '/patches/WikiLoveLog.sql', true ) );
-			$updater->addExtensionUpdate( array( 'addTable', 'wikilove_image_log', 
+			$updater->addExtensionUpdate( array( 'addTable', 'wikilove_image_log',
 				dirname( __FILE__ ) . '/patches/WikiLoveImageLog.sql', true ) );
 		}
 		return true;
 	}
-	
+
 	/**
 	 * Add the preference in the user preferences with the GetPreferences hook.
 	 * @param $user User
-	 * @param $preferences
+	 * @param $preferences array
+	 *
+	 * @return true
 	 */
 	public static function getPreferences( $user, &$preferences ) {
 		global $wgWikiLoveGlobal;
@@ -44,19 +48,21 @@ class WikiLoveHooks {
 		}
 		return true;
 	}
-	
+
 	/**
 	 * Adds the required module if we are on a user (talk) page.
 	 *
-	 * @param $output
+	 * @param $out OutputPage
 	 * @param $skin Skin
+	 *
+	 * @return true
 	 */
 	public static function beforePageDisplay( $out, $skin ) {
 		global $wgWikiLoveGlobal, $wgUser;
 		if ( !$wgWikiLoveGlobal && !$wgUser->getOption( 'wikilove-enabled' ) ) {
 			return true;
 		}
-		
+
 		$title = self::getUserTalkPage( $skin->getTitle() );
 		if ( !is_null( $title ) ) {
 			$out->addModules( array( 'ext.wikiLove.icon', 'ext.wikiLove.init' ) );
@@ -64,15 +70,19 @@ class WikiLoveHooks {
 		}
 		return true;
 	}
-	
+
 	/**
 	 * Exports wikilove-recipient and edittoken variables to JS
+	 *
+	 * @param $vars array
+	 *
+	 * @return true
 	 */
 	public static function makeGlobalVariablesScript( &$vars ) {
 		global $wgUser;
 		$vars['wikilove-recipient'] = self::$recipient;
 		$vars['wikilove-edittoken'] = $wgUser->edittoken();
-		
+
 		$vars['wikilove-anon'] = 0;
 		if ( self::$recipient !== '' ) {
 			$receiver = User::newFromName( self::$recipient );
@@ -80,7 +90,7 @@ class WikiLoveHooks {
 		}
 		return true;
 	}
-	
+
 	/**
 	 * Adds a tab the old way (before MW 1.18)
 	 */
@@ -88,27 +98,26 @@ class WikiLoveHooks {
 		self::skinConfigViewsLinks( $skin, $contentActions );
 		return true;
 	}
-	
+
 	/**
 	 * Adds a tab or an icon the new way (MW >1.18)
 	 */
 	public static function skinTemplateNavigation( &$skin, &$links ) {
 		if ( self::showIcon( $skin ) ) {
 			self::skinConfigViewsLinks( $skin, $links['views']);
-		}
-		else {
+		} else {
 			self::skinConfigViewsLinks( $skin, $links['actions']);
 		}
 		return true;
 	}
-	
+
 	/**
 	 * Configure views links.
 	 * Helper function for SkinTemplateTabs and SkinTemplateNavigation hooks
 	 * to configure views links.
 	 *
 	 * @param $skin Skin
-	 * @param $views
+	 * @param $views array
 	 */
 	private static function skinConfigViewsLinks( $skin, &$views ) {
 		global $wgWikiLoveGlobal, $wgUser;
@@ -117,7 +126,7 @@ class WikiLoveHooks {
 		if ( !$wgWikiLoveGlobal && !$wgUser->getOption( 'wikilove-enabled' ) ) {
 			return true;
 		}
-		
+
 		if ( !is_null( self::getUserTalkPage( $skin->getTitle() ) ) ) {
 			$views['wikilove'] = array(
 				'text' => wfMsg( 'wikilove-tab-text' ),
@@ -129,17 +138,19 @@ class WikiLoveHooks {
 			}
 		}
 	}
-	
+
 	/**
 	 * Only show an icon when the global preference is enabled and the current skin is Vector.
 	 *
 	 * @param $skin Skin
+	 *
+	 * @return bool
 	 */
 	private static function showIcon( $skin ) {
 		global $wgWikiLoveTabIcon;
 		return $wgWikiLoveTabIcon && $skin->getSkinName() == 'vector';
 	}
-	
+
 	/**
 	 * Find the editable talk page of the user we're looking at, or null
 	 * if such page does not exist.
@@ -153,15 +164,15 @@ class WikiLoveHooks {
 		if ( !$wgUser->isLoggedIn() ) {
 			return null;
 		}
-		
+
 		$ns = $title->getNamespace();
 		// return quickly if we're in the wrong namespace anyway
 		if ( $ns != NS_USER && $ns != NS_USER_TALK ) {
 			return null;
 		}
-		
+
 		$baseTitle = Title::newFromText( $title->getBaseText(), $ns );
-		
+
 		if ( $ns == NS_USER_TALK && $baseTitle->quickUserCan( 'edit' ) ) {
 			return $baseTitle;
 		} elseif ( $ns == NS_USER ) {
