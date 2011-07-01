@@ -2,7 +2,7 @@
 $.wikiLoveOptions = {
 	defaultText: '{| style="background-color: $5; border: 1px solid $6;"\n\
 |rowspan="2" style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n\
-|style="font-size: x-large; padding: 3px; height: 1.5em;" | \'\'\'$2\'\'\'\n\
+|style="font-size: x-large; padding: 3px 3px 0 3px; height: 1.5em;" | \'\'\'$2\'\'\'\n\
 |-\n\
 |style="vertical-align: middle; padding: 3px;" | $1 ~~~~\n\
 |}',
