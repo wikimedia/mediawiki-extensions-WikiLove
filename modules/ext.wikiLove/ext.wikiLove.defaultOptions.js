@@ -129,7 +129,8 @@ $.wikiLoveOptions = {
 					descr: 'The Half Barnstar is awarded for excellence in cooperation, especially for productive editing with someone who holds an opposing viewpoint.',
 					header: 'A barnstar for you!',
 					title: 'The Half Barnstar',
-					image: 'Halfstar Hires.png'
+					image: 'Halfstar Hires.png',
+					imageSize: '60px'
 				},
 				'minor': {
 					fields: [ 'message' ],
@@ -323,7 +324,7 @@ $.wikiLoveOptions = {
 				'pie': {
 					fields: [ 'header', 'message' ],
 					option: 'Pie',
-					descr: 'Pies can be filled with a wide variety of sweet or savoury ingredients. Popular varieties include apple, cherry, peach, chocolate, and pecan.',
+					descr: 'Pies can be filled with a wide variety of sweet or savory ingredients. Popular varieties include apple, cherry, peach, chocolate, and pecan.',
 					header: 'A pie for you!',
 					image: 'A very beautiful Nectarine Pie.jpg',
 					imageSize: '120px'
