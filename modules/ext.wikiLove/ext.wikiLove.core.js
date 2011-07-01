@@ -658,10 +658,11 @@ $.wikiLove = {
 					// jump to the correct section, because when we set the hash (#...)
 					// the page won't reload...
 					window.location.reload();
-				} else {
-					window.location = encodeURI( 
+				} else { // not on user talk page
+					window.location =  
+						// data.redirect.pageName has to be URL encoded but data.redirect.fragment is already encoded
 						mw.config.get( 'wgArticlePath' ).replace( '$1', mw.util.wikiUrlencode( data.redirect.pageName ) ) 
-						+ '#' + data.redirect.fragment );
+						+ '#' + data.redirect.fragment;
 				}
 			},
 			error: function() {
