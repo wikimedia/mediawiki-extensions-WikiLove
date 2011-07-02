@@ -67,6 +67,51 @@ $messages['qqq'] = array(
 	'wikilove-commons-url' => 'This URL can be changed to point at a localised page on Wikimedia Commons.',
 );
 
+/** Afrikaans (Afrikaans)
+ * @author Naudefj
+ */
+$messages['af'] = array(
+	'wikilove-desc' => "Voeg 'n koppelvlak by vir die fasilitering van positiewe terugvoer op gebruikers se besprekingsblaaie",
+	'wikilove' => 'Wikiwaardering',
+	'wikilove-enable-preference' => 'Aktiveer toon van waardering vir ander gebruikers met die Wikiwaardering-oortjie (eksperimenteel)',
+	'wikilove-tab-text' => 'Wikiwaardering',
+	'tooltip-ca-wikilove' => "Plaas 'n boodskap vir hierdie gebruiker om u waardering te wys",
+	'wikilove-dialog-title' => "Wikiwaardering - stuur 'n boodskap van waardering aan 'n ander gebruiker",
+	'wikilove-select-type' => 'Kies tipe',
+	'wikilove-get-started-header' => 'Kom ons begin!',
+	'wikilove-get-started-list-1' => 'Kies die tipe Wikiwaardering wat u wil stuur',
+	'wikilove-get-started-list-2' => 'Voeg besonderhede by u Wikiwaardering by',
+	'wikilove-get-started-list-3' => 'Stuur u Wikiwaardering!',
+	'wikilove-add-details' => 'Voeg besonderhede by',
+	'wikilove-image' => 'Verskaf lêernaam vir beeld:',
+	'wikilove-select-image' => "Kies 'n beeld:",
+	'wikilove-header' => 'Verskaf opskrif:',
+	'wikilove-title' => "Verskaf 'n toekenningtitel:",
+	'wikilove-enter-message' => "Tik 'n boodskap:",
+	'wikilove-omit-sig' => "(sonder 'n handtekening)",
+	'wikilove-image-example' => '(Voorbeeld: Trophy.png)',
+	'wikilove-button-preview' => 'Voorskou',
+	'wikilove-preview' => 'Voorskou',
+	'wikilove-notify' => "Stuur gebruiker 'n kennisgewing via E-pos",
+	'wikilove-button-send' => 'Stuur Wikiwaardering',
+	'wikilove-type-makeyourown' => 'Maak u eie',
+	'wikilove-err-header' => "Verskaf asseblief 'n opskrif.",
+	'wikilove-err-title' => "Verskaf asseblief 'n titel.",
+	'wikilove-err-msg' => "Verskaf asseblief 'n boodskap.",
+	'wikilove-err-image' => "Kies asseblief 'n beeld.",
+	'wikilove-err-image-bad' => 'Beeld bestaan ​​nie.',
+	'wikilove-err-image-api' => 'Laai van beeld het gefaal. Probeer asseblief weer.',
+	'wikilove-err-sig' => "Moet asseblief nie 'n handtekening in die boodskap plaas nie.",
+	'wikilove-err-gallery' => 'Iets het verkeerd geloop met die laai van die beelde.',
+	'wikilove-err-gallery-again' => 'Probeer weer',
+	'wikilove-err-preview-api' => 'Iets het verkeerd geloop met die voorskou. Probeer asseblief weer.',
+	'wikilove-err-send-api' => 'Iets het verkeerd geloop met die stuur van die boodskap. Probeer asseblief weer.',
+	'wikilove-summary' => '/ * $1 * / nuwe Wikiwaardering-boodskap',
+	'wikilove-what-is-this' => 'Wat is dit?',
+	'wikilove-anon-warning' => 'Nota: Hierdie gebruiker is nie geregistreer nie, hy of sy mag moontlik nie die boodskap ontvang nie.',
+	'wikilove-commons-text' => 'U kan beelde vind deur op $1 te blaai.',
+);
+
 /** Bulgarian (Български)
  * @author DCLXVI
  */
@@ -289,10 +334,10 @@ $messages['gl'] = array(
 	'wikilove-get-started-list-2' => 'Engadir detalles ao seu amor wiki',
 	'wikilove-get-started-list-3' => 'Enviar o seu amor wiki!',
 	'wikilove-add-details' => 'Engadir detalles',
-	'wikilove-image' => 'Insira unha imaxe da Wikimedia Commons:',
+	'wikilove-image' => 'Insira un nome de ficheiro para a imaxe:',
 	'wikilove-select-image' => 'Seleccione unha imaxe:',
 	'wikilove-header' => 'Insira unha cabeceira:',
-	'wikilove-title' => 'Insira un título:',
+	'wikilove-title' => 'Insira un título para o premio:',
 	'wikilove-enter-message' => 'Escriba unha mensaxe:',
 	'wikilove-omit-sig' => '(sen sinatura)',
 	'wikilove-button-preview' => 'Vista previa',
@@ -523,21 +568,23 @@ $messages['ksh'] = array(
  */
 $messages['lb'] = array(
 	'wikilove' => 'WikiLove',
-	'wikilove-tab-text' => 'Bewäertung weisen',
-	'wikilove-dialog-title' => 'WikiLove',
+	'wikilove-tab-text' => 'WikiLove',
+	'wikilove-dialog-title' => 'WikiLove - Schéckt e Message vun der Wäertschätzung un en anere Benotzer',
 	'wikilove-get-started-header' => 'Elo geet et lass!',
 	'wikilove-add-details' => 'Detailer derbäisetzen',
-	'wikilove-image' => 'Gitt e Bild un:',
+	'wikilove-image' => 'Gitt den Numm vum Fichier vun engem Bild un:',
 	'wikilove-select-image' => 'Sicht e Bild eraus:',
-	'wikilove-title' => 'Gitt en Titel un:',
+	'wikilove-title' => 'Gitt en Titel vun enger Wäertschätzung un:',
 	'wikilove-enter-message' => 'Gitt e Message an:',
 	'wikilove-omit-sig' => '(ouni Ënnerschrëft)',
+	'wikilove-image-example' => '(Beispill: Trophy.png)',
 	'wikilove-button-preview' => 'Kucken ouni ofzespäicheren',
 	'wikilove-preview' => 'Kucken ouni ofzespäicheren',
 	'wikilove-notify' => 'De Benotzer per Mail informéieren',
 	'wikilove-type-makeyourown' => 'Maacht Ären Eegenen',
 	'wikilove-err-image' => 'Sicht w.e.g. e Bild eraus.',
 	'wikilove-err-gallery-again' => 'Probéiert nach emol',
+	'wikilove-what-is-this' => 'Wat ass dat?',
 );
 
 /** Macedonian (Македонски)
@@ -622,8 +669,12 @@ $messages['ml'] = array(
 	'wikilove-err-sig' => 'ദയവായി സന്ദേശത്തിൽ ഒപ്പ് ഉൾപ്പെടുത്തരുത്.',
 	'wikilove-err-gallery' => 'ചിത്രങ്ങൾ ശേഖരിച്ചുകൊണ്ടിരിക്കെ എന്തോ കുഴപ്പമുണ്ടായി!',
 	'wikilove-err-gallery-again' => 'വീണ്ടും ശ്രമിക്കുക',
+	'wikilove-err-preview-api' => 'പ്രിവ്യൂ എടുത്തപ്പോൾ എന്തോ പിഴവുണ്ടായി. ദയവായി വീണ്ടും ശ്രമിക്കുക.',
+	'wikilove-err-send-api' => 'സന്ദേശം അയയ്ക്കാൻ നോക്കിയപ്പോൾ എന്തോ പിഴവുണ്ടായി. വീണ്ടും ശ്രമിക്കുക.',
 	'wikilove-summary' => '/* $1 */ പുതിയ വിക്കിസ്നേഹസന്ദേശം',
 	'wikilove-what-is-this' => 'എന്താണിത്?',
+	'wikilove-anon-warning' => 'കുറിപ്പ്: ഈ ഉപയോക്താവ് അംഗത്വമെടുത്തിട്ടില്ല, അദ്ദേഹം ഈ സന്ദേശം ശ്രദ്ധിക്കാനിടയില്ല.',
+	'wikilove-commons-text' => '$1 ബ്രൗസ് ചെയ്ത് ചിത്രങ്ങൾ കണ്ടുപിറ്റിക്കാവുന്നതാണ്.',
 );
 
 /** Dutch (Nederlands)
@@ -641,8 +692,8 @@ $messages['nl'] = array(
 	'wikilove-select-type' => 'Selecteer type',
 	'wikilove-get-started-header' => 'Begin ermee!',
 	'wikilove-get-started-list-1' => 'Selecteer het type Wikiwaardering dat u wilt achterlaten',
-	'wikilove-get-started-list-2' => 'Voegt gegevens toe aan uw Wikiwaardering',
-	'wikilove-get-started-list-3' => 'Uw Wikiwaardering verzenden!',
+	'wikilove-get-started-list-2' => 'Voeg gegevens toe aan uw Wikiwaardering',
+	'wikilove-get-started-list-3' => 'Verzend uw Wikiwaardering!',
 	'wikilove-add-details' => 'Gegevens toevoegen',
 	'wikilove-image' => 'Geef de bestandsnaam van een afbeelding op:',
 	'wikilove-select-image' => 'Kies een afbeelding:',
