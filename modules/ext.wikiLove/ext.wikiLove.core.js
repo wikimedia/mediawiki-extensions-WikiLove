@@ -19,25 +19,29 @@ $.wikiLove = {
 			emailable = $( '#t-emailuser' ).length ? true : false;
 			
 			// Build a type list like this:
-			var $typeList = $( '<ul id="mw-wikilove-types"></ul>' );
-			for( var typeId in options.types ) {
-				var $button = $( '<a href="#"></a>' );
-				var $buttonInside = $( '<div class="mw-wikilove-inside"></div>' );
-				
-				if( typeof options.types[typeId].icon == 'string' ) {
-					$buttonInside.append( '<div class="mw-wikilove-icon-box"><img src="'
-						+ mw.html.escape( options.types[typeId].icon ) + '"/></div>' );
+			var	$typeList = $( '<ul id="mw-wikilove-types"></ul>' ),
+				type;
+			for ( var typeId in options.types ) {
+				type = options.types[typeId];
+				if ( !$.isPlainObject( type ) ) {
+					continue;
 				}
-				else {
+				var	$button = $( '<a href="#"></a>' ),
+					$buttonInside = $( '<div class="mw-wikilove-inside"></div>' );
+				
+				if ( typeof type.icon == 'string' ) {
+					$buttonInside.append( '<div class="mw-wikilove-icon-box"><img src="'
+						+ mw.html.escape( type.icon ) + '"/></div>' );
+				} else {
 					$buttonInside.addClass( 'mw-wikilove-no-icon' );
 				}
 				
-				$buttonInside.append( '<div class="mw-wikilove-link-text">' + options.types[typeId].name + '</div>' );
+				$buttonInside.append( '<div class="mw-wikilove-link-text">' + mw.html.escape( type.name ) + '</div>' );
 				
+				$button.data( 'typeId', typeId );
 				$button.append( '<div class="mw-wikilove-left-cap"></div>');
 				$button.append( $buttonInside );
 				$button.append( '<div class="mw-wikilove-right-cap"></div>');
-				$button.data( 'typeId', typeId );
 				$typeList.append( $( '<li tabindex="0"></li>' ).append( $button ) );
 			}
 			
@@ -514,7 +518,9 @@ $.wikiLove = {
 	 */
 	addFilePrefix: function( filename ) {
 		// Can't use mw.Title in 1.17
-		var prefix = filename.split( ':' )[0] || '',
+		var	prefixSplit = filename.split( ':' ),
+			// Make sure the we don't fail in case input is like "File.jpg"
+			prefix = prefixSplit[1] ? prefixSplit[0] : '',
 			normalized = $.trim( prefix ).toLowerCase().replace( /\s/g, '_' );
 		// wgNamespaceIds is missing 'file' in 1.17 on non-English wikis
 		if ( mw.config.get( 'wgNamespaceIds' )[normalized] !== 6 && normalized !== 'file' ) {
@@ -769,12 +775,13 @@ $.wikiLove = {
 	 * Init function which is called upon page load. Binds the WikiLove icon to opening the dialog.
 	 */
 	init: function() {
+		var $wikiLoveLink = $( [] );
 		options = $.wikiLoveOptions;
 		
 		if ( $( '#ca-wikilove' ).length ) {
-			var $wikiLoveLink = $( '#ca-wikilove' ).find( 'a' );
+			$wikiLoveLink = $( '#ca-wikilove' ).find( 'a' );
 		} else { // legacy skins
-			var $wikiLoveLink = $( '#topbar a:contains(' + mw.msg( 'wikilove-tab-text' ) + ')' );
+			$wikiLoveLink = $( '#topbar a:contains(' + mw.msg( 'wikilove-tab-text' ) + ')' );
 		}
 		$wikiLoveLink.unbind( 'click' );
 		$wikiLoveLink.click( function( e ) {
