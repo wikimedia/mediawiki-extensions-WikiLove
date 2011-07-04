@@ -351,11 +351,16 @@ $messages['gl'] = array(
 	'wikilove-err-msg' => 'Escriba unha mensaxe.',
 	'wikilove-err-image' => 'Seleccione unha imaxe.',
 	'wikilove-err-image-bad' => 'A imaxe non existe',
+	'wikilove-err-image-api' => 'Houbo un problema ao acceder á imaxe. Inténteo de novo.',
 	'wikilove-err-sig' => 'Non incluír a sinatura na mensaxe.',
 	'wikilove-err-gallery' => 'Houbo un problema ao cargar as imaxes!',
 	'wikilove-err-gallery-again' => 'Inténteo de novo',
+	'wikilove-err-preview-api' => 'Houbo un problema ao ollar a vista previa. Inténteo de novo.',
+	'wikilove-err-send-api' => 'Houbo un problema ao enviar a mensaxe. Inténteo de novo.',
 	'wikilove-summary' => '/* $1 */ nova mensaxe de amor wiki',
 	'wikilove-what-is-this' => 'Que é isto?',
+	'wikilove-anon-warning' => 'Nota: Este usuario non está rexistrado, el ou ela puido non ver esta mensaxe.',
+	'wikilove-commons-text' => 'Pode atopar imaxes navegando por $1.',
 );
 
 /** Hebrew (עברית)
@@ -958,6 +963,51 @@ $messages['vi'] = array(
 	'wikilove-what-is-this' => 'Này là gì?',
 	'wikilove-anon-warning' => 'Lưu ý: Người dùng này chưa đăng ký, nên họ có thể không nhận thấy được thông điệp này.',
 	'wikilove-commons-text' => 'Có thể tìm kiếm hình ảnh tại $1.',
+);
+
+/** Simplified Chinese (‪中文(简体)‬)
+ * @author Tommyang
+ */
+$messages['zh-hans'] = array(
+	'wikilove-desc' => '添加一个界面，用于促进在用户讨论页上进行积极反馈',
+	'wikilove' => '维基友爱',
+	'wikilove-enable-preference' => '启用维基友爱选项卡赞扬其他用户 （实验性）',
+	'wikilove-tab-text' => '维基友爱',
+	'tooltip-ca-wikilove' => '给这个用户留言来表达你的欣赏',
+	'wikilove-dialog-title' => '维基有爱——发送信息赞赏其他用户',
+	'wikilove-select-type' => '选择类型',
+	'wikilove-get-started-header' => '开始吧 ！',
+	'wikilove-get-started-list-1' => '选择要发送的维基友爱的类型',
+	'wikilove-get-started-list-2' => '在你的维基友爱添加详细信息',
+	'wikilove-get-started-list-3' => '发送您的友爱！',
+	'wikilove-add-details' => '添加详细信息',
+	'wikilove-image' => '输入图像文件名：',
+	'wikilove-select-image' => '选择一个图像：',
+	'wikilove-header' => '输入一个标题：',
+	'wikilove-title' => '输入奖励标题：',
+	'wikilove-enter-message' => '输入留言：',
+	'wikilove-omit-sig' => '（不要包含~~~~签名）',
+	'wikilove-image-example' => '（例： Trophy.png）',
+	'wikilove-button-preview' => '预览',
+	'wikilove-preview' => '预览',
+	'wikilove-notify' => '通过电子邮件通知用户',
+	'wikilove-button-send' => '发送友爱',
+	'wikilove-type-makeyourown' => '制作你自己的维基友爱',
+	'wikilove-err-header' => '请输入标题。',
+	'wikilove-err-title' => '请输入奖励标题。',
+	'wikilove-err-msg' => '请输入留言。',
+	'wikilove-err-image' => '请选择图像。',
+	'wikilove-err-image-bad' => '图像不存在。',
+	'wikilove-err-image-api' => '获取图像时出错。请重试。',
+	'wikilove-err-sig' => '請不要在留言中包含签名。',
+	'wikilove-err-gallery' => '加载图像时出现了错误。',
+	'wikilove-err-gallery-again' => '再试一次',
+	'wikilove-err-preview-api' => '预览过程中发生错误。请重试。',
+	'wikilove-err-send-api' => '发送留言时出现了错误。请重试。',
+	'wikilove-summary' => '/* $1 */ 新的维基有爱留言',
+	'wikilove-what-is-this' => '这是什么？',
+	'wikilove-anon-warning' => '注意： 此用户未注册，他或她可能不会注意到此消息。',
+	'wikilove-commons-text' => '您可以通过浏览$1找到图像。',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
