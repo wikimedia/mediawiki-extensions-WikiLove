@@ -658,7 +658,7 @@ $.wikiLove = {
 					return;
 				}
 				
-				if ( data.redirect !== undefined &&  data.redirect.pageName == mw.config.get( 'wgPageName' ) ) {
+				if ( data.redirect !== undefined && data.redirect.pageName == mw.config.get( 'wgPageName' ) ) {
 					// unfortunately, when on the talk page we cannot reload and then
 					// jump to the correct section, because when we set the hash (#...)
 					// the page won't reload...
