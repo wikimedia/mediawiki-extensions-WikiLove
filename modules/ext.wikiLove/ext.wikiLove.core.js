@@ -646,29 +646,27 @@ $.wikiLove = {
 		}
 		
 		$.ajax({
-			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php?',
+			url: mw.config.get( 'wgScriptPath' ) + '/api.php',
 			data: sendData,
 			dataType: 'json',
 			type: 'POST',
 			success: function( data ) {
 				$( '#mw-wikilove-send-spinner' ).fadeOut( 200 );
 				
-				if ( typeof data.error !== 'undefined' ) {
+				if ( data.error !== undefined ) {
 					$.wikiLove.showPreviewError( data.error.info );
 					return;
 				}
 				
-				if ( typeof data.redirect !== 'undefined'
-					&&  data.redirect.pageName == mw.config.get( 'wgPageName' ) ) {
+				if ( data.redirect !== undefined &&  data.redirect.pageName == mw.config.get( 'wgPageName' ) ) {
 					// unfortunately, when on the talk page we cannot reload and then
 					// jump to the correct section, because when we set the hash (#...)
 					// the page won't reload...
 					window.location.reload();
 				} else { // not on user talk page
 					window.location =  
-						// data.redirect.pageName has to be URL encoded but data.redirect.fragment is already encoded
-						mw.config.get( 'wgArticlePath' ).replace( '$1', mw.util.wikiUrlencode( data.redirect.pageName ) ) 
-						+ '#' + data.redirect.fragment;
+						// data.redirect.pageName isn't URL encoded yet, but data.redirect.fragment is already encoded
+						mw.util.wikiGetlink( data.redirect.pageName ) + '#' + data.redirect.fragment;
 				}
 			},
 			error: function() {
@@ -688,7 +686,7 @@ $.wikiLove = {
 		$( '#mw-wikilove-gallery-spinner' ).fadeIn( 200 );
 		$( '#mw-wikilove-gallery-error' ).hide();
 		
-		if( typeof currentTypeOrSubtype.gallery.number == 'undefined'
+		if ( currentTypeOrSubtype.gallery.number === undefined
 		    || currentTypeOrSubtype.gallery.number <= 0
 		) {
 			currentTypeOrSubtype.gallery.number = currentTypeOrSubtype.gallery.imageList.length;
@@ -696,7 +694,7 @@ $.wikiLove = {
 		
 		var titles = '';
 		var imageList = currentTypeOrSubtype.gallery.imageList.slice( 0 );
-		for( var i=0; i<currentTypeOrSubtype.gallery.number; i++ ) {
+		for ( var i=0; i<currentTypeOrSubtype.gallery.number; i++ ) {
 			// get a random image from imageList and add it to the list of titles to be retrieved
 			var id = Math.floor( Math.random() * imageList.length );
 			titles = titles + $.wikiLove.addFilePrefix( imageList[id] ) + '|';

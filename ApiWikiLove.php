@@ -55,7 +55,7 @@ class ApiWikiLove extends ApiBase {
 		$dbw = wfGetDB( DB_MASTER );
 		$receiver = User::newFromName( $talk->getSubjectPage()->getBaseText() );
 		if ( $receiver === false || $receiver->isAnon() ) {
-			$this->setWarning( 'Not logging anonymous recipients' );
+			$this->setWarning( 'Not logging unregistered recipients' );
 			return;
 		}
 		
