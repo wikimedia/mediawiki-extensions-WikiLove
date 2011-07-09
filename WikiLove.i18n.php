@@ -151,7 +151,7 @@ $messages['br'] = array(
 	'wikilove-get-started-list-2' => "Ouzhpennit titouroù d'ho WikiLove",
 	'wikilove-get-started-list-3' => 'Kasit ho WikiLove !',
 	'wikilove-add-details' => 'Ouzhpennañ titouroù',
-	'wikilove-image' => 'Lakat ur skeudenn eus Wikimedia Commons :',
+	'wikilove-image' => 'Lakat anv ur skeudenn :',
 	'wikilove-select-image' => 'Diuzañ ur skeudenn :',
 	'wikilove-header' => 'Lakaat un talbenn :',
 	'wikilove-title' => 'Lakaat un titl :',
@@ -305,6 +305,7 @@ $messages['frp'] = array(
 	'wikilove-title' => 'Titro :',
 	'wikilove-enter-message' => 'Buchiéd un mèssâjo :',
 	'wikilove-omit-sig' => '(sen signatura)',
+	'wikilove-image-example' => '(ègzemplo : Trophy.png)',
 	'wikilove-button-preview' => 'Prèvisualisar',
 	'wikilove-preview' => 'Prèvisualisacion',
 	'wikilove-notify' => 'Notifiar l’utilisator per mèssageria èlèctronica',
@@ -314,8 +315,10 @@ $messages['frp'] = array(
 	'wikilove-err-title' => 'Volyéd buchiér un titro.',
 	'wikilove-err-msg' => 'Volyéd buchiér un mèssâjo.',
 	'wikilove-err-image' => 'Volyéd chouèsir una émâge.',
+	'wikilove-err-image-bad' => 'L’émâge ègziste pas.',
 	'wikilove-err-sig' => 'Volyéd pas encllure una signatura dens lo mèssâjo.',
 	'wikilove-err-gallery-again' => 'Tornâd èprovar',
+	'wikilove-summary' => '/* $1 */ mèssâjo novél VouiquiAmôr',
 );
 
 /** Galician (Galego)
@@ -499,6 +502,35 @@ $messages['ia'] = array(
 	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/Pagina_principal?uselang=ia',
 );
 
+/** Indonesian (Bahasa Indonesia)
+ * @author Iwan Novirion
+ */
+$messages['id'] = array(
+	'wikilove-desc' => 'Menambahkan penghargaan ke halaman pembicaraan pengguna atas kontribusi positifnya',
+	'wikilove' => 'WikiSalut',
+	'wikilove-enable-preference' => 'Aktifkan tab WikiSalut untuk mengirim penghargaan bagi pengguna lain (uji coba)',
+	'wikilove-tab-text' => 'WikiSalut',
+	'wikilove-dialog-title' => 'WikiSalut - Kirim pesan penghargaan kepada pengguna lain',
+	'wikilove-select-type' => 'Pilih jenis',
+	'wikilove-get-started-header' => 'Ayo kita mulai!',
+	'wikilove-select-image' => 'Pilih gambar:',
+	'wikilove-header' => 'Masukkan judul pesan:',
+	'wikilove-title' => 'Masukkan nama penghargaan:',
+	'wikilove-enter-message' => 'Masukkan pesan:',
+	'wikilove-omit-sig' => '(tanpa tanda tangan)',
+	'wikilove-image-example' => '(contoh: Piala.png)',
+	'wikilove-button-preview' => 'Pratayang',
+	'wikilove-preview' => 'Pratayang',
+	'wikilove-notify' => 'Beritahu pengguna dengan e-mail',
+	'wikilove-button-send' => 'Kirim WikiSalut',
+	'wikilove-type-makeyourown' => 'Coba buat sendiri',
+	'wikilove-err-image-bad' => 'Gambar tidak ada.',
+	'wikilove-err-gallery-again' => 'Coba lagi',
+	'wikilove-summary' => '/ * $1 * / pesan WikiSalut baru',
+	'wikilove-what-is-this' => 'Apa ini?',
+	'wikilove-commons-text' => 'Anda dapat menemukan gambar dengan mengunjungi $1.',
+);
+
 /** Italian (Italiano)
  * @author Beta16
  * @author Rippitippi
@@ -641,6 +673,8 @@ $messages['mk'] = array(
 	'wikilove-what-is-this' => 'Што е ова?',
 	'wikilove-anon-warning' => 'Напомена: Корисникот не е регистриран, па затоа може да не ја примети поракава.',
 	'wikilove-commons-text' => 'Слики можете да најдете во проектот $1.',
+	'wikilove-commons-link' => 'Заедничка Ризница',
+	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/Главна_страница?uselang=mk',
 );
 
 /** Malayalam (മലയാളം)
@@ -733,6 +767,51 @@ $messages['nl'] = array(
 	'wikilove-what-is-this' => 'Wat is dit?',
 	'wikilove-anon-warning' => 'Opmerking: Deze gebruiker is niet geregistreerd, hij of zij ziet dit bericht misschien niet.',
 	'wikilove-commons-text' => 'U kunt afbeeldingen vinden door op $1 te bladeren.',
+);
+
+/** Polish (Polski)
+ * @author Sp5uhe
+ */
+$messages['pl'] = array(
+	'wikilove-desc' => 'Dodaje interfejs ułatwiający dodawanie pozytywnych opinii do stron dyskusji innych użytkowników.',
+	'wikilove' => 'WikiLove',
+	'wikilove-enable-preference' => 'Wyświetlaj innym użytkownikom zakładkę WikiLove umożliwiającą wysłanie wiadomości wyrażającej uznanie (eksperymentalne)',
+	'wikilove-tab-text' => 'WikiLove',
+	'tooltip-ca-wikilove' => 'Napisz wiadomość do tego użytkownika, wyrażając swoje uznanie',
+	'wikilove-dialog-title' => 'WikiLove – wyślij do innego użytkownika wiadomość wyrażającą uznanie',
+	'wikilove-select-type' => 'Wybierz typ',
+	'wikilove-get-started-header' => 'Zaczynamy!',
+	'wikilove-get-started-list-1' => 'Wybierz typ wiadomości WikiLove, którą chcesz wysłać',
+	'wikilove-get-started-list-2' => 'Dodaj szczegółowe informacje do ​​WikiLove',
+	'wikilove-get-started-list-3' => 'Wyślij WikiLove!',
+	'wikilove-add-details' => 'Dodaj szczegółowe informacje',
+	'wikilove-image' => 'Nazwa pliku obrazka',
+	'wikilove-select-image' => 'Wybierz obrazek',
+	'wikilove-header' => 'Nagłówek',
+	'wikilove-title' => 'Powód wyrażenia uznania',
+	'wikilove-enter-message' => 'Wiadomość',
+	'wikilove-omit-sig' => '(bez podpisu)',
+	'wikilove-image-example' => '(przykład: Trophy.png)',
+	'wikilove-button-preview' => 'Podgląd',
+	'wikilove-preview' => 'Podgląd',
+	'wikilove-notify' => 'Poinformuj użytkownika przez e‐mail',
+	'wikilove-button-send' => 'Wyślij',
+	'wikilove-type-makeyourown' => 'Stwórz własne',
+	'wikilove-err-header' => 'Wpisz nagłówek',
+	'wikilove-err-title' => 'Należy wpisać tytuł.',
+	'wikilove-err-msg' => 'Wpisz wiadomość.',
+	'wikilove-err-image' => 'Wybierz obrazek.',
+	'wikilove-err-image-bad' => 'Taki obrazek nie istnieje.',
+	'wikilove-err-image-api' => 'Coś poszło nie tak podczas pobierania obrazka. Spróbuj ponownie.',
+	'wikilove-err-sig' => 'Nie podpisuj wiadomości.',
+	'wikilove-err-gallery' => 'Coś poszło nie tak podczas ładowania obrazków.',
+	'wikilove-err-gallery-again' => 'Spróbuj ponownie',
+	'wikilove-err-preview-api' => 'Coś poszło nie tak podczas wyświetlania podglądu. Spróbuj ponownie.',
+	'wikilove-err-send-api' => 'Coś poszło nie tak podczas wysyłania wiadomości. Spróbuj ponownie.',
+	'wikilove-summary' => '/* $1 */ nowa wiadomość WikiLove',
+	'wikilove-what-is-this' => 'Co to jest?',
+	'wikilove-anon-warning' => 'Uwaga! Ten użytkownik nie jest zarejestrowany, on lub ona może nie zauważyć tej wiadomości.',
+	'wikilove-commons-text' => 'Możesz znaleźć obrazki przeglądając $1.',
 );
 
 /** Pashto (پښتو)
