@@ -629,44 +629,52 @@ $.wikiLove = {
 	 */
 	doSend: function( subject, wikitext, message, type, email ) {
 		$( '#mw-wikilove-send-spinner' ).fadeIn( 200 );
-		
+
 		var sendData = {
-			'action': 'wikilove',
-			'format': 'json',
-			'title': mw.config.get( 'wgPageName' ),
-			'type': type,
-			'text': wikitext,
-			'message': message,
-			'subject': subject,
-			'token': mw.config.get( 'wikilove-edittoken' ) // after 1.17 this can become mw.user.tokens.get( 'editToken' )
+			action: 'wikilove',
+			format: 'json',
+			title: mw.config.get( 'wgPageName' ),
+			type: type,
+			text: wikitext,
+			message: message,
+			subject: subject,
+			token: mw.config.get( 'wikilove-edittoken' ) // after 1.17 this can become mw.user.tokens.get( 'editToken' )
 		};
-		
+
 		if ( email ) {
 			sendData.email = email;
 		}
-		
-		$.ajax({
+
+		$.ajax( {
 			url: mw.config.get( 'wgScriptPath' ) + '/api.php',
 			data: sendData,
 			dataType: 'json',
 			type: 'POST',
 			success: function( data ) {
 				$( '#mw-wikilove-send-spinner' ).fadeOut( 200 );
-				
+
 				if ( data.error !== undefined ) {
 					$.wikiLove.showPreviewError( data.error.info );
 					return;
 				}
-				
-				if ( data.redirect !== undefined && data.redirect.pageName == mw.config.get( 'wgPageName' ) ) {
-					// unfortunately, when on the talk page we cannot reload and then
-					// jump to the correct section, because when we set the hash (#...)
-					// the page won't reload...
+
+				// data.redirect.pageName isn't URL encoded yet, but data.redirect.fragment is already encoded
+				var	targetBaseUrl = mw.util.wikiGetlink( data.redirect.pageName ),
+					currentBaseUrl = window.location.href.substr( 0, location.href.length - (location.hash || '').length );
+
+				// Redirect to new fragment on user talk page
+				// data.redirect.pageName isn't URL encoded yet, but data.redirect.fragment is already encoded
+				window.location = targetBaseUrl + '#' + data.redirect.fragment;
+
+				// unfortunately, in the most common scenario (viewing the user talk page) we cannot
+				// simply set location to the url + the correct fragement. When only the hash (#...)
+				// changes, then browsers won't reload but try to jump to that section...
+				if (
+					targetBaseUrl === currentBaseUrl
+					// Compatibility with 1.17, 1.18
+					|| mw.config.get( 'wgServer' ) + targetBaseUrl === currentBaseUrl
+				) {
 					window.location.reload();
-				} else { // not on user talk page
-					window.location =  
-						// data.redirect.pageName isn't URL encoded yet, but data.redirect.fragment is already encoded
-						mw.util.wikiGetlink( data.redirect.pageName ) + '#' + data.redirect.fragment;
 				}
 			},
 			error: function() {
