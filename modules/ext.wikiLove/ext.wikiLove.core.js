@@ -658,23 +658,32 @@ $.wikiLove = {
 					return;
 				}
 
-				// data.redirect.pageName isn't URL encoded yet, but data.redirect.fragment is already encoded
-				var	targetBaseUrl = mw.util.wikiGetlink( data.redirect.pageName ),
-					currentBaseUrl = window.location.href.substr( 0, location.href.length - (location.hash || '').length );
-
-				// Redirect to new fragment on user talk page
-				// data.redirect.pageName isn't URL encoded yet, but data.redirect.fragment is already encoded
-				window.location = targetBaseUrl + '#' + data.redirect.fragment;
-
-				// unfortunately, in the most common scenario (viewing the user talk page) we cannot
-				// simply set location to the url + the correct fragement. When only the hash (#...)
-				// changes, then browsers won't reload but try to jump to that section...
-				if (
-					targetBaseUrl === currentBaseUrl
-					// Compatibility with 1.17, 1.18
-					|| mw.config.get( 'wgServer' ) + targetBaseUrl === currentBaseUrl
-				) {
-					window.location.reload();
+				if ( data.redirect !== undefined ) {
+					var	targetBaseUrl = mw.util.wikiGetlink( data.redirect.pageName ),
+						// currentBaseUrl is the current URL minus the hash fragment
+						currentBaseUrl = window.location.href.substr( 0, location.href.length - (location.hash || '').length );
+	
+					// Set window location to user talk page URL + WikiLove anchor hash.
+					// Unfortunately, in the most common scenario (starting from the user talk 
+					// page) this won't reload the page since the browser will simply try to jump 
+					// to the anchor within the existing page (which doesn't exist). This does, 
+					// however, prepare us for the subsequent reload, making sure that the user is 
+					// directed to the WikiLove message instead of just being left at the top of 
+					// the page. In the case that we are starting from a different page, this sends 
+					// the user immediately to the new WikiLove message on the user talk page.
+					window.location = targetBaseUrl + '#' + data.redirect.fragment; // data.redirect.fragment is already encoded
+	
+					// If we were already on the user talk page, then reload the page so that the 
+					// new WikiLove message is displayed.
+					if (
+						targetBaseUrl === currentBaseUrl
+						// Compatibility with 1.17, 1.18
+						|| mw.config.get( 'wgServer' ) + targetBaseUrl === currentBaseUrl
+					) {
+						window.location.reload();
+					}
+				} else {
+					$.wikiLove.showPreviewError( 'wikilove-err-send-api' );
 				}
 			},
 			error: function() {
