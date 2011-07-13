@@ -112,6 +112,23 @@ $messages['af'] = array(
 	'wikilove-commons-text' => 'U kan beelde vind deur op $1 te blaai.',
 );
 
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+ * @author EugeneZelenko
+ * @author Jim-by
+ * @author Wizardist
+ */
+$messages['be-tarask'] = array(
+	'wikilove-desc' => 'Дадае інтэрфэйс для спрашчэньне дадаваньня станоўчых водгукаў на старонках гутарак удзельнікаў',
+	'wikilove-err-gallery' => 'Нешта пайшло ня так падчас загрузкі выяваў.',
+	'wikilove-err-gallery-again' => 'Паспрабаваць зноў',
+	'wikilove-err-preview-api' => 'Нешта пайшло ня так, падчас папярэдняга прагляду. Калі ласка, паспрабуйце зноў.',
+	'wikilove-err-send-api' => 'Нешта пайшло ня так, падчас адпраўкі паведамленьня. Калі ласка, паспрабуйце зноў.',
+	'wikilove-summary' => '/* $1 */ новае WikiLove паведамленьне',
+	'wikilove-what-is-this' => 'Што гэта?',
+	'wikilove-anon-warning' => 'Заўвага: гэты ўдзельнік не зарэгістраваны, ён ці яна ня можа заўважыць гэтае паведамленьне.',
+	'wikilove-commons-text' => 'Вы можаце знайсьці выявы ў праекце $1.',
+);
+
 /** Bulgarian (Български)
  * @author DCLXVI
  */
