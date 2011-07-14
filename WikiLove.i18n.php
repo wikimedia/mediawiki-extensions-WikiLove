@@ -119,6 +119,16 @@ $messages['af'] = array(
  */
 $messages['be-tarask'] = array(
 	'wikilove-desc' => 'Дадае інтэрфэйс для спрашчэньне дадаваньня станоўчых водгукаў на старонках гутарак удзельнікаў',
+	'wikilove-notify' => 'Паведаміць карыстальніку праз электронную пошту',
+	'wikilove-button-send' => 'Даслаць WikiLove',
+	'wikilove-type-makeyourown' => 'Зрабіць уласны',
+	'wikilove-err-header' => 'Калі ласка, увядзіце загаловак.',
+	'wikilove-err-title' => 'Калі ласка, увядзіце назву.',
+	'wikilove-err-msg' => 'Калі ласка, увядзіце паведамленьне.',
+	'wikilove-err-image' => 'Калі ласка, выберыце выяву.',
+	'wikilove-err-image-bad' => 'Выява не існуе.',
+	'wikilove-err-image-api' => 'Нешта пайшло ня так, падчас атрыманьня паведамленьня. Калі ласка, паспрабуйце зноў.',
+	'wikilove-err-sig' => 'Калі ласка, не ўключайце подпіс у паведамленьне.',
 	'wikilove-err-gallery' => 'Нешта пайшло ня так падчас загрузкі выяваў.',
 	'wikilove-err-gallery-again' => 'Паспрабаваць зноў',
 	'wikilove-err-preview-api' => 'Нешта пайшло ня так, падчас папярэдняга прагляду. Калі ласка, паспрабуйце зноў.',
@@ -426,6 +436,51 @@ $messages['he'] = array(
 	'wikilove-what-is-this' => 'מה זה?',
 	'wikilove-anon-warning' => 'הערה: משתמש זה אינו רשום ואולי לא יבחין בהודעה זו.',
 	'wikilove-commons-text' => 'אפשר לחפש תמונות באתר $1.',
+);
+
+/** Hindi (हिन्दी)
+ * @author Vibhijain
+ */
+$messages['hi'] = array(
+	'wikilove-desc' => 'उपयोगकर्ता वार्ता पृष्ठो पर सकारात्मक उपयोगकर्ता राय की सुविधा के लिए इंटरफ़ेस जोड़ता है',
+	'wikilove' => 'विकिप्रेम',
+	'wikilove-enable-preference' => 'विकिप्रेम टैब (प्रयोगात्मक) के साथ अन्य उपयोगकर्ताओं के लिए प्रशंसा देखना सक्षम करे',
+	'wikilove-tab-text' => 'विकिप्रेम',
+	'tooltip-ca-wikilove' => 'इस उपयोगकर्ता को अपनी प्रशंसा दिखाने के लिए एक संदेश पोस्ट करे',
+	'wikilove-dialog-title' => 'विकिप्रेम - किसी अन्य उपयोगकर्ता के लिए सराहना की एक संदेश भेजें',
+	'wikilove-select-type' => 'प्रकार का चयन करें',
+	'wikilove-get-started-header' => 'चलो शुरू हो जाओ!',
+	'wikilove-get-started-list-1' => 'विकिप्रेम के जिस प्रकार को आप भेजना चाहते हैं उसका चयन करें',
+	'wikilove-get-started-list-2' => 'अपने विकिप्रेम में विवरण जोड़ें',
+	'wikilove-get-started-list-3' => 'अपना विकिप्रेम भेजे !',
+	'wikilove-add-details' => 'विवरण जोड़ें',
+	'wikilove-image' => 'चित्र नाम दर्ज करें:',
+	'wikilove-select-image' => 'चित्र का चयन करें:',
+	'wikilove-header' => 'शीर्षक दर्ज करें:',
+	'wikilove-title' => 'एक पुरस्कार शीर्षक दर्ज करें:',
+	'wikilove-enter-message' => 'संदेश दर्ज करें:',
+	'wikilove-omit-sig' => '(हस्ताक्षर के बिना)',
+	'wikilove-image-example' => '(उदाहरण: Trophy.png)',
+	'wikilove-button-preview' => 'पूर्वावलोकन',
+	'wikilove-preview' => 'पूर्वावलोकन',
+	'wikilove-notify' => 'ई - मेल द्वारा उपयोगकर्ता को सूचित करें',
+	'wikilove-button-send' => 'विकिप्रेम भेजे',
+	'wikilove-type-makeyourown' => 'अपना खुद का बनाएँ',
+	'wikilove-err-header' => 'कृपया कोई शीर्षक दर्ज करें।',
+	'wikilove-err-title' => 'कृपया कोई शीर्षक दर्ज करें।',
+	'wikilove-err-msg' => 'कृपया संदेश प्रविष्ट करें।',
+	'wikilove-err-image' => 'कृपया चित्र का चयन करें।',
+	'wikilove-err-image-bad' => 'चित्र अस्तित्व में नहीं हैं।',
+	'wikilove-err-image-api' => 'संदेश को पुन: प्राप्त करते समय कुछ गलत हो गया। कृपया वापिस कोशिश करे।',
+	'wikilove-err-sig' => 'कृपया इस संदेश में हस्ताक्षर शामिल नहीं करे।',
+	'wikilove-err-gallery' => 'चित्र लोड करते समय कुछ गलत हो गया।',
+	'wikilove-err-gallery-again' => 'पुन: प्रयास करें',
+	'wikilove-err-preview-api' => 'पूर्वावलोकन करते समय कुछ गलत हो गया। कृपया वापिस कोशिश करे।',
+	'wikilove-err-send-api' => 'संदेश को भेजते समय कुछ गलत हो गया। कृपया वापिस कोशिश करे।',
+	'wikilove-summary' => '/ * $1 * / नया विकिप्रेम संदेश',
+	'wikilove-what-is-this' => 'यह क्या है?',
+	'wikilove-anon-warning' => 'नोट: यह उपयोगकर्ता पंजीकृत नहीं है, वह शायद यह संदेश नहीं देख सकते हैं।',
+	'wikilove-commons-text' => 'आप $1 को ब्राउज़ करके चित्र खोज सकते है।',
 );
 
 /** Hungarian (Magyar)
