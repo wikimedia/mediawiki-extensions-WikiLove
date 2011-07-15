@@ -65,6 +65,7 @@ $messages['qqq'] = array(
 	'wikilove-preview' => 'Title. Noun.',
 	'wikilove-commons-text' => "\$1 gets replaced by a link with ''wikilove-commons-link'' (\"Wikimedia Commons\") as caption and ''wikilove-commons-url'' as URL.",
 	'wikilove-commons-url' => 'This URL can be changed to point at a localised page on Wikimedia Commons.',
+	'wikilove-type-makeyourown' => 'Label for a button. Should be no longer than 22 characters.',
 );
 
 /** Afrikaans (Afrikaans)
