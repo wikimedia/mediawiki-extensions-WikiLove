@@ -5,6 +5,7 @@
 /* dialog */
 #mw-wikilove-dialog {
 	margin: 10px;
+	overflow: hidden;
 }
 
 #mw-wikilove-preview-form {

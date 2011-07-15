@@ -11,6 +11,10 @@ div.vectorTabs li a {
 	background-image: none;
 }
 
+div.vectorTabs li#ca-wikilove {
+	line-height: 1.4em; /* account for scripts with tall ascenders */
+}
+
 #ca-unwatch.icon,
 #ca-watch.icon {
 	margin-right: 0px;
