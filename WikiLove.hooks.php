@@ -161,26 +161,43 @@ class WikiLoveHooks {
 	 */
 	public static function getUserTalkPage( $title ) {
 		global $wgUser;
+		
+		// Exit early if the sending user isn't logged in
 		if ( !$wgUser->isLoggedIn() ) {
 			return null;
 		}
 
+		// Exit early if we're in the wrong namespace
 		$ns = $title->getNamespace();
-		// return quickly if we're in the wrong namespace anyway
 		if ( $ns != NS_USER && $ns != NS_USER_TALK ) {
 			return null;
 		}
 
+		// If we're on a subpage, get the base page title
 		$baseTitle = Title::newFromText( $title->getBaseText(), $ns );
-
-		if ( $ns == NS_USER_TALK && $baseTitle->quickUserCan( 'edit' ) ) {
-			return $baseTitle;
+		
+		// Get the user talk page
+		if ( $ns == NS_USER_TALK ) {
+			// We're already on the user talk page
+			$talkTitle = $baseTitle;
 		} elseif ( $ns == NS_USER ) {
-			$talk = $baseTitle->getTalkPage();
-			if ( $talk->quickUserCan( 'edit' ) ) {
-				return $talk;
-			}
+			// We're on the user page, so retrieve the user talk page instead
+			$talkTitle = $baseTitle->getTalkPage();
 		}
-		return null;
+		
+		// If it's a redirect, exit. We don't follow redirects since it might confuse the user or 
+		// lead to an endless loop (like if the talk page redirects to the user page or a subpage). 
+		// This means that the WikiLove tab will not appear on user pages or user talk pages if 
+		// the user talk page is a redirect.
+		if ( $talkTitle->isRedirect() ) {
+			return null;
+		}
+		
+		// Make sure we can edit the page
+		if ( $talkTitle->quickUserCan( 'edit' ) ) {
+			return $talkTitle;
+		} else {
+			return null;
+		}
 	}
 }
