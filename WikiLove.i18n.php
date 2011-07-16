@@ -63,9 +63,9 @@ $messages['qqq'] = array(
 	'wikilove-image-example' => 'The filename should be an actual image on Wikimedia Commons.',
 	'wikilove-button-preview' => 'Button text. Verb.',
 	'wikilove-preview' => 'Title. Noun.',
+	'wikilove-type-makeyourown' => 'Label for a button. Should be no longer than 22 characters.',
 	'wikilove-commons-text' => "\$1 gets replaced by a link with ''wikilove-commons-link'' (\"Wikimedia Commons\") as caption and ''wikilove-commons-url'' as URL.",
 	'wikilove-commons-url' => 'This URL can be changed to point at a localised page on Wikimedia Commons.',
-	'wikilove-type-makeyourown' => 'Label for a button. Should be no longer than 22 characters.',
 );
 
 /** Afrikaans (Afrikaans)
@@ -242,7 +242,7 @@ $messages['de'] = array(
 	'wikilove-preview' => 'Vorschau',
 	'wikilove-notify' => 'Den Benutzer per E-Mail benachrichtigen',
 	'wikilove-button-send' => 'Persönliche Wertschätzung senden',
-	'wikilove-type-makeyourown' => 'Eigene Art der Wertschätzung erstellen',
+	'wikilove-type-makeyourown' => 'Eigene erstellen',
 	'wikilove-err-header' => 'Bitte den Inhalt für den Kopfbereich eingeben.',
 	'wikilove-err-title' => 'Bitte einen Titel eingeben.',
 	'wikilove-err-msg' => 'Bitte eine Nachricht eingeben.',
@@ -329,6 +329,7 @@ $messages['frp'] = array(
 	'wikilove-get-started-list-3' => 'Mandâd voutron VouiquiAmôr !',
 	'wikilove-add-details' => 'Apondre des dètalys',
 	'wikilove-image' => 'Émâge :',
+	'wikilove-select-image' => 'Chouèsir una émâge :',
 	'wikilove-header' => 'En-téta :',
 	'wikilove-title' => 'Titro :',
 	'wikilove-enter-message' => 'Buchiéd un mèssâjo :',
@@ -650,6 +651,52 @@ $messages['it'] = array(
 	'wikilove-commons-text' => 'Potete trovare le immagini cercando in $1.',
 );
 
+/** Japanese (日本語)
+ * @author Akaniji
+ * @author Whym
+ */
+$messages['ja'] = array(
+	'wikilove-desc' => '利用者の会話ページに前向きな反応を寄せやすくする機能を、追加します',
+	'wikilove' => 'ウィキラブ',
+	'wikilove-enable-preference' => 'ウィキラブのタブによる、他の利用者に対して感謝の意を示す機能を有効にする（試用版）',
+	'wikilove-tab-text' => 'ウィキラブ',
+	'tooltip-ca-wikilove' => 'この利用者に向けた感謝の言葉を書き込む',
+	'wikilove-dialog-title' => 'WikiLove - 他の利用者に感謝の言葉を送る',
+	'wikilove-select-type' => '種類をお選びください',
+	'wikilove-get-started-header' => 'さあ、始めましょう ！',
+	'wikilove-get-started-list-1' => '送りたいウィキラブの種類を選択してください',
+	'wikilove-get-started-list-2' => 'そのウィキラブに詳細を加えてください',
+	'wikilove-get-started-list-3' => 'そのウィキラブを送ってください！',
+	'wikilove-add-details' => '詳細をお書きください',
+	'wikilove-image' => '画像のファイル名を入力してください：',
+	'wikilove-select-image' => '画像をお選びください：',
+	'wikilove-header' => '表題を入力してください：',
+	'wikilove-title' => '賞の名前を入力してください：',
+	'wikilove-enter-message' => 'メッセージを入力してください：',
+	'wikilove-omit-sig' => '（署名は不要）',
+	'wikilove-image-example' => '（例： Trophy.png）',
+	'wikilove-button-preview' => 'プレビュー',
+	'wikilove-preview' => 'プレビュー',
+	'wikilove-notify' => '電子メールでこの利用者に通知する',
+	'wikilove-button-send' => 'ウィキラブを送る',
+	'wikilove-type-makeyourown' => '自作する',
+	'wikilove-err-header' => '表題を入力してください。',
+	'wikilove-err-title' => '賞の名前を入力してください。',
+	'wikilove-err-msg' => 'メッセージを入力してください。',
+	'wikilove-err-image' => '画像を選択してください。',
+	'wikilove-err-image-bad' => '画像が存在しません。',
+	'wikilove-err-image-api' => '画像を取得する際に問題が起きました。もう一度お試しください。',
+	'wikilove-err-sig' => 'メッセージに署名を入れないでください。',
+	'wikilove-err-gallery' => '画像を読み込む際に問題が起きました。',
+	'wikilove-err-gallery-again' => 'もう一度お試しください',
+	'wikilove-err-preview-api' => 'プレビュー中に問題が起きました。もう一度お試しください。',
+	'wikilove-err-send-api' => 'メッセージを送る際に問題が起きました。もう一度お試しください。',
+	'wikilove-summary' => '/* $1 */ 新しいウィキラブのメッセージ',
+	'wikilove-what-is-this' => 'これは何？',
+	'wikilove-anon-warning' => '注：この利用者は登録していないので、このメッセージに気づかないかもしれません。',
+	'wikilove-commons-text' => '$1で画像を見つけることができます。',
+);
+
 /** Colognian (Ripoarisch)
  * @author Purodha
  */
@@ -682,6 +729,7 @@ $messages['lb'] = array(
 	'wikilove' => 'WikiLove',
 	'wikilove-tab-text' => 'WikiLove',
 	'wikilove-dialog-title' => 'WikiLove - Schéckt e Message vun der Wäertschätzung un en anere Benotzer',
+	'wikilove-select-type' => 'Typ eraussichen',
 	'wikilove-get-started-header' => 'Elo geet et lass!',
 	'wikilove-add-details' => 'Detailer derbäisetzen',
 	'wikilove-image' => 'Gitt den Numm vum Fichier vun engem Bild un:',
@@ -695,12 +743,16 @@ $messages['lb'] = array(
 	'wikilove-preview' => 'Kucken ouni ofzespäicheren',
 	'wikilove-notify' => 'De Benotzer per Mail informéieren',
 	'wikilove-type-makeyourown' => 'Maacht Ären Eegenen',
+	'wikilove-err-header' => 'Gitt w.e.g. eng Iwwerschrëft un.',
+	'wikilove-err-title' => 'Gitt w.e.g. en Titel un.',
+	'wikilove-err-msg' => 'Gitt w.e.g. e Message an.',
 	'wikilove-err-image' => 'Sicht w.e.g. e Bild eraus.',
 	'wikilove-err-image-bad' => 'Bild gëtt et net.',
 	'wikilove-err-gallery' => 'Beim Luede vun de Biller huet eppes net fonctionnéiert.',
 	'wikilove-err-gallery-again' => 'Probéiert nach emol',
 	'wikilove-summary' => '/* $1 */ neie WikiLove Message',
 	'wikilove-what-is-this' => 'Wat ass dat?',
+	'wikilove-anon-warning' => 'Notiz: Dëse Benotzer ass net registréiert, hien oder si gesäit dëse Message méiglecherweis net.',
 );
 
 /** Macedonian (Македонски)
@@ -824,7 +876,7 @@ $messages['nl'] = array(
 	'wikilove-preview' => 'Voorvertoning',
 	'wikilove-notify' => 'De gebruiker een bericht sturen via e-mail',
 	'wikilove-button-send' => 'Wikiwaardering versturen',
-	'wikilove-type-makeyourown' => 'Uw eigen Wikiwaardering maken',
+	'wikilove-type-makeyourown' => 'Uw eigen maken',
 	'wikilove-err-header' => 'Geef een koptekst op.',
 	'wikilove-err-title' => 'Geef een naam op.',
 	'wikilove-err-msg' => 'Geef een bericht op.',
@@ -937,6 +989,51 @@ $messages['pt'] = array(
 	'wikilove-summary' => '/* $1 */ nova mensagem de WikiApreço',
 	'wikilove-what-is-this' => 'O que é isto?',
 	'wikilove-anon-warning' => 'Nota: Este utilizador não está registado e poderá não se aperceber desta mensagem.',
+	'wikilove-commons-text' => 'Pode encontrar imagens pesquisando-as em $1.',
+);
+
+/** Brazilian Portuguese (Português do Brasil)
+ * @author Raylton P. Sousa
+ */
+$messages['pt-br'] = array(
+	'wikilove-desc' => 'Adiciona uma interface para facilitar a demonstrações de apreço nas páginas de discussão dos utilizadores',
+	'wikilove' => 'WikiApreço',
+	'wikilove-enable-preference' => 'Permite enviar demonstrações de apreço a outros utilizadores usando o separador "WikiApreço" (experimental)',
+	'wikilove-tab-text' => 'WikiApreço',
+	'tooltip-ca-wikilove' => 'Envie uma mensagem a este utilizador demonstrando o seu apreço',
+	'wikilove-dialog-title' => 'WikiApreço - Envie uma mensagem de apreço a outro utilizador',
+	'wikilove-select-type' => 'Escolha o tipo',
+	'wikilove-get-started-header' => 'Vamos começar!',
+	'wikilove-get-started-list-1' => 'Escolha o tipo de WikiApreço que pretende enviar',
+	'wikilove-get-started-list-2' => 'Acrescente detalhes ao seu WikiApreço',
+	'wikilove-get-started-list-3' => 'Enviar o seu WikiApreço!',
+	'wikilove-add-details' => 'Adicionar detalhes',
+	'wikilove-image' => 'Introduza o nome de uma imagem:',
+	'wikilove-select-image' => 'Selecione uma imagem:',
+	'wikilove-header' => 'Introduza um cabeçalho:',
+	'wikilove-title' => 'Introduza o título de um prémio:',
+	'wikilove-enter-message' => 'Introduza uma mensagem:',
+	'wikilove-omit-sig' => '(sem assinatura)',
+	'wikilove-image-example' => '(exemplo: Troféu.png)',
+	'wikilove-button-preview' => 'Antever',
+	'wikilove-preview' => 'Antevisão',
+	'wikilove-notify' => 'Notificar o utilizador por correio eletrônico',
+	'wikilove-button-send' => 'Enviar WikiApreço',
+	'wikilove-type-makeyourown' => 'Crie o seu',
+	'wikilove-err-header' => 'Introduza um cabeçalho, por favor.',
+	'wikilove-err-title' => 'Introduza um título, por favor.',
+	'wikilove-err-msg' => 'Introduza uma mensagem, por favor.',
+	'wikilove-err-image' => 'Escolha uma imagem, por favor.',
+	'wikilove-err-image-bad' => 'A imagem não existe.',
+	'wikilove-err-image-api' => 'Ocorreu um erro ao tentar recuperar à imagem. Tente novamente, por favor.',
+	'wikilove-err-sig' => 'Não inclua uma assinatura na mensagem, por favor.',
+	'wikilove-err-gallery' => 'Ocorreu um erro ao carregar as imagens!',
+	'wikilove-err-gallery-again' => 'Tente novamente',
+	'wikilove-err-preview-api' => 'Ocorreu um erro durante a antevisão. Tente novamente, por favor.',
+	'wikilove-err-send-api' => 'Ocorreu um erro ao enviar a mensagem. Tente novamente, por favor.',
+	'wikilove-summary' => '/* $1 */ nova mensagem de WikiApreço',
+	'wikilove-what-is-this' => 'O que é isto?',
+	'wikilove-anon-warning' => 'Nota: Este utilizador não está registado e poderá não perceber esta mensagem.',
 	'wikilove-commons-text' => 'Pode encontrar imagens pesquisando-as em $1.',
 );
 
