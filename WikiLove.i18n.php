@@ -120,7 +120,7 @@ $messages['af'] = array(
  */
 $messages['be-tarask'] = array(
 	'wikilove-desc' => 'Дадае інтэрфэйс для спрашчэньне дадаваньня станоўчых водгукаў на старонках гутарак удзельнікаў',
-	'wikilove-notify' => 'Паведаміць карыстальніку праз электронную пошту',
+	'wikilove-notify' => 'Паведаміць удзельніку праз электронную пошту',
 	'wikilove-button-send' => 'Даслаць WikiLove',
 	'wikilove-type-makeyourown' => 'Зрабіць уласны',
 	'wikilove-err-header' => 'Калі ласка, увядзіце загаловак.',
@@ -128,7 +128,7 @@ $messages['be-tarask'] = array(
 	'wikilove-err-msg' => 'Калі ласка, увядзіце паведамленьне.',
 	'wikilove-err-image' => 'Калі ласка, выберыце выяву.',
 	'wikilove-err-image-bad' => 'Выява не існуе.',
-	'wikilove-err-image-api' => 'Нешта пайшло ня так, падчас атрыманьня паведамленьня. Калі ласка, паспрабуйце зноў.',
+	'wikilove-err-image-api' => 'Нешта пайшло ня так, падчас атрыманьня выявы. Калі ласка, паспрабуйце зноў.',
 	'wikilove-err-sig' => 'Калі ласка, не ўключайце подпіс у паведамленьне.',
 	'wikilove-err-gallery' => 'Нешта пайшло ня так падчас загрузкі выяваў.',
 	'wikilove-err-gallery-again' => 'Паспрабаваць зноў',
@@ -847,6 +847,51 @@ $messages['ml'] = array(
 	'wikilove-commons-text' => '$1 ബ്രൗസ് ചെയ്ത് ചിത്രങ്ങൾ കണ്ടുപിറ്റിക്കാവുന്നതാണ്.',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'wikilove-desc' => 'Menambahkan antara muka untuk memudahkan maklum balas pengguna yang positif kepada laman perbincangan pengguna',
+	'wikilove' => 'WikiLove',
+	'wikilove-enable-preference' => 'Membolehkan pengguna saling memberikan penghargaan dengan tab WikiLove (percubaan)',
+	'wikilove-tab-text' => 'WikiLove',
+	'tooltip-ca-wikilove' => 'Kirim satu pesanan kepada pengguna ini sebagai tanda penghargaan',
+	'wikilove-dialog-title' => 'WikiLove – Kirim pesanan penghargaan kepada pengguna lain',
+	'wikilove-select-type' => 'Pilih jenis',
+	'wikilove-get-started-header' => 'Mari kita bermula!',
+	'wikilove-get-started-list-1' => 'Pilih jenis WikiLove yang ingin anda kirim',
+	'wikilove-get-started-list-2' => 'Tambahkan butiran pada WikiLove anda',
+	'wikilove-get-started-list-3' => 'Hantar WikiLove anda!',
+	'wikilove-add-details' => 'Tambah butiran',
+	'wikilove-image' => 'Isikan nama fail imej:',
+	'wikilove-select-image' => 'Pilih imej:',
+	'wikilove-header' => 'Isikan pengatas:',
+	'wikilove-title' => 'Isikan gelaran anugerah:',
+	'wikilove-enter-message' => 'Isikan mesej:',
+	'wikilove-omit-sig' => '(tanpa tandatangan)',
+	'wikilove-image-example' => '(contoh: Trophy.png)',
+	'wikilove-button-preview' => 'Pralihat',
+	'wikilove-preview' => 'Pralihat',
+	'wikilove-notify' => 'Beritahu pengguna melalui e-mel',
+	'wikilove-button-send' => 'Hantar WikiLove',
+	'wikilove-type-makeyourown' => 'Bikin sendiri',
+	'wikilove-err-header' => 'Sila isikan pengatas.',
+	'wikilove-err-title' => 'Sila isikan tajuk.',
+	'wikilove-err-msg' => 'Sila isikan pesanan.',
+	'wikilove-err-image' => 'Sila pilih imej.',
+	'wikilove-err-image-bad' => 'Imej tidak wujud.',
+	'wikilove-err-image-api' => 'Masalah timbul ketika mendapatkan imej itu. Sila cuba lagi.',
+	'wikilove-err-sig' => 'Tolong jangan sertakan tandatangan dalam pesanan.',
+	'wikilove-err-gallery' => 'Masalah timbu ketika memuatkan imej.',
+	'wikilove-err-gallery-again' => 'Cuba lagi',
+	'wikilove-err-preview-api' => 'Masalah timbul ketika pralihat. Sila cuba lagi.',
+	'wikilove-err-send-api' => 'Masalah timbul ketika menghantar pesanan. Sila cuba lagi.',
+	'wikilove-summary' => '/* $1 */ pesanan WikiLove baru',
+	'wikilove-what-is-this' => 'Apakah ini?',
+	'wikilove-anon-warning' => 'Perhatian: Pengguna ini tidak berdaftar, jadi mungkin dia tidak dapat perasan pesanan ini.',
+	'wikilove-commons-text' => 'Anda boleh mencari imej dengan melayari $1.',
+);
+
 /** Dutch (Nederlands)
  * @author SPQRobin
  * @author Siebrand
@@ -892,6 +937,51 @@ $messages['nl'] = array(
 	'wikilove-what-is-this' => 'Wat is dit?',
 	'wikilove-anon-warning' => 'Opmerking: Deze gebruiker is niet geregistreerd, hij of zij ziet dit bericht misschien niet.',
 	'wikilove-commons-text' => 'U kunt afbeeldingen vinden door op $1 te bladeren.',
+);
+
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Stigmj
+ */
+$messages['no'] = array(
+	'wikilove-desc' => 'Legger til et grensesnitt for å forenkle positive tilbakemeldinger til brukeres diskusjonssider',
+	'wikilove' => 'WikiLove',
+	'wikilove-enable-preference' => 'Aktiver muligheten for å vise takknemlighet til andre brukere med WikiLove-fanen (eksperimentell)',
+	'wikilove-tab-text' => 'WikiLove',
+	'tooltip-ca-wikilove' => 'Legg inn en melding til denne brukeren som viser din takknemlighet',
+	'wikilove-dialog-title' => 'WikiLove - Send en takknemlighetsmelding til en annen bruker',
+	'wikilove-select-type' => 'Velg type',
+	'wikilove-get-started-header' => 'La oss sette i gang!',
+	'wikilove-get-started-list-1' => 'Velg WikiLove-typen du vil sende',
+	'wikilove-get-started-list-2' => 'Legg til detaljer i WikiLove-meldingen din',
+	'wikilove-get-started-list-3' => 'Send din WikiLove!',
+	'wikilove-add-details' => 'Legg til detaljer',
+	'wikilove-image' => 'Skriv inn filnavnet til et bilde:',
+	'wikilove-select-image' => 'Velg et bilde:',
+	'wikilove-header' => 'Angi en topptekst:',
+	'wikilove-title' => 'Skriv inn en tittel for tildelingen:',
+	'wikilove-enter-message' => 'Skriv inn en melding:',
+	'wikilove-omit-sig' => '(uten signatur)',
+	'wikilove-image-example' => '(eksempel: Trophy.png)',
+	'wikilove-button-preview' => 'Forhåndsvisning',
+	'wikilove-preview' => 'Forhåndsvis',
+	'wikilove-notify' => 'Varsle brukeren via e-post',
+	'wikilove-button-send' => 'Send WikiLove',
+	'wikilove-type-makeyourown' => 'Lag din egen',
+	'wikilove-err-header' => 'Vennligst skriv inn en overskrift.',
+	'wikilove-err-title' => 'Vennligst skriv inn en tittel.',
+	'wikilove-err-msg' => 'Vennligst skriv inn en melding.',
+	'wikilove-err-image' => 'Vennligst velg et bilde.',
+	'wikilove-err-image-bad' => 'Bildet finnes ikke.',
+	'wikilove-err-image-api' => 'Noe gikk galt under henting av bildet. Vennligst prøv igjen.',
+	'wikilove-err-sig' => 'Vennligst ikke inkluder en signatur i meldingen.',
+	'wikilove-err-gallery' => 'Noe gikk galt ved innlasting av bilder.',
+	'wikilove-err-gallery-again' => 'Prøv igjen',
+	'wikilove-err-preview-api' => 'Noe gikk galt under forhåndsvisningen. Vennligst prøv igjen.',
+	'wikilove-err-send-api' => 'Noe gikk galt under sending av meldingen. Vennligst prøv igjen.',
+	'wikilove-summary' => '/ * $1 * / ny WikiLove-melding',
+	'wikilove-what-is-this' => 'Hva er dette?',
+	'wikilove-anon-warning' => 'Merk: Denne brukeren er ikke registrert, det kan derfor hende at vedkommende ikke legger merke til denne meldingen.',
+	'wikilove-commons-text' => 'Du kan finne bilder ved å bla gjennom $1.',
 );
 
 /** Polish (Polski)
