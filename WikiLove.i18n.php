@@ -59,13 +59,16 @@ $messages['en'] = array(
 );
 
 /** Message documentation (Message documentation)
+ * @author EugeneZelenko
  * @author McDutchie
  * @author SPQRobin
  */
 $messages['qqq'] = array(
 	'wikilove-image-example' => 'The filename should be an actual image on Wikimedia Commons.',
-	'wikilove-button-preview' => 'Button text. Verb.',
-	'wikilove-preview' => 'Title. Noun.',
+	'wikilove-button-preview' => 'Button text. Verb.
+{{Identical|Preview}}',
+	'wikilove-preview' => 'Title. Noun.
+{{Identical|Preview}}',
 	'wikilove-type-barnstars' => 'Label for a button. Should be no longer than 22 characters.',
 	'wikilove-type-food' => 'Label for a button. Should be no longer than 22 characters.',
 	'wikilove-type-kittens' => 'Label for a button. Should be no longer than 22 characters.',
@@ -126,6 +129,13 @@ $messages['af'] = array(
  */
 $messages['be-tarask'] = array(
 	'wikilove-desc' => 'Дадае інтэрфэйс для спрашчэньне дадаваньня станоўчых водгукаў на старонках гутарак удзельнікаў',
+	'wikilove-header' => 'Увядзіце загаловак:',
+	'wikilove-title' => 'Увядзіце назву ўзнагароды:',
+	'wikilove-enter-message' => 'Увядзіце паведамленьне:',
+	'wikilove-omit-sig' => '(без подпісу)',
+	'wikilove-image-example' => '(прыклад: Trophy.png)',
+	'wikilove-button-preview' => 'Папярэдні прагляд',
+	'wikilove-preview' => 'Папярэдні прагляд',
 	'wikilove-notify' => 'Паведаміць удзельніку праз электронную пошту',
 	'wikilove-button-send' => 'Даслаць WikiLove',
 	'wikilove-type-makeyourown' => 'Зрабіць уласны',
@@ -248,6 +258,9 @@ $messages['de'] = array(
 	'wikilove-preview' => 'Vorschau',
 	'wikilove-notify' => 'Den Benutzer per E-Mail benachrichtigen',
 	'wikilove-button-send' => 'Persönliche Wertschätzung senden',
+	'wikilove-type-barnstars' => 'Gummibärchen',
+	'wikilove-type-food' => 'Essen und Trinken',
+	'wikilove-type-kittens' => 'Kätzchen',
 	'wikilove-type-makeyourown' => 'Eigene erstellen',
 	'wikilove-err-header' => 'Bitte den Inhalt für den Kopfbereich eingeben.',
 	'wikilove-err-title' => 'Bitte einen Titel eingeben.',
@@ -286,6 +299,7 @@ $messages['de-formal'] = array(
  * @author Crochet.david
  * @author IAlex
  * @author Jean-Frédéric
+ * @author Kaldari
  * @author Sherbrooke
  */
 $messages['fr'] = array(
@@ -323,6 +337,7 @@ $messages['fr'] = array(
 
 /** Franco-Provençal (Arpetan)
  * @author ChrisPtDe
+ * @author Kaldari
  */
 $messages['frp'] = array(
 	'wikilove' => 'VouiquiAmôr',
@@ -357,6 +372,7 @@ $messages['frp'] = array(
 );
 
 /** Galician (Galego)
+ * @author Kaldari
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -447,6 +463,7 @@ $messages['he'] = array(
 );
 
 /** Hindi (हिन्दी)
+ * @author Kaldari
  * @author Vibhijain
  */
 $messages['hi'] = array(
@@ -493,6 +510,7 @@ $messages['hi'] = array(
 
 /** Hungarian (Magyar)
  * @author Dani
+ * @author Kaldari
  */
 $messages['hu'] = array(
 	'wikilove' => 'Wikibók',
@@ -584,6 +602,7 @@ $messages['ia'] = array(
 
 /** Indonesian (Bahasa Indonesia)
  * @author Iwan Novirion
+ * @author Kaldari
  */
 $messages['id'] = array(
 	'wikilove-desc' => 'Menambahkan penghargaan ke halaman pembicaraan pengguna atas kontribusi positifnya',
@@ -613,6 +632,7 @@ $messages['id'] = array(
 
 /** Italian (Italiano)
  * @author Beta16
+ * @author Kaldari
  * @author Rippitippi
  */
 $messages['it'] = array(
@@ -704,6 +724,7 @@ $messages['ja'] = array(
 );
 
 /** Colognian (Ripoarisch)
+ * @author Kaldari
  * @author Purodha
  */
 $messages['ksh'] = array(
@@ -1089,6 +1110,7 @@ $messages['pt'] = array(
 );
 
 /** Brazilian Portuguese (Português do Brasil)
+ * @author Kaldari
  * @author Raylton P. Sousa
  */
 $messages['pt-br'] = array(
@@ -1242,6 +1264,7 @@ $messages['te'] = array(
 
 /** Tagalog (Tagalog)
  * @author AnakngAraw
+ * @author Kaldari
  */
 $messages['tl'] = array(
 	'wikilove-desc' => 'Nagdaragdag ng isang ugnayang-mukha para sa pagpapadali ng positibong puna ng tagagamit sa mga pahina ng usapan',
@@ -1263,6 +1286,13 @@ $messages['tl'] = array(
 	'wikilove-preview' => 'Paunang tingin',
 	'wikilove-button-send' => 'Ipadala ang WikiLove',
 	'wikilove-type-makeyourown' => 'Gumawa ng sarili mo',
+);
+
+/** Ukrainian (Українська)
+ * @author Microcell
+ */
+$messages['uk'] = array(
+	'wikilove' => 'Вікісимпатія',
 );
 
 /** Vietnamese (Tiếng Việt)
@@ -1311,6 +1341,7 @@ $messages['vi'] = array(
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
+ * @author Kaldari
  * @author Tommyang
  */
 $messages['zh-hans'] = array(
@@ -1356,6 +1387,7 @@ $messages['zh-hans'] = array(
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
+ * @author Kaldari
  * @author Waihorace
  */
 $messages['zh-hant'] = array(
