@@ -12,9 +12,9 @@ $.wikiLoveOptions = {
 	defaultImage: 'Trophy.png',
 	
 	types: {
-		// example type, could be removed later (also no i18n)
+		// example type, could be removed later
 		'barnstar': {
-			name: 'Barnstars', // name of the type (appears in the types menu)
+			name: mw.msg( 'wikilove-type-barnstars' ), // name of the type (appears in the types menu)
 			select: 'Select a barnstar:', // subtype select label
 			subtypes: { // some different subtypes
 				// note that when not using subtypes you should use these subtype options
@@ -240,7 +240,7 @@ $.wikiLoveOptions = {
 			icon: mw.config.get( 'wgExtensionAssetsPath' ) + '/WikiLove/modules/ext.wikiLove/images/icons/wikilove-icon-barnstar.png' // icon for left-side menu
 		},
 		'food': {
-			name: 'Food and drink', // name of the type (appears in the types menu)
+			name: mw.msg( 'wikilove-type-food' ), // name of the type (appears in the types menu)
 			select: 'Select food or drink item:', // subtype select label
 			text: '{| style="background-color: $5; border: 1px solid $6;"\n\
 |style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n\
@@ -341,7 +341,7 @@ $.wikiLoveOptions = {
 			icon: mw.config.get( 'wgExtensionAssetsPath' ) + '/WikiLove/modules/ext.wikiLove/images/icons/wikilove-icon-food.png'
 		},
 		'kitten': {
-			name: 'Kittens',
+			name: mw.msg( 'wikilove-type-kittens' ),
 			fields: [ 'header', 'message' ],
 			header: 'A kitten for you!',
 			text: '[[$3|left|150px]]\n$1\n\n~~~~\n<br style="clear: both"/>', // $3 is the image filename

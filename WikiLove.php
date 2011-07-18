@@ -83,6 +83,9 @@ $extWikiLoveTpl = array(
 // messages for default options, because we want to use them in the default
 // options module, but also for the user in the user options module
 $wgWikiLoveOptionMessages = array(
+	'wikilove-type-barnstars',
+	'wikilove-type-food',
+	'wikilove-type-kittens',
 	'wikilove-type-makeyourown',
 );
 
