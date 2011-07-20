@@ -60,29 +60,53 @@ $messages['en'] = array(
 
 /** Message documentation (Message documentation)
  * @author EugeneZelenko
+ * @author Hamilton Abreu
  * @author McDutchie
  * @author Purodha
  * @author SPQRobin
  */
 $messages['qqq'] = array(
-	'wikilove-header' => '
+	'wikilove-enable-preference' => '',
+	'wikilove-tab-text' => '[[File:Wiki Love 001.png|thumb]]',
+	'tooltip-ca-wikilove' => '[[File:Wiki Love 001.png|thumb]]',
+	'wikilove-dialog-title' => '[[File:Wiki Love 002.png|thumb]]',
+	'wikilove-select-type' => '[[File:Wiki Love 002.png|thumb]]',
+	'wikilove-get-started-header' => '[[File:Wiki Love 002.png|thumb]]',
+	'wikilove-get-started-list-1' => '[[File:Wiki Love 002.png|thumb]]',
+	'wikilove-get-started-list-2' => '[[File:Wiki Love 002.png|thumb]]',
+	'wikilove-get-started-list-3' => '[[File:Wiki Love 002.png|thumb]]',
+	'wikilove-add-details' => '[[File:Wiki Love 003.png|thumb]]',
+	'wikilove-image' => '[[File:Wiki Love 004.png|thumb]]',
+	'wikilove-header' => '[[File:Wiki Love 003.png|thumb]]
 Header is the subject of the added message (so perhaps subject is a better term..), i.e. what gets between == ... ==',
-	'wikilove-title' => '
+	'wikilove-title' => '[[File:Wiki Love 004.png|thumb]]
 Title is the title of the wikilove box (e.g. "Barnstar")',
-	'wikilove-image-example' => 'The filename should be an actual image on Wikimedia Commons.',
-	'wikilove-button-preview' => 'Button text. Verb.
+	'wikilove-enter-message' => '[[File:Wiki Love 003.png|thumb]]',
+	'wikilove-omit-sig' => '[[File:Wiki Love 003.png|thumb]]',
+	'wikilove-image-example' => '[[File:Wiki Love 004.png|thumb]]
+The filename should be an actual image on Wikimedia Commons.',
+	'wikilove-button-preview' => '[[File:Wiki Love 003.png|thumb]]
+Button text. Verb.
 {{Identical|Preview}}',
-	'wikilove-preview' => 'Title. Noun.
+	'wikilove-preview' => '[[File:Wiki Love 003.png|thumb]]
+Title. Noun.
 {{Identical|Preview}}',
-	'wikilove-type-barnstars' => 'Label for a button. Should be no longer than 22 characters.',
-	'wikilove-type-food' => 'Label for a button. Should be no longer than 22 characters.',
-	'wikilove-type-kittens' => 'Label for a button. Should be no longer than 22 characters.',
-	'wikilove-type-makeyourown' => 'Label for a button. Should be no longer than 22 characters.',
-	'wikilove-err-header' => '
-Header is the subject of the added message (so perhaps subject is a better term..), i.e. what gets between == ... ==',
+	'wikilove-button-send' => '[[File:Wiki Love 003.png|thumb]]',
+	'wikilove-type-barnstars' => '[[File:Wiki Love 002.png|thumb]]
+Label for a button. Should be no longer than 22 characters.',
+	'wikilove-type-food' => '[[File:Wiki Love 002.png|thumb]]
+Label for a button. Should be no longer than 22 characters.',
+	'wikilove-type-kittens' => '[[File:Wiki Love 002.png|thumb]]
+Label for a button. Should be no longer than 22 characters.',
+	'wikilove-type-makeyourown' => '[[File:Wiki Love 002.png|thumb]]
+Label for a button. Should be no longer than 22 characters.',
+	'wikilove-err-header' => '[[File:Wiki Love 004.png|thumb]]
+Use the same translation for "header" as was used for {{msg-mw|wikilove-header}}.',
 	'wikilove-err-title' => '
 Title is the title of the wikilove box (e.g. "Barnstar")',
-	'wikilove-commons-text' => '$1 gets replaced by a link with {{msg-mw|wikilove-commons-link}} ("Wikimedia Commons") as caption and {{msg-mw|wikilove-commons-url}} as URL.',
+	'wikilove-what-is-this' => '[[File:Wiki Love 002.png|thumb]]',
+	'wikilove-commons-text' => '[[File:Wiki Love 004.png|thumb]]
+$1 gets replaced by a link with {{msg-mw|wikilove-commons-link}} ("Wikimedia Commons") as caption and {{msg-mw|wikilove-commons-url}} as URL.',
 	'wikilove-commons-url' => 'This URL can be changed to point at a localised page on Wikimedia Commons.',
 );
 
@@ -138,6 +162,7 @@ $messages['af'] = array(
  */
 $messages['be-tarask'] = array(
 	'wikilove-desc' => 'Дадае інтэрфэйс для спрашчэньне дадаваньня станоўчых водгукаў на старонках гутарак удзельнікаў',
+	'wikilove-dialog-title' => 'WikiLove — Дашліце паведамленьне іншаму ўдзельніку з выразам удзячнасьці',
 	'wikilove-select-type' => 'Выберыце тып',
 	'wikilove-get-started-header' => 'Пачынаем!',
 	'wikilove-get-started-list-1' => 'Выбраць тып WikiLove, якую Вы жадаеце даслаць',
@@ -268,16 +293,16 @@ $messages['de'] = array(
 	'wikilove-add-details' => 'Ergänzungen hinzufügen',
 	'wikilove-image' => 'Gib den Namen der Bilddatei an:',
 	'wikilove-select-image' => 'Wähle ein Bild aus:',
-	'wikilove-header' => 'Gib den Inhalt des Kopfbereichs ein:',
+	'wikilove-header' => 'Gib den Text für die Überschrift ein:',
 	'wikilove-title' => 'Gib den Titel für die Wertschätzung ein:',
 	'wikilove-enter-message' => 'Gibt eine Nachricht ein:',
-	'wikilove-omit-sig' => '(ohne Signatur)',
+	'wikilove-omit-sig' => '(bitte ohne Signatur)',
 	'wikilove-image-example' => '(Beispiel: Drei Sonnenblumen im Feld.JPG)',
 	'wikilove-button-preview' => 'Vorschau',
 	'wikilove-preview' => 'Vorschau',
 	'wikilove-notify' => 'Den Benutzer per E-Mail benachrichtigen',
 	'wikilove-button-send' => 'Persönliche Wertschätzung senden',
-	'wikilove-type-barnstars' => 'Gummibärchen',
+	'wikilove-type-barnstars' => 'Orden',
 	'wikilove-type-food' => 'Essen und Trinken',
 	'wikilove-type-kittens' => 'Schmusekätzchen',
 	'wikilove-type-makeyourown' => 'Eigene erstellen',
@@ -304,7 +329,7 @@ $messages['de'] = array(
 $messages['de-formal'] = array(
 	'wikilove-image' => 'Geben Sie den Namen der Bilddatei an:',
 	'wikilove-select-image' => 'Wählen Sie ein Bild aus:',
-	'wikilove-header' => 'Geben Sie den Inhalt des Kopfbereichs ein:',
+	'wikilove-header' => 'Geben Sie den Text für die Überschrift ein:',
 	'wikilove-title' => 'Geben Sie den Titel für die Wertschätzung ein:',
 	'wikilove-enter-message' => 'Geben Sie eine Nachricht ein:',
 	'wikilove-err-image-api' => 'Während des Abrufens des Bildes ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.',
@@ -602,6 +627,9 @@ $messages['ia'] = array(
 	'wikilove-preview' => 'Previsualisation',
 	'wikilove-notify' => 'Notificar le usator per e-mail',
 	'wikilove-button-send' => 'Inviar WikiLove',
+	'wikilove-type-barnstars' => 'Medalias',
+	'wikilove-type-food' => 'Mangiar e biber',
+	'wikilove-type-kittens' => 'Cattones',
 	'wikilove-type-makeyourown' => 'Crear le tue',
 	'wikilove-err-header' => 'Per favor entra un capite.',
 	'wikilove-err-title' => 'Per favor entra un titulo.',
@@ -1020,6 +1048,7 @@ $messages['nl'] = array(
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Cocu
  * @author Stigmj
  */
 $messages['no'] = array(
@@ -1046,6 +1075,7 @@ $messages['no'] = array(
 	'wikilove-preview' => 'Forhåndsvis',
 	'wikilove-notify' => 'Varsle brukeren via e-post',
 	'wikilove-button-send' => 'Send WikiLove',
+	'wikilove-type-food' => 'Mat og drikke',
 	'wikilove-type-makeyourown' => 'Lag din egen',
 	'wikilove-err-header' => 'Vennligst skriv inn en overskrift.',
 	'wikilove-err-title' => 'Vennligst skriv inn en tittel.',
@@ -1131,7 +1161,7 @@ $messages['pt'] = array(
 	'wikilove-get-started-header' => 'Vamos começar!',
 	'wikilove-get-started-list-1' => 'Escolha o tipo de WikiApreço que pretende enviar',
 	'wikilove-get-started-list-2' => 'Acrescente detalhes ao seu WikiApreço',
-	'wikilove-get-started-list-3' => 'Enviar o seu WikiApreço!',
+	'wikilove-get-started-list-3' => 'Envie o seu WikiApreço!',
 	'wikilove-add-details' => 'Adicionar detalhes',
 	'wikilove-image' => 'Introduza o nome de uma imagem:',
 	'wikilove-select-image' => 'Seleccione uma imagem:',
@@ -1139,7 +1169,7 @@ $messages['pt'] = array(
 	'wikilove-title' => 'Introduza o título de um prémio:',
 	'wikilove-enter-message' => 'Introduza uma mensagem:',
 	'wikilove-omit-sig' => '(sem assinatura)',
-	'wikilove-image-example' => '(exemplo: Troféu.png)',
+	'wikilove-image-example' => '(exemplo: Trophy.png)',
 	'wikilove-button-preview' => 'Antever',
 	'wikilove-preview' => 'Antevisão',
 	'wikilove-notify' => 'Notificar o utilizador por correio electrónico',
@@ -1162,7 +1192,7 @@ $messages['pt'] = array(
 	'wikilove-summary' => '/* $1 */ nova mensagem de WikiApreço',
 	'wikilove-what-is-this' => 'O que é isto?',
 	'wikilove-anon-warning' => 'Nota: Este utilizador não está registado e poderá não se aperceber desta mensagem.',
-	'wikilove-commons-text' => 'Pode encontrar imagens pesquisando-as em $1.',
+	'wikilove-commons-text' => 'Pode encontrar imagens na $1.',
 );
 
 /** Brazilian Portuguese (Português do Brasil)
