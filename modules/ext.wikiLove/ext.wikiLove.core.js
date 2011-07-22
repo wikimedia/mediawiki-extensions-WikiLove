@@ -661,7 +661,7 @@ $.wikiLove = {
 				if ( data.redirect !== undefined ) {
 					var	targetBaseUrl = mw.util.wikiGetlink( data.redirect.pageName ),
 						// currentBaseUrl is the current URL minus the hash fragment
-						currentBaseUrl = window.location.href.substr( 0, location.href.length - (location.hash || '').length );
+						currentBaseUrl = window.location.href.split("#")[0];
 	
 					// Set window location to user talk page URL + WikiLove anchor hash.
 					// Unfortunately, in the most common scenario (starting from the user talk 
