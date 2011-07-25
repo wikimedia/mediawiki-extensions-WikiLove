@@ -155,6 +155,54 @@ $messages['af'] = array(
 	'wikilove-commons-text' => 'U kan beelde vind deur op $1 te blaai.',
 );
 
+/** Arabic (العربية)
+ * @author Zack wadghiri
+ */
+$messages['ar'] = array(
+	'wikilove-desc' => 'لإضافة واجهة للإثناء على المستخدم في صفحة نقاشه',
+	'wikilove' => 'ويكي الحب',
+	'wikilove-enable-preference' => 'لفتح باب التقدير لمستخدم بإظهار تبويب ويكي الحب (قيد التجربة)',
+	'wikilove-tab-text' => 'ويكي الحب',
+	'tooltip-ca-wikilove' => 'أرسل رسالة تقدير إلى هذا المستخدم',
+	'wikilove-dialog-title' => 'ويكي الحب - أرسل رسالة تقدير إلى مستخدم آخر',
+	'wikilove-select-type' => 'اختر نوعا',
+	'wikilove-get-started-header' => 'فلنبدأ',
+	'wikilove-get-started-list-1' => 'اختر نوع رسالة ويكي الحب التي تريد إرسالها',
+	'wikilove-get-started-list-2' => 'أضف تفاصيلا إلى رسالتك',
+	'wikilove-get-started-list-3' => 'أرسلها مع حبي',
+	'wikilove-add-details' => 'أضف تفاصيلا',
+	'wikilove-image' => 'ضع اسم الصورة:',
+	'wikilove-select-image' => 'اختر صورة:',
+	'wikilove-header' => 'ضع ترويسة:',
+	'wikilove-title' => 'ضع عنوان الجائزة:',
+	'wikilove-enter-message' => 'ضع رسالة:',
+	'wikilove-omit-sig' => '(بدون توقيع)',
+	'wikilove-image-example' => '(مثال: Trophy.png)',
+	'wikilove-button-preview' => 'معاينة',
+	'wikilove-preview' => 'معاينة',
+	'wikilove-notify' => 'أخبر المستخدم برسالة إلكترونية',
+	'wikilove-button-send' => 'أرسالها',
+	'wikilove-type-barnstars' => 'أوسمة',
+	'wikilove-type-food' => 'مأكل ومشرب',
+	'wikilove-type-kittens' => 'هريرات',
+	'wikilove-type-makeyourown' => 'آخر',
+	'wikilove-err-header' => 'ضع ترويسة',
+	'wikilove-err-title' => 'ضع عنوانا',
+	'wikilove-err-msg' => 'ضع رسالة',
+	'wikilove-err-image' => 'اختر صورة',
+	'wikilove-err-image-bad' => 'صورة غير موجودة',
+	'wikilove-err-image-api' => 'وقع خطأ في الإتيان بالصورة. كرر المحاولة.',
+	'wikilove-err-sig' => 'لا توقع الرسالة',
+	'wikilove-err-gallery' => 'وقع خطأ في تحميل الصورة',
+	'wikilove-err-gallery-again' => 'كرر المحاولة',
+	'wikilove-err-preview-api' => 'وقع خطأ في المعاينة. كرر المحاولة.',
+	'wikilove-err-send-api' => 'وقع خطأ في إرسال الرسالة. كرر المحاولة.',
+	'wikilove-summary' => 'جاءتك /* $1 */ من رسائل ويكي الحب الجديدة',
+	'wikilove-what-is-this' => 'ما هذا؟',
+	'wikilove-anon-warning' => 'تنبيه: هذا المستخدم غير مسجل وقد لا ينتبه إلى هذه الرسالة.',
+	'wikilove-commons-text' => 'تجد هذه الصورة في صفحة $1.',
+);
+
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
