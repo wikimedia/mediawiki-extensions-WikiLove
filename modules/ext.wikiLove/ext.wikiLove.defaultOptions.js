@@ -329,6 +329,14 @@ $.wikiLoveOptions = {
 					image: 'A very beautiful Nectarine Pie.jpg',
 					imageSize: '120px'
 				},
+				'strawberries': {
+					fields: [ 'header', 'message' ],
+					option: 'Strawberries',
+					descr: 'The strawberry fruit (which is not actually a berry) is widely appreciated for its characteristic aroma, bright red color, juicy texture, and sweetness.',
+					header: 'A bowl of strawberries for you!',
+					image: 'Erdbeerteller01.jpg',
+					imageSize: '120px'
+				},
 				'stroopwafels': {
 					fields: [ 'header', 'message' ],
 					option: 'Stroopwafels',
