@@ -62,39 +62,43 @@
 /*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-left-cap,
 /*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-right-cap,
 /*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-icon-box {
-	/* @embed */
-	background-image: url(images/select-sprite.png);
 	background-repeat: no-repeat;
 }
 
 /*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-left-cap {
 	/* @noflip */
 	left: 0px;
-	background-position: 0px 0px;
+	/* @embed */
+	background-image: url(images/icon-box-left-cap.png);
 }
 
 /*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:hover .mw-wikilove-left-cap,
 /*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:focus .mw-wikilove-left-cap {
-	background-position: -6px 0px;
+	/* @embed */
+	background-image: url(images/icon-box-hover-left-cap.png);
 }
 
 /*#mw-wikilove-dialog*/ #mw-wikilove-select-type a.selected .mw-wikilove-left-cap {
-	background-position: -12px 0px;
+	/* @embed */
+	background-image: url(images/icon-box-selected-left-cap.png);
 }
 
 /*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-right-cap {
 	/* @noflip */
 	right: 0px;
-	background-position: -18px 0px;
+	/* @embed */
+	background-image: url(images/icon-box-right-cap.png);
 }
 
 /*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:hover .mw-wikilove-right-cap,
 /*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:focus .mw-wikilove-right-cap {
-	background-position: -25px 0px;
+	/* @embed */
+	background-image: url(images/icon-box-hover-right-cap.png);
 }
 
 /*#mw-wikilove-dialog*/ #mw-wikilove-select-type a.selected .mw-wikilove-right-cap {
-	background-position: -32px 0px;
+	/* @embed */
+	background-image: url(images/icon-box-selected-right-cap.png);
 }
 
 /*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-inside {
@@ -129,7 +133,8 @@
 	position: absolute;
 	left: 0px;
 	top: 5px;
-	background-position: -42px 0px;
+	/* @embed */
+	background-image: url(images/icon-box.png);
 }
 
 /*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-icon-box img {
@@ -144,11 +149,13 @@
 
 /*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:hover .mw-wikilove-icon-box,
 /*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:focus .mw-wikilove-icon-box {
-	background-position: -97px 0px;
+	/* @embed */
+	background-image: url(images/icon-box-hover.png);
 }
 
 /*#mw-wikilove-dialog*/ #mw-wikilove-select-type a.selected .mw-wikilove-icon-box {
-	background-position: -152px 0px;
+	/* @embed */
+	background-image: url(images/icon-box-selected.png);
 }
 
 /*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-link-text {
