@@ -232,6 +232,7 @@ $messages['be-tarask'] = array(
 	'wikilove-preview' => 'Папярэдні прагляд',
 	'wikilove-notify' => 'Паведаміць удзельніку праз электронную пошту',
 	'wikilove-button-send' => 'Даслаць WikiLove',
+	'wikilove-type-barnstars' => 'Ордэны',
 	'wikilove-type-food' => 'Ежа і напоі',
 	'wikilove-type-kittens' => 'Кацяняты',
 	'wikilove-type-makeyourown' => 'Зрабіць уласны',
