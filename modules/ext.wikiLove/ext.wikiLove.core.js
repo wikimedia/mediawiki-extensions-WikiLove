@@ -285,7 +285,7 @@ $.wikiLove = {
 		$( '#mw-wikilove-image-preview' ).show();
 		$( '#mw-wikilove-image-preview-content' ).html( '' );
 		$( '#mw-wikilove-image-preview-spinner' ).fadeIn( 200 );
-		var title = $.wikiLove.addFilePrefix( currentTypeOrSubtype.image );
+		var title = $.wikiLove.normalizeFilename( currentTypeOrSubtype.image );
 		var loadingType = currentTypeOrSubtype;
 		$.ajax({
 			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php?',
@@ -433,7 +433,7 @@ $.wikiLove = {
 					$.wikiLove.submitPreview();
 				} else { // image was entered by user
 					// Make sure the image exists
-					var imageTitle = $.wikiLove.addFilePrefix( $( '#mw-wikilove-image' ).val() );
+					var imageTitle = $.wikiLove.normalizeFilename( $( '#mw-wikilove-image' ).val() );
 					$( '#mw-wikilove-preview-spinner' ).fadeIn( 200 );
 					
 					$.ajax( {
@@ -507,7 +507,7 @@ $.wikiLove = {
 		
 		msg = msg.replace( '$1', $( '#mw-wikilove-message' ).val() ); // replace the raw message
 		msg = msg.replace( '$2', $( '#mw-wikilove-title' ).val() ); // replace the title
-		var imageName = $.wikiLove.addFilePrefix( $( '#mw-wikilove-image' ).val() );
+		var imageName = $.wikiLove.normalizeFilename( $( '#mw-wikilove-image' ).val() );
 		msg = msg.replace( '$3', imageName ); // replace the image
 		msg = msg.replace( '$4', currentTypeOrSubtype.imageSize || options.defaultImageSize ); // replace the image size
 		msg = msg.replace( '$5', currentTypeOrSubtype.backgroundColor || options.defaultBackgroundColor ); // replace the background color
@@ -518,9 +518,15 @@ $.wikiLove = {
 	},
 	
 	/*
-	 * Adds a "File:" prefix if there isn't already a media namespace prefix.
+	 * Normalize a filename.
+	 * This function will extract a filename from a URL or add a "File:" prefix if there isn't 
+	 * already a media namespace prefix.
 	 */
-	addFilePrefix: function( filename ) {
+	normalizeFilename: function( filename ) {
+		// If a URL is given, extract and decode the filename
+		var index = filename.lastIndexOf( "/" ) + 1;
+		filename = filename.substr( index );
+		if ( index > 0 ) filename = decodeURI( filename );
 		// Can't use mw.Title in 1.17
 		var	prefixSplit = filename.split( ':' ),
 			// Make sure the we don't fail in case input is like "File.jpg"
@@ -718,7 +724,7 @@ $.wikiLove = {
 		for ( var i=0; i<currentTypeOrSubtype.gallery.number; i++ ) {
 			// get a random image from imageList and add it to the list of titles to be retrieved
 			var id = Math.floor( Math.random() * imageList.length );
-			titles = titles + $.wikiLove.addFilePrefix( imageList[id] ) + '|';
+			titles = titles + $.wikiLove.normalizeFilename( imageList[id] ) + '|';
 			
 			// remove the randomly selected image from imageList so that it can't be added twice 
 			imageList.splice(id, 1);
