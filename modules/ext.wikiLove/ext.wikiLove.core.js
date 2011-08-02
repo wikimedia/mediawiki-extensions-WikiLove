@@ -414,6 +414,10 @@ $.wikiLove = {
 		}
 		
 		if( $.inArray( 'message', currentTypeOrSubtype.fields ) >= 0 ) {
+			// Check for a message if it is required
+			if ( $( '#mw-wikilove-message' ).val().length <= 0 ) {
+				$.wikiLove.showAddDetailsError( 'wikilove-err-msg' ); return false;
+			}
 			// If there's a signature already in the message, throw an error
 			if ( $( '#mw-wikilove-message' ).val().indexOf( '~~~' ) >= 0 ) {
 				$.wikiLove.showAddDetailsError( 'wikilove-err-sig' ); return false;
