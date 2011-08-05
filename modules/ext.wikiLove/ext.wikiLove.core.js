@@ -39,9 +39,9 @@ $.wikiLove = {
 				$buttonInside.append( '<div class="mw-wikilove-link-text">' + mw.html.escape( type.name ) + '</div>' );
 				
 				$button.data( 'typeId', typeId );
-				$button.append( '<div class="mw-wikilove-left-cap"></div>');
+				$button.append( '<div class="mw-wikilove-l-cap"></div>');
 				$button.append( $buttonInside );
-				$button.append( '<div class="mw-wikilove-right-cap"></div>');
+				$button.append( '<div class="mw-wikilove-r-cap"></div>');
 				$typeList.append( $( '<li tabindex="0"></li>' ).append( $button ) );
 			}
 			

@@ -59,44 +59,51 @@
 	top: 0px;
 }
 
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-left-cap,
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-right-cap,
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-l-cap,
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-r-cap,
 /*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-icon-box {
 	background-repeat: no-repeat;
+	height: 66px;
+	position: absolute;
 }
 
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-left-cap {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-l-cap,
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-r-cap {
+	width: 6px;
+}
+
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-l-cap {
 	/* @noflip */
 	left: 0px;
 	/* @embed */
 	background-image: url(images/icon-box-left-cap.png);
 }
 
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:hover .mw-wikilove-left-cap,
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:focus .mw-wikilove-left-cap {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:hover .mw-wikilove-l-cap,
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:focus .mw-wikilove-l-cap {
 	/* @embed */
 	background-image: url(images/icon-box-hover-left-cap.png);
 }
 
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a.selected .mw-wikilove-left-cap {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a.selected .mw-wikilove-l-cap {
 	/* @embed */
 	background-image: url(images/icon-box-selected-left-cap.png);
 }
 
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-right-cap {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-r-cap {
 	/* @noflip */
 	right: 0px;
 	/* @embed */
 	background-image: url(images/icon-box-right-cap.png);
 }
 
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:hover .mw-wikilove-right-cap,
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:focus .mw-wikilove-right-cap {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:hover .mw-wikilove-r-cap,
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:focus .mw-wikilove-r-cap {
 	/* @embed */
 	background-image: url(images/icon-box-hover-right-cap.png);
 }
 
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a.selected .mw-wikilove-right-cap {
+/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a.selected .mw-wikilove-r-cap {
 	/* @embed */
 	background-image: url(images/icon-box-selected-right-cap.png);
 }
