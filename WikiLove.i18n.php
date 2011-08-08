@@ -531,6 +531,7 @@ $messages['frp'] = array(
 	'wikilove-err-sig' => 'Volyéd pas encllure una signatura dens lo mèssâjo.',
 	'wikilove-err-gallery-again' => 'Tornâd èprovar',
 	'wikilove-summary' => '/* $1 */ mèssâjo novél VouiquiAmôr',
+	'wikilove-what-is-this' => 'Qu’est-o qu’il est ?',
 );
 
 /** Galician (Galego)
@@ -1480,6 +1481,54 @@ $messages['sl'] = array(
 	'wikilove-commons-text' => 'Slike lahko najdete z brskanjem po $1.',
 );
 
+/** Swedish (Svenska)
+ * @author Ainali
+ */
+$messages['sv'] = array(
+	'wikilove-desc' => 'Lägger till ett gränssnitt för att förenkla positiv feedback från användarna till Användardiskussionssidor',
+	'wikilove' => 'WikiLove',
+	'wikilove-enable-preference' => 'Gör det möjligt att visa uppskattning till andra användare med WikiLove-fliken (experimentell)',
+	'wikilove-tab-text' => 'WikiLove',
+	'tooltip-ca-wikilove' => 'Skicka ett meddelande till den här användaren för att visa din uppskattning',
+	'wikilove-dialog-title' => 'WikiLove - Skicka ett meddelande för att visa uppskattning till en annan användare',
+	'wikilove-select-type' => 'Välj typ',
+	'wikilove-get-started-header' => 'Sätt igång!',
+	'wikilove-get-started-list-1' => 'Välj typ av WikiLove du vill skicka',
+	'wikilove-get-started-list-2' => 'Lägg till information till din WikiLove',
+	'wikilove-get-started-list-3' => 'Skicka din WikiLove!',
+	'wikilove-add-details' => 'Lägg till information',
+	'wikilove-image' => 'Skriv in ett filnamn på en bild:',
+	'wikilove-select-image' => 'Välj en bild:',
+	'wikilove-header' => 'Ange en rubrik:',
+	'wikilove-title' => 'Ange en rubrik för utmärkelsen:',
+	'wikilove-enter-message' => 'Ange ett meddelande:',
+	'wikilove-omit-sig' => '(utan signatur)',
+	'wikilove-image-example' => '(exempel: Trophy.png)',
+	'wikilove-button-preview' => 'Förhandsgranska',
+	'wikilove-preview' => 'Förhandsgranskning',
+	'wikilove-notify' => 'Meddela användaren via e-post',
+	'wikilove-button-send' => 'Skicka WikiLove',
+	'wikilove-type-barnstars' => 'Barnstars',
+	'wikilove-type-food' => 'Mat och dryck',
+	'wikilove-type-kittens' => 'Kattungar',
+	'wikilove-type-makeyourown' => 'Skapa en egen',
+	'wikilove-err-header' => 'Ange en rubrik.',
+	'wikilove-err-title' => 'Ange en titel.',
+	'wikilove-err-msg' => 'Ange ett personligt meddelande.',
+	'wikilove-err-image' => 'Välj en bild.',
+	'wikilove-err-image-bad' => 'Bilden finns inte.',
+	'wikilove-err-image-api' => 'Något gick fel vid hämtning av bilden. Försök igen.',
+	'wikilove-err-sig' => 'Skriv inte  en signatur i meddelandet.',
+	'wikilove-err-gallery' => 'Något gick fel vid inläsning av bilderna.',
+	'wikilove-err-gallery-again' => 'Försök igen',
+	'wikilove-err-preview-api' => 'Något gick fel vid förhandsgranskningen. Försök igen.',
+	'wikilove-err-send-api' => 'Något gick fel när meddelandet skickades. Försök igen.',
+	'wikilove-summary' => '/ * $1 * / nytt WikiLove-meddelande',
+	'wikilove-what-is-this' => 'Vad är det här?',
+	'wikilove-anon-warning' => 'Obs: Den här användaren är inte registrerad, han eller hon kanske inte kommer att upptäcka detta meddelande.',
+	'wikilove-commons-text' => 'Du kan hitta bilder genom att söka i $1.',
+);
+
 /** Telugu (తెలుగు)
  * @author Veeven
  */
@@ -1571,6 +1620,7 @@ $messages['vi'] = array(
 
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Kaldari
+ * @author PhiLiP
  * @author Shizhao
  * @author Tommyang
  */
@@ -1599,10 +1649,12 @@ $messages['zh-hans'] = array(
 	'wikilove-notify' => '通过电子邮件通知用户',
 	'wikilove-button-send' => '发送友爱',
 	'wikilove-type-barnstars' => '星章',
+	'wikilove-type-food' => '食品和饮料',
+	'wikilove-type-kittens' => '小猫',
 	'wikilove-type-makeyourown' => '制作你自己的维基友爱',
 	'wikilove-err-header' => '请输入标题。',
 	'wikilove-err-title' => '请输入奖励标题。',
-	'wikilove-err-msg' => '请输入留言。',
+	'wikilove-err-msg' => '请输入一条个性化的消息。',
 	'wikilove-err-image' => '请选择图像。',
 	'wikilove-err-image-bad' => '图像不存在。',
 	'wikilove-err-image-api' => '获取图像时出错。请重试。',
