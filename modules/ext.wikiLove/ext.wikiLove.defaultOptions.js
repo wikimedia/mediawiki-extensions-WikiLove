@@ -121,7 +121,7 @@ $.wikiLoveOptions = {
 					descr: 'The Graphic Designer\'s Barnstar may be awarded to those who work tirelessly to provide Wikipedia with free, high-quality graphics.',
 					header: 'A barnstar for you!',
 					title: 'The Graphic Designer\'s Barnstar',
-					image: 'Rosetta Barnstar Hires.png'
+					image: 'Graphic Designer Barnstar Hires.png'
 				},
 				'half': {
 					fields: [ 'message' ],
