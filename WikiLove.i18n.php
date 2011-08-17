@@ -680,11 +680,14 @@ $messages['hi'] = array(
 );
 
 /** Hungarian (Magyar)
+ * @author Bdamokos
  * @author Dani
  * @author Kaldari
  */
 $messages['hu'] = array(
+	'wikilove-desc' => 'Létrehoz egy felületet, amely megkönnyíti a pozitív szerkesztői visszajelzéseket a szerkesztők vitalapjain.',
 	'wikilove' => 'Wikibók',
+	'wikilove-enable-preference' => 'Lehetővé teszi más szerkesztők munkájának elismerését a WikiLove fülön keresztül (kisérleti)',
 	'wikilove-tab-text' => 'Wikibók',
 	'tooltip-ca-wikilove' => 'Elismerő üzenet küldése ennek a felhasználónak',
 	'wikilove-dialog-title' => 'Wikibók – Küldj elismerő üzenetet egy másik felhasználónak',
@@ -705,10 +708,13 @@ $messages['hu'] = array(
 	'wikilove-preview' => 'Előnézet',
 	'wikilove-notify' => 'Felhasználó értesítése e-mailben',
 	'wikilove-button-send' => 'Wikibók elküldése',
+	'wikilove-type-barnstars' => 'Barnstarok',
+	'wikilove-type-food' => 'Étel és ital',
+	'wikilove-type-kittens' => 'Cicák',
 	'wikilove-type-makeyourown' => 'Egyedi készítése',
 	'wikilove-err-header' => 'Add meg a fejlécet!',
 	'wikilove-err-title' => 'Add meg a címet!',
-	'wikilove-err-msg' => 'Add meg az üzenetet!',
+	'wikilove-err-msg' => 'Ide írd a személyes üzenetedet.',
 	'wikilove-err-image' => 'Válassz egy képet!',
 	'wikilove-err-image-bad' => 'A kép nem létezik.',
 	'wikilove-err-image-api' => 'Valami probléma történt a kép lekérése közben. Próbáld újra!',
