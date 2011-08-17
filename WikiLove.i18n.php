@@ -443,6 +443,7 @@ $messages['es'] = array(
 
 /** French (Français)
  * @author Crochet.david
+ * @author Hashar
  * @author IAlex
  * @author Jean-Frédéric
  * @author Kaldari
@@ -479,7 +480,7 @@ $messages['fr'] = array(
 	'wikilove-type-makeyourown' => 'Créez votre propre',
 	'wikilove-err-header' => "S'il vous plaît inscrire un en-tête.",
 	'wikilove-err-title' => "S'il vous plaît inscrire un titre.",
-	'wikilove-err-msg' => "S'il vous plaît inscrire un message.",
+	'wikilove-err-msg' => 'Entrez un message personnalisé.',
 	'wikilove-err-image' => "S'il vous plaît sélectionner une image.",
 	'wikilove-err-image-bad' => 'L’image n’existe pas.',
 	'wikilove-err-image-api' => 'Quelque chose n’a pas fonctionné en récupérant l’image. Veuillez réessayer.',
@@ -630,6 +631,7 @@ $messages['he'] = array(
 
 /** Hindi (हिन्दी)
  * @author Kaldari
+ * @author Mayur
  * @author Vibhijain
  */
 $messages['hi'] = array(
@@ -656,6 +658,9 @@ $messages['hi'] = array(
 	'wikilove-preview' => 'पूर्वावलोकन',
 	'wikilove-notify' => 'ई - मेल द्वारा उपयोगकर्ता को सूचित करें',
 	'wikilove-button-send' => 'विकिप्रेम भेजे',
+	'wikilove-type-barnstars' => 'बार्नस्टार(Barnstars)',
+	'wikilove-type-food' => 'खाद्य और पेय',
+	'wikilove-type-kittens' => 'नन्ही बिल्लियाँ',
 	'wikilove-type-makeyourown' => 'अपना खुद का बनाएँ',
 	'wikilove-err-header' => 'कृपया कोई शीर्षक दर्ज करें।',
 	'wikilove-err-title' => 'कृपया कोई शीर्षक दर्ज करें।',
@@ -1161,7 +1166,7 @@ $messages['nl'] = array(
 	'wikilove-type-makeyourown' => 'Uw eigen maken',
 	'wikilove-err-header' => 'Geef een koptekst op.',
 	'wikilove-err-title' => 'Geef een naam op.',
-	'wikilove-err-msg' => 'Geef een bericht op.',
+	'wikilove-err-msg' => 'Geef een persoonlijk bericht op.',
 	'wikilove-err-image' => 'Selecteer een afbeelding.',
 	'wikilove-err-image-bad' => 'Afbeelding bestaat niet.',
 	'wikilove-err-image-api' => 'Er is iets misgegaan bij het ophalen van de afbeelding. Probeer het opnieuw.',
@@ -1603,7 +1608,7 @@ $messages['vi'] = array(
 	'wikilove-type-makeyourown' => 'Làm lấy',
 	'wikilove-err-header' => 'Vui lòng đưa vào đầu đề.',
 	'wikilove-err-title' => 'Vui lòng đưa vào tựa đề.',
-	'wikilove-err-msg' => 'Vui lòng đưa vào tin nhắn.',
+	'wikilove-err-msg' => 'Vui lòng đưa vào thông điệp tùy biến.',
 	'wikilove-err-image' => 'Vui lòng chọn một hình ảnh.',
 	'wikilove-err-image-bad' => 'Hình không tồn tại.',
 	'wikilove-err-image-api' => 'Đã gặp một lỗi bất ngờ trong việc lấy hình ảnh. Hãy thử lại.',
