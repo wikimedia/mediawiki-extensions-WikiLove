@@ -189,7 +189,7 @@ $messages['ar'] = array(
 	'wikilove-type-makeyourown' => 'غير ذلك',
 	'wikilove-err-header' => 'ضع ترويسة',
 	'wikilove-err-title' => 'ضع عنوانا',
-	'wikilove-err-msg' => 'ضع رسالة',
+	'wikilove-err-msg' => 'ضع رسالتك هنا.',
 	'wikilove-err-image' => 'اختر صورة',
 	'wikilove-err-image-bad' => 'الصورة غير موجودة',
 	'wikilove-err-image-api' => 'وقع خطأ في الإتيان بالصورة. كرر المحاولة.',
@@ -683,11 +683,12 @@ $messages['hi'] = array(
  * @author Bdamokos
  * @author Dani
  * @author Kaldari
+ * @author Xbspiro
  */
 $messages['hu'] = array(
 	'wikilove-desc' => 'Létrehoz egy felületet, amely megkönnyíti a pozitív szerkesztői visszajelzéseket a szerkesztők vitalapjain.',
 	'wikilove' => 'Wikibók',
-	'wikilove-enable-preference' => 'Lehetővé teszi más szerkesztők munkájának elismerését a WikiLove fülön keresztül (kisérleti)',
+	'wikilove-enable-preference' => 'Az elismerés (WikiLove) fül engedélyezése szerkesztői lapokon. (kísérleti)',
 	'wikilove-tab-text' => 'Wikibók',
 	'tooltip-ca-wikilove' => 'Elismerő üzenet küldése ennek a felhasználónak',
 	'wikilove-dialog-title' => 'Wikibók – Küldj elismerő üzenetet egy másik felhasználónak',
