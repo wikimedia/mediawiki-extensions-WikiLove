@@ -104,7 +104,8 @@ Label for a button. Should be no longer than 22 characters.',
 Use the same translation for "header" as was used for {{msg-mw|wikilove-header}}.',
 	'wikilove-err-title' => '
 Title is the title of the wikilove box (e.g. "Barnstar")',
-	'wikilove-what-is-this' => '[[File:Wiki Love 002.png|thumb]]',
+	'wikilove-what-is-this' => '[[File:Wiki Love 002.png|thumb]]
+{{Identical|What is this}}',
 	'wikilove-commons-text' => '[[File:Wiki Love 004.png|thumb]]
 $1 gets replaced by a link with {{msg-mw|wikilove-commons-link}} ("Wikimedia Commons") as caption and {{msg-mw|wikilove-commons-url}} as URL.',
 	'wikilove-commons-url' => 'This URL can be changed to point at a localised page on Wikimedia Commons.',
@@ -1092,6 +1093,7 @@ $messages['mk'] = array(
 );
 
 /** Malayalam (മലയാളം)
+ * @author Junaidpv
  * @author Praveenp
  */
 $messages['ml'] = array(
@@ -1136,7 +1138,7 @@ $messages['ml'] = array(
 	'wikilove-summary' => '/* $1 */ പുതിയ വിക്കിസ്നേഹസന്ദേശം',
 	'wikilove-what-is-this' => 'എന്താണിത്?',
 	'wikilove-anon-warning' => 'കുറിപ്പ്: ഈ ഉപയോക്താവ് അംഗത്വമെടുത്തിട്ടില്ല, അദ്ദേഹം ഈ സന്ദേശം ശ്രദ്ധിക്കാനിടയില്ല.',
-	'wikilove-commons-text' => '$1 ബ്രൗസ് ചെയ്ത് ചിത്രങ്ങൾ കണ്ടുപിറ്റിക്കാവുന്നതാണ്.',
+	'wikilove-commons-text' => '$1 ബ്രൗസ് ചെയ്ത് ചിത്രങ്ങൾ കണ്ടുപിടിക്കാവുന്നതാണ്.',
 );
 
 /** Malay (Bahasa Melayu)
@@ -1622,6 +1624,55 @@ $messages['tl'] = array(
 	'wikilove-preview' => 'Paunang tingin',
 	'wikilove-button-send' => 'Ipadala ang WikiLove',
 	'wikilove-type-makeyourown' => 'Gumawa ng sarili mo',
+);
+
+/** Turkish (Türkçe)
+ * @author Emperyan
+ * @author Koc61
+ */
+$messages['tr'] = array(
+	'wikilove-desc' => 'Kullanıcı mesaj sayfalarına, rahatça  pozitif kullanıcı geri bildirimi yollayabilmek için bir arayüz eklemesi.',
+	'wikilove' => 'VikiAşkı',
+	'wikilove-enable-preference' => 'VikiAşkı sekmesi diğer kullanıcılara onları takdir ettiğinizi söyleme olanağı tanır (deneme aşamasında)',
+	'wikilove-tab-text' => 'VikiAşkı',
+	'tooltip-ca-wikilove' => 'Bu kullanıcıya onu takdir ettiğinizi göstermek için ileti gönderin',
+	'wikilove-dialog-title' => 'VikiAşkı - Başka kullanıcıya onu takdir etmek için ileti gönderin',
+	'wikilove-select-type' => 'Tür seçiniz',
+	'wikilove-get-started-header' => 'Haydi başlayalım!',
+	'wikilove-get-started-list-1' => 'Göndermek istediğiniz VikiAşkı türünü seçin',
+	'wikilove-get-started-list-2' => 'VikiAşkınıza ayrıntı ekleyin.',
+	'wikilove-get-started-list-3' => 'VikiAşkınızı gönderin!',
+	'wikilove-add-details' => 'Ayrıntıları ekleyin',
+	'wikilove-image' => 'Dosya adı girin:',
+	'wikilove-select-image' => 'Bir görüntü seçin:',
+	'wikilove-header' => 'Bir başlık girin:',
+	'wikilove-title' => 'Ödül başlığını girin:',
+	'wikilove-enter-message' => 'İletinizi girin:',
+	'wikilove-omit-sig' => '(imza bırakmayınız)',
+	'wikilove-image-example' => '(örnek: Merhaba.png)',
+	'wikilove-button-preview' => 'Ön izleme',
+	'wikilove-preview' => 'Ön izleme',
+	'wikilove-notify' => 'Kullanıcıyı e-posta yoluyla bildir',
+	'wikilove-button-send' => 'VikiAşkını gönder',
+	'wikilove-type-barnstars' => 'Yıldız',
+	'wikilove-type-food' => 'Yiyecek ve içecek',
+	'wikilove-type-kittens' => 'Kedicikler',
+	'wikilove-type-makeyourown' => 'Kendin hazırla',
+	'wikilove-err-header' => 'Lütfen bir başlık girin.',
+	'wikilove-err-title' => 'Lütfen bir başlık girin.',
+	'wikilove-err-msg' => 'Kişiselleştirilmiş bir ileti girin.',
+	'wikilove-err-image' => 'Lütfen bir resim seçin.',
+	'wikilove-err-image-bad' => 'Görüntü yok.',
+	'wikilove-err-image-api' => 'Resmi geri alırken bir hata oluştu. Lütfen tekrar deneyin.',
+	'wikilove-err-sig' => 'Lütfen iletiye imzanızı eklemeyin.',
+	'wikilove-err-gallery' => 'Resimleri yüklerken bir şeyler yanlış gitti.',
+	'wikilove-err-gallery-again' => 'Tekrar deneyin',
+	'wikilove-err-preview-api' => 'Ön izleme esnasında bir şeyler yanlış gitti. Lütfen tekrar deneyin.',
+	'wikilove-err-send-api' => 'İleti gönderilirken bir şeyler yanlış gitti. Lütfen tekrar deneyin.',
+	'wikilove-summary' => '/* $1 */ yeni VikiAşkı iletisi',
+	'wikilove-what-is-this' => 'Bu nedir?',
+	'wikilove-anon-warning' => 'Not: Bu kullanıcı kayıtlı değildir, bu yüzden iletinizi fark etmeyebilir.',
+	'wikilove-commons-text' => "Resimleri, $1'dan araştırarak bulabilirsiniz.",
 );
 
 /** Ukrainian (Українська)
