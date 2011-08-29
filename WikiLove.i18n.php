@@ -491,6 +491,53 @@ $messages['et'] = array(
 	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/Esileht?uselang=et',
 );
 
+/** Persian (فارسی)
+ * @author Omnia
+ */
+$messages['fa'] = array(
+	'wikilove' => 'WikiLove',
+	'wikilove-enable-preference' => 'فعال کردن نمایش قدردانی برای کاربران دیگر را با زبانه WikiLove (تجربی)',
+	'wikilove-tab-text' => 'WikiLove',
+	'tooltip-ca-wikilove' => 'پیامی برای نشان‌دادن قدردانی خود به این کاربر ارسال کنید',
+	'wikilove-dialog-title' => 'WikiLove – ارسال یک پیام قدردانی به کاربری دیگر',
+	'wikilove-select-type' => 'انتخاب نوع',
+	'wikilove-get-started-header' => 'آغاز کنید!',
+	'wikilove-get-started-list-1' => 'نوع پیامی که می‌خواهید ارسال کنید را انتخاب کنید',
+	'wikilove-get-started-list-2' => 'به پیام خود جزئیات  اضافه کنید',
+	'wikilove-get-started-list-3' => 'ارسال WikiLove شما!',
+	'wikilove-add-details' => 'اضافه کردن جزئیات',
+	'wikilove-image' => 'نام پرونده تصویر را وارد کنید:',
+	'wikilove-select-image' => 'یک تصویر را انتخاب کنید :',
+	'wikilove-header' => 'عنوان را وارد کنید:',
+	'wikilove-title' => 'یک عنوان برای پیام وارد کنید:',
+	'wikilove-enter-message' => 'پیام را وارد کنید :',
+	'wikilove-omit-sig' => '(بدون امضا)',
+	'wikilove-image-example' => '(مثال : Trophy.png)',
+	'wikilove-button-preview' => 'پیش‌نمایش',
+	'wikilove-preview' => 'پیش‌نمایش',
+	'wikilove-notify' => 'اطلاع به کاربر از طریق پست الکترونیکی',
+	'wikilove-button-send' => 'ارسال WikiLove',
+	'wikilove-type-barnstars' => 'ستاره‌ها',
+	'wikilove-type-food' => 'غذا و نوشیدنی',
+	'wikilove-type-kittens' => 'بچه گربه',
+	'wikilove-type-makeyourown' => 'خودتان بسازید',
+	'wikilove-err-header' => 'لطفا یک عنوان وارد کنید.',
+	'wikilove-err-title' => 'لطفا یک عنوان وارد کنید.',
+	'wikilove-err-msg' => 'لطفا یک پیام شخصی وارد کنید.',
+	'wikilove-err-image' => 'لطفا یک تصویر انتخاب کنید.',
+	'wikilove-err-image-bad' => 'تصویر وجود ندارد.',
+	'wikilove-err-image-api' => 'خطا در هنگام بازیابی تصویر. لطفا دوباره سعی کنید.',
+	'wikilove-err-sig' => 'لطفاً در داخل پیام امضا قرار ندهید.',
+	'wikilove-err-gallery' => 'خطا در هنگام بارگذاری تصویر.',
+	'wikilove-err-gallery-again' => 'دوباره سعی کن',
+	'wikilove-err-preview-api' => 'خطا در هنگام پیش‌نمایش، لطفا دوباره سعی کنید.',
+	'wikilove-err-send-api' => 'خطا در هنگام ارسال پیام، لطفا دوباره سعی کنید.',
+	'wikilove-summary' => '/ * $1 * /  پیام WikiLove  جدید',
+	'wikilove-what-is-this' => 'این چیست؟',
+	'wikilove-anon-warning' => 'توجه : این کاربر ثبت نشده است، او ممکن است متوجه این پیام نشود.',
+	'wikilove-commons-text' => 'برای یافتن تصاویر $1 را جستجو کنید.',
+);
+
 /** French (Français)
  * @author Crochet.david
  * @author Hashar
