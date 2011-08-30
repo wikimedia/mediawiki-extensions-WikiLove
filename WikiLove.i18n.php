@@ -495,16 +495,17 @@ $messages['et'] = array(
  * @author Omnia
  */
 $messages['fa'] = array(
+	'wikilove-desc' => 'یک رابط می‌افزاید برای تسهیل ارسال نظر مثبت کاربر به صفحه‌های بحث کاربر',
 	'wikilove' => 'WikiLove',
-	'wikilove-enable-preference' => 'فعال کردن نمایش قدردانی برای کاربران دیگر را با زبانه WikiLove (تجربی)',
+	'wikilove-enable-preference' => 'فعال کردن نمایش قدردانی برای کاربران دیگر با زبانه WikiLove (تجربی)',
 	'wikilove-tab-text' => 'WikiLove',
 	'tooltip-ca-wikilove' => 'پیامی برای نشان‌دادن قدردانی خود به این کاربر ارسال کنید',
 	'wikilove-dialog-title' => 'WikiLove – ارسال یک پیام قدردانی به کاربری دیگر',
 	'wikilove-select-type' => 'انتخاب نوع',
 	'wikilove-get-started-header' => 'آغاز کنید!',
 	'wikilove-get-started-list-1' => 'نوع پیامی که می‌خواهید ارسال کنید را انتخاب کنید',
-	'wikilove-get-started-list-2' => 'به پیام خود جزئیات  اضافه کنید',
-	'wikilove-get-started-list-3' => 'ارسال WikiLove شما!',
+	'wikilove-get-started-list-2' => 'به پیام خود جزئیات اضافه کنید',
+	'wikilove-get-started-list-3' => 'پیام خود را ارسال کنید!',
 	'wikilove-add-details' => 'اضافه کردن جزئیات',
 	'wikilove-image' => 'نام پرونده تصویر را وارد کنید:',
 	'wikilove-select-image' => 'یک تصویر را انتخاب کنید :',
@@ -516,7 +517,7 @@ $messages['fa'] = array(
 	'wikilove-button-preview' => 'پیش‌نمایش',
 	'wikilove-preview' => 'پیش‌نمایش',
 	'wikilove-notify' => 'اطلاع به کاربر از طریق پست الکترونیکی',
-	'wikilove-button-send' => 'ارسال WikiLove',
+	'wikilove-button-send' => 'ارسال پیام',
 	'wikilove-type-barnstars' => 'ستاره‌ها',
 	'wikilove-type-food' => 'غذا و نوشیدنی',
 	'wikilove-type-kittens' => 'بچه گربه',
@@ -534,8 +535,8 @@ $messages['fa'] = array(
 	'wikilove-err-send-api' => 'خطا در هنگام ارسال پیام، لطفا دوباره سعی کنید.',
 	'wikilove-summary' => '/ * $1 * /  پیام WikiLove  جدید',
 	'wikilove-what-is-this' => 'این چیست؟',
-	'wikilove-anon-warning' => 'توجه : این کاربر ثبت نشده است، او ممکن است متوجه این پیام نشود.',
-	'wikilove-commons-text' => 'برای یافتن تصاویر $1 را جستجو کنید.',
+	'wikilove-anon-warning' => 'توجه: این کاربر ثبت نشده است، او ممکن است متوجه این پیام نشود.',
+	'wikilove-commons-text' => '$1 را برای یافتن تصاویر جستجو کنید.',
 );
 
 /** French (Français)
