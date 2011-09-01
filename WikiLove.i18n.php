@@ -1095,6 +1095,42 @@ $messages['lb'] = array(
 	'wikilove-anon-warning' => 'Notiz: Dëse Benotzer ass net registréiert, hien oder si gesäit dëse Message méiglecherweis net.',
 );
 
+/** Lithuanian (Lietuvių)
+ * @author Eitvys200
+ */
+$messages['lt'] = array(
+	'wikilove' => 'Wikilove',
+	'wikilove-tab-text' => 'WikiLove',
+	'wikilove-select-type' => 'Pasirinkite tipą',
+	'wikilove-get-started-list-3' => 'Siųsti savo WikiLove!',
+	'wikilove-add-details' => 'Pridėti detales',
+	'wikilove-image' => 'Įveskite paveikslėlio failo vardą:',
+	'wikilove-select-image' => 'Pasirinkite paveikslėlį:',
+	'wikilove-header' => 'Įveskite antraštę:',
+	'wikilove-title' => 'Įveskite apdovanojimo pavadinimą:',
+	'wikilove-enter-message' => 'Įveskite žinutę:',
+	'wikilove-omit-sig' => '(be parašo)',
+	'wikilove-image-example' => '(pavyzdžiui: Trophy.png)',
+	'wikilove-button-preview' => 'Peržiūrėti',
+	'wikilove-preview' => 'Peržiūrėti',
+	'wikilove-notify' => 'Pranešti vartotojui e-paštu',
+	'wikilove-button-send' => 'Siųsti WikiLove',
+	'wikilove-type-food' => 'Maistas ir gėrimai',
+	'wikilove-type-kittens' => 'Kačiukai',
+	'wikilove-type-makeyourown' => 'Padarykite savo',
+	'wikilove-err-header' => 'Įveskite antraštę.',
+	'wikilove-err-title' => 'Prašome įveskite pavadinimą.',
+	'wikilove-err-msg' => 'Prašome įvesti asmeninį pranešimą.',
+	'wikilove-err-image' => 'Prašome pasirinkti paveikslėlį.',
+	'wikilove-err-image-bad' => 'Paveikslėlis neegzistuoja.',
+	'wikilove-err-sig' => 'Prašome neįtraukti parašo į šį pranešimą.',
+	'wikilove-err-gallery' => 'Įvyko klaida įkeliant paveikslėlius.',
+	'wikilove-err-gallery-again' => 'Bandykite dar kartą',
+	'wikilove-err-send-api' => 'Siunčiant laišką įvyko klaida. Bandykite dar kartą.',
+	'wikilove-summary' => '/ *  $1  * / nauja WikiLove žinutė',
+	'wikilove-what-is-this' => 'Kas tai?',
+);
+
 /** Macedonian (Македонски)
  * @author Bjankuloski06
  */
