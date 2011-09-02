@@ -631,6 +631,7 @@ $messages['frp'] = array(
 	'wikilove-err-gallery-again' => 'Tornâd èprovar',
 	'wikilove-summary' => '/* $1 */ mèssâjo novél VouiquiAmôr',
 	'wikilove-what-is-this' => 'Qu’est-o qu’il est ?',
+	'wikilove-commons-text' => 'Vos pouede trovar des émâges en dèfelent dessus $1.',
 );
 
 /** Galician (Galego)
@@ -1528,6 +1529,53 @@ $messages['pt-br'] = array(
 	'wikilove-commons-text' => 'Pode encontrar imagens pesquisando-as em $1.',
 );
 
+/** Romanian (Română)
+ * @author Firilacroco
+ */
+$messages['ro'] = array(
+	'wikilove-desc' => 'Adaugă o interfață pentru facilitarea publicării părerilor bune despre un utilizator, pe pagina de discuții a acestuia',
+	'wikilove' => 'WikiLove',
+	'wikilove-enable-preference' => 'Activează afișarea aprecierii pentru alți utilizatori cu fila WikiLove (experimental)',
+	'wikilove-tab-text' => 'WikiLove',
+	'wikilove-dialog-title' => 'WikiLove - Trimiteți un mesaj de apreciere unui alt utilizator',
+	'wikilove-select-type' => 'Selectați tipul',
+	'wikilove-get-started-header' => 'Să începem!',
+	'wikilove-get-started-list-1' => 'Selectați tipul de WikiLove pe care doriți să îl trimiteți',
+	'wikilove-get-started-list-2' => 'Adaugați detalii',
+	'wikilove-get-started-list-3' => 'Trimiteți WikiLove!',
+	'wikilove-add-details' => 'Adăugați detalii',
+	'wikilove-image' => 'Introduceți numele unui fișier:',
+	'wikilove-select-image' => 'Selectați o imagine:',
+	'wikilove-header' => 'Introduceți un titlu:',
+	'wikilove-title' => 'Introduceți un titlu de recompensă:',
+	'wikilove-enter-message' => 'Introduceți un mesaj:',
+	'wikilove-omit-sig' => '(fără semnătură)',
+	'wikilove-image-example' => '(exemplu: Trophy.png)',
+	'wikilove-button-preview' => 'Previzualizare',
+	'wikilove-preview' => 'Previzualizare',
+	'wikilove-notify' => 'Notificați utilizatorul prin e-mail',
+	'wikilove-button-send' => 'Trimiteți WikiLove',
+	'wikilove-type-barnstars' => 'Medalie',
+	'wikilove-type-food' => 'Mâncare și băutură',
+	'wikilove-type-kittens' => 'Pisoi',
+	'wikilove-type-makeyourown' => 'Creați-vă propriul',
+	'wikilove-err-header' => 'Introduceți un titlu.',
+	'wikilove-err-title' => 'Introduceți un titlu.',
+	'wikilove-err-msg' => 'Introduceți un mesaj personalizat.',
+	'wikilove-err-image' => 'Alegeți o imagine.',
+	'wikilove-err-image-bad' => 'Imaginea nu există.',
+	'wikilove-err-image-api' => 'Ceva nu a mers bine atunci când preluam imaginea. Încercați din nou.',
+	'wikilove-err-sig' => 'Nu includeți semnătura în mesaj.',
+	'wikilove-err-gallery' => 'Ceva nu a mers bine la încărcarea imaginilor.',
+	'wikilove-err-gallery-again' => 'Încercați din nou',
+	'wikilove-err-preview-api' => 'Ceva nu a mers bine în timpul previzualizării. Încercați din nou.',
+	'wikilove-err-send-api' => 'Ceva nu a mers bine la trimiterea mesajului. Încercați din nou.',
+	'wikilove-summary' => '/* $1 */ mesaj WikiLove nou',
+	'wikilove-what-is-this' => 'Ce este aceasta?',
+	'wikilove-anon-warning' => 'Notă: Acest utilizator nu este înregistrat, el sau ea s-ar putea să nu observe mesajul.',
+	'wikilove-commons-text' => 'Puteți găsi imagini răsfoind $1.',
+);
+
 /** Tarandíne (Tarandíne)
  * @author Joetaras
  */
@@ -1687,6 +1735,8 @@ $messages['sv'] = array(
 $messages['te'] = array(
 	'wikilove-add-details' => 'వివరాలను చేర్చు',
 	'wikilove-title' => 'ఒక శీర్షికను ఇవ్వండి:',
+	'wikilove-err-gallery-again' => 'మళ్ళీ ప్రయత్నించండి',
+	'wikilove-what-is-this' => 'ఇది ఏమిటి?',
 );
 
 /** Tagalog (Tagalog)
