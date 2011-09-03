@@ -208,6 +208,7 @@ $messages['ar'] = array(
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
+ * @author Renessaince
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
@@ -240,7 +241,7 @@ $messages['be-tarask'] = array(
 	'wikilove-type-makeyourown' => 'Зрабіць уласны',
 	'wikilove-err-header' => 'Калі ласка, увядзіце загаловак.',
 	'wikilove-err-title' => 'Калі ласка, увядзіце назву.',
-	'wikilove-err-msg' => 'Калі ласка, увядзіце паведамленьне.',
+	'wikilove-err-msg' => 'Калі ласка, увядзіце пэрсаналізаванае паведамленьне.',
 	'wikilove-err-image' => 'Калі ласка, выберыце выяву.',
 	'wikilove-err-image-bad' => 'Выява не існуе.',
 	'wikilove-err-image-api' => 'Нешта пайшло ня так, падчас атрыманьня выявы. Калі ласка, паспрабуйце зноў.',
@@ -330,6 +331,33 @@ $messages['bs'] = array(
 	'wikilove-preview' => 'Pregled',
 );
 
+/** Danish (Dansk)
+ * @author Peter Alberti
+ */
+$messages['da'] = array(
+	'wikilove-select-type' => 'Vælg type',
+	'wikilove-add-details' => 'Tilføj detaljer',
+	'wikilove-image' => 'Angiv filnavnet for et billede:',
+	'wikilove-select-image' => 'Vælg et billede:',
+	'wikilove-header' => 'Angiv en overskrift:',
+	'wikilove-enter-message' => 'Skriv en besked:',
+	'wikilove-omit-sig' => '(uden signatur)',
+	'wikilove-image-example' => '(eksempel: Trophy.png)',
+	'wikilove-button-preview' => 'Forhåndsvisning',
+	'wikilove-preview' => 'Forhåndsvisning',
+	'wikilove-type-food' => 'Mad og drikke',
+	'wikilove-type-kittens' => 'Killinger',
+	'wikilove-type-makeyourown' => 'Lav din egen',
+	'wikilove-err-header' => 'Skriv venligst en overskrift.',
+	'wikilove-err-title' => 'Skriv venligst en titel.',
+	'wikilove-err-msg' => 'Skriv venligst en personlig besked.',
+	'wikilove-err-image' => 'Vælg venligst et billede.',
+	'wikilove-err-image-bad' => 'Billedet findes ikke.',
+	'wikilove-err-gallery-again' => 'Prøv igen',
+	'wikilove-what-is-this' => 'Hvad er dette?',
+	'wikilove-commons-text' => 'Du kan finde billeder ved at gennemse $1.',
+);
+
 /** German (Deutsch)
  * @author Kghbln
  */
@@ -392,6 +420,86 @@ $messages['de-formal'] = array(
 	'wikilove-err-gallery-again' => 'Bitte versuchen Sie es erneut.',
 	'wikilove-err-preview-api' => 'Während der Vorschau ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.',
 	'wikilove-err-send-api' => 'Während des Sendens der Wertschätzung ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.',
+);
+
+/** Greek (Ελληνικά)
+ * @author ZaDiak
+ */
+$messages['el'] = array(
+	'wikilove' => 'ΒικιΑγάπη',
+	'wikilove-tab-text' => 'ΒικιΑγάπη',
+	'wikilove-select-type' => 'Επιλογή τύπου',
+	'wikilove-get-started-header' => 'Ας αρχίσουμε!',
+	'wikilove-get-started-list-3' => 'Στείλτε τη ΒικιΑγάπη σας!',
+	'wikilove-add-details' => 'Προσθήκη λεπτομερειών',
+	'wikilove-image' => 'Εισάγετε ένα όνομα αρχείου της εικόνας:',
+	'wikilove-select-image' => 'Επιλέξτε μια εικόνα:',
+	'wikilove-header' => 'Εισαγάγετε μια επικεφαλίδα:',
+	'wikilove-enter-message' => 'Εισάγετε ένα μήνυμα:',
+	'wikilove-omit-sig' => '(χωρίς υπογραφή)',
+	'wikilove-button-preview' => 'Προεπισκόπηση',
+	'wikilove-preview' => 'Προεπισκόπηση',
+	'wikilove-notify' => 'Ειδοποίηση του χρήστη μέσω e-mail',
+	'wikilove-button-send' => 'Αποστολή ΒικιΑγάπης',
+	'wikilove-type-food' => 'Τρόφιμα και ποτά',
+	'wikilove-type-kittens' => 'Γατάκια',
+	'wikilove-type-makeyourown' => 'Κάντε δικό σας',
+	'wikilove-err-header' => 'Παρακαλώ εισάγετε μια επικεφαλίδα.',
+	'wikilove-err-title' => 'Παρακαλώ εισάγετε έναν τίτλο.',
+	'wikilove-err-image' => 'Παρακαλώ επιλέξτε μια εικόνα.',
+	'wikilove-err-image-bad' => 'Η εικόνα δεν υπάρχει.',
+	'wikilove-err-gallery-again' => 'Δοκιμάστε ξανά',
+	'wikilove-what-is-this' => 'Τι είναι αυτό;',
+	'wikilove-anon-warning' => 'Σημείωση: Αυτός ο χρήστης δεν είναι εγγεγραμμένος, μπορεί να μην παρατηρήσει αυτό το μήνυμα.',
+	'wikilove-commons-text' => 'Μπορείτε να βρείτε εικόνες από την περιήγηση στο $1.',
+);
+
+/** Esperanto (Esperanto)
+ * @author Yekrats
+ */
+$messages['eo'] = array(
+	'wikilove-desc' => 'Aldonas interfacon por sendi aprezajn mesaĝojn al la diskutopaĝoj de uzanto',
+	'wikilove' => 'VikiAmo',
+	'wikilove-enable-preference' => 'Ŝalti montradon de aprezo por aliaj uzantoj per la etikedo VikiAmo (eksperimenta)',
+	'wikilove-tab-text' => 'VikiAmo',
+	'tooltip-ca-wikilove' => 'Afiŝu mesaĝon por ĉi tiu uzanto por montri vian aprezon',
+	'wikilove-dialog-title' => 'VikiAmo - Sendi mesaĝon pri estimo al alia uzanto',
+	'wikilove-select-type' => 'Elektu tipon',
+	'wikilove-get-started-header' => 'Ek!',
+	'wikilove-get-started-list-1' => 'Elektu la tipon de VikiAmo kiun vi volas sendi.',
+	'wikilove-get-started-list-2' => 'Aldoni detalojn de via VikiAmo',
+	'wikilove-get-started-list-3' => 'Sendu VikiAmon!',
+	'wikilove-add-details' => 'Aldoni detalojn',
+	'wikilove-image' => 'Enigi dosiernomon de bildo:',
+	'wikilove-select-image' => 'Elekti bildon:',
+	'wikilove-header' => 'Enigi ĉeflinion:',
+	'wikilove-title' => 'Enigi titolon de premio:',
+	'wikilove-enter-message' => 'Enigi mesaĝon:',
+	'wikilove-omit-sig' => '(sen subskribo)',
+	'wikilove-image-example' => '(ekzemplo: Trophy.png)',
+	'wikilove-button-preview' => 'Antaŭvido',
+	'wikilove-preview' => 'Antaŭvido',
+	'wikilove-notify' => 'Notigi la uzanton per retpoŝto',
+	'wikilove-button-send' => 'Sendu VikiAmon',
+	'wikilove-type-barnstars' => 'Estimo-markoj',
+	'wikilove-type-food' => 'Manĝaĵoj kaj trinkaĵoj',
+	'wikilove-type-kittens' => 'Katidoj',
+	'wikilove-type-makeyourown' => 'Fari originalan',
+	'wikilove-err-header' => 'Bonvolu enigi ĉeflinion.',
+	'wikilove-err-title' => 'Bonvolu enigi titolon.',
+	'wikilove-err-msg' => 'Bonvolu enigi personan mesaĝon.',
+	'wikilove-err-image' => 'Bonvolu elekti bildon.',
+	'wikilove-err-image-bad' => 'Bildo ne ekzistas.',
+	'wikilove-err-image-api' => 'Io fuŝis kiam tenante la bildon. Bonvolu reprovi.',
+	'wikilove-err-sig' => 'Bonvolu ne inkluzivi personan subskribon en la mesaĝon',
+	'wikilove-err-gallery' => 'Kio fuŝis kiam ŝarĝante bildojn.',
+	'wikilove-err-gallery-again' => 'Reprovi',
+	'wikilove-err-preview-api' => 'Iu fuŝis dum antaŭvidado. Bonvolu reprovi.',
+	'wikilove-err-send-api' => 'Iu fuŝis kiam sendante la mesaĝon. Bonvolu reprovi.',
+	'wikilove-summary' => '/* $1 */ nova mesaĝo VikiAmo',
+	'wikilove-what-is-this' => 'Kio estas?',
+	'wikilove-anon-warning' => 'Notu: Ĉi tiu uzanto ne estas registrita, do li aŭ ŝi eble ne notos ĉi tiun mesaĝon.',
+	'wikilove-commons-text' => 'Vi povas trovi bildojn krozante $1.',
 );
 
 /** Spanish (Español)
@@ -886,6 +994,7 @@ $messages['ia'] = array(
 /** Indonesian (Bahasa Indonesia)
  * @author Iwan Novirion
  * @author Kaldari
+ * @author Kenrick95
  */
 $messages['id'] = array(
 	'wikilove-desc' => 'Menambahkan penghargaan ke halaman pembicaraan pengguna atas kontribusi positifnya',
@@ -905,8 +1014,17 @@ $messages['id'] = array(
 	'wikilove-preview' => 'Pratayang',
 	'wikilove-notify' => 'Beritahu pengguna dengan e-mail',
 	'wikilove-button-send' => 'Kirim WikiSalut',
+	'wikilove-type-barnstars' => 'BintangWiki',
+	'wikilove-type-food' => 'Makanan dan minuman',
+	'wikilove-type-kittens' => 'Kucing',
 	'wikilove-type-makeyourown' => 'Coba buat sendiri',
+	'wikilove-err-header' => 'Silakan masukkan kepala.',
+	'wikilove-err-title' => 'Silakan masukkan judul.',
+	'wikilove-err-msg' => 'Silakan masukkan pesan pribadi.',
+	'wikilove-err-image' => 'Silakan pilih gambar.',
 	'wikilove-err-image-bad' => 'Gambar tidak ada.',
+	'wikilove-err-image-api' => 'Sesuatu tidak beres ketika mengambil gambar. Silakan coba lagi.',
+	'wikilove-err-sig' => 'Mohon tidak menyertakan tanda tangan dalam pesan.',
 	'wikilove-err-gallery-again' => 'Coba lagi',
 	'wikilove-summary' => '/ * $1 * / pesan WikiSalut baru',
 	'wikilove-what-is-this' => 'Apa ini?',
@@ -1088,6 +1206,7 @@ $messages['lb'] = array(
 	'wikilove-err-image' => 'Sicht w.e.g. e Bild eraus.',
 	'wikilove-err-image-bad' => 'Bild gëtt et net.',
 	'wikilove-err-image-api' => 'Beim Opruffe vum Bild ass eppes schif gaang. Probéiert et w.e.g. nach emol.',
+	'wikilove-err-sig' => 'Setzt w.e.g. keng Ënnerschrëft an dëse Message.',
 	'wikilove-err-gallery' => 'Beim Luede vun de Biller huet eppes net fonctionnéiert.',
 	'wikilove-err-gallery-again' => 'Probéiert nach emol',
 	'wikilove-err-send-api' => 'Beim Schécke vun der Noriicht ass eppes schif gaang. Probéiert et w.e.g. nach emol.',
@@ -1482,6 +1601,7 @@ $messages['pt'] = array(
 
 /** Brazilian Portuguese (Português do Brasil)
  * @author Kaldari
+ * @author MetalBrasil
  * @author Raylton P. Sousa
  */
 $messages['pt-br'] = array(
@@ -1514,7 +1634,7 @@ $messages['pt-br'] = array(
 	'wikilove-type-makeyourown' => 'Crie o seu',
 	'wikilove-err-header' => 'Introduza um cabeçalho, por favor.',
 	'wikilove-err-title' => 'Introduza um título, por favor.',
-	'wikilove-err-msg' => 'Introduza uma mensagem, por favor.',
+	'wikilove-err-msg' => 'Por favor, insira uma mensagem personalizada.',
 	'wikilove-err-image' => 'Escolha uma imagem, por favor.',
 	'wikilove-err-image-bad' => 'A imagem não existe.',
 	'wikilove-err-image-api' => 'Ocorreu um erro ao tentar recuperar à imagem. Tente novamente, por favor.',
@@ -1815,10 +1935,50 @@ $messages['tr'] = array(
 );
 
 /** Ukrainian (Українська)
+ * @author Dim Grits
  * @author Microcell
  */
 $messages['uk'] = array(
+	'wikilove-desc' => 'Додає інтерфейс для залишення позитивних відгуків на сторінці обговорення користувача',
 	'wikilove' => 'Вікісимпатія',
+	'wikilove-enable-preference' => 'Увімкнути інструмент Вікісимпатії, для полегшення виразу вдячності іншим користувачам (експериментально)',
+	'wikilove-tab-text' => 'Вікісимпатія',
+	'tooltip-ca-wikilove' => 'Надіслати повідомлення для цього користувача, виразити вашу вдячність',
+	'wikilove-dialog-title' => 'Вікісимпатія - Ваша вдячність іншому користувачеві',
+	'wikilove-select-type' => 'Оберіть тип',
+	'wikilove-get-started-header' => 'Почнемо!',
+	'wikilove-get-started-list-1' => 'Виберіть тип Вікісимпатії, яку ви хочете відправити',
+	'wikilove-get-started-list-2' => 'Додайте подробиць до вашої Вікісимпатії',
+	'wikilove-get-started-list-3' => 'Надіслати Вікісимпатію!',
+	'wikilove-add-details' => 'Додати подробиць',
+	'wikilove-image' => "Введіть ім'я файлу зображення:",
+	'wikilove-select-image' => 'Виберіть зображення:',
+	'wikilove-header' => 'Введіть заголовок:',
+	'wikilove-title' => 'Введіть назву нагороди:',
+	'wikilove-enter-message' => 'Напишіть текст повідомлення:',
+	'wikilove-omit-sig' => '(без підпису)',
+	'wikilove-image-example' => '(наприклад: Trophy.png)',
+	'wikilove-button-preview' => 'Попередній перегляд',
+	'wikilove-preview' => 'Попередній перегляд',
+	'wikilove-notify' => 'Повідомити користувача електронним листом',
+	'wikilove-button-send' => 'Надіслати Вікісимпатію',
+	'wikilove-type-barnstars' => 'Вікізірки',
+	'wikilove-type-food' => 'Їжа та напої',
+	'wikilove-type-kittens' => 'Пухнастики',
+	'wikilove-type-makeyourown' => 'Зробити свій власний',
+	'wikilove-err-header' => 'Будь ласка, введіть заголовок.',
+	'wikilove-err-title' => 'Будь ласка, введіть назву.',
+	'wikilove-err-msg' => 'Будь ласка, напишіть персональне повідомлення.',
+	'wikilove-err-image' => 'Будь ласка, виберіть зображення.',
+	'wikilove-err-image-bad' => 'Такого зображення не існує.',
+	'wikilove-err-image-api' => 'Щось пішло не так при отриманні зображення. Будь ласка, спробуйте ще раз.',
+	'wikilove-err-sig' => 'Будь ласка, не потрібно включати підпис у повідомлення.',
+	'wikilove-err-gallery' => 'Щось пішло не так при завантаженні зображень.',
+	'wikilove-err-gallery-again' => 'Спробуйте ще раз',
+	'wikilove-err-preview-api' => 'Щось пішло не так під час перегляду. Будь ласка, спробуйте ще раз.',
+	'wikilove-summary' => '/* $1 */ нова Вікісимпатія',
+	'wikilove-what-is-this' => 'Що це?',
+	'wikilove-commons-text' => 'Ви можете знайти зображення в проекті $1.',
 );
 
 /** Vietnamese (Tiếng Việt)
