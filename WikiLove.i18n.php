@@ -335,16 +335,30 @@ $messages['bs'] = array(
  * @author Peter Alberti
  */
 $messages['da'] = array(
+	'wikilove-desc' => 'Tilføjer en brugerflade til at hjælpe med at give positive tilbagemeldinger til brugeres diskussionssider',
+	'wikilove' => 'WikiLove',
+	'wikilove-enable-preference' => 'Gør det muligt at vise påskønnelse af andre brugere ved hjælp af fanebladet WikiLove (eksperimentel)',
+	'wikilove-tab-text' => 'WikiLove',
+	'tooltip-ca-wikilove' => 'Læg en besked, der viser din påskønnelse af denne bruger',
+	'wikilove-dialog-title' => 'WikiLove – Send en besked, der viser påskønnelse af en anden bruger',
 	'wikilove-select-type' => 'Vælg type',
+	'wikilove-get-started-header' => 'Lad os komme i gang!',
+	'wikilove-get-started-list-1' => 'Vælg den type WikiLove, du ønsker at sende',
+	'wikilove-get-started-list-2' => 'Tilføj detaljer til din WikiLove',
+	'wikilove-get-started-list-3' => 'Send din WikiLove!',
 	'wikilove-add-details' => 'Tilføj detaljer',
 	'wikilove-image' => 'Angiv filnavnet for et billede:',
 	'wikilove-select-image' => 'Vælg et billede:',
 	'wikilove-header' => 'Angiv en overskrift:',
+	'wikilove-title' => 'Indtast en titel for æresbevisningen:',
 	'wikilove-enter-message' => 'Skriv en besked:',
 	'wikilove-omit-sig' => '(uden signatur)',
 	'wikilove-image-example' => '(eksempel: Trophy.png)',
 	'wikilove-button-preview' => 'Forhåndsvisning',
 	'wikilove-preview' => 'Forhåndsvisning',
+	'wikilove-notify' => 'Underret brugeren per email',
+	'wikilove-button-send' => 'Send WikiLove',
+	'wikilove-type-barnstars' => 'Barnstars',
 	'wikilove-type-food' => 'Mad og drikke',
 	'wikilove-type-kittens' => 'Killinger',
 	'wikilove-type-makeyourown' => 'Lav din egen',
@@ -353,8 +367,15 @@ $messages['da'] = array(
 	'wikilove-err-msg' => 'Skriv venligst en personlig besked.',
 	'wikilove-err-image' => 'Vælg venligst et billede.',
 	'wikilove-err-image-bad' => 'Billedet findes ikke.',
+	'wikilove-err-image-api' => 'Noget gik galt, da billedet skulle hentes. Prøv venligst igen.',
+	'wikilove-err-sig' => 'Inkluder venligst ikke en signatur i beskeden.',
+	'wikilove-err-gallery' => 'Noget gik galt under indlæsningen af billederne.',
 	'wikilove-err-gallery-again' => 'Prøv igen',
+	'wikilove-err-preview-api' => 'Noget gik galt under forhåndsvisningen. Prøv venligst igen.',
+	'wikilove-err-send-api' => 'Noget gik galt, da beskeden skulle sendes. Prøv venligst igen.',
+	'wikilove-summary' => '/* $1 */ ny WikiLove-besked',
 	'wikilove-what-is-this' => 'Hvad er dette?',
+	'wikilove-anon-warning' => 'Bemærk: Denne bruger er ikke registreret, han eller hun vil måske ikke bemærke denne besked.',
 	'wikilove-commons-text' => 'Du kan finde billeder ved at gennemse $1.',
 );
 
@@ -1753,6 +1774,44 @@ $messages['ru'] = array(
 	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/Main_Page?uselang=ru',
 );
 
+/** Rusyn (Русиньскый)
+ * @author Gazeb
+ */
+$messages['rue'] = array(
+	'wikilove-desc' => 'Додасть інтерфейс про зохаблїня позітівных одозв на сторінцї діскузії хоснователя',
+	'wikilove' => 'Вікісімпатія',
+	'wikilove-tab-text' => 'Вікісімпатія',
+	'tooltip-ca-wikilove' => 'Послати повідомлїня про того хоснователя, указати вашу вдячность',
+	'wikilove-dialog-title' => 'Вікісімпатія - Ваша вдячность іншому хоснователёви',
+	'wikilove-select-type' => 'Выберьте тіп',
+	'wikilove-get-started-header' => 'Зачнеме!',
+	'wikilove-get-started-list-1' => 'Выберьте тіп Вікісімпатії, яку хочете одослати',
+	'wikilove-get-started-list-2' => 'Додайте детайлы то вашой Вікісімпатії',
+	'wikilove-get-started-list-3' => 'Послати вашу Вікісімпатію!',
+	'wikilove-add-details' => 'Додати детайлы',
+	'wikilove-image' => 'Уведьте назву файлу образчіка:',
+	'wikilove-select-image' => 'Выберьте образчік:',
+	'wikilove-enter-message' => 'Напиште текст повідомлїня:',
+	'wikilove-omit-sig' => '(без підпису)',
+	'wikilove-image-example' => '(наприклад: Trophy.png)',
+	'wikilove-button-preview' => 'Нагляд',
+	'wikilove-preview' => 'Нагляд',
+	'wikilove-notify' => 'Повідомити хоснователя імейлом',
+	'wikilove-button-send' => 'Послати Вікісімпатію',
+	'wikilove-type-barnstars' => 'Вікізвізды',
+	'wikilove-type-food' => 'Їдло і напої',
+	'wikilove-type-kittens' => 'Мачатка',
+	'wikilove-type-makeyourown' => 'Зробити свій властный',
+	'wikilove-err-header' => 'Просиме, уведьте назву.',
+	'wikilove-err-title' => 'Просиме, уведьте назву.',
+	'wikilove-err-msg' => 'Просиме, напиште персоналне повідомлїня.',
+	'wikilove-err-image' => 'Просиме, выберьте образчік.',
+	'wikilove-err-image-bad' => 'Образчік не екзістує.',
+	'wikilove-err-gallery-again' => 'Спробуйте щі раз',
+	'wikilove-summary' => '/* $1 */ нова Вікісімпатія',
+	'wikilove-what-is-this' => 'Што є тото?',
+);
+
 /** Slovenian (Slovenščina)
  * @author Dbc334
  */
@@ -1976,8 +2035,10 @@ $messages['uk'] = array(
 	'wikilove-err-gallery' => 'Щось пішло не так при завантаженні зображень.',
 	'wikilove-err-gallery-again' => 'Спробуйте ще раз',
 	'wikilove-err-preview-api' => 'Щось пішло не так під час перегляду. Будь ласка, спробуйте ще раз.',
+	'wikilove-err-send-api' => 'Щось пішло не так під час надсилання повідомлення. Будь ласка, спробуйте ще раз.',
 	'wikilove-summary' => '/* $1 */ нова Вікісимпатія',
 	'wikilove-what-is-this' => 'Що це?',
+	'wikilove-anon-warning' => 'Примітка: Цей користувач не зареєстрований, він чи вона може не помітити це повідомлення.',
 	'wikilove-commons-text' => 'Ви можете знайти зображення в проекті $1.',
 );
 
