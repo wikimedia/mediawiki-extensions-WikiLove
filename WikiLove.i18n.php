@@ -727,8 +727,11 @@ $messages['fr'] = array(
  * @author Kaldari
  */
 $messages['frp'] = array(
+	'wikilove-desc' => 'Apond una entèrface por facilitar la rètroaccion positiva sur la pâge de discussion a un utilisator.',
 	'wikilove' => 'VouiquiAmôr',
+	'wikilove-enable-preference' => 'Activar l’ongllèta VouiquiAmôr que sèrvét a endicar ux ôtros contributors voutra aprèciacion (èxpèrimentâl)',
 	'wikilove-tab-text' => 'VouiquiAmôr',
+	'tooltip-ca-wikilove' => 'Postar un mèssâjo a ceti utilisator por endicar voutra aprèciacion',
 	'wikilove-dialog-title' => 'VouiquiAmôr – Mandâd un mèssâjo de remarciement a un ôtro utilisator',
 	'wikilove-select-type' => 'Chouèsésséd lo tipo',
 	'wikilove-get-started-header' => 'Comencens !',
@@ -756,10 +759,15 @@ $messages['frp'] = array(
 	'wikilove-err-msg' => 'Volyéd buchiér un mèssâjo pèrsonalisâ.',
 	'wikilove-err-image' => 'Volyéd chouèsir una émâge.',
 	'wikilove-err-image-bad' => 'L’émâge ègziste pas.',
+	'wikilove-err-image-api' => 'Quârque-ren s’est mâl passâ pendent la rècupèracion de l’émâge. Volyéd tornar èprovar.',
 	'wikilove-err-sig' => 'Volyéd pas encllure una signatura dens lo mèssâjo.',
+	'wikilove-err-gallery' => 'Quârque-ren s’est mâl passâ pendent lo tèlèchargement de les émâges.',
 	'wikilove-err-gallery-again' => 'Tornâd èprovar',
+	'wikilove-err-preview-api' => 'Quârque-ren s’est mâl passâ pendent la prèvisualisacion. Volyéd tornar èprovar.',
+	'wikilove-err-send-api' => 'Quârque-ren s’est mâl passâ pendent l’èxpèdicion du mèssâjo. Volyéd tornar èprovar.',
 	'wikilove-summary' => '/* $1 */ mèssâjo novél VouiquiAmôr',
 	'wikilove-what-is-this' => 'Qu’est-o qu’il est ?',
+	'wikilove-anon-warning' => 'Nota : ceti utilisator est pas encartâ, il ou ben el pôt pas vêre cél mèssâjo.',
 	'wikilove-commons-text' => 'Vos pouede trovar des émâges en dèfelent dessus $1.',
 );
 
@@ -1129,6 +1137,9 @@ $messages['ja'] = array(
 	'wikilove-preview' => 'プレビュー',
 	'wikilove-notify' => '電子メールでこの利用者に通知する',
 	'wikilove-button-send' => 'ウィキラブを送る',
+	'wikilove-type-barnstars' => 'バーンスター',
+	'wikilove-type-food' => '食べ物と飲み物',
+	'wikilove-type-kittens' => '仔猫',
 	'wikilove-type-makeyourown' => '自作する',
 	'wikilove-err-header' => '表題を入力してください。',
 	'wikilove-err-title' => '賞の名前を入力してください。',
@@ -1471,6 +1482,7 @@ $messages['nl'] = array(
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Cocu
+ * @author Jon Harald Søby
  * @author Stigmj
  */
 $messages['no'] = array(
@@ -1497,11 +1509,13 @@ $messages['no'] = array(
 	'wikilove-preview' => 'Forhåndsvis',
 	'wikilove-notify' => 'Varsle brukeren via e-post',
 	'wikilove-button-send' => 'Send WikiLove',
+	'wikilove-type-barnstars' => 'Stjerner',
 	'wikilove-type-food' => 'Mat og drikke',
+	'wikilove-type-kittens' => 'Kattunger',
 	'wikilove-type-makeyourown' => 'Lag din egen',
 	'wikilove-err-header' => 'Vennligst skriv inn en overskrift.',
 	'wikilove-err-title' => 'Vennligst skriv inn en tittel.',
-	'wikilove-err-msg' => 'Vennligst skriv inn en melding.',
+	'wikilove-err-msg' => 'Skriv inn en personlig melding.',
 	'wikilove-err-image' => 'Vennligst velg et bilde.',
 	'wikilove-err-image-bad' => 'Bildet finnes ikke.',
 	'wikilove-err-image-api' => 'Noe gikk galt under henting av bildet. Vennligst prøv igjen.',
