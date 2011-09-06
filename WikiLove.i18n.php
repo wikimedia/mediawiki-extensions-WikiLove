@@ -138,10 +138,13 @@ $messages['af'] = array(
 	'wikilove-preview' => 'Voorskou',
 	'wikilove-notify' => "Stuur gebruiker 'n kennisgewing via E-pos",
 	'wikilove-button-send' => 'Stuur Wikiwaardering',
+	'wikilove-type-barnstars' => 'Sterre',
+	'wikilove-type-food' => 'Kos en drank',
+	'wikilove-type-kittens' => 'Katjies',
 	'wikilove-type-makeyourown' => 'Maak u eie',
 	'wikilove-err-header' => "Verskaf asseblief 'n opskrif.",
 	'wikilove-err-title' => "Verskaf asseblief 'n titel.",
-	'wikilove-err-msg' => "Verskaf asseblief 'n boodskap.",
+	'wikilove-err-msg' => "Verskaf asseblief 'n persoonlike boodskap.",
 	'wikilove-err-image' => "Kies asseblief 'n beeld.",
 	'wikilove-err-image-bad' => 'Beeld bestaan ​​nie.',
 	'wikilove-err-image-api' => 'Laai van beeld het gefaal. Probeer asseblief weer.',
@@ -1578,6 +1581,55 @@ $messages['pl'] = array(
 	'wikilove-commons-text' => 'Możesz znaleźć obrazki przeglądając $1.',
 );
 
+/** Piedmontese (Piemontèis)
+ * @author Borichèt
+ * @author Dragonòt
+ */
+$messages['pms'] = array(
+	'wikilove-desc' => "A gionta n'antërfassa për facilité ij coment positiv ëd j'utent ansima a le pàgine ëd ciaciarade dj'utent",
+	'wikilove' => 'WikiLove',
+	'wikilove-enable-preference' => "Abilité la possibilità ëd mostre dl'apressiament për d'àutri utent con la scheda WikiLove (sperimental)",
+	'wikilove-tab-text' => 'WikiLove',
+	'tooltip-ca-wikilove' => 'Spedì un mëssagi a cost utent për mostreje sò apressiament',
+	'wikilove-dialog-title' => "WikiLove - Ch'a manda un mëssagi d'apressiament a n'àutr utent",
+	'wikilove-select-type' => 'Selessioné la sòrt',
+	'wikilove-get-started-header' => 'Ancaminoma!',
+	'wikilove-get-started-list-1' => "Selession-a la sòrt ëd WikiLove ch'it veule mandé",
+	'wikilove-get-started-list-2' => "Ch'a gionta dij detaj a sò WikiLove",
+	'wikilove-get-started-list-3' => 'Manda tò WIkiLove!',
+	'wikilove-add-details' => 'Gionté dij detaj',
+	'wikilove-image' => "Ch'a anserissa ël nòm ëd l'archivi ëd figura:",
+	'wikilove-select-image' => 'Selession-a na figura:',
+	'wikilove-header' => "Ch'a buta n'antestassion:",
+	'wikilove-title' => 'Anseriss un tìtol ëd premi:',
+	'wikilove-enter-message' => 'Anseriss un mëssagi:',
+	'wikilove-omit-sig' => '(sensa na firma)',
+	'wikilove-image-example' => '(esempi: Trophy.png)',
+	'wikilove-button-preview' => 'Preuva',
+	'wikilove-preview' => 'Preuva',
+	'wikilove-notify' => "Avisa l'utent për corel",
+	'wikilove-button-send' => 'Manda WikiLove',
+	'wikilove-type-barnstars' => 'Barnstars',
+	'wikilove-type-food' => 'Mangé e beive',
+	'wikilove-type-kittens' => 'Gatin',
+	'wikilove-type-makeyourown' => 'Fà ël tò',
+	'wikilove-err-header' => "Për piasì ch'a buta na testà.",
+	'wikilove-err-title' => "Për piasì ch'a buta un tìtol.",
+	'wikilove-err-msg' => "Për piasì ch'a buta un mëssagi përsonalisà.",
+	'wikilove-err-image' => 'Për piasì selession-a na figura.',
+	'wikilove-err-image-bad' => 'La figura a esist pa.',
+	'wikilove-err-image-api' => "Quaicòs a l'é andàit mal an pëscand la figura. Për piasì preuva torna.",
+	'wikilove-err-sig' => 'Për piasì buta pa na firma ant ël mëssagi.',
+	'wikilove-err-gallery' => "Quaicòs a l'é andàit mal an cariand le figure.",
+	'wikilove-err-gallery-again' => 'Preuva torna',
+	'wikilove-err-preview-api' => "Quaicòs a l'é andàit mal an mente dla preuva. Për piasì preuva torna.",
+	'wikilove-err-send-api' => "Quaicòs a l'é andàit mal an mandand ël mëssagi. Për piasì preuva torna.",
+	'wikilove-summary' => '/* $1 */ mëssagi WikiLove neuv',
+	'wikilove-what-is-this' => "Lòn ch'a l'é sossì?",
+	'wikilove-anon-warning' => "Nòta: st'utent a l'é pa registrà, chila o chiel a podrìa nen noté sto mëssagi.",
+	'wikilove-commons-text' => 'It peule trové dle figure an sfojand $1.',
+);
+
 /** Pashto (پښتو)
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
@@ -1735,7 +1787,12 @@ $messages['ro'] = array(
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'wikilove-omit-sig' => "(senze 'na firme)",
+	'wikilove-image-example' => '(esembie: Trophy.png)',
+	'wikilove-button-preview' => 'Andeprime',
+	'wikilove-preview' => 'Andeprime',
 	'wikilove-err-gallery-again' => 'Pruève arrete',
+	'wikilove-what-is-this' => 'Ce jè quiste?',
 );
 
 /** Russian (Русский)
