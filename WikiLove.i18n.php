@@ -208,6 +208,15 @@ $messages['ar'] = array(
 	'wikilove-commons-text' => 'تجد هذه الصورة في صفحة $1.',
 );
 
+/** Azerbaijani (Azərbaycanca)
+ * @author Cekli829
+ */
+$messages['az'] = array(
+	'wikilove-button-preview' => 'Sınaq göstərişi',
+	'wikilove-preview' => 'Sınaq göstərişi',
+	'wikilove-what-is-this' => 'Bu nədir?',
+);
+
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
@@ -2100,20 +2109,20 @@ $messages['uk'] = array(
 	'wikilove-enable-preference' => 'Увімкнути інструмент Вікісимпатії, для полегшення виразу вдячності іншим користувачам (експериментально)',
 	'wikilove-tab-text' => 'Вікісимпатія',
 	'tooltip-ca-wikilove' => 'Надіслати повідомлення для цього користувача, виразити вашу вдячність',
-	'wikilove-dialog-title' => 'Вікісимпатія - Ваша вдячність іншому користувачеві',
+	'wikilove-dialog-title' => 'Вікісимпатія — Вияв вашої вдячності іншому користувачеві',
 	'wikilove-select-type' => 'Оберіть тип',
 	'wikilove-get-started-header' => 'Почнемо!',
 	'wikilove-get-started-list-1' => 'Виберіть тип Вікісимпатії, яку ви хочете відправити',
 	'wikilove-get-started-list-2' => 'Додайте подробиць до вашої Вікісимпатії',
-	'wikilove-get-started-list-3' => 'Надіслати Вікісимпатію!',
+	'wikilove-get-started-list-3' => 'Надішліть Вікісимпатію!',
 	'wikilove-add-details' => 'Додати подробиць',
 	'wikilove-image' => "Введіть ім'я файлу зображення:",
 	'wikilove-select-image' => 'Виберіть зображення:',
 	'wikilove-header' => 'Введіть заголовок:',
 	'wikilove-title' => 'Введіть назву нагороди:',
-	'wikilove-enter-message' => 'Напишіть текст повідомлення:',
+	'wikilove-enter-message' => 'Додайте повідомлення:',
 	'wikilove-omit-sig' => '(без підпису)',
-	'wikilove-image-example' => '(наприклад: Trophy.png)',
+	'wikilove-image-example' => '(наприклад: Zguschene moloko.png)',
 	'wikilove-button-preview' => 'Попередній перегляд',
 	'wikilove-preview' => 'Попередній перегляд',
 	'wikilove-notify' => 'Повідомити користувача електронним листом',
@@ -2137,6 +2146,8 @@ $messages['uk'] = array(
 	'wikilove-what-is-this' => 'Що це?',
 	'wikilove-anon-warning' => 'Примітка: Цей користувач не зареєстрований, він чи вона може не помітити це повідомлення.',
 	'wikilove-commons-text' => 'Ви можете знайти зображення в проекті $1.',
+	'wikilove-commons-link' => 'Вікісховище',
+	'wikilove-commons-url' => 'http://commons.wikimedia.org',
 );
 
 /** Vietnamese (Tiếng Việt)
