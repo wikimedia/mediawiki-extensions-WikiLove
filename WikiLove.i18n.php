@@ -270,6 +270,7 @@ $messages['be-tarask'] = array(
 
 /** Bulgarian (Български)
  * @author DCLXVI
+ * @author Spiritia
  */
 $messages['bg'] = array(
 	'wikilove' => 'УикиОбич',
@@ -283,12 +284,25 @@ $messages['bg'] = array(
 	'wikilove-preview' => 'Предварителен преглед',
 	'wikilove-notify' => 'Уведомяване на потребителя на електронната поща',
 	'wikilove-button-send' => 'Изпращане на УикиОбич',
+	'wikilove-type-barnstars' => 'Медал със звезда',
+	'wikilove-type-food' => 'Храна и напитки',
+	'wikilove-type-kittens' => 'Котенца',
+	'wikilove-type-makeyourown' => 'Направете си личен знак за уикиобич',
+	'wikilove-err-header' => 'Моля, въведете заглавие.',
+	'wikilove-err-title' => 'Моля, въведете заглавие.',
+	'wikilove-err-msg' => 'Моля, въведете персонализирано съобщение.',
+	'wikilove-err-image' => 'Моля, изберете изображение.',
 	'wikilove-err-image-bad' => 'Изображението не съществува.',
+	'wikilove-err-image-api' => 'Нещо се обърка, докато се извличаше изображението. Моля, опитайте отново.',
 	'wikilove-err-sig' => 'В съобщението не трябва да се вклчва подпис.',
 	'wikilove-err-gallery' => 'Възникна грешка при зареждане на изображенията!',
 	'wikilove-err-gallery-again' => 'Опитайте отново',
+	'wikilove-err-preview-api' => 'Нещо се обърка по време на предварителния преглед. Моля, опитайте отново.',
+	'wikilove-err-send-api' => 'Нещо се обърка, докато се изпращаше това съобщение. Моля, опитайте отново.',
 	'wikilove-summary' => '/* $1 */ ново съобщение за УикиОбич',
 	'wikilove-what-is-this' => 'Какво е това?',
+	'wikilove-anon-warning' => 'Внимание: Този потребител е нерегистриран, той/тя може и да не забележи съобщението ви.',
+	'wikilove-commons-text' => 'Можете да намерите изображения, като прегледате $1 .',
 );
 
 /** Breton (Brezhoneg)
@@ -1124,10 +1138,11 @@ $messages['it'] = array(
 
 /** Japanese (日本語)
  * @author Akaniji
+ * @author Schu
  * @author Whym
  */
 $messages['ja'] = array(
-	'wikilove-desc' => '利用者の会話ページに前向きな反応を寄せやすくする機能を、追加します',
+	'wikilove-desc' => '利用者の会話ページに前向きな反応を寄せやすくするインタフェースを追加します。',
 	'wikilove' => 'ウィキラブ',
 	'wikilove-enable-preference' => 'ウィキラブのタブによる、他の利用者に対して感謝の意を示す機能を有効にする（試用版）',
 	'wikilove-tab-text' => 'ウィキラブ',
@@ -1156,7 +1171,7 @@ $messages['ja'] = array(
 	'wikilove-type-makeyourown' => '自作する',
 	'wikilove-err-header' => '表題を入力してください。',
 	'wikilove-err-title' => '賞の名前を入力してください。',
-	'wikilove-err-msg' => 'メッセージを入力してください。',
+	'wikilove-err-msg' => 'パーソナライズされたメッセージを入力してください。',
 	'wikilove-err-image' => '画像を選択してください。',
 	'wikilove-err-image-bad' => '画像が存在しません。',
 	'wikilove-err-image-api' => '画像を取得する際に問題が起きました。もう一度お試しください。',
@@ -1886,6 +1901,7 @@ $messages['ru'] = array(
 $messages['rue'] = array(
 	'wikilove-desc' => 'Додасть інтерфейс про зохаблїня позітівных одозв на сторінцї діскузії хоснователя',
 	'wikilove' => 'Вікісімпатія',
+	'wikilove-enable-preference' => 'Поволити інштрумент Вікісімпатії, про полегчіня выразу вдячности іншым хоснователям (експеріментално)',
 	'wikilove-tab-text' => 'Вікісімпатія',
 	'tooltip-ca-wikilove' => 'Послати повідомлїня про того хоснователя, указати вашу вдячность',
 	'wikilove-dialog-title' => 'Вікісімпатія - Ваша вдячность іншому хоснователёви',
@@ -1897,6 +1913,8 @@ $messages['rue'] = array(
 	'wikilove-add-details' => 'Додати детайлы',
 	'wikilove-image' => 'Уведьте назву файлу образчіка:',
 	'wikilove-select-image' => 'Выберьте образчік:',
+	'wikilove-header' => 'Вложте тітул:',
+	'wikilove-title' => 'Вложте назву нагороды:',
 	'wikilove-enter-message' => 'Напиште текст повідомлїня:',
 	'wikilove-omit-sig' => '(без підпису)',
 	'wikilove-image-example' => '(наприклад: Trophy.png)',
@@ -1913,9 +1931,16 @@ $messages['rue'] = array(
 	'wikilove-err-msg' => 'Просиме, напиште персоналне повідомлїня.',
 	'wikilove-err-image' => 'Просиме, выберьте образчік.',
 	'wikilove-err-image-bad' => 'Образчік не екзістує.',
+	'wikilove-err-image-api' => 'Штось плане ся удїяло при обтриманю образчікя. Просиме попробуйте пізнїше.',
+	'wikilove-err-sig' => 'Просиме, не давайте підпис до повідомлїня.',
+	'wikilove-err-gallery' => 'Дашто плане было кідь ся награвали образчікы.',
 	'wikilove-err-gallery-again' => 'Спробуйте щі раз',
+	'wikilove-err-preview-api' => 'Штось плане ся удїяло почас перегляду. Просиме, попробуйте пізнїше.',
+	'wikilove-err-send-api' => 'Штось плане ся удїяло при посыланю повідомлїня. Просиме попробуйте пізнїше.',
 	'wikilove-summary' => '/* $1 */ нова Вікісімпатія',
 	'wikilove-what-is-this' => 'Што є тото?',
+	'wikilove-anon-warning' => 'Позначка: Тот хоснователь не є реґістрованый, він або она може не вшимли собі тото повідомлїня.',
+	'wikilove-commons-text' => 'Образчікы можете найти в проєктї: $1',
 );
 
 /** Slovenian (Slovenščina)
