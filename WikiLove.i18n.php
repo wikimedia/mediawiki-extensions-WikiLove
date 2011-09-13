@@ -305,6 +305,19 @@ $messages['bg'] = array(
 	'wikilove-commons-text' => 'Можете да намерите изображения, като прегледате $1 .',
 );
 
+/** Bengali (বাংলা)
+ * @author Bellayet
+ */
+$messages['bn'] = array(
+	'wikilove' => 'উইকিলাভ',
+	'wikilove-tab-text' => 'উইকিলাভ',
+	'wikilove-add-details' => 'বিস্তারিত যোগ',
+	'wikilove-enter-message' => 'বার্তা লিখুন:',
+	'wikilove-button-preview' => 'প্রাকদর্শন',
+	'wikilove-preview' => 'প্রাকদর্শন',
+	'wikilove-what-is-this' => 'এইটি কী?',
+);
+
 /** Breton (Brezhoneg)
  * @author Fulup
  */
