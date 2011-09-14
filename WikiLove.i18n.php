@@ -1322,6 +1322,7 @@ $messages['lt'] = array(
 	'wikilove-err-send-api' => 'Siunčiant laišką įvyko klaida. Bandykite dar kartą.',
 	'wikilove-summary' => '/ *  $1  * / nauja WikiLove žinutė',
 	'wikilove-what-is-this' => 'Kas tai?',
+	'wikilove-commons-text' => 'Galite rasti vaizdų, naršydami $1 .',
 );
 
 /** Macedonian (Македонски)
