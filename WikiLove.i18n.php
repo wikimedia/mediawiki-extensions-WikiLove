@@ -370,6 +370,22 @@ $messages['bs'] = array(
 	'wikilove-preview' => 'Pregled',
 );
 
+/** Catalan (Català)
+ * @author Toniher
+ */
+$messages['ca'] = array(
+	'wikilove-select-type' => 'Seleccioneu-ne un tipus',
+	'wikilove-get-started-header' => 'Comencem!',
+	'wikilove-add-details' => 'Afegeix detalls',
+	'wikilove-type-food' => 'Menjar i beure',
+	'wikilove-type-kittens' => 'Gatets',
+	'wikilove-type-makeyourown' => 'Feu el vostre propi',
+	'wikilove-err-header' => 'Introduïu una capçalera.',
+	'wikilove-err-title' => 'Introduïu un títol.',
+	'wikilove-err-gallery-again' => 'Torneu-ho a provar',
+	'wikilove-what-is-this' => 'Què és això?',
+);
+
 /** Danish (Dansk)
  * @author Peter Alberti
  */
