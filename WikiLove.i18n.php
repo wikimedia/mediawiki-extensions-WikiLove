@@ -320,6 +320,7 @@ $messages['bn'] = array(
 
 /** Breton (Brezhoneg)
  * @author Fulup
+ * @author Y-M D
  */
 $messages['br'] = array(
 	'wikilove-desc' => 'Ouzhpennañ a ra un etrefas evit aesaat merkañ evezhiadennoù pozitivel war pajenn gaozeal un implijer',
@@ -345,6 +346,7 @@ $messages['br'] = array(
 	'wikilove-preview' => 'Rakwelet',
 	'wikilove-notify' => "Kas ur c'hemenn dre bostel d'an implijer",
 	'wikilove-button-send' => 'Kas ar WikiLove',
+	'wikilove-type-food' => 'Boued hag evajoù',
 	'wikilove-type-makeyourown' => "Krouit ho-hini deoc'h-c'hwi",
 	'wikilove-err-header' => 'Merkit un talbenn.',
 	'wikilove-err-title' => 'Merkit un titl.',
