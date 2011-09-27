@@ -958,6 +958,7 @@ $messages['he'] = array(
 );
 
 /** Hindi (हिन्दी)
+ * @author Ansumang
  * @author Kaldari
  * @author Mayur
  * @author Vibhijain
@@ -992,7 +993,7 @@ $messages['hi'] = array(
 	'wikilove-type-makeyourown' => 'अपना खुद का बनाएँ',
 	'wikilove-err-header' => 'कृपया कोई शीर्षक दर्ज करें।',
 	'wikilove-err-title' => 'कृपया कोई शीर्षक दर्ज करें।',
-	'wikilove-err-msg' => 'कृपया संदेश प्रविष्ट करें।',
+	'wikilove-err-msg' => 'कृपया एक व्यक्तिगत संदेश दर्ज करें।',
 	'wikilove-err-image' => 'कृपया चित्र का चयन करें।',
 	'wikilove-err-image-bad' => 'चित्र अस्तित्व में नहीं हैं।',
 	'wikilove-err-image-api' => 'संदेश को पुन: प्राप्त करते समय कुछ गलत हो गया। कृपया वापिस कोशिश करे।',
@@ -1622,6 +1623,54 @@ $messages['no'] = array(
 	'wikilove-commons-text' => 'Du kan finne bilder ved å bla gjennom $1.',
 );
 
+/** Oriya (ଓଡ଼ିଆ)
+ * @author Ansumang
+ */
+$messages['or'] = array(
+	'wikilove-desc' => 'ସଦସ୍ୟଙ୍କ ବାର୍ତ୍ତା ପୃଷ୍ଠାରେ ସକାରାତ୍ମକ ସଦସ୍ୟଙ୍କ ମତ ଦେବା ପାଇଁ ଇନ୍ଟରଫେସ ଯୋଡ଼ିଥାଏ',
+	'wikilove' => 'ଉଇକିଆଦର',
+	'wikilove-enable-preference' => 'ଅନ୍ୟ ସଦସ୍ୟଙ୍କୁ ପ୍ରଶଂସା କରିବା ପାଇଁ ଉଇକିଆଦର ଟେବ ସକ୍ଷମ କରିବେ',
+	'wikilove-tab-text' => 'ଉଇକିଆଦର',
+	'tooltip-ca-wikilove' => 'ଏହି ସଦସ୍ୟଙ୍କୁ ପ୍ରଶଂସା କରିବା ପାଇଁ ସନ୍ଦେଶ ପଠାନ୍ତୁ',
+	'wikilove-dialog-title' => 'ଉଇକିଆଦର - ଆଉ ଜଣେ ସଦସ୍ୟଙ୍କୁ ପ୍ରଶଂସା ଭରା ସନ୍ଦେଶ ପଠାନ୍ତୁ',
+	'wikilove-select-type' => 'ପ୍ରକାର ବାଛନ୍ତୁ',
+	'wikilove-get-started-header' => 'ଆସନ୍ତୁ ଆରମ୍ଭ କରିବା!',
+	'wikilove-get-started-list-1' => 'ପଠାଇବା ପାଇଁ ଆପଣଙ୍କ ପସନ୍ଦର ପ୍ରକାର ବାଛନ୍ତୁ',
+	'wikilove-get-started-list-2' => 'ଆପଣଙ୍କ ଉଇକିଆଦରରେ ବିବରଣୀ ଯୋଡ଼ନ୍ତୁ',
+	'wikilove-get-started-list-3' => 'ଆପଣଙ୍କ ଉଇକିଆଦର ପଠାନ୍ତୁ',
+	'wikilove-add-details' => 'ବିବରଣୀ ଯୋଡ଼ନ୍ତୁ',
+	'wikilove-image' => 'ଛବିର ଫାଇଲନାମ ପ୍ରବେଶ କରନ୍ତୁ:',
+	'wikilove-select-image' => 'ଛବି ବାଛନ୍ତୁ:',
+	'wikilove-header' => 'ଶୀର୍ଷକ ନାମ ଦିଅନ୍ତୁ:',
+	'wikilove-title' => 'ପୁରସ୍କାରର ଶୀର୍ଷକ ନାମ ଦିଅନ୍ତୁ:',
+	'wikilove-enter-message' => 'ନିଜ ସନ୍ଦେଶ ଲେଖନ୍ତୁ:',
+	'wikilove-omit-sig' => '(ବିନା ଦସ୍ତଖତରେ)',
+	'wikilove-image-example' => '(ଉଦାହରଣ: Trophy.png)',
+	'wikilove-button-preview' => 'ଦେଖଣା',
+	'wikilove-preview' => 'ଦେଖଣା',
+	'wikilove-notify' => 'ଇ-ମେଲ ଦ୍ଵାରା ସଦସ୍ୟଙ୍କୁ ସୂଚିତ କରିବେ',
+	'wikilove-button-send' => 'ଉଇକିଆଦର ପଠାନ୍ତୁ',
+	'wikilove-type-barnstars' => 'ବାର୍ନଷ୍ଟାର',
+	'wikilove-type-food' => 'ଖାଦ୍ୟ ପେୟ',
+	'wikilove-type-kittens' => 'ବିଲେଇ ଛୁଆ',
+	'wikilove-type-makeyourown' => 'ଆପଣ ନିଜର ତିଆରି କରନ୍ତୁ',
+	'wikilove-err-header' => 'ଦୟାକରି ଶୀର୍ଷକ ନାମଟିଏ ଦିଅନ୍ତୁ ।',
+	'wikilove-err-title' => 'ଦୟାକରି ଶୀର୍ଷକ ନାମଟିଏ ଦିଅନ୍ତୁ ।',
+	'wikilove-err-msg' => 'ଦୟାକରି ଏକ ବ୍ୟକ୍ତିଗତ ସନ୍ଦେଶ ଲେଖନ୍ତୁ ।',
+	'wikilove-err-image' => 'ଦୟାକରି ଏକ ଛବି ବାଛନ୍ତୁ ।',
+	'wikilove-err-image-bad' => 'ଏହି ନାମରେ କୌଣସି ଛବି ନାହିଁ ।',
+	'wikilove-err-image-api' => 'ସନ୍ଦେଶ ପାଇବା ସମୟରେ କିଛି ଭୁଲ ହୋଇଗଲା । ଦୟାକରି ପୁଣି ଥରେ ଚେଷ୍ଟା କରନ୍ତୁ ।',
+	'wikilove-err-sig' => 'ଦୟାକରି ସନ୍ଦେଶ ଜାଗାରେ ଦସ୍ତଖତ କରନ୍ତୁ ନାହିଁ ।',
+	'wikilove-err-gallery' => 'ଛବି ଲୋଡ଼ ହେବା ସମୟରେ କିଛି ଭୁଲ ହୋଇଗଲା ।',
+	'wikilove-err-gallery-again' => 'ପୁଣି ଥରେ ଚେଷ୍ଟା କରନ୍ତୁ',
+	'wikilove-err-preview-api' => 'ଦେଖଣା ସମୟରେ କିଛି ଭୁଲ ହୋଇଗଲା । ଦୟାକରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ ।',
+	'wikilove-err-send-api' => 'ସନ୍ଦେଶ ପଠାଇବା ସମୟରେ କିଛି ଭୁଲ ହୋଇଗଲା । ଦୟାକରି ପୁଣି ଥରେ ଚେଷ୍ଟା କରନ୍ତୁ ।',
+	'wikilove-summary' => '/* $1 */ ନୂଆ ଉଇକିଆଦର ସନ୍ଦେଶ',
+	'wikilove-what-is-this' => 'ଏହା କଣ ?',
+	'wikilove-anon-warning' => 'ସୂଚନା: ଏହି ସଦସ୍ୟ ପଞ୍ଜୀକରଣ ହୋଇନାହାନ୍ତି, ତେଣୁ ସେ ଏହି ସନ୍ଦେଶ ପାଇ ନ ପାରନ୍ତି ।',
+	'wikilove-commons-text' => 'ଆପଣ $1 କୁ ବ୍ରାଉଜ କରି ଛବି ପାଇ ପାରିବେ ।',
+);
+
 /** Polish (Polski)
  * @author Sp5uhe
  */
@@ -1776,12 +1825,14 @@ $messages['pt'] = array(
 );
 
 /** Brazilian Portuguese (Português do Brasil)
+ * @author Giro720
  * @author Kaldari
  * @author MetalBrasil
+ * @author Pedroca cerebral
  * @author Raylton P. Sousa
  */
 $messages['pt-br'] = array(
-	'wikilove-desc' => 'Adiciona uma interface para facilitar a demonstrações de apreço nas páginas de discussão dos utilizadores',
+	'wikilove-desc' => 'Adiciona uma interface para facilitar a demonstrações de apreço nas páginas de discussão dos usuários',
 	'wikilove' => 'WikiApreço',
 	'wikilove-enable-preference' => 'Permite enviar demonstrações de apreço a outros utilizadores usando o separador "WikiApreço" (experimental)',
 	'wikilove-tab-text' => 'WikiApreço',
@@ -1796,15 +1847,15 @@ $messages['pt-br'] = array(
 	'wikilove-image' => 'Introduza o nome de uma imagem:',
 	'wikilove-select-image' => 'Selecione uma imagem:',
 	'wikilove-header' => 'Introduza um cabeçalho:',
-	'wikilove-title' => 'Introduza o título de um prémio:',
+	'wikilove-title' => 'Introduza o título de um prêmio:',
 	'wikilove-enter-message' => 'Introduza uma mensagem:',
 	'wikilove-omit-sig' => '(sem assinatura)',
 	'wikilove-image-example' => '(exemplo: Troféu.png)',
-	'wikilove-button-preview' => 'Antever',
-	'wikilove-preview' => 'Antevisão',
-	'wikilove-notify' => 'Notificar o utilizador por correio eletrônico',
+	'wikilove-button-preview' => 'Pré-visualizar',
+	'wikilove-preview' => 'Pré-visualização',
+	'wikilove-notify' => 'Notificar o usuário por e-mail',
 	'wikilove-button-send' => 'Enviar WikiApreço',
-	'wikilove-type-barnstars' => 'Distinções',
+	'wikilove-type-barnstars' => 'Medalhas',
 	'wikilove-type-food' => 'Comes e bebes',
 	'wikilove-type-kittens' => 'Gatinhos',
 	'wikilove-type-makeyourown' => 'Crie o seu',
@@ -1821,7 +1872,7 @@ $messages['pt-br'] = array(
 	'wikilove-err-send-api' => 'Ocorreu um erro ao enviar a mensagem. Tente novamente, por favor.',
 	'wikilove-summary' => '/* $1 */ nova mensagem de WikiApreço',
 	'wikilove-what-is-this' => 'O que é isto?',
-	'wikilove-anon-warning' => 'Nota: Este utilizador não está registado e poderá não perceber esta mensagem.',
+	'wikilove-anon-warning' => 'Nota: Este usuário não está registrado e poderá não perceber esta mensagem.',
 	'wikilove-commons-text' => 'Pode encontrar imagens pesquisando-as em $1.',
 );
 
