@@ -689,6 +689,8 @@ $.wikiLove = {
 						targetBaseUrl === currentBaseUrl
 						// Compatibility with 1.17, 1.18
 						|| mw.config.get( 'wgServer' ) + targetBaseUrl === currentBaseUrl
+						// Compatibility with protocol-relative URLs
+						|| window.location.protocol + mw.config.get( 'wgServer' ) + targetBaseUrl === currentBaseUrl
 					) {
 						window.location.reload();
 					}
