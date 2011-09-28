@@ -685,12 +685,15 @@ $.wikiLove = {
 	
 					// If we were already on the user talk page, then reload the page so that the 
 					// new WikiLove message is displayed.
+					// @todo: an expandUrl() would be very nice indeed!
 					if (
-						targetBaseUrl === currentBaseUrl
-						// Compatibility with 1.17, 1.18
-						|| mw.config.get( 'wgServer' ) + targetBaseUrl === currentBaseUrl
-						// Compatibility with protocol-relative URLs
+						mw.config.get( 'wgServer' ) + targetBaseUrl === currentBaseUrl
+						// Compatibility with 1.17 (mw.util.wikiGetlink prepends wgServer in 1.17)
+						|| targetBaseUrl === currentBaseUrl
+						// Compatibility with protocol-relative URLs in 1.18+
 						|| window.location.protocol + mw.config.get( 'wgServer' ) + targetBaseUrl === currentBaseUrl
+						// Compatibility with protocol-relative URLs in 1.17
+						|| window.location.protocol + targetBaseUrl === currentBaseUrl
 					) {
 						window.location.reload();
 					}
