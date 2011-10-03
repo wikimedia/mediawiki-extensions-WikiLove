@@ -1778,6 +1778,7 @@ $messages['ps'] = array(
 
 /** Portuguese (Português)
  * @author Hamilton Abreu
+ * @author Pedroca cerebral
  */
 $messages['pt'] = array(
 	'wikilove-desc' => 'Adiciona uma interface para facilitar a colocação de demonstrações de apreço nas páginas de discussão dos utilizadores',
@@ -1803,7 +1804,7 @@ $messages['pt'] = array(
 	'wikilove-preview' => 'Antevisão',
 	'wikilove-notify' => 'Notificar o utilizador por correio electrónico',
 	'wikilove-button-send' => 'Enviar WikiApreço',
-	'wikilove-type-barnstars' => 'Distinções',
+	'wikilove-type-barnstars' => 'Medalhas',
 	'wikilove-type-food' => 'Comes e bebes',
 	'wikilove-type-kittens' => 'Gatinhos',
 	'wikilove-type-makeyourown' => 'Crie o seu',
@@ -2108,6 +2109,7 @@ $messages['sl'] = array(
 
 /** Swedish (Svenska)
  * @author Ainali
+ * @author Diupwijk
  */
 $messages['sv'] = array(
 	'wikilove-desc' => 'Lägger till ett gränssnitt för att förenkla positiv feedback från användarna till Användardiskussionssidor',
@@ -2148,7 +2150,7 @@ $messages['sv'] = array(
 	'wikilove-err-gallery-again' => 'Försök igen',
 	'wikilove-err-preview-api' => 'Något gick fel vid förhandsgranskningen. Försök igen.',
 	'wikilove-err-send-api' => 'Något gick fel när meddelandet skickades. Försök igen.',
-	'wikilove-summary' => '/ * $1 * / nytt WikiLove-meddelande',
+	'wikilove-summary' => '/* $1 */ nytt WikiLove-meddelande',
 	'wikilove-what-is-this' => 'Vad är det här?',
 	'wikilove-anon-warning' => 'Obs: Den här användaren är inte registrerad, han eller hon kanske inte kommer att upptäcka detta meddelande.',
 	'wikilove-commons-text' => 'Du kan hitta bilder genom att söka i $1.',
