@@ -876,7 +876,7 @@ $messages['gl'] = array(
 	'wikilove-get-started-list-1' => 'Seleccione tipo de amor wiki que queira enviar',
 	'wikilove-get-started-list-2' => 'Engada detalles ao seu amor wiki',
 	'wikilove-get-started-list-3' => 'Envíe o seu amor wiki!',
-	'wikilove-add-details' => 'Engadir detalles',
+	'wikilove-add-details' => 'Engada os detalles',
 	'wikilove-image' => 'Insira un nome de ficheiro para a imaxe:',
 	'wikilove-select-image' => 'Seleccione unha imaxe:',
 	'wikilove-header' => 'Insira unha cabeceira:',
@@ -1575,6 +1575,7 @@ $messages['nl'] = array(
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Cocu
+ * @author Diupwijk
  * @author Jon Harald Søby
  * @author Stigmj
  */
@@ -1617,7 +1618,7 @@ $messages['no'] = array(
 	'wikilove-err-gallery-again' => 'Prøv igjen',
 	'wikilove-err-preview-api' => 'Noe gikk galt under forhåndsvisningen. Vennligst prøv igjen.',
 	'wikilove-err-send-api' => 'Noe gikk galt under sending av meldingen. Vennligst prøv igjen.',
-	'wikilove-summary' => '/ * $1 * / ny WikiLove-melding',
+	'wikilove-summary' => '/ * $1 */ ny WikiLove-melding',
 	'wikilove-what-is-this' => 'Hva er dette?',
 	'wikilove-anon-warning' => 'Merk: Denne brukeren er ikke registrert, det kan derfor hende at vedkommende ikke legger merke til denne meldingen.',
 	'wikilove-commons-text' => 'Du kan finne bilder ved å bla gjennom $1.',
@@ -2117,7 +2118,7 @@ $messages['sv'] = array(
 	'wikilove-enable-preference' => 'Gör det möjligt att visa uppskattning till andra användare med WikiLove-fliken (experimentell)',
 	'wikilove-tab-text' => 'WikiLove',
 	'tooltip-ca-wikilove' => 'Skicka ett meddelande till den här användaren för att visa din uppskattning',
-	'wikilove-dialog-title' => 'WikiLove - Skicka ett meddelande för att visa uppskattning till en annan användare',
+	'wikilove-dialog-title' => 'WikiLove – Skicka ett meddelande för att visa uppskattning till en annan användare',
 	'wikilove-select-type' => 'Välj typ',
 	'wikilove-get-started-header' => 'Sätt igång!',
 	'wikilove-get-started-list-1' => 'Välj typ av WikiLove du vill skicka',
@@ -2145,7 +2146,7 @@ $messages['sv'] = array(
 	'wikilove-err-image' => 'Välj en bild.',
 	'wikilove-err-image-bad' => 'Bilden finns inte.',
 	'wikilove-err-image-api' => 'Något gick fel vid hämtning av bilden. Försök igen.',
-	'wikilove-err-sig' => 'Skriv inte  en signatur i meddelandet.',
+	'wikilove-err-sig' => 'Skriv inte en signatur i meddelandet.',
 	'wikilove-err-gallery' => 'Något gick fel vid inläsning av bilderna.',
 	'wikilove-err-gallery-again' => 'Försök igen',
 	'wikilove-err-preview-api' => 'Något gick fel vid förhandsgranskningen. Försök igen.',
