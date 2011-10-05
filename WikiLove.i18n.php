@@ -1284,7 +1284,7 @@ $messages['ksh'] = array(
 	'wikilove-type-makeyourown' => 'Maach Ding eije',
 	'wikilove-err-header' => 'Bes esu jood un jivv en Övverschreff en.',
 	'wikilove-err-title' => 'Bes esu jood un jivv en Övverschreff en.',
-	'wikilove-err-msg' => 'Bes esu jood un jivv en Nohreesch en.',
+	'wikilove-err-msg' => 'Bes esu jood un jivv en päsöönlesche Nohreesch en.',
 	'wikilove-err-image' => 'Bes esu jood un söhg e Beld uß.',
 	'wikilove-err-image-bad' => 'Dat Beld jidd et nit.',
 	'wikilove-err-image-api' => 'Beim Beld_Laade es_ene Fähler opjetrodde. Bes_esu_jood_un versöhg_ed_norr_ens.',
@@ -1880,12 +1880,14 @@ $messages['pt-br'] = array(
 
 /** Romanian (Română)
  * @author Firilacroco
+ * @author Minisarm
  */
 $messages['ro'] = array(
 	'wikilove-desc' => 'Adaugă o interfață pentru facilitarea publicării părerilor bune despre un utilizator, pe pagina de discuții a acestuia',
 	'wikilove' => 'WikiLove',
 	'wikilove-enable-preference' => 'Activează afișarea aprecierii pentru alți utilizatori cu fila WikiLove (experimental)',
 	'wikilove-tab-text' => 'WikiLove',
+	'tooltip-ca-wikilove' => 'Publicați un mesaj pentru acest utilizator, arătându-i aprecierea dumneavoastră',
 	'wikilove-dialog-title' => 'WikiLove - Trimiteți un mesaj de apreciere unui alt utilizator',
 	'wikilove-select-type' => 'Selectați tipul',
 	'wikilove-get-started-header' => 'Să începem!',
