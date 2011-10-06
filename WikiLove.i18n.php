@@ -312,9 +312,11 @@ $messages['bn'] = array(
 	'wikilove' => 'উইকিলাভ',
 	'wikilove-tab-text' => 'উইকিলাভ',
 	'wikilove-add-details' => 'বিস্তারিত যোগ',
+	'wikilove-select-image' => 'চিত্র নির্বাচন:',
 	'wikilove-enter-message' => 'বার্তা লিখুন:',
 	'wikilove-button-preview' => 'প্রাকদর্শন',
 	'wikilove-preview' => 'প্রাকদর্শন',
+	'wikilove-err-gallery-again' => 'আবার চেষ্টা করুন',
 	'wikilove-what-is-this' => 'এইটি কী?',
 );
 
