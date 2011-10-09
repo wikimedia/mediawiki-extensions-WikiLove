@@ -175,6 +175,9 @@ class WikiLoveHooks {
 
 		// If we're on a subpage, get the base page title
 		$baseTitle = Title::newFromText( $title->getBaseText(), $ns );
+		if ( $baseTitle === null ) {
+			return null;
+		}
 		
 		// Get the user talk page
 		if ( $ns == NS_USER_TALK ) {
