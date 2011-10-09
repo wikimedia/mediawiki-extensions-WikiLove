@@ -2112,6 +2112,14 @@ $messages['sl'] = array(
 	'wikilove-commons-text' => 'Slike lahko najdete z brskanjem po $1.',
 );
 
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+ * @author Rancher
+ */
+$messages['sr-ec'] = array(
+	'wikilove-commons-link' => 'Викимедијина остава',
+	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/Главна_страна?uselang=sr',
+);
+
 /** Swedish (Svenska)
  * @author Ainali
  * @author Diupwijk
