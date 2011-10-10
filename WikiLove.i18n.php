@@ -2064,6 +2064,32 @@ $messages['rue'] = array(
 	'wikilove-commons-text' => 'Образчікы можете найти в проєктї: $1',
 );
 
+/** Sinhala (සිංහල)
+ * @author බිඟුවා
+ */
+$messages['si'] = array(
+	'wikilove' => 'විකිලව්',
+	'wikilove-tab-text' => 'විකිලව්',
+	'wikilove-select-type' => 'වර්ගය තෝරන්න',
+	'wikilove-get-started-header' => 'දැන් පටන් ගනිමු!',
+	'wikilove-add-details' => 'විස්තර එක් කරන්න',
+	'wikilove-image' => 'රූපයේ  නම එක් කරන්න:',
+	'wikilove-select-image' => 'රූපයක් තෝරන්න:',
+	'wikilove-enter-message' => 'පණිවුඩයක් එක් කරන්න:',
+	'wikilove-omit-sig' => '(අත්සනක් රහිත)',
+	'wikilove-button-preview' => 'පෙර දසුන',
+	'wikilove-preview' => 'පෙර දසුන',
+	'wikilove-button-send' => 'විකිලව් එකක් යවන්න',
+	'wikilove-type-barnstars' => 'රන් තරු',
+	'wikilove-type-food' => 'කෑම සහ බීම',
+	'wikilove-type-kittens' => 'බළල් පැටවුන්',
+	'wikilove-type-makeyourown' => 'ඔබේම එකක් තනන්න',
+	'wikilove-err-image' => 'කරුණාකර රූපයක් තෝරන්න.',
+	'wikilove-err-image-bad' => 'රූපය නොපවතී',
+	'wikilove-err-gallery-again' => 'නැවත උත්සහ කරන්න',
+	'wikilove-what-is-this' => 'මේක මොකක්ද?',
+);
+
 /** Slovenian (Slovenščina)
  * @author Dbc334
  */
