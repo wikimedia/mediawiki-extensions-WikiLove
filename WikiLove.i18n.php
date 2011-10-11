@@ -64,6 +64,7 @@ $messages['en'] = array(
  * @author McDutchie
  * @author Purodha
  * @author SPQRobin
+ * @author Whym
  */
 $messages['qqq'] = array(
 	'wikilove-enable-preference' => '',
@@ -104,6 +105,7 @@ Label for a button. Should be no longer than 22 characters.',
 Use the same translation for "header" as was used for {{msg-mw|wikilove-header}}.',
 	'wikilove-err-title' => '
 Title is the title of the wikilove box (e.g. "Barnstar")',
+	'wikilove-err-msg' => 'A warning shown when the message is empty.',
 	'wikilove-what-is-this' => '[[File:Wiki Love 002.png|thumb]]
 {{Identical|What is this}}',
 	'wikilove-commons-text' => '[[File:Wiki Love 004.png|thumb]]
@@ -1210,7 +1212,7 @@ $messages['it'] = array(
 $messages['ja'] = array(
 	'wikilove-desc' => '利用者の会話ページに前向きな反応を寄せやすくするインタフェースを追加します。',
 	'wikilove' => 'ウィキラブ',
-	'wikilove-enable-preference' => 'ウィキラブのタブによる、他の利用者に対して感謝の意を示す機能を有効にする（試用版）',
+	'wikilove-enable-preference' => 'ウィキラブのタブを使って他の利用者に対して感謝の意を示すことができるようにする（試験的）',
 	'wikilove-tab-text' => 'ウィキラブ',
 	'tooltip-ca-wikilove' => 'この利用者に向けた感謝の言葉を書き込む',
 	'wikilove-dialog-title' => 'WikiLove - 他の利用者に感謝の言葉を送る',
