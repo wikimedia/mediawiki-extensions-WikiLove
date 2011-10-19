@@ -1777,8 +1777,11 @@ $messages['pms'] = array(
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
 $messages['ps'] = array(
-	'wikilove-image' => 'انځور:',
-	'wikilove-title' => 'سرليک:',
+	'wikilove-image' => 'د يوې انځوريزې دوتنې نوم وليکۍ:',
+	'wikilove-title' => 'د جايزې يو سرليک وليکۍ:',
+	'wikilove-button-preview' => 'مخليدنه',
+	'wikilove-preview' => 'مخليدنه',
+	'wikilove-what-is-this' => 'دا څه دی؟',
 );
 
 /** Portuguese (Português)
