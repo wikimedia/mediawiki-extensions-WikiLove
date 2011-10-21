@@ -2,23 +2,23 @@
 class ApiWikiLove extends ApiBase {
 	public function execute() {
 		global $wgRequest, $wgWikiLoveLogging, $wgParser;
-		
+
 		$params = $this->extractRequestParams();
-		
+
 		$title = Title::newFromText( $params['title'] );
 		if ( is_null( $title ) ) {
 			$this->dieUsageMsg( array( 'invaliduser', $params['title'] ) );
 		}
-		
+
 		$talk = WikiLoveHooks::getUserTalkPage( $title );
 		if ( is_null( $talk ) ) {
 			$this->dieUsageMsg( array( 'invaliduser', $params['title'] ) );
 		}
-		
+
 		if ( $wgWikiLoveLogging ) {
 			$this->saveInDb( $talk, $params['subject'], $params['message'], $params['type'], isset( $params['email'] ) ? 1 : 0 );
 		}
-		
+
 		// not using section => 'new' here, as we like to give our own edit summary
 		$api = new ApiMain( new FauxRequest( array(
 			'action' => 'edit',
@@ -30,9 +30,9 @@ class ApiWikiLove extends ApiBase {
 			'summary' => wfMsgForContent( 'wikilove-summary', $wgParser->stripSectionName( $params['subject'] ) ),
 			'notminor' => true,
 		), false, array( 'wsEditToken' => $wgRequest->getSessionData( 'wsEditToken' ) ) ), true );
-		
+
 		$api->execute();
-		
+
 		if ( isset( $params['email'] ) ) {
 			$this->emailUser( $talk, $params['subject'], $params['email'], $params['token'] );
 		}
@@ -58,7 +58,7 @@ class ApiWikiLove extends ApiBase {
 			$this->setWarning( 'Not logging unregistered recipients' );
 			return;
 		}
-		
+
 		$values = array(
 			'wll_timestamp' => $dbw->timestamp(),
 			'wll_sender' => $wgUser->getId(),
@@ -72,7 +72,7 @@ class ApiWikiLove extends ApiBase {
 			'wll_message' => $message,
 			'wll_email' => $email,
 		);
-				
+
 		try{
 			$dbw->insert( 'wikilove_log', $values, __METHOD__ );
 		} catch( DBQueryError $dbqe ) {
