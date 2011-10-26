@@ -1632,6 +1632,7 @@ $messages['no'] = array(
 
 /** Oriya (ଓଡ଼ିଆ)
  * @author Ansumang
+ * @author Psubhashish
  */
 $messages['or'] = array(
 	'wikilove-desc' => 'ସଦସ୍ୟଙ୍କ ବାର୍ତ୍ତା ପୃଷ୍ଠାରେ ସକାରାତ୍ମକ ସଦସ୍ୟଙ୍କ ମତ ଦେବା ପାଇଁ ଇନ୍ଟରଫେସ ଯୋଡ଼ିଥାଏ',
@@ -1667,7 +1668,7 @@ $messages['or'] = array(
 	'wikilove-err-image' => 'ଦୟାକରି ଏକ ଛବି ବାଛନ୍ତୁ ।',
 	'wikilove-err-image-bad' => 'ଏହି ନାମରେ କୌଣସି ଛବି ନାହିଁ ।',
 	'wikilove-err-image-api' => 'ସନ୍ଦେଶ ପାଇବା ସମୟରେ କିଛି ଭୁଲ ହୋଇଗଲା । ଦୟାକରି ପୁଣି ଥରେ ଚେଷ୍ଟା କରନ୍ତୁ ।',
-	'wikilove-err-sig' => 'ଦୟାକରି ସନ୍ଦେଶ ଜାଗାରେ ଦସ୍ତଖତ କରନ୍ତୁ ନାହିଁ ।',
+	'wikilove-err-sig' => 'ଦୟାକରି ସନ୍ଦେଶ ଜାଗାରେ ସନ୍ତକ ଦିଅନ୍ତୁ ନାହିଁ ।',
 	'wikilove-err-gallery' => 'ଛବି ଲୋଡ଼ ହେବା ସମୟରେ କିଛି ଭୁଲ ହୋଇଗଲା ।',
 	'wikilove-err-gallery-again' => 'ପୁଣି ଥରେ ଚେଷ୍ଟା କରନ୍ତୁ',
 	'wikilove-err-preview-api' => 'ଦେଖଣା ସମୟରେ କିଛି ଭୁଲ ହୋଇଗଲା । ଦୟାକରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ ।',
