@@ -915,6 +915,18 @@ $messages['gl'] = array(
 	'wikilove-commons-text' => 'Pode atopar imaxes navegando por $1.',
 );
 
+/** Swiss German (Alemannisch)
+ * @author Als-Chlämens
+ */
+$messages['gsw'] = array(
+	'wikilove' => 'Wiki-Liebi',
+	'wikilove-tab-text' => 'Wiki-Liebi',
+	'wikilove-select-type' => 'Art usswääle',
+	'wikilove-get-started-header' => "Uffe goot's!",
+	'wikilove-get-started-list-3' => 'Schick dyni Wiki-Liebi ab!',
+	'wikilove-add-details' => 'Einzelheite dezuefiege',
+);
+
 /** Hebrew (עברית)
  * @author Amire80
  */
@@ -1624,7 +1636,7 @@ $messages['no'] = array(
 	'wikilove-err-gallery-again' => 'Prøv igjen',
 	'wikilove-err-preview-api' => 'Noe gikk galt under forhåndsvisningen. Vennligst prøv igjen.',
 	'wikilove-err-send-api' => 'Noe gikk galt under sending av meldingen. Vennligst prøv igjen.',
-	'wikilove-summary' => '/ * $1 */ ny WikiLove-melding',
+	'wikilove-summary' => '/* $1 */ ny WikiLove-melding',
 	'wikilove-what-is-this' => 'Hva er dette?',
 	'wikilove-anon-warning' => 'Merk: Denne brukeren er ikke registrert, det kan derfor hende at vedkommende ikke legger merke til denne meldingen.',
 	'wikilove-commons-text' => 'Du kan finne bilder ved å bla gjennom $1.',
