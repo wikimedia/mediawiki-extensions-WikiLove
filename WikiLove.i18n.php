@@ -763,6 +763,22 @@ $messages['fa'] = array(
 	'wikilove-commons-text' => '$1 را برای یافتن تصاویر جستجو کنید.',
 );
 
+/** Finnish (Suomi)
+ * @author Crt
+ */
+$messages['fi'] = array(
+	'wikilove-select-type' => 'Valitse tyyppi',
+	'wikilove-get-started-header' => 'Aloitetaan!',
+	'wikilove-omit-sig' => '(ilman allekirjoitusta)',
+	'wikilove-image-example' => '(esimerkki: Trophy.png)',
+	'wikilove-button-preview' => 'Esikatselu',
+	'wikilove-preview' => 'Esikatselu',
+	'wikilove-type-makeyourown' => 'Tee oma',
+	'wikilove-err-gallery-again' => 'Yritä uudelleen',
+	'wikilove-what-is-this' => 'Mikä tämä on?',
+	'wikilove-commons-text' => 'Voit etsiä kuvia selailemalla sivustoa $1.',
+);
+
 /** French (Français)
  * @author Crochet.david
  * @author Hashar
