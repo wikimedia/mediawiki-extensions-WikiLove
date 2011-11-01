@@ -145,6 +145,7 @@ $wgResourceModules += array(
 			'wikilove-err-send-api',
 			'wikilove-terms',
 			'wikilove-terms-link',
+			'wikilove-terms-url',
 		),
 		'dependencies' => array(
 			'ext.wikiLove.defaultOptions',

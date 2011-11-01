@@ -109,7 +109,9 @@ $.wikiLove = {
 	<span class="mw-wikilove-number">3</span>\
 	<h3><html:msg key="wikilove-preview"/></h3>\
 	<div id="mw-wikilove-preview-area"></div>\
-	<div id="mw-wikilove-terms"></div>\
+	<div id="mw-wikilove-terms">\
+	' + mw.msg( 'wikilove-terms', '<a href="' + mw.msg( 'wikilove-terms-url' ) + '" target="_blank">' + mw.msg( 'wikilove-terms-link' ) +'</a>' ) + '\
+	</div>\
 	<form id="mw-wikilove-send-form">\
 		<button class="submit" id="mw-wikilove-button-send" type="submit"></button>\
 		<div id="mw-wikilove-send-spinner" class="mw-wikilove-spinner"></div>\

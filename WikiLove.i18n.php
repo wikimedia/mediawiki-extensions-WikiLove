@@ -58,6 +58,7 @@ $messages['en'] = array(
 	'wikilove-commons-url' => 'http://commons.wikimedia.org',
 	'wikilove-terms' => 'By submitting, you agree to transparency under these $1.',
 	'wikilove-terms-link' => 'terms',
+	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 );
 
 /** Message documentation (Message documentation)
@@ -116,6 +117,7 @@ $1 gets replaced by a link with {{msg-mw|wikilove-commons-link}} ("Wikimedia Com
 	'wikilove-terms' => '[[File:Wiki_Love_003.png]]
 A notice that appears above the Send WikiLove button in small text. Try to keep this concise. $1 is replaced with the actual link.',
 	'wikilove-terms-link' => 'The text that links to the terms of service. Should not be capitalized.',
+	'wikilove-terms-url' => 'This URL can be changed to point to a translated version of the page if it exists.',
 );
 
 /** Afrikaans (Afrikaans)
