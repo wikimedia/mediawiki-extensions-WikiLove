@@ -56,6 +56,8 @@ $messages['en'] = array(
 	'wikilove-commons-text' => 'You can find images by browsing $1.',
 	'wikilove-commons-link' => 'Wikimedia Commons',
 	'wikilove-commons-url' => 'http://commons.wikimedia.org',
+	'wikilove-terms' => 'By submitting, you agree to transparency under these $1.',
+	'wikilove-terms-link' => 'terms',
 );
 
 /** Message documentation (Message documentation)
@@ -79,7 +81,7 @@ $messages['qqq'] = array(
 	'wikilove-add-details' => '[[File:Wiki Love 003.png|thumb]]',
 	'wikilove-image' => '[[File:Wiki Love 004.png|thumb]]',
 	'wikilove-header' => '[[File:Wiki Love 003.png|thumb]]
-Header is the subject of the added message (so perhaps subject is a better term..), i.e. what gets between == ... ==',
+Header is the subject of the added message (so perhaps subject is a better term..), i.e. what gets added between == ... ==',
 	'wikilove-title' => '[[File:Wiki Love 004.png|thumb]]
 Title is the title of the wikilove box (e.g. "Barnstar")',
 	'wikilove-enter-message' => '[[File:Wiki Love 003.png|thumb]]',
@@ -111,6 +113,9 @@ Title is the title of the wikilove box (e.g. "Barnstar")',
 	'wikilove-commons-text' => '[[File:Wiki Love 004.png|thumb]]
 $1 gets replaced by a link with {{msg-mw|wikilove-commons-link}} ("Wikimedia Commons") as caption and {{msg-mw|wikilove-commons-url}} as URL.',
 	'wikilove-commons-url' => 'This URL can be changed to point at a localised page on Wikimedia Commons.',
+	'wikilove-terms' => '[[File:Wiki_Love_003.png]]
+A notice that appears above the Send WikiLove button in small text. Try to keep this concise. $1 is replaced with the actual link.',
+	'wikilove-terms-link' => 'The text that links to the terms of service. Should not be capitalized.',
 );
 
 /** Afrikaans (Afrikaans)

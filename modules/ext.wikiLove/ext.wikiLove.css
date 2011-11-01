@@ -238,7 +238,7 @@
 /*#mw-wikilove-dialog*/ #mw-wikilove-add-details .mw-wikilove-note {
 	font-weight: light;
 	font-size: 0.9em;
-	color: #999;
+	color: #888888;
 }
 
 /*#mw-wikilove-dialog*/ #mw-wikilove-add-details textarea {
@@ -323,6 +323,13 @@
 
 #mw-wikilove-dialog .submit {
 	float: right;
+}
+
+#mw-wikilove-dialog #mw-wikilove-terms {
+	margin: 0.5em 0;
+	text-align: right;
+	font-size: 0.9em;
+	color: #888888;
 }
 
 #mw-wikilove-dialog .mw-wikilove-spinner {

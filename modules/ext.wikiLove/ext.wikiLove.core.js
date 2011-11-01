@@ -109,6 +109,7 @@ $.wikiLove = {
 	<span class="mw-wikilove-number">3</span>\
 	<h3><html:msg key="wikilove-preview"/></h3>\
 	<div id="mw-wikilove-preview-area"></div>\
+	<div id="mw-wikilove-terms"></div>\
 	<form id="mw-wikilove-send-form">\
 		<button class="submit" id="mw-wikilove-button-send" type="submit"></button>\
 		<div id="mw-wikilove-send-spinner" class="mw-wikilove-spinner"></div>\

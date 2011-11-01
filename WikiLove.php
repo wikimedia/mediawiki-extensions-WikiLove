@@ -143,6 +143,8 @@ $wgResourceModules += array(
 			'wikilove-commons-url',
 			'wikilove-err-preview-api',
 			'wikilove-err-send-api',
+			'wikilove-terms',
+			'wikilove-terms-link',
 		),
 		'dependencies' => array(
 			'ext.wikiLove.defaultOptions',
