@@ -45,9 +45,18 @@ $.wikiLove = {
 				$typeList.append( $( '<li tabindex="0"></li>' ).append( $button ) );
 			}
 			
-			var $termsLink = $( '<a> ')
-				.attr( 'href', mw.msg( 'wikilove-commons-url' ) )
-				.text( mw.msg( 'wikilove-commons-link' ) );
+			var 	commonsLink = $( '<a>' )
+					.attr( 'href', mw.msg( 'wikilove-commons-url' ) )
+					.text( mw.msg( 'wikilove-commons-link' ) )
+					.wrap( '<div>' ) // or .html() will only return the link text
+					.parent()
+					.html();
+				termsLink = $( '<a> ')
+					.attr( 'href', mw.msg( 'wikilove-terms-url' ) )
+					.text( mw.msg( 'wikilove-terms-link' ) )
+					.wrap( '<div>' )
+					.parent()
+					.html();
 
 			$dialog = $( '\
 <div id="mw-wikilove-dialog">\
@@ -96,7 +105,7 @@ $.wikiLove = {
 		<span class="mw-wikilove-note" id="mw-wikilove-image-note"><html:msg key="wikilove-image-example"/></span>\
 		<input type="text" class="text" id="mw-wikilove-image"/>\
 		<div id="mw-wikilove-commons-text">\
-		' + mw.msg( 'wikilove-commons-text', $termsLink.html() ) + '\
+		' + mw.html.escape( mw.msg( 'wikilove-commons-text' ) ).replace( /\$1/, commonsLink ) + '\
 		</div>\
 		<label for="mw-wikilove-message" id="mw-wikilove-message-label"><html:msg key="wikilove-enter-message"/></label>\
 		<span class="mw-wikilove-note" id="mw-wikilove-message-note"><html:msg key="wikilove-omit-sig"/></span>\
@@ -114,7 +123,7 @@ $.wikiLove = {
 	<h3><html:msg key="wikilove-preview"/></h3>\
 	<div id="mw-wikilove-preview-area"></div>\
 	<div id="mw-wikilove-terms">\
-	' + mw.msg( 'wikilove-terms', '<a href="' + mw.msg( 'wikilove-terms-url' ) + '" target="_blank">' + mw.msg( 'wikilove-terms-link' ) +'</a>' ) + '\
+	' + mw.html.escape( mw.msg( 'wikilove-terms' ) ).replace( /\$1/, termsLink ) + '\
 	</div>\
 	<form id="mw-wikilove-send-form">\
 		<button class="submit" id="mw-wikilove-button-send" type="submit"></button>\
