@@ -44,6 +44,10 @@ $.wikiLove = {
 				$button.append( '<div class="mw-wikilove-r-cap"></div>');
 				$typeList.append( $( '<li tabindex="0"></li>' ).append( $button ) );
 			}
+			
+			var $termsLink = $( '<a> ')
+				.attr( 'href', mw.msg( 'wikilove-commons-url' ) )
+				.text( mw.msg( 'wikilove-commons-link' ) );
 
 			$dialog = $( '\
 <div id="mw-wikilove-dialog">\
@@ -92,7 +96,7 @@ $.wikiLove = {
 		<span class="mw-wikilove-note" id="mw-wikilove-image-note"><html:msg key="wikilove-image-example"/></span>\
 		<input type="text" class="text" id="mw-wikilove-image"/>\
 		<div id="mw-wikilove-commons-text">\
-		' + mw.msg( 'wikilove-commons-text', '<a href="' + mw.msg( 'wikilove-commons-url' ) + '" target="_blank">' + mw.msg( 'wikilove-commons-link' ) +'</a>' ) + '\
+		' + mw.msg( 'wikilove-commons-text', $termsLink.html() ) + '\
 		</div>\
 		<label for="mw-wikilove-message" id="mw-wikilove-message-label"><html:msg key="wikilove-enter-message"/></label>\
 		<span class="mw-wikilove-note" id="mw-wikilove-message-note"><html:msg key="wikilove-omit-sig"/></span>\
