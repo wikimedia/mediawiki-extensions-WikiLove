@@ -47,12 +47,14 @@ $.wikiLove = {
 			
 			var 	commonsLink = $( '<a>' )
 					.attr( 'href', mw.msg( 'wikilove-commons-url' ) )
+					.attr( 'target', '_blank' )
 					.text( mw.msg( 'wikilove-commons-link' ) )
 					.wrap( '<div>' ) // or .html() will only return the link text
 					.parent()
 					.html();
 				termsLink = $( '<a> ')
 					.attr( 'href', mw.msg( 'wikilove-terms-url' ) )
+					.attr( 'target', '_blank' )
 					.text( mw.msg( 'wikilove-terms-link' ) )
 					.wrap( '<div>' )
 					.parent()
