@@ -67,6 +67,7 @@ $messages['en'] = array(
  * @author McDutchie
  * @author Purodha
  * @author SPQRobin
+ * @author Siebrand
  * @author Whym
  */
 $messages['qqq'] = array(
@@ -114,7 +115,7 @@ Title is the title of the wikilove box (e.g. "Barnstar")',
 	'wikilove-commons-text' => '[[File:Wiki Love 004.png|thumb]]
 $1 gets replaced by a link with {{msg-mw|wikilove-commons-link}} ("Wikimedia Commons") as caption and {{msg-mw|wikilove-commons-url}} as URL.',
 	'wikilove-commons-url' => 'This URL can be changed to point at a localised page on Wikimedia Commons.',
-	'wikilove-terms' => '[[File:Wiki_Love_003.png]]
+	'wikilove-terms' => '[[File:Wiki_Love_003.png|right|200px]]
 A notice that appears above the Send WikiLove button in small text. Try to keep this concise. $1 is replaced with the actual link.',
 	'wikilove-terms-link' => 'The text that links to the terms of service. Should not be capitalized.',
 	'wikilove-terms-url' => 'This URL can be changed to point to a translated version of the page if it exists.',
@@ -527,6 +528,9 @@ $messages['de'] = array(
 	'wikilove-what-is-this' => 'Worum handelt es sich?',
 	'wikilove-anon-warning' => 'Hinweis: Es handelt sich um einen Benutzer ohne Benutzerkonto. Daher wird er oder sie die Nachricht wahrscheinlich nicht bemerken.',
 	'wikilove-commons-text' => 'Bilder können gefunden werden, indem man $1 durchsucht.',
+	'wikilove-terms' => 'Mit dem Speichern erklärst du dich mit diesen $1 einverstanden.',
+	'wikilove-terms-link' => 'Bedingungen',
+	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 );
 
 /** German (formal address) (‪Deutsch (Sie-Form)‬)
@@ -543,6 +547,7 @@ $messages['de-formal'] = array(
 	'wikilove-err-gallery-again' => 'Bitte versuchen Sie es erneut.',
 	'wikilove-err-preview-api' => 'Während der Vorschau ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.',
 	'wikilove-err-send-api' => 'Während des Sendens der Wertschätzung ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.',
+	'wikilove-terms' => 'Mit dem Speichern erklären Sie sich mit diesen $1 einverstanden.',
 );
 
 /** Greek (Ελληνικά)
@@ -774,15 +779,21 @@ $messages['fa'] = array(
  * @author Crt
  */
 $messages['fi'] = array(
+	'tooltip-ca-wikilove' => 'Lähetä viesti tälle käyttäjälle osoittaaksesi arvostusta',
 	'wikilove-select-type' => 'Valitse tyyppi',
 	'wikilove-get-started-header' => 'Aloitetaan!',
+	'wikilove-add-details' => 'Lisää tiedot',
 	'wikilove-omit-sig' => '(ilman allekirjoitusta)',
 	'wikilove-image-example' => '(esimerkki: Trophy.png)',
-	'wikilove-button-preview' => 'Esikatselu',
+	'wikilove-button-preview' => 'Esikatsele',
 	'wikilove-preview' => 'Esikatselu',
+	'wikilove-notify' => 'Ilmoita käyttäjälle sähköpostitse',
+	'wikilove-type-barnstars' => 'Palkinnot',
 	'wikilove-type-makeyourown' => 'Tee oma',
+	'wikilove-err-sig' => 'Älä sisällytä allekirjoitusta viestiin.',
 	'wikilove-err-gallery-again' => 'Yritä uudelleen',
 	'wikilove-what-is-this' => 'Mikä tämä on?',
+	'wikilove-anon-warning' => 'Huomautus: Tämä käyttäjä ei ole rekisteröitynyt, joten hän ei välttämättä huomaa tätä viestiä.',
 	'wikilove-commons-text' => 'Voit etsiä kuvia selailemalla sivustoa $1.',
 );
 
@@ -887,6 +898,7 @@ $messages['frp'] = array(
 	'wikilove-what-is-this' => 'Qu’est-o qu’il est ?',
 	'wikilove-anon-warning' => 'Nota : ceti utilisator est pas encartâ, il ou ben el pôt pas vêre cél mèssâjo.',
 	'wikilove-commons-text' => 'Vos pouede trovar des émâges en dèfelent dessus $1.',
+	'wikilove-terms-link' => 'condicions',
 );
 
 /** Galician (Galego)
@@ -936,6 +948,8 @@ $messages['gl'] = array(
 	'wikilove-what-is-this' => 'Que é isto?',
 	'wikilove-anon-warning' => 'Nota: Este usuario non está rexistrado, el ou ela puido non ver esta mensaxe.',
 	'wikilove-commons-text' => 'Pode atopar imaxes navegando por $1.',
+	'wikilove-terms' => 'Se envía os seus comentarios, acepta publicalos baixo estes $1.',
+	'wikilove-terms-link' => 'termos',
 );
 
 /** Swiss German (Alemannisch)
@@ -1149,6 +1163,8 @@ $messages['ia'] = array(
 	'wikilove-commons-text' => 'Tu pote trovar imagines in $1.',
 	'wikilove-commons-link' => 'Wikimedia Commons',
 	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/Pagina_principal?uselang=ia',
+	'wikilove-terms' => 'Per submitter, tu te declara de accordo con transparentia sub iste $1.',
+	'wikilove-terms-link' => 'conditiones',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -1466,6 +1482,9 @@ $messages['mk'] = array(
 	'wikilove-commons-text' => 'Слики можете да најдете во проектот $1.',
 	'wikilove-commons-link' => 'Заедничка Ризница',
 	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/Главна_страница?uselang=mk',
+	'wikilove-terms' => 'Поднесувајќи го ова, се согласувате со транспарентноста што ја налагаат овие $1.',
+	'wikilove-terms-link' => 'услови',
+	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement?uselang=mk',
 );
 
 /** Malayalam (മലയാളം)
@@ -1563,6 +1582,9 @@ $messages['ms'] = array(
 	'wikilove-what-is-this' => 'Apakah ini?',
 	'wikilove-anon-warning' => 'Perhatian: Pengguna ini tidak berdaftar, jadi mungkin dia tidak dapat perasan pesanan ini.',
 	'wikilove-commons-text' => 'Anda boleh mencari imej dengan melayari $1.',
+	'wikilove-terms' => 'Dengan penyerahan ini, anda bersetuju dengan ketelusan di bawah $1 ini.',
+	'wikilove-terms-link' => 'syarat-syarat',
+	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 );
 
 /** Dutch (Nederlands)
@@ -1613,6 +1635,9 @@ $messages['nl'] = array(
 	'wikilove-what-is-this' => 'Wat is dit?',
 	'wikilove-anon-warning' => 'Opmerking: Deze gebruiker is niet geregistreerd, hij of zij ziet dit bericht misschien niet.',
 	'wikilove-commons-text' => 'U kunt afbeeldingen vinden door op $1 te bladeren.',
+	'wikilove-terms' => 'Door te delen gaat u akkoord met transparantie onder deze $1.',
+	'wikilove-terms-link' => 'voorwaarden',
+	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement/nl',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
@@ -2180,6 +2205,9 @@ $messages['sl'] = array(
 	'wikilove-what-is-this' => 'Kaj je to?',
 	'wikilove-anon-warning' => 'Opomba: Uporabnik ni registriran, zato sporočila morda ne bo opazil.',
 	'wikilove-commons-text' => 'Slike lahko najdete z brskanjem po $1.',
+	'wikilove-terms' => 'S potrditvijo se strinjate s preglednostjo pod temi $1.',
+	'wikilove-terms-link' => 'pogoji',
+	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 );
 
 /** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
