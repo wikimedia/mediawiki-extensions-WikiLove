@@ -799,6 +799,7 @@ $messages['fi'] = array(
 
 /** French (Français)
  * @author Crochet.david
+ * @author Gomoko
  * @author Hashar
  * @author IAlex
  * @author Jean-Frédéric
@@ -849,6 +850,9 @@ $messages['fr'] = array(
 	'wikilove-what-is-this' => 'Qu’est-ce que c’est ?',
 	'wikilove-anon-warning' => 'Note : cet utilisateur n’est pas enregistré, il ou elle peut ne pas voir ce message.',
 	'wikilove-commons-text' => 'Vous pouvez trouver des images en surfant sur $1.',
+	'wikilove-terms' => "En répondant, vous acceptez d'être transparent selon $1.",
+	'wikilove-terms-link' => 'conditions',
+	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 );
 
 /** Franco-Provençal (Arpetan)
@@ -1269,7 +1273,7 @@ $messages['ja'] = array(
 	'wikilove-enable-preference' => 'ウィキラブのタブを使って他の利用者に対して感謝の意を示すことができるようにする（試験的）',
 	'wikilove-tab-text' => 'ウィキラブ',
 	'tooltip-ca-wikilove' => 'この利用者に向けた感謝の言葉を書き込む',
-	'wikilove-dialog-title' => 'WikiLove - 他の利用者に感謝の言葉を送る',
+	'wikilove-dialog-title' => 'ウィキラブ - 他の利用者に感謝の言葉を送る',
 	'wikilove-select-type' => '種類をお選びください',
 	'wikilove-get-started-header' => 'さあ、始めましょう ！',
 	'wikilove-get-started-list-1' => '送りたいウィキラブの種類を選択してください',
@@ -2449,6 +2453,8 @@ $messages['vi'] = array(
 	'wikilove-what-is-this' => 'Này là gì?',
 	'wikilove-anon-warning' => 'Lưu ý: Người dùng này chưa đăng ký, nên họ có thể không nhận thấy được thông điệp này.',
 	'wikilove-commons-text' => 'Có thể tìm kiếm hình ảnh tại $1.',
+	'wikilove-terms' => 'Bằng cách gửi thông tin, bạn đồng ý phát hành thông tin này công khai theo các $1 này.',
+	'wikilove-terms-link' => 'điều khoản',
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
