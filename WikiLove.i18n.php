@@ -1014,6 +1014,8 @@ $messages['he'] = array(
 	'wikilove-what-is-this' => 'מה זה?',
 	'wikilove-anon-warning' => 'הערה: משתמש זה אינו רשום ואולי לא יבחין בהודעה זו.',
 	'wikilove-commons-text' => 'אפשר לחפש תמונות באתר $1.',
+	'wikilove-terms' => 'שליחה מביעה את הסכמתך לשקיפות לפי $1 הבאים.',
+	'wikilove-terms-link' => 'התנאים',
 );
 
 /** Hindi (हिन्दी)
@@ -1399,6 +1401,8 @@ $messages['lb'] = array(
 	'wikilove-summary' => '/* $1 */ neie WikiLove Message',
 	'wikilove-what-is-this' => 'Wat ass dat?',
 	'wikilove-anon-warning' => 'Notiz: Dëse Benotzer ass net registréiert, hien oder si gesäit dëse Message méiglecherweis net.',
+	'wikilove-terms-link' => 'Bedingungen',
+	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 );
 
 /** Lithuanian (Lietuvių)
@@ -1586,6 +1590,8 @@ $messages['ms'] = array(
 	'wikilove-what-is-this' => 'Apakah ini?',
 	'wikilove-anon-warning' => 'Perhatian: Pengguna ini tidak berdaftar, jadi mungkin dia tidak dapat perasan pesanan ini.',
 	'wikilove-commons-text' => 'Anda boleh mencari imej dengan melayari $1.',
+	'wikilove-commons-link' => 'Wikimedia Commons',
+	'wikilove-commons-url' => 'http://commons.wikimedia.org',
 	'wikilove-terms' => 'Dengan penyerahan ini, anda bersetuju dengan ketelusan di bawah $1 ini.',
 	'wikilove-terms-link' => 'syarat-syarat',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
@@ -2409,6 +2415,7 @@ $messages['uk'] = array(
 
 /** Vietnamese (Tiếng Việt)
  * @author Minh Nguyen
+ * @author Trần Nguyễn Minh Huy
  */
 $messages['vi'] = array(
 	'wikilove-desc' => 'Thêm một giao diện cho phép gửi phản hồi khen ngợi cho người dùng khác qua các trang thảo luận cá nhân',
@@ -2450,11 +2457,12 @@ $messages['vi'] = array(
 	'wikilove-err-preview-api' => 'Đã gặp một lỗi bất ngờ trong việc xem trước. Hãy thử lại.',
 	'wikilove-err-send-api' => 'Đã gặp một lỗi bất ngờ trong việc gửi thông điệp. Hãy thử lại.',
 	'wikilove-summary' => '/* $1 */ thông điệp WikiLove mới',
-	'wikilove-what-is-this' => 'Này là gì?',
+	'wikilove-what-is-this' => 'Đây là gì?',
 	'wikilove-anon-warning' => 'Lưu ý: Người dùng này chưa đăng ký, nên họ có thể không nhận thấy được thông điệp này.',
 	'wikilove-commons-text' => 'Có thể tìm kiếm hình ảnh tại $1.',
 	'wikilove-terms' => 'Bằng cách gửi thông tin, bạn đồng ý phát hành thông tin này công khai theo các $1 này.',
 	'wikilove-terms-link' => 'điều khoản',
+	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
