@@ -480,6 +480,9 @@ $messages['da'] = array(
 	'wikilove-what-is-this' => 'Hvad er dette?',
 	'wikilove-anon-warning' => 'Bemærk: Denne bruger er ikke registreret, han eller hun vil måske ikke bemærke denne besked.',
 	'wikilove-commons-text' => 'Du kan finde billeder ved at gennemse $1.',
+	'wikilove-terms' => 'Ved at sende accepterer du gennemsigtighed under disse $1.',
+	'wikilove-terms-link' => 'vilkår',
+	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 );
 
 /** German (Deutsch)
@@ -1171,6 +1174,7 @@ $messages['ia'] = array(
 	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/Pagina_principal?uselang=ia',
 	'wikilove-terms' => 'Per submitter, tu te declara de accordo con transparentia sub iste $1.',
 	'wikilove-terms-link' => 'conditiones',
+	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -2462,7 +2466,7 @@ $messages['vi'] = array(
 	'wikilove-commons-text' => 'Có thể tìm kiếm hình ảnh tại $1.',
 	'wikilove-terms' => 'Bằng cách gửi thông tin, bạn đồng ý phát hành thông tin này công khai theo các $1 này.',
 	'wikilove-terms-link' => 'điều khoản',
-	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
+	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement/vi',
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
