@@ -172,6 +172,8 @@ $messages['af'] = array(
 /** Arabic (العربية)
  * @author Abanima
  * @author Zack wadghiri
+ * @author روخو
+ * @author زكريا
  */
 $messages['ar'] = array(
 	'wikilove-desc' => 'لإضافة واجهة للإثناء على المستخدم في صفحة نقاشه',
@@ -216,6 +218,7 @@ $messages['ar'] = array(
 	'wikilove-what-is-this' => 'ما هذا؟',
 	'wikilove-anon-warning' => 'تنبيه: هذا المستخدم غير مسجل وقد لا ينتبه إلى هذه الرسالة.',
 	'wikilove-commons-text' => 'تجد هذه الصورة في صفحة $1.',
+	'wikilove-terms-link' => 'الشروط',
 );
 
 /** Azerbaijani (Azərbaycanca)
@@ -1019,6 +1022,7 @@ $messages['he'] = array(
 	'wikilove-commons-text' => 'אפשר לחפש תמונות באתר $1.',
 	'wikilove-terms' => 'שליחה מביעה את הסכמתך לשקיפות לפי $1 הבאים.',
 	'wikilove-terms-link' => 'התנאים',
+	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 );
 
 /** Hindi (हिन्दी)
