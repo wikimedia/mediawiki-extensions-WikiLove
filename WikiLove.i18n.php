@@ -494,7 +494,7 @@ $messages['da'] = array(
 $messages['de'] = array(
 	'wikilove-desc' => 'Ergänzt ein Hilfsmittel zum Ausdrücken persönlicher Wertschätzung gegenüber einem Benutzer auf dessen Diskussionsseite',
 	'wikilove' => 'Wertschätzung',
-	'wikilove-enable-preference' => 'Menüreiter für das Hilfsmittel zum Ausdrücken persönlicher Wertschätzung gegenüber einem anderen Benutzer aktivieren (experimentell)',
+	'wikilove-enable-preference' => 'Das Hilfsmittel zum Ausdrücken der persönlichen Wertschätzung gegenüber einem anderen Benutzer aktivieren (experimentell)',
 	'wikilove-tab-text' => 'Wertschätzen',
 	'tooltip-ca-wikilove' => 'Diesem Benutzer die persönliche Wertschätzung in Form einer Nachricht hinterlassen',
 	'wikilove-dialog-title' => 'Eine Nachricht der Wertschätzung an einen anderen Benutzer senden',
@@ -1320,6 +1320,8 @@ $messages['ja'] = array(
 	'wikilove-what-is-this' => 'これは何？',
 	'wikilove-anon-warning' => '注：この利用者は登録していないので、このメッセージに気づかないかもしれません。',
 	'wikilove-commons-text' => '$1で画像を見つけることができます。',
+	'wikilove-terms' => '送信することによって、あなたはこの$1のもとで透明性に同意することになります。',
+	'wikilove-terms-link' => '規約',
 );
 
 /** Colognian (Ripoarisch)
@@ -2475,6 +2477,7 @@ $messages['vi'] = array(
 
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Kaldari
+ * @author Liangent
  * @author PhiLiP
  * @author Shizhao
  * @author Tommyang
@@ -2506,7 +2509,7 @@ $messages['zh-hans'] = array(
 	'wikilove-type-barnstars' => '星章',
 	'wikilove-type-food' => '饮食',
 	'wikilove-type-kittens' => '宠物猫',
-	'wikilove-type-makeyourown' => '制作你自己的维基有爱',
+	'wikilove-type-makeyourown' => '自己制作',
 	'wikilove-err-header' => '请输入标题。',
 	'wikilove-err-title' => '请输入奖励标题。',
 	'wikilove-err-msg' => '请输入一条个性化的消息。',
@@ -2526,6 +2529,7 @@ $messages['zh-hans'] = array(
 
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Kaldari
+ * @author Liangent
  * @author Waihorace
  */
 $messages['zh-hant'] = array(
@@ -2555,7 +2559,7 @@ $messages['zh-hant'] = array(
 	'wikilove-type-barnstars' => '星章',
 	'wikilove-type-food' => '食物及飲品',
 	'wikilove-type-kittens' => '小貓',
-	'wikilove-type-makeyourown' => '製作你自己的',
+	'wikilove-type-makeyourown' => '自己製作',
 	'wikilove-err-header' => '請輸入頭部。',
 	'wikilove-err-title' => '請輸入標題。',
 	'wikilove-err-msg' => '請輸入一條個性化的信息。',
