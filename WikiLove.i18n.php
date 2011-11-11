@@ -376,6 +376,7 @@ $messages['br'] = array(
 	'wikilove-err-gallery-again' => 'Klask en-dro',
 	'wikilove-summary' => '/* $1 */ kemennadenn WikiLove nevez',
 	'wikilove-what-is-this' => 'Petra eo se ?',
+	'wikilove-terms-link' => 'termenoù',
 );
 
 /** Bosnian (Bosanski)
