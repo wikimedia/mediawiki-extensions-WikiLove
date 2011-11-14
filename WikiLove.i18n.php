@@ -377,6 +377,7 @@ $messages['br'] = array(
 	'wikilove-err-gallery-again' => 'Klask en-dro',
 	'wikilove-summary' => '/* $1 */ kemennadenn WikiLove nevez',
 	'wikilove-what-is-this' => 'Petra eo se ?',
+	'wikilove-commons-text' => "Skeudennoù a c'hallit kavout en ur furchal e $1.",
 	'wikilove-terms-link' => 'termenoù',
 );
 
@@ -539,6 +540,7 @@ $messages['de'] = array(
 	'wikilove-terms' => 'Mit dem Speichern erklärst du dich mit diesen $1 einverstanden.',
 	'wikilove-terms-link' => 'Bedingungen',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
+	'wikilove.js' => '/* Das folgende JavaScript passt die persönliche Wertschätzung an, siehe http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** German (formal address) (‪Deutsch (Sie-Form)‬)
@@ -1505,6 +1507,7 @@ $messages['mk'] = array(
 	'wikilove-terms' => 'Поднесувајќи го ова, се согласувате со транспарентноста што ја налагаат овие $1.',
 	'wikilove-terms-link' => 'услови',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement?uselang=mk',
+	'wikilove.js' => '/* Тука поставениот JavaScript го прилагодува ВикиЉубов. Погл. http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration?uselang=mk */',
 );
 
 /** Malayalam (മലയാളം)
@@ -1760,6 +1763,15 @@ $messages['or'] = array(
 	'wikilove-what-is-this' => 'ଏହା କଣ ?',
 	'wikilove-anon-warning' => 'ସୂଚନା: ଏହି ସଦସ୍ୟ ପଞ୍ଜୀକରଣ ହୋଇନାହାନ୍ତି, ତେଣୁ ସେ ଏହି ସନ୍ଦେଶ ପାଇ ନ ପାରନ୍ତି ।',
 	'wikilove-commons-text' => 'ଆପଣ $1 କୁ ବ୍ରାଉଜ କରି ଛବି ପାଇ ପାରିବେ ।',
+);
+
+/** Deitsch (Deitsch)
+ * @author Xqt
+ */
+$messages['pdc'] = array(
+	'wikilove-button-preview' => 'Aasicht',
+	'wikilove-preview' => 'Aasicht',
+	'wikilove-type-kittens' => 'Bussli',
 );
 
 /** Polish (Polski)
@@ -2230,6 +2242,7 @@ $messages['sl'] = array(
 	'wikilove-terms' => 'S potrditvijo se strinjate s preglednostjo pod temi $1.',
 	'wikilove-terms-link' => 'pogoji',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
+	'wikilove.js' => '/* Tukaj naveden JavaScript prilagaja WikiLove; oglejte si http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
@@ -2475,6 +2488,7 @@ $messages['vi'] = array(
 	'wikilove-terms' => 'Bằng cách gửi thông tin, bạn đồng ý phát hành thông tin này công khai theo các $1 này.',
 	'wikilove-terms-link' => 'điều khoản',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement/vi',
+	'wikilove.js' => '/* Mã JavaScript tại đây sẽ tùy chỉnh WikiLove; xem http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
