@@ -863,6 +863,7 @@ $messages['fr'] = array(
 	'wikilove-terms' => "En répondant, vous acceptez d'être transparent selon $1.",
 	'wikilove-terms-link' => 'conditions',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
+	'wikilove.js' => '/ * le JavaScript placé ici personnalise WikiLove, voyez http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
 );
 
 /** Franco-Provençal (Arpetan)
@@ -1183,6 +1184,7 @@ $messages['ia'] = array(
 	'wikilove-terms' => 'Per submitter, tu te declara de accordo con transparentia sub iste $1.',
 	'wikilove-terms-link' => 'conditiones',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
+	'wikilove.js' => '/* Le JavaScript inserite hic personalisa WikiLove, vide http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Indonesian (Bahasa Indonesia)
