@@ -965,6 +965,8 @@ $messages['gl'] = array(
 	'wikilove-commons-text' => 'Pode atopar imaxes navegando por $1.',
 	'wikilove-terms' => 'Se envía os seus comentarios, acepta publicalos baixo estes $1.',
 	'wikilove-terms-link' => 'termos',
+	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
+	'wikilove.js' => '/* O JavaScript que se coloque aquí afectará a extensión Amor wiki; lea http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Swiss German (Alemannisch)
@@ -1612,6 +1614,7 @@ $messages['ms'] = array(
 	'wikilove-terms' => 'Dengan penyerahan ini, anda bersetuju dengan ketelusan di bawah $1 ini.',
 	'wikilove-terms-link' => 'syarat-syarat',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
+	'wikilove.js' => '/* JavaScript yang terletak di sini mengubah suai WikiLove, rujuk http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Dutch (Nederlands)
@@ -1665,6 +1668,7 @@ $messages['nl'] = array(
 	'wikilove-terms' => 'Door te delen gaat u akkoord met transparantie onder deze $1.',
 	'wikilove-terms-link' => 'voorwaarden',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement/nl',
+	'wikilove.js' => '/ * JavaScript die hier wordt geplaatst is van invloed op de weergave van WikiLove. Zie http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
@@ -1983,6 +1987,10 @@ $messages['pt-br'] = array(
 	'wikilove-what-is-this' => 'O que é isto?',
 	'wikilove-anon-warning' => 'Nota: Este usuário não está registrado e poderá não perceber esta mensagem.',
 	'wikilove-commons-text' => 'Pode encontrar imagens pesquisando-as em $1.',
+	'wikilove-terms' => 'Ao enviar, concorda que os seus comentários podem se tornar públicos tal como explicado $1',
+	'wikilove-terms-link' => 'termos',
+	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
+	'wikilove.js' => '/* O Javascript que colocar aqui personalizará a extensão WikiLove. Favor ler http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Romanian (Română)
@@ -2032,6 +2040,11 @@ $messages['ro'] = array(
 	'wikilove-what-is-this' => 'Ce este aceasta?',
 	'wikilove-anon-warning' => 'Notă: Acest utilizator nu este înregistrat, el sau ea s-ar putea să nu observe mesajul.',
 	'wikilove-commons-text' => 'Puteți găsi imagini răsfoind $1.',
+	'wikilove-commons-link' => 'Wikimedia Commons',
+	'wikilove-commons-url' => 'http://commons.wikimedia.org',
+	'wikilove-terms' => 'Prin trimitere, sunteți de acord cu acești $1.',
+	'wikilove-terms-link' => 'termeni',
+	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 );
 
 /** Tarandíne (Tarandíne)
@@ -2258,6 +2271,7 @@ $messages['sr-ec'] = array(
 /** Swedish (Svenska)
  * @author Ainali
  * @author Diupwijk
+ * @author Warrakkk
  */
 $messages['sv'] = array(
 	'wikilove-desc' => 'Lägger till ett gränssnitt för att förenkla positiv feedback från användarna till Användardiskussionssidor',
@@ -2302,6 +2316,10 @@ $messages['sv'] = array(
 	'wikilove-what-is-this' => 'Vad är det här?',
 	'wikilove-anon-warning' => 'Obs: Den här användaren är inte registrerad, han eller hon kanske inte kommer att upptäcka detta meddelande.',
 	'wikilove-commons-text' => 'Du kan hitta bilder genom att söka i $1.',
+	'wikilove-terms' => 'Genom att skicka samtycker du till insyn under dessa $1 .',
+	'wikilove-terms-link' => 'villkor',
+	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
+	'wikilove.js' => '/ * JavaScript som placeras här anpassar WikiLove, se http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
 );
 
 /** Telugu (తెలుగు)
