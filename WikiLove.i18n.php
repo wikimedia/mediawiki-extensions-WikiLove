@@ -2193,6 +2193,7 @@ $messages['si'] = array(
 	'wikilove-add-details' => 'විස්තර එක් කරන්න',
 	'wikilove-image' => 'රූපයේ  නම එක් කරන්න:',
 	'wikilove-select-image' => 'රූපයක් තෝරන්න:',
+	'wikilove-header' => 'ශීර්ෂකයක් එක් කරන්න:',
 	'wikilove-enter-message' => 'පණිවුඩයක් එක් කරන්න:',
 	'wikilove-omit-sig' => '(අත්සනක් රහිත)',
 	'wikilove-button-preview' => 'පෙර දසුන',
@@ -2206,6 +2207,7 @@ $messages['si'] = array(
 	'wikilove-err-image-bad' => 'රූපය නොපවතී',
 	'wikilove-err-gallery-again' => 'නැවත උත්සහ කරන්න',
 	'wikilove-what-is-this' => 'මේක මොකක්ද?',
+	'wikilove-terms-link' => 'කොන්දේසි',
 );
 
 /** Slovenian (Slovenščina)
