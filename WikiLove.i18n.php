@@ -1330,6 +1330,7 @@ $messages['ja'] = array(
 	'wikilove-commons-text' => '$1で画像を見つけることができます。',
 	'wikilove-terms' => '送信することによって、あなたはこの$1のもとで透明性に同意することになります。',
 	'wikilove-terms-link' => '規約',
+	'wikilove.js' => '/* ここに置かれたJavaScriptによってウィキラブの設定が変更されます。  http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration をご覧ください。 */',
 );
 
 /** Colognian (Ripoarisch)
