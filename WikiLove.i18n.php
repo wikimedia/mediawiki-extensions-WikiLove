@@ -69,6 +69,7 @@ $messages['en'] = array(
  * @author Purodha
  * @author SPQRobin
  * @author Siebrand
+ * @author Umherirrender
  * @author Whym
  */
 $messages['qqq'] = array(
@@ -115,7 +116,9 @@ Title is the title of the wikilove box (e.g. "Barnstar")',
 {{Identical|What is this}}',
 	'wikilove-commons-text' => '[[File:Wiki Love 004.png|thumb]]
 $1 gets replaced by a link with {{msg-mw|wikilove-commons-link}} ("Wikimedia Commons") as caption and {{msg-mw|wikilove-commons-url}} as URL.',
-	'wikilove-commons-url' => 'This URL can be changed to point at a localised page on Wikimedia Commons.',
+	'wikilove-commons-link' => '{{optional}}',
+	'wikilove-commons-url' => '{{optional}}
+This URL can be changed to point at a localised page on Wikimedia Commons.',
 	'wikilove-terms' => '[[File:Wiki_Love_003.png|right|200px]]
 A notice that appears above the Send WikiLove button in small text. Try to keep this concise. $1 is replaced with the actual link.',
 	'wikilove-terms-link' => 'The text that links to the terms of service. Should not be capitalized.',
@@ -1030,6 +1033,8 @@ $messages['he'] = array(
 	'wikilove-terms' => 'שליחה מביעה את הסכמתך לשקיפות לפי $1 הבאים.',
 	'wikilove-terms-link' => 'התנאים',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
+	'wikilove.js' => "/* זהו דף ג'אווה סקריפט להגדרות של ויקי־אהבה. למידע נוסף ר׳
+   http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */",
 );
 
 /** Hindi (हिन्दी)
@@ -2046,6 +2051,7 @@ $messages['ro'] = array(
 	'wikilove-terms' => 'Prin trimitere, sunteți de acord cu acești $1.',
 	'wikilove-terms-link' => 'termeni',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
+	'wikilove.js' => '/* JavaScript plasat aici personalizează WikiLove; vedeți http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Tarandíne (Tarandíne)
@@ -2323,6 +2329,19 @@ $messages['sv'] = array(
 	'wikilove-terms-link' => 'villkor',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 	'wikilove.js' => '/ * JavaScript som placeras här anpassar WikiLove, se http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
+);
+
+/** Tamil (தமிழ்)
+ * @author Logicwiki
+ */
+$messages['ta'] = array(
+	'wikilove' => 'விக்கியன்பு',
+	'wikilove-tab-text' => 'விக்கியன்பு',
+	'wikilove-add-details' => 'விவரங்களை சேர்',
+	'wikilove-button-preview' => 'முன்தோற்றம்',
+	'wikilove-preview' => 'முன்தோற்றம்',
+	'wikilove-button-send' => 'விக்கியன்பை அனுப்பு',
+	'wikilove-err-gallery-again' => 'மீண்டும் முயற்சி செய்',
 );
 
 /** Telugu (తెలుగు)
