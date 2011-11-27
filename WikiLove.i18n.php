@@ -492,6 +492,7 @@ $messages['da'] = array(
 	'wikilove-terms' => 'Ved at sende accepterer du gennemsigtighed under disse $1.',
 	'wikilove-terms-link' => 'vilkår',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
+	'wikilove.js' => '/* JavaScript, der placeres her, tilpasser WikiLove, se http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** German (Deutsch)
