@@ -88,6 +88,7 @@ class ApiWikiLove extends ApiBase {
 	 */
 	private function emailUser( $talk, $subject, $text, $token ) {
 		global $wgRequest;
+
 		$api = new ApiMain( new FauxRequest( array(
 			'action' => 'emailuser',
 			'target' => User::newFromName( $talk->getSubjectPage()->getBaseText() )->getName(),
@@ -95,7 +96,8 @@ class ApiWikiLove extends ApiBase {
 			'text' => $text,
 			'token' => $token,
 		), false, array( 'wsEditToken' => $wgRequest->getSessionData( 'wsEditToken' ) ) ), true );
-		try{
+
+		try {
 			$api->execute();
 		} catch( DBQueryError $dbqe ) {
 			$this->setWarning( 'E-mail was not sent' );
@@ -141,7 +143,9 @@ class ApiWikiLove extends ApiBase {
 				'or when on a MediaWiki page through mw.user.tokens',
 			),
 			'subject' => 'Subject header of the new section',
-			'email' => 'Content of the optional e-mail message to send to the user',
+			'email' => array( 'Content of the optional e-mail message to send to the user.',
+				'A warning will be returned if the user cannot be e-mailed. WikiLove will be sent to user talk page either way.',
+			),
 			'type' => array( 'Type of WikiLove (for statistics); this corresponds with a type',
 				'selected in the left menu, and optionally a subtype after that',
 				'(e.g. "barnstar-normal" or "kitten")',
