@@ -22,11 +22,11 @@ class ApiWikiLove extends ApiBase {
 		// not using section => 'new' here, as we like to give our own edit summary
 		$api = new ApiMain( new FauxRequest( array(
 			'action' => 'edit',
-			'title'  => $talk->getFullText(),
+			'title' => $talk->getFullText(),
 			// need to do this, as Article::replaceSection fails for non-existing pages
 			'appendtext' => ( $talk->exists() ? "\n\n" : '' ) . wfMsgForContent( 'newsectionheaderdefaultlevel', $params['subject'] )
 				. "\n\n" . $params['text'],
-			'token'  => $params['token'],
+			'token' => $params['token'],
 			'summary' => wfMsgForContent( 'wikilove-summary', $wgParser->stripSectionName( $params['subject'] ) ),
 			'notminor' => true,
 		), false, array( 'wsEditToken' => $wgRequest->getSessionData( 'wsEditToken' ) ) ), true );
@@ -90,9 +90,9 @@ class ApiWikiLove extends ApiBase {
 		global $wgRequest;
 		$api = new ApiMain( new FauxRequest( array(
 			'action' => 'emailuser',
-			'target'  =>  User::newFromName( $talk->getSubjectPage()->getBaseText() )->getName(),
+			'target' => User::newFromName( $talk->getSubjectPage()->getBaseText() )->getName(),
 			'subject' => $subject,
-			'text'  => $text,
+			'text' => $text,
 			'token' => $token,
 		), false, array( 'wsEditToken' => $wgRequest->getSessionData( 'wsEditToken' ) ) ), true );
 		try{
@@ -134,16 +134,18 @@ class ApiWikiLove extends ApiBase {
 
 	public function getParamDescription() {
 		return array(
-			'title' => 'Title of the user or user talk page to send WikiLove to',
+			'title' => 'Full pagename of the user page or user talk page of the user to send WikiLove to',
 			'text' => 'Raw wikitext to add in the new section',
 			'message' => 'Actual message the user has entered, for logging purposes',
-			'token' => 'Edit token. You can get one of these through prop=info',
+			'token' => array( 'Edit token. You can get one of these through the API with prop=info,',
+				'or when on a MediaWiki page through mw.user.tokens',
+			),
 			'subject' => 'Subject header of the new section',
 			'email' => 'Content of the optional e-mail message to send to the user',
 			'type' => array( 'Type of WikiLove (for statistics); this corresponds with a type',
-			                 'selected in the left menu, and optionally a subtype after that',
-			                 '(e.g. "barnstar-normal" or "kitten")',
-			                ),
+				'selected in the left menu, and optionally a subtype after that',
+				'(e.g. "barnstar-normal" or "kitten")',
+			),
 		);
 	}
 
