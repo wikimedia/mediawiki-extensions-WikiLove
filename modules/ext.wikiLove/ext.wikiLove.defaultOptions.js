@@ -12,7 +12,7 @@ $.wikiLoveOptions = {
 	defaultBorderColor: '#fceb92',
 	defaultImageSize: '100px',
 	defaultImage: 'Trophy.png',
-	
+
 	types: {
 		// example type, could be removed later
 		'barnstar': {
@@ -253,9 +253,9 @@ $.wikiLoveOptions = {
 				// for the top-level type
 				'baklava': {
 					fields: [ 'header', 'message' ], // fields to ask for in form
-					option: mw.msg( 'wikilove-food--option' ), // option listed in the select list
-					descr: mw.msg( 'wikilove-food--desc' ),
-					header: mw.msg( 'wikilove-food--header' ), // header that appears at the top of the talk page post (optional)
+					option: mw.msg( 'wikilove-food-baklava-option' ), // option listed in the select list
+					descr: mw.msg( 'wikilove-food-baklava-desc' ),
+					header: mw.msg( 'wikilove-food-baklava-header' ), // header that appears at the top of the talk page post (optional)
 					image: 'Baklava - Turkish special, 80-ply.JPEG', // image for the award
 					imageSize: '135px' // size to display image
 				},
