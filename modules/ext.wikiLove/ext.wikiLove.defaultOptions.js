@@ -253,97 +253,97 @@ $.wikiLoveOptions = {
 				// for the top-level type
 				'baklava': {
 					fields: [ 'header', 'message' ], // fields to ask for in form
-					option: 'Baklava', // option listed in the select list
-					descr: 'Baklava is a rich, sweet pastry made of layers of filo pastry filled with chopped nuts and sweetened with syrup or honey.',
-					header: 'Some baklava for you!', // header that appears at the top of the talk page post (optional)
+					option: mw.msg( 'wikilove-food--option' ), // option listed in the select list
+					descr: mw.msg( 'wikilove-food--desc' ),
+					header: mw.msg( 'wikilove-food--header' ), // header that appears at the top of the talk page post (optional)
 					image: 'Baklava - Turkish special, 80-ply.JPEG', // image for the award
 					imageSize: '135px' // size to display image
 				},
 				'beer': {
 					fields: [ 'header', 'message' ],
-					option: 'Beer',
-					descr: 'Beer is the world\'s most widely consumed and probably oldest alcoholic beverage. It is the third most popular drink after water and tea.',
-					header: 'A beer for you!',
+					option: mw.msg( 'wikilove-food-beer-option' ),
+					descr: mw.msg( 'wikilove-food-beer-desc' ),
+					header: mw.msg( 'wikilove-food-beer-header' ),
 					image: 'Export hell seidel steiner.png',
 					imageSize: '70px'
 				},
 				'brownie': {
 					fields: [ 'header', 'message' ],
-					option: 'Brownie',
-					descr: 'A brownie is a flat, baked treat made of dense, rich chocolate cake. They are usually served as squares or bars.',
-					header: 'A brownie for you!',
+					option: mw.msg( 'wikilove-food-brownie-option' ),
+					descr: mw.msg( 'wikilove-food-brownie-desc' ),
+					header: mw.msg( 'wikilove-food-brownie-header' ),
 					image: 'Brownie transparent.png',
 					imageSize: '120px'
 				},
 				'bubble tea': {
 					fields: [ 'header', 'message' ],
-					option: 'Bubble tea',
-					descr: 'Bubble tea is a tea or juice beverage containing small chewy balls made of tapioca starch or jelly. First invented in Taiwan, it is now popular in many areas of the world.',
-					header: 'Some bubble tea for you!',
+					option: mw.msg( 'wikilove-food-bubbletea-option' ),
+					descr: mw.msg( 'wikilove-food-bubbletea-desc' ),
+					header: mw.msg( 'wikilove-food-bubbletea-header' ),
 					image: 'Bubble_Tea.png',
 					imageSize: '65px'
 				},
 				'cheeseburger': {
 					fields: [ 'header', 'message' ],
-					option: 'Cheeseburger',
-					descr: 'A staple of diners and fast-food restaurants, cheeseburgers were first popularized in the United States during the 1920s and 30s.',
-					header: 'A cheeseburger for you!',
+					option: mw.msg( 'wikilove-food-cheeseburger-option' ),
+					descr: mw.msg( 'wikilove-food-cheeseburger-desc' ),
+					header: mw.msg( 'wikilove-food-cheeseburger-header' ),
 					image: 'Cheeseburger.png',
 					imageSize: '120px'
 				},
 				'cookie': {
 					fields: [ 'header', 'message' ],
-					option: 'Cookie',
-					descr: 'Cookies (known as biscuits in the UK) are small baked treats that come in a wide array of flavors, shapes, and sizes.',
-					header: 'A cookie for you!',
+					option: mw.msg( 'wikilove-food-cookie-option' ),
+					descr: mw.msg( 'wikilove-food-cookie-desc' ),
+					header: mw.msg( 'wikilove-food-cookie-header' ),
 					image: 'Choco_chip_cookie.png',
 					imageSize: '120px'
 				},
 				'coffee': {
 					fields: [ 'header', 'message' ],
-					option: 'Cup of coffee',
-					descr: 'Appreciated the world over, coffee is known for its energizing effect on people.',
-					header: 'A cup of coffee for you!',
+					option: mw.msg( 'wikilove-food-coffee-option' ),
+					descr: mw.msg( 'wikilove-food-coffee-desc' ),
+					header: mw.msg( 'wikilove-food-coffee-header' ),
 					image: 'A small cup of coffee.JPG',
 					imageSize: '120px'
 				},
 				'tea': {
 					fields: [ 'header', 'message' ],
-					option: 'Cup of tea',
-					descr: 'After water, tea is the most widely consumed beverage in the world. It can be enjoyed hot or cold, with milk or sugar.',
-					header: 'A cup of tea for you!',
+					option: mw.msg( 'wikilove-food-tea-option' ),
+					descr: mw.msg( 'wikilove-food-tea-desc' ),
+					header: mw.msg( 'wikilove-food-tea-header' ),
 					image: 'Meissen-teacup pinkrose01.jpg',
 					imageSize: '120px'
 				},
 				'cupcake': {
 					fields: [ 'header', 'message' ],
-					option: 'Cupcake',
-					descr: 'A cupcake is a small cake designed to serve one person. They are often served with frosting and sprinkles on top.',
-					header: 'A cupcake for you!',
+					option: mw.msg( 'wikilove-food-cupcake-option' ),
+					descr: mw.msg( 'wikilove-food-cupcake-desc' ),
+					header: mw.msg( 'wikilove-food-cupcake-header' ),
 					image: 'Choco-Nut Bake with Meringue Top cropped.jpg',
 					imageSize: '120px'
 				},
 				'pie': {
 					fields: [ 'header', 'message' ],
-					option: 'Pie',
-					descr: 'Pies can be filled with a wide variety of sweet or savory ingredients. Popular varieties include apple, cherry, peach, chocolate, and pecan.',
-					header: 'A pie for you!',
+					option: mw.msg( 'wikilove-food-pie-option' ),
+					descr: mw.msg( 'wikilove-food-pie-desc' ),
+					header: mw.msg( 'wikilove-food-pie-header' ),
 					image: 'A very beautiful Nectarine Pie.jpg',
 					imageSize: '120px'
 				},
 				'strawberries': {
 					fields: [ 'header', 'message' ],
-					option: 'Strawberries',
-					descr: 'The strawberry fruit (which is not actually a berry) is widely appreciated for its characteristic aroma, bright red color, juicy texture, and sweetness.',
-					header: 'A bowl of strawberries for you!',
+					option: mw.msg( 'wikilove-food-strawberries-option' ),
+					descr: mw.msg( 'wikilove-food-strawberries-desc' ),
+					header: mw.msg( 'wikilove-food-strawberries-header' ),
 					image: 'Erdbeerteller01.jpg',
 					imageSize: '120px'
 				},
 				'stroopwafels': {
 					fields: [ 'header', 'message' ],
-					option: 'Stroopwafels',
-					descr: 'A stroopwafel is a Dutch snack made from two thin layers of baked batter with a caramel-like syrup filling in the middle.',
-					header: 'Some stroopwafels for you!',
+					option: mw.msg( 'wikilove-food-stroopwafels-option' ),
+					descr: mw.msg( 'wikilove-food-stroopwafels-desc' ),
+					header: mw.msg( 'wikilove-food-stroopwafels-header' ),
 					image: 'Gaufre biscuit.jpg',
 					imageSize: '135px'
 				}
