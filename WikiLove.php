@@ -87,7 +87,7 @@ $wgWikiLoveOptionMessages = array(
 	'wikilove-type-food',
 	'wikilove-type-kittens',
 	'wikilove-type-makeyourown',
-		'wikilove-barnstar-header',
+	'wikilove-barnstar-header',
 	'wikilove-barnstar-select',
 	'wikilove-barnstar-original-option',
 	'wikilove-barnstar-original-desc',
