@@ -23,10 +23,10 @@ $.wikiLoveOptions = {
 				// for the top-level type
 				'original': {
 					fields: [ 'message' ], // fields to ask for in form
-					option: mw.msg( 'wikilove-barnstar-admin-' ), // option listed in the select list
-					descr: mw.msg( 'wikilove-barnstar-admin-' ), // description
+					option: mw.msg( 'wikilove-barnstar-original-option' ), // option listed in the select list
+					descr: mw.msg( 'wikilove-barnstar-original-desc' ), // description
 					header: mw.msg( 'wikilove-barnstar-header' ), // header that appears at the top of the talk page post (optional)
-					title: mw.msg( 'wikilove-barnstar-admin-' ), // title that appears inside the award box (optional)
+					title: mw.msg( 'wikilove-barnstar-original-title' ), // title that appears inside the award box (optional)
 					image: 'Original Barnstar Hires.png' // image for the award
 				},
 				'admins': {
