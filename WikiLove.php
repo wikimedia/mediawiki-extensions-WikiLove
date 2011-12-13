@@ -39,7 +39,7 @@ $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'WikiLove',
 	'version' => '1.0',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:WikiLove',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:WikiLove',
 	'author' => array(
 		'Ryan Kaldari', 'Jan Paul Posma'
 	),
