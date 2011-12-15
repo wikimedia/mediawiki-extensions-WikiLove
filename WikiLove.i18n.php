@@ -173,6 +173,7 @@ $messages['en'] = array(
 	'wikilove-err-send-api' => 'Something went wrong when sending the message. Please try again.',
 	'wikilove-summary' => '/* $1 */ new WikiLove message',
 	'wikilove-what-is-this' => "What is this?",
+	'wikilove-what-is-this-link' => "https://www.mediawiki.org/wiki/WikiLove",
 	'wikilove-anon-warning' => 'Note: This user is not registered, he or she may not notice this message.',
 	'wikilove-commons-text' => 'You can find images by browsing $1.',
 	'wikilove-commons-link' => 'Wikimedia Commons',
@@ -235,6 +236,7 @@ Title is the title of the wikilove box (e.g. "Barnstar")',
 	'wikilove-err-msg' => 'A warning shown when the message is empty.',
 	'wikilove-what-is-this' => '[[File:Wiki Love 002.png|thumb]]
 {{Identical|What is this}}',
+	'wikilove-what-is-this-link' => '{{optional}}',
 	'wikilove-commons-text' => '[[File:Wiki Love 004.png|thumb]]
 $1 gets replaced by a link with {{msg-mw|wikilove-commons-link}} ("Wikimedia Commons") as caption and {{msg-mw|wikilove-commons-url}} as URL.',
 	'wikilove-commons-link' => '{{optional}}',

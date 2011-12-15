@@ -259,6 +259,7 @@ $wgResourceModules += array(
 			'wikilove-err-gallery',
 			'wikilove-err-gallery-again',
 			'wikilove-what-is-this',
+			'wikilove-what-is-this-link',
 			'wikilove-anon-warning',
 			'wikilove-commons-text',
 			'wikilove-commons-link',

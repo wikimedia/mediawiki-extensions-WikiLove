@@ -44,7 +44,7 @@ $.wikiLove = {
 				$button.append( '<div class="mw-wikilove-r-cap"></div>');
 				$typeList.append( $( '<li tabindex="0"></li>' ).append( $button ) );
 			}
-			
+
 			var 	commonsLink = $( '<a>' )
 					.attr( 'href', mw.msg( 'wikilove-commons-url' ) )
 					.attr( 'target', '_blank' )
@@ -74,7 +74,7 @@ $.wikiLove = {
 		<li><html:msg key="wikilove-get-started-list-2"/></li>\
 		<li><html:msg key="wikilove-get-started-list-3"/></li>\
 	</ol>\
-	<p><a target="_blank" href="http://www.mediawiki.org/wiki/WikiLove">\
+	<p><a target="_blank" href="' + mw.msg( 'wikilove-what-is-this-link' ) + '">\
 		<html:msg key="wikilove-what-is-this"/>\
 	</a></p>\
 	<p id="mw-wikilove-anon-warning"><strong><html:msg key="wikilove-anon-warning"/></strong></p>\
