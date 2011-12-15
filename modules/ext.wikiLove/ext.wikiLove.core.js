@@ -45,14 +45,14 @@ $.wikiLove = {
 				$typeList.append( $( '<li tabindex="0"></li>' ).append( $button ) );
 			}
 
-			var 	commonsLink = $( '<a>' )
+			var commonsLink = $( '<a>' )
 					.attr( 'href', mw.msg( 'wikilove-commons-url' ) )
 					.attr( 'target', '_blank' )
 					.text( mw.msg( 'wikilove-commons-link' ) )
 					.wrap( '<div>' ) // or .html() will only return the link text
 					.parent()
 					.html();
-				termsLink = $( '<a> ')
+			var termsLink = $( '<a> ')
 					.attr( 'href', mw.msg( 'wikilove-terms-url' ) )
 					.attr( 'target', '_blank' )
 					.text( mw.msg( 'wikilove-terms-link' ) )
