@@ -74,7 +74,7 @@ $.wikiLove = {
 		<li><html:msg key="wikilove-get-started-list-2"/></li>\
 		<li><html:msg key="wikilove-get-started-list-3"/></li>\
 	</ol>\
-	<p><a target="_blank" href="' + mw.msg( 'wikilove-what-is-this-link' ) + '">\
+	<p><a target="_blank" href="' + mw.html.escape( mw.msg( 'wikilove-what-is-this-link' ) ) + '">\
 		<html:msg key="wikilove-what-is-this"/>\
 	</a></p>\
 	<p id="mw-wikilove-anon-warning"><strong><html:msg key="wikilove-anon-warning"/></strong></p>\
