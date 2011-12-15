@@ -223,6 +223,7 @@ Title. Noun.
 	'wikilove-button-send' => '[[File:Wiki Love 003.png|thumb]]',
 	'wikilove-type-barnstars' => '[[File:Wiki Love 002.png|thumb]]
 Label for a button. Should be no longer than 22 characters.',
+	'wikilove-barnstar-header' => 'See [[:wikipedia:Barnstar]]. Probably not literally translatable.',
 	'wikilove-type-food' => '[[File:Wiki Love 002.png|thumb]]
 Label for a button. Should be no longer than 22 characters.',
 	'wikilove-type-kittens' => '[[File:Wiki Love 002.png|thumb]]
