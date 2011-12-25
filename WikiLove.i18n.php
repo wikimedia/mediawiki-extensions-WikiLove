@@ -2756,7 +2756,7 @@ $messages['nl'] = array(
  * @author Jon Harald Søby
  * @author Stigmj
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'wikilove-desc' => 'Legger til et grensesnitt for å forenkle positive tilbakemeldinger til brukeres diskusjonssider',
 	'wikilove' => 'WikiLove',
 	'wikilove-enable-preference' => 'Aktiver muligheten for å vise takknemlighet til andre brukere med WikiLove-fanen (eksperimentell)',
