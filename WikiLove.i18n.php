@@ -945,6 +945,7 @@ $messages['eo'] = array(
 
 /** Spanish (Español)
  * @author Fitoschido
+ * @author Imre
  */
 $messages['es'] = array(
 	'wikilove-desc' => 'Añade una interfaz para facilitar comentarios positivos de los usuarios a las páginas de discusión de otros usuarios',
@@ -971,8 +972,56 @@ $messages['es'] = array(
 	'wikilove-notify' => 'Notificar al usuario por correo-e',
 	'wikilove-button-send' => 'Enviar WikiAprecio',
 	'wikilove-type-barnstars' => 'Reconocimientos',
+	'wikilove-barnstar-header' => '¡Una barnstar para ti!',
+	'wikilove-barnstar-original-option' => 'Barnstar original',
+	'wikilove-barnstar-original-title' => 'El Barnstar original',
+	'wikilove-barnstar-admins-option' => 'Barnstar del Administrador',
+	'wikilove-barnstar-antivandalism-option' => 'Barnstar Anti-Vandalismo',
+	'wikilove-barnstar-antivandalism-title' => 'El barnstar anti-vandalismo',
+	'wikilove-barnstar-diplomacy-option' => 'Barnstar de diplomacia',
+	'wikilove-barnstar-diplomacy-title' => 'El barnstar de diplomacia',
+	'wikilove-barnstar-goodhumor-option' => 'Barnstar de buen humor',
+	'wikilove-barnstar-goodhumor-title' => 'El barnstar de buen humor',
+	'wikilove-barnstar-civility-option' => 'Barnstar de civilidad',
+	'wikilove-barnstar-copyeditor-option' => 'Barnstar del corrector',
+	'wikilove-barnstar-copyeditor-title' => 'El barnstar del corrector',
+	'wikilove-barnstar-editors-option' => 'Barnstar del editor',
+	'wikilove-barnstar-editors-title' => 'El Barnstar del Editor',
+	'wikilove-barnstar-half-option' => 'Barnstar media',
+	'wikilove-barnstar-minor-option' => 'Barnstar menor',
+	'wikilove-barnstar-minor-title' => 'El barnstar menor',
+	'wikilove-barnstar-reallife-option' => 'Barnstar de vida real',
+	'wikilove-barnstar-special-option' => 'Barnstar especial',
+	'wikilove-barnstar-special-title' => 'La Barnstar especial',
+	'wikilove-barnstar-surreal-option' => 'Barnstar surreal',
+	'wikilove-barnstar-surreal-title' => 'La Barnstar surreal',
+	'wikilove-barnstar-technical-option' => 'Barnstar técnica',
+	'wikilove-barnstar-technical-title' => 'La Barnstar técnica',
+	'wikilove-barnstar-writers-option' => 'Barnstar del escritor',
 	'wikilove-type-food' => 'Comida y bebida',
+	'wikilove-food-baklava-option' => 'Baklava',
+	'wikilove-food-beer-option' => 'Cerveza',
+	'wikilove-food-beer-header' => '¡Una cerveza para ti!',
+	'wikilove-food-brownie-option' => 'Brownie',
+	'wikilove-food-brownie-header' => '¡Un brownie para ti!',
+	'wikilove-food-bubbletea-option' => 'Té de burbujas',
+	'wikilove-food-cheeseburger-option' => 'Hamburguesa con queso',
+	'wikilove-food-cheeseburger-header' => '¡Una hamburguesa con queso para ti!',
+	'wikilove-food-cookie-option' => 'Galleta',
+	'wikilove-food-cookie-header' => '¡Una galleta para ti!',
+	'wikilove-food-coffee-option' => 'Taza de café',
+	'wikilove-food-coffee-header' => '¡Una taza de café para ti!',
+	'wikilove-food-tea-option' => 'Taza de té',
+	'wikilove-food-tea-header' => '¡Una taza de té para ti!',
+	'wikilove-food-cupcake-option' => 'Cupcake',
+	'wikilove-food-cupcake-header' => '¡Un cupcake para ti!',
+	'wikilove-food-pie-option' => 'Pastel',
+	'wikilove-food-pie-header' => '¡Un pastel para ti!',
+	'wikilove-food-strawberries-option' => 'Fresas',
+	'wikilove-food-stroopwafels-option' => 'Stroopwafels',
+	'wikilove-food-stroopwafels-header' => '¡Algunos stroopwafels para ti!',
 	'wikilove-type-kittens' => 'Gatitos',
+	'wikilove-kittens-header' => '¡Un gatito para ti!',
 	'wikilove-type-makeyourown' => 'Personalizado',
 	'wikilove-err-header' => 'Introduce un encabezado.',
 	'wikilove-err-title' => 'Introduce un título.',
@@ -989,6 +1038,8 @@ $messages['es'] = array(
 	'wikilove-what-is-this' => '¿Qué es esto?',
 	'wikilove-anon-warning' => 'Nota: Este usuario no está registrado, él o ella pudiera no ver este mensaje.',
 	'wikilove-commons-text' => 'Puedes encontrar imágenes navegando por $1.',
+	'wikilove-terms-link' => 'condiciones',
+	'wikilove-terms-url' => 'https://wikimediafoundation.org/wiki/Feedback_privacy_statement/es',
 );
 
 /** Estonian (Eesti)
@@ -1709,9 +1760,10 @@ $messages['gl'] = array(
 	'wikilove-what-is-this' => 'Que é isto?',
 	'wikilove-anon-warning' => 'Nota: O usuario non está rexistrado, é posible que non vexa esta mensaxe.',
 	'wikilove-commons-text' => 'Pode atopar imaxes navegando por $1.',
+	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/Portada_galega?uselang=gl',
 	'wikilove-terms' => 'Se envía os seus comentarios, acepta publicalos baixo estes $1.',
 	'wikilove-terms-link' => 'termos',
-	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
+	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement/gl',
 	'wikilove.js' => '/* O JavaScript que se coloque aquí afectará a extensión Amor wiki; lea http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
@@ -1730,6 +1782,7 @@ $messages['gsw'] = array(
 /** Hebrew (עברית)
  * @author Amire80
  * @author Deror avi
+ * @author Ofrahod
  */
 $messages['he'] = array(
 	'wikilove-desc' => 'הוספת ממשק לשליחת תגובות חיוביות לדפי שיחת משתמש',
@@ -1792,6 +1845,10 @@ $messages['he'] = array(
 	'wikilove-barnstar-defender-desc' => 'כוכב מגן הוויקי מוענק לכותבים המצטיינים מעל ומעבר בהגנה על ויקיפדיה מפני שימושים שאינם נאותים (הזנת תכנים זדוניים או מרעים).',
 	'wikilove-barnstar-defender-title' => 'כוכב מגן הוויקי',
 	'wikilove-barnstar-editors-option' => 'כוכב העורך',
+	'wikilove-barnstar-editors-desc' => 'כוכב העורך מוענק לאנשים שהחלטות העריכה הכללית שלהם נאות במיוחד.',
+	'wikilove-barnstar-editors-title' => 'כוכב העורך',
+	'wikilove-barnstar-designers-option' => 'כוכב מעצבים גרפיים',
+	'wikilove-barnstar-half-option' => 'חצי כוכב',
 	'wikilove-type-food' => 'אוכל ושתייה',
 	'wikilove-food-select' => 'לבחירת פריט מזון או משקה:',
 	'wikilove-food-baklava-option' => 'בקלאווה',
@@ -2527,10 +2584,13 @@ $messages['lt'] = array(
 
 /** Latvian (Latviešu)
  * @author GreenZeb
+ * @author Papuass
  */
 $messages['lv'] = array(
 	'wikilove-select-type' => 'Izvēlēties veidu',
 	'wikilove-get-started-header' => 'Sākam!',
+	'wikilove-type-kittens' => 'Kaķēni',
+	'wikilove-err-gallery-again' => 'Mēģināt vēlreiz',
 );
 
 /** Macedonian (Македонски)
@@ -3346,6 +3406,7 @@ $messages['ps'] = array(
 	'wikilove-food-tea-option' => 'د چايو پياله',
 	'wikilove-type-kittens' => 'پيشنګوري',
 	'wikilove-kittens-header' => 'تاسې لپاره يو پيشنګوری!',
+	'wikilove-type-makeyourown' => 'خپله يې جوړ کړۍ',
 	'wikilove-err-header' => 'لطفاً يو سرليک ورکړۍ.',
 	'wikilove-err-title' => 'لطفاً يو سرليک ورکړۍ.',
 	'wikilove-err-image' => 'لطفاً يو انځور وټاکۍ.',
@@ -3792,6 +3853,7 @@ $messages['scn'] = array(
 
 /** Sinhala (සිංහල)
  * @author තඹරු විජේසේකර
+ * @author පසිඳු කාවින්ද
  * @author බිඟුවා
  */
 $messages['si'] = array(
@@ -3828,6 +3890,7 @@ $messages['si'] = array(
 	'wikilove-type-food' => 'කෑම සහ බීම',
 	'wikilove-food-select' => 'ආහාරයක් හෝ පානයක් තෝරන්න:',
 	'wikilove-food-beer-option' => 'බියර්',
+	'wikilove-food-cookie-header' => 'ඔබට විස්කෝතුවක්!',
 	'wikilove-food-coffee-option' => 'කෝපි කෝප්පයක්',
 	'wikilove-food-tea-option' => 'තේ කෝප්පයක්',
 	'wikilove-type-kittens' => 'බළල් පැටවුන්',
@@ -4100,6 +4163,7 @@ $messages['tl'] = array(
 );
 
 /** Turkish (Türkçe)
+ * @author Cekli829
  * @author Emperyan
  * @author Koc61
  */
@@ -4129,6 +4193,7 @@ $messages['tr'] = array(
 	'wikilove-button-send' => 'VikiAşkını gönder',
 	'wikilove-type-barnstars' => 'Yıldız',
 	'wikilove-type-food' => 'Yiyecek ve içecek',
+	'wikilove-food-beer-option' => 'Bira',
 	'wikilove-type-kittens' => 'Kedicikler',
 	'wikilove-type-makeyourown' => 'Kendin hazırla',
 	'wikilove-err-header' => 'Lütfen bir başlık girin.',
@@ -4599,6 +4664,7 @@ $messages['zh-hant'] = array(
 	'wikilove-food-baklava-desc' => '果仁蜜餅是一種豐富又甜美的糕點，以層層費羅酥皮造成，充斥著切碎堅果，由糖漿或蜂蜜增甜。',
 	'wikilove-food-baklava-header' => '果仁蜜餅送給您！',
 	'wikilove-food-beer-option' => '啤酒',
+	'wikilove-food-beer-desc' => '啤酒是史上最廣泛飲用，也許是史上最悠久的含酒精飲料。啤酒是排在第三位最流行的飲品，僅次於淡水與茶。',
 	'wikilove-food-beer-header' => '啤酒送給您！',
 	'wikilove-food-brownie-option' => '布朗尼',
 	'wikilove-food-brownie-desc' => '布朗尼是一種以密集又豐富的巧克力蛋糕烤成的平面甜品，有方塊形、棒塊形等不同的形狀。',
