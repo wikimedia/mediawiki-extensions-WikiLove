@@ -250,6 +250,7 @@ A notice that appears above the Send WikiLove button in small text. Try to keep 
 );
 
 /** Afrikaans (Afrikaans)
+ * @author Ansumang
  * @author Naudefj
  */
 $messages['af'] = array(
@@ -295,6 +296,7 @@ $messages['af'] = array(
 	'wikilove-what-is-this' => 'Wat is dit?',
 	'wikilove-anon-warning' => 'Nota: Hierdie gebruiker is nie geregistreer nie, hy of sy mag moontlik nie die boodskap ontvang nie.',
 	'wikilove-commons-text' => 'U kan beelde vind deur op $1 te blaai.',
+	'wikilove-terms-link' => 'voorwaardes',
 );
 
 /** Arabic (العربية)
@@ -1877,13 +1879,14 @@ $messages['gsw'] = array(
  * @author Amire80
  * @author Deror avi
  * @author Ofrahod
+ * @author Rotemliss
  */
 $messages['he'] = array(
 	'wikilove-desc' => 'הוספת ממשק לשליחת תגובות חיוביות לדפי שיחת משתמש',
 	'wikilove' => 'ויקי־אהבה',
 	'wikilove-enable-preference' => 'הפעלה של הצגת הערכה למשתמשים אחרים באמצעות לשונית ויקי־אהבה (ניסיוני)',
 	'wikilove-tab-text' => 'ויקי־אהבה',
-	'tooltip-ca-wikilove' => 'לשלוח למשתמש הזה הודעה שמראה את הערכתך',
+	'tooltip-ca-wikilove' => 'שליחת הודעה למשתמש המראה את הערכתך',
 	'wikilove-dialog-title' => 'ויקי־אהבה – שליחת הודעת הערכה למשתמש אחר',
 	'wikilove-select-type' => 'בחירת סוג',
 	'wikilove-get-started-header' => 'בואו נתחיל!',
@@ -2067,6 +2070,7 @@ $messages['hi'] = array(
 	'wikilove-what-is-this' => 'यह क्या है?',
 	'wikilove-anon-warning' => 'नोट: यह उपयोगकर्ता पंजीकृत नहीं है, वह शायद यह संदेश नहीं देख सकते हैं।',
 	'wikilove-commons-text' => 'आप $1 को ब्राउज़ करके चित्र खोज सकते है।',
+	'wikilove-terms-link' => 'शर्तें',
 );
 
 /** Hungarian (Magyar)
@@ -4174,6 +4178,15 @@ $messages['rue'] = array(
 	'wikilove-what-is-this' => 'Што є тото?',
 	'wikilove-anon-warning' => 'Позначка: Тот хоснователь не є реґістрованый, він або она може не вшимли собі тото повідомлїня.',
 	'wikilove-commons-text' => 'Образчікы можете найти в проєктї: $1',
+);
+
+/** Sanskrit (संस्कृतम्)
+ * @author Ansumang
+ */
+$messages['sa'] = array(
+	'wikilove-button-preview' => 'प्राग्दृश्यम् दर्श्यताम्',
+	'wikilove-preview' => 'प्राग्दृश्यम् दर्श्यताम्',
+	'wikilove-type-barnstars' => 'बार्नस्टार (Barnstars)',
 );
 
 /** Sicilian (Sicilianu)
