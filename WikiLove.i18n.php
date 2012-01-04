@@ -4199,12 +4199,14 @@ $messages['scn'] = array(
 );
 
 /** Sinhala (සිංහල)
+ * @author Singhalawap
  * @author තඹරු විජේසේකර
  * @author පසිඳු කාවින්ද
  * @author බිඟුවා
  */
 $messages['si'] = array(
 	'wikilove' => 'විකිසෙනෙහස',
+	'wikilove-enable-preference' => 'විකිසෙනෙහස ටැබය මඟින් අනෙකුත් පරිශීලකයන් අගේ කොට සැලකීම සක්‍රීය කරන්න (පරීක්ෂාත්මක)',
 	'wikilove-tab-text' => 'විකිසෙනෙහස',
 	'tooltip-ca-wikilove' => 'ඔබේ අගයකිරීම විදහාලීමට මෙම පරිශීලකයාට පණිවුඩයක් ලබාදෙන්න.',
 	'wikilove-dialog-title' => 'විකිසෙනෙහස - ඇගැයුම් පණිවුඩයක් වෙනත් පරිශීලකයෙකුට යවන්න',
@@ -4228,7 +4230,8 @@ $messages['si'] = array(
 	'wikilove-type-barnstars' => 'රන් තරු',
 	'wikilove-barnstar-header' => 'ඔබට රන්තරුවක්!',
 	'wikilove-barnstar-select' => 'රන්තරුවක් තෝරන්න:',
-	'wikilove-barnstar-original-option' => 'ප්‍රකෘති රන්තරුව',
+	'wikilove-barnstar-original-option' => 'තරු සම්මානය',
+	'wikilove-barnstar-original-desc' => 'විකිපිඩියාව හට ප්‍රධාන වශයෙන් කදිම දායකත්වයන් මතක් කිරීම සඳහා මෙම රන්තරුව පිරිනමයි, මෙමගින් ජනතාවට ඔවුන්ගේ උත්සාහවන්තකම දැකීමට සහ අගය කිරීමට අවස්ථාව සැලසේ.',
 	'wikilove-barnstar-original-title' => 'ප්‍රකෘති රන්තරුව',
 	'wikilove-barnstar-admins-option' => 'පරිපාලක රන්තරුව',
 	'wikilove-barnstar-admins-title' => 'පරිපාලක රන්තරුව',
@@ -4456,7 +4459,7 @@ $messages['sr-ec'] = array(
 	'wikilove-dialog-title' => 'Вики-љубав – пошаљите поруку кориснику, одавајући му признање за рад',
 	'wikilove-select-type' => 'Изаберите врсту',
 	'wikilove-get-started-header' => 'Да почнемо!',
-	'wikilove-get-started-list-1' => 'Изаберите врсту признања које желите да пошаљете',
+	'wikilove-get-started-list-1' => 'Изаберите врсту признања',
 	'wikilove-get-started-list-2' => 'Унесите додатне податке',
 	'wikilove-get-started-list-3' => 'Пошаљите признање',
 	'wikilove-add-details' => 'Додатни подаци',
@@ -4611,7 +4614,7 @@ $messages['sr-ec'] = array(
 	'wikilove-what-is-this' => 'Шта је ово?',
 	'wikilove-what-is-this-link' => 'https://www.mediawiki.org/wiki/WikiLove?uselang=sr-ec',
 	'wikilove-anon-warning' => 'Напомена: корисник нема налог, па зато можда не примети поруку.',
-	'wikilove-commons-text' => 'Слике можете да пронађете у пројекту $1.',
+	'wikilove-commons-text' => 'Слике можете да пронађете на пројекту $1.',
 	'wikilove-commons-link' => 'Викимедијина остава',
 	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/Главна_страна?uselang=sr',
 	'wikilove-terms' => 'Слањем овога, прихватате транспарентност које налажу ови $1.',
