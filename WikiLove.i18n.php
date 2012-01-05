@@ -1148,12 +1148,13 @@ $messages['et'] = array(
 
 /** Persian (فارسی)
  * @author Omnia
+ * @author Reza1615
  * @author ZxxZxxZ
  */
 $messages['fa'] = array(
 	'wikilove-desc' => 'یک رابط می‌افزاید برای تسهیل ارسال نظر مثبت کاربر به صفحه‌های بحث کاربر',
 	'wikilove' => 'WikiLove',
-	'wikilove-enable-preference' => 'فعال کردن نمایش قدردانی برای کاربران دیگر با زبانه WikiLove (تجربی)',
+	'wikilove-enable-preference' => 'فعال کردن نمایش قدردانی برای کاربران دیگر با زبانه مهر ویکی (آزمایشی)',
 	'wikilove-tab-text' => 'WikiLove',
 	'tooltip-ca-wikilove' => 'پیامی برای نشان‌دادن قدردانی خود به این کاربر ارسال کنید',
 	'wikilove-dialog-title' => 'WikiLove – ارسال یک پیام قدردانی به کاربری دیگر',
