@@ -424,6 +424,7 @@ $messages['be-tarask'] = array(
 	'wikilove-what-is-this' => 'Што гэта?',
 	'wikilove-anon-warning' => 'Заўвага: гэты ўдзельнік не зарэгістраваны, ён ці яна ня можа заўважыць гэтае паведамленьне.',
 	'wikilove-commons-text' => 'Вы можаце знайсьці выявы ў праекце $1.',
+	'wikilove.js' => '/* Разьмешчаны тут JavaScript-код зьмяняе WikiLove, глядзіце http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Bulgarian (Български)
@@ -511,7 +512,12 @@ $messages['br'] = array(
 	'wikilove-barnstar-select' => 'Dibabit ur steredenn :',
 	'wikilove-barnstar-original-option' => 'Steredenn dibar',
 	'wikilove-barnstar-half-option' => 'Hanter steredenn',
+	'wikilove-barnstar-half-title' => 'An hanter steredenn',
+	'wikilove-barnstar-minor-option' => 'Steredenn vihan',
+	'wikilove-barnstar-minor-title' => 'Ar steredenn vihan',
 	'wikilove-barnstar-rosetta-option' => 'Steredenn ginglañ Rosetta',
+	'wikilove-barnstar-writers-option' => 'Steredenn ar skridaozer',
+	'wikilove-barnstar-writers-title' => 'Steredenn ar skridaozer',
 	'wikilove-type-food' => 'Boued hag evajoù',
 	'wikilove-food-beer-option' => 'Bier',
 	'wikilove-food-beer-header' => "Ur banne bier evidoc'h !",
@@ -1147,12 +1153,13 @@ $messages['et'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Leyth
  * @author Omnia
  * @author Reza1615
  * @author ZxxZxxZ
  */
 $messages['fa'] = array(
-	'wikilove-desc' => 'یک رابط می‌افزاید برای تسهیل ارسال نظر مثبت کاربر به صفحه‌های بحث کاربر',
+	'wikilove-desc' => 'یک رابط برای تسهیل ارسال نظر مثبت کاربر به صفحه‌های بحث کاربر می‌افزاید',
 	'wikilove' => 'WikiLove',
 	'wikilove-enable-preference' => 'فعال کردن نمایش قدردانی برای کاربران دیگر با زبانه مهر ویکی (آزمایشی)',
 	'wikilove-tab-text' => 'WikiLove',
@@ -1175,7 +1182,7 @@ $messages['fa'] = array(
 	'wikilove-preview' => 'پیش‌نمایش',
 	'wikilove-notify' => 'اطلاع به کاربر از طریق پست الکترونیکی',
 	'wikilove-button-send' => 'ارسال پیام',
-	'wikilove-type-barnstars' => 'ستاره‌ها',
+	'wikilove-type-barnstars' => 'مدال‌ها',
 	'wikilove-barnstar-header' => 'این مدال برای شما!',
 	'wikilove-barnstar-select' => 'یک مدال انتخاب کنید:',
 	'wikilove-barnstar-original-option' => 'مدال اصلی',
@@ -1186,7 +1193,19 @@ $messages['fa'] = array(
 	'wikilove-barnstar-admins-title' => 'مدال مدیران',
 	'wikilove-barnstar-antivandalism-option' => 'مدال مبارزه با خرابکاری',
 	'wikilove-barnstar-antivandalism-desc' => 'مدال مبارزه با خرابکاری به کاربرهایی که در جهت مبارزه با خرابکاری و حمله‌ها با تمام توان به ویکی‌پدیا کمک می‌کنند.',
+	'wikilove-barnstar-antivandalism-title' => 'مدال مبارزه با خرابکاری',
+	'wikilove-barnstar-diligence-option' => 'مدال پشتکار',
+	'wikilove-barnstar-diligence-title' => 'مدال پشتکار',
+	'wikilove-barnstar-diplomacy-option' => 'مدال گفتگو و سیاست‌مداری',
 	'wikilove-type-food' => 'غذا و نوشیدنی',
+	'wikilove-food-select' => 'خوردنی یا یا نوشیدنی مورد نظر را انتخاب کنید:',
+	'wikilove-food-baklava-option' => 'باقلوا',
+	'wikilove-food-baklava-header' => 'کمی باقلوا برای شما!',
+	'wikilove-food-beer-option' => 'آبجو',
+	'wikilove-food-beer-desc' => 'آبجو پرمصرف‌ترین نوشیدنی در جهان و احتمالا قدیمی‌ترین آنهاست. آبجو از نظر محبوبیت پس از آب و چای سوم است.',
+	'wikilove-food-beer-header' => 'آبجو برای شما!',
+	'wikilove-food-coffee-option' => 'یک فنجان قهوه',
+	'wikilove-food-coffee-header' => 'فنجانی قهوه برای شما!',
 	'wikilove-type-kittens' => 'بچه گربه',
 	'wikilove-type-makeyourown' => 'خودتان بسازید',
 	'wikilove-err-header' => 'لطفا یک عنوان وارد کنید.',
@@ -1204,8 +1223,10 @@ $messages['fa'] = array(
 	'wikilove-what-is-this' => 'این چیست؟',
 	'wikilove-anon-warning' => 'توجه: این کاربر ثبت نشده است، او ممکن است متوجه این پیام نشود.',
 	'wikilove-commons-text' => '$1 را برای یافتن تصاویر جستجو کنید.',
+	'wikilove-terms' => 'با ثبت کردن، شما به شفافیت با این $1 موافقت می‌کنید.',
 	'wikilove-terms-link' => 'شرایط',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
+	'wikilove.js' => '/ * جاوا اسکریپت مورد استفاده در اینجا ویکی‌لاو را سفارشی می‌کند ، نگاه کنید به http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
 );
 
 /** Finnish (Suomi)
@@ -4816,6 +4837,23 @@ $messages['tr'] = array(
 	'wikilove-notify' => 'Kullanıcıyı e-posta yoluyla bildir',
 	'wikilove-button-send' => 'VikiAşkını gönder',
 	'wikilove-type-barnstars' => 'Yıldız',
+	'wikilove-barnstar-header' => 'Bir yıldız da sizin için!',
+	'wikilove-barnstar-select' => 'Yıldız seçin:',
+	'wikilove-barnstar-original-option' => 'Özgün Yıldız',
+	'wikilove-barnstar-original-title' => 'Özgün Yıldız',
+	'wikilove-barnstar-admins-option' => 'Hizmetli Yıldızı',
+	'wikilove-barnstar-admins-title' => 'Hizmetli Yıldızı',
+	'wikilove-barnstar-antivandalism-option' => 'Anti-Vandalizm Yıldızı',
+	'wikilove-barnstar-antivandalism-title' => 'Anti-Vandalizm Yıldızı',
+	'wikilove-barnstar-diligence-option' => 'Çalışkanın Yıldızı',
+	'wikilove-barnstar-diplomacy-option' => 'Diplomasinin Yıldızı',
+	'wikilove-barnstar-diplomacy-title' => 'Diplomasinin Yıldızı',
+	'wikilove-barnstar-goodhumor-option' => 'Güzel Güldürgenin Yıldızı',
+	'wikilove-barnstar-goodhumor-title' => 'Güzel Güldürgenin Yıldızı',
+	'wikilove-barnstar-brilliant-option' => 'Parlak Düşünce Yıldızı',
+	'wikilove-barnstar-brilliant-title' => 'Parlak Düşünce Yıldızı',
+	'wikilove-barnstar-civility-option' => 'Nezaket Yıldızı',
+	'wikilove-barnstar-civility-title' => 'Nezaket Yıldızı',
 	'wikilove-type-food' => 'Yiyecek ve içecek',
 	'wikilove-food-beer-option' => 'Bira',
 	'wikilove-type-kittens' => 'Kedicikler',
