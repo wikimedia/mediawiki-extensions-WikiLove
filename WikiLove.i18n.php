@@ -1910,6 +1910,7 @@ $messages['gsw'] = array(
 /** Hebrew (עברית)
  * @author Amire80
  * @author Deror avi
+ * @author Ofekalef
  * @author Ofrahod
  * @author Rotemliss
  */
@@ -2024,8 +2025,11 @@ $messages['he'] = array(
 	'wikilove-food-coffee-option' => 'כוס קפה',
 	'wikilove-food-coffee-header' => 'כוס קפה בשבילך!',
 	'wikilove-food-tea-option' => 'כוס תה',
+	'wikilove-food-tea-header' => 'כוס תה בשבילך!',
 	'wikilove-food-cupcake-option' => 'עוגית קרם',
+	'wikilove-food-cupcake-header' => 'קאפקייק בשבילך!',
 	'wikilove-food-pie-option' => 'פאי',
+	'wikilove-food-pie-header' => 'עוגה בשבילך!',
 	'wikilove-food-strawberries-option' => 'תותים',
 	'wikilove-food-stroopwafels-option' => 'שטרופוואפל',
 	'wikilove-type-kittens' => 'חתולים',
