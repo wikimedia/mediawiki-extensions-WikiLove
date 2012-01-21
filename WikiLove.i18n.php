@@ -2664,6 +2664,7 @@ $messages['lb'] = array(
 	'wikilove-barnstar-original-desc' => 'Dësen Uerde kréie Mataarbechter op Wikipedia fir besonnesch gutt Beiträg ze honoréieren. Dësen Uerde weist de Leit dat hir Aarbecht notéiert an honoréiert gouf.',
 	'wikilove-barnstar-original-title' => 'Den original Wiki-Uerden',
 	'wikilove-barnstar-admins-option' => 'Uerde fir Administrateuren',
+	'wikilove-barnstar-admins-desc' => 'Den Uerde fir Administrateure geet un Administrateuren déi eng besonnesch schwiereg Decisioun geholl hunn oder déi eng laangwiereg awer noutwendeg Aufgab gemaach hunn.',
 	'wikilove-barnstar-admins-title' => 'Den Uerde fir Administrateuren',
 	'wikilove-barnstar-antivandalism-option' => 'Anti-Vandalismus-Uerden',
 	'wikilove-barnstar-antivandalism-title' => 'Den Anti-Vandalismus-Uerden',
