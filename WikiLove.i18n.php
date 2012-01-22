@@ -2419,6 +2419,7 @@ $messages['id'] = array(
 /** Italian (Italiano)
  * @author Aushulz
  * @author Beta16
+ * @author Erasmo Barresi
  * @author F. Cosoleto
  * @author Kaldari
  * @author Nemo bis
@@ -2452,20 +2453,28 @@ $messages['it'] = array(
 	'wikilove-barnstar-header' => 'Una barnstar per te!',
 	'wikilove-barnstar-select' => 'Selezione una barnstar:',
 	'wikilove-barnstar-original-option' => 'Barnstar Originale',
+	'wikilove-barnstar-original-desc' => 'Questa barnstar è data per riconoscere contributi particolarmente buoni, per far sapere agli altri che il loro duro lavoro è visto e apprezzato.',
 	'wikilove-barnstar-original-title' => 'La Barnstar Originale',
 	'wikilove-barnstar-admins-option' => "Barnstar dell'Amministratore",
+	'wikilove-barnstar-admins-desc' => "La Barnstar dell'Amministratore è data a un amministratore che ha preso una decisione particolarmente difficile o ha eseguito un compito da amministratore fastidioso ma necessario.",
 	'wikilove-barnstar-admins-title' => "La Barnstar dell'Amministratore",
 	'wikilove-barnstar-antivandalism-option' => 'Barnstar AntiVandalismo',
+	'wikilove-barnstar-antivandalism-desc' => 'La Barnstar AntiVandalismo è data a chi mostra grandi contributi per proteggere e annullare attacchi di vandalismo.',
 	'wikilove-barnstar-antivandalism-title' => 'La Barnstar AntiVandalismo',
 	'wikilove-barnstar-diligence-option' => 'Barnstar della Diligenza',
+	'wikilove-barnstar-diligence-desc' => 'La Barnstar della Diligenza è data in riconoscimento di una combinazione di straordinaria minuziosità, precisione e servizio alla comunità.',
 	'wikilove-barnstar-diligence-title' => 'La Barnstar della Diligenza',
 	'wikilove-barnstar-diplomacy-option' => 'Barnstar della Diplomazia',
+	'wikilove-barnstar-diplomacy-desc' => 'La Barnstar della Diplomazia è data agli utenti che hanno aiutato a risolvere conflitti pacificamente.',
 	'wikilove-barnstar-diplomacy-title' => 'La Barnstar della Diplomazia',
 	'wikilove-barnstar-goodhumor-option' => 'Barnstar del Buonumore',
+	'wikilove-barnstar-goodhumor-desc' => "La Barnstar del Buonumore è data agli utenti che costantemente alleggeriscono l'umore, disinnescano i conflitti e rendono Wikipedia un posto migliore.",
 	'wikilove-barnstar-goodhumor-title' => 'La Barnstar del Buonumore',
 	'wikilove-barnstar-brilliant-option' => 'Barnstar Idea Brillante',
+	'wikilove-barnstar-brilliant-desc' => 'La Barnstar Idea Brillante è data a un utente che scopre una soluzione elegante per un problema particolarmente difficile.',
 	'wikilove-barnstar-brilliant-title' => 'La Barnstar Idea Brillante',
 	'wikilove-barnstar-citation-option' => 'Barnstar delle Citazioni',
+	'wikilove-barnstar-citation-desc' => 'La Barnstar delle Citazioni è data agli utenti che forniscono riferimenti e citazioni a voci in precedenza prive di fonti.',
 	'wikilove-barnstar-citation-title' => 'La Barnstar delle Citazioni',
 	'wikilove-barnstar-editors-option' => "Barnstar dell'Editore",
 	'wikilove-barnstar-editors-title' => "La Barnstar dell'Editore",
