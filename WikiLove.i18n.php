@@ -2538,7 +2538,7 @@ $messages['it'] = array(
  * @author Whym
  */
 $messages['ja'] = array(
-	'wikilove-desc' => '利用者の会話ページに前向きな反応を寄せやすくするインタフェースを追加します。',
+	'wikilove-desc' => '利用者のトークページに前向きな反応を寄せやすくするインタフェースを追加します。',
 	'wikilove' => 'ウィキラブ',
 	'wikilove-enable-preference' => 'ウィキラブのタブを使って他の利用者に対して感謝の意を示すことができるようにする（試験的）',
 	'wikilove-tab-text' => 'ウィキラブ',
