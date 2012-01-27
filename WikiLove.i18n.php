@@ -572,7 +572,6 @@ $messages['br'] = array(
 	'wikilove-commons-text' => "Skeudennoù a c'hallit kavout en ur furchal e $1.",
 	'wikilove-terms' => "Ma kasit an dra-se ec'h asantit bezañ treuzwelus hervez $1.",
 	'wikilove-terms-link' => 'termenoù',
-	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 );
 
 /** Bosnian (Bosanski)
@@ -682,7 +681,6 @@ $messages['da'] = array(
 	'wikilove-commons-text' => 'Du kan finde billeder ved at gennemse $1.',
 	'wikilove-terms' => 'Ved at sende accepterer du gennemsigtighed under disse $1.',
 	'wikilove-terms-link' => 'vilkår',
-	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 	'wikilove.js' => '/* JavaScript, der placeres her, tilpasser WikiLove, se http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
@@ -856,7 +854,6 @@ $messages['de'] = array(
 	'wikilove-commons-text' => 'Bilder können gefunden werden, indem man $1 durchsucht.',
 	'wikilove-terms' => 'Mit dem Speichern erklärst du dich mit diesen $1 einverstanden.',
 	'wikilove-terms-link' => 'Bedingungen',
-	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 	'wikilove.js' => '/* Das folgende JavaScript passt die persönliche Wertschätzung an, siehe http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
@@ -1332,7 +1329,6 @@ $messages['fa'] = array(
 	'wikilove-commons-text' => '$1 را برای یافتن تصاویر جستجو کنید.',
 	'wikilove-terms' => 'با ثبت کردن، شما به شفافیت با این $1 موافقت می‌کنید.',
 	'wikilove-terms-link' => 'شرایط',
-	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 	'wikilove.js' => '/ * جاوا اسکریپت مورد استفاده در اینجا ویکی‌لاو را سفارشی می‌کند ، نگاه کنید به http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
 );
 
@@ -1508,7 +1504,6 @@ $messages['fi'] = array(
 	'wikilove-commons-text' => 'Voit etsiä kuvia selailemalla sivustoa $1.',
 	'wikilove-terms' => 'Lähettämällä sallit avoimuuden $1 mukaan.',
 	'wikilove-terms-link' => 'ehtojen',
-	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 	'wikilove.js' => '/* Tämä JavaScript mukauttaa Wikirakkautta. Lisätietoja löytyy sivulta http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
@@ -1691,7 +1686,6 @@ $messages['fr'] = array(
 	'wikilove-commons-text' => 'Vous pouvez trouver des images en surfant sur $1.',
 	'wikilove-terms' => 'En soumettant, vous acceptez la transparence en accord avec ces $1.',
 	'wikilove-terms-link' => 'conditions',
-	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 	'wikilove.js' => '/ * le JavaScript placé ici personnalise WikiLove, voyez http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
 );
 
@@ -2161,7 +2155,6 @@ $messages['he'] = array(
 	'wikilove-commons-text' => 'אפשר לחפש תמונות באתר $1.',
 	'wikilove-terms' => 'שליחה מביעה את הסכמתך לשקיפות לפי $1 הבאים.',
 	'wikilove-terms-link' => 'התנאים',
-	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 	'wikilove.js' => "/* זהו דף ג'אווה סקריפט להגדרות של ויקי־אהבה. למידע נוסף ר׳
    http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */",
 );
@@ -2473,7 +2466,6 @@ $messages['ia'] = array(
 	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/Pagina_principal?uselang=ia',
 	'wikilove-terms' => 'Per submitter, tu te declara de accordo con transparentia sub iste $1.',
 	'wikilove-terms-link' => 'conditiones',
-	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 	'wikilove.js' => '/* Le JavaScript inserite hic personalisa WikiLove, vide http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
@@ -2862,7 +2854,6 @@ $messages['lb'] = array(
 	'wikilove-anon-warning' => 'Notiz: Dëse Benotzer ass net registréiert, hien oder si gesäit dëse Message méiglecherweis net.',
 	'wikilove-commons-text' => 'Dir fannt Biller wann Dir op $1 sicht.',
 	'wikilove-terms-link' => 'Bedingungen',
-	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 	'wikilove.js' => '/* Dëse JavaScript adaptéiert déi perséinnlech Wäertschätzung, kuckt http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
@@ -3335,7 +3326,6 @@ $messages['ms'] = array(
 	'wikilove-commons-url' => 'http://commons.wikimedia.org',
 	'wikilove-terms' => 'Dengan penyerahan ini, anda bersetuju dengan ketelusan di bawah $1 ini.',
 	'wikilove-terms-link' => 'syarat-syarat',
-	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 	'wikilove.js' => '/* JavaScript yang terletak di sini mengubah suai WikiLove, rujuk http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
@@ -3843,7 +3833,6 @@ $messages['pms'] = array(
 	'wikilove-commons-text' => 'A peul trové dle figure an navigand su $1.',
 	'wikilove-terms' => 'An sgnacand, a aceta na trasparensa conforma a coste $1.',
 	'wikilove-terms-link' => 'condission',
-	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 	'wikilove.js' => '/* JavaScript butà ambelessì a përsonalisa WikiLove, varda http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
@@ -3989,7 +3978,6 @@ $messages['pt-br'] = array(
 	'wikilove-commons-text' => 'Pode encontrar imagens pesquisando-as em $1.',
 	'wikilove-terms' => 'Ao enviar, concorda que os seus comentários podem se tornar públicos, conforme esses $1',
 	'wikilove-terms-link' => 'termos',
-	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 	'wikilove.js' => '/* O Javascript que colocar aqui personalizará a extensão WikiLove. Favor ler http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
@@ -4046,7 +4034,6 @@ $messages['ro'] = array(
 	'wikilove-commons-url' => 'http://commons.wikimedia.org',
 	'wikilove-terms' => 'Prin trimitere, sunteți de acord cu acești $1.',
 	'wikilove-terms-link' => 'termeni',
-	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 	'wikilove.js' => '/* JavaScript plasat aici personalizează WikiLove; vedeți http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
@@ -4108,7 +4095,6 @@ $messages['roa-tara'] = array(
 	'wikilove-commons-link' => 'Wikimedia Commons',
 	'wikilove-commons-url' => 'http://commons.wikimedia.org',
 	'wikilove-terms-link' => 'termine',
-	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 );
 
 /** Russian (Русский)
@@ -4283,7 +4269,6 @@ $messages['ru'] = array(
 	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/Main_Page?uselang=ru',
 	'wikilove-terms' => 'Отправляя, вы соглашаетесь об оглашении на этих $1.',
 	'wikilove-terms-link' => 'условиях',
-	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 	'wikilove.js' => '/* Размещенный здесь JavaScript кастомизирует WikiLove, см. http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
@@ -4486,7 +4471,6 @@ $messages['si'] = array(
 	'wikilove-commons-text' => '$1 ගවේෂණය කොට ඔබ හට පින්තුර සොයාගත හැක.',
 	'wikilove-terms' => 'යොමු කිරීමෙන්, $1 යටතේ පාරදෘෂ්‍යතාවට ඔබ එකඟ වේ.',
 	'wikilove-terms-link' => 'කොන්දේසි',
-	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 	'wikilove.js' => '/* මෙහි යොදන ජාවාස්ක්‍රිප්ට් කේතයන් විකිසෙනෙහස රුචිකරණය කරයි, http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration බලන්න */',
 );
 
@@ -4598,7 +4582,6 @@ $messages['sl'] = array(
 	'wikilove-commons-text' => 'Slike lahko najdete z brskanjem po $1.',
 	'wikilove-terms' => 'S potrditvijo se strinjate s preglednostjo pod temi $1.',
 	'wikilove-terms-link' => 'pogoji',
-	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 	'wikilove.js' => '/* Tukaj naveden JavaScript prilagaja WikiLove; oglejte si http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
@@ -4835,7 +4818,6 @@ $messages['sv'] = array(
 	'wikilove-commons-text' => 'Du kan hitta bilder genom att söka i $1.',
 	'wikilove-terms' => 'Genom att skicka samtycker du till insyn under dessa $1.',
 	'wikilove-terms-link' => 'villkor',
-	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 	'wikilove.js' => '/ * JavaScript som placeras här anpassar WikiLove, se http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
 );
 
@@ -4891,7 +4873,6 @@ $messages['ta'] = array(
 	'wikilove-anon-warning' => 'குறிப்பு: இந்த பயனீட்டாளர் பதிவு செய்யப்படவில்லை, அவர் அல்லது அவள்  இந்த தகவலை கவனிக்காமல் இருக்கலாம்.',
 	'wikilove-commons-text' => 'நீங்கள் மேய்வதன் (browsing) மூலம்  $1  படத்தை கண்டுபிடிக்க இயலும்.',
 	'wikilove-terms-link' => 'விதிமுறைகள்',
-	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 );
 
 /** Telugu (తెలుగు)
@@ -5344,7 +5325,6 @@ $messages['zh-hans'] = array(
 	'wikilove-commons-text' => '您可以通过浏览$1找到图像。',
 	'wikilove-terms' => '提交后，您将同意在$1下的透明度。',
 	'wikilove-terms-link' => '条款',
-	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 	'wikilove.js' => '/* 放在这里的JavaScript定制WikiLove, 参见http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
@@ -5520,7 +5500,6 @@ $messages['zh-hant'] = array(
 	'wikilove-commons-text' => '你可以瀏覽$1找到合適圖像。',
 	'wikilove-terms' => '提交後，您將同意在$1下的透明度。',
 	'wikilove-terms-link' => '條款',
-	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 	'wikilove.js' => '/* 放在此處的JavaScript將會定制WikiLove, 參見http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
