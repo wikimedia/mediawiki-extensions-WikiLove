@@ -3382,6 +3382,26 @@ $messages['nb'] = array(
 	'wikilove-commons-text' => 'Du kan finne bilder ved å bla gjennom $1.',
 );
 
+/** Nepali (नेपाली)
+ * @author RajeshPandey
+ */
+$messages['ne'] = array(
+	'wikilove-desc' => 'प्रयोगकर्ता वार्ता पृष्ठहरुमा सकारात्मक उपयोगकर्ता राय को सुविधा को लागि इन्टरफेस जोड्छ।',
+	'wikilove' => 'विकिलभ',
+	'wikilove-enable-preference' => 'विकिलभ ट्याब (प्रयोगात्मक) संग अन्य प्रयोगकर्ताहरु लाई प्रशंसा हेर्न मिल्ने बनाउनुहोस',
+	'wikilove-tab-text' => 'विकिलभ',
+	'wikilove-button-preview' => 'पूर्वावलोकन',
+	'wikilove-food-beer-option' => 'बियर',
+	'wikilove-food-tea-option' => 'चिया को कप',
+	'wikilove-food-tea-desc' => 'पानी पछि संसारमा सबै भन्दा बढी खपत हुने पेय पदार्थ को रुपमा चिया आउँछ। यो तातो वा चिसो, दुध संग वा चिनी संग पिउन सकिन्छ।',
+	'wikilove-type-kittens' => 'छाउराहरु',
+	'wikilove-kittens-header' => 'तपाइँ को लागि एउटा छाउरो!',
+	'wikilove-type-makeyourown' => 'तपाइँको आफ्नै बनाउनुहोस',
+	'wikilove-err-header' => 'कृपया शिर्षक हाल्नुहोस।',
+	'wikilove-err-title' => 'कृपया शिर्षक हाल्नुहोस।',
+	'wikilove-what-is-this' => 'यो के हो ?',
+);
+
 /** Dutch (Nederlands)
  * @author Effeietsanders
  * @author SPQRobin
@@ -3618,6 +3638,7 @@ $messages['pdc'] = array(
 );
 
 /** Polish (Polski)
+ * @author BeginaFelicysym
  * @author Sp5uhe
  */
 $messages['pl'] = array(
@@ -3645,6 +3666,23 @@ $messages['pl'] = array(
 	'wikilove-notify' => 'Poinformuj użytkownika przez e‐mail',
 	'wikilove-button-send' => 'Wyślij',
 	'wikilove-type-barnstars' => 'Gwiazdy',
+	'wikilove-barnstar-header' => 'Gwiazda dla Ciebie!',
+	'wikilove-barnstar-select' => 'Wybierz gwiazdę:',
+	'wikilove-barnstar-original-option' => 'Gwiazda Oryginalności',
+	'wikilove-barnstar-original-desc' => 'Ta gwiazda jest przyznawana w uznaniu za szczególnie ciekawe wpisy do Wikipedii, pozwalają pokazać użytkownikom, że ich ciężka praca została dostrzeżona i doceniona.',
+	'wikilove-barnstar-original-title' => 'Gwiazda Oryginalności',
+	'wikilove-barnstar-admins-option' => 'Gwiazda Administratora',
+	'wikilove-barnstar-admins-desc' => 'Gwiazda Administratora jest przyznawana administratorom, którzy podjęli szczególnie trudne decyzje lub wykonali nużące a jednak potrzebne zadanie administracyjne.',
+	'wikilove-barnstar-admins-title' => 'Gwiazda Administratora',
+	'wikilove-barnstar-antivandalism-option' => 'Gwiazda Walki z Wandalizmem',
+	'wikilove-barnstar-antivandalism-desc' => 'Gwiazda Walki z Wandalizmem przyznawana jest tym, znacznie przyczynili się do ochrony i przywracania danych po atakach wandalizmu na Wikipedii.',
+	'wikilove-barnstar-antivandalism-title' => 'Gwiazda Walki z Wandalizmem',
+	'wikilove-barnstar-diligence-option' => 'Gwiazda Pracowitości',
+	'wikilove-barnstar-diligence-desc' => 'Gwiazda Pracowitości jest przyznawana w uznaniu połączenia nadzwyczajne weryfikacji, precyzji i służby wspólnocie.',
+	'wikilove-barnstar-diligence-title' => 'Gwiazda Pracowitości',
+	'wikilove-barnstar-diplomacy-option' => 'Gwiazda Dyplomacji',
+	'wikilove-barnstar-diplomacy-desc' => 'Gwiazda Dyplomacji jest przyznawana użytkownikom, którzy pomogli pokojowo rozwiązać konflikty na Wikipedii.',
+	'wikilove-barnstar-diplomacy-title' => 'Gwiazda Dyplomacji',
 	'wikilove-type-food' => 'Jedzenie i picie',
 	'wikilove-type-kittens' => 'Kociaki',
 	'wikilove-type-makeyourown' => 'Stwórz własne',
