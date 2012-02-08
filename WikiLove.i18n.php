@@ -2771,6 +2771,7 @@ $messages['lb'] = array(
 	'wikilove-barnstar-admins-desc' => 'Den Uerde fir Administrateure geet un Administrateuren déi eng besonnesch schwiereg Decisioun geholl hunn oder déi eng laangwiereg awer noutwendeg Aufgab gemaach hunn.',
 	'wikilove-barnstar-admins-title' => 'Den Uerde fir Administrateuren',
 	'wikilove-barnstar-antivandalism-option' => 'Anti-Vandalismus-Uerden',
+	'wikilove-barnstar-antivandalism-desc' => "Den Anti-Vandalismus Uerde kréien déi, déi sech besonnesch fir de Schutz viru Vandalismus an d'Zrécksetzen dovun op der Wikipedia asetzen.",
 	'wikilove-barnstar-antivandalism-title' => 'Den Anti-Vandalismus-Uerden',
 	'wikilove-barnstar-diligence-option' => 'Uerde fir fläisseg Mataarbechter',
 	'wikilove-barnstar-diligence-title' => 'Den Uerde fir fläisseg Mataarbechter',
