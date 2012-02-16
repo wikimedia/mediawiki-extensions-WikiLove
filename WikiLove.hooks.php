@@ -187,6 +187,10 @@ class WikiLoveHooks {
 			return null;
 		}
 
+		if ( $wgUser->getName() == $baseTitle->getText() ) {
+			return null;
+		}
+
 		// Get the user talk page
 		if ( $ns == NS_USER_TALK ) {
 			// We're already on the user talk page
