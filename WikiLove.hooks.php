@@ -187,7 +187,7 @@ class WikiLoveHooks {
 			return null;
 		}
 
-		if ( $wgUser->getName() == $baseTitle->getText() ) {
+		if ( $wgUser->getName() === $baseTitle->getText() ) {
 			return null;
 		}
 
