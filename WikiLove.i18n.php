@@ -685,6 +685,7 @@ $messages['da'] = array(
 );
 
 /** German (Deutsch)
+ * @author Geitost
  * @author Kghbln
  * @author Metalhead64
  */
@@ -809,7 +810,7 @@ $messages['de'] = array(
 	'wikilove-food-brownie-header' => 'Ein Brownie für dich!',
 	'wikilove-food-bubbletea-option' => 'Bubble Tea',
 	'wikilove-food-bubbletea-desc' => 'Bubble Tea ist ein Tee- oder Saftgetränk mit kleinen weichen Kugeln aus Tapiokastärke oder Gelee. Zunächst erfunden in Taiwan, ist Bubble Tea jetzt in vielen Regionen der Welt beliebt.',
-	'wikilove-food-bubbletea-header' => 'Bubble Tea für dich!',
+	'wikilove-food-bubbletea-header' => "''Bubble Tea'' für dich!",
 	'wikilove-food-cheeseburger-option' => 'Cheeseburger',
 	'wikilove-food-cheeseburger-desc' => 'Cheeseburger, ein fester Bestandteil von Lokalen und Fast-Food-Restaurants, waren zunächst in den Vereinigten Staaten während der 1920er- und 30er-Jahre populär.',
 	'wikilove-food-cheeseburger-header' => 'Einen Cheeseburger für dich!',
@@ -827,7 +828,7 @@ $messages['de'] = array(
 	'wikilove-food-cupcake-header' => 'Ein Muffin für dich!',
 	'wikilove-food-pie-option' => 'Obstkuchen',
 	'wikilove-food-pie-desc' => 'Obstkuchen können mit einer Vielzahl von süßen oder herzhaften Zutaten gefüllt werden. Beliebt sind Äpfel, Kirschen, Pfirsiche, Schokolade oder Pekannüsse.',
-	'wikilove-food-pie-header' => 'Obstkuchen für dich!',
+	'wikilove-food-pie-header' => 'Ein Obstkuchen für dich!',
 	'wikilove-food-strawberries-option' => 'Erdbeeren',
 	'wikilove-food-strawberries-desc' => 'Die Erdbeere (in Wirklichkeit keine Beere) ist hochgeschätzt aufgrund seines charakteristischen Aromas, der glänzenden roten Farbe, der saftigen Konsistenz und Süße.',
 	'wikilove-food-strawberries-header' => 'Eine Schale Erdbeeren für dich!',
@@ -858,6 +859,7 @@ $messages['de'] = array(
 );
 
 /** German (formal address) (‪Deutsch (Sie-Form)‬)
+ * @author Geitost
  * @author Kghbln
  */
 $messages['de-formal'] = array(
@@ -872,13 +874,13 @@ $messages['de-formal'] = array(
 	'wikilove-food-baklava-header' => 'Baklava für Sie!',
 	'wikilove-food-beer-header' => 'Ein Bier für Sie!',
 	'wikilove-food-brownie-header' => 'Ein Brownie für Sie!',
-	'wikilove-food-bubbletea-header' => 'Bubble Tea für Sie!',
+	'wikilove-food-bubbletea-header' => 'Schaumtee für Sie!',
 	'wikilove-food-cheeseburger-header' => 'Einen Cheeseburger für Sie!',
 	'wikilove-food-cookie-header' => 'Ein Keks für Sie!',
 	'wikilove-food-coffee-header' => 'Eine Tasse Kaffee für Sie!',
 	'wikilove-food-tea-header' => 'Eine Tasse Tee für Sie!',
 	'wikilove-food-cupcake-header' => 'Ein Muffin für Sie!',
-	'wikilove-food-pie-header' => 'Obstkuchen für Sie!',
+	'wikilove-food-pie-header' => 'Ein Obstkuchen für Sie!',
 	'wikilove-food-strawberries-header' => 'Eine Schale Erdbeeren für Sie!',
 	'wikilove-food-stroopwafels-header' => 'Sirupwaffeln für Sie!',
 	'wikilove-err-image-api' => 'Während des Abrufens des Bildes ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.',
@@ -1601,6 +1603,7 @@ $messages['fi'] = array(
 /** French (Français)
  * @author Crochet.david
  * @author DavidL
+ * @author Geitost
  * @author Gomoko
  * @author Hashar
  * @author IAlex
@@ -1637,7 +1640,7 @@ $messages['fr'] = array(
 	'wikilove-notify' => 'Notifier l’utilisateur par courriel',
 	'wikilove-button-send' => 'Envoyer le WikiLove',
 	'wikilove-type-barnstars' => 'Récompenses',
-	'wikilove-barnstar-header' => 'UNe étoile pour vous !',
+	'wikilove-barnstar-header' => 'Une étoile pour vous !',
 	'wikilove-barnstar-select' => 'Sélectionnez une étoile :',
 	'wikilove-barnstar-original-option' => 'Étoile originale',
 	'wikilove-barnstar-original-desc' => 'Cette étoile est donné pour reconnaître les contributions particulièrement fines à Wikipédia, de faire savoir aux autres que leur travail est vu et apprécié.',
