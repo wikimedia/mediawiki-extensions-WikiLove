@@ -1,1 +1,5 @@
-mw.loader.using( 'ext.wikiLove.local', jQuery.wikiLove.init );
+mw.loader.using( 'ext.wikiLove.local', function() {
+	jQuery( document ).ready( function() {
+		jQuery.wikiLove.init();
+	} );
+} );
