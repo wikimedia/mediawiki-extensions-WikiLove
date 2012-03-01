@@ -2333,6 +2333,48 @@ $messages['hi'] = array(
 	'wikilove-terms-link' => 'शर्तें',
 );
 
+/** Upper Sorbian (Hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'wikilove-select-type' => 'Typ wubrać',
+	'wikilove-add-details' => 'Podrobnosće přidać',
+	'wikilove-image' => 'Zapodaj mjeno wobrazoweje dataje:',
+	'wikilove-select-image' => 'Wubjer wobraz:',
+	'wikilove-enter-message' => 'Zapodaj powěsć:',
+	'wikilove-omit-sig' => '(bjez signatury)',
+	'wikilove-image-example' => '(přikład: Wobraz.png)',
+	'wikilove-button-preview' => 'Přehlad',
+	'wikilove-preview' => 'Přehlad',
+	'wikilove-type-food' => 'Jědźe a napoje',
+	'wikilove-food-baklava-option' => 'Baklawa',
+	'wikilove-food-baklava-header' => 'Baklawa za tebje!',
+	'wikilove-food-beer-option' => 'Piwo',
+	'wikilove-food-beer-header' => 'Piwo za tebje!',
+	'wikilove-food-cookie-option' => 'Plack',
+	'wikilove-food-cookie-header' => 'Plack za tebje!',
+	'wikilove-food-coffee-option' => 'Šalka kofeja',
+	'wikilove-food-coffee-header' => 'Šalka kofeja za tebje!',
+	'wikilove-food-tea-option' => 'Šalka čaja',
+	'wikilove-food-tea-header' => 'Šalka čaja za tebje!',
+	'wikilove-food-cupcake-option' => 'Baba',
+	'wikilove-food-cupcake-header' => 'Baba za tebje:',
+	'wikilove-food-pie-option' => 'Tykanc',
+	'wikilove-food-pie-header' => 'Tykanc za tebje!',
+	'wikilove-food-strawberries-option' => 'Truskalcy',
+	'wikilove-food-strawberries-header' => 'Škla truskalcow za tebje!',
+	'wikilove-food-stroopwafels-option' => 'Zyropowe wafle',
+	'wikilove-food-stroopwafels-header' => 'Zyropowe wafle za tebje!',
+	'wikilove-type-kittens' => 'Micki',
+	'wikilove-kittens-header' => 'Micka za tebje!',
+	'wikilove-err-title' => 'Prošu zapodaj titul.',
+	'wikilove-err-image' => 'Prošu wubjer wobraz.',
+	'wikilove-err-image-bad' => 'Wobraz njeeksistuje.',
+	'wikilove-err-gallery-again' => 'Spytaj hišće raz',
+	'wikilove-what-is-this' => 'Što to je?',
+	'wikilove-terms-link' => 'wuměnjenja',
+);
+
 /** Hungarian (Magyar)
  * @author Bdamokos
  * @author Dani
