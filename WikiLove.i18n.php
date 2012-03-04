@@ -3284,7 +3284,7 @@ $messages['mk'] = array(
 	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/Главна_страница?uselang=mk',
 	'wikilove-terms' => 'Поднесувајќи го ова, се согласувате со транспарентноста што ја налагаат овие $1.',
 	'wikilove-terms-link' => 'услови',
-	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement?uselang=mk',
+	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement/mk?uselang=mk',
 	'wikilove.js' => '/* Тука поставениот JavaScript го прилагодува ВикиЉубов. Погл. http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration?uselang=mk */',
 );
 
