@@ -1254,6 +1254,7 @@ $messages['et'] = array(
  * @author Omnia
  * @author Reza1615
  * @author Rmashhadi
+ * @author Wayiran
  * @author ZxxZxxZ
  */
 $messages['fa'] = array(
@@ -1338,7 +1339,7 @@ $messages['fa'] = array(
 	'wikilove-barnstar-kindness-desc' => 'نشان مهربانی به کاربری اعطا می‌شود که همواره با مهربانی دیگران را کمک می‌کند.',
 	'wikilove-barnstar-kindness-title' => 'نشان مهربانی',
 	'wikilove-barnstar-reallife-option' => 'نشان واقعی',
-	'wikilove-barnstar-reallife-desc' => 'نشان واقعی به کاربری داده می‌شود که هم به طور برخط و هم غیر برخط با فعالیت‌های مربوط به ویکی‌پدیا در محیط غیرمجازی به ویکی‌پدیا کمک می‌کند.',
+	'wikilove-barnstar-reallife-desc' => 'نشان واقعی به کاربری داده می‌شود که هم به طور برخط و هم برون‌خط با فعالیت‌های مربوط به ویکی‌پدیا در محیط غیرمجازی به ویکی‌پدیا کمک می‌کند.',
 	'wikilove-barnstar-reallife-title' => 'نشان واقعی',
 	'wikilove-barnstar-resilient-option' => 'نشان انتقاد‌پذیری',
 	'wikilove-barnstar-resilient-desc' => 'نشان انتقاد‌پذیری به کاربری که انتقاد‌پذیر باشد و از انتقادها در جهت بهبود تخصص ویکی‌نویسی خود استفاده می‌کند اهدا می‌شود.',
