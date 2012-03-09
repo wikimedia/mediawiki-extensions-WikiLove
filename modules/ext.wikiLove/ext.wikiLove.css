@@ -226,7 +226,7 @@
 }
 
 /*#mw-wikilove-dialog*/ #mw-wikilove-add-details #mw-wikilove-message {
-	width: 100%; /* some old skins don't include this by default */
+	width: 460px; /* don't use 100%, see bug 35057 */
 }
 
 /*#mw-wikilove-dialog #mw-wikilove-add-details*/ #mw-wikilove-subtype-description {
