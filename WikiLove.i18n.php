@@ -2865,6 +2865,45 @@ $messages['ja'] = array(
 	'wikilove.js' => '/* ここに置かれたJavaScriptによってウィキラブの設定が変更されます。  http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration をご覧ください。 */',
 );
 
+/** Korean (한국어)
+ * @author Freebiekr
+ * @author Klutzy
+ */
+$messages['ko'] = array(
+	'wikilove-desc' => '다른 사용자에게 간편하게 감사의 표현을 보낼 수 있는 인터페이스를 사용자 문서에 추가합니다.',
+	'wikilove' => '위키사랑',
+	'wikilove-enable-preference' => '다른 사용자에 대한 고마움을 위키사랑 탭으로 나타내기 사용 (시험 중)',
+	'wikilove-tab-text' => '위키사랑',
+	'tooltip-ca-wikilove' => '이 사용자에게 고마움을 나타내는 글 쓰기',
+	'wikilove-dialog-title' => '위키사랑 – 다른 사용자에게 감사의 글 보내기',
+	'wikilove-select-type' => '유형 선택',
+	'wikilove-get-started-header' => '시작!',
+	'wikilove-get-started-list-1' => '보내고 싶은 위키사랑 유형을 선택',
+	'wikilove-get-started-list-2' => '위키사랑에 자세한 설명을 추가',
+	'wikilove-get-started-list-3' => '위키사랑 보내기!',
+	'wikilove-add-details' => '자세한 내용 추가',
+	'wikilove-image' => '이미지 파일 이름 입력:',
+	'wikilove-select-image' => '이미지 선택:',
+	'wikilove-header' => '주제 입력:',
+	'wikilove-title' => '상 이름 입력:',
+	'wikilove-enter-message' => '내용 입력:',
+	'wikilove-omit-sig' => '(서명 불필요)',
+	'wikilove-image-example' => '(보기: Trophy.png)',
+	'wikilove-button-preview' => '미리 보기',
+	'wikilove-preview' => '미리 보기',
+	'wikilove-notify' => '이메일로 사용자에게 알림',
+	'wikilove-button-send' => '위키사랑 보내기',
+	'wikilove-type-barnstars' => '반스타',
+	'wikilove-barnstar-header' => '반스타를 드립니다!',
+	'wikilove-barnstar-select' => '반스타 선택:',
+	'wikilove-barnstar-original-option' => '기본형 반스타',
+	'wikilove-barnstar-original-desc' => '이 반스타는 위키백과에 특히 빼어난 기여를 인정하여 그들의 수고를 알고 감사히 여긴다는 것을 알게 하기 위해 주어집니다.',
+	'wikilove-barnstar-original-title' => '기본형 반스타',
+	'wikilove-barnstar-admins-option' => '관리자 반스타',
+	'wikilove-barnstar-admins-desc' => '관리자 반스타는 특별히 어려운 결정이나 지루하지만 필요한 관리 일을 한 관리자에게 주어집니다.',
+	'wikilove-barnstar-admins-title' => '관리자 반스타',
+);
+
 /** Colognian (Ripoarisch)
  * @author Kaldari
  * @author Purodha
@@ -3876,6 +3915,7 @@ $messages['pl'] = array(
 	'wikilove-barnstar-diplomacy-desc' => 'Gwiazda Dyplomacji jest przyznawana użytkownikom, którzy pomogli pokojowo rozwiązać konflikty na Wikipedii.',
 	'wikilove-barnstar-diplomacy-title' => 'Gwiazda Dyplomacji',
 	'wikilove-type-food' => 'Jedzenie i picie',
+	'wikilove-food-stroopwafels-option' => 'Gofry',
 	'wikilove-type-kittens' => 'Kociaki',
 	'wikilove-type-makeyourown' => 'Stwórz własne',
 	'wikilove-err-header' => 'Wpisz nagłówek',
@@ -3893,6 +3933,7 @@ $messages['pl'] = array(
 	'wikilove-what-is-this' => 'Co to jest?',
 	'wikilove-anon-warning' => 'Uwaga! Ten użytkownik nie jest zarejestrowany, on lub ona może nie zauważyć tej wiadomości.',
 	'wikilove-commons-text' => 'Możesz znaleźć obrazki przeglądając $1.',
+	'wikilove-terms-link' => 'warunki',
 );
 
 /** Piedmontese (Piemontèis)
