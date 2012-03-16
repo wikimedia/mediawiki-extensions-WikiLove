@@ -2865,6 +2865,16 @@ $messages['ja'] = array(
 	'wikilove.js' => '/* ここに置かれたJavaScriptによってウィキラブの設定が変更されます。  http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration をご覧ください。 */',
 );
 
+/** Kannada (ಕನ್ನಡ)
+ * @author Nayvik
+ */
+$messages['kn'] = array(
+	'wikilove' => 'ವಿಕಿಪ್ರೀತಿ',
+	'wikilove-tab-text' => 'ವಿಕಿಪ್ರೀತಿ',
+	'wikilove-button-preview' => 'ಮುನ್ನೋಟ',
+	'wikilove-preview' => 'ಮುನ್ನೋಟ',
+);
+
 /** Korean (한국어)
  * @author Freebiekr
  * @author Klutzy
