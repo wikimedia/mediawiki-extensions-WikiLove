@@ -1,12 +1,9 @@
 <?php
 class ApiWikiLove extends ApiBase {
 	public function execute() {
-		global $wgRequest, $wgWikiLoveLogging, $wgParser, $wgVersion;
+		global $wgRequest, $wgWikiLoveLogging, $wgParser;
 
 		$params = $this->extractRequestParams();
-		
-		// In some cases we need the wiki mark-up stripped from the subject
-		$strippedSubject = $wgParser->stripSectionName( $params['subject'] );
 
 		$title = Title::newFromText( $params['title'] );
 		if ( is_null( $title ) ) {
@@ -22,37 +19,22 @@ class ApiWikiLove extends ApiBase {
 			$this->saveInDb( $talk, $params['subject'], $params['message'], $params['type'], isset( $params['email'] ) ? 1 : 0 );
 		}
 
-		// MediaWiki did not allow specifying separate edit summaries and section titles until 1.19
-		$oldVersion = version_compare( $wgVersion, '1.18', '<=' );
-		if ( $oldVersion ) {
-			$apiParamArray = array(
-				'action' => 'edit',
-				'title' => $talk->getFullText(),
-				// need to do this, as Article::replaceSection fails for non-existing pages
-				'appendtext' => ( $talk->exists() ? "\n\n" : '' ) . 
-					wfMsgForContent( 'newsectionheaderdefaultlevel', $params['subject'] )
-					. "\n\n" . $params['text'],
-				'token' => $params['token'],
-				'summary' => wfMsgForContent( 'wikilove-summary', $strippedSubject ),
-				'notminor' => true
-			);
-		} else {
-			$apiParamArray = array(
-				'action' => 'edit',
-				'title' => $talk->getFullText(),
-				'section' => 'new',
-				'sectiontitle' => $params['subject'],
-				'text' => $params['text'],
-				'token' => $params['token'],
-				'summary' => wfMsgForContent( 'wikilove-summary', $strippedSubject ),
-				'notminor' => true
-			);
-		}
-		
+		// not using section => 'new' here, as we like to give our own edit summary
 		$api = new ApiMain(
 			new DerivativeRequest(
 				$wgRequest,
-				$apiParamArray,
+				array(
+					'action'     => 'edit',
+					'title'      => $talk->getFullText(),
+					// need to do this, as Article::replaceSection fails for non-existing pages
+					'appendtext' => ( $talk->exists() ? "\n\n" : '' ) . 
+						wfMsgForContent( 'newsectionheaderdefaultlevel', $params['subject'] )
+						. "\n\n" . $params['text'],
+					'token'      => $params['token'],
+					'summary'    => wfMsgForContent( 'wikilove-summary', 
+						$wgParser->stripSectionName( $params['subject'] ) ),
+					'notminor'   => true
+				),
 				false // was posted?
 			),
 			true // enable write?
@@ -61,11 +43,11 @@ class ApiWikiLove extends ApiBase {
 		$api->execute();
 
 		if ( isset( $params['email'] ) ) {
-			$this->emailUser( $talk, $strippedSubject, $params['email'], $params['token'] );
+			$this->emailUser( $talk, $params['subject'], $params['email'], $params['token'] );
 		}
 
 		$this->getResult()->addValue( 'redirect', 'pageName', $talk->getPrefixedDBkey() );
-		$this->getResult()->addValue( 'redirect', 'fragment', Title::escapeFragmentForURL( $strippedSubject ) );
+		$this->getResult()->addValue( 'redirect', 'fragment', Title::escapeFragmentForURL( $params['subject'] ) );
 		// note that we cannot use Title::makeTitle here as it doesn't sanitize the fragment
 	}
 
