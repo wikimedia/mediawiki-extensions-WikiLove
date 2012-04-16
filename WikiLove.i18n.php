@@ -2338,7 +2338,10 @@ $messages['hi'] = array(
  * @author Michawiki
  */
 $messages['hsb'] = array(
+	'wikilove' => 'WikiLove',
+	'wikilove-tab-text' => 'WikiLove',
 	'wikilove-select-type' => 'Typ wubrać',
+	'wikilove-get-started-header' => 'Započmy!',
 	'wikilove-add-details' => 'Podrobnosće přidać',
 	'wikilove-image' => 'Zapodaj mjeno wobrazoweje dataje:',
 	'wikilove-select-image' => 'Wubjer wobraz:',
@@ -2352,6 +2355,7 @@ $messages['hsb'] = array(
 	'wikilove-food-baklava-header' => 'Baklawa za tebje!',
 	'wikilove-food-beer-option' => 'Piwo',
 	'wikilove-food-beer-header' => 'Piwo za tebje!',
+	'wikilove-food-cheeseburger-option' => 'Cheeseburger',
 	'wikilove-food-cookie-option' => 'Plack',
 	'wikilove-food-cookie-header' => 'Plack za tebje!',
 	'wikilove-food-coffee-option' => 'Šalka kofeja',
@@ -2752,7 +2756,7 @@ $messages['it'] = array(
 	'wikilove-barnstar-reallife-option' => 'Barnstar vita reale',
 	'wikilove-barnstar-reallife-desc' => "La barnstar vita reale è data ai redattori che contribuiscono sia online sia offline, attraverso l'organizzazione di eventi legati al wiki.",
 	'wikilove-barnstar-reallife-title' => 'La barnstar vita reale',
-	'wikilove-barnstar-rosetta-option' => 'Rosetta barnstar',
+	'wikilove-barnstar-rosetta-option' => 'Barnstar Rosetta',
 	'wikilove-barnstar-rosetta-desc' => 'La barnstar Rosetta è data agli editori che mostrano un impegno eccezionale per le traduzioni su Wikipedia.',
 	'wikilove-barnstar-rosetta-title' => 'La barnstar Rosetta',
 	'wikilove-barnstar-special-option' => 'Barnstar speciale',
@@ -2772,6 +2776,9 @@ $messages['it'] = array(
 	'wikilove-food-beer-option' => 'Birra',
 	'wikilove-food-beer-desc' => 'La birra è la bevanda alcolica più consumata nel mondo e probabilmente la più antica. È la terza bevanda più diffusa dopo acqua e tè.',
 	'wikilove-food-beer-header' => 'Una birra per te!',
+	'wikilove-food-cheeseburger-option' => 'Cheeseburger',
+	'wikilove-food-cheeseburger-desc' => 'Alimento di base dei ristoranti fast-food, il cheeseburger è diventato popolare negli Stati Uniti durante gli anni venti e trenta.',
+	'wikilove-food-cheeseburger-header' => 'Un cheeseburger per te!',
 	'wikilove-food-cookie-option' => 'Biscotto',
 	'wikilove-food-cookie-desc' => 'I biscotti sono piccoli dolci al forno disponibili in una vasta gamma di sapori, forme e dimensioni.',
 	'wikilove-food-cookie-header' => 'Un biscotto per te!',
@@ -2785,6 +2792,8 @@ $messages['it'] = array(
 	'wikilove-food-pie-desc' => 'Le torte possono essere riempite con una grande varietà di ingredienti dolci o salati. Le più diffuse sono con mele, ciliegie, pesche, cioccolato e noci pecan.',
 	'wikilove-food-pie-header' => 'Una torta per te!',
 	'wikilove-food-strawberries-option' => 'Fragole',
+	'wikilove-food-strawberries-desc' => "Il frutto della fragola è largamente apprezzato per l'aroma caratteristico, il colore rosso luminoso, la consistenza succosa e la dolcezza.",
+	'wikilove-food-strawberries-header' => 'Una ciotola di fragole per te!',
 	'wikilove-type-kittens' => 'Gattini',
 	'wikilove-kittens-header' => 'Un gattino per te!',
 	'wikilove-type-makeyourown' => 'Crea il tuo',
@@ -4083,6 +4092,25 @@ $messages['pdc'] = array(
 	'wikilove-button-preview' => 'Aasicht',
 	'wikilove-preview' => 'Aasicht',
 	'wikilove-type-kittens' => 'Bussli',
+);
+
+/** Pälzisch (Pälzisch)
+ * @author Manuae
+ */
+$messages['pfl'] = array(
+	'wikilove-type-food' => "Esse un Dring'ge",
+	'wikilove-food-beer-header' => 'Ä Biea fa disch!',
+	'wikilove-food-pie-option' => 'Obschdkuche',
+	'wikilove-food-pie-desc' => 'Obschdkuche kennen mid viel Sießem oda onare Legaraije gfilld were, wie Ebbl, Kersche, Pfersich, Schogolad oda Niss.',
+	'wikilove-food-pie-header' => 'Do hods än Obschdkuche fa disch!',
+	'wikilove-food-strawberries-option' => 'Erdbeere',
+	'wikilove-food-stroopwafels-option' => 'Sirup-Ponnekieschle',
+	'wikilove-food-stroopwafels-desc' => 'Sirup-Ponnekieschl kummen vun Holland un weren mid dinnem Taig unem Karamellsirup inde Midd gbagge.',
+	'wikilove-food-stroopwafels-header' => 'Do hods Sirup-Ponnekieschle fa disch!',
+	'wikilove-type-kittens' => 'Schmusekedzl',
+	'wikilove-kittens-header' => 'Do hods ä Schmusekedzl fa disch!',
+	'wikilove-type-makeyourown' => "Mag's selwa",
+	'wikilove-err-gallery-again' => 'Vasugs hald nomol.',
 );
 
 /** Polish (Polski)
