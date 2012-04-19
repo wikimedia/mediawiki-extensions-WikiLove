@@ -370,9 +370,8 @@
 	background-repeat: no-repeat;
 	color: red;
 	font-weight: bold;
-	line-height: 32px;
-	padding-left: 34px;
-	padding-bottom: 3px;
+	line-height: 1.4em;
+	padding: 7px 0px 10px 34px;
 }
 
 #mw-wikilove-dialog #mw-wikilove-image-preview {

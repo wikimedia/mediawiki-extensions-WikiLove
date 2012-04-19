@@ -171,6 +171,7 @@ $messages['en'] = array(
 	'wikilove-err-gallery-again' => 'Try again',
 	'wikilove-err-preview-api' => 'Something went wrong during previewing. Please try again.',
 	'wikilove-err-send-api' => 'Something went wrong when sending the message. Please try again.',
+	'wikilove-err-invalid-token' => 'Could not send WikiLove due to a loss of session data. Try reloading the page or logging out and logging back in.',
 	'wikilove-summary' => '/* $1 */ new WikiLove message',
 	'wikilove-what-is-this' => "What is this?",
 	'wikilove-what-is-this-link' => "https://www.mediawiki.org/wiki/WikiLove",
