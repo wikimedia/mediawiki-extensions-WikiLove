@@ -1249,6 +1249,7 @@ $messages['et'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Huji
  * @author Leyth
  * @author Mehran
  * @author Omnia
@@ -1421,7 +1422,7 @@ $messages['fa'] = array(
 	'wikilove-what-is-this' => 'این چیست؟',
 	'wikilove-anon-warning' => 'توجه: این کاربر ثبت‌نام نکرده‌است و ممکن است متوجه این پیام نشود.',
 	'wikilove-commons-text' => '$1 را برای یافتن تصاویر جستجو کنید.',
-	'wikilove-terms' => 'با ثبت کردن، شما به شفافیت با این $1 موافقت می‌کنید.',
+	'wikilove-terms' => 'با ارسال فرم، شما با شفاف‌سازی‌های مطابق $1 موافقت می‌کنید.',
 	'wikilove-terms-link' => 'شرایط',
 	'wikilove.js' => '/ * جاوا اسکریپت مورد استفاده در اینجا ویکی‌هدیه را سفارشی می‌کند، نگاه کنید به http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
 );
@@ -5910,12 +5911,14 @@ $messages['vi'] = array(
 
 /** Yiddish (ייִדיש)
  * @author Imre
+ * @author פוילישער
  */
 $messages['yi'] = array(
 	'wikilove-button-preview' => 'פֿאראויסשטעלונג',
 	'wikilove-preview' => 'פֿאראויסשטעלונג',
 	'wikilove-food-cookie-option' => 'קיכל',
 	'wikilove-food-pie-option' => 'קוכן',
+	'wikilove-food-strawberries-option' => 'טרוסקאווקעס',
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
