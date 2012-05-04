@@ -682,7 +682,11 @@ $.wikiLove = {
 				$( '#mw-wikilove-send-spinner' ).fadeOut( 200 );
 
 				if ( data.error !== undefined ) {
-					$.wikiLove.showPreviewError( data.error.info );
+					if ( data.error.info === 'Invalid token' ) {
+						$.wikiLove.showPreviewError( 'wikilove-err-invalid-token' );
+					} else {
+						$.wikiLove.showPreviewError( data.error.info );
+					}
 					return;
 				}
 
