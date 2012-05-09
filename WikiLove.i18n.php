@@ -3800,6 +3800,7 @@ $messages['ms'] = array(
 	'wikilove-err-gallery-again' => 'Cuba lagi',
 	'wikilove-err-preview-api' => 'Masalah timbul ketika pralihat. Sila cuba lagi.',
 	'wikilove-err-send-api' => 'Masalah timbul ketika menghantar pesanan. Sila cuba lagi.',
+	'wikilove-err-invalid-token' => 'WikiLove tidak dapat dihantar kerana kehilangan data sesi. Cuba muatkan semula laman ini atau log keluar lalu log masuk balik.',
 	'wikilove-summary' => '/* $1 */ pesanan WikiLove baru',
 	'wikilove-what-is-this' => 'Apakah ini?',
 	'wikilove-anon-warning' => 'Perhatian: Pengguna ini tidak berdaftar, jadi mungkin dia tidak dapat perasan pesanan ini.',
