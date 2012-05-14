@@ -2088,6 +2088,7 @@ $messages['gl'] = array(
 	'wikilove-err-gallery-again' => 'Inténteo de novo',
 	'wikilove-err-preview-api' => 'Houbo un problema ao ollar a vista previa. Inténteo de novo.',
 	'wikilove-err-send-api' => 'Houbo un problema ao enviar a mensaxe. Inténteo de novo.',
+	'wikilove-err-invalid-token' => 'Non se puido enviar o amor wiki debido a unha perda dos datos da sesión. Intente recargar a páxina ou saír do sistema e volver entrar.',
 	'wikilove-summary' => '/* $1 */ nova mensaxe de amor wiki',
 	'wikilove-what-is-this' => 'Que é isto?',
 	'wikilove-anon-warning' => 'Nota: O usuario non está rexistrado, é posible que non vexa esta mensaxe.',
