@@ -14,7 +14,7 @@ $messages = array();
 $messages['en'] = array(
 	'wikilove-desc' => 'Adds an interface for facilitating positive user feedback to user talk pages',
 	'wikilove' => 'WikiLove',
-	'wikilove-enable-preference' => 'Enable showing appreciation for other users with the WikiLove tab (experimental)',
+	'wikilove-enable-preference' => 'Enable showing appreciation for other users with the WikiLove tab',
 	'wikilove-tab-text' => 'WikiLove',
 	'tooltip-ca-wikilove' => 'Post a message for this user showing your appreciation',
 	'wikilove-dialog-title' => 'WikiLove – Send a message of appreciation to another user',
@@ -196,7 +196,7 @@ $messages['en'] = array(
  * @author Whym
  */
 $messages['qqq'] = array(
-	'wikilove-enable-preference' => '',
+	'wikilove-enable-preference' => 'Label of the option to turn on WikiLove in the preferences',
 	'wikilove-tab-text' => '[[File:Wiki Love 001.png|thumb]]',
 	'tooltip-ca-wikilove' => '[[File:Wiki Love 001.png|thumb]]',
 	'wikilove-dialog-title' => '[[File:Wiki Love 002.png|thumb]]',
