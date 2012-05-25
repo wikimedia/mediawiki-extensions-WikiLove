@@ -634,6 +634,14 @@ $messages['ca'] = array(
 	'wikilove-commons-text' => 'Podeu trobar imatges navegant $1.',
 );
 
+/** Czech (Česky)
+ * @author Mormegil
+ */
+$messages['cs'] = array(
+	'wikilove-desc' => 'Přidává rozhraní pro přidávání pozitivního hodnocení do uživatelských diskusí',
+	'wikilove-enable-preference' => 'Povolit oceňování ostatních uživatelů pomocí záložky WikiLove (experimentální)',
+);
+
 /** Danish (Dansk)
  * @author Peter Alberti
  */
