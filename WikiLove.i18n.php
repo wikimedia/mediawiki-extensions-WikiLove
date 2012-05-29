@@ -3122,6 +3122,7 @@ $messages['ko'] = array(
 	'wikilove-what-is-this' => '위키감사(WikiLove)란?',
 	'wikilove-anon-warning' => '알림: 이 사용자는 등록하지 않아서 이 글을 보지 못할 수도 있습니다.',
 	'wikilove-commons-text' => ' $1을 검색하여 이미지를 찾을 수 있습니다.',
+	'wikilove-commons-link' => '위키미디어 공용',
 	'wikilove-terms' => '글을 보내면 이 $1에 따라 의견 공개에 동의하는 것입니다.',
 	'wikilove-terms-link' => '이용 약관',
 	'wikilove.js' => '/* 여기 설치된 자바스크립트에서 위키감사를 설정합니다. http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration 을 참고하십시오. */',
@@ -4268,7 +4269,7 @@ $messages['pl'] = array(
 $messages['pms'] = array(
 	'wikilove-desc' => "A gionta n'antërfassa për facilité ij coment positiv ëd j'utent ansima a le pàgine ëd ciaciarade dj'utent",
 	'wikilove' => 'WikiLove',
-	'wikilove-enable-preference' => "Abilité la possibilità ëd mostre dl'apressiament për d'àutri utent con la scheda WikiLove",
+	'wikilove-enable-preference' => "Abilité la possibilità ëd mostré dl'apressiament për d'àutri utent con la scheda WikiLove",
 	'wikilove-tab-text' => 'WikiLove',
 	'tooltip-ca-wikilove' => 'Spedì un mëssagi a cost utent për mostreje sò apressiament',
 	'wikilove-dialog-title' => "WikiLove - Ch'a manda un mëssagi d'apressiament a n'àutr utent",
@@ -5998,7 +5999,7 @@ $messages['yi'] = array(
 	'wikilove-food-strawberries-option' => 'טרוסקאווקעס',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Anakmalaysia
  * @author Kaldari
  * @author Liangent
@@ -6175,7 +6176,7 @@ $messages['zh-hans'] = array(
 	'wikilove.js' => '/* 放在这里的JavaScript定制WikiLove, 参见http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Anakmalaysia
  * @author Kaldari
  * @author Liangent
