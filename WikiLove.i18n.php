@@ -2931,6 +2931,7 @@ $messages['ja'] = array(
 	'wikilove-err-gallery-again' => 'もう一度お試しください',
 	'wikilove-err-preview-api' => 'プレビュー中に問題が起きました。もう一度お試しください。',
 	'wikilove-err-send-api' => 'メッセージを送る際に問題が起きました。もう一度お試しください。',
+	'wikilove-err-invalid-token' => 'セッションデータが失われたため、ウィキラブを送ることができませんでした。ページを再読み込みするか、ログアウトして再ログインしてみてください。',
 	'wikilove-summary' => '/* $1 */ 新しいウィキラブのメッセージ',
 	'wikilove-what-is-this' => 'これは何？',
 	'wikilove-what-is-this-link' => 'https://www.mediawiki.org/wiki/WikiLove/ja',
@@ -4533,11 +4534,12 @@ $messages['pt'] = array(
  * @author MetalBrasil
  * @author Pedroca cerebral
  * @author Raylton P. Sousa
+ * @author 555
  */
 $messages['pt-br'] = array(
 	'wikilove-desc' => 'Adiciona uma interface para facilitar a demonstrações de apreço nas páginas de discussão dos usuários',
 	'wikilove' => 'WikiApreço',
-	'wikilove-enable-preference' => 'Permite enviar demonstrações de apreço a outros utilizadores usando o separador "WikiApreço"',
+	'wikilove-enable-preference' => 'Permite enviar demonstrações de afeto a outros usuários através da tab "WikiApreço"',
 	'wikilove-tab-text' => 'WikiApreço',
 	'tooltip-ca-wikilove' => 'Envie uma mensagem a este utilizador demonstrando o seu apreço',
 	'wikilove-dialog-title' => 'WikiApreço - Envie uma mensagem de apreço a outro utilizador',
