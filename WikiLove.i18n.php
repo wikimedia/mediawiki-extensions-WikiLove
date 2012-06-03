@@ -492,7 +492,7 @@ $messages['bn'] = array(
 	'wikilove-what-is-this' => 'এইটি কী?',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  * @author Y-M D
  */
@@ -592,7 +592,7 @@ $messages['bs'] = array(
 	'wikilove-preview' => 'Pregled',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author Toniher
  */
 $messages['ca'] = array(
@@ -640,7 +640,7 @@ $messages['ca'] = array(
 	'wikilove-commons-text' => 'Podeu trobar imatges navegant $1.',
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Mormegil
  */
 $messages['cs'] = array(
@@ -648,7 +648,7 @@ $messages['cs'] = array(
 	'wikilove-enable-preference' => 'Povolit oceňování ostatních uživatelů pomocí záložky WikiLove',
 );
 
-/** Danish (Dansk)
+/** Danish (dansk)
  * @author Peter Alberti
  */
 $messages['da'] = array(
@@ -999,7 +999,7 @@ $messages['eo'] = array(
 	'wikilove-terms-link' => 'kondiĉoj',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Armando-Martin
  * @author Fitoschido
  * @author Imre
@@ -1175,7 +1175,7 @@ $messages['es'] = array(
 	'wikilove.js' => '/ * El código JavaScript colocado aquí personaliza WikiLove, consulte http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
 );
 
-/** Estonian (Eesti)
+/** Estonian (eesti)
  * @author Pikne
  */
 $messages['et'] = array(
@@ -1445,7 +1445,7 @@ $messages['fa'] = array(
 	'wikilove.js' => '/ * جاوا اسکریپت مورد استفاده در اینجا ویکی‌هدیه را سفارشی می‌کند، نگاه کنید به http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Crt
  * @author Nedergard
  * @author Nike
@@ -1620,7 +1620,7 @@ $messages['fi'] = array(
 	'wikilove.js' => '/* Tämä JavaScript mukauttaa Wikirakkautta. Lisätietoja löytyy sivulta http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
-/** French (Français)
+/** French (français)
  * @author Crochet.david
  * @author DavidL
  * @author Geitost
@@ -1807,7 +1807,7 @@ $messages['fr'] = array(
 	'wikilove.js' => '/ * le JavaScript placé ici personnalise WikiLove, voyez http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  * @author Kaldari
  */
@@ -2403,7 +2403,7 @@ $messages['hsb'] = array(
 	'wikilove-terms-link' => 'wuměnjenja',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Bdamokos
  * @author Dani
  * @author Dj
@@ -2487,7 +2487,7 @@ $messages['hu'] = array(
 	'wikilove-terms-link' => 'feltételek',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -2702,7 +2702,7 @@ $messages['id'] = array(
 	'wikilove-commons-text' => 'Anda dapat menemukan gambar dengan mengunjungi $1.',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Aushulz
  * @author Beta16
  * @author Erasmo Barresi
@@ -3378,7 +3378,7 @@ $messages['lv'] = array(
 	'wikilove-err-gallery-again' => 'Mēģināt vēlreiz',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -4199,7 +4199,7 @@ $messages['pfl'] = array(
 	'wikilove-err-gallery-again' => 'Vasugs hald nomol.',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author BeginaFelicysym
  * @author Sp5uhe
  */
@@ -4479,7 +4479,7 @@ $messages['ps'] = array(
 	'wikilove-terms-link' => 'شرطونه',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Hamilton Abreu
  * @author Pedroca cerebral
  */
@@ -4529,7 +4529,7 @@ $messages['pt'] = array(
 	'wikilove-commons-text' => 'Pode encontrar imagens na $1.',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author 555
  * @author Giro720
  * @author Kaldari
@@ -4588,7 +4588,7 @@ $messages['pt-br'] = array(
 	'wikilove.js' => '/* O Javascript que colocar aqui personalizará a extensão WikiLove. Favor ler http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author Firilacroco
  * @author Minisarm
  */
@@ -4704,7 +4704,7 @@ $messages['roa-tara'] = array(
 	'wikilove-terms-link' => 'termine',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Eugrus
  * @author Haffman
  * @author Александр Сигачёв
@@ -5083,7 +5083,7 @@ $messages['si'] = array(
 	'wikilove.js' => '/* මෙහි යොදන ජාවාස්ක්‍රිප්ට් කේතයන් විකිසෙනෙහස රුචිකරණය කරයි, http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration බලන්න */',
 );
 
-/** Slovenian (Slovenščina)
+/** Slovenian (slovenščina)
  * @author Dbc334
  */
 $messages['sl'] = array(
@@ -5194,7 +5194,7 @@ $messages['sl'] = array(
 	'wikilove.js' => '/* Tukaj naveden JavaScript prilagaja WikiLove; oglejte si http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Maduixa
  * @author Micki
  * @author Rancher
@@ -5372,7 +5372,7 @@ $messages['sr-ec'] = array(
 	'wikilove.js' => '/* Овде постављен јаваскрипт прилагођава Викиљубав. Погледајте http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration?uselang=sr-ec */',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪srpski (latinica)‬)
  * @author Maduixa
  * @author Micki
  * @author Rancher
@@ -5550,7 +5550,7 @@ $messages['sr-el'] = array(
 	'wikilove.js' => '/* Ovde postavljen javaskript prilagođava Vikiljubav. Pogledajte http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration?uselang=sr-ec */',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Ainali
  * @author Diupwijk
  * @author Warrakkk
@@ -5832,7 +5832,7 @@ $messages['tr'] = array(
 	'wikilove-commons-text' => "Resimleri, $1'dan araştırarak bulabilirsiniz.",
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author Dim Grits
  * @author Microcell
  * @author Тест
