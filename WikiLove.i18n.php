@@ -2887,7 +2887,7 @@ Riprovare. Se il problema persiste, si può tentare di scollegarsi ed effettuare
  * @author Whym
  */
 $messages['ja'] = array(
-	'wikilove-desc' => '利用者のトークページに前向きな反応を寄せやすくするインタフェースを追加します。',
+	'wikilove-desc' => '利用者のトークページに前向きな反応を寄せやすくするインターフェイスを追加する',
 	'wikilove' => 'ウィキラブ',
 	'wikilove-enable-preference' => 'ウィキラブのタブを使用して他の利用者に感謝の意を示せるようにする',
 	'wikilove-tab-text' => 'ウィキラブ',
@@ -2931,7 +2931,7 @@ $messages['ja'] = array(
 	'wikilove-err-gallery-again' => 'もう一度お試しください',
 	'wikilove-err-preview-api' => 'プレビュー中に問題が起きました。もう一度お試しください。',
 	'wikilove-err-send-api' => 'メッセージを送る際に問題が起きました。もう一度お試しください。',
-	'wikilove-err-invalid-token' => 'セッションデータが失われたため、ウィキラブを送ることができませんでした。ページを再読み込みするか、ログアウトして再ログインしてみてください。',
+	'wikilove-err-invalid-token' => 'セッションデータが失われたためウィキラブを送信できませんでした。ページを再読み込みするか、ログアウトして再ログインしてみてください。',
 	'wikilove-summary' => '/* $1 */ 新しいウィキラブのメッセージ',
 	'wikilove-what-is-this' => 'これは何？',
 	'wikilove-what-is-this-link' => 'https://www.mediawiki.org/wiki/WikiLove/ja',
@@ -3119,6 +3119,7 @@ $messages['ko'] = array(
 	'wikilove-err-gallery-again' => '다시 시도하십시오',
 	'wikilove-err-preview-api' => '미리 보는 동안  문제가 생겼습니다. 다시 시도하십시오.',
 	'wikilove-err-send-api' => '글을 보낼 때 문제가 생겼습니다. 다시 시도하십시오.',
+	'wikilove-err-invalid-token' => '세션 데이터를 잃어버려서 위키감사를 보낼 수 없습니다. 페이지를 새로 고치거나 로그아웃하고 다시 로그인하세요.',
 	'wikilove-summary' => '/* $1 */ 새 위키감사 글',
 	'wikilove-what-is-this' => '위키감사(WikiLove)란?',
 	'wikilove-anon-warning' => '알림: 이 사용자는 등록하지 않아서 이 글을 보지 못할 수도 있습니다.',
@@ -4529,12 +4530,12 @@ $messages['pt'] = array(
 );
 
 /** Brazilian Portuguese (Português do Brasil)
+ * @author 555
  * @author Giro720
  * @author Kaldari
  * @author MetalBrasil
  * @author Pedroca cerebral
  * @author Raylton P. Sousa
- * @author 555
  */
 $messages['pt-br'] = array(
 	'wikilove-desc' => 'Adiciona uma interface para facilitar a demonstrações de apreço nas páginas de discussão dos usuários',
