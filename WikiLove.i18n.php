@@ -535,6 +535,8 @@ $messages['br'] = array(
 	'wikilove-food-beer-option' => 'Bier',
 	'wikilove-food-beer-header' => "Ur banne bier evidoc'h !",
 	'wikilove-food-brownie-option' => 'Kouign',
+	'wikilove-food-bubbletea-option' => 'Te klogorennek',
+	'wikilove-food-bubbletea-header' => "Ur banne te klogorennek evidoc'h",
 	'wikilove-food-cheeseburger-option' => 'Cheeseburger',
 	'wikilove-food-cheeseburger-desc' => 'Tamm boued diazez ar predoù prim anezhañ, eo bet brudet ar cheeseburger er Stadoù-Unanet e-pad ar bloavezhioù 1920-1930 da gentañ',
 	'wikilove-food-cheeseburger-header' => "Ur cheeseburger evidoc'h !",
@@ -5838,12 +5840,13 @@ $messages['tr'] = array(
 /** Ukrainian (українська)
  * @author Dim Grits
  * @author Microcell
+ * @author Olvin
  * @author Тест
  */
 $messages['uk'] = array(
 	'wikilove-desc' => 'Додає інтерфейс для залишення позитивних відгуків на сторінці обговорення користувача',
 	'wikilove' => 'Вікісимпатія',
-	'wikilove-enable-preference' => 'Увімкнути інструмент Вікісимпатії, для полегшення виразу вдячності іншим користувачам',
+	'wikilove-enable-preference' => 'Увімкнути інструмент Вікісимпатії для висловлення вдячності іншим користувачам',
 	'wikilove-tab-text' => 'Вікісимпатія',
 	'tooltip-ca-wikilove' => 'Надіслати повідомлення для цього користувача, виразити вашу вдячність',
 	'wikilove-dialog-title' => 'Вікісимпатія — Вияв вашої вдячності іншому користувачеві',
