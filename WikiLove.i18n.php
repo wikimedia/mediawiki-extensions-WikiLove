@@ -535,6 +535,7 @@ $messages['br'] = array(
 	'wikilove-food-beer-option' => 'Bier',
 	'wikilove-food-beer-header' => "Ur banne bier evidoc'h !",
 	'wikilove-food-brownie-option' => 'Kouign',
+	'wikilove-food-brownie-header' => "Un tamm gwastell chokolad evidoc'h !",
 	'wikilove-food-bubbletea-option' => 'Te klogorennek',
 	'wikilove-food-bubbletea-header' => "Ur banne te klogorennek evidoc'h",
 	'wikilove-food-cheeseburger-option' => 'Cheeseburger',
@@ -2380,6 +2381,7 @@ $messages['hsb'] = array(
 	'wikilove-food-baklava-header' => 'Baklawa za tebje!',
 	'wikilove-food-beer-option' => 'Piwo',
 	'wikilove-food-beer-header' => 'Piwo za tebje!',
+	'wikilove-food-brownie-option' => 'Brownie',
 	'wikilove-food-cheeseburger-option' => 'Cheeseburger',
 	'wikilove-food-cookie-option' => 'Plack',
 	'wikilove-food-cookie-header' => 'Plack za tebje!',
@@ -2899,7 +2901,7 @@ $messages['ja'] = array(
 	'tooltip-ca-wikilove' => 'この利用者に向けた感謝の言葉を書き込む',
 	'wikilove-dialog-title' => 'ウィキラブ - 他の利用者に感謝の言葉を送る',
 	'wikilove-select-type' => '種類をお選びください',
-	'wikilove-get-started-header' => 'さあ、始めましょう ！',
+	'wikilove-get-started-header' => 'さあ、始めましょう！',
 	'wikilove-get-started-list-1' => '送りたいウィキラブの種類を選択してください',
 	'wikilove-get-started-list-2' => 'そのウィキラブに詳細を加えてください',
 	'wikilove-get-started-list-3' => 'そのウィキラブを送ってください！',
@@ -2930,12 +2932,12 @@ $messages['ja'] = array(
 	'wikilove-err-msg' => 'パーソナライズされたメッセージを入力してください。',
 	'wikilove-err-image' => '画像を選択してください。',
 	'wikilove-err-image-bad' => '画像が存在しません。',
-	'wikilove-err-image-api' => '画像を取得する際に問題が起きました。もう一度お試しください。',
+	'wikilove-err-image-api' => '画像の取得中にエラーが発生しました。もう一度お試しください。',
 	'wikilove-err-sig' => 'メッセージに署名を入れないでください。',
-	'wikilove-err-gallery' => '画像を読み込む際に問題が起きました。',
+	'wikilove-err-gallery' => '画像の読み込み中に問題が発生しました。',
 	'wikilove-err-gallery-again' => 'もう一度お試しください',
-	'wikilove-err-preview-api' => 'プレビュー中に問題が起きました。もう一度お試しください。',
-	'wikilove-err-send-api' => 'メッセージを送る際に問題が起きました。もう一度お試しください。',
+	'wikilove-err-preview-api' => 'プレビュー中に問題が発生しました。もう一度お試しください。',
+	'wikilove-err-send-api' => 'メッセージの送信中に問題が発生しました。もう一度お試しください。',
 	'wikilove-err-invalid-token' => 'セッションデータが失われたためウィキラブを送信できませんでした。ページを再読み込みするか、ログアウトして再ログインしてみてください。',
 	'wikilove-summary' => '/* $1 */ 新しいウィキラブのメッセージ',
 	'wikilove-what-is-this' => 'これは何？',
@@ -3184,6 +3186,15 @@ $messages['ksh'] = array(
 	'wikilove-commons-text' => 'Belder fenk mer op $1.',
 	'wikilove-commons-link' => '<i lang="en">Wikimedia Commons</i>',
 	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/Main_Page?uselang=ksh',
+);
+
+/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+ * @author George Animal
+ */
+$messages['ku-latn'] = array(
+	'wikilove-button-preview' => 'Pêşdîtin',
+	'wikilove-preview' => 'Pêşdîtin',
+	'wikilove-type-food' => 'Xwarin û vexwarin',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
