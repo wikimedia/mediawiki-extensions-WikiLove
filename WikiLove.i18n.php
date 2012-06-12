@@ -6001,6 +6001,7 @@ $messages['vi'] = array(
 	'wikilove-err-gallery-again' => 'Thử lại',
 	'wikilove-err-preview-api' => 'Đã gặp một lỗi bất ngờ trong việc xem trước. Hãy thử lại.',
 	'wikilove-err-send-api' => 'Đã gặp một lỗi bất ngờ trong việc gửi thông điệp. Hãy thử lại.',
+	'wikilove-err-invalid-token' => 'Không thể gửi WikiLove do mất dữ liệu về phiên làm việc. Hãy thử tải lại trang hoặc đăng xuất và đăng nhập trở lại.',
 	'wikilove-summary' => '/* $1 */ thông điệp WikiLove mới',
 	'wikilove-what-is-this' => 'Đây là gì?',
 	'wikilove-anon-warning' => 'Lưu ý: Người dùng này chưa đăng ký, nên họ có thể không nhận thấy được thông điệp này.',
