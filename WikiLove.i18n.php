@@ -359,7 +359,7 @@ $messages['ar'] = array(
 	'wikilove-terms-link' => 'الشروط',
 );
 
-/** Azerbaijani (Azərbaycanca)
+/** Azerbaijani (azərbaycanca)
  * @author Cekli829
  */
 $messages['az'] = array(
@@ -434,7 +434,7 @@ $messages['be-tarask'] = array(
 	'wikilove.js' => '/* Разьмешчаны тут JavaScript-код зьмяняе WikiLove, глядзіце http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author DCLXVI
  * @author Spiritia
  */
@@ -584,7 +584,7 @@ $messages['br'] = array(
 	'wikilove-terms-link' => 'termenoù',
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -3323,7 +3323,7 @@ $messages['lb'] = array(
 	'wikilove.js' => '/* Dëse JavaScript adaptéiert déi perséinnlech Wäertschätzung, kuckt http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
-/** Lithuanian (Lietuvių)
+/** Lithuanian (lietuvių)
  * @author Eitvys200
  */
 $messages['lt'] = array(
@@ -3383,7 +3383,7 @@ $messages['lt'] = array(
 	'wikilove-terms-link' => 'sąlygos',
 );
 
-/** Latvian (Latviešu)
+/** Latvian (latviešu)
  * @author GreenZeb
  * @author Papuass
  */
@@ -4660,7 +4660,7 @@ $messages['ro'] = array(
 	'wikilove.js' => '/* JavaScript plasat aici personalizează WikiLove; vedeți http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
@@ -4954,7 +4954,7 @@ $messages['sa'] = array(
 	'wikilove-type-barnstars' => 'बार्नस्टार (Barnstars)',
 );
 
-/** Sicilian (Sicilianu)
+/** Sicilian (sicilianu)
  * @author Aushulz
  */
 $messages['scn'] = array(
