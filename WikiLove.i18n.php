@@ -2875,8 +2875,7 @@ $messages['it'] = array(
 	'wikilove-err-gallery-again' => 'Riprova',
 	'wikilove-err-preview-api' => "Qualcosa è andato storto durante l'anteprima. Per favore riprova.",
 	'wikilove-err-send-api' => "Qualcosa è andato storto durante l'invio del messaggio. Per favore riprova.",
-	'wikilove-err-invalid-token' => 'Non è stato possibile inviare il WikiAffetto a causa della perdita dei dati relativi alla sessione.
-Riprovare. Se il problema persiste, si può tentare di scollegarsi ed effettuare un nuovo accesso.',
+	'wikilove-err-invalid-token' => 'Non è stato possibile inviare il WikiAffetto a causa della perdita dei dati relativi alla sessione. Ricarica la pagina, se il problema persiste chiudi la sessione ed effettua un nuovo accesso.',
 	'wikilove-summary' => '/* $1 */ nuovo messaggio di WikiAffetto',
 	'wikilove-what-is-this' => "Cos'è questo?",
 	'wikilove-anon-warning' => "Nota: quest'utente non è registrato/a, potrebbe non notare questo messaggio.",
@@ -5745,13 +5744,38 @@ $messages['ta'] = array(
 );
 
 /** Telugu (తెలుగు)
+ * @author Jprmvnvijay5
  * @author Veeven
  */
 $messages['te'] = array(
+	'wikilove-select-type' => 'రకము ఎంచుడు',
+	'wikilove-get-started-header' => 'మొదలుపెడదాము పదండి',
 	'wikilove-add-details' => 'వివరాలను చేర్చు',
+	'wikilove-image' => 'ఏదైనా బొమ్మలదస్త్రపు పేరు పొందుపరచుడి.',
+	'wikilove-select-image' => 'ఏదైనా బొమ్మను ఎంచుకొనుడి',
 	'wikilove-title' => 'ఒక శీర్షికను ఇవ్వండి:',
+	'wikilove-omit-sig' => '(సంతకం లేకుండా)',
+	'wikilove-image-example' => '(మచ్చు: Trophy.png)',
+	'wikilove-button-preview' => 'మునుజూపు',
+	'wikilove-preview' => 'మునుజూపు',
+	'wikilove-notify' => 'ఎ-తపాలా ద్వారా వాడుకరికి తెలపండి',
+	'wikilove-food-cookie-option' => 'తీపొంట',
+	'wikilove-food-cookie-header' => 'మీ కొరకు ఒక తీపొంట',
+	'wikilove-food-coffee-desc' => 'లోకమంతా మెప్పు పొందిన కాఫీ మందికి సత్తువనిచ్చేదిగా పేరొందినది',
+	'wikilove-food-tea-desc' => 'నీటి తర్వాత ఎక్కువగా వాడబడే తాగుడు తేనీరు. ఇది వేడిగానైనా, చల్లగానైనా, పాలతోనైనా, పంచదారతోనైనా కమ్మగా ఉంటుంది.',
+	'wikilove-type-kittens' => 'పిల్లిపిల్లలు',
+	'wikilove-kittens-header' => 'మీకో పిల్లిపిల్ల',
+	'wikilove-type-makeyourown' => 'మీదిగా చేసుకోండి',
+	'wikilove-err-image' => 'జాలిదలచి ఒక బొమ్మను ఎంచుకొనుడి',
+	'wikilove-err-image-bad' => 'బొమ్మ లేదు',
+	'wikilove-err-image-api' => 'ఆ బొమ్మను వెలికితీసేటప్పుడు ఏదో పొరపాటు జరిగింది. జాలిదలచి మళ్ళీ పూనుకొనుడి.',
+	'wikilove-err-sig' => 'జాలిదలచి ఆ సందేశంలో సంతకాలేవీ చేర్చకండి.',
+	'wikilove-err-gallery' => 'ఆ బొమ్మలను తెచ్చేటపుడు ఏదో తప్పు దొరలినది.',
 	'wikilove-err-gallery-again' => 'మళ్ళీ ప్రయత్నించండి',
+	'wikilove-err-preview-api' => 'మునుజూపు చూచుచుండగా ఏదో తప్పు దొరలినది. మళ్ళీ పూనుకొనుడి.',
+	'wikilove-err-send-api' => 'ఆ బొమ్మను వెలికితీసేటప్పుడు ఏదో  తప్పు దొరలినది. జాలిదలచి మళ్ళీ పూనుకొనుడి.',
 	'wikilove-what-is-this' => 'ఇది ఏమిటి?',
+	'wikilove-anon-warning' => 'చూడుడు: ఈ వాడుకరి నమోదు చేసుకోలేదు, ఆమె లేదా అతడు ఈ సందేశాన్ని పట్టించుకోనక్కర లేదు.',
 );
 
 /** Tagalog (Tagalog)
