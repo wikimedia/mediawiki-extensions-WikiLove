@@ -2714,12 +2714,13 @@ $messages['id'] = array(
  * @author Kaldari
  * @author Nemo bis
  * @author Rippitippi
+ * @author Ximo17
  */
 $messages['it'] = array(
 	'wikilove-desc' => "Aggiunge un'interfaccia per facilitare il feedback positivo ad un utente nella sua pagina di discussione",
-	'wikilove' => 'WikiAffetto',
+	'wikilove' => 'Wikilove',
 	'wikilove-enable-preference' => "Abilita la possibilità di mostrare l'apprezzamento agli altri utenti con la scheda WikiAffetto",
-	'wikilove-tab-text' => 'WikiAffetto',
+	'wikilove-tab-text' => 'Wikilove',
 	'tooltip-ca-wikilove' => 'Invia un messaggio a questo utente per mostrare il tuo apprezzamento',
 	'wikilove-dialog-title' => 'WikiAffetto – Invia un messaggio di apprezzamento a un altro utente',
 	'wikilove-select-type' => 'Seleziona un tipo',
@@ -2875,7 +2876,7 @@ $messages['it'] = array(
 	'wikilove-err-gallery-again' => 'Riprova',
 	'wikilove-err-preview-api' => "Qualcosa è andato storto durante l'anteprima. Per favore riprova.",
 	'wikilove-err-send-api' => "Qualcosa è andato storto durante l'invio del messaggio. Per favore riprova.",
-	'wikilove-err-invalid-token' => 'Non è stato possibile inviare il WikiAffetto a causa della perdita dei dati relativi alla sessione. Ricarica la pagina, se il problema persiste chiudi la sessione ed effettua un nuovo accesso.',
+	'wikilove-err-invalid-token' => "Non è stato possibile inviare WikiAffetto a causa della perdita dei dati relativi alla sessione. Prova a ricaricare la pagina; se il problema persiste, chiudi la sessione ed effettua nuovamente l'accesso.",
 	'wikilove-summary' => '/* $1 */ nuovo messaggio di WikiAffetto',
 	'wikilove-what-is-this' => "Cos'è questo?",
 	'wikilove-anon-warning' => "Nota: quest'utente non è registrato/a, potrebbe non notare questo messaggio.",
