@@ -3693,6 +3693,7 @@ $messages['ml'] = array(
 	'wikilove-food-tea-desc' => 'ശുദ്ധജലത്തിനു ശേഷം, ഏറ്റവുമധികം കുടിക്കപ്പെടുന്ന പാനീയമാണ് ചായ. ചൂടാക്കിയോ, തണുപ്പിച്ചോ, പാലും പഞ്ചസാരയും ചേർത്തോ ഒക്കെ ഉപയോഗിക്കാം.',
 	'wikilove-food-tea-header' => 'ഇതാ താങ്കൾക്ക് ഒരു കപ്പ് ചായ!',
 	'wikilove-type-kittens' => 'പൂച്ചക്കുട്ടികൾ',
+	'wikilove-kittens-header' => 'താങ്കൾക്കിതാ ഒരു പുച്ചക്കുട്ടി!',
 	'wikilove-type-makeyourown' => 'സ്വന്തമായിട്ടൊന്നുണ്ടാക്കുക',
 	'wikilove-err-header' => 'ദയവായി ഒരു തലക്കുറി ചേർക്കുക.',
 	'wikilove-err-title' => 'ദയവായി തലക്കെട്ട് നൽകുക.',
@@ -3705,6 +3706,7 @@ $messages['ml'] = array(
 	'wikilove-err-gallery-again' => 'വീണ്ടും ശ്രമിക്കുക',
 	'wikilove-err-preview-api' => 'പ്രിവ്യൂ എടുത്തപ്പോൾ എന്തോ പിഴവുണ്ടായി. ദയവായി വീണ്ടും ശ്രമിക്കുക.',
 	'wikilove-err-send-api' => 'സന്ദേശം അയയ്ക്കാൻ നോക്കിയപ്പോൾ എന്തോ പിഴവുണ്ടായി. വീണ്ടും ശ്രമിക്കുക.',
+	'wikilove-err-invalid-token' => 'സെഷൻ വിവരങ്ങൾ നഷ്ടമായതിനാൽ വിക്കിസ്നേഹം അയയ്ക്കാൻ കഴിഞ്ഞില്ല. താൾ വീണ്ടും എടുത്തോ ലോഗൗട്ട് ചെയ്ത ശേഷം വീണ്ടും പ്രവേശിച്ചോ ശ്രമിക്കുക.',
 	'wikilove-summary' => '/* $1 */ പുതിയ വിക്കിസ്നേഹസന്ദേശം',
 	'wikilove-what-is-this' => 'എന്താണിത്?',
 	'wikilove-anon-warning' => 'കുറിപ്പ്: ഈ ഉപയോക്താവ് അംഗത്വമെടുത്തിട്ടില്ല, അദ്ദേഹം ഈ സന്ദേശം ശ്രദ്ധിക്കാനിടയില്ല.',
@@ -3712,7 +3714,7 @@ $messages['ml'] = array(
 	'wikilove-commons-link' => 'വിക്കിമീഡിയ കോമൺസ്',
 	'wikilove-terms' => 'സമർപ്പിക്കുമ്പോൾ, $1 പ്രകാരമുള്ള സുതാര്യത താങ്കൾ അംഗീകരിക്കുന്നതാണ്.',
 	'wikilove-terms-link' => 'നിബന്ധനകൾ',
-	'wikilove.js' => '/* വിക്കിലവ് ക്രമീകരിച്ചെടുക്കാനുള്ള ജാവാസ്ക്രിപ്റ്റ് ഇവിടെ നൽകുക, http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration കാണുക */',
+	'wikilove.js' => '/* വിക്കിസ്നേഹം ക്രമീകരിച്ചെടുക്കാനുള്ള ജാവാസ്ക്രിപ്റ്റ് ഇവിടെ നൽകുക, http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration കാണുക */',
 );
 
 /** Malay (Bahasa Melayu)
@@ -5772,7 +5774,7 @@ $messages['te'] = array(
 	'wikilove-err-image-bad' => 'బొమ్మ లేదు',
 	'wikilove-err-image-api' => 'ఆ బొమ్మను వెలికితీసేటప్పుడు ఏదో పొరపాటు జరిగింది. జాలిదలచి మళ్ళీ పూనుకొనుడి.',
 	'wikilove-err-sig' => 'జాలిదలచి ఆ సందేశంలో సంతకాలేవీ చేర్చకండి.',
-	'wikilove-err-gallery' => 'ఆ బొమ్మలను తెచ్చేటపుడు ఏదో తప్పు దొరలినది.',
+	'wikilove-err-gallery' => 'ఆ బొమ్మలను తెచ్చేటపుడు ఏదో పొరపాటు జరిగింది.',
 	'wikilove-err-gallery-again' => 'మళ్ళీ ప్రయత్నించండి',
 	'wikilove-err-preview-api' => 'మునుజూపు చూచుచుండగా ఏదో తప్పు దొరలినది. మళ్ళీ పూనుకొనుడి.',
 	'wikilove-err-send-api' => 'ఆ బొమ్మను వెలికితీసేటప్పుడు ఏదో  తప్పు దొరలినది. జాలిదలచి మళ్ళీ పూనుకొనుడి.',
