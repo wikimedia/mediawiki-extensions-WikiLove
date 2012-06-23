@@ -479,10 +479,11 @@ $messages['bg'] = array(
 
 /** Bengali (বাংলা)
  * @author Bellayet
+ * @author Wikitanvir
  */
 $messages['bn'] = array(
-	'wikilove' => 'উইকিলাভ',
-	'wikilove-tab-text' => 'উইকিলাভ',
+	'wikilove' => 'উইকিভালোবাসা',
+	'wikilove-tab-text' => 'উইকিভালোবাসা',
 	'wikilove-add-details' => 'বিস্তারিত যোগ',
 	'wikilove-select-image' => 'চিত্র নির্বাচন:',
 	'wikilove-enter-message' => 'বার্তা লিখুন:',
