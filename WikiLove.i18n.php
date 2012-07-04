@@ -359,6 +359,14 @@ $messages['ar'] = array(
 	'wikilove-terms-link' => 'الشروط',
 );
 
+/** Assamese (অসমীয়া)
+ * @author Bishnu Saikia
+ */
+$messages['as'] = array(
+	'wikilove-button-preview' => 'খচৰা চাওক',
+	'wikilove-preview' => 'খচৰা চাওক',
+);
+
 /** Azerbaijani (azərbaycanca)
  * @author Cekli829
  */
