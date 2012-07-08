@@ -275,7 +275,7 @@ $.wikiLoveOptions = {
 					image: 'Brownie transparent.png',
 					imageSize: '120px'
 				},
-				'bubble tea': {
+				'bubbletea': {
 					fields: [ 'header', 'message' ],
 					option: mw.msg( 'wikilove-food-bubbletea-option' ),
 					descr: mw.msg( 'wikilove-food-bubbletea-desc' ),
