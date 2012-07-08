@@ -3716,6 +3716,7 @@ $messages['ml'] = array(
 	'wikilove-food-tea-option' => 'ഒരു കപ്പ് ചായ',
 	'wikilove-food-tea-desc' => 'ശുദ്ധജലത്തിനു ശേഷം, ഏറ്റവുമധികം കുടിക്കപ്പെടുന്ന പാനീയമാണ് ചായ. ചൂടാക്കിയോ, തണുപ്പിച്ചോ, പാലും പഞ്ചസാരയും ചേർത്തോ ഒക്കെ ഉപയോഗിക്കാം.',
 	'wikilove-food-tea-header' => 'ഇതാ താങ്കൾക്ക് ഒരു കപ്പ് ചായ!',
+	'wikilove-food-strawberries-option' => 'സ്ട്രോബെറികൾ',
 	'wikilove-type-kittens' => 'പൂച്ചക്കുട്ടികൾ',
 	'wikilove-kittens-header' => 'താങ്കൾക്കിതാ ഒരു പുച്ചക്കുട്ടി!',
 	'wikilove-type-makeyourown' => 'സ്വന്തമായിട്ടൊന്നുണ്ടാക്കുക',
