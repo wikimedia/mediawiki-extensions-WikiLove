@@ -14,40 +14,26 @@ class ApiWikiLove extends ApiBase {
 		}
 
 		$talk = WikiLoveHooks::getUserTalkPage( $title );
-		if ( is_null( $talk ) ) {
-			$this->dieUsageMsg( array( 'invaliduser', $params['title'] ) );
+		// getUserTalkPage() returns a string on error
+		if ( is_string( $talk ) ) {
+			$this->dieUsage( $talk, 'nowikilove' );
 		}
 
 		if ( $wgWikiLoveLogging ) {
 			$this->saveInDb( $talk, $params['subject'], $params['message'], $params['type'], isset( $params['email'] ) ? 1 : 0 );
 		}
 
-		// MediaWiki did not allow specifying separate edit summaries and section titles until 1.19
-		$oldVersion = version_compare( $wgVersion, '1.18', '<=' );
-		if ( $oldVersion ) {
-			$apiParamArray = array(
-				'action' => 'edit',
-				'title' => $talk->getFullText(),
-				// need to do this, as Article::replaceSection fails for non-existing pages
-				'appendtext' => ( $talk->exists() ? "\n\n" : '' ) . 
-					wfMsgForContent( 'newsectionheaderdefaultlevel', $params['subject'] )
-					. "\n\n" . $params['text'],
-				'token' => $params['token'],
-				'summary' => wfMsgForContent( 'wikilove-summary', $strippedSubject ),
-				'notminor' => true
-			);
-		} else {
-			$apiParamArray = array(
-				'action' => 'edit',
-				'title' => $talk->getFullText(),
-				'section' => 'new',
-				'sectiontitle' => $params['subject'],
-				'text' => $params['text'],
-				'token' => $params['token'],
-				'summary' => wfMsgForContent( 'wikilove-summary', $strippedSubject ),
-				'notminor' => true
-			);
-		}
+		// Requires MediaWiki 1.19 or later
+		$apiParamArray = array(
+			'action' => 'edit',
+			'title' => $talk->getFullText(),
+			'section' => 'new',
+			'sectiontitle' => $params['subject'],
+			'text' => $params['text'],
+			'token' => $params['token'],
+			'summary' => wfMsgForContent( 'wikilove-summary', $strippedSubject ),
+			'notminor' => true
+		);
 
 		$api = new ApiMain(
 			new DerivativeRequest(
@@ -207,6 +193,6 @@ class ApiWikiLove extends ApiBase {
 	}
 
 	public function getVersion() {
-		return __CLASS__ . ': $Id$';
+		return __CLASS__ . ': 1.1';
 	}
 }

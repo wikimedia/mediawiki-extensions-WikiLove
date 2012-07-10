@@ -374,6 +374,18 @@
 	padding: 7px 0px 10px 34px;
 }
 
+#mw-wikilove-dialog #mw-wikilove-success {
+	display: none;
+	/* @embed */
+	background-image: url(images/checkmark.png);
+	background-position: center left;
+	background-repeat: no-repeat;
+	color: #30925F;
+	font-weight: bold;
+	line-height: 1.4em;
+	padding: 7px 0px 10px 34px;
+}
+
 #mw-wikilove-dialog #mw-wikilove-image-preview {
 	position: absolute;
 	top: 1em;

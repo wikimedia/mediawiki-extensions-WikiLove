@@ -38,7 +38,7 @@ EOT;
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'WikiLove',
-	'version' => '1.0',
+	'version' => '1.1',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:WikiLove',
 	'author' => array(
 		'Ryan Kaldari', 'Jan Paul Posma'
@@ -66,7 +66,6 @@ $wgExtensionMessagesFiles['WikiLove']             = $dir . 'WikiLove.i18n.php';
 // register hooks
 $wgHooks['GetPreferences'][]                      = 'WikiLoveHooks::getPreferences';
 $wgHooks['SkinTemplateNavigation'][]              = 'WikiLoveHooks::skinTemplateNavigation';
-$wgHooks['SkinTemplateTabs'][]                    = 'WikiLoveHooks::skinTemplateTabs';
 $wgHooks['BeforePageDisplay'][]                   = 'WikiLoveHooks::beforePageDisplay';
 $wgHooks['LoadExtensionSchemaUpdates'][]          = 'WikiLoveHooks::loadExtensionSchemaUpdates';
 $wgHooks['MakeGlobalVariablesScript'][]           = 'WikiLoveHooks::makeGlobalVariablesScript';
@@ -267,9 +266,11 @@ $wgResourceModules += array(
 			'wikilove-commons-url',
 			'wikilove-err-preview-api',
 			'wikilove-err-send-api',
+			'wikilove-err-max-exceeded',
 			'wikilove-terms',
 			'wikilove-terms-link',
 			'wikilove-terms-url',
+			'wikilove-success-number',
 		),
 		'dependencies' => array(
 			'ext.wikiLove.defaultOptions',
