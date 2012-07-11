@@ -376,7 +376,7 @@ $messages['az'] = array(
 	'wikilove-what-is-this' => 'Bu nədir?',
 );
 
-/** Bashkir (Башҡортса)
+/** Bashkir (башҡортса)
  * @author Haqmar
  */
 $messages['ba'] = array(
@@ -390,7 +390,7 @@ $messages['ba'] = array(
 	'wikilove-preview' => 'Алдан байҡау',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Renessaince
@@ -1967,7 +1967,7 @@ $messages['frp'] = array(
 	'wikilove-terms-link' => 'condicions',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Kaldari
  * @author Toliño
  */
@@ -2385,7 +2385,7 @@ $messages['hi'] = array(
 	'wikilove-terms-link' => 'शर्तें',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
@@ -3917,16 +3917,15 @@ $messages['ms'] = array(
 	'wikilove.js' => '/* JavaScript yang terletak di sini mengubah suai WikiLove, rujuk http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Cocu
  * @author Diupwijk
- * @author Jon Harald Søby
  * @author Stigmj
  */
 $messages['nb'] = array(
 	'wikilove-desc' => 'Legger til et grensesnitt for å forenkle positive tilbakemeldinger til brukeres diskusjonssider',
 	'wikilove' => 'WikiLove',
-	'wikilove-enable-preference' => 'Aktiver muligheten for å vise takknemlighet til andre brukere med WikiLove-fanen (eksperimentell)',
+	'wikilove-enable-preference' => 'Aktiver muligheten for å vise takknemlighet til andre brukere med WikiLove-fanen',
 	'wikilove-tab-text' => 'WikiLove',
 	'tooltip-ca-wikilove' => 'Legg inn en melding til denne brukeren som viser din takknemlighet',
 	'wikilove-dialog-title' => 'WikiLove - Send en takknemlighetsmelding til en annen bruker',
@@ -4925,7 +4924,7 @@ $messages['ru'] = array(
 	'wikilove.js' => '/* Размещенный здесь JavaScript кастомизирует WikiLove, см. http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
