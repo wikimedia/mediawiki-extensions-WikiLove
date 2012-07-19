@@ -8,13 +8,14 @@ var	options = {}, // options modifiable by the user
 	rememberData = null, // input data to remember when switching types or subtypes
 	emailable = false, // whether or not the target user is emailable
 	redirect = true, // whether or not to redirect the user to the WikiLove message after it has been posted
-	targets = null, // the recipients of the WikiLove
+	targets = [], // the recipients of the WikiLove
 	maxRecipients = 10, // maximum number of simultaneous recipients
 	gallery = {};
 
 $.wikiLove = {
 	/**
 	 * Opens the dialog and builds it if necessary.
+	 * @param array recipients
 	 */
 	openDialog: function( recipients ) {
 		// If a list of recipients are specified, this will override the normal
@@ -29,7 +30,7 @@ $.wikiLove = {
 			redirect = false;
 			// TODO: See if recipients are emailable
 		} else {
-			targets = mw.config.get( 'wgPageName' );
+			targets.push( mw.config.get( 'wgPageName' ) );
 			// Test to see if the 'E-mail this user' link exists
 			emailable = $( '#t-emailuser' ).length ? true : false;
 		}
