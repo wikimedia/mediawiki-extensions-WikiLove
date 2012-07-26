@@ -38,7 +38,7 @@ EOT;
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'WikiLove',
-	'version' => '1.1',
+	'version' => '1.2',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:WikiLove',
 	'author' => array(
 		'Ryan Kaldari', 'Jan Paul Posma'
