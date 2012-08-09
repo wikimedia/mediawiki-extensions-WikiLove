@@ -1341,6 +1341,7 @@ $messages['et'] = array(
  * @author Huji
  * @author Leyth
  * @author Mehran
+ * @author Mjbmr
  * @author Omnia
  * @author Reza1615
  * @author Rmashhadi
@@ -1508,6 +1509,7 @@ $messages['fa'] = array(
 	'wikilove-err-preview-api' => 'هنگام پیش‌نمایش اشکالی رخ داد، لطفا دوباره سعی کنید.',
 	'wikilove-err-send-api' => 'هنگام فرستادن پیام اشکالی رخ داد، لطفا دوباره سعی کنید.',
 	'wikilove-err-invalid-token' => 'به دلیل از دست رفتن اطلاعات امکان ارسال هدیهٔ ویکی نیست. صفحه را از باز کنید یا از سامانه خارج شوید و دوباره وارد سامانه گردید.',
+	'wikilove-err-invalid-username' => 'نام کاربری معتبر نیست.',
 	'wikilove-summary' => '/ * $1 * /  ویکی‌هدیهٔ جدید',
 	'wikilove-what-is-this' => 'این چیست؟',
 	'wikilove-anon-warning' => 'توجه: این کاربر ثبت‌نام نکرده‌است و ممکن است متوجه این پیام نشود.',
@@ -2803,6 +2805,7 @@ $messages['id'] = array(
 /** Italian (italiano)
  * @author Aushulz
  * @author Beta16
+ * @author Darth Kule
  * @author Erasmo Barresi
  * @author F. Cosoleto
  * @author Kaldari
@@ -2971,9 +2974,13 @@ $messages['it'] = array(
 	'wikilove-err-preview-api' => "Qualcosa è andato storto durante l'anteprima. Per favore riprova.",
 	'wikilove-err-send-api' => "Qualcosa è andato storto durante l'invio del messaggio. Per favore riprova.",
 	'wikilove-err-invalid-token' => "Non è stato possibile inviare WikiAffetto a causa della perdita dei dati relativi alla sessione. Prova a ricaricare la pagina; se il problema persiste, chiudi la sessione ed effettua nuovamente l'accesso.",
+	'wikilove-err-not-logged-in' => "Non si è effettuato l'accesso. Accedere per usare WikiAffetto.",
 	'wikilove-err-invalid-username' => 'Il nome utente non è valido.',
+	'wikilove-err-no-self-wikilove' => 'Non è possibile inviare WikiAffetto a se stessi.',
 	'wikilove-err-redirect' => "La pagina di discussione dell'utente è un redirect.",
 	'wikilove-err-cannot-edit' => 'Non si dispone dei permessi necessari per modificare questa pagina.',
+	'wikilove-err-max-exceeded' => 'Non è possibile inviare WikiAffetto a più di $1 {{PLURAL:$1|utente|utenti}} alla volta.',
+	'wikilove-success-number' => '$1 {{PLURAL:$1|messaggio di WikiAffetto inviato|messaggi di WikiAffetto inviati}}.',
 	'wikilove-summary' => '/* $1 */ nuovo messaggio di WikiAffetto',
 	'wikilove-what-is-this' => "Cos'è questo?",
 	'wikilove-anon-warning' => "Nota: quest'utente non è registrato/a, potrebbe non notare questo messaggio.",
@@ -3046,6 +3053,99 @@ $messages['ja'] = array(
 	'wikilove-terms' => '送信することによって、あなたはこの$1のもとで透明性に同意することになります。',
 	'wikilove-terms-link' => '規約',
 	'wikilove.js' => '/* ここに置かれたJavaScriptによってウィキラブの設定が変更されます。  http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration をご覧ください。 */',
+);
+
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'wikilove' => 'ვიკი-სიყვარული',
+	'wikilove-tab-text' => 'ვიკი-სიყვარული',
+	'wikilove-dialog-title' => 'ვიკი-სიყვარული – გამოხატეთ ყურადღება სხვა მომხმარებლის მიმართ',
+	'wikilove-select-type' => 'ტიპის არჩევა',
+	'wikilove-get-started-header' => 'მოდი დავიწყოთ!',
+	'wikilove-get-started-list-1' => 'აირჩიეთ ვიკი-სიყვარულის გამოხატვის ტიპი',
+	'wikilove-get-started-list-2' => 'დაამატეთ დეტალები თქვენ ვიკი-სიყვარულს',
+	'wikilove-get-started-list-3' => 'გაგზავნეთ თქვენი ვიკი-სიყვარული!',
+	'wikilove-add-details' => 'დეტალების დამატება',
+	'wikilove-image' => 'შეიყვანეთ სურათის ფაილის სახელი:',
+	'wikilove-select-image' => 'აირჩიეთ სურათი:',
+	'wikilove-header' => 'შეიყვანეთ სათაური:',
+	'wikilove-title' => 'შეიყვანეთ ჯილდოს სახელი:',
+	'wikilove-enter-message' => 'შეიყვანეთ შეტყობინება:',
+	'wikilove-omit-sig' => '(ხელმოწერის გარეშე)',
+	'wikilove-image-example' => '(მაგალითი: Trophy.png)',
+	'wikilove-button-preview' => 'წინასწარი გადახედვა',
+	'wikilove-preview' => 'წინასწარი გადახედვა',
+	'wikilove-notify' => 'მომხმარებლის შეტყობინება ელ.ფოსტით',
+	'wikilove-button-send' => 'ვიკი-სიყვარულის გაგზავნა',
+	'wikilove-type-barnstars' => 'ვიკიორდენები',
+	'wikilove-barnstar-header' => 'ვიკიორდენი თქვენთვის!',
+	'wikilove-barnstar-select' => 'აირჩიეთ ვიკიორდენი:',
+	'wikilove-barnstar-original-option' => 'დამსახურებული ვიკიორდენი',
+	'wikilove-barnstar-original-title' => 'დამსახურებული ვიკიორდენი',
+	'wikilove-barnstar-admins-option' => 'ადმინის ვიკიორდენი',
+	'wikilove-barnstar-admins-title' => 'ადმინის ვიკიორდენი',
+	'wikilove-barnstar-antivandalism-option' => 'ანტი-ვანდალიზმის ვიკიორდენი',
+	'wikilove-barnstar-antivandalism-title' => 'ანტი-ვანდალიზმის ვიკიორდენი',
+	'wikilove-barnstar-diligence-option' => 'გულმოდგინების ვიკიორდენი',
+	'wikilove-barnstar-diligence-title' => 'გულმოდგინების ვიკიორდენი',
+	'wikilove-barnstar-diplomacy-option' => 'დიპლომატის ვიკიორდენი',
+	'wikilove-barnstar-diplomacy-title' => 'დიპლომატის ვიკიორდენი',
+	'wikilove-barnstar-goodhumor-option' => 'კარგი იუმორის ვიკიორდენი',
+	'wikilove-barnstar-goodhumor-title' => 'კარგი იუმორის ვიკიორდენი',
+	'wikilove-barnstar-brilliant-option' => 'ბრწყინვალე იდეის ვიკიორდენი',
+	'wikilove-barnstar-brilliant-title' => 'ბრწყინვალე იდეის ვიკიორდენი',
+	'wikilove-barnstar-citation-option' => 'ბმულების ვიკიორდენი',
+	'wikilove-barnstar-citation-title' => 'ბმულების ვიკიორდენი',
+	'wikilove-barnstar-civility-option' => 'ზრდილობის ვიკიორდენი',
+	'wikilove-barnstar-civility-title' => 'ზრდილობის ვიკიორდენი',
+	'wikilove-barnstar-copyeditor-option' => 'კორექტორის ვიკიორდენი',
+	'wikilove-barnstar-copyeditor-title' => 'კორექტორის ვიკიორდენი',
+	'wikilove-barnstar-defender-option' => 'ვიკის მცველის ვიკიორდენი',
+	'wikilove-barnstar-defender-title' => 'ვიკის მცველის ვიკიორდენი',
+	'wikilove-barnstar-editors-option' => 'რედაქტორის ვიკიორდენი',
+	'wikilove-barnstar-editors-title' => 'რედაქტორის ვიკიორდენი',
+	'wikilove-barnstar-designers-option' => 'გრაფიკული დიზაინერის ვიკიორდენი',
+	'wikilove-barnstar-designers-title' => 'გრაფიკული დიზაინერის ვიკიორდენი',
+	'wikilove-type-food' => 'საკვები და სასმელი',
+	'wikilove-food-select' => 'აირჩიეთ საკვები ან სასმელი:',
+	'wikilove-food-baklava-option' => 'ფახლავა',
+	'wikilove-food-baklava-header' => 'ცოტა ფახლავა თქვენთვის!',
+	'wikilove-food-beer-option' => 'ლუდი',
+	'wikilove-food-beer-header' => 'ლუდი თქვენთვის!',
+	'wikilove-food-brownie-option' => 'ბრაუნი',
+	'wikilove-food-brownie-header' => 'ბრაუნი თქვენთვის!',
+	'wikilove-food-bubbletea-option' => 'ბუშტებიანი ჩაი',
+	'wikilove-food-bubbletea-header' => 'ცოტა ბუშტებიანი ჩაი თქვენთვის!',
+	'wikilove-food-cheeseburger-option' => 'ჩიზბურგერი',
+	'wikilove-food-cheeseburger-header' => 'ჩიზბურგერი თქვენთვის!',
+	'wikilove-food-cookie-option' => 'ნამცხვარი',
+	'wikilove-food-cookie-header' => 'ნამცხვარი თქვენთვის!',
+	'wikilove-food-coffee-option' => 'ჭიქა ყავა',
+	'wikilove-food-coffee-header' => 'ჭიქა ყავა თქვენთვის!',
+	'wikilove-food-tea-option' => 'ჭიქა ჩაი',
+	'wikilove-food-tea-header' => 'ჭიქა ჩაი თქვენთვის!',
+	'wikilove-food-cupcake-option' => 'კექსი',
+	'wikilove-food-cupcake-header' => 'კექსი თქვენთვის!',
+	'wikilove-food-pie-option' => 'ღვეზელი',
+	'wikilove-food-pie-header' => 'ღვეზელი თქვენთვის!',
+	'wikilove-food-strawberries-option' => 'მარწყვი',
+	'wikilove-food-strawberries-header' => 'თეფში მარწყვით თქვენთვის!',
+	'wikilove-food-stroopwafels-option' => 'ვაფლი',
+	'wikilove-food-stroopwafels-header' => 'ცოტა ვაფლი თქვენთვის!',
+	'wikilove-type-kittens' => 'კნუტები',
+	'wikilove-kittens-header' => 'კნუტი თქვენთვის!',
+	'wikilove-type-makeyourown' => 'შექმენით საკუთარი',
+	'wikilove-err-header' => 'გთხოვთ, შეიყვანეთ თემა.',
+	'wikilove-err-title' => 'გთხოვთ, შეიყვანეთ სათაური.',
+	'wikilove-err-msg' => 'გთხოვთ, შეიყვანეთ პერსონალური შეტყობინება.',
+	'wikilove-err-image' => 'გთხოვთ, აირჩიეთ სურათი.',
+	'wikilove-err-image-bad' => 'სურათი არ არსებობს.',
+	'wikilove-err-gallery-again' => 'კიდევ სცადეთ',
+	'wikilove-summary' => '/* $1 */ ახალი ვიკი-სიყვარულის შეტყობინება',
+	'wikilove-what-is-this' => 'რა არის ეს?',
+	'wikilove-terms-link' => 'პირობები',
 );
 
 /** Kannada (ಕನ್ನಡ)
@@ -4473,6 +4573,7 @@ $messages['pfl'] = array(
 
 /** Polish (polski)
  * @author BeginaFelicysym
+ * @author Przemub
  * @author Sp5uhe
  */
 $messages['pl'] = array(
@@ -4517,6 +4618,25 @@ $messages['pl'] = array(
 	'wikilove-barnstar-diplomacy-option' => 'Gwiazda Dyplomacji',
 	'wikilove-barnstar-diplomacy-desc' => 'Gwiazda Dyplomacji jest przyznawana użytkownikom, którzy pomogli pokojowo rozwiązać konflikty na Wikipedii.',
 	'wikilove-barnstar-diplomacy-title' => 'Gwiazda Dyplomacji',
+	'wikilove-barnstar-defender-option' => 'Obrońca Wiki',
+	'wikilove-barnstar-editors-option' => 'Gwiazda Edytora',
+	'wikilove-barnstar-editors-desc' => 'Gwiazda Edytora jest dla osób, które podejmują świetne decyzje w indywidualnym edytowaniu.',
+	'wikilove-barnstar-editors-title' => 'Gwiazda Edytora',
+	'wikilove-barnstar-designers-option' => 'Gwiazda Grafika',
+	'wikilove-barnstar-designers-desc' => 'Gwiazda Grafika jest dla osób, które wspierają stronę {{SITENAME}} przez wolne grafiki dobrej jakości.',
+	'wikilove-barnstar-designers-title' => 'Gwiazda Grafika',
+	'wikilove-barnstar-half-option' => 'Półgwiazda',
+	'wikilove-barnstar-half-desc' => 'Półgwiazda jest dla osób, które wykazały się zdolnościami w kooperacji, szczególnie z osobami prezentującymi odmienny punkt widzenia.',
+	'wikilove-barnstar-half-title' => 'Półgwiazda',
+	'wikilove-barnstar-minor-option' => 'Mniejsza gwiazda',
+	'wikilove-barnstar-minor-desc' => 'Ta gwiazda przeznaczona jest dla osób wykonujących drobne, lecz użyteczne edycje.',
+	'wikilove-barnstar-minor-title' => 'Mniejsza gwiazda',
+	'wikilove-barnstar-antispam-option' => 'Gwiazda No Spam',
+	'wikilove-barnstar-antispam-desc' => 'Gwiazda No Spam przeznaczona jest dla osób, które wykazały się w walce ze spamem na stronie {{SITENAME}}.',
+	'wikilove-barnstar-antispam-title' => 'Gwiazda No Spam',
+	'wikilove-barnstar-photographers-option' => 'Gwiazda Fotografa',
+	'wikilove-barnstar-photographers-desc' => 'Gwiazda Fotografa jest dla osób, które wspierają {{SITENAME}} ich umiejętnościami fotograficznymi.',
+	'wikilove-barnstar-photographers-title' => 'Gwiazda Fotografa',
 	'wikilove-type-food' => 'Jedzenie i picie',
 	'wikilove-food-stroopwafels-option' => 'Gofry',
 	'wikilove-type-kittens' => 'Kociaki',
@@ -4890,6 +5010,11 @@ $messages['ro'] = array(
 	'wikilove-button-send' => 'Trimiteți WikiLove',
 	'wikilove-type-barnstars' => 'Medalie',
 	'wikilove-type-food' => 'Mâncare și băutură',
+	'wikilove-food-beer-header' => 'O bere pentru dumneavoastră!',
+	'wikilove-food-cookie-option' => 'Prăjitură',
+	'wikilove-food-coffee-option' => 'Ceașcă cu cafea',
+	'wikilove-food-tea-option' => 'Ceașcă cu ceai',
+	'wikilove-food-pie-option' => 'Plăcintă',
 	'wikilove-food-strawberries-option' => 'Căpșuni',
 	'wikilove-type-kittens' => 'Pisoi',
 	'wikilove-kittens-header' => 'Un pisoi pentru dumneavoastră!',
@@ -6774,6 +6899,7 @@ $messages['zh-hans'] = array(
  * @author Anakmalaysia
  * @author Kaldari
  * @author Liangent
+ * @author Simon Shek
  * @author Waihorace
  */
 $messages['zh-hant'] = array(
@@ -6846,13 +6972,13 @@ $messages['zh-hant'] = array(
 	'wikilove-barnstar-half-desc' => '半星章送給在合作方面表演卓越的維基人，尤其是與意見相左的人合作並寫出良好編輯。',
 	'wikilove-barnstar-half-title' => '半星章',
 	'wikilove-barnstar-minor-option' => '小星章',
-	'wikilove-barnstar-minor-desc' => '小修改經常不會被注意到，但是這也是在為維基百科做貢獻。小星章用於獎勵那些非常善於進行小修改的參與者。',
+	'wikilove-barnstar-minor-desc' => '小星章用於獎勵那些非常善於進行小修改的參與者。小修改經常被忽略，但這也是為{{SITENAME}}作出重要貢獻。',
 	'wikilove-barnstar-minor-title' => '小星章',
 	'wikilove-barnstar-antispam-option' => '打擊濫發星章',
-	'wikilove-barnstar-antispam-desc' => '打擊濫發星章送給在維基百科打擊濫發訊息不遺餘力的維基人。',
+	'wikilove-barnstar-antispam-desc' => '打擊濫發星章送給在{{SITENAME}}打擊濫發訊息不遺餘力的維基人。',
 	'wikilove-barnstar-antispam-title' => '打擊濫發星章',
 	'wikilove-barnstar-photographers-option' => '攝影師星章',
-	'wikilove-barnstar-photographers-desc' => '攝影師星章用來獎勵那些通過自己的攝影技術和貢獻不斷的改善維基百科的參與者。',
+	'wikilove-barnstar-photographers-desc' => '攝影師星章用來獎勵那些通過自己的攝影技術和貢獻不斷的改善{{SITENAME}}的參與者。',
 	'wikilove-barnstar-photographers-title' => '攝影師星章',
 	'wikilove-barnstar-kindness-option' => '友善星章',
 	'wikilove-barnstar-kindness-desc' => '友善星章用來獎勵那些主動表現出特別友善的態度的維基人。',
@@ -6861,25 +6987,25 @@ $messages['zh-hant'] = array(
 	'wikilove-barnstar-reallife-desc' => '真實世界星章送給無論網上抑或真實世界都對維基百科貢獻良多、協助舉辦維基相關之真實活動的維基人。',
 	'wikilove-barnstar-reallife-title' => '真實世界星章',
 	'wikilove-barnstar-resilient-option' => '改進星章',
-	'wikilove-barnstar-resilient-desc' => '改進星章送給從批評中不斷學習和改進的維基人，他們從來不會讓錯誤影響自己在維基百科中的成長。',
+	'wikilove-barnstar-resilient-desc' => '改進星章送給從批評中不斷學習和改進的編者，他們從來不會讓錯誤影響自己在{{SITENAME}}中的成長。',
 	'wikilove-barnstar-resilient-title' => '改進星章',
 	'wikilove-barnstar-rosetta-option' => '譯者星章',
-	'wikilove-barnstar-rosetta-desc' => '譯者星章可用以獎勵對維基百科作出優異的翻譯成就的維基人。',
+	'wikilove-barnstar-rosetta-desc' => '譯者星章是獎勵對{{SITENAME}}作出優異的翻譯成就的編者。',
 	'wikilove-barnstar-rosetta-title' => '譯者星章',
 	'wikilove-barnstar-special-option' => '特別星章',
 	'wikilove-barnstar-special-desc' => '特別星章可以在用戶因某個特定原因要向另一用戶表達謝意，而又無其他合適星章時送出。',
 	'wikilove-barnstar-special-title' => '特別星章',
 	'wikilove-barnstar-surreal-option' => '超現實星章',
-	'wikilove-barnstar-surreal-desc' => '超現實星章獎勵那些對維基作出不可思議的貢獻維基人。',
+	'wikilove-barnstar-surreal-desc' => '超現實星章獎勵那些對{{SITENAME}}作出不可思議的貢獻使用者。',
 	'wikilove-barnstar-surreal-title' => '超現實星章',
 	'wikilove-barnstar-teamwork-option' => '團體合作星章',
 	'wikilove-barnstar-teamwork-desc' => '團體合作星章送給那些一起合作改善條目的維基人。',
 	'wikilove-barnstar-teamwork-title' => '團體合作星章',
 	'wikilove-barnstar-technical-option' => '達芬奇星章',
-	'wikilove-barnstar-technical-desc' => '達芬奇星章頒給對維基百科的技術工作（如程序與工具、機器人、管理、鏈接修復、維基媒體的發展等）貢獻良多的人。',
+	'wikilove-barnstar-technical-desc' => '技術星章頒給對{{SITENAME}}的技術工作（如開發程序、機器人、鏈接修復等）貢獻良多的人。',
 	'wikilove-barnstar-technical-title' => '達芬奇星章',
 	'wikilove-barnstar-tireless-option' => '不倦星章',
-	'wikilove-barnstar-tireless-desc' => '不倦星章獎勵那些不知道疲倦地大量擴充專題內容的維基人。',
+	'wikilove-barnstar-tireless-desc' => '不倦星章獎勵那些不知道疲倦地大量擴充專題內容的編者。',
 	'wikilove-barnstar-tireless-title' => '不倦星章',
 	'wikilove-barnstar-writers-option' => '作家星章',
 	'wikilove-barnstar-writers-desc' => '作家星章可以頒給兩類維基人：對作家，著作等寫作類條目有貢獻的維基人，或是撰寫了大量新條目的維基百科參與者。',
@@ -6936,6 +7062,8 @@ $messages['zh-hant'] = array(
 	'wikilove-err-gallery-again' => '再試一次',
 	'wikilove-err-preview-api' => '預覽過程發生錯誤，請重試。',
 	'wikilove-err-send-api' => '發送信息時發生錯誤，請重試。',
+	'wikilove-err-invalid-username' => '用戶名無效。',
+	'wikilove-err-cannot-edit' => '你沒有編輯這個頁面的權限。',
 	'wikilove-summary' => '/* $1 */ 新的維基友愛信息',
 	'wikilove-what-is-this' => '這是甚麼？',
 	'wikilove-anon-warning' => '注意：此用戶未註冊，他或她可能未能注意到此信息。',
