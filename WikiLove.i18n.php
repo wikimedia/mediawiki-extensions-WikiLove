@@ -1695,6 +1695,7 @@ $messages['fi'] = array(
 );
 
 /** French (français)
+ * @author Brunoperel
  * @author Crochet.david
  * @author DavidL
  * @author Geitost
@@ -1780,10 +1781,10 @@ $messages['fr'] = array(
 	'wikilove-barnstar-half-desc' => 'La demie étoile est décernée pour l’excellence en coopération, notamment pour l’édition productive avec une personne défendant un point de vue adverse.',
 	'wikilove-barnstar-half-title' => 'La demie étoile',
 	'wikilove-barnstar-minor-option' => 'Étoile mineure',
-	'wikilove-barnstar-minor-desc' => 'Les modifications mineures sont souvent négligées, mais sont des contributions essentielles à la Wikipédie. L’étoile mineure est décernée en reconnaissance de modifications mineures de la plus haute qualité.',
+	'wikilove-barnstar-minor-desc' => 'Les modifications mineures sont souvent négligées, mais sont des contributions essentielles à {{SITENAME}}. Les modifications mineures de grande qualité sont récompensées.',
 	'wikilove-barnstar-minor-title' => 'L’étoile mineure',
 	'wikilove-barnstar-antispam-option' => 'Étoile anti-pollution',
-	'wikilove-barnstar-antispam-desc' => 'L’étoile anti-pollution est décernée aux utilisateurs qui font un travail exceptionnel pour combattre la pollution sur la Wikipédie.',
+	'wikilove-barnstar-antispam-desc' => 'L’étoile anti-pourriel est décernée aux utilisateurs qui font un travail exceptionnel pour combattre les pourriels sur {{SITENAME}}.',
 	'wikilove-barnstar-antispam-title' => 'L’étoile anti-pollution',
 	'wikilove-barnstar-photographers-option' => 'Étoile du photographe',
 	'wikilove-barnstar-photographers-desc' => 'L’étoile du photographe est décernée aux personnes qui améliorent sans relâche la Wikipédie grâce à leurs compétences photographiques et à leurs contributions.',
@@ -2221,6 +2222,7 @@ $messages['gsw'] = array(
  * @author Ofekalef
  * @author Ofrahod
  * @author Rotemliss
+ * @author YaronSh
  * @author ערן
  */
 $messages['he'] = array(
@@ -2384,6 +2386,7 @@ $messages['he'] = array(
 	'wikilove-err-preview-api' => 'משהו השתבש במהלך תצוגה מקדימה. נא לנסות שוב.',
 	'wikilove-err-send-api' => 'משהו השתבש בעת שליחת ההודעה. נא לנסות שוב.',
 	'wikilove-err-invalid-token' => 'לא הצלחנו לשלוח ויקי־אהבה בשל אבדן מידע כניסה. יש לרענן את הדף או לצאת מהחשבון ולהיכנס בחזרה.',
+	'wikilove-err-invalid-username' => 'שם המשתמש אינו תקני.',
 	'wikilove-err-no-self-wikilove' => 'לא ניתן לשלוח הודעת ויקי‏־אהבה לעצמך.',
 	'wikilove-err-redirect' => 'דף שיחת המשתמש הוא הפניה.',
 	'wikilove-err-cannot-edit' => 'אינך מורשה לערוך דף זה.',
@@ -4137,13 +4140,13 @@ $messages['ms'] = array(
 	'wikilove-barnstar-half-desc' => 'Barnstar Separuh dianugerahkan atas kecemerlangan dalam kerjasama, terutamanya bagi penyuntingan produktif dengan sesiapa yang mempunyai sudut pandangan yang berlawanan.',
 	'wikilove-barnstar-half-title' => 'Barnstar Separuh',
 	'wikilove-barnstar-minor-option' => 'Barnstar Suntingan Kecil',
-	'wikilove-barnstar-minor-desc' => 'Biarpun sering diabaikan, namun suntingan kecil tetap sumbangan penting kepada Wikipedia. Barnstar Suntingan Kecil dianugerahkan atas suntingan-suntingan kecil yang paling bermutu.',
+	'wikilove-barnstar-minor-desc' => 'Barnstar Suntingan Kecil dianugerahkan atas suntingan-suntingan kecil yang paling bermutu. Biarpun sering diabaikan, namun sunting kecil tetap merupakan sumbangan penting kepada {{SITENAME}}.',
 	'wikilove-barnstar-minor-title' => 'Barnstar Suntingan Kecil',
 	'wikilove-barnstar-antispam-option' => 'Barnstar Pencegah Spam',
-	'wikilove-barnstar-antispam-desc' => 'Barnstar Pencegah Spam dianugerahkan kepada sesiapa yang melakukan kerja yang cemerlang dalam membasmi spam di Wikipedia.',
+	'wikilove-barnstar-antispam-desc' => 'Barnstar Pencegah Spam dianugerahkan kepada sesiapa yang melakukan kerja yang cemerlang dalam membasmi spam di {{SITENAME}}.',
 	'wikilove-barnstar-antispam-title' => 'Barnstar Pencegah Spam',
 	'wikilove-barnstar-photographers-option' => 'Barnstar Jurufoto',
-	'wikilove-barnstar-photographers-desc' => 'Barnstar Jurufoto diberikan kepada sesiapa yang bersungguh-sungguh meningkatkan mutu Wikipedia dengan kemahiran dan sumbangan fotografi mereka.',
+	'wikilove-barnstar-photographers-desc' => 'Barnstar Jurugambar diberikan kepada sesiapa yang bersungguh-sungguh meningkatkan mutu {{SITENAME}} dengan kemahiran dan sumbangan fotografi mereka.',
 	'wikilove-barnstar-photographers-title' => 'Barnstar Jurufoto',
 	'wikilove-barnstar-kindness-option' => 'Barnstar Kebaikan Hati',
 	'wikilove-barnstar-kindness-desc' => 'Barnstar Kebaikan Hati boleh dianugerahkan kepada sesiapa yang melangkah jauh dalam berbaik hati tanpa diminta.',
@@ -4152,25 +4155,25 @@ $messages['ms'] = array(
 	'wikilove-barnstar-reallife-desc' => 'Barnstar Alam Nyata dianugerahkan kepada penyunting yang membuat sumbangan di dalam dan luar Internet, dengan menganjurkan acara berkenaan wiki di dunia luar.',
 	'wikilove-barnstar-reallife-title' => 'Barnstar Alam Nyata',
 	'wikilove-barnstar-resilient-option' => 'Barnstar Tak Patah Semangat',
-	'wikilove-barnstar-resilient-desc' => 'Barnstar Tak Patah Semangat boleh diberikan kepada penyunting yang mengambil iktibar daripada kritikan, dan tidak mudah luntur dek kesilapan yang dibuatnya sebagai ahli Wikipedia.',
+	'wikilove-barnstar-resilient-desc' => 'Barnstar Tak Luntur Semangat boleh diberikan kepada penyunting yang mengambil iktibar daripada kritikan, dan tidak mudah luntur dek kesilapan yang dibuatnya sebagai ahli {{SITENAME}}.',
 	'wikilove-barnstar-resilient-title' => 'Barnstar Tak Patah Semangat',
 	'wikilove-barnstar-rosetta-option' => 'Barnstar Rosetta',
-	'wikilove-barnstar-rosetta-desc' => 'Barnstar Rosetta boleh diberikan kepada sebarang penyunting yang mempamerkan usaha penterjemahan yang cemerlang di Wikipedia.',
+	'wikilove-barnstar-rosetta-desc' => 'Barnstar Rosetta boleh diberikan kepada sebarang penyunting yang mempamerkan usaha penterjemahan yang cemerlang di {{SITENAME}}.',
 	'wikilove-barnstar-rosetta-title' => 'Barnstar Rosetta',
 	'wikilove-barnstar-special-option' => 'Barnstar Istimewa',
 	'wikilove-barnstar-special-desc' => 'Barnstar Istimewa boleh diberikan kepada pengguna sebagai tanda penghargaan seandainya tiada barnstar lain yang bersesuaian dengan baktinya itu.',
 	'wikilove-barnstar-special-title' => 'Barnstar Istimewa',
 	'wikilove-barnstar-surreal-option' => 'Barnstar Menakjubkan',
-	'wikilove-barnstar-surreal-desc' => 'Barnstar Menakjubkan boleh diberikan kepada sebarang ahli Wikipedia yang memberikan "suasana istimewa" kepada komuniti dengan bertindak seolah-olah "kad bebas".',
+	'wikilove-barnstar-surreal-desc' => 'Barnstar Menakjubkan boleh diberikan kepada sebarang ahli {{SITENAME}} yang memberikan "suasana istimewa" kepada komuniti dengan bertindak seolah-olah "kad bebas".',
 	'wikilove-barnstar-surreal-title' => 'Barnstar Menakjubkan',
 	'wikilove-barnstar-teamwork-option' => 'Barnstar Kerjasama',
 	'wikilove-barnstar-teamwork-desc' => 'Barnstar Kerjasama boleh dianugerahkan kepada sekumpulan penyunting yang berkerjasama untuk memperbaiki sesebuah rencana.',
 	'wikilove-barnstar-teamwork-title' => 'Barnstar Kerjasama',
 	'wikilove-barnstar-technical-option' => 'Barnstar Teknikal',
-	'wikilove-barnstar-technical-desc' => 'Barnstar Teknikal boleh dianugerahkan kepada sesiapa yang memperbaiki Wikipedia dengan membuat kerja-kerja teknikal (pengaturcaraan, penghasilan bot, pembaikan pautan dsb.)',
+	'wikilove-barnstar-technical-desc' => 'Barnstar Teknikal dianugerahkan kepada sesiapa yang memperbaiki {{SITENAME}} dengan membuat kerja-kerja teknikal (pengaturcaraan, penghasilan bot, pembaikan pautan dsb.)',
 	'wikilove-barnstar-technical-title' => 'Barnstar Teknikal',
 	'wikilove-barnstar-tireless-option' => 'Barnstar Sumbangan Tanpa Henti',
-	'wikilove-barnstar-tireless-desc' => 'Barnstar Sumbangan Tanpa Henti dianugerahkan khusus buat ahli Wikipedia yang tidak mengenal kepenatan dalam menyumbangkan satu hasil kerja yang amat besar tanpa mengabaikan mutu.',
+	'wikilove-barnstar-tireless-desc' => 'Barnstar Penyumbang Tak Kenal Penat dianugerahkan khusus buat ahli {{SITENAME}} yang tidak mengenal kepenatan dalam menyumbangkan satu hasil kerja yang amat besar tanpa mengabaikan mutu.',
 	'wikilove-barnstar-tireless-title' => 'Barnstar Sumbangan Tanpa Henti',
 	'wikilove-barnstar-writers-option' => 'Barnstar Penulis',
 	'wikilove-barnstar-writers-desc' => 'Barnstar Penulis boleh dianugerahkan kepada sebarang pengguna yang menulis sebilangan besar rencana atau menyumbangkan sebilangan besar suntingan.',
@@ -4228,6 +4231,13 @@ $messages['ms'] = array(
 	'wikilove-err-preview-api' => 'Masalah timbul ketika pralihat. Sila cuba lagi.',
 	'wikilove-err-send-api' => 'Masalah timbul ketika menghantar pesanan. Sila cuba lagi.',
 	'wikilove-err-invalid-token' => 'WikiLove tidak dapat dihantar kerana kehilangan data sesi. Cuba muatkan semula laman ini atau log keluar lalu log masuk balik.',
+	'wikilove-err-not-logged-in' => 'Anda belum log masuk. Sila log masuk untuk menggunakan WikiLove.',
+	'wikilove-err-invalid-username' => 'Nama pengguna ini tidak sah.',
+	'wikilove-err-no-self-wikilove' => 'Maaf, anda tidak boleh menghantar WikiLove kepada diri sendiri.',
+	'wikilove-err-redirect' => 'Halaman perbincangan pengguna ini merupakan lencongan.',
+	'wikilove-err-cannot-edit' => 'Anda tiada kebenaran untuk menyunting laman itu.',
+	'wikilove-err-max-exceeded' => 'Anda tidak boleh menghantar WikiLove kepada lebih daripada $1 orang pengguna sekaligus.',
+	'wikilove-success-number' => '$1 pesanan WikiLove dihantar.',
 	'wikilove-summary' => '/* $1 */ pesanan WikiLove baru',
 	'wikilove-what-is-this' => 'Apakah ini?',
 	'wikilove-anon-warning' => 'Perhatian: Pengguna ini tidak berdaftar, jadi mungkin dia tidak dapat perasan pesanan ini.',
@@ -5307,6 +5317,9 @@ $messages['rue'] = array(
 	'wikilove-button-send' => 'Послати Вікісімпатію',
 	'wikilove-type-barnstars' => 'Вікізвізды',
 	'wikilove-type-food' => 'Їдло і напої',
+	'wikilove-food-beer-option' => 'Пиво',
+	'wikilove-food-tea-option' => 'Погар чаю',
+	'wikilove-food-pie-option' => 'Колач',
 	'wikilove-type-kittens' => 'Мачатка',
 	'wikilove-type-makeyourown' => 'Зробити свій властный',
 	'wikilove-err-header' => 'Просиме, уведьте назву.',
