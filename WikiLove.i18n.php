@@ -324,6 +324,7 @@ $messages['af'] = array(
 
 /** Arabic (العربية)
  * @author Abanima
+ * @author Meno25
  * @author OsamaK
  * @author Zack wadghiri
  * @author روخو
@@ -349,8 +350,8 @@ $messages['ar'] = array(
 	'wikilove-enter-message' => 'أدخل رسالة:',
 	'wikilove-omit-sig' => '(بدون توقيع)',
 	'wikilove-image-example' => '(مثال: Trophy.png)',
-	'wikilove-button-preview' => 'عاين',
-	'wikilove-preview' => 'معاينة',
+	'wikilove-button-preview' => 'عرض مسبق',
+	'wikilove-preview' => 'عرض مسبق',
 	'wikilove-notify' => 'أخبر المستخدم برسالة إلكترونية',
 	'wikilove-button-send' => 'أرسالها',
 	'wikilove-type-barnstars' => 'أوسمة',
@@ -2386,10 +2387,13 @@ $messages['he'] = array(
 	'wikilove-err-preview-api' => 'משהו השתבש במהלך תצוגה מקדימה. נא לנסות שוב.',
 	'wikilove-err-send-api' => 'משהו השתבש בעת שליחת ההודעה. נא לנסות שוב.',
 	'wikilove-err-invalid-token' => 'לא הצלחנו לשלוח ויקי־אהבה בשל אבדן מידע כניסה. יש לרענן את הדף או לצאת מהחשבון ולהיכנס בחזרה.',
+	'wikilove-err-not-logged-in' => 'אינכם מחוברים לחשבון. לשימוש בויקי־אהבה נדרשת כניסה לחשבון.',
 	'wikilove-err-invalid-username' => 'שם המשתמש אינו תקני.',
 	'wikilove-err-no-self-wikilove' => 'לא ניתן לשלוח הודעת ויקי‏־אהבה לעצמך.',
 	'wikilove-err-redirect' => 'דף שיחת המשתמש הוא הפניה.',
 	'wikilove-err-cannot-edit' => 'אינך מורשה לערוך דף זה.',
+	'wikilove-err-max-exceeded' => 'אין באפשרותך לשלוח ויקי־אהבה ליותר מ{{PLURAL:$1|משתמש|$1 משתמשים}} בו-זמנית.',
+	'wikilove-success-number' => '{{PLURAL:$1|הודעת|$1 הודעות}} ויקי־אהבה נשלחו.',
 	'wikilove-summary' => '/* $1 */ הודעת ויקי־אהבה חדשה',
 	'wikilove-what-is-this' => 'מה זה?',
 	'wikilove-anon-warning' => 'הערה: משתמש זה אינו רשום ואולי לא יבחין בהודעה זו.',
