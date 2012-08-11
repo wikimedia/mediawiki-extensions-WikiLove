@@ -2805,6 +2805,72 @@ $messages['id'] = array(
 	'wikilove-commons-text' => 'Anda dapat menemukan gambar dengan mengunjungi $1.',
 );
 
+/** Icelandic (íslenska)
+ * @author Snævar
+ */
+$messages['is'] = array(
+	'wikilove' => 'WikiÁst',
+	'wikilove-enable-preference' => 'Gerir notendum kleift að sýna þakklæti sitt með WikiÁst flipanum.',
+	'wikilove-tab-text' => 'WikiÁst',
+	'tooltip-ca-wikilove' => 'Senda þakklætis skilaboð á þennan notanda',
+	'wikilove-dialog-title' => 'WikiÁst - Senda þakklætis skilaboð til annars notanda',
+	'wikilove-select-type' => 'Veldu gerð',
+	'wikilove-get-started-header' => 'Hefjumst handa!',
+	'wikilove-get-started-list-1' => 'Veldu þá gerð af WikiÁst sem þú vilt senda',
+	'wikilove-get-started-list-2' => 'Bættu upplýsingum við WikiÁstina þína',
+	'wikilove-get-started-list-3' => 'Sentu WikiÁstina þína!',
+	'wikilove-add-details' => 'Bæta við upplýsingum',
+	'wikilove-image' => 'Sláðu inn skráarnafn:',
+	'wikilove-select-image' => 'Veldu mynd:',
+	'wikilove-header' => 'Sláðu inn fyrirsögn:',
+	'wikilove-title' => 'Sláðu inn titil verðlaunanna:',
+	'wikilove-enter-message' => 'Sláðu inn skilaboð:',
+	'wikilove-omit-sig' => '(án undirskriftar)',
+	'wikilove-image-example' => '(til dæmis: Trophy.png)',
+	'wikilove-button-preview' => 'Forskoða',
+	'wikilove-preview' => 'Forskoða',
+	'wikilove-button-send' => 'Senda WikiÁst',
+	'wikilove-type-food' => 'Matur og drykkur',
+	'wikilove-food-select' => 'Veldu mat eða drykk:',
+	'wikilove-food-beer-option' => 'Bjór',
+	'wikilove-food-beer-header' => 'Bjór fyrir þig!',
+	'wikilove-food-brownie-option' => 'Súkkulaðikaka',
+	'wikilove-food-brownie-header' => 'Súkkulaðikaka fyrir þig!',
+	'wikilove-food-cheeseburger-option' => 'Ostborgari',
+	'wikilove-food-cheeseburger-header' => 'Ostborgari fyrir þig!',
+	'wikilove-food-cookie-option' => 'Smákaka',
+	'wikilove-food-cookie-header' => 'Smákaka fyrir þig!',
+	'wikilove-food-coffee-option' => 'Kaffibolli',
+	'wikilove-food-coffee-header' => 'Kaffibolli fyrir þig!',
+	'wikilove-food-tea-option' => 'Tebolli',
+	'wikilove-food-tea-header' => 'Tebolli fyrir þig!',
+	'wikilove-food-pie-option' => 'Baka',
+	'wikilove-food-pie-header' => 'Baka fyrir þig!',
+	'wikilove-food-strawberries-option' => 'Jarðaber',
+	'wikilove-food-strawberries-header' => 'Skál af jarðarberjum fyrir þig!',
+	'wikilove-type-kittens' => 'Kettlingar',
+	'wikilove-kittens-header' => 'Kettlingur fyrir þig!',
+	'wikilove-type-makeyourown' => 'Búðu til þitt egið',
+	'wikilove-err-header' => 'Vinsamlegast sláðu inn fyrirsögn.',
+	'wikilove-err-title' => 'Vinsamlegast sláðu inn titil.',
+	'wikilove-err-msg' => 'Vinsamlegast sláðu inn persónuleg skilaboð.',
+	'wikilove-err-image' => 'Vinsamlegast veldu mynd.',
+	'wikilove-err-image-bad' => 'Myndin er ekki til.',
+	'wikilove-err-image-api' => 'Eitthvað mistókst þegar myndin var sótt. Vinsamlegast reyndu aftur.',
+	'wikilove-err-sig' => 'Vinsamlegast ekki hafa undirskrift með í skilaboðunum.',
+	'wikilove-err-gallery' => 'Eitthvað mistókst þegar myndirnar voru hlaðnar.',
+	'wikilove-err-gallery-again' => 'Reyndu aftur',
+	'wikilove-err-preview-api' => 'Eitthvað mistókst við forskoðun. Vinsamlegast reyndu aftur.',
+	'wikilove-err-send-api' => 'Eitthvað mistókst við sendingu þessara skilaboða. Vinsamlegast reyndu aftur.',
+	'wikilove-err-invalid-token' => 'Mistókst að senda WikiÁst vegna tapaðra setu gagna. Reyndu að endurhlaða síðunni eða skrá þig út og aftur inn.',
+	'wikilove-summary' => '/* $1 */ ný WikiÁstar skilaboð',
+	'wikilove-what-is-this' => 'Hvað er þetta?',
+	'wikilove-anon-warning' => 'Athugið: Notandinn er ekki skráður, svo hann eða hún tekur mögulega ekki eftir skilaboðunum.',
+	'wikilove-commons-text' => 'Þú getur fundið myndir með því að leita á $1.',
+	'wikilove-terms' => 'Með því að senda, samþykkir þú gegnsæi undir $1',
+	'wikilove-terms-link' => 'skilmálum',
+);
+
 /** Italian (italiano)
  * @author Aushulz
  * @author Beta16
@@ -4582,6 +4648,7 @@ $messages['pfl'] = array(
 );
 
 /** Polish (polski)
+ * @author Ankry
  * @author BeginaFelicysym
  * @author Przemub
  * @author Sp5uhe
@@ -4645,7 +4712,7 @@ $messages['pl'] = array(
 	'wikilove-barnstar-antispam-desc' => 'Gwiazda No Spam przeznaczona jest dla osób, które wykazały się w walce ze spamem na stronie {{SITENAME}}.',
 	'wikilove-barnstar-antispam-title' => 'Gwiazda No Spam',
 	'wikilove-barnstar-photographers-option' => 'Gwiazda Fotografa',
-	'wikilove-barnstar-photographers-desc' => 'Gwiazda Fotografa jest dla osób, które wspierają {{SITENAME}} ich umiejętnościami fotograficznymi.',
+	'wikilove-barnstar-photographers-desc' => 'Gwiazda Fotografa jest dla osób, które wspierają {{SITENAME}} swoimi umiejętnościami fotograficznymi.',
 	'wikilove-barnstar-photographers-title' => 'Gwiazda Fotografa',
 	'wikilove-type-food' => 'Jedzenie i picie',
 	'wikilove-food-stroopwafels-option' => 'Gofry',
