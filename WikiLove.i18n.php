@@ -689,10 +689,17 @@ $messages['ca'] = array(
 
 /** Czech (česky)
  * @author Mormegil
+ * @author Vks
  */
 $messages['cs'] = array(
 	'wikilove-desc' => 'Přidává rozhraní pro přidávání pozitivního hodnocení do uživatelských diskusí',
 	'wikilove-enable-preference' => 'Povolit oceňování ostatních uživatelů pomocí záložky WikiLove',
+	'wikilove-button-preview' => 'Náhled',
+	'wikilove-preview' => 'Náhled',
+	'wikilove-notify' => 'Oznámit uživateli přes e-mail',
+	'wikilove-food-beer-option' => 'Pivo',
+	'wikilove-food-beer-desc' => 'Pivo je světově nejvíce konzumovaný a pravděpodobně nejstarší alkoholický nápoj. Je to třetí nejpopulárnější nápoj po vodě a čaji.',
+	'wikilove-food-beer-header' => 'Pivo pro tebe!',
 );
 
 /** Danish (dansk)
@@ -6077,7 +6084,24 @@ $messages['sv'] = array(
 	'wikilove-food-cheeseburger-desc' => 'En basvara på krogar och snabbmatsrestauranger, ostburgare var först populariserat i USA under 1920 och -30-talet.',
 	'wikilove-food-cheeseburger-header' => 'En ostburgare till dig!',
 	'wikilove-food-cookie-option' => 'Kaka',
+	'wikilove-food-cookie-header' => 'En kaka till dig!',
+	'wikilove-food-coffee-option' => 'Kaffekopp',
+	'wikilove-food-coffee-desc' => 'Uppskattat världen över, kaffe är känd för dess stimulerande effekt på människor.',
+	'wikilove-food-coffee-header' => 'En kaffekopp till dig!',
+	'wikilove-food-tea-option' => 'Tekopp',
+	'wikilove-food-tea-desc' => 'Efter vatten är te den mest konsumerade drycken i världen. Det kan avnjutas varm eller kall, med mjölk och socker.',
+	'wikilove-food-tea-header' => 'En tekopp till dig!',
+	'wikilove-food-cupcake-option' => 'Muffin',
+	'wikilove-food-cupcake-desc' => 'En muffin är en liten kaka som utformats för en person. De serveras ofta med glasyr och strössel på toppen.',
+	'wikilove-food-cupcake-header' => 'En muffin till dig!',
+	'wikilove-food-pie-option' => 'Paj',
+	'wikilove-food-pie-desc' => 'Pajer kan fyllas med en mängd olika söta eller aptitliga ingredienser. Populära varianter inkluderar äpple, körsbär, persika, choklad och pekannötter.',
+	'wikilove-food-pie-header' => 'En paj till dig!',
+	'wikilove-food-strawberries-option' => 'Jordgubbar',
+	'wikilove-food-strawberries-desc' => 'Frukten jordgubbe (som faktiskt inte är ett bär) är allmänt uppskattad för sin karakteristiska arom, ljusröda färg, saftiga konsistens och sötma.',
+	'wikilove-food-strawberries-header' => 'En skål med jordgubbar till dig!',
 	'wikilove-type-kittens' => 'Kattungar',
+	'wikilove-kittens-header' => 'En kattunge till dig!',
 	'wikilove-type-makeyourown' => 'Skapa en egen',
 	'wikilove-err-header' => 'Ange en rubrik.',
 	'wikilove-err-title' => 'Ange en titel.',
@@ -6090,6 +6114,7 @@ $messages['sv'] = array(
 	'wikilove-err-gallery-again' => 'Försök igen',
 	'wikilove-err-preview-api' => 'Något gick fel vid förhandsgranskningen. Försök igen.',
 	'wikilove-err-send-api' => 'Något gick fel när meddelandet skickades. Försök igen.',
+	'wikilove-err-invalid-username' => 'Användarnamnet är inte giltigt.',
 	'wikilove-summary' => '/* $1 */ nytt WikiLove-meddelande',
 	'wikilove-what-is-this' => 'Vad är det här?',
 	'wikilove-anon-warning' => 'Obs: Den här användaren är inte registrerad, han eller hon kanske inte kommer att upptäcka detta meddelande.',
