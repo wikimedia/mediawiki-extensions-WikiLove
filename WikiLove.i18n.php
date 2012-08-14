@@ -340,9 +340,9 @@ $messages['ar'] = array(
 	'wikilove-select-type' => 'اختر نوعا',
 	'wikilove-get-started-header' => 'فلنبدأ',
 	'wikilove-get-started-list-1' => 'اختر نوع رسالة ويكي الحب التي تريد إرسالها',
-	'wikilove-get-started-list-2' => 'أضف تفاصيل إلى رسالتك',
+	'wikilove-get-started-list-2' => 'أضف تفاصيلا إلى رسالتك',
 	'wikilove-get-started-list-3' => 'أرسلها',
-	'wikilove-add-details' => 'أضف تفاصيل',
+	'wikilove-add-details' => 'أضف تفاصيلا',
 	'wikilove-image' => 'أدخل اسم الصورة:',
 	'wikilove-select-image' => 'اختر صورة:',
 	'wikilove-header' => 'ضع ترويسة:',
@@ -374,6 +374,7 @@ $messages['ar'] = array(
 	'wikilove-what-is-this' => 'ما هذا؟',
 	'wikilove-anon-warning' => 'تنبيه: هذا المستخدم غير مسجل وقد لا ينتبه إلى هذه الرسالة.',
 	'wikilove-commons-text' => 'تجد هذه الصورة في صفحة $1.',
+	'wikilove-terms' => 'بإرسالها تكون قد وافقت بالشفافية على هذه $1.',
 	'wikilove-terms-link' => 'الشروط',
 );
 
@@ -3089,7 +3090,7 @@ $messages['ja'] = array(
 	'wikilove-get-started-list-1' => '送りたいウィキラブの種類を選択してください',
 	'wikilove-get-started-list-2' => 'そのウィキラブに詳細を加えてください',
 	'wikilove-get-started-list-3' => 'そのウィキラブを送ってください！',
-	'wikilove-add-details' => '詳細をお書きください',
+	'wikilove-add-details' => '詳細をご記入ください',
 	'wikilove-image' => '画像のファイル名を入力してください：',
 	'wikilove-select-image' => '画像をお選びください：',
 	'wikilove-header' => '表題を入力してください：',
@@ -6129,6 +6130,7 @@ $messages['sv'] = array(
  * @author Logicwiki
  * @author Shanmugamp7
  * @author Surya Prakash.S.A.
+ * @author மதனாஹரன்
  */
 $messages['ta'] = array(
 	'wikilove-desc' => 'பயனர்களிடையே நல்லுறவை வளர்த்துக் கொள்ளவும் சிறப்பாகச் செயல்படும் பயனர்களைப் பாராட்டவும் உதவும் ஓர் இடைமுகப்பைத் தருகிறது',
@@ -6216,10 +6218,14 @@ $messages['ta'] = array(
 	'wikilove-barnstar-writers-title' => 'கட்டுரையாளர் பதக்கம்',
 	'wikilove-type-food' => 'உணவு மற்றும் பானம்',
 	'wikilove-food-select' => 'உணவு அல்லது பான உருப்படியைத் தேர்ந்தெடுக்கவும்:',
+	'wikilove-food-beer-option' => 'தோப்பி',
+	'wikilove-food-beer-header' => 'உங்களுக்காக ஒரு தோப்பி!',
+	'wikilove-food-cookie-option' => 'மாச்சில்லு',
 	'wikilove-food-cookie-header' => 'இதோ, உங்களுக்கு ஓர் இனிப்பு !',
 	'wikilove-food-coffee-option' => 'கோப்பைக் காபி',
 	'wikilove-food-coffee-header' => 'ஒரு கோப்பைக் காபி உங்களுக்காக !',
 	'wikilove-food-tea-option' => 'கோப்பைத் தேநீர்',
+	'wikilove-food-tea-desc' => 'உலகில் நீருக்கு அடுத்தபடியாகக் கூடியளவில் நுகரப்படும் குடிபானம் தேநீர் ஆகும். இதனைச் சூடாக அல்லது குளிராக, பாலுடன் அல்லது சீனியுடன் அருந்தி மகிழலாம்.',
 	'wikilove-food-tea-header' => 'ஒரு கோப்பைத் தேநீர் உங்களுக்காக!',
 	'wikilove-food-strawberries-option' => 'ஸ்ட்ராபெர்ரிகள்',
 	'wikilove-food-strawberries-header' => 'ஒரு கிண்ணம் நிறைய ஸ்ட்ராபெர்ரிகள்  உங்களுக்காக!',
