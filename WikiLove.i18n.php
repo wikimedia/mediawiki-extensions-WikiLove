@@ -689,18 +689,48 @@ $messages['ca'] = array(
 );
 
 /** Czech (česky)
+ * @author Jkjk
  * @author Mormegil
  * @author Vks
  */
 $messages['cs'] = array(
 	'wikilove-desc' => 'Přidává rozhraní pro přidávání pozitivního hodnocení do uživatelských diskusí',
 	'wikilove-enable-preference' => 'Povolit oceňování ostatních uživatelů pomocí záložky WikiLove',
+	'wikilove-select-type' => 'Vyber druh',
+	'wikilove-add-details' => 'Přidat podrobnosti',
+	'wikilove-image' => 'Název obrázku:',
+	'wikilove-select-image' => 'Vybrat obrázek:',
+	'wikilove-header' => 'Vlož nadpis:',
+	'wikilove-enter-message' => 'Vlož doprovodnou zprávu:',
+	'wikilove-omit-sig' => '(bez podpisu)',
+	'wikilove-image-example' => '(příklad: Cena.png)',
 	'wikilove-button-preview' => 'Náhled',
 	'wikilove-preview' => 'Náhled',
 	'wikilove-notify' => 'Oznámit uživateli přes e-mail',
+	'wikilove-type-food' => 'Jídlo a pití',
+	'wikilove-food-select' => 'Vyber jídlo nebo pití:',
+	'wikilove-food-baklava-option' => 'Baklava',
+	'wikilove-food-baklava-desc' => 'Baklava je tučný, sladký zákusek, vyrobený z vrstev těsta filo, plněná sekanými ořechy a slazená sirupem nebo medem.',
+	'wikilove-food-baklava-header' => 'Kousek baklavy pro tebe!',
 	'wikilove-food-beer-option' => 'Pivo',
 	'wikilove-food-beer-desc' => 'Pivo je světově nejvíce konzumovaný a pravděpodobně nejstarší alkoholický nápoj. Je to třetí nejpopulárnější nápoj po vodě a čaji.',
 	'wikilove-food-beer-header' => 'Pivo pro tebe!',
+	'wikilove-food-cheeseburger-option' => 'Cheeseburger',
+	'wikilove-food-cheeseburger-desc' => 'První cheeseburgry se objevily ve Spojených státech ve 20. a 30. letech 20. století, jsou oblíbenou specialitou mnohých fastfoodů.',
+	'wikilove-food-cheeseburger-header' => 'Jeden cheeseburger pro tebe!',
+	'wikilove-food-cookie-option' => 'Sušenky',
+	'wikilove-food-cookie-desc' => 'Sušenka, je malý pečený zákusek nebo koláček, většinou suchý. Má obvykle sladkou chuť, může mít různé tvary a velikosti.',
+	'wikilove-food-cookie-header' => 'Sušenka pro tebe!',
+	'wikilove-food-coffee-option' => 'Šálek dobré brazilské kávy',
+	'wikilove-food-coffee-desc' => 'Kdo by odolal šálku dobré brazilské kávy?',
+	'wikilove-food-coffee-header' => 'Šálek dobré brazilské kávy pro tebe!',
+	'wikilove-food-tea-option' => 'Šálek čaje',
+	'wikilove-food-tea-desc' => 'Čaj je hned po vodě druhým nejoblíběnějším nápojem na světě. Podává se horký nebo studený.',
+	'wikilove-food-tea-header' => 'Šálek čaje pro tebe!',
+	'wikilove-type-kittens' => 'Koťátka',
+	'wikilove-kittens-header' => 'Koťátko pro tebe!',
+	'wikilove-type-makeyourown' => 'Vyrob si vlastní',
+	'wikilove-err-header' => 'Prosíme, zadejte nadpis',
 );
 
 /** Danish (dansk)
@@ -975,9 +1005,11 @@ $messages['de-formal'] = array(
 );
 
 /** Zazaki (Zazaki)
+ * @author Erdemaslancan
  * @author Mirzali
  */
 $messages['diq'] = array(
+	'wikilove-preview' => 'Verqayt',
 	'wikilove-food-baklava-header' => 'Tenê beqlewa şıma rê!',
 );
 
@@ -2028,6 +2060,14 @@ $messages['frp'] = array(
 	'wikilove-anon-warning' => 'Nota : cél usanciér est pas encartâ, il ou ben el pôt pas vêre cél mèssâjo.',
 	'wikilove-commons-text' => 'Vos pouede trovar des émâges en dèfelent dessus $1.',
 	'wikilove-terms-link' => 'condicions',
+);
+
+/** Irish (Gaeilge)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ga'] = array(
+	'wikilove-button-preview' => 'Réamhamharc',
+	'wikilove-preview' => 'Réamhamharc',
 );
 
 /** Galician (galego)
