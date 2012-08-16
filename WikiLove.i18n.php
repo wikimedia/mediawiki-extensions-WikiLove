@@ -1378,6 +1378,14 @@ $messages['et'] = array(
 	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/Esileht?uselang=et',
 );
 
+/** Basque (euskara)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['eu'] = array(
+	'wikilove-button-preview' => 'Aurrebista',
+	'wikilove-preview' => 'Aurrebista',
+);
+
 /** Persian (فارسی)
  * @author Huji
  * @author Leyth
@@ -1828,7 +1836,7 @@ $messages['fr'] = array(
 	'wikilove-barnstar-antispam-desc' => 'L’étoile anti-pourriel est décernée aux utilisateurs qui font un travail exceptionnel pour combattre les pourriels sur {{SITENAME}}.',
 	'wikilove-barnstar-antispam-title' => 'L’étoile anti-pollution',
 	'wikilove-barnstar-photographers-option' => 'Étoile du photographe',
-	'wikilove-barnstar-photographers-desc' => 'L’étoile du photographe est décernée aux personnes qui améliorent sans relâche la Wikipédie grâce à leurs compétences photographiques et à leurs contributions.',
+	'wikilove-barnstar-photographers-desc' => 'La distinction du photographe est décernée aux personnes qui améliorent sans relâche {{SITENAME}} grâce à leurs compétences photographiques et à leurs contributions.',
 	'wikilove-barnstar-photographers-title' => 'L’étoile du photographe',
 	'wikilove-barnstar-kindness-option' => 'Étoile d’actes de gentillesse divers',
 	'wikilove-barnstar-kindness-desc' => 'L’étoile d’actes de gentillesse divers peut être accordée à ceux qui donnent l’exemple en se donnant du mal pour être gentils, sans que cela leur soit demandé.',
@@ -1837,7 +1845,7 @@ $messages['fr'] = array(
 	'wikilove-barnstar-reallife-desc' => 'L’étoile de la vie réelle est décerné aux éditeurs qui font des contributions à la fois en ligne et hors ligne, en organisant des événements réels liés au Wiki.',
 	'wikilove-barnstar-reallife-title' => 'L’étoile de la vie réelle',
 	'wikilove-barnstar-resilient-option' => 'Étoile de la détermination',
-	'wikilove-barnstar-resilient-desc' => 'L’étoile de la détermination peut être accordée à tout éditeur qui apprend et s’améliore grâce aux critiques, sans jamais laisser les erreurs entraver sa croissance en tant que wikipédien.',
+	'wikilove-barnstar-resilient-desc' => "La distinction de détermination est accordée à tout éditeur qui apprend et s’améliore grâce aux critiques, sans jamais laisser les erreurs entraver sa croissance en tant qu'éditeur.",
 	'wikilove-barnstar-resilient-title' => "L'étoile décorative de détermination",
 	'wikilove-barnstar-rosetta-option' => 'Étoile de la pierre de Rosette',
 	'wikilove-barnstar-rosetta-desc' => 'L’étoile de la pierre de Rosette peut être accordée à tout éditeur qui fait des efforts de traduction exceptionnels sur la Wikipédie.',
@@ -3171,7 +3179,7 @@ $messages['ja'] = array(
 	'wikilove-commons-text' => '$1で画像を見つけることができます。',
 	'wikilove-commons-link' => 'ウィキメディア・コモンズ',
 	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8',
-	'wikilove-terms' => '送信することによって、あなたはこの$1のもとで透明性に同意することになります。',
+	'wikilove-terms' => '送信することで、これらの$1のもとで透明性に同意したことになります。',
 	'wikilove-terms-link' => '規約',
 	'wikilove.js' => '/* ここに置かれたJavaScriptによってウィキラブの設定が変更されます。  http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration をご覧ください。 */',
 );
@@ -5233,6 +5241,7 @@ $messages['roa-tara'] = array(
 /** Russian (русский)
  * @author Eugrus
  * @author Haffman
+ * @author Kalan
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
@@ -5308,10 +5317,10 @@ $messages['ru'] = array(
 	'wikilove-barnstar-minor-desc' => 'Малые правки зачастую незаметны, но составляют существенный вклад в Википедию. Малым орденом отмечают за внесение малых правок высшего качества.',
 	'wikilove-barnstar-minor-title' => 'Малый орден',
 	'wikilove-barnstar-antispam-option' => 'Орден анти-спама',
-	'wikilove-barnstar-antispam-desc' => 'Орденом анти-спама отмечаются пользователи, которые выполняют исключительную работу по борьбе со спамом в Википедии.',
+	'wikilove-barnstar-antispam-desc' => 'Орденом анти-спама отмечаются пользователи, благодаря исключительной борьбе которых {{SITENAME}} очищается от спама.',
 	'wikilove-barnstar-antispam-title' => 'Орден анти-спама',
 	'wikilove-barnstar-photographers-option' => 'Орден фотографа',
-	'wikilove-barnstar-photographers-desc' => 'Орденом фотографа отмечаются те, кто неустанно стремится улучшить Википедию при помощи своих вкладов и навыков, относящихся к фотографии.',
+	'wikilove-barnstar-photographers-desc' => 'Орденом фотографа отмечаются те, благодаря фотографическим навыкам и неустанной работе которых {{SITENAME}} становится лучше.',
 	'wikilove-barnstar-photographers-title' => 'Орден фотографа',
 	'wikilove-barnstar-kindness-option' => 'Орден случайных любезностей',
 	'wikilove-barnstar-kindness-desc' => 'Орденом случайных любезностей отмечаются те, кто продемонстрировал модель человека, готового многое сделать без каких-либо просьб.',
@@ -5396,6 +5405,9 @@ $messages['ru'] = array(
 	'wikilove-err-preview-api' => 'Что-то пошло не так во время предпросмотра. Пожалуйста, попробуйте ещё раз.',
 	'wikilove-err-send-api' => 'Что-то пошло не так при отправке сообщения. Пожалуйста, попробуйте ещё раз.',
 	'wikilove-err-invalid-token' => 'Не удалось отправить сообщение WikiLove из-за потери данных сессии. Попробуйте перезагрузить страницу или перезайти в свой аккаунт.',
+	'wikilove-err-invalid-username' => 'Такое имя участника недопустимо.',
+	'wikilove-err-redirect' => 'Страница обсуждения пользователя является перенаправлением.',
+	'wikilove-err-cannot-edit' => 'У вас нет прав, чтобы править эту страницу.',
 	'wikilove-summary' => '/ * $1 * / новая ВикиСимпатия',
 	'wikilove-what-is-this' => 'Что это?',
 	'wikilove-anon-warning' => 'Примечание. Этот участник не зарегистрирован, он или она может не заметить это сообщение.',
@@ -6163,6 +6175,22 @@ $messages['sv'] = array(
 	'wikilove-terms' => 'Genom att skicka samtycker du till insyn under dessa $1.',
 	'wikilove-terms-link' => 'villkor',
 	'wikilove.js' => '/ * JavaScript som placeras här anpassar WikiLove, se http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
+);
+
+/** Swahili (Kiswahili)
+ * @author Kwisha
+ */
+$messages['sw'] = array(
+	'wikilove-select-type' => 'Chagua aina',
+	'wikilove-add-details' => 'Ongeza maelezo',
+	'wikilove-select-image' => 'Chagua picha:',
+	'wikilove-type-makeyourown' => 'Tengeneza yako',
+	'wikilove-err-title' => 'Tafadhali ingiza mada',
+	'wikilove-err-image' => 'Tafadhali chagua picha.',
+	'wikilove-err-image-bad' => 'Picha haipatikani.',
+	'wikilove-err-gallery-again' => 'Jaribu tena',
+	'wikilove-what-is-this' => 'Kitu gani hiki?',
+	'wikilove-terms-link' => 'masharti',
 );
 
 /** Tamil (தமிழ்)
