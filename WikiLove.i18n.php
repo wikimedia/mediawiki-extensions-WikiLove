@@ -1009,6 +1009,9 @@ $messages['de-formal'] = array(
  * @author Mirzali
  */
 $messages['diq'] = array(
+	'wikilove' => 'WikiSinen',
+	'wikilove-tab-text' => 'WikiSinen',
+	'wikilove-button-preview' => 'Verqayt',
 	'wikilove-preview' => 'Verqayt',
 	'wikilove-food-baklava-header' => 'Tenê beqlewa şıma rê!',
 );
@@ -3182,6 +3185,27 @@ $messages['ja'] = array(
 	'wikilove-terms' => '送信することで、これらの$1のもとで透明性に同意したことになります。',
 	'wikilove-terms-link' => '規約',
 	'wikilove.js' => '/* ここに置かれたJavaScriptによってウィキラブの設定が変更されます。  http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration をご覧ください。 */',
+);
+
+/** Javanese (Basa Jawa)
+ * @author NoiX180
+ */
+$messages['jv'] = array(
+	'wikilove-desc' => 'Tambah antarmuka kanggo masilitasi lebon saran panganggo sing apik nèng kaca guneman panganggo',
+	'wikilove' => 'WikiTresna',
+	'wikilove-enable-preference' => 'Urubaké fitur nuduhaké aprèsiasi kanggo panganggo liya mawa tab WikiTresna',
+	'wikilove-tab-text' => 'WikiTresna',
+	'tooltip-ca-wikilove' => 'Kirim layang kanggo panganggo iki sing nuduhaké aprèsiasi Sampéyan',
+	'wikilove-dialog-title' => 'WikiTresna - Kirim layang aprèsiasi nèng pangaggo liya',
+	'wikilove-select-type' => 'Pilih jinis',
+	'wikilove-get-started-header' => 'Ayo lekasi!',
+	'wikilove-get-started-list-1' => 'Pilih jinis WikiTresna sing arep dikirim',
+	'wikilove-get-started-list-2' => 'Tambah rincian kanggo WikiTresna Sampéyan',
+	'wikilove-get-started-list-3' => 'Kirim WikiTresna Sampéyan!',
+	'wikilove-add-details' => 'Tambah rincian',
+	'wikilove-image' => 'Lebokaké jenang berkas gambar:',
+	'wikilove-select-image' => 'Pilih gambar:',
+	'wikilove-header' => 'Lebokaké irah-irahan:',
 );
 
 /** Georgian (ქართული)
@@ -6796,6 +6820,20 @@ $messages['uk'] = array(
 	'wikilove-commons-url' => 'http://commons.wikimedia.org',
 	'wikilove-terms' => 'Надсилаючи, ви погоджуєтесь з публічністю даних на таких $1.',
 	'wikilove-terms-link' => 'умовах',
+);
+
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ur'] = array(
+	'wikilove-select-type' => 'قسم منتخب کریں',
+	'wikilove-add-details' => 'تفصیلات شامل کریں',
+	'wikilove-enter-message' => 'کوئی پیغام درج کریں:',
+	'wikilove-button-preview' => 'پیش نظارہ',
+	'wikilove-preview' => 'پیش نظارہ',
+	'wikilove-err-gallery-again' => 'دوبارہ کوشش کریں',
+	'wikilove-what-is-this' => 'یہ کیا ہے ؟',
+	'wikilove-terms-link' => 'شرائط و ضوابط',
 );
 
 /** Vietnamese (Tiếng Việt)
