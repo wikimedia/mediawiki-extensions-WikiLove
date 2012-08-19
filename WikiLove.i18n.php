@@ -1747,6 +1747,7 @@ $messages['fi'] = array(
 );
 
 /** French (français)
+ * @author Boniface
  * @author Brunoperel
  * @author Crochet.david
  * @author DavidL
@@ -1839,7 +1840,7 @@ $messages['fr'] = array(
 	'wikilove-barnstar-antispam-desc' => 'L’étoile anti-pourriel est décernée aux utilisateurs qui font un travail exceptionnel pour combattre les pourriels sur {{SITENAME}}.',
 	'wikilove-barnstar-antispam-title' => 'L’étoile anti-pollution',
 	'wikilove-barnstar-photographers-option' => 'Étoile du photographe',
-	'wikilove-barnstar-photographers-desc' => 'La distinction du photographe est décernée aux personnes qui améliorent sans relâche {{SITENAME}} grâce à leurs compétences photographiques et à leurs contributions.',
+	'wikilove-barnstar-photographers-desc' => 'La Distinction du Photographe est décernée aux personnes qui améliorent sans relâche {{SITENAME}} grâce à leurs compétences photographiques et à leurs contributions.',
 	'wikilove-barnstar-photographers-title' => 'L’étoile du photographe',
 	'wikilove-barnstar-kindness-option' => 'Étoile d’actes de gentillesse divers',
 	'wikilove-barnstar-kindness-desc' => 'L’étoile d’actes de gentillesse divers peut être accordée à ceux qui donnent l’exemple en se donnant du mal pour être gentils, sans que cela leur soit demandé.',
@@ -1848,7 +1849,7 @@ $messages['fr'] = array(
 	'wikilove-barnstar-reallife-desc' => 'L’étoile de la vie réelle est décerné aux éditeurs qui font des contributions à la fois en ligne et hors ligne, en organisant des événements réels liés au Wiki.',
 	'wikilove-barnstar-reallife-title' => 'L’étoile de la vie réelle',
 	'wikilove-barnstar-resilient-option' => 'Étoile de la détermination',
-	'wikilove-barnstar-resilient-desc' => "La distinction de détermination est accordée à tout éditeur qui apprend et s’améliore grâce aux critiques, sans jamais laisser les erreurs entraver sa croissance en tant qu'éditeur.",
+	'wikilove-barnstar-resilient-desc' => "La distinction de détermination est accordée à tout éditeur qui apprend et s’améliore grâce aux critiques, sans jamais laisser les erreurs entraver sa progression en tant qu'éditeur.",
 	'wikilove-barnstar-resilient-title' => "L'étoile décorative de détermination",
 	'wikilove-barnstar-rosetta-option' => 'Étoile de la pierre de Rosette',
 	'wikilove-barnstar-rosetta-desc' => 'L’étoile de la pierre de Rosette peut être accordée à tout éditeur qui fait des efforts de traduction exceptionnels sur la Wikipédie.',
