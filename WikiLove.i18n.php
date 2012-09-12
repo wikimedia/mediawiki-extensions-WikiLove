@@ -2568,6 +2568,7 @@ $messages['hsb'] = array(
  * @author Dani
  * @author Dj
  * @author Kaldari
+ * @author Misibacsi
  * @author Xbspiro
  */
 $messages['hu'] = array(
@@ -2584,7 +2585,7 @@ $messages['hu'] = array(
 	'wikilove-get-started-list-3' => 'Küldd el a wikibókot!',
 	'wikilove-add-details' => 'Részletek',
 	'wikilove-image' => 'Kép fájlneve:',
-	'wikilove-select-image' => 'Válassz egy képet:',
+	'wikilove-select-image' => 'Válassz képet:',
 	'wikilove-header' => 'A fejléc tartalma:',
 	'wikilove-title' => 'A díj címe:',
 	'wikilove-enter-message' => 'Üzenet:',
@@ -2596,9 +2597,14 @@ $messages['hu'] = array(
 	'wikilove-button-send' => 'Wikibók elküldése',
 	'wikilove-type-barnstars' => 'Barnstarok',
 	'wikilove-barnstar-header' => 'Egy barnstar neked!',
-	'wikilove-barnstar-select' => 'Válassz egy barnstart:',
+	'wikilove-barnstar-select' => 'Válassz barnstart:',
 	'wikilove-barnstar-original-option' => 'Eredeti barnstar',
 	'wikilove-barnstar-original-title' => 'Az eredeti barnstar',
+	'wikilove-barnstar-teamwork-option' => 'Csapatmunka barnstar',
+	'wikilove-barnstar-teamwork-desc' => 'A Csapatmunka barnstart azoknak a szerkesztőknek ítélik oda, akik együttesen javítottak fel egy vagy több cikket.',
+	'wikilove-barnstar-teamwork-title' => 'Csapatmunka barnstar',
+	'wikilove-barnstar-technical-option' => 'Műszaki barnstar',
+	'wikilove-barnstar-technical-desc' => 'A műszaki barnstart annak ítélik oda, aki javított a {{SITENAME}} működésén technikai háttérmunkával (programozás, bot fejlesztés és futtatás, linkek tömeges javítása stb.).',
 	'wikilove-type-food' => 'Étel és ital',
 	'wikilove-food-select' => 'Válassz ételt vagy italt:',
 	'wikilove-food-baklava-option' => 'Baklava',
