@@ -7155,7 +7155,7 @@ $messages['zh-hans'] = array(
 	'wikilove.js' => '/* 放在这里的JavaScript定制WikiLove, 参见http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Anakmalaysia
  * @author Kaldari
  * @author Liangent
@@ -7322,8 +7322,14 @@ $messages['zh-hant'] = array(
 	'wikilove-err-gallery-again' => '再試一次',
 	'wikilove-err-preview-api' => '預覽過程發生錯誤，請重試。',
 	'wikilove-err-send-api' => '發送信息時發生錯誤，請重試。',
+	'wikilove-err-invalid-token' => '由於會話數據丟失，無法發送維基有愛。嘗試重新載入頁面或者登出後重新登入來解決。',
+	'wikilove-err-not-logged-in' => '您沒有登錄。請登錄後再使用維基有愛。',
 	'wikilove-err-invalid-username' => '用戶名無效。',
+	'wikilove-err-no-self-wikilove' => '您不能給自己發送維基有愛，抱歉！',
+	'wikilove-err-redirect' => '此用戶的對話頁是重定向。',
 	'wikilove-err-cannot-edit' => '你沒有編輯這個頁面的權限。',
+	'wikilove-err-max-exceeded' => '您不能一次給超過$1個的用戶發送維基有愛。',
+	'wikilove-success-number' => '$1條維基有愛已發送。',
 	'wikilove-summary' => '/* $1 */ 新的維基友愛信息',
 	'wikilove-what-is-this' => '這是甚麼？',
 	'wikilove-anon-warning' => '注意：此用戶未註冊，他或她可能未能注意到此信息。',
