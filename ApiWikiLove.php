@@ -1,7 +1,7 @@
 <?php
 class ApiWikiLove extends ApiBase {
 	public function execute() {
-		global $wgRequest, $wgWikiLoveLogging, $wgParser, $wgVersion;
+		global $wgWikiLoveLogging, $wgParser;
 
 		$params = $this->extractRequestParams();
 
@@ -31,13 +31,14 @@ class ApiWikiLove extends ApiBase {
 			'sectiontitle' => $params['subject'],
 			'text' => $params['text'],
 			'token' => $params['token'],
-			'summary' => wfMsgForContent( 'wikilove-summary', $strippedSubject ),
+			'summary' => $this->msg( 'wikilove-summary', $strippedSubject )->inContentLanguage()
+				->text(),
 			'notminor' => true
 		);
 
 		$api = new ApiMain(
 			new DerivativeRequest(
-				$wgRequest,
+				$this->getRequest(),
 				$apiParamArray,
 				false // was posted?
 			),
@@ -64,19 +65,22 @@ class ApiWikiLove extends ApiBase {
 	 * @return void
 	 */
 	private function saveInDb( $talk, $subject, $message, $type, $email ) {
-		global $wgUser;
+		wfProfileIn( __METHOD__ );
+
 		$dbw = wfGetDB( DB_MASTER );
 		$receiver = User::newFromName( $talk->getSubjectPage()->getBaseText() );
 		if ( $receiver === false || $receiver->isAnon() ) {
 			$this->setWarning( 'Not logging unregistered recipients' );
+			wfProfileOut( __METHOD__ );
 			return;
 		}
 
+		$user = $this->getUser();
 		$values = array(
 			'wll_timestamp' => $dbw->timestamp(),
-			'wll_sender' => $wgUser->getId(),
-			'wll_sender_editcount' => $wgUser->getEditCount(),
-			'wll_sender_registration' => $wgUser->getRegistration(),
+			'wll_sender' => $user->getId(),
+			'wll_sender_editcount' => $user->getEditCount(),
+			'wll_sender_registration' => $user->getRegistration(),
 			'wll_receiver' => $receiver->getId(),
 			'wll_receiver_editcount' => $receiver->getEditCount(),
 			'wll_receiver_registration' => $receiver->getRegistration(),
@@ -91,6 +95,7 @@ class ApiWikiLove extends ApiBase {
 		} catch( DBQueryError $dbqe ) {
 			$this->setWarning( 'Action was not logged' );
 		}
+		wfProfileOut( __METHOD__ );
 	}
 
 	/**
@@ -100,21 +105,25 @@ class ApiWikiLove extends ApiBase {
 	 * @param $token string
 	 */
 	private function emailUser( $talk, $subject, $text, $token ) {
-		global $wgRequest;
-
-		$api = new ApiMain( new FauxRequest( array(
-			'action' => 'emailuser',
-			'target' => User::newFromName( $talk->getSubjectPage()->getBaseText() )->getName(),
-			'subject' => $subject,
-			'text' => $text,
-			'token' => $token,
-		), false, array( 'wsEditToken' => $wgRequest->getSessionData( 'wsEditToken' ) ) ), true );
+		wfProfileIn( __METHOD__ );
+		$api = new ApiMain( new FauxRequest(
+			array(
+				'action' => 'emailuser',
+				'target' => User::newFromName( $talk->getSubjectPage()->getBaseText() )->getName(),
+				'subject' => $subject,
+				'text' => $text,
+				'token' => $token
+			),
+			false,
+			array( 'wsEditToken' => $this->getRequest()->getSessionData( 'wsEditToken' ) )
+		), true );
 
 		try {
 			$api->execute();
 		} catch( DBQueryError $dbqe ) {
 			$this->setWarning( 'E-mail was not sent' );
 		}
+		wfProfileOut( __METHOD__ );
 	}
 
 	public function getAllowedParams() {

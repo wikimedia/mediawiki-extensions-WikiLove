@@ -14,7 +14,7 @@ class WikiLoveHooks {
 	 *
 	 * @param DatabaseUpdater $updater
 	 *
-	 * @return true
+	 * @return bool true
 	 */
 	public static function loadExtensionSchemaUpdates( $updater = null ) {
 		if ( $updater === null ) {
@@ -35,7 +35,7 @@ class WikiLoveHooks {
 	 * @param User $user
 	 * @param array $preferences
 	 *
-	 * @return true
+	 * @return bool true
 	 */
 	public static function getPreferences( $user, &$preferences ) {
 		global $wgWikiLoveGlobal;
@@ -55,11 +55,12 @@ class WikiLoveHooks {
 	 * @param OutputPage $out
 	 * @param Skin $skin
 	 *
-	 * @return true
+	 * @return bool true
 	 */
 	public static function beforePageDisplay( $out, $skin ) {
-		global $wgWikiLoveGlobal, $wgUser;
-		if ( !$wgWikiLoveGlobal && !$wgUser->getOption( 'wikilove-enabled' ) ) {
+		global $wgWikiLoveGlobal;
+
+		if ( !$wgWikiLoveGlobal && !$out->getUser()->getOption( 'wikilove-enabled' ) ) {
 			return true;
 		}
 
@@ -77,10 +78,9 @@ class WikiLoveHooks {
 	 *
 	 * @param array $vars
 	 *
-	 * @return true
+	 * @return bool true
 	 */
 	public static function makeGlobalVariablesScript( &$vars ) {
-		global $wgUser;
 		$vars['wikilove-recipient'] = self::$recipient;
 
 		$vars['wikilove-anon'] = 0;
@@ -116,17 +116,17 @@ class WikiLoveHooks {
 	 * @return boolean
 	 */
 	private static function skinConfigViewsLinks( $skin, &$views ) {
-		global $wgWikiLoveGlobal, $wgUser;
+		global $wgWikiLoveGlobal;
 
 		// If WikiLove is turned off for this user, don't display tab.
-		if ( !$wgWikiLoveGlobal && !$wgUser->getOption( 'wikilove-enabled' ) ) {
+		if ( !$wgWikiLoveGlobal && !$skin->getUser()->getOption( 'wikilove-enabled' ) ) {
 			return true;
 		}
 
 		// getUserTalkPage() returns a string on error
 		if ( !is_string( self::getUserTalkPage( $skin->getTitle() ) ) ) {
 			$views['wikilove'] = array(
-				'text' => wfMsg( 'wikilove-tab-text' ),
+				'text' => $skin->msg( 'wikilove-tab-text' )->text(),
 				'href' => '#',
 			);
 			if ( self::showIcon( $skin ) ) {

@@ -46,7 +46,7 @@ $.wikiLove = {
 				var	$button = $( '<a href="#"></a>' ),
 					$buttonInside = $( '<div class="mw-wikilove-inside"></div>' );
 
-				if ( typeof type.icon == 'string' ) {
+				if ( typeof type.icon === 'string' ) {
 					$buttonInside.append( '<div class="mw-wikilove-icon-box"><img src="'
 						+ mw.html.escape( type.icon ) + '"/></div>' );
 				} else {
@@ -162,7 +162,7 @@ $.wikiLove = {
 					resizable: false
 				});
 
-			if ( mw.config.get( 'skin' ) == 'vector' ) {
+			if ( mw.config.get( 'skin' ) === 'vector' ) {
 				$( '#mw-wikilove-button-preview' ).button( {
 					label: mw.msg( 'wikilove-button-preview' ),
 					icons: {
@@ -211,14 +211,14 @@ $.wikiLove = {
 		$( '#mw-wikilove-get-started' ).hide(); // always hide the get started section
 
 		var newTypeId = $( this ).data( 'typeId' );
-		if( currentTypeId != newTypeId ) { // only do stuff when a different type is selected
+		if( currentTypeId !== newTypeId ) { // only do stuff when a different type is selected
 			currentTypeId = newTypeId;
 			currentSubtypeId = null; // reset the subtype id
 
 			$( '#mw-wikilove-types' ).find( 'a' ).removeClass( 'selected' );
 			$( this ).addClass( 'selected' ); // highlight the new type in the menu
 
-			if( typeof options.types[currentTypeId].subtypes == 'object' ) {
+			if( typeof options.types[currentTypeId].subtypes === 'object' ) {
 				// we're dealing with subtypes here
 				currentTypeOrSubtype = null; // reset the (sub)type object until a subtype is selected
 				$( '#mw-wikilove-subtype' ).html( '' ); // clear the subtype menu
@@ -226,7 +226,7 @@ $.wikiLove = {
 				for( var subtypeId in options.types[currentTypeId].subtypes ) {
 					// add all the subtypes to the menu while setting their subtype ids in jQuery data
 					var subtype = options.types[currentTypeId].subtypes[subtypeId];
-					if ( typeof subtype.option != 'undefined' ) {
+					if ( typeof subtype.option !== 'undefined' ) {
 						$( '#mw-wikilove-subtype' ).append(
 							$( '<option></option>' ).text( subtype.option ).data( 'subtypeId', subtypeId )
 						);
@@ -261,7 +261,7 @@ $.wikiLove = {
 
 		// find out which subtype is selected
 		var newSubtypeId = $( '#mw-wikilove-subtype option:selected' ).first().data( 'subtypeId' );
-		if( currentSubtypeId != newSubtypeId ) { // only change stuff when a different subtype is selected
+		if( currentSubtypeId !== newSubtypeId ) { // only change stuff when a different subtype is selected
 			currentSubtypeId = newSubtypeId;
 			currentTypeOrSubtype = options.types[currentTypeId]
 				.subtypes[currentSubtypeId];
@@ -300,22 +300,22 @@ $.wikiLove = {
 		}
 		if ( currentTypeOrSubtype !== null ) {
 			if ( $.inArray( 'header', currentTypeOrSubtype.fields ) >= 0 &&
-				( !currentTypeOrSubtype.header || $( '#mw-wikilove-header' ).val() != currentTypeOrSubtype.header ) )
+				( !currentTypeOrSubtype.header || $( '#mw-wikilove-header' ).val() !== currentTypeOrSubtype.header ) )
 			{
 				rememberData.header = $( '#mw-wikilove-header' ).val();
 			}
 			if ( $.inArray( 'title', currentTypeOrSubtype.fields ) >= 0 &&
-				( !currentTypeOrSubtype.title || $( '#mw-wikilove-title' ).val() != currentTypeOrSubtype.title ) )
+				( !currentTypeOrSubtype.title || $( '#mw-wikilove-title' ).val() !== currentTypeOrSubtype.title ) )
 			{
 				rememberData.title = $( '#mw-wikilove-title' ).val();
 			}
 			if ( $.inArray( 'message', currentTypeOrSubtype.fields ) >= 0 &&
-				( !currentTypeOrSubtype.message || $( '#mw-wikilove-message' ).val() != currentTypeOrSubtype.message ) )
+				( !currentTypeOrSubtype.message || $( '#mw-wikilove-message' ).val() !== currentTypeOrSubtype.message ) )
 			{
 				rememberData.message = $( '#mw-wikilove-message' ).val();
 			}
 			if ( currentTypeOrSubtype.gallery === undefined && $.inArray( 'image', currentTypeOrSubtype.fields ) >= 0  &&
-				( !currentTypeOrSubtype.image || $( '#mw-wikilove-image' ).val() != currentTypeOrSubtype.image ) )
+				( !currentTypeOrSubtype.image || $( '#mw-wikilove-image' ).val() !== currentTypeOrSubtype.image ) )
 			{
 				rememberData.image = $( '#mw-wikilove-image' ).val();
 			}
@@ -349,7 +349,7 @@ $.wikiLove = {
 					$( '#mw-wikilove-image-preview-spinner' ).fadeOut( 200 );
 					return;
 				}
-				if ( loadingType != currentTypeOrSubtype ) {
+				if ( loadingType !== currentTypeOrSubtype ) {
 					return;
 				}
 				$.each( data.query.pages, function( id, page ) {
@@ -414,7 +414,7 @@ $.wikiLove = {
 		// set the new text for the image textbox
 		$( '#mw-wikilove-image' ).val( currentRememberData.image || currentTypeOrSubtype.image || '' );
 
-		if( typeof currentTypeOrSubtype.gallery == 'object'
+		if( typeof currentTypeOrSubtype.gallery === 'object'
 			&& $.isArray( currentTypeOrSubtype.gallery.imageList )
 		) {
 			$( '#mw-wikilove-gallery, #mw-wikilove-gallery-label' ).show();
@@ -470,7 +470,7 @@ $.wikiLove = {
 		}
 
 		// Split image validation depending on whether or not it is a gallery
-		if ( typeof currentTypeOrSubtype.gallery == 'undefined' ) { // not a gallery
+		if ( typeof currentTypeOrSubtype.gallery === 'undefined' ) { // not a gallery
 			if ( $.inArray( 'image', currentTypeOrSubtype.fields ) >= 0 ) { // asks for an image
 				if ( $( '#mw-wikilove-image' ).val().length === 0 ) { // no image entered
 					// Give them the default image and continue with preview.
@@ -576,7 +576,9 @@ $.wikiLove = {
 		// If a URL is given, extract and decode the filename
 		var index = filename.lastIndexOf( "/" ) + 1;
 		filename = filename.substr( index );
-		if ( index > 0 ) filename = decodeURI( filename );
+		if ( index > 0 ) {
+			filename = decodeURI( filename );
+		}
 		// Can't use mw.Title in 1.17
 		var	prefixSplit = filename.split( ':' ),
 			// Make sure the we don't fail in case input is like "File.jpg"
@@ -718,7 +720,7 @@ $.wikiLove = {
 				type: 'POST',
 				success: function( data ) {
 					wikiLoveNumberAttempted++;
-					if ( wikiLoveNumberAttempted == targets.length ) {
+					if ( wikiLoveNumberAttempted === targets.length ) {
 						$( '#mw-wikilove-send-spinner' ).fadeOut( 200 );
 					}
 	
@@ -761,7 +763,7 @@ $.wikiLove = {
 						} else {
 							$.wikiLove.showSuccessMsg( mw.msg( 'wikilove-success-number', wikiLoveNumberPosted ) );
 							// If there were no errors, close the dialog and reset WikiLove
-							if ( wikiLoveNumberPosted == targets.length ) {
+							if ( wikiLoveNumberPosted === targets.length ) {
 								setTimeout ( function() {
 									$dialog.dialog( 'close' );
 									$.wikiLove.reset();
@@ -775,7 +777,7 @@ $.wikiLove = {
 				error: function() {
 					$.wikiLove.showPreviewError( 'wikilove-err-send-api' );
 					wikiLoveNumberAttempted++;
-					if ( wikiLoveNumberAttempted == targets.length ) {
+					if ( wikiLoveNumberAttempted === targets.length ) {
 						$( '#mw-wikilove-send-spinner' ).fadeOut( 200 );
 					}
 				}
@@ -847,7 +849,7 @@ $.wikiLove = {
 					return;
 				}
 
-				if ( loadingType != currentTypeOrSubtype ) {
+				if ( loadingType !== currentTypeOrSubtype ) {
 					return;
 				}
 				var galleryNumber = currentTypeOrSubtype.gallery.number;

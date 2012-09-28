@@ -354,7 +354,7 @@ $.wikiLoveOptions = {
 			name: mw.msg( 'wikilove-type-kittens' ),
 			fields: [ 'header', 'message' ],
 			header: mw.msg( 'wikilove-kittens-header' ),
-			text: '[[$3|left|150px]]\n$1\n\n~~~~\n<br style="clear: both"/>', // $3 is the image filename
+			text: '[[$3|left|150px]]\n$1\n\n~~~~\n<br style="clear: both;"/>', // $3 is the image filename
 			gallery: {
 				imageList: [ 'Cucciolo gatto Bibo.jpg', 'Kitten (06) by Ron.jpg', 'Kitten-stare.jpg', 'Red Kitten 01.jpg', 'Kitten in a helmet.jpg', 'Cute grey kitten.jpg' ],
 				width: 145,
