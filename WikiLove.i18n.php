@@ -2950,6 +2950,7 @@ $messages['is'] = array(
  * @author F. Cosoleto
  * @author Kaldari
  * @author Nemo bis
+ * @author Raoli
  * @author Rippitippi
  * @author Ximo17
  */
@@ -3125,6 +3126,7 @@ $messages['it'] = array(
 	'wikilove-what-is-this' => "Cos'è questo?",
 	'wikilove-anon-warning' => "Nota: quest'utente non è registrato/a, potrebbe non notare questo messaggio.",
 	'wikilove-commons-text' => 'Puoi trovare le immagini cercando in $1.',
+	'wikilove-commons-link' => 'Commons',
 	'wikilove-terms' => "Con l'invio, accetti $1 di trasparenza per i dati indicate.",
 	'wikilove-terms-link' => 'le condizioni',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement/it',
