@@ -411,7 +411,7 @@ $messages['ba'] = array(
 	'wikilove-preview' => 'Алдан байҡау',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Renessaince
@@ -966,7 +966,7 @@ $messages['de'] = array(
 	'wikilove.js' => '/* Das folgende JavaScript passt die persönliche Wertschätzung an, siehe http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author Geitost
  * @author Kghbln
  */
@@ -3689,7 +3689,7 @@ Versöhg ens, di Sigg heh neu ze laade udder uß- un wider enzelogge.',
 	'wikilove.js' => '/* dat JavaSkrep heh aan dä Stell wirrek nur beim „Leev Wiki“, loor op http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
-/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
  * @author George Animal
  */
 $messages['ku-latn'] = array(
@@ -4414,7 +4414,7 @@ $messages['ms'] = array(
 	'wikilove.js' => '/* JavaScript yang terletak di sini mengubah suai WikiLove, rujuk http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Cocu
  * @author Diupwijk
  * @author Stigmj
@@ -5776,7 +5776,7 @@ $messages['sl'] = array(
 	'wikilove.js' => '/* Tukaj naveden JavaScript prilagaja WikiLove; oglejte si http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Maduixa
  * @author Micki
  * @author Rancher
@@ -5954,7 +5954,7 @@ $messages['sr-ec'] = array(
 	'wikilove.js' => '/* Овде постављен јаваскрипт прилагођава Викиљубав. Погледајте http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration?uselang=sr-ec */',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author Maduixa
  * @author Micki
  * @author Rancher
@@ -6972,7 +6972,7 @@ $messages['yi'] = array(
 	'wikilove-food-strawberries-option' => 'טרוסקאווקעס',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Anakmalaysia
  * @author Kaldari
  * @author Liangent
