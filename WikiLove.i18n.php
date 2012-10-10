@@ -5777,6 +5777,7 @@ $messages['sl'] = array(
 );
 
 /** Serbian (Cyrillic script) (српски (ћирилица)‎)
+ * @author Bebauautu
  * @author Maduixa
  * @author Micki
  * @author Rancher
@@ -5941,6 +5942,12 @@ $messages['sr-ec'] = array(
 	'wikilove-err-gallery-again' => 'Покушајте поново',
 	'wikilove-err-preview-api' => 'Дошло је до грешке при прегледању. Покушајте поново.',
 	'wikilove-err-send-api' => 'Дошло је до грешке при слању поруке. Покушајте поново.',
+	'wikilove-err-not-logged-in' => 'Нисте улоговани. Молимо Вас да се улогујете да бисте користили WikiLove.',
+	'wikilove-err-invalid-username' => 'Корисничко име је неисправно.',
+	'wikilove-err-no-self-wikilove' => 'Нажалост, не можете послати WikiLove сами себи.',
+	'wikilove-err-cannot-edit' => 'Немате дозволу да мењате ову страницу.',
+	'wikilove-err-max-exceeded' => 'Не можете послати WikiLove више од $1 {{PLURAL:$1|кориснику|корисника}} одједном.',
+	'wikilove-success-number' => '$1 WikiLove {{PLURAL:$1|порука}} послато.',
 	'wikilove-summary' => '/* $1 */ нова порука (Викиљубав)',
 	'wikilove-what-is-this' => 'Шта је ово?',
 	'wikilove-what-is-this-link' => 'https://www.mediawiki.org/wiki/WikiLove?uselang=sr-ec',
