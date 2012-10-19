@@ -93,8 +93,8 @@ class WikiLoveHooks {
 
 	/**
 	 * Adds a tab or an icon the new way (MediaWiki 1.18+)
-	 * @param Skin $skin
-	 * @param array $links
+	 * @param SkinTemplate $skin
+	 * @param array $links Navigation links
 	 * @return boolean
 	 */
 	public static function skinTemplateNavigation( &$skin, &$links ) {
