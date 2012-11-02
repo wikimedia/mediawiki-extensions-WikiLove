@@ -508,6 +508,7 @@ $messages['bg'] = array(
 
 /** Bengali (বাংলা)
  * @author Bellayet
+ * @author Nasir8891
  * @author Wikitanvir
  */
 $messages['bn'] = array(
@@ -533,6 +534,9 @@ $messages['bn'] = array(
 	'wikilove-type-barnstars' => 'উইকিপদক',
 	'wikilove-barnstar-header' => 'আপনার জন্য এই উইকিপদক!',
 	'wikilove-barnstar-select' => 'উইকিপদক নির্বাচন করুন:',
+	'wikilove-barnstar-admins-option' => 'প্রশাসকের উইকিপদক',
+	'wikilove-barnstar-admins-desc' => 'প্রশাসকের উইকিপদক দেয়া হয়ে থাকে সেইসকল প্রশাসকদের যারা কোনো গুরুত্বপূর্ণ জটিল স্বীদ্ধান্ত নিয়েছেন অথবা প্রয়োজনীয় প্রশাসনসংক্রান্ত কোন কাজ সম্পন্ন করেছেন।',
+	'wikilove-barnstar-admins-title' => 'প্রশাসকের উইকিপদক',
 	'wikilove-err-gallery-again' => 'আবার চেষ্টা করুন',
 	'wikilove-what-is-this' => 'এইটি কী?',
 );
@@ -2320,10 +2324,10 @@ $messages['he'] = array(
 	'wikilove-barnstar-admins-desc' => 'כוכב מפעילי מערכת ניתן למפעילי מערכת אשר החליטו החלטה קשה במיוחד או ביצעו עבודה קשה אך הכרחית.',
 	'wikilove-barnstar-admins-title' => 'כוכב מפעילי מערכת',
 	'wikilove-barnstar-antivandalism-option' => 'כוכב מונע ההשחתות',
-	'wikilove-barnstar-antivandalism-desc' => 'כוכב מונע ההשחתות מוענק לכותבים אשר תרמו רבות להגן על ערכים ולמנוע השחתת ערכים בויקיפדיה.',
+	'wikilove-barnstar-antivandalism-desc' => 'כוכב מונע ההשחתות מוענק לכותבים אשר תרמו רבות להגנה על ערכים ולשחזור השחתות ב{{grammar:תחילית|{{SITENAME}}}}.',
 	'wikilove-barnstar-antivandalism-title' => 'כוכב מונע ההשחתות',
 	'wikilove-barnstar-diligence-option' => 'כוכב החריצות',
-	'wikilove-barnstar-diligence-desc' => 'כוכב החריצות מוענק לכותבים לאות הוכרה על חריצותם ודייקנותם הרבה בתרומתם לויקיפדיה.',
+	'wikilove-barnstar-diligence-desc' => 'כוכב החריצות מוענק לכותבים לאות הוקרה על חריצותם, דייקנותם ותרומתם לקהילה.',
 	'wikilove-barnstar-diligence-title' => 'כוכב החריצות',
 	'wikilove-barnstar-diplomacy-option' => 'כוכב הדיפלומטיה',
 	'wikilove-barnstar-diplomacy-desc' => 'כוכב הדיפלומטיה מוענק למשתמשים אשר סייעו לפתור, בדרכי שלום, מחלוקות בוויקיפדיה.',
@@ -7078,9 +7082,10 @@ $messages['vi'] = array(
 	'wikilove-what-is-this' => 'Đây là gì?',
 	'wikilove-anon-warning' => 'Lưu ý: Người dùng này chưa có tài khoản, nên họ có thể không nhận thấy được thông điệp này.',
 	'wikilove-commons-text' => 'Có thể tìm kiếm hình ảnh tại $1.',
+	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/Trang_Chính?uselang=vi',
 	'wikilove-terms' => 'Bằng cách gửi thông tin, bạn đồng ý phát hành thông tin này công khai theo các $1 này.',
 	'wikilove-terms-link' => 'điều khoản',
-	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement/vi',
+	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement/vi?uselang=vi',
 	'wikilove.js' => '/* Mã JavaScript tại đây sẽ tùy chỉnh WikiLove; xem http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
