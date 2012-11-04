@@ -6861,6 +6861,7 @@ $messages['uk'] = array(
 
 /** Urdu (اردو)
  * @author Muhammad Shuaib
+ * @author Tahir mq
  * @author පසිඳු කාවින්ද
  */
 $messages['ur'] = array(
@@ -6953,6 +6954,9 @@ $messages['ur'] = array(
 	'wikilove-food-tea-option' => 'چائے کا فنجان',
 	'wikilove-food-tea-desc' => 'پانی کے بعد، چائے دنیا بھر میں انتہائی وسیع پیمانے پر صرف ہونے والا مشروب ہے۔ گرم یا سرد، دودھ یا شکر کے ساتھ ہر طرح سے اس سے لطف اٹھایا جاسکتا ہے۔',
 	'wikilove-food-tea-header' => 'چائے کا فنجان آپ کے لیے!',
+	'wikilove-food-cupcake-option' => 'کپ کیک',
+	'wikilove-food-cupcake-header' => 'ایک کپ کیک آپ کے لیے!',
+	'wikilove-food-strawberries-option' => 'تُوت الارض (سٹرابیری)',
 	'wikilove-type-kittens' => 'بلیاں',
 	'wikilove-kittens-header' => 'بلی آپ کی خدمت میں!',
 	'wikilove-type-makeyourown' => 'اپنا ذاتی بنائیں',
