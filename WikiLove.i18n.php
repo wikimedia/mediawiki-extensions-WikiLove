@@ -1856,19 +1856,19 @@ $messages['fr'] = array(
 	'wikilove-barnstar-resilient-desc' => "L'étoile décorative de détermination est accordée à tout éditeur qui apprend et s’améliore grâce aux critiques, sans jamais laisser les erreurs entraver sa progression en tant qu’éditeur.",
 	'wikilove-barnstar-resilient-title' => 'L’étoile décorative de détermination',
 	'wikilove-barnstar-rosetta-option' => 'Étoile de la pierre de Rosette',
-	'wikilove-barnstar-rosetta-desc' => 'L’étoile de la pierre de Rosette peut être accordée à tout éditeur qui fait des efforts de traduction exceptionnels sur la Wikipédie.', # Fuzzy
+	'wikilove-barnstar-rosetta-desc' => 'L’étoile de la pierre de Rosette peut être accordée à tout éditeur qui fait des efforts de traduction exceptionnels sur {{SITENAME}}.',
 	'wikilove-barnstar-rosetta-title' => 'L’étoile de la pierre de Rosette',
 	'wikilove-barnstar-special-option' => 'Étoile spéciale',
 	'wikilove-barnstar-special-desc' => 'L’étoile spéciale peut être accordée à un utilisateur comme marque d’appréciation lorsqu’aucune autre étoile n’est appropriée.',
 	'wikilove-barnstar-special-title' => 'L’étoile spéciale',
 	'wikilove-barnstar-surreal-option' => 'Étoile surréaliste',
-	'wikilove-barnstar-surreal-desc' => 'L’étoile surréaliste peut être accordée à tout wikipédien qui donne une « saveur spéciale » à la communauté en agissant de façon inattendue.', # Fuzzy
+	'wikilove-barnstar-surreal-desc' => 'L’étoile surréaliste peut être accordée à tout utilisateur qui donne une « saveur spéciale » à la communauté en agissant de façon inattendue.',
 	'wikilove-barnstar-surreal-title' => 'L’étoile surréaliste',
 	'wikilove-barnstar-teamwork-option' => 'Étoile du travail d’équipe',
 	'wikilove-barnstar-teamwork-desc' => 'L’étoile du travail d’équipe peut être accordée lorsque plusieurs éditeurs travaillent ensemble pour améliorer un article.',
 	'wikilove-barnstar-teamwork-title' => 'L’étoile du travail d’équipe',
 	'wikilove-barnstar-technical-option' => 'Étoile technique',
-	'wikilove-barnstar-technical-desc' => 'L’étoile technique peut être accordée à toute personne qui a amélioré la Wikipédie par le biais de ses travaux techniques (programmation, construction de robots, réparation de liens, etc.).', # Fuzzy
+	'wikilove-barnstar-technical-desc' => 'L’étoile technique peut être accordée à toute personne qui a amélioré {{SITENAME}} par le biais de ses travaux techniques (programmation, construction de robots, réparation de liens, etc.).',
 	'wikilove-barnstar-technical-title' => 'L’étoile décorative technique',
 	'wikilove-barnstar-tireless-option' => 'Étoile décorative de contributeur infatigable',
 	'wikilove-barnstar-tireless-desc' => 'L’étoile décorative de contributeur infatigable est décernée à des wikipédiens qui contribuent en grande quantité sans sacrifier la qualité.',
@@ -2284,6 +2284,7 @@ $messages['gsw'] = array(
 /** Hebrew (עברית)
  * @author Amire80
  * @author Deror avi
+ * @author Ijon
  * @author Ofekalef
  * @author Ofrahod
  * @author Rotemliss
@@ -2292,16 +2293,16 @@ $messages['gsw'] = array(
  */
 $messages['he'] = array(
 	'wikilove-desc' => 'הוספת ממשק לשליחת תגובות חיוביות לדפי שיחת משתמש',
-	'wikilove' => 'ויקי־אהבה',
-	'wikilove-enable-preference' => 'הפעלה של הבעת הערכה למשתמשים אחרים באמצעות לשונית ויקי־אהבה',
-	'wikilove-tab-text' => 'ויקי־אהבה',
+	'wikilove' => 'ויקיחיבה',
+	'wikilove-enable-preference' => 'הפעלה של הבעת הערכה למשתמשים אחרים באמצעות לשונית ויקיחיבה',
+	'wikilove-tab-text' => 'ויקיחיבה',
 	'tooltip-ca-wikilove' => 'שליחת הודעה המראה את הערכתך למשתמש',
-	'wikilove-dialog-title' => 'ויקי־אהבה – שליחת הודעת הערכה למשתמש אחר',
+	'wikilove-dialog-title' => 'ויקיחיבה – שליחת הודעת הערכה למשתמש אחר',
 	'wikilove-select-type' => 'בחירת סוג',
 	'wikilove-get-started-header' => 'בואו נתחיל!',
-	'wikilove-get-started-list-1' => 'איזה סוג של ויקי‏־אהבה לשלוח',
-	'wikilove-get-started-list-2' => 'להוסיף פרטים להודעת ויקי־‏אהבה',
-	'wikilove-get-started-list-3' => 'לשלוח ויקי־אהבה!',
+	'wikilove-get-started-list-1' => 'איזה סוג של ויקי‏חיבה לשלוח',
+	'wikilove-get-started-list-2' => 'להוסיף פרטים להודעת ויקיחיבה',
+	'wikilove-get-started-list-3' => 'לשלוח ויקיחיבה!',
 	'wikilove-add-details' => 'הוספת פרטים',
 	'wikilove-image' => 'שם קובץ תמונה:',
 	'wikilove-select-image' => 'בחירת תמונה:',
@@ -2313,7 +2314,7 @@ $messages['he'] = array(
 	'wikilove-button-preview' => 'תצוגה מקדימה',
 	'wikilove-preview' => 'תצוגה מקדימה',
 	'wikilove-notify' => 'להודיע למשתמש בדואר אלקטרוני',
-	'wikilove-button-send' => 'לשלוח ויקי־אהבה',
+	'wikilove-button-send' => 'לשלוח ויקיחיבה',
 	'wikilove-type-barnstars' => 'כוכבים',
 	'wikilove-barnstar-header' => 'קיבלת צל"ש!',
 	'wikilove-barnstar-select' => 'לבחירת כוכב:',
@@ -2450,21 +2451,21 @@ $messages['he'] = array(
 	'wikilove-err-gallery-again' => 'לנסות שוב',
 	'wikilove-err-preview-api' => 'משהו השתבש במהלך תצוגה מקדימה. נא לנסות שוב.',
 	'wikilove-err-send-api' => 'משהו השתבש בעת שליחת ההודעה. נא לנסות שוב.',
-	'wikilove-err-invalid-token' => 'לא הצלחנו לשלוח ויקי־אהבה בשל אבדן מידע כניסה. יש לרענן את הדף או לצאת מהחשבון ולהיכנס בחזרה.',
-	'wikilove-err-not-logged-in' => 'אינכם מחוברים לחשבון. לשימוש בויקי־אהבה נדרשת כניסה לחשבון.',
+	'wikilove-err-invalid-token' => 'לא הצלחנו לשלוח ויקיחיבה בשל אבדן מידע כניסה. יש לרענן את הדף או לצאת מהחשבון ולהיכנס בחזרה.',
+	'wikilove-err-not-logged-in' => 'אינכם מחוברים לחשבון. לשימוש בויקיחיבה נדרשת כניסה לחשבון.',
 	'wikilove-err-invalid-username' => 'שם המשתמש אינו תקני.',
-	'wikilove-err-no-self-wikilove' => 'לא ניתן לשלוח הודעת ויקי‏־אהבה לעצמך.',
+	'wikilove-err-no-self-wikilove' => 'לא ניתן לשלוח הודעת ויקי‏חיבה לעצמך.',
 	'wikilove-err-redirect' => 'דף שיחת המשתמש הוא הפניה.',
 	'wikilove-err-cannot-edit' => 'אינך מורשה לערוך דף זה.',
-	'wikilove-err-max-exceeded' => 'אין באפשרותך לשלוח ויקי־אהבה ליותר מ{{PLURAL:$1|משתמש|$1 משתמשים}} בו-זמנית.',
-	'wikilove-success-number' => '{{PLURAL:$1|הודעת|$1 הודעות}} ויקי־אהבה נשלחו.',
-	'wikilove-summary' => '/* $1 */ הודעת ויקי־אהבה חדשה',
+	'wikilove-err-max-exceeded' => 'אין באפשרותך לשלוח ויקיחיבה ליותר מ{{PLURAL:$1|משתמש|$1 משתמשים}} בו-זמנית.',
+	'wikilove-success-number' => '{{PLURAL:$1|הודעת|$1 הודעות}} ויקיחיבה נשלחו.',
+	'wikilove-summary' => '/* $1 */ הודעת ויקיחיבה חדשה',
 	'wikilove-what-is-this' => 'מה זה?',
 	'wikilove-anon-warning' => 'הערה: משתמש זה אינו רשום ואולי לא יבחין בהודעה זו.',
 	'wikilove-commons-text' => 'אפשר לחפש תמונות באתר $1.',
 	'wikilove-terms' => 'שליחה מביעה את הסכמתך לשקיפות לפי $1 הבאים.',
 	'wikilove-terms-link' => 'התנאים',
-	'wikilove.js' => "/* זהו דף ג'אווה סקריפט להגדרות של ויקי־אהבה. למידע נוסף ר׳
+	'wikilove.js' => "/* זהו דף ג'אווה סקריפט להגדרות של ויקיחיבה. למידע נוסף ר׳
    http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */",
 );
 
