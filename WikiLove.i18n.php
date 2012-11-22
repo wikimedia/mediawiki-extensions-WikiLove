@@ -6789,6 +6789,17 @@ $messages['tr'] = array(
 	'wikilove.js' => "/* Buraya yerleştirilen JavaScript, VikiSevgi'yi özelleştirir. Bkz: http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */",
 );
 
+/** Central Atlas Tamazight (ⵜⴰⵎⴰⵣⵉⵖⵜ)
+ * @author Tifinaghes
+ */
+$messages['tzm'] = array(
+	'wikilove' => 'ⵡⵉⴽⵉ ⵜⴰⵢⵔⵉ',
+	'wikilove-tab-text' => 'ⵡⵉⴽⵉ ⵜⴰⵢⵔⵉ',
+	'wikilove-select-type' => 'ⵙⵜⵉ ⴰⵏⴰⵡ',
+	'wikilove-enter-message' => 'ⴰⵔⴰ ⵜⴰⴱⵔⴰⵜ:',
+	'wikilove-image-example' => '(ⴰⵎⴷⵢⴰ: Trophy.png)',
+);
+
 /** Ukrainian (українська)
  * @author Base
  * @author Dim Grits
