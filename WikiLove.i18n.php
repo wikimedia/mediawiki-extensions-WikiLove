@@ -1019,6 +1019,7 @@ $messages['diq'] = array(
 	'wikilove-button-preview' => 'Verqayt',
 	'wikilove-preview' => 'Verqayt',
 	'wikilove-food-baklava-header' => 'Tenê beqlewa şıma rê!',
+	'wikilove-what-is-this' => 'No çıko?',
 );
 
 /** Greek (Ελληνικά)
