@@ -4764,11 +4764,12 @@ $messages['pfl'] = array(
  * @author BeginaFelicysym
  * @author Przemub
  * @author Sp5uhe
+ * @author WTM
  */
 $messages['pl'] = array(
 	'wikilove-desc' => 'Dodaje interfejs ułatwiający dodawanie pozytywnych opinii do stron dyskusji innych użytkowników.',
 	'wikilove' => 'WikiLove',
-	'wikilove-enable-preference' => 'Wyświetlaj innym użytkownikom zakładkę WikiLove umożliwiającą wysłanie wiadomości wyrażającej uznanie',
+	'wikilove-enable-preference' => 'Wyświetlaj zakładkę WikiLove umożliwiającą wysłanie do innego użytkownika wiadomości wyrażającej uznanie',
 	'wikilove-tab-text' => 'WikiLove',
 	'tooltip-ca-wikilove' => 'Napisz wiadomość do tego użytkownika, wyrażając swoje uznanie',
 	'wikilove-dialog-title' => 'WikiLove – wyślij do innego użytkownika wiadomość wyrażającą uznanie',
@@ -4793,7 +4794,7 @@ $messages['pl'] = array(
 	'wikilove-barnstar-header' => 'Gwiazda dla Ciebie!',
 	'wikilove-barnstar-select' => 'Wybierz gwiazdę:',
 	'wikilove-barnstar-original-option' => 'Gwiazda Oryginalności',
-	'wikilove-barnstar-original-desc' => 'Ta gwiazda jest przyznawana w uznaniu za szczególnie ciekawe wpisy do Wikipedii, pozwalają pokazać użytkownikom, że ich ciężka praca została dostrzeżona i doceniona.',
+	'wikilove-barnstar-original-desc' => 'Ta gwiazda jest przyznawana w uznaniu za szczególnie ciekawe wpisy do Wikipedii, pozwala pokazać użytkownikom, że ich ciężka praca została dostrzeżona i doceniona.',
 	'wikilove-barnstar-original-title' => 'Gwiazda Oryginalności',
 	'wikilove-barnstar-admins-option' => 'Gwiazda Administratora',
 	'wikilove-barnstar-admins-desc' => 'Gwiazda Administratora jest przyznawana administratorom, którzy podjęli szczególnie trudne decyzje lub wykonali nużące a jednak potrzebne zadanie administracyjne.',
@@ -4820,9 +4821,9 @@ $messages['pl'] = array(
 	'wikilove-barnstar-minor-option' => 'Mniejsza gwiazda',
 	'wikilove-barnstar-minor-desc' => 'Ta gwiazda przeznaczona jest dla osób wykonujących drobne, lecz użyteczne edycje.',
 	'wikilove-barnstar-minor-title' => 'Mniejsza gwiazda',
-	'wikilove-barnstar-antispam-option' => 'Gwiazda No Spam',
-	'wikilove-barnstar-antispam-desc' => 'Gwiazda No Spam przeznaczona jest dla osób, które wykazały się w walce ze spamem na stronie {{SITENAME}}.',
-	'wikilove-barnstar-antispam-title' => 'Gwiazda No Spam',
+	'wikilove-barnstar-antispam-option' => 'Gwiazda Antyspam',
+	'wikilove-barnstar-antispam-desc' => 'Gwiazda Antyspam przeznaczona jest dla osób, które wykazały się w walce ze spamem na stronie {{SITENAME}}.',
+	'wikilove-barnstar-antispam-title' => 'Gwiazda Antyspam',
 	'wikilove-barnstar-photographers-option' => 'Gwiazda Fotografa',
 	'wikilove-barnstar-photographers-desc' => 'Gwiazda Fotografa jest dla osób, które wspierają {{SITENAME}} swoimi umiejętnościami fotograficznymi.',
 	'wikilove-barnstar-photographers-title' => 'Gwiazda Fotografa',
