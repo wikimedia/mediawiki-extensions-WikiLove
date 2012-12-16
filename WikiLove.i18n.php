@@ -199,11 +199,13 @@ $messages['en'] = array(
  * @author Nemo bis
  * @author Purodha
  * @author SPQRobin
+ * @author Shirayuki
  * @author Siebrand
  * @author Umherirrender
  * @author Whym
  */
 $messages['qqq'] = array(
+	'wikilove-desc' => '{{desc|name=Wiki Love|url=http://www.mediawiki.org/wiki/Extension:WikiLove}}',
 	'wikilove-enable-preference' => 'Label of the option to turn on WikiLove in the preferences',
 	'wikilove-tab-text' => '[[File:Wiki Love 001.png|thumb]]',
 	'tooltip-ca-wikilove' => '[[File:Wiki Love 001.png|thumb]]',
@@ -6808,6 +6810,7 @@ $messages['tzm'] = array(
  * @author Microcell
  * @author Olvin
  * @author Pig1995z
+ * @author Steve.rusyn
  * @author Тест
  */
 $messages['uk'] = array(
@@ -6839,6 +6842,7 @@ $messages['uk'] = array(
 	'wikilove-barnstar-select' => 'Вибрати орден:',
 	'wikilove-barnstar-original-option' => 'Орден за заслуги',
 	'wikilove-type-food' => 'Їжа та напої',
+	'wikilove-food-baklava-option' => 'Пахлава',
 	'wikilove-food-beer-option' => 'Пиво',
 	'wikilove-food-beer-header' => 'Пиво для вас!',
 	'wikilove-food-cheeseburger-option' => 'Чизбургер',
