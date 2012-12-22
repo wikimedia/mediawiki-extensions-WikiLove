@@ -1300,6 +1300,7 @@ $messages['es'] = array(
 );
 
 /** Estonian (eesti)
+ * @author Avjoska
  * @author Pikne
  */
 $messages['et'] = array(
@@ -1359,6 +1360,8 @@ $messages['et'] = array(
 	'wikilove-food-cookie-option' => 'Küpsis',
 	'wikilove-food-cookie-desc' => 'Küpsis on väike küpsetatud maius, millel võib olla väga erinev maitse, kuju ja suurus.',
 	'wikilove-food-cookie-header' => 'Sulle on küpsis!',
+	'wikilove-food-coffee-option' => 'Tass kohvi',
+	'wikilove-food-coffee-header' => 'Tass kohvi sulle!',
 	'wikilove-food-tea-option' => 'Tass teed',
 	'wikilove-food-tea-desc' => 'Tee on vee järel enim tarbitud jook maailmas. Seda saab nautida nii soojalt kui ka külmalt, nii piimaga kui ka suhkruga.',
 	'wikilove-food-tea-header' => 'Sulle on tass teed!',
@@ -1382,6 +1385,7 @@ $messages['et'] = array(
 	'wikilove-err-gallery-again' => 'Proovi uuesti',
 	'wikilove-err-preview-api' => 'Eelvaate kuvamise juures läks midagi valesti. Palun proovi uuesti.',
 	'wikilove-err-send-api' => 'Sõnumi saatmise juures läks midagi valesti. Palun proovi uuesti.',
+	'wikilove-err-invalid-username' => 'Kasutajanimi ei sobi.',
 	'wikilove-summary' => '/* $1 */ uus vikitervitus',
 	'wikilove-what-is-this' => 'Mis see on?',
 	'wikilove-anon-warning' => 'Märkus: See kasutaja pole registreeritud ja ta ei saa su sõnumit märgata.',
@@ -4585,7 +4589,7 @@ $messages['nl'] = array(
 	'wikilove-barnstar-photographers-desc' => 'De Fotografenster wordt uitgereikt aan hen die {{SITENAME}} onvermoeibaar verrijken met hun fotografische vaardigheden en bijdragen.',
 	'wikilove-barnstar-photographers-title' => 'De Fotografenster',
 	'wikilove-barnstar-kindness-option' => 'De Willekeurige vriendelijkheidster',
-	'wikilove-barnstar-kindness-desc' => 'De Willekeurige vriendelijkheid-ster kan worden toegekend aan dienenen die een patroon vertonen van vriendelijk zijn zonder dat dat strikt noodzakelijk is of dat daarom wordt gevraagd.',
+	'wikilove-barnstar-kindness-desc' => 'De Willekeurige vriendelijkhedenster kan worden toegekend aan diegenen die een patroon vertonen van vriendelijk zijn zonder dat dat strikt noodzakelijk is of dat daarom wordt gevraagd.',
 	'wikilove-barnstar-kindness-title' => 'De Willekeurige vriendelijkheid-ster',
 	'wikilove-barnstar-reallife-option' => 'Levensechtster',
 	'wikilove-barnstar-reallife-desc' => 'De Levensechtster wordt toegekend aan redacteuren die zowel online als offline bijdragen, door wikigerelateerde bijeenkomsten te organiseren.',
@@ -5176,6 +5180,7 @@ $messages['pt-br'] = array(
 /** Romanian (română)
  * @author Firilacroco
  * @author Minisarm
+ * @author Stelistcristi
  */
 $messages['ro'] = array(
 	'wikilove-desc' => 'Adaugă o interfață pentru facilitarea publicării părerilor bune despre un utilizator, pe pagina de discuții a acestuia',
@@ -5204,11 +5209,25 @@ $messages['ro'] = array(
 	'wikilove-type-barnstars' => 'Medalie',
 	'wikilove-type-food' => 'Mâncare și băutură',
 	'wikilove-food-beer-header' => 'O bere pentru dumneavoastră!',
+	'wikilove-food-cheeseburger-header' => 'Un cheeseburger pentru dvs.!',
 	'wikilove-food-cookie-option' => 'Prăjitură',
+	'wikilove-food-cookie-desc' => 'Fursecurile (cunoscute ca biscuiți în Regatul Unit) sunt bunătăți mici coapte care vin într-o gamă largă de arome, forme și mărimi.',
+	'wikilove-food-cookie-header' => 'Un fursesc pentru dvs.!',
 	'wikilove-food-coffee-option' => 'Ceașcă cu cafea',
+	'wikilove-food-coffee-desc' => 'Apreciată în lumea întreagă, cafeaua este cunoscută pentru efectul energizant asupra oamenilor.',
+	'wikilove-food-coffee-header' => 'O ceașcă de cafea pentru dvs.!',
 	'wikilove-food-tea-option' => 'Ceașcă cu ceai',
+	'wikilove-food-tea-desc' => 'După apă, ceaiul este cea mai consumată băutură din lume. Acesta poate fi savurat cald sau rece, cu lapte sau zahăr.',
+	'wikilove-food-tea-header' => 'O ceașcă de ceai pentru dvs.!',
+	'wikilove-food-cupcake-option' => 'Prăjiturică',
+	'wikilove-food-cupcake-desc' => 'O prăjiturică este o prăjitură mai mică destinată servirii unei singure persoane. Acestea sunt adeseori servite cu glazură și drajeuri ornamentale deasupra.',
+	'wikilove-food-cupcake-header' => 'O prăjiturică pentru dvs.!',
 	'wikilove-food-pie-option' => 'Plăcintă',
+	'wikilove-food-pie-desc' => 'Plăcintele pot fi umplute cu o largă varietate de ingrediente dulci sau cimbru. Varietățile populare includ merele, cireșe, piersici, ciocolată și nuci pecan.',
+	'wikilove-food-pie-header' => 'O plăcintă pentru dvs.!',
 	'wikilove-food-strawberries-option' => 'Căpșuni',
+	'wikilove-food-strawberries-desc' => 'Căpșunile (care nu sunt de fapt fructe) sunt apreciate în mare măsură pentru aroma caracteristică, culoarea roșie strălucitoare, textura zemoasă și dulceața.',
+	'wikilove-food-strawberries-header' => 'Un bol de căpșuni pentru dvs.!',
 	'wikilove-type-kittens' => 'Pisoi',
 	'wikilove-kittens-header' => 'Un pisoi pentru dumneavoastră!',
 	'wikilove-type-makeyourown' => 'Creați-vă propriul',
