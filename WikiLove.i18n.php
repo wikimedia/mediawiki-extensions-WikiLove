@@ -5223,7 +5223,7 @@ $messages['ro'] = array(
 	'wikilove-food-cupcake-desc' => 'O prăjiturică este o prăjitură mai mică destinată servirii unei singure persoane. Acestea sunt adeseori servite cu glazură și drajeuri ornamentale deasupra.',
 	'wikilove-food-cupcake-header' => 'O prăjiturică pentru dvs.!',
 	'wikilove-food-pie-option' => 'Plăcintă',
-	'wikilove-food-pie-desc' => 'Plăcintele pot fi umplute cu o largă varietate de ingrediente dulci sau cimbru. Varietățile populare includ merele, cireșe, piersici, ciocolată și nuci pecan.',
+	'wikilove-food-pie-desc' => 'Plăcintele pot fi umplute cu o largă varietate de ingrediente dulci sau picante. Printre varietățile populare se numără merele, cireșele, piersicile, ciocolata și nucile pecan.',
 	'wikilove-food-pie-header' => 'O plăcintă pentru dvs.!',
 	'wikilove-food-strawberries-option' => 'Căpșuni',
 	'wikilove-food-strawberries-desc' => 'Căpșunile (care nu sunt de fapt fructe) sunt apreciate în mare măsură pentru aroma caracteristică, culoarea roșie strălucitoare, textura zemoasă și dulceața.',
@@ -5586,12 +5586,16 @@ $messages['sa'] = array(
 	'wikilove-barnstar-diligence-option' => 'सुपरिश्रमसुवर्णतारकम्',
 	'wikilove-barnstar-diligence-title' => 'सुपरिश्रमसुवर्णतारकम्',
 	'wikilove-barnstar-diplomacy-option' => 'नयस्य सुवर्णतारकम्',
+	'wikilove-barnstar-diplomacy-title' => 'नयसुवर्णतारकम्',
 	'wikilove-barnstar-goodhumor-option' => 'सुमनस्कसुवर्णतारकम्',
 	'wikilove-barnstar-goodhumor-desc' => 'सुमनस्कसुवर्णतारकं तेभ्यः प्रदीयते ये सततं सर्वेषां मनांसि रञ्जयन्ति, संघर्षान् विरलीकुर्वन्ति, {{SITENAME}} इत्येतत् च श्रेष्ठस्थानत्वेन कुर्वन्ति।',
 	'wikilove-barnstar-goodhumor-title' => 'सुमनस्कसुवर्णतारकम्',
 	'wikilove-barnstar-brilliant-option' => 'प्रखरोपायसुवर्णतारकम्',
+	'wikilove-barnstar-brilliant-desc' => 'प्रखरोपायसुवर्णतारकं तु तादृशाय सदस्याय प्रदीयते यस्तु कस्याश्चित् जटिलायाः समस्यायाः उत्कृष्टसमाधानं ददाति।',
 	'wikilove-barnstar-brilliant-title' => 'प्रखरोपायसुवर्णतारकम्',
 	'wikilove-barnstar-citation-option' => 'उद्धरणसुवर्णतारकम्',
+	'wikilove-barnstar-citation-desc' => 'उद्धरणसुवर्णतारकं तु तस्मै सदस्याय प्रदीयते यस्तु पूर्वे अस्रोतस्के लेखे सन्दर्भान् तथा च वाक्यस्थानि उद्धरणानि ददाति।',
+	'wikilove-barnstar-citation-title' => 'उद्धरणसुवर्णतारकम्',
 	'wikilove-barnstar-civility-option' => 'भद्रसुवर्णतारकम्',
 	'wikilove-barnstar-defender-title' => 'विकिगोप्तृसुवर्णतारकम्',
 	'wikilove-barnstar-editors-title' => 'सम्पादकसुवर्णतारकम्',
@@ -5609,7 +5613,9 @@ $messages['sa'] = array(
 	'wikilove-barnstar-writers-option' => 'लेखकसुवर्णतारकम्',
 	'wikilove-type-food' => 'खाद्यकं पेयं च',
 	'wikilove-food-select' => 'खाद्यकं पेयं वा चीयताम्:',
+	'wikilove-food-coffee-header' => 'भवदर्थं एकं काफीचषकम् !',
 	'wikilove-food-tea-option' => 'चायचषकम्',
+	'wikilove-food-tea-desc' => 'जलस्य पश्चात्, चायं तु संसारे सर्वाधिकोपभुक्तं पेयम्। एषा उष्णा तथा च शीताऽपि रोचते, दुग्धेन, शर्करया च सह।',
 	'wikilove-food-tea-header' => 'भवदर्थम् एकं चायचषकम्!',
 	'wikilove-type-kittens' => 'मार्जारशावकाः',
 	'wikilove-kittens-header' => 'भवदर्थम् एकः मार्जारशावकः!',
@@ -6918,6 +6924,7 @@ $messages['tzm'] = array(
  * @author Olvin
  * @author Pig1995z
  * @author Steve.rusyn
+ * @author Ата
  * @author Тест
  */
 $messages['uk'] = array(
@@ -6977,6 +6984,7 @@ $messages['uk'] = array(
 	'wikilove-err-gallery-again' => 'Спробуйте ще раз',
 	'wikilove-err-preview-api' => 'Щось пішло не так під час перегляду. Будь ласка, спробуйте ще раз.',
 	'wikilove-err-send-api' => 'Щось пішло не так під час надсилання повідомлення. Будь ласка, спробуйте ще раз.',
+	'wikilove-err-invalid-token' => 'Не вдалося надіслати Вікісимпатію через втрату даних сесії. Спробуйте перезавантажити сторінку або вийти з системи і увійти знову.',
 	'wikilove-summary' => '/* $1 */ нова Вікісимпатія',
 	'wikilove-what-is-this' => 'Що це?',
 	'wikilove-anon-warning' => 'Примітка: Цей користувач не зареєстрований, він чи вона може не помітити це повідомлення.',
