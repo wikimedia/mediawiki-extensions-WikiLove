@@ -1595,6 +1595,7 @@ $messages['fa'] = array(
  * @author Nedergard
  * @author Nike
  * @author Olli
+ * @author VezonThunder
  */
 $messages['fi'] = array(
 	'wikilove-desc' => 'Käyttöliittymä joka helpottaa positiivisen käyttäjäpalautteen antamista käyttäjien keskustelusivuilla.',
@@ -1756,6 +1757,9 @@ $messages['fi'] = array(
 	'wikilove-err-gallery-again' => 'Yritä uudelleen',
 	'wikilove-err-preview-api' => 'Esikatselu epäonnistui. Yritä uudelleen.',
 	'wikilove-err-send-api' => 'Viestin lähetyksessä tapahtui virhe. Yritä uudelleen.',
+	'wikilove-err-invalid-username' => 'Käyttäjänimi ei kelpaa.',
+	'wikilove-err-redirect' => 'Käyttäjän keskustelusivu on uudelleenohjaus.',
+	'wikilove-err-cannot-edit' => 'Sinulla ei ole oikeutta muokata tätä sivua.',
 	'wikilove-summary' => '/* $1 */ uusi Wikirakkaus-viesti',
 	'wikilove-what-is-this' => 'Mikä tämä on?',
 	'wikilove-anon-warning' => 'Huomautus: Tämä käyttäjä ei ole rekisteröitynyt, joten hän ei välttämättä huomaa tätä viestiä.',
@@ -5325,6 +5329,7 @@ $messages['roa-tara'] = array(
  * @author Eugrus
  * @author Haffman
  * @author Kalan
+ * @author Ole Yves
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
@@ -5488,9 +5493,13 @@ $messages['ru'] = array(
 	'wikilove-err-preview-api' => 'Что-то пошло не так во время предпросмотра. Пожалуйста, попробуйте ещё раз.',
 	'wikilove-err-send-api' => 'Что-то пошло не так при отправке сообщения. Пожалуйста, попробуйте ещё раз.',
 	'wikilove-err-invalid-token' => 'Не удалось отправить сообщение WikiLove из-за потери данных сессии. Попробуйте перезагрузить страницу или перезайти в свой аккаунт.',
+	'wikilove-err-not-logged-in' => 'Вы не вошли в систему. Пожалуйста, войдите для того, чтобы использовать WikiLove.',
 	'wikilove-err-invalid-username' => 'Такое имя участника недопустимо.',
+	'wikilove-err-no-self-wikilove' => 'Вы не можете отправить WikiLove самому себе, извините!',
 	'wikilove-err-redirect' => 'Страница обсуждения пользователя является перенаправлением.',
 	'wikilove-err-cannot-edit' => 'У вас нет прав, чтобы править эту страницу.',
+	'wikilove-err-max-exceeded' => 'Вы не можете отправить WikiLove для более чем $1 {{PLURAL:$1|участника|участников}} за один раз.',
+	'wikilove-success-number' => '$1 {{PLURAL:$1|сообщение|сообщения|сообщений}} отправлен{{PLURAL:$1|о|ы|о}}.',
 	'wikilove-summary' => '/ * $1 * / новая ВикиСимпатия',
 	'wikilove-what-is-this' => 'Что это?',
 	'wikilove-anon-warning' => 'Примечание. Этот участник не зарегистрирован, он или она может не заметить это сообщение.',
@@ -7000,6 +7009,7 @@ $messages['uk'] = array(
 	'wikilove-barnstar-antivandalism-desc' => 'Орденом анти-вандалізму може бути відзначений той, хто вніс значний вклад у захист від вандалізму та подолання його наслідків у {{SITENAME}}.',
 	'wikilove-barnstar-antivandalism-title' => 'Орден анти-вандалізму',
 	'wikilove-barnstar-diligence-option' => 'Орден за старанність',
+	'wikilove-barnstar-diligence-desc' => 'Орденом за старанність присуджується в знак визнання поєднання надзвичайної уважності, акуратності та заслуг перед спільнотою.',
 	'wikilove-barnstar-diligence-title' => 'Орден за старанність',
 	'wikilove-barnstar-diplomacy-option' => 'Дипломатичний орден',
 	'wikilove-barnstar-diplomacy-desc' => 'Дипломатичним орденом можна відзначити користувачів, які допомогли мирному урегулюванню конфіліктів у {{SITENAME}}.',
@@ -7023,13 +7033,40 @@ $messages['uk'] = array(
 	'wikilove-barnstar-designers-desc' => 'Орденом графічного дизайнера відзначаються ті, хто невтомно працює, щоб забезпечити {{SITENAME}} вільною і високоякісною графікою.',
 	'wikilove-barnstar-designers-title' => 'Орден графічного дизайнера',
 	'wikilove-barnstar-minor-option' => 'Малий орден',
+	'wikilove-barnstar-minor-desc' => 'Малим орденом відзначають дрібні правки надзвичайної якості. Малі правки часто непомітні, але вони становлять істотний внесок у {{SITENAME}}.',
 	'wikilove-barnstar-minor-title' => 'Малий орден',
 	'wikilove-barnstar-antispam-option' => 'Орден анти-спаму',
 	'wikilove-barnstar-antispam-desc' => 'Орденом анти-спаму відзначаються користувачі, завдяки роботі яких, {{SITENAME}} очищується від спаму.',
 	'wikilove-barnstar-antispam-title' => 'Орден анти-спаму',
 	'wikilove-barnstar-photographers-option' => 'Орден фотографа',
+	'wikilove-barnstar-photographers-desc' => 'Орденом фотографа відзначаються ті, хто завдяки своїй фотографічній майстерності та внеску, невтомно покращує {{SITENAME}}.',
 	'wikilove-barnstar-photographers-title' => 'Орден фотографа',
+	'wikilove-barnstar-reallife-option' => 'Орден реального життя',
+	'wikilove-barnstar-reallife-desc' => 'Орденом реального життя відзначаються редактори, які зробили внесок як в онлайні, так і оффлайні, організовуючи різноманітні вікізаходи в реальному житті.',
+	'wikilove-barnstar-reallife-title' => 'Орден реального життя',
+	'wikilove-barnstar-rosetta-option' => 'Розетський орден',
+	'wikilove-barnstar-rosetta-desc' => 'Розетським орденом нагороджується редактор, який досяг високих результатів у перекладі {{SITENAME}}.',
+	'wikilove-barnstar-rosetta-title' => 'Розетський орден',
+	'wikilove-barnstar-special-option' => 'Особливий орден',
+	'wikilove-barnstar-special-desc' => 'Особливим орденом можна відзначити користувача у якості жеста подяки, якщо немає жодного іншого підходящого ордена.',
+	'wikilove-barnstar-special-title' => 'Особливий орден',
+	'wikilove-barnstar-surreal-option' => 'Сюрреалістичний орден',
+	'wikilove-barnstar-surreal-desc' => 'Сюрреалістичним орденом відзначається користувач, який своїми непередбачуваними діями вносить особливий колорит у спільноту.',
+	'wikilove-barnstar-surreal-title' => 'Сюрреалістичний орден',
+	'wikilove-barnstar-teamwork-option' => 'Орден командної роботи',
+	'wikilove-barnstar-teamwork-desc' => 'Орденом командної роботи нагороджуються редактори, які спільно працюють над покращенням статті.',
+	'wikilove-barnstar-teamwork-title' => 'Орден командної роботи',
+	'wikilove-barnstar-technical-option' => 'Технічний орден',
+	'wikilove-barnstar-technical-desc' => 'Технічним орденом відзначаються ті, хто покращив {{SITENAME}} своєю технічною роботою (програмування, ботоводство, виправлення посилань).',
+	'wikilove-barnstar-technical-title' => 'Технічний орден',
+	'wikilove-barnstar-tireless-option' => 'Орден невтомного редактора',
+	'wikilove-barnstar-tireless-desc' => 'Орденом невтомного редактора відзначаються особливо сумлінні редактори, які виконують величезний обсяг роботи без шкоди для якості.',
+	'wikilove-barnstar-tireless-title' => 'Орден невтомного редактора',
+	'wikilove-barnstar-writers-option' => 'Письменницький орден',
+	'wikilove-barnstar-writers-desc' => 'Письменницьким орденом можна відзначити будь-якого користувача, який написав велику кількість статей або зробив багато редагувань.',
+	'wikilove-barnstar-writers-title' => 'Письменницький орден',
 	'wikilove-type-food' => 'Їжа та напої',
+	'wikilove-food-select' => 'Виберіть їжу чи напій:',
 	'wikilove-food-baklava-option' => 'Пахлава',
 	'wikilove-food-beer-option' => 'Пиво',
 	'wikilove-food-beer-header' => 'Пиво для вас!',
