@@ -1120,6 +1120,7 @@ $messages['eo'] = array(
  * @author Dalton2
  * @author Fitoschido
  * @author Imre
+ * @author PoLuX124
  */
 $messages['es'] = array(
 	'wikilove-desc' => 'Añade una interfaz para facilitar comentarios positivos de los usuarios a las páginas de discusión de otros usuarios',
@@ -1143,7 +1144,7 @@ $messages['es'] = array(
 	'wikilove-image-example' => '(ejemplo: Trophy.png)',
 	'wikilove-button-preview' => 'Previsualizar',
 	'wikilove-preview' => 'Previsualización',
-	'wikilove-notify' => 'Notificar al usuario por correo-e',
+	'wikilove-notify' => 'Notificar al usuario por correo electrónico',
 	'wikilove-button-send' => 'Enviar WikiAprecio',
 	'wikilove-type-barnstars' => 'Reconocimientos',
 	'wikilove-barnstar-header' => '¡Una barnstar para ti!',
