@@ -701,7 +701,9 @@ $messages['ca'] = array(
  */
 $messages['cs'] = array(
 	'wikilove-desc' => 'Přidává rozhraní pro přidávání pozitivního hodnocení do uživatelských diskusí',
+	'wikilove' => 'WikiLove',
 	'wikilove-enable-preference' => 'Povolit oceňování ostatních uživatelů pomocí záložky WikiLove',
+	'wikilove-tab-text' => 'WikiLove',
 	'wikilove-select-type' => 'Vyber druh',
 	'wikilove-add-details' => 'Přidat podrobnosti',
 	'wikilove-image' => 'Název obrázku:',
@@ -733,10 +735,17 @@ $messages['cs'] = array(
 	'wikilove-food-tea-option' => 'Šálek čaje',
 	'wikilove-food-tea-desc' => 'Čaj je hned po vodě druhým nejoblíběnějším nápojem na světě. Podává se horký nebo studený.',
 	'wikilove-food-tea-header' => 'Šálek čaje pro tebe!',
+	'wikilove-food-cupcake-option' => 'Košíček',
+	'wikilove-food-cupcake-header' => 'Košíček pro vás!',
+	'wikilove-food-pie-option' => 'Koláč',
+	'wikilove-food-pie-header' => 'Koláč pro vás!',
+	'wikilove-food-strawberries-option' => 'Jahody',
+	'wikilove-food-strawberries-header' => 'Miska jahod pro vás!',
 	'wikilove-type-kittens' => 'Koťátka',
 	'wikilove-kittens-header' => 'Koťátko pro tebe!',
 	'wikilove-type-makeyourown' => 'Vyrob si vlastní',
 	'wikilove-err-header' => 'Prosíme, zadejte nadpis',
+	'wikilove-err-gallery-again' => 'Zkusit znovu',
 );
 
 /** Danish (dansk)
@@ -5838,7 +5847,11 @@ $messages['si'] = array(
 	'wikilove-err-gallery-again' => 'නැවත උත්සහ කරන්න',
 	'wikilove-err-preview-api' => 'පෙරදසුගත කිරීමේ අතරතුරදී කුමක් හෝ වැරදුනා. කරුණාකර නැවත උත්සහ කරන්න.',
 	'wikilove-err-send-api' => 'පණිවුඩය යවන අතරතුරදී කුමක් හෝ වැරදුනා. කරුණාකර නැවත උත්සහ කරන්න.',
+	'wikilove-err-not-logged-in' => 'ඔබ ප්‍රවිෂ්ට වී නොමැත. විකිආදරය භාවිතා කිරීම සඳහා කරුණාකර ප්‍රවිෂ්ට වන්න.',
 	'wikilove-err-invalid-username' => 'පරිශීලක නාමය වලංගු නැත.',
+	'wikilove-err-redirect' => 'පරිශීලකගේ කතාබහ පිටුව යළියොමු කිරීමකි.',
+	'wikilove-err-cannot-edit' => 'එම පිටුව සංස්කරණය කිරීම සඳහා ඔබ හට අවසර නොමැත.',
+	'wikilove-success-number' => 'විකිආදර {{PLURAL:$1|පණිවිඩ}} $1 යවන ලදී.',
 	'wikilove-summary' => '/* $1 */ නව විකිආදර පණිවුඩය',
 	'wikilove-what-is-this' => 'මේක මොකක්ද?',
 	'wikilove-anon-warning' => 'සටහන: මෙම පරිශිලකයා ලියාපදිංචි කර නොමැත, මෙම පණිවුඩය ඔහු හෝ ඇයව දැනුවත් නොකරනු ඇත.',
