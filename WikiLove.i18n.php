@@ -4632,7 +4632,7 @@ $messages['nl'] = array(
 	'wikilove-barnstar-teamwork-desc' => 'De Teamwerkster kan worden toegekend als meerdere gebruikers samenwerken om een pagina te verbeteren.',
 	'wikilove-barnstar-teamwork-title' => 'De Teamwerkster',
 	'wikilove-barnstar-technical-option' => 'Technische ster',
-	'wikilove-barnstar-technical-desc' => 'De technische ster is voor iedereen die {{SITENAME}} heeft verbeterd door zijn/haar technisch werk (programmeren, het bouwen van een bot, verwijzingen corrigeren, enzovoort).',
+	'wikilove-barnstar-technical-desc' => 'De technische ster is voor iedereen die {{SITENAME}} heeft verbeterd door zijn/haar technisch werk (programmeren, het bouwen van een bot, koppelingen corrigeren, enzovoort).',
 	'wikilove-barnstar-technical-title' => 'De technische ster',
 	'wikilove-barnstar-tireless-option' => 'Onvermoeibare bijdragersster',
 	'wikilove-barnstar-tireless-desc' => 'De Onvermoeibare bijdragersster wordt uitgereikt aan juist die gebruikers die een buitengewoon grote hoeveelheid werk bijdragen zonder in te boeten aan kwaliteit.',
@@ -5237,6 +5237,9 @@ $messages['ro'] = array(
 	'wikilove-button-send' => 'Trimiteți WikiLove',
 	'wikilove-type-barnstars' => 'Medalie',
 	'wikilove-type-food' => 'Mâncare și băutură',
+	'wikilove-food-baklava-option' => 'Baklava',
+	'wikilove-food-beer-option' => 'Bere',
+	'wikilove-food-beer-desc' => 'Berea este cea mai consumată băutură alcoolică din lume și probabil cea mai veche. Este a treiea cea mai populară băutură după apă și ceai.',
 	'wikilove-food-beer-header' => 'O bere pentru dumneavoastră!',
 	'wikilove-food-cheeseburger-header' => 'Un cheeseburger pentru dvs.!',
 	'wikilove-food-cookie-option' => 'Prăjitură',
@@ -5849,6 +5852,7 @@ $messages['si'] = array(
 	'wikilove-err-send-api' => 'පණිවුඩය යවන අතරතුරදී කුමක් හෝ වැරදුනා. කරුණාකර නැවත උත්සහ කරන්න.',
 	'wikilove-err-not-logged-in' => 'ඔබ ප්‍රවිෂ්ට වී නොමැත. විකිආදරය භාවිතා කිරීම සඳහා කරුණාකර ප්‍රවිෂ්ට වන්න.',
 	'wikilove-err-invalid-username' => 'පරිශීලක නාමය වලංගු නැත.',
+	'wikilove-err-no-self-wikilove' => 'ඔබ විසින් ඔබ වෙතටම විකි ආදර යැවිය නොහැක. කණගාටුයි!',
 	'wikilove-err-redirect' => 'පරිශීලකගේ කතාබහ පිටුව යළියොමු කිරීමකි.',
 	'wikilove-err-cannot-edit' => 'එම පිටුව සංස්කරණය කිරීම සඳහා ඔබ හට අවසර නොමැත.',
 	'wikilove-success-number' => 'විකිආදර {{PLURAL:$1|පණිවිඩ}} $1 යවන ලදී.',
@@ -6982,6 +6986,20 @@ $messages['tzm'] = array(
 	'wikilove-select-type' => 'ⵙⵜⵉ ⴰⵏⴰⵡ',
 	'wikilove-enter-message' => 'ⴰⵔⴰ ⵜⴰⴱⵔⴰⵜ:',
 	'wikilove-image-example' => '(ⴰⵎⴷⵢⴰ: Trophy.png)',
+);
+
+/** Uyghur (Arabic script) (ئۇيغۇرچە)
+ * @author Sahran
+ */
+$messages['ug-arab'] = array(
+	'wikilove-select-type' => 'تىپىنى تاللاڭ',
+	'wikilove-button-preview' => 'ئالدىن كۆزەت',
+	'wikilove-preview' => 'ئالدىن كۆزەت',
+	'wikilove-food-pie-option' => 'دۈگىلەك دىئاگرامما',
+	'wikilove-err-image' => 'سۈرەت تاللاڭ.',
+	'wikilove-err-gallery-again' => 'قايتا سىنا',
+	'wikilove-commons-link' => 'ۋىكى ۋاستە ھەمبەھىر',
+	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
 );
 
 /** Ukrainian (українська)
