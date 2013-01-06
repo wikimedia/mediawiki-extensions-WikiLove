@@ -1,3 +1,4 @@
+/*global window:false */
 ( function( $ ) {
 
 var	options = {}, // options modifiable by the user
@@ -535,7 +536,7 @@ $.wikiLove = {
 	},
 
 	showPreviewError: function( errmsg ) {
-		$( '#mw-wikilove-preview' ).append( $( '<div class="mw-wikilove-error"></div>' ).text( errmsg ) );
+		$( '#mw-wikilove-preview' ).append( $( '<div class="mw-wikilove-error"></div>' ).text( mw.msg( errmsg ) ) );
 	},
 	
 	showSuccessMsg: function( msg ) {
@@ -724,9 +725,9 @@ $.wikiLove = {
 	
 					if ( data.error !== undefined ) {
 						if ( data.error.info === 'Invalid token' ) {
-							$.wikiLove.showPreviewError( mw.msg( 'wikilove-err-invalid-token' ) );
+							$.wikiLove.showPreviewError( 'wikilove-err-invalid-token' );
 						} else {
-							$.wikiLove.showPreviewError( data.error.info );
+							$.wikiLove.showPreviewError( 'wikilove-err-send-api' );
 						}
 						return;
 					}
