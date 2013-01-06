@@ -399,6 +399,13 @@ $messages['az'] = array(
 	'wikilove-what-is-this' => 'Bu nədir?',
 );
 
+/** South Azerbaijani (تورکجه)
+ * @author Ebrahimi-amir
+ */
+$messages['azb'] = array(
+	'wikilove-enable-preference' => 'ویکی‌اودول دیلچه‌سین، او بیری ایستیفاده‌چی‌لردن تشکور ائتمک اوچون فعال ائتمک',
+);
+
 /** Bashkir (башҡортса)
  * @author Haqmar
  */
