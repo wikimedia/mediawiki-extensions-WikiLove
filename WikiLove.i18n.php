@@ -391,11 +391,12 @@ $messages['as'] = array(
 );
 
 /** Azerbaijani (azərbaycanca)
+ * @author AZISS
  * @author Cekli829
  */
 $messages['az'] = array(
-	'wikilove-button-preview' => 'Sınaq göstərişi',
-	'wikilove-preview' => 'Sınaq göstərişi',
+	'wikilove-button-preview' => 'Sınaq görüntüsü',
+	'wikilove-preview' => 'Sınaq görüntüsü',
 	'wikilove-what-is-this' => 'Bu nədir?',
 );
 
@@ -3093,13 +3094,14 @@ $messages['is'] = array(
 	'wikilove-err-redirect' => 'Spjallsíða notandans er tilvísun.',
 	'wikilove-err-cannot-edit' => 'Þú hefur ekki heimild til að breyta þessari síðu.',
 	'wikilove-err-max-exceeded' => 'Þú getur ekki sent WikiÁst á fleiri en $1 {{PLURAL:$1|notanda|notendur}} í einu.',
-	'wikilove-success-number' => '$1 WikiLove {{PLURAL:$1|skilaboð|skilaboð}} send.', # Fuzzy
+	'wikilove-success-number' => '$1 WikiLove {{PLURAL:$1|skilaboð}} send.',
 	'wikilove-summary' => '/* $1 */ ný WikiÁstar skilaboð',
 	'wikilove-what-is-this' => 'Hvað er þetta?',
 	'wikilove-anon-warning' => 'Athugið: Notandinn er ekki skráður, svo hann eða hún tekur mögulega ekki eftir skilaboðunum.',
 	'wikilove-commons-text' => 'Þú getur fundið myndir með því að leita á $1.',
 	'wikilove-terms' => 'Með því að senda, samþykkir þú gegnsæi undir $1',
 	'wikilove-terms-link' => 'skilmálum',
+	'wikilove.js' => '/* JavaScript á þessari síðu sérsníður WikiLove, sjá http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Italian (italiano)
