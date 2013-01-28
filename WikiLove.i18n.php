@@ -6133,6 +6133,7 @@ $messages['sl'] = array(
  * @author Bebauautu
  * @author Maduixa
  * @author Micki
+ * @author Nikola Smolenski
  * @author Rancher
  */
 $messages['sr-ec'] = array(
@@ -6155,7 +6156,7 @@ $messages['sr-ec'] = array(
 	'wikilove-enter-message' => 'Унесите поруку:',
 	'wikilove-omit-sig' => '(без потписа)',
 	'wikilove-image-example' => '(пример: Trophy.png)',
-	'wikilove-button-preview' => 'Прегледај',
+	'wikilove-button-preview' => 'Прикажи претпреглед',
 	'wikilove-preview' => 'Преглед',
 	'wikilove-notify' => 'Обавести корисника преко е-поште',
 	'wikilove-button-send' => 'Пошаљи',
