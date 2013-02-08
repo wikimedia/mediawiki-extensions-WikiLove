@@ -424,6 +424,15 @@ $messages['ba'] = array(
 	'wikilove-preview' => 'Алдан байҡау',
 );
 
+/** Belarusian (беларуская)
+ * @author Чаховіч Уладзіслаў
+ */
+$messages['be'] = array(
+	'wikilove-desc' => 'Дадае інтэрфейс для спрашчэння дадання станоўчых водгукаў на старонкі размоў удзельнікаў',
+	'wikilove' => 'ВікіСімпатыя',
+	'wikilove-tab-text' => 'ВікіСімпатыя',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
@@ -4988,14 +4997,18 @@ $messages['pl'] = array(
 	'wikilove-barnstar-photographers-title' => 'Gwiazda Fotografa',
 	'wikilove-barnstar-writers-option' => 'Gwiazda Pisarza',
 	'wikilove-type-food' => 'Jedzenie i picie',
+	'wikilove-food-select' => 'Wybierz jedzenie lub napój:',
+	'wikilove-food-baklava-option' => 'Bakława',
+	'wikilove-food-baklava-header' => 'Kawałek bakławy dla Ciebie!',
 	'wikilove-food-beer-option' => 'Piwo',
 	'wikilove-food-beer-header' => 'Piwo dla Ciebie!',
 	'wikilove-food-cheeseburger-option' => 'Cheeseburger',
 	'wikilove-food-cheeseburger-header' => 'Cheeseburger dla Ciebie!',
 	'wikilove-food-cookie-option' => 'Ciastko',
-	'wikilove-food-cookie-desc' => 'Ciasteczka (znany jako herbatniki w Wielkiej Brytanii) są to małe pieczone smakołyki, mające szeroki wachlarz smaków, kształtów i rozmiarów.',
+	'wikilove-food-cookie-desc' => 'Ciasteczka to małe wypiekane smakołyki, mające szeroki wachlarz smaków, kształtów i rozmiarów.',
 	'wikilove-food-cookie-header' => 'Ciastko dla Ciebie!',
 	'wikilove-food-coffee-option' => 'Filiżanka kawy',
+	'wikilove-food-coffee-header' => 'Filiżanka dobrej kawy dla Ciebie!',
 	'wikilove-food-tea-option' => 'Filiżanka herbaty',
 	'wikilove-food-tea-header' => 'Filiżanka herbaty dla Ciebie!',
 	'wikilove-food-cupcake-option' => 'Babeczka',
