@@ -5865,6 +5865,7 @@ $messages['sa'] = array(
 	'wikilove-food-tea-option' => 'चायचषकम्',
 	'wikilove-food-tea-desc' => 'जलस्य पश्चात्, चायं तु संसारे सर्वाधिकोपभुक्तं पेयम्। एषा उष्णा तथा च शीताऽपि रोचते, दुग्धेन, शर्करया च सह।',
 	'wikilove-food-tea-header' => 'भवदर्थम् एकं चायचषकम्!',
+	'wikilove-food-strawberries-header' => 'भवदर्थं स्त्राबरीनां चषकम्!',
 	'wikilove-type-kittens' => 'मार्जारशावकाः',
 	'wikilove-kittens-header' => 'भवदर्थम् एकः मार्जारशावकः!',
 	'wikilove-type-makeyourown' => 'स्वकीयं स्वयमेव रच्यताम्',
