@@ -121,7 +121,7 @@ class ApiWikiLove extends ApiBase {
 		try {
 			$api->execute();
 		} catch( DBQueryError $dbqe ) {
-			$this->setWarning( 'E-mail was not sent' );
+			$this->setWarning( 'Email was not sent' );
 		}
 		wfProfileOut( __METHOD__ );
 	}
@@ -165,8 +165,8 @@ class ApiWikiLove extends ApiBase {
 				'or when on a MediaWiki page through mw.user.tokens',
 			),
 			'subject' => 'Subject header of the new section',
-			'email' => array( 'Content of the optional e-mail message to send to the user.',
-				'A warning will be returned if the user cannot be e-mailed. WikiLove will be sent to user talk page either way.',
+			'email' => array( 'Content of the optional email message to send to the user.',
+				'A warning will be returned if the user cannot be emailed. WikiLove will be sent to user talk page either way.',
 			),
 			'type' => array( 'Type of WikiLove (for statistics); this corresponds with a type',
 				'selected in the left menu, and optionally a subtype after that',
