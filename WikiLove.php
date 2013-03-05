@@ -23,6 +23,7 @@
  * @file
  * @ingroup Extensions
  * @author Ryan Kaldari, Jan Paul Posma
+ * @licence MIT License
  */
 
 # Alert the user that this is not a valid entry point to MediaWiki if they try to access the file directly.
