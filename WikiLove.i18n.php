@@ -1088,6 +1088,18 @@ $messages['el'] = array(
 	'wikilove-commons-text' => 'Μπορείτε να βρείτε εικόνες από την περιήγηση στο $1.',
 );
 
+/** British English (British English)
+ * @author Shirayuki
+ */
+$messages['en-gb'] = array(
+	'wikilove-barnstar-original-desc' => 'This barnstar is awarded to recognise particularly fine contributions to {{SITENAME}}, to let people know that their hard work is seen and appreciated.',
+	'wikilove-barnstar-reallife-desc' => 'The Real Life Barnstar is awarded to editors who make contributions both online and offline, by organising wiki-related real-life events.',
+	'wikilove-food-cheeseburger-desc' => 'A staple of diners and fast-food restaurants, cheeseburgers were first popularised in the United States during the 1920s and 30s.',
+	'wikilove-food-strawberries-desc' => 'The strawberry fruit (which is not actually a berry) is widely appreciated for its characteristic aroma, bright red colour, juicy texture, and sweetness.',
+	'wikilove-err-msg' => 'Please enter a personalised message.',
+	'wikilove.js' => '/* JavaScript placed here customises WikiLove, see http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+);
+
 /** Esperanto (Esperanto)
  * @author Yekrats
  */
