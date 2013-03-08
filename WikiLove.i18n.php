@@ -565,6 +565,7 @@ $messages['bn'] = array(
 );
 
 /** Breton (brezhoneg)
+ * @author Fohanno
  * @author Fulup
  * @author Y-M D
  */
@@ -604,6 +605,7 @@ $messages['br'] = array(
 	'wikilove-barnstar-writers-option' => 'Steredenn ar skridaozer',
 	'wikilove-barnstar-writers-title' => 'Steredenn ar skridaozer',
 	'wikilove-type-food' => 'Boued hag evajoù',
+	'wikilove-food-baklava-option' => 'Baklava',
 	'wikilove-food-beer-option' => 'Bier',
 	'wikilove-food-beer-header' => "Ur banne bier evidoc'h !",
 	'wikilove-food-brownie-option' => 'Kouign',
@@ -648,6 +650,7 @@ $messages['br'] = array(
 	'wikilove-err-gallery-again' => 'Klask en-dro',
 	'wikilove-err-preview-api' => 'Un dra bennak a-dreuz zo bet e-pad ar rakwelet. Klaskit en-dro mar plij.',
 	'wikilove-err-send-api' => "C'hoarvezet ez eus un dra bennak a-dreuz en ur gas ar gemennadenn. Klaskit en-dro.",
+	'wikilove-err-invalid-username' => 'Direizh eo an anv implijer',
 	'wikilove-summary' => '/* $1 */ kemennadenn WikiLove nevez',
 	'wikilove-what-is-this' => 'Petra eo se ?',
 	'wikilove-anon-warning' => "Notenn : an implijer-mañ n'eo ket enrollet anezhañ. Marteze ne verzo ket ar gemennadenn-mañ.",
@@ -1095,6 +1098,7 @@ $messages['en-gb'] = array(
 	'wikilove-barnstar-original-desc' => 'This barnstar is awarded to recognise particularly fine contributions to {{SITENAME}}, to let people know that their hard work is seen and appreciated.',
 	'wikilove-barnstar-reallife-desc' => 'The Real Life Barnstar is awarded to editors who make contributions both online and offline, by organising wiki-related real-life events.',
 	'wikilove-food-cheeseburger-desc' => 'A staple of diners and fast-food restaurants, cheeseburgers were first popularised in the United States during the 1920s and 30s.',
+	'wikilove-food-coffee-desc' => 'Appreciated the world over, coffee is known for its energising effect on people.',
 	'wikilove-food-strawberries-desc' => 'The strawberry fruit (which is not actually a berry) is widely appreciated for its characteristic aroma, bright red colour, juicy texture, and sweetness.',
 	'wikilove-err-msg' => 'Please enter a personalised message.',
 	'wikilove.js' => '/* JavaScript placed here customises WikiLove, see http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
