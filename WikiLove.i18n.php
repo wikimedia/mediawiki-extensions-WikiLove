@@ -718,6 +718,14 @@ $messages['ca'] = array(
 	'wikilove-commons-text' => 'Podeu trobar imatges navegant $1.',
 );
 
+/** Sorani Kurdish (کوردی)
+ * @author Calak
+ */
+$messages['ckb'] = array(
+	'wikilove-food-beer-header' => 'ئاوجۆ بۆ تۆ!',
+	'wikilove-food-cheeseburger-option' => 'چیزبێرگەر',
+);
+
 /** Czech (česky)
  * @author Jkjk
  * @author Mormegil
