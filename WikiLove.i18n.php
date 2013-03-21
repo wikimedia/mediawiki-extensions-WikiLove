@@ -256,6 +256,8 @@ Title is the title of the wikilove box (e.g. "Barnstar")',
 	'wikilove-err-cannot-edit' => "A warning shown when a user doesn't have permission to edit a page.",
 	'wikilove-err-max-exceeded' => 'A warning shown when someone tries to send WikiLove to more than the maximum number of users allowed. $1 is the maximum number of users.',
 	'wikilove-success-number' => 'Message showing how many WikiLove messages have been sent so far. This is shown while the user is sending multiple WikiLove messages at once. $1 is the number of messages.',
+	'wikilove-summary' => 'Used as Edit Summary. Parameters:
+* $1 - subject (section name?)',
 	'wikilove-what-is-this' => '[[File:Wiki Love 002.png|thumb]]
 {{Identical|What is this}}',
 	'wikilove-what-is-this-link' => '{{optional}}',
@@ -5542,6 +5544,7 @@ $messages['roa-tara'] = array(
 	'wikilove-err-image-bad' => "L'immaggine non g'esiste.",
 	'wikilove-err-sig' => "Pe piacere no scè 'ngludenne 'a firme jndr'à 'u messàgge.",
 	'wikilove-err-gallery-again' => 'Pruève arrete',
+	'wikilove-err-invalid-username' => 'Stu nome utende jè invalide.',
 	'wikilove-summary' => '/* $1 */ messàgge nuève de UicchiAmore',
 	'wikilove-what-is-this' => 'Ce jè quiste?',
 	'wikilove-what-is-this-link' => 'https://www.mediawiki.org/wiki/WikiLove',
