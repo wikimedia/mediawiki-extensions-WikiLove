@@ -3376,6 +3376,7 @@ $messages['it'] = array(
 
 /** Japanese (日本語)
  * @author Akaniji
+ * @author Fryed-peach
  * @author Schu
  * @author Shirayuki
  * @author Whym
@@ -3405,9 +3406,13 @@ $messages['ja'] = array(
 	'wikilove-notify' => 'メールでこの利用者に通知',
 	'wikilove-button-send' => 'ウィキラブを送る',
 	'wikilove-type-barnstars' => 'バーンスター',
+	'wikilove-barnstar-header' => 'バーンスターを贈ります！',
 	'wikilove-barnstar-select' => 'バーンスターを選択:',
 	'wikilove-barnstar-admins-option' => '管理者のバーンスター',
 	'wikilove-type-food' => '食べ物と飲み物',
+	'wikilove-food-baklava-option' => 'バクラヴァ',
+	'wikilove-food-baklava-desc' => 'バクラヴァは、刻んだナッツを生地の間に挟んで何層にも重ね、シロップやハチミツにつけた、甘くて豪華なお菓子です。',
+	'wikilove-food-baklava-header' => 'バクラヴァを贈ります！',
 	'wikilove-food-beer-option' => 'ビール',
 	'wikilove-food-cheeseburger-option' => 'チーズバーガー',
 	'wikilove-food-cookie-option' => 'クッキー',
