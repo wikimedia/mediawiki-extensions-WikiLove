@@ -6235,11 +6235,12 @@ $messages['sl'] = array(
  * @author Bebauautu
  * @author Maduixa
  * @author Micki
+ * @author Milicevic01
  * @author Nikola Smolenski
  * @author Rancher
  */
 $messages['sr-ec'] = array(
-	'wikilove-desc' => 'Додаје сучеље за исказивање позитивних повратних информација на корисничке странице за разговор',
+	'wikilove-desc' => 'Додаје интерфејс за исказивање позитивних повратних информација на корисничке странице за разговор',
 	'wikilove' => 'Викиљубав',
 	'wikilove-enable-preference' => 'Омогући одавање признања и заслуга уз помоћ језичка Викиљубав',
 	'wikilove-tab-text' => 'Викиљубав',
