@@ -5560,6 +5560,7 @@ $messages['roa-tara'] = array(
 	'wikilove-type-barnstars' => 'Stelle de merite',
 	'wikilove-barnstar-header' => "'Na stelle pe te!",
 	'wikilove-barnstar-select' => "Scacchie 'na stelle:",
+	'wikilove-barnstar-original-option' => 'Stelle Origgenale',
 	'wikilove-type-food' => 'Cibe e abbeveramende',
 	'wikilove-food-select' => "Scacchie l'articole da mangià o da bevere:",
 	'wikilove-food-baklava-option' => 'Baclavà',
