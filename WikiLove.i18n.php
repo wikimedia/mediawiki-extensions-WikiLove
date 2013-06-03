@@ -426,7 +426,7 @@ $messages['ar'] = array(
 	'wikilove-terms-link' => 'الشروط',
 );
 
-/** Assamese (অসমীয়া)
+/** Assamese (অসমীয়া)
  * @author Bishnu Saikia
  */
 $messages['as'] = array(
@@ -4681,7 +4681,7 @@ $messages['ms'] = array(
 	'wikilove.js' => '/* JavaScript yang terletak di sini mengubah suai WikiLove, rujuk http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Cocu
  * @author Diupwijk
  * @author Stigmj
@@ -4936,7 +4936,7 @@ $messages['nl'] = array(
 	'wikilove.js' => '/ * JavaScript die hier wordt geplaatst is van invloed op de weergave van WikiLove. Zie http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
 );
 
-/** Oriya (ଓଡ଼ିଆ)
+/** Oriya (ଓଡ଼ିଆ)
  * @author Ansumang
  * @author Psubhashish
  */
