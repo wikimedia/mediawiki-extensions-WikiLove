@@ -1508,6 +1508,7 @@ $messages['eu'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Dalba
  * @author Huji
  * @author Leyth
  * @author Mehran
@@ -1533,35 +1534,35 @@ $messages['fa'] = array(
 	'wikilove-add-details' => 'افزودن جزئیات',
 	'wikilove-image' => 'نام تصویر را وارد کنید:',
 	'wikilove-select-image' => 'تصویری انتخاب کنید:',
-	'wikilove-header' => 'عنوان را وارد کنید:',
-	'wikilove-title' => 'عنوانی برای پیام وارد کنید:',
+	'wikilove-header' => 'موضوع را وارد کنید:',
+	'wikilove-title' => 'عنوانی برای هدیه وارد کنید:',
 	'wikilove-enter-message' => 'پیامی وارد کنید :',
 	'wikilove-omit-sig' => '(بدون امضا)',
 	'wikilove-image-example' => '(مثال: Trophy.png)',
 	'wikilove-button-preview' => 'پیش‌نمایش',
 	'wikilove-preview' => 'پیش‌نمایش',
-	'wikilove-notify' => 'اطلاع به کاربر با پست الکترونیکی',
+	'wikilove-notify' => 'آگاه‌سازی کاربر با پست الکترونیکی',
 	'wikilove-button-send' => 'فرستادن ویکی‌هدیه',
 	'wikilove-type-barnstars' => 'نشان‌ها',
 	'wikilove-barnstar-header' => 'این نشان برای شما!',
 	'wikilove-barnstar-select' => 'یک نشان انتخاب کنید:',
 	'wikilove-barnstar-original-option' => 'نشان اصلی',
-	'wikilove-barnstar-original-desc' => 'این نشان به کاربرانی که مشارکت عالی در ویکی‌پدیا داشته‌اند اعطا می‌شود تا همه بدانند که تلاششان دیده و از آن تقدیر شده‌است.',
+	'wikilove-barnstar-original-desc' => 'این نشان به کاربرانی که مشارکت عالی در {{SITENAME}} داشته‌اند اعطا می‌شود تا همه بدانند که تلاش‌هایشان دیده و از آن‌ها قدردانی می‌شود.',
 	'wikilove-barnstar-original-title' => 'نشان اصلی',
 	'wikilove-barnstar-admins-option' => 'نشان مدیر',
-	'wikilove-barnstar-admins-desc' => 'نشان مدیر به مدیری اعظا می‌شود که از عهدهٔ قضاوت‌های دشوار و بی‌طرفانه برآید یا کارهای مدیریتی را به‌خوبی انجام دهد.',
+	'wikilove-barnstar-admins-desc' => 'نشان مدیر به مدیری اعظا می‌شود که از عهدهٔ قضاوت‌های دشوار و بی‌طرفانه برآید یا کارهای مدیریتی ضروری اما خسته‌کننده را به‌خوبی انجام دهد.',
 	'wikilove-barnstar-admins-title' => 'نشان مدیر',
 	'wikilove-barnstar-antivandalism-option' => 'نشان مبارزه با خرابکاری',
-	'wikilove-barnstar-antivandalism-desc' => 'نشان مبارزه با خرابکاری به کاربرانی اعطا می‌شود که با تمام توان با خرابکاری و حمله‌ها مبارزه می‌کنند.',
+	'wikilove-barnstar-antivandalism-desc' => 'نشان مبارزه با خرابکاری به کاربرانی اعطا می‌شود که تلاش‌های بزرگی در جهت واگردانی حمله‌های خرابکارانه در {{SITENAME}} دارند.',
 	'wikilove-barnstar-antivandalism-title' => 'نشان مبارزه با خرابکاری',
 	'wikilove-barnstar-diligence-option' => 'نشان پشتکار',
-	'wikilove-barnstar-diligence-desc' => 'نشان کوشش برای پاس‌داشت نگاه عمیق، دقت نظر و خدمت همگانی اهدا می‌شود.',
+	'wikilove-barnstar-diligence-desc' => 'نشان پشتکار برای پاس‌داشت ترکیبی از ژرف‌نگری، دقت نظر و خدمت همگانی اهدا می‌شود.',
 	'wikilove-barnstar-diligence-title' => 'نشان پشتکار',
-	'wikilove-barnstar-diplomacy-option' => 'نشان سیاستمداری',
-	'wikilove-barnstar-diplomacy-desc' => 'نشان سیاستمداری به کاربرانی که به حل مسالمت‌آمیر اختلاف‌ها کمک کرده‌اند، اهدا می‌شود.',
-	'wikilove-barnstar-diplomacy-title' => 'نشان سیاستمداری',
+	'wikilove-barnstar-diplomacy-option' => 'نشان دیپلماسی',
+	'wikilove-barnstar-diplomacy-desc' => 'نشان دیپلماسی به کاربرانی اهدا می‌شود که به حل مسالمت‌آمیز اختلاف‌ها در {SITENAME}} کمک کرده‌اند.', # Fuzzy
+	'wikilove-barnstar-diplomacy-title' => 'نشان دیپلماسی',
 	'wikilove-barnstar-goodhumor-option' => 'نشان شوخ‌طبعی',
-	'wikilove-barnstar-goodhumor-desc' => 'نشان شوخ‌طبعی به کاربرانی اعطا می‌شود که همواره می‌کوشند تا تنش‌ها را آرام و جو ویکی‌پدیا را دوستانه و بهتر کنند.',
+	'wikilove-barnstar-goodhumor-desc' => 'نشان شوخ‌طبعی به کاربرانی اعطا می‌شود که همواره می‌کوشند تا تنش‌ها را آرام و جو {{SITENAME}} را دوستانه و بهتر کنند.',
 	'wikilove-barnstar-goodhumor-title' => 'نشان شوخ‌طبعی',
 	'wikilove-barnstar-brilliant-option' => 'نشان خوش‌فکری',
 	'wikilove-barnstar-brilliant-desc' => 'نشان خوش‌فکری به کاربری اعطا می‌شود که ایدهٔ خاص و نیکو برای حل مشکلی دشوار ارايه داده باشد.',
@@ -1588,13 +1589,13 @@ $messages['fa'] = array(
 	'wikilove-barnstar-half-desc' => 'نیم‌نشان به کاربرانی اهدا می‌شود که تمایل بسیاری به همکاری و کار گروهی دارند، حتی با ویرایشگری که دیدگاهی مخالف با او دارد.',
 	'wikilove-barnstar-half-title' => 'نیم‌نشان',
 	'wikilove-barnstar-minor-option' => 'نشان جزئی',
-	'wikilove-barnstar-minor-desc' => 'نشان جزئی به کاربرانی که ویرایش‌های جزئی اما باکیفیت دارند اهدا می‌شود. ویرایش‌های جزئی معمولا نادیده گرفته می‌شوند درحالی که برای ویکی‌پدیا بسیار حیاتی‌اند.', # Fuzzy
+	'wikilove-barnstar-minor-desc' => 'نشان جزئی به کاربرانی که ویرایش‌های جزئی اما باکیفیت دارند اهدا می‌شود. ویرایش‌های جزئی معمولا نادیده گرفته می‌شوند درحالی که برای {{SITENAME}} بسیار حیاتی‌اند.',
 	'wikilove-barnstar-minor-title' => 'نشان جزئی',
 	'wikilove-barnstar-antispam-option' => 'نشان مبارزه با هرزه‌نویسی',
-	'wikilove-barnstar-antispam-desc' => 'نشان مبارزه با هرزه‌نگاری به کاربرانی اهدا می‌شود که در مبارزه با هرزنویسی در ویکی‌پدیا بی‌مانند هستند.', # Fuzzy
+	'wikilove-barnstar-antispam-desc' => 'نشان مبارزه با هرزه‌نگاری به کاربرانی اهدا می‌شود که در مبارزه با هرزنویسی در {{SITENAME}} بی‌مانند هستند.',
 	'wikilove-barnstar-antispam-title' => 'نشان مبارزه با هرزه‌نویسی',
 	'wikilove-barnstar-photographers-option' => 'نشان عکاس',
-	'wikilove-barnstar-photographers-desc' => 'نشان عکاس به آن‌هایی داده می‌شود که با مهارت عکاسی خود در ویکی‌پدیا به گونه مؤثر مشارکت می‌کنند.', # Fuzzy
+	'wikilove-barnstar-photographers-desc' => 'نشان عکاس به آن‌هایی داده می‌شود که با مهارت‌ها و مشارکت‌های خود در زمینهٔ عکاسی، تلاشی خستگی‌ناپذیر در {{SITENAME}} دارند.',
 	'wikilove-barnstar-photographers-title' => 'نشان عکاس',
 	'wikilove-barnstar-kindness-option' => 'نشان مهربانی',
 	'wikilove-barnstar-kindness-desc' => 'نشان مهربانی به کاربری اعطا می‌شود که همواره با مهربانی دیگران را کمک می‌کند.',
@@ -1603,25 +1604,25 @@ $messages['fa'] = array(
 	'wikilove-barnstar-reallife-desc' => 'نشان واقعی به کاربری داده می‌شود که هم به طور برخط و هم برون‌خط با فعالیت‌های مربوط به ویکی‌پدیا در محیط غیرمجازی به ویکی‌پدیا کمک می‌کند.',
 	'wikilove-barnstar-reallife-title' => 'نشان واقعی',
 	'wikilove-barnstar-resilient-option' => 'نشان انتقاد‌پذیری',
-	'wikilove-barnstar-resilient-desc' => 'نشان انتقاد‌پذیری به کاربری که انتقاد‌پذیر باشد و از انتقادها در جهت بهبود تخصص ویکی‌نویسی خود استفاده می‌کند اهدا می‌شود.', # Fuzzy
+	'wikilove-barnstar-resilient-desc' => 'نشان انتقاد‌پذیری به کاربرانی اعطا می‌شود که از انتقادها در جهت بهبود تخصص ویکی‌نویسی خود استفاده می‌کند و هرگز اجازه نمی‌دهد اشتباه‌ها سد راه رشد او به عنوان یک ویرایشگر شود.',
 	'wikilove-barnstar-resilient-title' => 'نشان انتقاد‌پذیری',
 	'wikilove-barnstar-rosetta-option' => 'نشان مترجم',
-	'wikilove-barnstar-rosetta-desc' => 'نشان مترجم به ویرایشگری که تلاش‌های برجسته در زمینهٔ ترجمه انجام داده‌است اهدا می‌شود.', # Fuzzy
+	'wikilove-barnstar-rosetta-desc' => 'نشان مترجم به ویرایشگرانی اهدا می‌شود که تلاش‌هایی برجسته در زمینهٔ ترجمهٔ {{SITENAME}} انجام می‌دهند.',
 	'wikilove-barnstar-rosetta-title' => 'نشان مترجم',
 	'wikilove-barnstar-special-option' => 'نشان ویژه',
 	'wikilove-barnstar-special-desc' => 'نشان ویژه زمانی به کاربر اهدا می‌شود که هیچ نشان بخصوصی برای قدردانی از وی نباشد.',
 	'wikilove-barnstar-special-title' => 'نشان ویژه',
 	'wikilove-barnstar-surreal-option' => 'نشان استثنایی',
-	'wikilove-barnstar-surreal-desc' => 'نشان استثنایی به کاربری اعطا می‌شود که کاری استثنایی برای ویکی‌پدیا انجام داده باشد.', # Fuzzy
+	'wikilove-barnstar-surreal-desc' => 'نشان استثنایی به کاربری اعطا می‌شود که با عملی غیرمنتظره، «کاری استثنایی» برای جامعهٔ کاربری انجام داده باشد.',
 	'wikilove-barnstar-surreal-title' => 'نشان استثنایی',
 	'wikilove-barnstar-teamwork-option' => 'نشان کار گروهی',
 	'wikilove-barnstar-teamwork-desc' => 'نشان کار گروهی هنگامی اهدا می‌شود که چند ویرایشگر در تکمیل یک مقاله با یکدیگر همکاری کنند.',
 	'wikilove-barnstar-teamwork-title' => 'نشان کار گروهی',
 	'wikilove-barnstar-technical-option' => 'نشان فنی',
-	'wikilove-barnstar-technical-desc' => 'نشان فنی به هر شخصی که ویکی‌‍پدیا را با کارهای فنی خود (برنامه‌نویسی، ساختن ربات و ابزارها و ...) بهبود می‌بخشد اهدا می‌شود.', # Fuzzy
+	'wikilove-barnstar-technical-desc' => 'نشان فنی به هر شخصی که {{SITENAME}} را با کارهای فنی خود (برنامه‌نویسی، ربات‌سازی، تعمیر پیوندها و ...) بهبود می‌بخشد اهدا می‌شود.',
 	'wikilove-barnstar-technical-title' => 'نشان فنی',
 	'wikilove-barnstar-tireless-option' => 'نشان مشارکت‌کنندهٔ خستگی‌ناپذیر',
-	'wikilove-barnstar-tireless-desc' => 'نشان مشارکت‌کنندهٔ خستگی‌ناپذیر به کاربران بخصوصی اعطا می‌شود که حجم زیادی از مطالب را ویرایش و تولید می‌کنند بدون آنکه به کیفیت کارشان آسیبی وارد شود.', # Fuzzy
+	'wikilove-barnstar-tireless-desc' => 'نشان مشارکت‌کنندهٔ خستگی‌ناپذیر به کاربرانی اعطا می‌شود که حجم بسیار زیادی مشارکت دارند، بدون آنکه کیفیت را فدا کنند.',
 	'wikilove-barnstar-tireless-title' => 'نشان مشارکت‌کنندهٔ خستگی‌ناپذیر',
 	'wikilove-barnstar-writers-option' => 'نشان نویسنده',
 	'wikilove-barnstar-writers-desc' => 'نشان نویسنده به کاربری اعطا می‌شود که تعداد بسیاری مقاله نوشته باشد یا ویرایش‌های بسیاری انجام داده باشد.',
@@ -1677,13 +1678,19 @@ $messages['fa'] = array(
 	'wikilove-err-gallery' => 'هنگام بارگذاری تصویر اشکالی رخ داد.',
 	'wikilove-err-gallery-again' => 'دوباره سعی کن',
 	'wikilove-err-preview-api' => 'هنگام پیش‌نمایش اشکالی رخ داد، لطفا دوباره سعی کنید.',
-	'wikilove-err-send-api' => 'هنگام فرستادن پیام اشکالی رخ داد، لطفا دوباره سعی کنید.',
-	'wikilove-err-invalid-token' => 'به دلیل از دست رفتن اطلاعات امکان ارسال هدیهٔ ویکی نیست. صفحه را از باز کنید یا از سامانه خارج شوید و دوباره وارد سامانه گردید.',
+	'wikilove-err-send-api' => 'هنگام فرستادن پیام اشکالی رخ داد، لطفا دوباره تلاش کنید.',
+	'wikilove-err-invalid-token' => 'به دلیل از دست رفتن اطلاعات نشست، امکان فرستادن ویکی‌هدیه نبود. بازآوری صفحه را بیازمایید یا از سامانه بیرون بروید و دوباره ثبت ورود نمایید.',
+	'wikilove-err-not-logged-in' => 'ورود شما ثبت نشده است. خواهشمندیم برای استفاده از ویکی‌هدیه ثبت ورود نمایید.',
 	'wikilove-err-invalid-username' => 'نام کاربری معتبر نیست.',
+	'wikilove-err-no-self-wikilove' => 'پوزش. نمی‌توانید برای خودتان ویکی‌هدیه بفرستید.',
+	'wikilove-err-redirect' => 'صفحهٔ بحث کاربر یک تغییرمسیر است.',
+	'wikilove-err-cannot-edit' => 'شما اجازهٔ ویرایش آن صفحه را ندارید.',
+	'wikilove-err-max-exceeded' => 'نمی‌توانید ویکی‌هدیه را برای بیش از $1 کاربر بفرستید.',
+	'wikilove-success-number' => '$1 پیام ویکی‌هدیه فرستاده شد.',
 	'wikilove-summary' => '/ * $1 * /  ویکی‌هدیهٔ جدید',
 	'wikilove-what-is-this' => 'این چیست؟',
-	'wikilove-anon-warning' => 'توجه: این کاربر ثبت‌نام نکرده‌است و ممکن است متوجه این پیام نشود.',
-	'wikilove-commons-text' => '$1 را برای یافتن تصاویر جستجو کنید.',
+	'wikilove-anon-warning' => 'توجه: این کاربر نام‌نویسی نکرده‌است و ممکن است متوجه این پیام نشود.',
+	'wikilove-commons-text' => 'می‌توانید برای یافتن تصاویر $1 را مرور کنید.',
 	'wikilove-terms' => 'با ارسال فرم، شما با شفاف‌سازی‌های مطابق $1 موافقت می‌کنید.',
 	'wikilove-terms-link' => 'شرایط',
 	'wikilove.js' => '/ * جاوا اسکریپت مورد استفاده در اینجا ویکی‌هدیه را سفارشی می‌کند، نگاه کنید به http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
@@ -7953,13 +7960,14 @@ $messages['zh-hans'] = array(
 
 /** Traditional Chinese (中文（繁體）‎)
  * @author Anakmalaysia
+ * @author Justincheng12345
  * @author Kaldari
  * @author Liangent
  * @author Simon Shek
  * @author Waihorace
  */
 $messages['zh-hant'] = array(
-	'wikilove-desc' => '加入一個界面以使用戶向其他用戶提供正面的意見',
+	'wikilove-desc' => '加入一個界面以促進於用戶討論頁上提供正面回饋',
 	'wikilove' => '維基友愛',
 	'wikilove-enable-preference' => '顯示維基友愛標籤以便讚賞其他用戶',
 	'wikilove-tab-text' => '維基友愛',
