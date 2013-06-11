@@ -5594,6 +5594,7 @@ $messages['roa-tara'] = array(
 	'wikilove-food-pie-header' => "'Na torte pe te!",
 	'wikilove-food-strawberries-option' => 'Fragole',
 	'wikilove-type-kittens' => 'Iattudde',
+	'wikilove-kittens-header' => "'Na iattarelle pe te!",
 	'wikilove-type-makeyourown' => "Mitte 'u tune",
 	'wikilove-err-header' => "Pe piacere mitte 'na testate.",
 	'wikilove-err-title' => "Pe piacere mitte 'nu titele.",
@@ -5610,6 +5611,7 @@ $messages['roa-tara'] = array(
 	'wikilove-commons-link' => 'Wikimedia Commons',
 	'wikilove-commons-url' => 'http://commons.wikimedia.org',
 	'wikilove-terms-link' => 'termine',
+	'wikilove.js' => "/* 'U JavaScript mise aqquà personalizze UicchiLove, 'ndruche http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */",
 );
 
 /** Russian (русский)
