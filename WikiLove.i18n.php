@@ -189,7 +189,7 @@ $messages['en'] = array(
 	'wikilove-terms' => 'By submitting, you agree to transparency under these $1.',
 	'wikilove-terms-link' => 'terms',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
-	'wikilove.js' => '/* JavaScript placed here customizes WikiLove, see http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+	'WikiLove.js' => '/* JavaScript placed here customizes WikiLove, see http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Message documentation (Message documentation)
