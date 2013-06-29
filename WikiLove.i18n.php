@@ -240,6 +240,7 @@ Label for a button. Should be no longer than 22 characters.',
 	'wikilove-barnstar-technical-desc' => '{{doc-singularthey}}',
 	'wikilove-type-food' => '[[File:Wiki Love 002.png|thumb]]
 Label for a button. Should be no longer than 22 characters.',
+	'wikilove-food-cookie-option' => '{{Identical|Cookie}}',
 	'wikilove-type-kittens' => '[[File:Wiki Love 002.png|thumb]]
 Label for a button. Should be no longer than 22 characters.',
 	'wikilove-type-makeyourown' => '[[File:Wiki Love 002.png|thumb]]
