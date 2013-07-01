@@ -206,8 +206,10 @@ $messages['en'] = array(
  */
 $messages['qqq'] = array(
 	'wikilove-desc' => '{{desc|name=Wiki Love|url=http://www.mediawiki.org/wiki/Extension:WikiLove}}',
+	'wikilove' => '{{Identical|WikiLove}}',
 	'wikilove-enable-preference' => 'Label of the option to turn on WikiLove in the preferences',
-	'wikilove-tab-text' => '[[File:Wiki Love 001.png|thumb]]',
+	'wikilove-tab-text' => '[[File:Wiki Love 001.png|thumb]]
+{{Identical|WikiLove}}',
 	'tooltip-ca-wikilove' => '[[File:Wiki Love 001.png|thumb]]',
 	'wikilove-dialog-title' => '[[File:Wiki Love 002.png|thumb]]',
 	'wikilove-select-type' => '[[File:Wiki Love 002.png|thumb]]',
@@ -3487,7 +3489,7 @@ $messages['ja'] = array(
 	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/メインページ?uselang=ja',
 	'wikilove-terms' => '送信することで、これらの$1のもとで透明性に同意したと見なされます。',
 	'wikilove-terms-link' => '規約',
-	'wikilove.js' => '/* ここに記述したJavaScriptはウィキラブの設定を変更します。http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration をご覧ください。 */',
+	'WikiLove.js' => '/* ここに記述したJavaScriptはウィキラブの設定を変更します。http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration をご覧ください。 */',
 );
 
 /** Javanese (Basa Jawa)
