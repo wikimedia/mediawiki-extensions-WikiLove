@@ -4083,6 +4083,7 @@ $messages['lb'] = array(
 	'wikilove-barnstar-special-option' => 'Spezial-Uerden',
 	'wikilove-barnstar-special-title' => 'De Spezial-Uerden',
 	'wikilove-barnstar-surreal-option' => 'Surrealen-Uerden',
+	'wikilove-barnstar-surreal-title' => 'De Surrealen-Uerden',
 	'wikilove-barnstar-teamwork-option' => 'Teamwork-Uerden',
 	'wikilove-barnstar-teamwork-title' => 'Den Teamwork-Uerden',
 	'wikilove-barnstar-technical-option' => 'Uerde fir Techniker',
@@ -4127,6 +4128,7 @@ $messages['lb'] = array(
 	'wikilove-err-send-api' => 'Beim Schécke vun der Noriicht ass eppes schif gaang. Probéiert et w.e.g. nach emol.',
 	'wikilove-err-not-logged-in' => 'Dir sidd net ageloggt. Loggt Iech w.e.g. a fir WikiLove ze benotzen.',
 	'wikilove-err-invalid-username' => 'De Benotzernumm ass net valabel.',
+	'wikilove-err-no-self-wikilove' => 'Dir kennt Iech selwer keng Unerkennung ausdrécken. Pardon!',
 	'wikilove-err-redirect' => 'Dem Benotzer seng Diskussiounssäit ass eng Viruleedung.',
 	'wikilove-err-cannot-edit' => "Dir hutt net déi néideg Rechter fir dës Säit z'änneren.",
 	'wikilove-success-number' => '$1 WikiLove {{PLURAL:$1|Message}} geschéckt.',
@@ -4135,7 +4137,7 @@ $messages['lb'] = array(
 	'wikilove-anon-warning' => 'Notiz: Dëse Benotzer ass net registréiert, hien oder si gesäit dëse Message méiglecherweis net.',
 	'wikilove-commons-text' => 'Dir fannt Biller wann Dir op $1 sicht.',
 	'wikilove-terms-link' => 'Bedingungen',
-	'wikilove.js' => '/* Dëse JavaScript adaptéiert déi perséinnlech Wäertschätzung, kuckt http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+	'WikiLove.js' => '/* Dëse JavaScript adaptéiert déi perséinnlech Wäertschätzung, kuckt http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Lithuanian (lietuvių)
