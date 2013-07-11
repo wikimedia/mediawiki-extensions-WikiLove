@@ -1562,7 +1562,7 @@ $messages['fa'] = array(
 	'wikilove-barnstar-diligence-desc' => 'نشان پشتکار برای پاس‌داشت ترکیبی از ژرف‌نگری، دقت نظر و خدمت همگانی اهدا می‌شود.',
 	'wikilove-barnstar-diligence-title' => 'نشان پشتکار',
 	'wikilove-barnstar-diplomacy-option' => 'نشان دیپلماسی',
-	'wikilove-barnstar-diplomacy-desc' => 'نشان دیپلماسی به کاربرانی اهدا می‌شود که به حل مسالمت‌آمیز اختلاف‌ها در {SITENAME}} کمک کرده‌اند.', # Fuzzy
+	'wikilove-barnstar-diplomacy-desc' => 'نشان دیپلماسی به کاربرانی اهدا می‌شود که به حل مسالمت‌آمیز اختلاف‌ها در {{SITENAME}} کمک  کرده‌اند.',
 	'wikilove-barnstar-diplomacy-title' => 'نشان دیپلماسی',
 	'wikilove-barnstar-goodhumor-option' => 'نشان شوخ‌طبعی',
 	'wikilove-barnstar-goodhumor-desc' => 'نشان شوخ‌طبعی به کاربرانی اعطا می‌شود که همواره می‌کوشند تا تنش‌ها را آرام و جو {{SITENAME}} را دوستانه و بهتر کنند.',
@@ -1696,7 +1696,7 @@ $messages['fa'] = array(
 	'wikilove-commons-text' => 'می‌توانید برای یافتن تصاویر $1 را مرور کنید.',
 	'wikilove-terms' => 'با ارسال فرم، شما با شفاف‌سازی‌های مطابق $1 موافقت می‌کنید.',
 	'wikilove-terms-link' => 'شرایط',
-	'wikilove.js' => '/ * جاوا اسکریپت مورد استفاده در اینجا ویکی‌هدیه را سفارشی می‌کند، نگاه کنید به http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
+	'WikiLove.js' => '/ * جاوا اسکریپت مورد استفاده در اینجا ویکی‌هدیه را سفارشی می‌کند، نگاه کنید به http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
 );
 
 /** Finnish (suomi)
@@ -5019,7 +5019,7 @@ $messages['or'] = array(
 	'wikilove-type-makeyourown' => 'ଆପଣ ନିଜର ତିଆରି କରନ୍ତୁ',
 	'wikilove-err-header' => 'ଦୟାକରି ଶୀର୍ଷକ ନାମଟିଏ ଦିଅନ୍ତୁ ।',
 	'wikilove-err-title' => 'ଦୟାକରି ଶୀର୍ଷକ ନାମଟିଏ ଦିଅନ୍ତୁ ।',
-	'wikilove-err-msg' => 'ଦୟାକରି ଏକ ବ୍ୟକ୍ତିଗତ ସନ୍ଦେଶ ଲେଖନ୍ତୁ ।',
+	'wikilove-err-msg' => 'ବ୍ୟକ୍ତିଗତ ମେସେଜଟିଏ ଲେଖନ୍ତୁ ।',
 	'wikilove-err-image' => 'ଦୟାକରି ଛବିଟିଏ ବାଛନ୍ତୁ ।',
 	'wikilove-err-image-bad' => 'ଏହି ନାମରେ କୌଣସି ଛବି ନାହିଁ ।',
 	'wikilove-err-image-api' => 'ସନ୍ଦେଶ ପାଇବା ସମୟରେ କିଛି ଭୁଲ ହୋଇଗଲା । ଦୟାକରି ପୁଣି ଥରେ ଚେଷ୍ଟା କରନ୍ତୁ ।',
