@@ -3645,7 +3645,7 @@ $messages['ko'] = array(
 	'wikilove-get-started-list-1' => '보내고 싶은 위키사랑 유형을 선택하세요.',
 	'wikilove-get-started-list-2' => '위키사랑에 자세한 내용을 적어주세요.',
 	'wikilove-get-started-list-3' => '위키사랑을 보냅니다!',
-	'wikilove-add-details' => '자세한 내용을 적어 주십시오.',
+	'wikilove-add-details' => '자세한 내용을 입력하세요',
 	'wikilove-image' => '그림 파일 이름 입력:',
 	'wikilove-select-image' => '그림 선택:',
 	'wikilove-header' => '주제 입력:',
@@ -3808,7 +3808,7 @@ $messages['ko'] = array(
 	'wikilove-commons-link' => '위키미디어 공용',
 	'wikilove-terms' => '글을 보내면 이 $1에 따라 의견 공개에 동의하는 것입니다.',
 	'wikilove-terms-link' => '이용 약관',
-	'wikilove.js' => '/* 여기 설치된 자바스크립트에서 위키사랑을 설정합니다. http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration 을 참고하세요. */',
+	'WikiLove.js' => '/* 여기 설치된 자바스크립트에서 위키사랑을 설정합니다. http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration 을 참고하세요. */',
 );
 
 /** Colognian (Ripoarisch)
