@@ -16,7 +16,7 @@ var	options = {}, // options modifiable by the user
 $.wikiLove = {
 	/**
 	 * Opens the dialog and builds it if necessary.
-	 * @param array recipients
+	 * @param array recipients Usernames of recipients (without namespace prefix)
 	 */
 	openDialog: function( recipients ) {
 		// If a list of recipients are specified, this will override the normal
@@ -31,7 +31,7 @@ $.wikiLove = {
 			redirect = false;
 			// TODO: See if recipients are emailable
 		} else {
-			targets.push( mw.config.get( 'wgPageName' ) );
+			targets.push( mw.config.get( 'wgTitle' ) );
 			// Test to see if the 'E-mail this user' link exists
 			emailable = $( '#t-emailuser' ).length ? true : false;
 		}
@@ -693,7 +693,7 @@ $.wikiLove = {
 	 */
 	doSend: function( subject, wikitext, message, type, email ) {
 		$( '#mw-wikilove-send-spinner' ).fadeIn( 200 );
-		
+
 		var editToken = mw.user.tokens.get( 'editToken' );
 
 		var wikiLoveNumberAttempted = 0;
@@ -709,11 +709,11 @@ $.wikiLove = {
 				subject: subject,
 				token: editToken
 			};
-	
+
 			if ( email ) {
 				sendData.email = email;
 			}
-	
+
 			$.ajax( {
 				url: mw.config.get( 'wgScriptPath' ) + '/api.php',
 				data: sendData,
@@ -733,14 +733,14 @@ $.wikiLove = {
 						}
 						return;
 					}
-	
+
 					if ( data.redirect !== undefined ) {
 						wikiLoveNumberPosted++;
 						if ( redirect ) {
 							var	targetBaseUrl = mw.util.wikiGetlink( data.redirect.pageName ),
 								// currentBaseUrl is the current URL minus the hash fragment
 								currentBaseUrl = window.location.href.split("#")[0];
-		
+
 							// Set window location to user talk page URL + WikiLove anchor hash.
 							// Unfortunately, in the most common scenario (starting from the user talk
 							// page) this won't reload the page since the browser will simply try to jump
@@ -750,7 +750,7 @@ $.wikiLove = {
 							// the page. In the case that we are starting from a different page, this sends
 							// the user immediately to the new WikiLove message on the user talk page.
 							window.location = targetBaseUrl + '#' + data.redirect.fragment; // data.redirect.fragment is already encoded
-		
+
 							// If we were already on the user talk page, then reload the page so that the
 							// new WikiLove message is displayed.
 							// @todo: an expandUrl() would be very nice indeed!
@@ -785,7 +785,7 @@ $.wikiLove = {
 			});
 		});
 	},
-	
+
 	/**
 	 * Resets WikiLove to its itialized state – removes the dialog box from the 
 	 * DOM and resets the pseudo-global variables.

@@ -151,7 +151,7 @@ class WikiLoveHooks {
 
 	/**
 	 * Find the editable talk page of the user we want to send WikiLove to. This
-	 * function also does some sanity checking to make sure we will actually 
+	 * function also does some sanity checking to make sure we will actually
 	 * be able to send WikiLove to the target.
 	 *
 	 * @param Title $title The title of a user page or user talk page
@@ -173,10 +173,7 @@ class WikiLoveHooks {
 		}
 
 		// If we're on a subpage, get the base page title
-		$baseTitle = Title::newFromText( $title->getBaseText(), $ns );
-		if ( $baseTitle === null ) {
-			return wfMessage( 'wikilove-err-invalid-username' )->plain();
-		}
+		$baseTitle = $title->getBaseTitle();
 
 		// Users can't send WikiLove to themselves
 		if ( $wgUser->getName() === $baseTitle->getText() ) {
