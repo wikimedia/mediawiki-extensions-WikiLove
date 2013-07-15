@@ -173,7 +173,10 @@ class WikiLoveHooks {
 		}
 
 		// If we're on a subpage, get the base page title
-		$baseTitle = $title->getBaseTitle();
+		$baseTitle = Title::newFromText( $title->getBaseText(), $ns );
+		if ( $baseTitle === null ) {
+			return wfMessage( 'wikilove-err-invalid-username' )->plain();
+		}
 
 		// Users can't send WikiLove to themselves
 		if ( $wgUser->getName() === $baseTitle->getText() ) {
