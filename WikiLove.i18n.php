@@ -6656,6 +6656,7 @@ $messages['sr-el'] = array(
 /** Swedish (svenska)
  * @author Ainali
  * @author Diupwijk
+ * @author Jopparn
  * @author Warrakkk
  * @author WikiPhoenix
  */
@@ -6692,6 +6693,16 @@ $messages['sv'] = array(
 	'wikilove-barnstar-admins-option' => 'Administratörsutmärkelse',
 	'wikilove-barnstar-admins-desc' => 'Administratörsutmärkelsen ges till en administratör som har gjort ett särskilt svårt beslut eller utfört en tråkig men nödvändig administratörsuppgift.',
 	'wikilove-barnstar-admins-title' => 'Administratörsutmärkelsen',
+	'wikilove-barnstar-diligence-title' => 'Barnstar för flit',
+	'wikilove-barnstar-diplomacy-option' => 'Barnstar för diplomati',
+	'wikilove-barnstar-diplomacy-desc' => 'Barnstaren för diplomati tilldelas användare som har bidragit till att fredligt lösa konflikter på {{SITENAME}}.',
+	'wikilove-barnstar-diplomacy-title' => 'Barnstaren för flit',
+	'wikilove-barnstar-goodhumor-option' => 'Barnstar för bra humor',
+	'wikilove-barnstar-goodhumor-desc' => 'Barnstaren för god humor tilldelas användare som konsekvent lättar upp stämningen, avdramatiserar konflikter och gör {{SITENAME}} till en bättre plats att vara på.',
+	'wikilove-barnstar-goodhumor-title' => 'Barnstaren för bra humor',
+	'wikilove-barnstar-brilliant-option' => 'Barnstar för en lysande idé',
+	'wikilove-barnstar-brilliant-desc' => 'Barnstaren för en lysande idé tilldelas en användare som funnit en elegant lösning på ett särdeles svårt problem.',
+	'wikilove-barnstar-brilliant-title' => 'Barnstaren för en lysande idé',
 	'wikilove-barnstar-special-option' => 'Speciell utmärkelse',
 	'wikilove-barnstar-special-desc' => 'Speciella utmärkelsen ges till en användares som ett tecken på uppskattning när det inte finns några andra utmärkelser som passar.',
 	'wikilove-barnstar-special-title' => 'Speciella utmärkelsen',
@@ -6756,7 +6767,7 @@ $messages['sv'] = array(
 	'wikilove-commons-text' => 'Du kan hitta bilder genom att söka i $1.',
 	'wikilove-terms' => 'Genom att skicka samtycker du till insyn under dessa $1.',
 	'wikilove-terms-link' => 'villkor',
-	'wikilove.js' => '/ * JavaScript som placeras här anpassar WikiLove, se http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
+	'WikiLove.js' => '/ * JavaScript som placeras här anpassar WikiLove, se http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
 );
 
 /** Swahili (Kiswahili)
