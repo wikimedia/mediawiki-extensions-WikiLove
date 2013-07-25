@@ -763,6 +763,14 @@ $messages['ca'] = array(
 	'wikilove-commons-text' => 'Podeu trobar imatges navegant $1.',
 );
 
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'wikilove-title' => 'ДӀаязъе совгӀатан цӀе:',
+	'wikilove-err-title' => 'Дехар до, дӀаязеъе цӀе.',
+);
+
 /** Sorani Kurdish (کوردی)
  * @author Calak
  */
