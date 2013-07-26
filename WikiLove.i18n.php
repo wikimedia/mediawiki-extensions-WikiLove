@@ -5411,6 +5411,7 @@ $messages['ps'] = array(
 
 /** Portuguese (português)
  * @author Hamilton Abreu
+ * @author Luckas
  * @author Pedroca cerebral
  */
 $messages['pt'] = array(
@@ -5427,7 +5428,7 @@ $messages['pt'] = array(
 	'wikilove-get-started-list-3' => 'Envie o seu WikiApreço!',
 	'wikilove-add-details' => 'Adicionar detalhes',
 	'wikilove-image' => 'Introduza o nome de uma imagem:',
-	'wikilove-select-image' => 'Seleccione uma imagem:',
+	'wikilove-select-image' => 'Selecione uma imagem:',
 	'wikilove-header' => 'Introduza um cabeçalho:',
 	'wikilove-title' => 'Introduza o título de um prémio:',
 	'wikilove-enter-message' => 'Introduza uma mensagem:',
