@@ -7361,12 +7361,14 @@ $messages['ug-arab'] = array(
 );
 
 /** Ukrainian (українська)
+ * @author Andriykopanytsia
  * @author Base
  * @author Dim Grits
  * @author Microcell
  * @author Olvin
  * @author Pig1995z
  * @author Steve.rusyn
+ * @author SteveR
  * @author Ата
  * @author Тест
  */
@@ -7398,6 +7400,7 @@ $messages['uk'] = array(
 	'wikilove-barnstar-header' => 'Орден для вас!',
 	'wikilove-barnstar-select' => 'Вибрати орден:',
 	'wikilove-barnstar-original-option' => 'Орден за заслуги',
+	'wikilove-barnstar-original-desc' => 'Цей орден присуджується за визнання особливо ґрунтовного вкладу у Вікіпедію, щоб дати людям знати, що їхня важка праця була помічена і оцінена.',
 	'wikilove-barnstar-original-title' => 'Орден за заслуги',
 	'wikilove-barnstar-admins-option' => 'Орден адміністратора',
 	'wikilove-barnstar-admins-desc' => 'Адміністраторським орденом може бути відзначений адміністратор, який прийняв особливо складне й важливе рішення або виконав втомливе, але необхідне адміністративне завдання.',
@@ -7411,6 +7414,9 @@ $messages['uk'] = array(
 	'wikilove-barnstar-diplomacy-option' => 'Дипломатичний орден',
 	'wikilove-barnstar-diplomacy-desc' => 'Дипломатичним орденом можна відзначити користувачів, які допомогли мирному урегулюванню конфіліктів у {{SITENAME}}.',
 	'wikilove-barnstar-diplomacy-title' => 'Дипломатичний орден',
+	'wikilove-barnstar-goodhumor-option' => 'Орден гарного настрою',
+	'wikilove-barnstar-goodhumor-desc' => 'Орденом гарного настрою можуть бути відзначені вікіпедисти, які послідовно покращують настрій, розряджають конфлікти і роблять Вікіпедію кращим місцем.',
+	'wikilove-barnstar-goodhumor-title' => 'Орден гарного настрою',
 	'wikilove-barnstar-brilliant-option' => 'Орден за блискучу ідею',
 	'wikilove-barnstar-brilliant-desc' => 'Орденом за блискучу ідею можна відзначити користувача, який віднайшов елегантне рішення особливо складної проблеми.',
 	'wikilove-barnstar-brilliant-title' => 'Орден за блискучу ідею',
@@ -7420,6 +7426,9 @@ $messages['uk'] = array(
 	'wikilove-barnstar-civility-option' => 'Орден ввічливості',
 	'wikilove-barnstar-civility-desc' => 'Орденом ввічливості можна відзначити будь-якого користувача, якому вдається зберігати ввічливість навіть в найбільш конфліктних ситуаціях.',
 	'wikilove-barnstar-civility-title' => 'Орден ввічливості',
+	'wikilove-barnstar-copyeditor-option' => 'Орден коректора',
+	'wikilove-barnstar-copyeditor-desc' => 'Орден коректора присуджується за видатні досягнення у виправленні орфографії, граматики, пунктуації і стилістичних проблем.',
+	'wikilove-barnstar-copyeditor-title' => 'Орден коректора',
 	'wikilove-barnstar-defender-option' => 'Орден захисника Вікі',
 	'wikilove-barnstar-defender-desc' => 'Орденом захисника Вікі нагороджуються ті, хто здійснив все можливе, щоб запобігти використанню {{SITENAME}} в цілях шахрайства.',
 	'wikilove-barnstar-defender-title' => 'Орден захисника Вікі',
@@ -7429,6 +7438,9 @@ $messages['uk'] = array(
 	'wikilove-barnstar-designers-option' => 'Орден графічного дизайнера',
 	'wikilove-barnstar-designers-desc' => 'Орденом графічного дизайнера відзначаються ті, хто невтомно працює, щоб забезпечити {{SITENAME}} вільною і високоякісною графікою.',
 	'wikilove-barnstar-designers-title' => 'Орден графічного дизайнера',
+	'wikilove-barnstar-half-option' => 'Піворден',
+	'wikilove-barnstar-half-desc' => 'Піворден присуджується за успіхи у співпраці, особливо за продуктивне редагування з кимось, хто дотримується протилежної точки зору.',
+	'wikilove-barnstar-half-title' => 'Піворден',
 	'wikilove-barnstar-minor-option' => 'Малий орден',
 	'wikilove-barnstar-minor-desc' => 'Малим орденом відзначають дрібні правки надзвичайної якості. Малі правки часто непомітні, але вони становлять істотний внесок у {{SITENAME}}.',
 	'wikilove-barnstar-minor-title' => 'Малий орден',
@@ -7438,9 +7450,15 @@ $messages['uk'] = array(
 	'wikilove-barnstar-photographers-option' => 'Орден фотографа',
 	'wikilove-barnstar-photographers-desc' => 'Орденом фотографа відзначаються ті, хто завдяки своїй фотографічній майстерності та внеску, невтомно покращує {{SITENAME}}.',
 	'wikilove-barnstar-photographers-title' => 'Орден фотографа',
+	'wikilove-barnstar-kindness-option' => 'Орден випадкової доброти',
+	'wikilove-barnstar-kindness-desc' => 'Орденом випадкової доброти відзначаються ті, хто продемонстрував модель людини, готової багато зробити без будь-яких прохань.',
+	'wikilove-barnstar-kindness-title' => 'Орден випадкової доброти',
 	'wikilove-barnstar-reallife-option' => 'Орден реального життя',
 	'wikilove-barnstar-reallife-desc' => 'Орденом реального життя відзначаються редактори, які зробили внесок як в онлайні, так і оффлайні, організовуючи різноманітні вікізаходи в реальному житті.',
 	'wikilove-barnstar-reallife-title' => 'Орден реального життя',
+	'wikilove-barnstar-resilient-option' => 'Орден життєрадісності',
+	'wikilove-barnstar-resilient-desc' => 'Орден життєрадісності присуджується будь-якому редакторі, який вчиться і покращується під впливом критиків, ніколи не даючи помилкам заважати своєму зростанню в якості редактора.',
+	'wikilove-barnstar-resilient-title' => 'Орден життєрадісності',
 	'wikilove-barnstar-rosetta-option' => 'Розетський орден',
 	'wikilove-barnstar-rosetta-desc' => 'Розетським орденом нагороджується редактор, який досяг високих результатів у перекладі {{SITENAME}}.',
 	'wikilove-barnstar-rosetta-title' => 'Розетський орден',
@@ -7465,7 +7483,10 @@ $messages['uk'] = array(
 	'wikilove-type-food' => 'Їжа та напої',
 	'wikilove-food-select' => 'Виберіть їжу чи напій:',
 	'wikilove-food-baklava-option' => 'Пахлава',
+	'wikilove-food-baklava-desc' => 'Пахлава - це пишна, солодка випічка, зроблена з листового тіста, наповненого посіченими горіхами і підсолоджена сиропом або медом.',
+	'wikilove-food-baklava-header' => 'Трохи пахлави для вас!',
 	'wikilove-food-beer-option' => 'Пиво',
+	'wikilove-food-beer-desc' => 'Пиво - найбільше вживаний в світі і, можливо, найдавніший алкогольний напій. Це третій за популярністю напій після води і чаю.',
 	'wikilove-food-beer-header' => 'Пиво для вас!',
 	'wikilove-food-cheeseburger-option' => 'Чизбургер',
 	'wikilove-food-cheeseburger-header' => 'Чизбургер для вас!',
@@ -7508,7 +7529,7 @@ $messages['uk'] = array(
 	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/Головна_сторінка?uselang=uk',
 	'wikilove-terms' => 'Надсилаючи, ви погоджуєтесь з публічністю даних на таких $1.',
 	'wikilove-terms-link' => 'умовах',
-	'wikilove.js' => '/* Розміщений тут JavaScript налаштовує Вікісимпатію, див. http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+	'WikiLove.js' => '/* Розміщений тут JavaScript налаштовує Вікісимпатію, див. http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Urdu (اردو)
