@@ -7885,6 +7885,7 @@ $messages['yi'] = array(
  * @author Liangent
  * @author PhiLiP
  * @author Shizhao
+ * @author TianyinLee
  * @author Tommyang
  */
 $messages['zh-hans'] = array(
@@ -8059,9 +8060,9 @@ $messages['zh-hans'] = array(
 	'wikilove-what-is-this' => '这是什么？',
 	'wikilove-anon-warning' => '注意： 此用户未注册，他或她可能不会注意到此消息。',
 	'wikilove-commons-text' => '您可以通过浏览$1找到图像。',
-	'wikilove-terms' => '提交后，您将同意在$1下的透明度。',
+	'wikilove-terms' => '提交后，即表示您同意在$1下透明公开这些信息。',
 	'wikilove-terms-link' => '条款',
-	'wikilove.js' => '/* 放在这里的JavaScript定制WikiLove, 参见http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+	'WikiLove.js' => '/* 放在这里的JavaScript定制WikiLove, 参见http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
