@@ -265,7 +265,8 @@ Title is the title of the wikilove box (e.g. "Barnstar")',
 {{Identical|What is this}}',
 	'wikilove-what-is-this-link' => '{{optional}}',
 	'wikilove-commons-text' => '[[File:Wiki Love 004.png|thumb]]
-$1 gets replaced by a link with {{msg-mw|wikilove-commons-link}} ("Wikimedia Commons") as caption and {{msg-mw|wikilove-commons-url}} as URL.',
+Parameters:
+* $1 - {{msg-mw|wikilove-commons-link}} as caption and {{msg-mw|wikilove-commons-url}} as URL',
 	'wikilove-commons-link' => '{{optional}}
 {{Identical|Wikimedia Commons}}',
 	'wikilove-commons-url' => '{{optional}}
