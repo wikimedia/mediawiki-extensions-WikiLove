@@ -23,18 +23,32 @@ class ApiWikiLove extends ApiBase {
 			$this->saveInDb( $talk, $params['subject'], $params['message'], $params['type'], isset( $params['email'] ) ? 1 : 0 );
 		}
 
-		// Requires MediaWiki 1.19 or later
-		$apiParamArray = array(
-			'action' => 'edit',
-			'title' => $talk->getFullText(),
-			'section' => 'new',
-			'sectiontitle' => $params['subject'],
-			'text' => $params['text'],
-			'token' => $params['token'],
-			'summary' => $this->msg( 'wikilove-summary', $strippedSubject )->inContentLanguage()
-				->text(),
-			'notminor' => true
-		);
+		// If LQT is installed and enabled, use it.
+		$summary = $this->msg( 'wikilove-summary', $strippedSubject )->inContentLanguage()
+			->text();
+		if ( class_exists( 'LqtDispatch' ) && LqtDispatch::isLqtPage( $talk ) ) {
+			$apiParamArray = array(
+				'action' => 'threadaction',
+				'threadaction' => 'newthread',
+				'talkpage' => $talk->getFullText(),
+				'subject' => $params['subject'],
+				'reason' => $summary,
+				'text' => $params['text'],
+				'token' => $params['token']
+			);
+		} else {
+			// Requires MediaWiki 1.19 or later
+			$apiParamArray = array(
+				'action' => 'edit',
+				'title' => $talk->getFullText(),
+				'section' => 'new',
+				'sectiontitle' => $params['subject'],
+				'text' => $params['text'],
+				'token' => $params['token'],
+				'summary' => $summary,
+				'notminor' => true
+			);
+		}
 
 		$api = new ApiMain(
 			new DerivativeRequest(
