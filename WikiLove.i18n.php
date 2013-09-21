@@ -1263,11 +1263,13 @@ $messages['el'] = array(
 $messages['en-gb'] = array(
 	'wikilove-barnstar-original-desc' => 'This barnstar is awarded to recognise particularly fine contributions to {{SITENAME}}, to let people know that their hard work is seen and appreciated.',
 	'wikilove-barnstar-reallife-desc' => 'The Real Life Barnstar is awarded to editors who make contributions both online and offline, by organising wiki-related real-life events.',
+	'wikilove-barnstar-surreal-desc' => 'The Surreal Barnstar is awarded to any user who adds "special flavour" to the community by acting as a sort of wildcard.',
 	'wikilove-food-cheeseburger-desc' => 'A staple of diners and fast-food restaurants, cheeseburgers were first popularised in the United States during the 1920s and 30s.',
+	'wikilove-food-cookie-desc' => 'Cookies (known as biscuits in the UK) are small baked treats that come in a wide array of flavours, shapes, and sizes.',
 	'wikilove-food-coffee-desc' => 'Appreciated the world over, coffee is known for its energising effect on people.',
 	'wikilove-food-strawberries-desc' => 'The strawberry fruit (which is not actually a berry) is widely appreciated for its characteristic aroma, bright red colour, juicy texture, and sweetness.',
 	'wikilove-err-msg' => 'Please enter a personalised message.',
-	'wikilove.js' => '/* JavaScript placed here customises WikiLove, see http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+	'WikiLove.js' => '/* JavaScript placed here customises WikiLove, see http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Esperanto (Esperanto)
@@ -5776,6 +5778,7 @@ $messages['roa-tara'] = array(
  * @author Eugrus
  * @author Haffman
  * @author Kalan
+ * @author Okras
  * @author Ole Yves
  * @author Александр Сигачёв
  */
@@ -5849,7 +5852,7 @@ $messages['ru'] = array(
 	'wikilove-barnstar-half-desc' => 'Половинчатым орденом участники отмечаются за мастерство сотрудничество, в особенности за продуктивное редактирование вместе с кем-то, придерживающимся противоположных взглядов.',
 	'wikilove-barnstar-half-title' => 'Половинчатый орден',
 	'wikilove-barnstar-minor-option' => 'Малый орден',
-	'wikilove-barnstar-minor-desc' => 'Малые правки зачастую незаметны, но составляют существенный вклад в Википедию. Малым орденом отмечают за внесение малых правок высшего качества.', # Fuzzy
+	'wikilove-barnstar-minor-desc' => 'Малым орденом отмечают за внесение малых правок высшего качества. Малые правки зачастую незаметны, но составляют существенный вклад в {{SITENAME}}.',
 	'wikilove-barnstar-minor-title' => 'Малый орден',
 	'wikilove-barnstar-antispam-option' => 'Орден анти-спама',
 	'wikilove-barnstar-antispam-desc' => 'Орденом анти-спама отмечаются пользователи, благодаря исключительной борьбе которых {{SITENAME}} очищается от спама.',
@@ -5864,25 +5867,25 @@ $messages['ru'] = array(
 	'wikilove-barnstar-reallife-desc' => 'Орденом реальной жизни отмечаются редакторы, сделавшие вклад как в онлайне, так и офлайне, организуя посвящённые Вики мероприятие в реальной жизни.',
 	'wikilove-barnstar-reallife-title' => 'Орден реальной жизни',
 	'wikilove-barnstar-resilient-option' => 'Орден за отказоустойчивость',
-	'wikilove-barnstar-resilient-desc' => 'Орденом за отказоустойчивость может быть отмечен любой редактор, который учится и развивается за счёт критики, ни когда не давая ошибкам мешать своему росту как Википедисту.', # Fuzzy
+	'wikilove-barnstar-resilient-desc' => 'Орденом за отказоустойчивость отмечают любого редактора, который учится и развивается за счёт критики, никогда не давая ошибкам мешать своему росту в качестве редактора.',
 	'wikilove-barnstar-resilient-title' => 'Орден за отказоустойчивость',
 	'wikilove-barnstar-rosetta-option' => 'Розеттский орден',
-	'wikilove-barnstar-rosetta-desc' => 'Розеттским орденом может быть отмечен любой редактор, который демонстрирует в Википедии выдающиеся достижения в переводах.', # Fuzzy
+	'wikilove-barnstar-rosetta-desc' => 'Розеттским орденом отмечают любого редактора, который демонстрирует выдающиеся достижения в переводах в {{SITENAME}}.',
 	'wikilove-barnstar-rosetta-title' => 'Розеттский орден',
 	'wikilove-barnstar-special-option' => 'Особый орден',
 	'wikilove-barnstar-special-desc' => 'Особым орденом участник может быть отмечен в качестве жеста признания, когда не имеется другого подходящего ордена.',
 	'wikilove-barnstar-special-title' => 'Особый орден',
 	'wikilove-barnstar-surreal-option' => 'Орден сюрреализма',
-	'wikilove-barnstar-surreal-desc' => 'Орденом сюрреализма может быть отмечен любой Википедист, вносящий своими непредсказуемыми действиями особый колорит в сообщество.', # Fuzzy
+	'wikilove-barnstar-surreal-desc' => 'Орденом сюрреализма отмечают любого пользователя, вносящего своими непредсказуемыми действиями особый колорит в сообщество.',
 	'wikilove-barnstar-surreal-title' => 'Орден сюрреализма',
 	'wikilove-barnstar-teamwork-option' => 'Орден командной работы',
 	'wikilove-barnstar-teamwork-desc' => 'Орденом командной работы могут быть отмечены редакторы, работающие совместно над улучшением статьи.',
 	'wikilove-barnstar-teamwork-title' => 'Орден командной работы',
 	'wikilove-barnstar-technical-option' => 'Технарский орден',
-	'wikilove-barnstar-technical-desc' => 'Технарским орденом может быть отмечен любой, кто улучшил Википедию своей технической работой (программирование, создание ботов, починка ссылок и т.д.).', # Fuzzy
+	'wikilove-barnstar-technical-desc' => 'Техническим орденом может быть отмечен любой, кто улучшил {{SITENAME}} своей технической работой (программирование, создание ботов, починка ссылок и т.д.).',
 	'wikilove-barnstar-technical-title' => 'Технарский орден',
 	'wikilove-barnstar-tireless-option' => 'Орден неутомимого участника',
-	'wikilove-barnstar-tireless-desc' => 'Орденом неутомимого участника отмечаются в особенности неутомимые Википедисты, выполняющие огромный массив работы, не жертвуя качеством.', # Fuzzy
+	'wikilove-barnstar-tireless-desc' => 'Орденом неутомимого участника отмечаются в особенности неутомимые редакторы, выполняющие огромный массив работы, не жертвуя качеством.',
 	'wikilove-barnstar-tireless-title' => 'Орден неутомимого участника',
 	'wikilove-barnstar-writers-option' => 'Писательский орден',
 	'wikilove-barnstar-writers-desc' => 'Писательским орденом может быть отмечен любой пользователь, который написал большое число статей и внёс большое количество правок.',
@@ -5955,7 +5958,7 @@ $messages['ru'] = array(
 	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/Заглавная_страница?uselang=ru',
 	'wikilove-terms' => 'Отправляя, вы соглашаетесь об оглашении на этих $1.',
 	'wikilove-terms-link' => 'условиях',
-	'wikilove.js' => '/* Размещенный здесь JavaScript кастомизирует WikiLove, см. http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+	'WikiLove.js' => '/* Размещенный здесь JavaScript кастомизирует WikiLove, см. http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Rusyn (русиньскый)
