@@ -4121,6 +4121,7 @@ $messages['ku-latn'] = array(
 
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
+ * @author Soued031
  */
 $messages['lb'] = array(
 	'wikilove-desc' => "Setzt en Interface derbäi deen et erliichtert fir positive Benotzer-Feedback op d'Benotzer-Diskussiouns-Säiten ze setzen",
@@ -4239,7 +4240,7 @@ $messages['lb'] = array(
 	'wikilove-err-image-bad' => 'Bild gëtt et net.',
 	'wikilove-err-image-api' => 'Beim Opruffe vum Bild ass eppes schif gaang. Probéiert et w.e.g. nach emol.',
 	'wikilove-err-sig' => 'Setzt w.e.g. keng Ënnerschrëft an dëse Message.',
-	'wikilove-err-gallery' => 'Beim Luede vun de Biller huet eppes net fonctionnéiert.',
+	'wikilove-err-gallery' => 'Beim Luede vun de Biller huet eppes net funktionéiert.',
 	'wikilove-err-gallery-again' => 'Probéiert nach emol',
 	'wikilove-err-preview-api' => 'Beim Kucken ouni ze späicheren ass eppes schif gaang. Probéiert w.e.g. nach eng kéier.',
 	'wikilove-err-send-api' => 'Beim Schécke vun der Noriicht ass eppes schif gaang. Probéiert et w.e.g. nach emol.',
