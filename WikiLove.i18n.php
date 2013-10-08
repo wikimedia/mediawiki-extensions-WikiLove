@@ -530,7 +530,7 @@ $messages['be-tarask'] = array(
 	'wikilove-what-is-this' => 'Што гэта?',
 	'wikilove-anon-warning' => 'Заўвага: гэты ўдзельнік не зарэгістраваны, ён ці яна ня можа заўважыць гэтае паведамленьне.',
 	'wikilove-commons-text' => 'Вы можаце знайсьці выявы ў праекце $1.',
-	'wikilove.js' => '/* Разьмешчаны тут JavaScript-код зьмяняе WikiLove, глядзіце http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+	'WikiLove.js' => '/* Разьмешчаны тут JavaScript-код зьмяняе WikiLove, глядзіце http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Bulgarian (български)
@@ -986,7 +986,7 @@ $messages['da'] = array(
 	'wikilove-commons-text' => 'Du kan finde billeder ved at gennemse $1.',
 	'wikilove-terms' => 'Ved at sende accepterer du gennemsigtighed under disse $1.',
 	'wikilove-terms-link' => 'vilkår',
-	'wikilove.js' => '/* JavaScript, der placeres her, tilpasser WikiLove, se http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+	'WikiLove.js' => '/* JavaScript, der placeres her, tilpasser WikiLove, se http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** German (Deutsch)
@@ -1170,7 +1170,7 @@ $messages['de'] = array(
 	'wikilove-terms' => 'Mit dem Speichern erklärst du dich mit diesen $1 einverstanden.',
 	'wikilove-terms-link' => 'Bedingungen',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement/de',
-	'wikilove.js' => '/* Das folgende JavaScript passt die persönliche Wertschätzung an, siehe http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+	'WikiLove.js' => '/* Das folgende JavaScript passt die persönliche Wertschätzung an, siehe http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** German (formal address) (Deutsch (Sie-Form)‎)
@@ -1513,7 +1513,7 @@ $messages['es'] = array(
 	'wikilove-terms' => 'Al enviarlo, usted acepta la transparencia según $1.',
 	'wikilove-terms-link' => 'condiciones',
 	'wikilove-terms-url' => 'https://wikimediafoundation.org/wiki/Feedback_privacy_statement/es',
-	'wikilove.js' => '/ * El código JavaScript colocado aquí personaliza WikiLove, consulte http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
+	'WikiLove.js' => '/ * El código JavaScript colocado aquí personaliza WikiLove, consulte http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
 );
 
 /** Estonian (eesti)
@@ -1990,7 +1990,7 @@ $messages['fi'] = array(
 	'wikilove-commons-text' => 'Voit etsiä kuvia selailemalla sivustoa $1.',
 	'wikilove-terms' => 'Lähettämällä sallit avoimuuden $1 mukaan.',
 	'wikilove-terms-link' => 'ehtojen',
-	'wikilove.js' => '/* Tämä JavaScript mukauttaa Wikirakkautta. Lisätietoja löytyy sivulta http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+	'WikiLove.js' => '/* Tämä JavaScript mukauttaa Wikirakkautta. Lisätietoja löytyy sivulta http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** French (français)
@@ -2186,7 +2186,7 @@ $messages['fr'] = array(
 	'wikilove-terms' => 'En soumettant, vous acceptez la transparence en accord avec ces $1.',
 	'wikilove-terms-link' => 'conditions',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement/fr',
-	'wikilove.js' => '/ * le JavaScript placé ici personnalise WikiLove, voyez http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
+	'WikiLove.js' => '/ * le JavaScript placé ici personnalise WikiLove, voyez http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
 );
 
 /** Franco-Provençal (arpetan)
@@ -2511,7 +2511,7 @@ $messages['gl'] = array(
 	'wikilove-terms' => 'Se envía os seus comentarios, acepta publicalos baixo estes $1.',
 	'wikilove-terms-link' => 'termos',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement/gl',
-	'wikilove.js' => '/* O JavaScript que se coloque aquí afectará a extensión Amor wiki; lea http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+	'WikiLove.js' => '/* O JavaScript que se coloque aquí afectará a extensión Amor wiki; lea http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Swiss German (Alemannisch)
@@ -2711,7 +2711,7 @@ $messages['he'] = array(
 	'wikilove-commons-text' => 'אפשר לחפש תמונות באתר $1.',
 	'wikilove-terms' => 'שליחה מביעה את הסכמתך לשקיפות לפי $1 הבאים.',
 	'wikilove-terms-link' => 'התנאים',
-	'wikilove.js' => "/* זהו דף ג'אווה סקריפט להגדרות של ויקי־אהבה. למידע נוסף ר׳
+	'WikiLove.js' => "/* זהו דף ג'אווה סקריפט להגדרות של ויקי־אהבה. למידע נוסף ר׳
    http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */",
 );
 
@@ -3084,7 +3084,7 @@ $messages['ia'] = array(
 	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/Pagina_principal?uselang=ia',
 	'wikilove-terms' => 'Per submitter, tu te declara de accordo con transparentia sub iste $1.',
 	'wikilove-terms-link' => 'conditiones',
-	'wikilove.js' => '/* Le JavaScript inserite hic personalisa WikiLove, vide http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+	'WikiLove.js' => '/* Le JavaScript inserite hic personalisa WikiLove, vide http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -3305,7 +3305,7 @@ $messages['is'] = array(
 	'wikilove-commons-text' => 'Þú getur fundið myndir með því að leita á $1.',
 	'wikilove-terms' => 'Með því að senda, samþykkir þú gegnsæi undir $1',
 	'wikilove-terms-link' => 'skilmálum',
-	'wikilove.js' => '/* JavaScript á þessari síðu sérsníður WikiLove, sjá http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+	'WikiLove.js' => '/* JavaScript á þessari síðu sérsníður WikiLove, sjá http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Italian (italiano)
@@ -3496,7 +3496,7 @@ $messages['it'] = array(
 	'wikilove-terms' => "Con l'invio, accetti $1 di trasparenza per i dati indicate.",
 	'wikilove-terms-link' => 'le condizioni',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement/it',
-	'wikilove.js' => '/* Il codice JavaScript posizionato qui permette di personalizzare WikiLove, vedi http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+	'WikiLove.js' => '/* Il codice JavaScript posizionato qui permette di personalizzare WikiLove, vedi http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Japanese (日本語)
@@ -4107,7 +4107,7 @@ Versöhg ens, di Sigg heh neu ze laade udder uß- un wider enzelogge.',
 	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/Main_Page?uselang=ksh',
 	'wikilove-terms' => 'Wä heh jät enjitt, moß met dä $1 enverschtande sen, söns moß mer et blieve lohße.',
 	'wikilove-terms-link' => 'Bedengonge',
-	'wikilove.js' => '/* dat JavaSkrep heh aan dä Stell wirrek nur beim „Leev Wiki“, loor op http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+	'WikiLove.js' => '/* dat JavaSkrep heh aan dä Stell wirrek nur beim „Leev Wiki“, loor op http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Kurdish (Latin script) (Kurdî (latînî)‎)
@@ -4510,7 +4510,7 @@ $messages['mk'] = array(
 	'wikilove-terms' => 'Поднесувајќи го ова, се согласувате со транспарентноста што ја налагаат овие $1.',
 	'wikilove-terms-link' => 'услови',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement/mk?uselang=mk',
-	'wikilove.js' => '/* Тука поставениот JavaScript го прилагодува ВикиЉубов. Погл. http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration?uselang=mk */',
+	'WikiLove.js' => '/* Тука поставениот JavaScript го прилагодува ВикиЉубов. Погл. http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration?uselang=mk */',
 );
 
 /** Malayalam (മലയാളം)
@@ -4663,7 +4663,7 @@ $messages['ml'] = array(
 	'wikilove-commons-link' => 'വിക്കിമീഡിയ കോമൺസ്',
 	'wikilove-terms' => 'സമർപ്പിക്കുമ്പോൾ, $1 പ്രകാരമുള്ള സുതാര്യത താങ്കൾ അംഗീകരിക്കുന്നതാണ്.',
 	'wikilove-terms-link' => 'നിബന്ധനകൾ',
-	'wikilove.js' => '/* വിക്കിസ്നേഹം ക്രമീകരിച്ചെടുക്കാനുള്ള ജാവാസ്ക്രിപ്റ്റ് ഇവിടെ നൽകുക, http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration കാണുക */',
+	'WikiLove.js' => '/* വിക്കിസ്നേഹം ക്രമീകരിച്ചെടുക്കാനുള്ള ജാവാസ്ക്രിപ്റ്റ് ഇവിടെ നൽകുക, http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration കാണുക */',
 );
 
 /** Malay (Bahasa Melayu)
@@ -4845,7 +4845,7 @@ $messages['ms'] = array(
 	'wikilove-commons-url' => 'http://commons.wikimedia.org',
 	'wikilove-terms' => 'Dengan penyerahan ini, anda bersetuju dengan ketelusan di bawah $1 ini.',
 	'wikilove-terms-link' => 'syarat-syarat',
-	'wikilove.js' => '/* JavaScript yang terletak di sini mengubah suai WikiLove, rujuk http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+	'WikiLove.js' => '/* JavaScript yang terletak di sini mengubah suai WikiLove, rujuk http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Norwegian Bokmål (norsk bokmål)
@@ -5100,7 +5100,7 @@ $messages['nl'] = array(
 	'wikilove-terms' => 'Door op te slaan gaat u akkoord met transparantie onder deze $1.',
 	'wikilove-terms-link' => 'voorwaarden',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement/nl',
-	'wikilove.js' => '/ * JavaScript die hier wordt geplaatst is van invloed op de weergave van WikiLove. Zie http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
+	'WikiLove.js' => '/ * JavaScript die hier wordt geplaatst is van invloed op de weergave van WikiLove. Zie http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
 );
 
 /** Oriya (ଓଡ଼ିଆ)
@@ -5477,7 +5477,7 @@ $messages['pms'] = array(
 	'wikilove-commons-text' => 'A peul trové dle figure an navigand su $1.',
 	'wikilove-terms' => 'An sgnacand, a aceta na trasparensa conforma a coste $1.',
 	'wikilove-terms-link' => 'condission',
-	'wikilove.js' => '/* JavaScript butà ambelessì a përsonalisa WikiLove, varda http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+	'WikiLove.js' => '/* JavaScript butà ambelessì a përsonalisa WikiLove, varda http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Pashto (پښتو)
@@ -5626,7 +5626,7 @@ $messages['pt-br'] = array(
 	'wikilove-commons-text' => 'Pode encontrar imagens pesquisando-as em $1.',
 	'wikilove-terms' => 'Ao enviar, concorda que os seus comentários podem se tornar públicos, conforme esses $1',
 	'wikilove-terms-link' => 'termos',
-	'wikilove.js' => '/* O Javascript que colocar aqui personalizará a extensão WikiLove. Favor ler http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+	'WikiLove.js' => '/* O Javascript que colocar aqui personalizará a extensão WikiLove. Favor ler http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Romanian (română)
@@ -5772,7 +5772,7 @@ $messages['roa-tara'] = array(
 	'wikilove-commons-link' => 'Wikimedia Commons',
 	'wikilove-commons-url' => 'http://commons.wikimedia.org',
 	'wikilove-terms-link' => 'termine',
-	'wikilove.js' => "/* 'U JavaScript mise aqquà personalizze UicchiLove, 'ndruche http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */",
+	'WikiLove.js' => "/* 'U JavaScript mise aqquà personalizze UicchiLove, 'ndruche http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */",
 );
 
 /** Russian (русский)
@@ -6143,7 +6143,7 @@ $messages['sa'] = array(
 	'wikilove-commons-text' => 'भवान् $1 इत्यत्र परिभ्रमणं कृत्वा चित्रम् अन्वेष्टुं शक्नोति।',
 	'wikilove-terms' => 'अस्य समर्पणेन सहैव भवान्  $1 इत्यन्तर्गते पारदर्शितां अनुमन्यते।',
 	'wikilove-terms-link' => 'नियमाः',
-	'wikilove.js' => '/* JavaScript placed here customizes WikiLove, see http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+	'WikiLove.js' => '/* JavaScript placed here customizes WikiLove, see http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Sicilian (sicilianu)
@@ -6294,7 +6294,7 @@ $messages['si'] = array(
 	'wikilove-commons-text' => '$1 ගවේෂණය කොට ඔබ හට පින්තුර සොයාගත හැක.',
 	'wikilove-terms' => 'යොමු කිරීමෙන්, $1 යටතේ පාරදෘෂ්‍යතාවට ඔබ එකඟ වේ.',
 	'wikilove-terms-link' => 'කොන්දේසි',
-	'wikilove.js' => '/* මෙහි යොදන ජාවාස්ක්‍රිප්ට් කේතයන් විකිසෙනෙහස රුචිකරණය කරයි, http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration බලන්න */',
+	'WikiLove.js' => '/* මෙහි යොදන ජාවාස්ක්‍රිප්ට් කේතයන් විකිසෙනෙහස රුචිකරණය කරයි, http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration බලන්න */',
 );
 
 /** Slovenian (slovenščina)
@@ -6405,7 +6405,7 @@ $messages['sl'] = array(
 	'wikilove-commons-text' => 'Slike lahko najdete z brskanjem po $1.',
 	'wikilove-terms' => 'S potrditvijo se strinjate s preglednostjo pod temi $1.',
 	'wikilove-terms-link' => 'pogoji',
-	'wikilove.js' => '/* Tukaj naveden JavaScript prilagaja WikiLove; oglejte si http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+	'WikiLove.js' => '/* Tukaj naveden JavaScript prilagaja WikiLove; oglejte si http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Serbian (Cyrillic script) (српски (ћирилица)‎)
@@ -6592,7 +6592,7 @@ $messages['sr-ec'] = array(
 	'wikilove-terms' => 'Слањем прихватате транспарентност коју налажу ови $1.',
 	'wikilove-terms-link' => 'услови',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement?uselang=sr-ec',
-	'wikilove.js' => '/* Овде постављен јаваскрипт прилагођава Викиљубав. Погледајте http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration?uselang=sr-ec */',
+	'WikiLove.js' => '/* Овде постављен јаваскрипт прилагођава Викиљубав. Погледајте http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration?uselang=sr-ec */',
 );
 
 /** Serbian (Latin script) (srpski (latinica)‎)
@@ -6770,7 +6770,7 @@ $messages['sr-el'] = array(
 	'wikilove-terms' => 'Slanjem prihvatate transparentnost koju nalažu ovi $1.',
 	'wikilove-terms-link' => 'uslovi',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement?uselang=sr-ec',
-	'wikilove.js' => '/* Ovde postavljen javaskript prilagođava Vikiljubav. Pogledajte http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration?uselang=sr-ec */',
+	'WikiLove.js' => '/* Ovde postavljen javaskript prilagođava Vikiljubav. Pogledajte http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration?uselang=sr-ec */',
 );
 
 /** Swedish (svenska)
@@ -7038,7 +7038,7 @@ $messages['ta'] = array(
 	'wikilove-commons-text' => 'நீங்கள் மேய்வதன் (browsing) மூலம்  $1  படத்தை கண்டுபிடிக்க இயலும்.',
 	'wikilove-terms' => 'சமர்ப்பிப்பதனூடாக, நீங்கள் $1இன் கீழ் வெளிப்படையாகச் சம்மதிக்கிறீர்கள்.',
 	'wikilove-terms-link' => 'விதிமுறைகள்',
-	'wikilove.js' => '/* இங்கே இடப்பட்டுள்ள  ஜாவாஸ்கிரிப்ட் ஆனது விக்கியன்பை தனிப்பயனாக்குகிறது, பார்க்க  http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+	'WikiLove.js' => '/* இங்கே இடப்பட்டுள்ள  ஜாவாஸ்கிரிப்ட் ஆனது விக்கியன்பை தனிப்பயனாக்குகிறது, பார்க்க  http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Telugu (తెలుగు)
@@ -7258,7 +7258,7 @@ $messages['tl'] = array(
 	'wikilove-terms' => 'Sa pamamagitan ng pagpasa, sumasang-ayon ka sa pagkanaaaninag sa ilalim ng $1 na mga ito.',
 	'wikilove-terms-link' => 'mga kataga',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
-	'wikilove.js' => '/* Ang JavaScript na inilalagay dito ay nagpapasadya ng WikiLove, tingnan ang http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+	'WikiLove.js' => '/* Ang JavaScript na inilalagay dito ay nagpapasadya ng WikiLove, tingnan ang http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Turkish (Türkçe)
@@ -7441,7 +7441,7 @@ $messages['tr'] = array(
 	'wikilove-commons-text' => '$1 bağlantısına gözatarak resim bulabilirsiniz.',
 	'wikilove-terms' => 'Gönderim yaparak $1 uyarınca saydamlığı kabul ediyorsunuz.',
 	'wikilove-terms-link' => 'koşullar',
-	'wikilove.js' => "/* Buraya yerleştirilen JavaScript, VikiSevgi'yi özelleştirir. Bkz: http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */",
+	'WikiLove.js' => "/* Buraya yerleştirilen JavaScript, VikiSevgi'yi özelleştirir. Bkz: http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */",
 );
 
 /** Central Atlas Tamazight (ⵜⴰⵎⴰⵣⵉⵖⵜ)
@@ -7788,7 +7788,7 @@ $1 ویکی محبت {{PLURAL:$1|پیغام|پیغامات}} روانہ کردی
 	'wikilove-commons-text' => 'آپ کو صفحہ $1 میں تصاویر مل جائے گی۔',
 	'wikilove-terms' => 'اس کو روانہ کرنے پر آپ کو ان $1 کے تحت شفافیت پر متفق تصور کیا جائے گے۔',
 	'wikilove-terms-link' => 'شرائط و ضوابط',
-	'wikilove.js' => '/* یہاں موجود جاوااسکرپٹ سے ویکی محبت کو اپنے انداز میں ڈھالا جاسکتا ہے، ملاحظہ فرمائیں http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+	'WikiLove.js' => '/* یہاں موجود جاوااسکرپٹ سے ویکی محبت کو اپنے انداز میں ڈھالا جاسکتا ہے، ملاحظہ فرمائیں http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Vietnamese (Tiếng Việt)
@@ -7973,7 +7973,7 @@ $messages['vi'] = array(
 	'wikilove-terms' => 'Bằng cách gửi thông tin, bạn đồng ý phát hành thông tin này công khai theo các $1 này.',
 	'wikilove-terms-link' => 'điều khoản',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement/vi?uselang=vi',
-	'wikilove.js' => '/* Mã JavaScript tại đây sẽ tùy chỉnh WikiLove; xem http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+	'WikiLove.js' => '/* Mã JavaScript tại đây sẽ tùy chỉnh WikiLove; xem http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
 /** Yiddish (ייִדיש)
@@ -8356,5 +8356,5 @@ $messages['zh-hant'] = array(
 	'wikilove-commons-text' => '你可以瀏覽$1找到合適圖像。',
 	'wikilove-terms' => '提交後，您將同意在$1下的透明度。',
 	'wikilove-terms-link' => '條款',
-	'wikilove.js' => '/* 放在此處的JavaScript將會定制WikiLove, 參見http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
+	'WikiLove.js' => '/* 放在此處的JavaScript將會定制WikiLove, 參見http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
