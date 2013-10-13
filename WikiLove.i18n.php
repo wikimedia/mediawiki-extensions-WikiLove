@@ -578,6 +578,7 @@ $messages['bg'] = array(
 
 /** Bengali (বাংলা)
  * @author Bellayet
+ * @author Jayantanth
  * @author Nasir8891
  * @author Wikitanvir
  */
@@ -607,6 +608,9 @@ $messages['bn'] = array(
 	'wikilove-barnstar-admins-option' => 'প্রশাসকের উইকিপদক',
 	'wikilove-barnstar-admins-desc' => 'প্রশাসকের উইকিপদক দেয়া হয়ে থাকে সেইসকল প্রশাসকদের যারা কোনো গুরুত্বপূর্ণ জটিল স্বীদ্ধান্ত নিয়েছেন অথবা প্রয়োজনীয় প্রশাসনসংক্রান্ত কোন কাজ সম্পন্ন করেছেন।',
 	'wikilove-barnstar-admins-title' => 'প্রশাসকের উইকিপদক',
+	'wikilove-barnstar-civility-option' => 'ভদ্রতা উইকিপদক',
+	'wikilove-barnstar-civility-title' => 'ভদ্রতা উইকিপদক',
+	'wikilove-barnstar-copyeditor-option' => 'অনুলিপি সম্পাদক উইকিপদক',
 	'wikilove-err-gallery-again' => 'আবার চেষ্টা করুন',
 	'wikilove-what-is-this' => 'এইটি কী?',
 );
