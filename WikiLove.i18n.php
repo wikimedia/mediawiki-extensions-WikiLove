@@ -577,6 +577,7 @@ $messages['bg'] = array(
 );
 
 /** Bengali (বাংলা)
+ * @author Aftab1995
  * @author Bellayet
  * @author Jayantanth
  * @author Nasir8891
@@ -611,8 +612,19 @@ $messages['bn'] = array(
 	'wikilove-barnstar-civility-option' => 'ভদ্রতা উইকিপদক',
 	'wikilove-barnstar-civility-title' => 'ভদ্রতা উইকিপদক',
 	'wikilove-barnstar-copyeditor-option' => 'অনুলিপি সম্পাদক উইকিপদক',
+	'wikilove-barnstar-special-option' => 'বিশেষ উইকিপদক',
+	'wikilove-type-food' => 'খাদ্য ও পানীয়',
+	'wikilove-food-select' => 'খাদ্য বা পানীয়ের আইটেম নির্বাচন করুন:',
+	'wikilove-type-makeyourown' => 'আপনার নিজস্ব তৈরি করুন',
+	'wikilove-err-header' => 'দয়া করে একটি শিরোলেখ লিখুন।',
+	'wikilove-err-title' => 'দয়া করে একটি শিরোনাম লিখুন।',
+	'wikilove-err-image' => 'অনুগ্রহ করে একটি চিত্র নির্বাচন করুন।',
+	'wikilove-err-image-bad' => 'চিত্রটি বিদ্যমান নেই।',
 	'wikilove-err-gallery-again' => 'আবার চেষ্টা করুন',
-	'wikilove-what-is-this' => 'এইটি কী?',
+	'wikilove-success-number' => '$1টি উইকিভালোবাসা {{PLURAL:$1|বার্তা}} পাঠানো হয়েছে।',
+	'wikilove-summary' => '/* $1 */ নতুন উইকিভালোবাসা বার্তা',
+	'wikilove-what-is-this' => 'এটি কী?',
+	'wikilove-terms-link' => 'শর্তাবলী',
 );
 
 /** Breton (brezhoneg)
@@ -3748,12 +3760,13 @@ $messages['kn'] = array(
 );
 
 /** Korean (한국어)
+ * @author Daisy2002
  * @author Freebiekr
  * @author Klutzy
  * @author 아라
  */
 $messages['ko'] = array(
-	'wikilove-desc' => '다른 사용자에게 감사의 뜻을 쉽게 전하기 위한 인터페이스를 사용자 문서에 추가합니다',
+	'wikilove-desc' => '다른 사용자에게 감사의 뜻을 쉽게 전하기 위한 인터페이스를 사용자 문서에 추가합니다.',
 	'wikilove' => '위키사랑',
 	'wikilove-enable-preference' => '다른 사용자에 대한 고마움을 위키사랑 탭으로 표현하기 사용',
 	'wikilove-tab-text' => '위키사랑',
@@ -3770,11 +3783,11 @@ $messages['ko'] = array(
 	'wikilove-header' => '주제 입력:',
 	'wikilove-title' => '상 이름 입력:',
 	'wikilove-enter-message' => '내용 입력:',
-	'wikilove-omit-sig' => '(서명 불필요)',
-	'wikilove-image-example' => '(보기: Trophy.png)',
+	'wikilove-omit-sig' => '(서명 없이)',
+	'wikilove-image-example' => '(예시: Trophy.png)',
 	'wikilove-button-preview' => '미리 보기',
 	'wikilove-preview' => '미리 보기',
-	'wikilove-notify' => '이메일로 사용자에게 알림',
+	'wikilove-notify' => '이메일로 사용자에게 알리기',
 	'wikilove-button-send' => '위키사랑 보내기',
 	'wikilove-type-barnstars' => '반스타',
 	'wikilove-barnstar-header' => '당신을 위해 반스타를 드립니다!',
@@ -3894,7 +3907,7 @@ $messages['ko'] = array(
 	'wikilove-food-pie-header' => '당신을 위한 파이!',
 	'wikilove-food-strawberries-option' => '딸기',
 	'wikilove-food-strawberries-desc' => '딸기 열매(실제로는 베리가 아님)는 독특한 향, 선홍색, 즙이 많은 질감 및 단맛 때문에 널리 환영받습니다.',
-	'wikilove-food-strawberries-header' => '당신을 위해 딸기의 한 사발!',
+	'wikilove-food-strawberries-header' => '당신을 위한 딸기!',
 	'wikilove-food-stroopwafels-option' => '스트룹와플',
 	'wikilove-food-stroopwafels-desc' => '스트룹와플은 캐러멜 같은 시럽이 가득찬, 두 겹의 얇은 구운 반죽으로 만든 네덜란드 간식입니다.',
 	'wikilove-food-stroopwafels-header' => '당신을 위한 스트룹와플!',
@@ -3909,7 +3922,7 @@ $messages['ko'] = array(
 	'wikilove-err-image-api' => '그림을 찾을 때 문제가 생겼습니다. 다시 시도하세요.',
 	'wikilove-err-sig' => '글에 서명을 넣지 마세요.',
 	'wikilove-err-gallery' => '그림을 불러올 때 문제가 생겼습니다.',
-	'wikilove-err-gallery-again' => '다시 시도하세요',
+	'wikilove-err-gallery-again' => '다시 시도하세요.',
 	'wikilove-err-preview-api' => '미리 보는 동안 문제가 생겼습니다. 다시 시도하세요.',
 	'wikilove-err-send-api' => '글을 보낼 때 문제가 생겼습니다. 다시 시도하세요.',
 	'wikilove-err-invalid-token' => '세션 데이터를 잃어버려서 위키사랑을 보낼 수 없습니다. 페이지를 새로 고치거나 로그아웃하고 다시 로그인하세요.',
