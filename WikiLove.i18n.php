@@ -955,6 +955,7 @@ $messages['cs'] = array(
 );
 
 /** Danish (dansk)
+ * @author Christian List
  * @author Peter Alberti
  */
 $messages['da'] = array(
@@ -979,7 +980,7 @@ $messages['da'] = array(
 	'wikilove-image-example' => '(eksempel: Trophy.png)',
 	'wikilove-button-preview' => 'Forhåndsvisning',
 	'wikilove-preview' => 'Forhåndsvisning',
-	'wikilove-notify' => 'Underret brugeren per email',
+	'wikilove-notify' => 'Underret brugeren per e-mail',
 	'wikilove-button-send' => 'Send WikiLove',
 	'wikilove-type-barnstars' => 'Barnstars',
 	'wikilove-type-food' => 'Mad og drikke',
