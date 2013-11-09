@@ -273,7 +273,8 @@ Parameters:
 This URL can be changed to point at a localised page on Wikimedia Commons.',
 	'wikilove-terms' => '[[File:Wiki_Love_003.png|right|200px]]
 A notice that appears above the Send WikiLove button in small text. Try to keep this concise. $1 is replaced with the actual link.',
-	'wikilove-terms-link' => 'The text that links to the terms of service. Should not be capitalized.',
+	'wikilove-terms-link' => 'The text that links to the terms of service. Should not be capitalized.
+{{Identical|Term}}',
 	'wikilove-terms-url' => '{{Optional}}
 This URL can be changed to point to a translated version of the page if it exists.',
 );
@@ -4268,6 +4269,7 @@ $messages['lb'] = array(
 	'wikilove-err-no-self-wikilove' => 'Dir kennt Iech selwer keng Unerkennung ausdrécken. Pardon!',
 	'wikilove-err-redirect' => 'Dem Benotzer seng Diskussiounssäit ass eng Viruleedung.',
 	'wikilove-err-cannot-edit' => "Dir hutt net déi néideg Rechter fir dës Säit z'änneren.",
+	'wikilove-err-max-exceeded' => 'Dir kënnt net méi wéi {{PLURAL:$1|engem Benotzer|$1 Benotzer}} op eemol WikiLove schécken.',
 	'wikilove-success-number' => '$1 WikiLove {{PLURAL:$1|Message}} geschéckt.',
 	'wikilove-summary' => '/* $1 */ neie WikiLove Message',
 	'wikilove-what-is-this' => 'Wat ass dat?',
