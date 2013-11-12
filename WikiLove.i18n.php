@@ -212,7 +212,8 @@ $messages['qqq'] = array(
 {{Identical|WikiLove}}',
 	'tooltip-ca-wikilove' => '[[File:Wiki Love 001.png|thumb]]',
 	'wikilove-dialog-title' => '[[File:Wiki Love 002.png|thumb]]',
-	'wikilove-select-type' => '[[File:Wiki Love 002.png|thumb]]',
+	'wikilove-select-type' => '[[File:Wiki Love 002.png|thumb]]
+{{Identical|Select type}}',
 	'wikilove-get-started-header' => '[[File:Wiki Love 002.png|thumb]]',
 	'wikilove-get-started-list-1' => '[[File:Wiki Love 002.png|thumb]]',
 	'wikilove-get-started-list-2' => '[[File:Wiki Love 002.png|thumb]]',
