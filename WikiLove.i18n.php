@@ -2728,6 +2728,7 @@ $messages['he'] = array(
 	'wikilove-what-is-this' => 'מה זה?',
 	'wikilove-anon-warning' => 'הערה: משתמש זה אינו רשום ואולי לא יבחין בהודעה זו.',
 	'wikilove-commons-text' => 'אפשר לחפש תמונות באתר $1.',
+	'wikilove-commons-link' => 'ויקישיתוף',
 	'wikilove-terms' => 'שליחה מביעה את הסכמתך לשקיפות לפי $1 הבאים.',
 	'wikilove-terms-link' => 'התנאים',
 	'WikiLove.js' => "/* זהו דף ג'אווה סקריפט להגדרות של ויקי־אהבה. למידע נוסף ר׳
