@@ -3521,6 +3521,7 @@ $messages['it'] = array(
 
 /** Japanese (日本語)
  * @author Akaniji
+ * @author BryghtShadow
  * @author Fryed-peach
  * @author Schu
  * @author Shirayuki
@@ -3591,9 +3592,14 @@ $messages['ja'] = array(
 	'wikilove-food-baklava-desc' => 'バクラヴァは、刻んだナッツを生地の間に挟んで何層にも重ね、シロップやハチミツにつけた、甘くて豪華なお菓子です。',
 	'wikilove-food-baklava-header' => 'バクラヴァを贈ります!',
 	'wikilove-food-beer-option' => 'ビール',
+	'wikilove-food-brownie-option' => 'ブラウニー',
+	'wikilove-food-bubbletea-option' => 'タピオカティー',
 	'wikilove-food-cheeseburger-option' => 'チーズバーガー',
 	'wikilove-food-cookie-option' => 'クッキー',
+	'wikilove-food-cupcake-option' => 'カップケーキ',
 	'wikilove-food-pie-option' => 'パイ',
+	'wikilove-food-strawberries-option' => 'イチゴ',
+	'wikilove-food-stroopwafels-option' => 'ストロープワッフル',
 	'wikilove-type-kittens' => '仔猫',
 	'wikilove-type-makeyourown' => '自作する',
 	'wikilove-err-header' => '表題を入力してください。',
@@ -4873,21 +4879,22 @@ $messages['ms'] = array(
 
 /** Norwegian Bokmål (norsk bokmål)
  * @author Cocu
+ * @author Danmichaelo
  * @author Diupwijk
  * @author Stigmj
  */
 $messages['nb'] = array(
-	'wikilove-desc' => 'Legger til et grensesnitt for å forenkle positive tilbakemeldinger til brukeres diskusjonssider',
-	'wikilove' => 'WikiLove',
-	'wikilove-enable-preference' => 'Aktiver muligheten for å vise takknemlighet til andre brukere med WikiLove-fanen',
-	'wikilove-tab-text' => 'WikiLove',
-	'tooltip-ca-wikilove' => 'Legg inn en melding til denne brukeren som viser din takknemlighet',
-	'wikilove-dialog-title' => 'WikiLove - Send en takknemlighetsmelding til en annen bruker',
+	'wikilove-desc' => 'Legger til et grensesnitt for å gjøre det enklere å legge inn positive tilbakemeldinger på brukeres diskusjonssider',
+	'wikilove' => 'Wikiheder',
+	'wikilove-enable-preference' => 'Aktiver muligheten for å vise takknemlighet til andre brukere med Wikiheder-fanen',
+	'wikilove-tab-text' => 'Wikiheder',
+	'tooltip-ca-wikilove' => 'Vis din takknemlighet til denne brukeren ved å legg inn en Wikiheder-melding',
+	'wikilove-dialog-title' => 'Wikiheder - Send en takknemlighetsmelding til en annen bruker',
 	'wikilove-select-type' => 'Velg type',
 	'wikilove-get-started-header' => 'La oss sette i gang!',
-	'wikilove-get-started-list-1' => 'Velg WikiLove-typen du vil sende',
-	'wikilove-get-started-list-2' => 'Legg til detaljer i WikiLove-meldingen din',
-	'wikilove-get-started-list-3' => 'Send din WikiLove!',
+	'wikilove-get-started-list-1' => 'Velg hvilken type Wikiheder du vil sende',
+	'wikilove-get-started-list-2' => 'Legg til detaljer i Wikiheder-meldingen din',
+	'wikilove-get-started-list-3' => 'Send din Wikiheder!',
 	'wikilove-add-details' => 'Legg til detaljer',
 	'wikilove-image' => 'Skriv inn filnavnet til et bilde:',
 	'wikilove-select-image' => 'Velg et bilde:',
@@ -4899,7 +4906,7 @@ $messages['nb'] = array(
 	'wikilove-button-preview' => 'Forhåndsvisning',
 	'wikilove-preview' => 'Forhåndsvis',
 	'wikilove-notify' => 'Varsle brukeren via e-post',
-	'wikilove-button-send' => 'Send WikiLove',
+	'wikilove-button-send' => 'Send Wikiheder',
 	'wikilove-type-barnstars' => 'Stjerner',
 	'wikilove-type-food' => 'Mat og drikke',
 	'wikilove-type-kittens' => 'Kattunger',
@@ -4915,10 +4922,19 @@ $messages['nb'] = array(
 	'wikilove-err-gallery-again' => 'Prøv igjen',
 	'wikilove-err-preview-api' => 'Noe gikk galt under forhåndsvisningen. Vennligst prøv igjen.',
 	'wikilove-err-send-api' => 'Noe gikk galt under sending av meldingen. Vennligst prøv igjen.',
-	'wikilove-summary' => '/* $1 */ ny WikiLove-melding',
+	'wikilove-err-not-logged-in' => 'Du er ikke innlogget. Vennligst logg inn for å bruke Wikiheder.',
+	'wikilove-err-invalid-username' => 'Brukernavnet er ikke gyldig.',
+	'wikilove-err-no-self-wikilove' => 'Du kan ikke sende Wikiheder til deg selv. Beklager!',
+	'wikilove-err-redirect' => 'Brukerens diskusjonsside er en omdirigeringsside.',
+	'wikilove-err-cannot-edit' => 'Du har ikke tilgang til å redigere siden.',
+	'wikilove-err-max-exceeded' => 'Du kan ikke sende Wikiheder til mer enn $1 {{PLURAL:$1|person|personer}} om gangen.',
+	'wikilove-success-number' => '$1 Wikiheder-{{PLURAL:$1|melding|meldinger}} sendt.',
+	'wikilove-summary' => '/* $1 */ ny Wikiheder-melding',
 	'wikilove-what-is-this' => 'Hva er dette?',
 	'wikilove-anon-warning' => 'Merk: Denne brukeren er ikke registrert, det kan derfor hende at vedkommende ikke legger merke til denne meldingen.',
 	'wikilove-commons-text' => 'Du kan finne bilder ved å bla gjennom $1.',
+	'wikilove-terms' => 'Ved å sende samtykker du til disse $1.',
+	'wikilove-terms-link' => 'vilkårene',
 );
 
 /** Nepali (नेपाली)
