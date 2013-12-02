@@ -64,7 +64,7 @@ class WikiLoveHooks {
 			return true;
 		}
 
-		$title = self::getUserTalkPage( $skin->getTitle() );
+		$title = self::getUserTalkPage( $skin->getTitle(), $skin->getUser() );
 		// getUserTalkPage() returns a string on error
 		if ( !is_string( $title ) ) {
 			$out->addModules( array( 'ext.wikiLove.icon', 'ext.wikiLove.init' ) );
@@ -124,7 +124,7 @@ class WikiLoveHooks {
 		}
 
 		// getUserTalkPage() returns a string on error
-		if ( !is_string( self::getUserTalkPage( $skin->getTitle() ) ) ) {
+		if ( !is_string( self::getUserTalkPage( $skin->getTitle(), $skin->getUser() ) ) ) {
 			$views['wikilove'] = array(
 				'text' => $skin->msg( 'wikilove-tab-text' )->text(),
 				'href' => '#',
@@ -155,14 +155,13 @@ class WikiLoveHooks {
 	 * be able to send WikiLove to the target.
 	 *
 	 * @param Title $title The title of a user page or user talk page
+	 * @param User $user the current user
 	 *
 	 * @return Title|string Returns either the Title object for the talk page or an error string
 	 */
-	public static function getUserTalkPage( $title ) {
-		global $wgUser;
-
+	public static function getUserTalkPage( $title, $user ) {
 		// Exit early if the sending user isn't logged in
-		if ( !$wgUser->isLoggedIn() ) {
+		if ( !$user->isLoggedIn() ) {
 			return wfMessage( 'wikilove-err-not-logged-in' )->plain();
 		}
 
@@ -176,7 +175,7 @@ class WikiLoveHooks {
 		$baseTitle = $title->getRootTitle();
 
 		// Users can't send WikiLove to themselves
-		if ( $wgUser->getName() === $baseTitle->getText() ) {
+		if ( $user->getName() === $baseTitle->getText() ) {
 			return wfMessage( 'wikilove-err-no-self-wikilove' )->plain();
 		}
 

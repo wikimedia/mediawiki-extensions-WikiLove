@@ -13,7 +13,7 @@ class ApiWikiLove extends ApiBase {
 			$this->dieUsageMsg( array( 'invaliduser', $params['title'] ) );
 		}
 
-		$talk = WikiLoveHooks::getUserTalkPage( $title );
+		$talk = WikiLoveHooks::getUserTalkPage( $title, $this->getUser() );
 		// getUserTalkPage() returns a string on error
 		if ( is_string( $talk ) ) {
 			$this->dieUsage( $talk, 'nowikilove' );
