@@ -788,6 +788,8 @@ $messages['ca'] = array(
  */
 $messages['ce'] = array(
 	'wikilove-title' => 'ДӀаязъе совгӀатан цӀе:',
+	'wikilove-button-preview' => 'Хьалха муха ю хьажа',
+	'wikilove-preview' => 'Хьалха муха ю хьажа',
 	'wikilove-err-title' => 'Дехар до, дӀаязеъе цӀе.',
 );
 
@@ -902,7 +904,7 @@ $messages['ckb'] = array(
 	'wikilove-terms-link' => 'مەرجەکان',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Jkjk
  * @author Mormegil
  * @author Vks
