@@ -4699,6 +4699,7 @@ $messages['ml'] = array(
 
 /** Malay (Bahasa Melayu)
  * @author Anakmalaysia
+ * @author Xabier Armendaritz
  */
 $messages['ms'] = array(
 	'wikilove-desc' => 'Menambahkan antara muka untuk memudahkan maklum balas pengguna yang positif kepada laman perbincangan pengguna',
@@ -4813,7 +4814,7 @@ $messages['ms'] = array(
 	'wikilove-food-baklava-option' => 'Baklava',
 	'wikilove-food-baklava-desc' => 'Baklava ialah sejenis manisan yang diperbuat daripada lapisan-lapisan pastri filo yang diisi dengan kacang cencang serta dimaniskan dengan sirap atau madu.',
 	'wikilove-food-baklava-header' => 'Baklava untuk anda!',
-	'wikilove-food-beer-option' => 'Bir',
+	'wikilove-food-beer-option' => 'Garagardoa',
 	'wikilove-food-beer-desc' => 'Bir merupakan minuman keras yang paling banyak diminum dan mungkin yang tertua di dunia. Ia merupakan minuman ketiga paling digemari selepas air dan teh.',
 	'wikilove-food-beer-header' => 'Bir untuk anda!',
 	'wikilove-food-brownie-option' => 'Brownie',
