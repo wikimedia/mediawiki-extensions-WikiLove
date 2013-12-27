@@ -791,6 +791,7 @@ $messages['ce'] = array(
 	'wikilove-button-preview' => 'Хьалха муха ю хьажа',
 	'wikilove-preview' => 'Хьалха муха ю хьажа',
 	'wikilove-err-title' => 'Дехар до, дӀаязеъе цӀе.',
+	'wikilove-err-gallery-again' => 'Кхин цӀа гӀорта',
 );
 
 /** Sorani Kurdish (کوردی)
