@@ -1833,6 +1833,7 @@ $messages['fa'] = array(
 	'wikilove-commons-text' => 'می‌توانید برای یافتن تصاویر $1 را مرور کنید.',
 	'wikilove-terms' => 'با ارسال فرم، شما با شفاف‌سازی‌های مطابق $1 موافقت می‌کنید.',
 	'wikilove-terms-link' => 'شرایط',
+	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement/fa',
 	'WikiLove.js' => '/ * جاوا اسکریپت مورد استفاده در اینجا ویکی‌هدیه را سفارشی می‌کند، نگاه کنید به http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
 );
 
