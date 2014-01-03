@@ -6149,8 +6149,8 @@ $messages['ru'] = array(
 	'wikilove-err-no-self-wikilove' => 'Вы не можете отправить WikiLove самому себе, извините!',
 	'wikilove-err-redirect' => 'Страница обсуждения пользователя является перенаправлением.',
 	'wikilove-err-cannot-edit' => 'У вас нет прав, чтобы править эту страницу.',
-	'wikilove-err-max-exceeded' => 'Вы не можете отправить WikiLove для более чем $1 {{PLURAL:$1|участника|участников}} за один раз.',
-	'wikilove-success-number' => '$1 {{PLURAL:$1|сообщение|сообщения|сообщений}} отправлен{{PLURAL:$1|о|ы|о}}.',
+	'wikilove-err-max-exceeded' => 'Вы не можете отправить WikiLove для более чем $1 {{PLURAL:$1|1=участника|участников}} за один раз.', # Fuzzy
+	'wikilove-success-number' => '$1 {{PLURAL:$1|сообщение|сообщений|сообщения}} отправлен{{PLURAL:$1|о|о|ы}}.', # Fuzzy
 	'wikilove-summary' => '/ * $1 * / новая ВикиСимпатия',
 	'wikilove-what-is-this' => 'Что это?',
 	'wikilove-anon-warning' => 'Примечание. Этот участник не зарегистрирован, он или она может не заметить это сообщение.',
@@ -6780,7 +6780,7 @@ $messages['sr-ec'] = array(
 	'wikilove-err-invalid-username' => 'Корисничко име је неисправно.',
 	'wikilove-err-no-self-wikilove' => 'Нажалост, не можете послати WikiLove сами себи.',
 	'wikilove-err-cannot-edit' => 'Немате дозволу да мењате ову страницу.',
-	'wikilove-err-max-exceeded' => 'Не можете послати WikiLove више од $1 {{PLURAL:$1|кориснику|корисника}} одједном.', # Fuzzy
+	'wikilove-err-max-exceeded' => 'Не можете послати WikiLove више од $1 {{PLURAL:$1|1=кориснику|корисника}} одједном.', # Fuzzy
 	'wikilove-success-number' => '$1 WikiLove {{PLURAL:$1|порука}} послато.',
 	'wikilove-summary' => '/* $1 */ нова порука (Викиљубав)',
 	'wikilove-what-is-this' => 'Шта је ово?',
@@ -7855,7 +7855,7 @@ $messages['uk'] = array(
 	'wikilove-err-no-self-wikilove' => 'Ви не можете надіслати Вікісимпатію собі. Вибачте!',
 	'wikilove-err-redirect' => 'Сторінка обговорення користувача є перенаправленням.',
 	'wikilove-err-cannot-edit' => 'У Вас немає права редагувати цю сторінку.',
-	'wikilove-err-max-exceeded' => 'Ви не можете надіслати Вікісипатію більш ніж $1 {{PLURAL:$1|користувачеві|користувачам}} одночасно.',
+	'wikilove-err-max-exceeded' => 'Ви не можете надіслати Вікісимпатію більш ніж $1 {{PLURAL:$1|1=користувачеві|користувачам}} одночасно.',
 	'wikilove-success-number' => '$1 {{PLURAL:$1|повідомлення|повідомлення|повідомлень}} Вікісимпатії надіснано.',
 	'wikilove-summary' => '/* $1 */ нова Вікісимпатія',
 	'wikilove-what-is-this' => 'Що це?',
