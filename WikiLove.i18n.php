@@ -2552,6 +2552,7 @@ $messages['gsw'] = array(
 /** Hebrew (עברית)
  * @author Amire80
  * @author Deror avi
+ * @author Guycn2
  * @author Ijon
  * @author Ofekalef
  * @author Ofrahod
@@ -2565,7 +2566,7 @@ $messages['he'] = array(
 	'wikilove' => 'ויקי־אהבה',
 	'wikilove-enable-preference' => 'הפעלה של הבעת הערכה למשתמשים אחרים באמצעות לשונית ויקי־אהבה',
 	'wikilove-tab-text' => 'ויקי־אהבה',
-	'tooltip-ca-wikilove' => 'שליחת הודעה המראה את הערכתך למשתמש',
+	'tooltip-ca-wikilove' => 'שליחת הודעה המביעה את הערכתך למשתמש',
 	'wikilove-dialog-title' => 'ויקי־אהבה – שליחת הודעת הערכה למשתמש אחר',
 	'wikilove-select-type' => 'בחירת סוג',
 	'wikilove-get-started-header' => 'בואו נתחיל!',
