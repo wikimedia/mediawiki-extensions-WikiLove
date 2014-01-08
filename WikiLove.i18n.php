@@ -5979,6 +5979,7 @@ $messages['roa-tara'] = array(
 /** Russian (русский)
  * @author Eugrus
  * @author Haffman
+ * @author Kaganer
  * @author Kalan
  * @author Okras
  * @author Ole Yves
@@ -6150,8 +6151,8 @@ $messages['ru'] = array(
 	'wikilove-err-no-self-wikilove' => 'Вы не можете отправить WikiLove самому себе, извините!',
 	'wikilove-err-redirect' => 'Страница обсуждения пользователя является перенаправлением.',
 	'wikilove-err-cannot-edit' => 'У вас нет прав, чтобы править эту страницу.',
-	'wikilove-err-max-exceeded' => 'Вы не можете отправить WikiLove для более чем $1 {{PLURAL:$1|1=участника|участников}} за один раз.', # Fuzzy
-	'wikilove-success-number' => '$1 {{PLURAL:$1|сообщение|сообщений|сообщения}} отправлен{{PLURAL:$1|о|о|ы}}.', # Fuzzy
+	'wikilove-err-max-exceeded' => 'За один раз вы не можете отправить WikiLove более чем $1 {{PLURAL:$1|участнику|участникам}}.',
+	'wikilove-success-number' => '$1 {{PLURAL:$1|сообщение|сообщений|сообщения}} отправлен{{PLURAL:$1|о|о|ы}}.',
 	'wikilove-summary' => '/ * $1 * / новая ВикиСимпатия',
 	'wikilove-what-is-this' => 'Что это?',
 	'wikilove-anon-warning' => 'Примечание. Этот участник не зарегистрирован, он или она может не заметить это сообщение.',
