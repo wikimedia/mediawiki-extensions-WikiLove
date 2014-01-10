@@ -1245,6 +1245,7 @@ $messages['diq'] = array(
 	'wikilove-preview' => 'Verqayt',
 	'wikilove-food-baklava-header' => 'Tenê beqlewa şıma rê!',
 	'wikilove-what-is-this' => 'No çıko?',
+	'WikiLove.js' => '/* JavaScripto cêrên teqdiranê şexsiyan eyar keno, http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration bıvêne */',
 );
 
 /** Greek (Ελληνικά)
