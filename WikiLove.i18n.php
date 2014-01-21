@@ -6783,7 +6783,7 @@ $messages['sr-ec'] = array(
 	'wikilove-err-invalid-username' => 'Корисничко име је неисправно.',
 	'wikilove-err-no-self-wikilove' => 'Нажалост, не можете послати WikiLove сами себи.',
 	'wikilove-err-cannot-edit' => 'Немате дозволу да мењате ову страницу.',
-	'wikilove-err-max-exceeded' => 'Не можете послати WikiLove више од $1 {{PLURAL:$1|1=кориснику|корисника}} одједном.', # Fuzzy
+	'wikilove-err-max-exceeded' => 'Не можете послати WikiLove на више од $1 {{PLURAL:$1|кориснику|корисника}} одједном.',
 	'wikilove-success-number' => '$1 WikiLove {{PLURAL:$1|порука}} послато.',
 	'wikilove-summary' => '/* $1 */ нова порука (Викиљубав)',
 	'wikilove-what-is-this' => 'Шта је ово?',
