@@ -4725,6 +4725,24 @@ $messages['ml'] = array(
 	'WikiLove.js' => '/* വിക്കിസ്നേഹം ക്രമീകരിച്ചെടുക്കാനുള്ള ജാവാസ്ക്രിപ്റ്റ് ഇവിടെ നൽകുക, http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration കാണുക */',
 );
 
+/** Marathi (मराठी)
+ * @author V.narsikar
+ */
+$messages['mr'] = array(
+	'wikilove-desc' => 'आपणास सकारात्मक सदस्य प्रतिक्रिया देण्याच्या सुविधेसाठी, आपल्या चर्चा पानास एक इंटरफेस जोडते',
+	'wikilove' => 'विकिप्रेम',
+	'wikilove-tab-text' => 'विकिप्रेम',
+	'wikilove-select-type' => 'प्रकार निवडा',
+	'wikilove-add-details' => 'तपशिल जोडा',
+	'wikilove-image' => 'वित्र संचिकानाम टाका:',
+	'wikilove-select-image' => 'चित्रसंचिका निवडा:',
+	'wikilove-enter-message' => 'संदेश टाका:',
+	'wikilove-omit-sig' => '(सहीविना)',
+	'wikilove-button-preview' => 'झलक',
+	'wikilove-preview' => 'झलक',
+	'wikilove-button-send' => 'विकिप्रेम पाठवा',
+);
+
 /** Malay (Bahasa Melayu)
  * @author Anakmalaysia
  * @author Xabier Armendaritz
