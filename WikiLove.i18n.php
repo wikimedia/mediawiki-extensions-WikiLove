@@ -4564,7 +4564,7 @@ $messages['mk'] = array(
 	'wikilove-what-is-this-link' => 'https://www.mediawiki.org/wiki/WikiLove?uselang=mk',
 	'wikilove-anon-warning' => 'Напомена: Корисникот не е регистриран, па затоа може да не ја примети поракава.',
 	'wikilove-commons-text' => 'Слики можете да најдете во проектот $1.',
-	'wikilove-commons-link' => 'Заедничка Ризница',
+	'wikilove-commons-link' => 'Ризница',
 	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/Главна_страница?uselang=mk',
 	'wikilove-terms' => 'Поднесувајќи го ова, се согласувате со транспарентноста што ја налагаат овие $1.',
 	'wikilove-terms-link' => 'услови',
