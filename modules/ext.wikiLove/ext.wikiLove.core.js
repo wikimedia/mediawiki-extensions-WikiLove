@@ -134,7 +134,7 @@ $.wikiLove = {
 			<input type="checkbox" id="mw-wikilove-notify-checkbox" name="notify"/>\
 			<label for="mw-wikilove-notify-checkbox"><html:msg key="wikilove-notify"/></label>\
 		</div>\
-		<button class="submit mw-ui-button mw-ui-primary" id="mw-wikilove-button-preview" type="submit"></button>\
+		<button class="submit mw-ui-button mw-ui-progressive" id="mw-wikilove-button-preview" type="submit"></button>\
 		<div id="mw-wikilove-preview-spinner" class="mw-wikilove-spinner"></div>\
 	</form>\
 </div>\
