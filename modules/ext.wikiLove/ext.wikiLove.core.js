@@ -134,7 +134,7 @@ $.wikiLove = {
 			<input type="checkbox" id="mw-wikilove-notify-checkbox" name="notify"/>\
 			<label for="mw-wikilove-notify-checkbox"><html:msg key="wikilove-notify"/></label>\
 		</div>\
-		<button class="submit" id="mw-wikilove-button-preview" type="submit"></button>\
+		<button class="submit mw-ui-button mw-ui-primary" id="mw-wikilove-button-preview" type="submit"></button>\
 		<div id="mw-wikilove-preview-spinner" class="mw-wikilove-spinner"></div>\
 	</form>\
 </div>\
@@ -146,7 +146,7 @@ $.wikiLove = {
 	' + mw.html.escape( mw.msg( 'wikilove-terms' ) ).replace( /\$1/, termsLink ) + '\
 	</div>\
 	<form id="mw-wikilove-send-form">\
-		<button class="submit" id="mw-wikilove-button-send" type="submit"></button>\
+		<button class="submit mw-ui-button mw-ui-constructive" id="mw-wikilove-button-send" type="submit"></button>\
 		<div id="mw-wikilove-send-spinner" class="mw-wikilove-spinner"></div>\
 	</form>\
 	<div id="mw-wikilove-success"></div>\
@@ -163,21 +163,8 @@ $.wikiLove = {
 					resizable: false
 				});
 
-			if ( mw.config.get( 'skin' ) === 'vector' ) {
-				$( '#mw-wikilove-button-preview' ).button( {
-					label: mw.msg( 'wikilove-button-preview' ),
-					icons: {
-						primary:'ui-icon-search'
-					}
-				} );
-			} else {
-				$( '#mw-wikilove-button-preview' ).button( {
-					label: mw.msg( 'wikilove-button-preview' )
-				} );
-			}
-			$( '#mw-wikilove-button-send' ).button( {
-				label: mw.msg( 'wikilove-button-send' )
-			} );
+			$( '#mw-wikilove-button-preview' ).text( mw.msg( 'wikilove-button-preview' ) );
+			$( '#mw-wikilove-button-send' ).text( mw.msg( 'wikilove-button-send' ) );
 			$( '#mw-wikilove-add-details' ).hide();
 			$( '#mw-wikilove-preview' ).hide();
 			$( '#mw-wikilove-types' ).replaceWith( $typeList );

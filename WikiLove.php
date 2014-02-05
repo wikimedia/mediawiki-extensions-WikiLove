@@ -276,7 +276,7 @@ $wgResourceModules += array(
 		'dependencies' => array(
 			'ext.wikiLove.defaultOptions',
 			'jquery.ui.dialog',
-			'jquery.ui.button',
+			'mediawiki.ui.button',
 			'jquery.localize',
 		),
 	),
