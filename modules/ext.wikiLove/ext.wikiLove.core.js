@@ -129,7 +129,7 @@ $.wikiLove = {
 		</div>\
 		<label for="mw-wikilove-message" id="mw-wikilove-message-label"><html:msg key="wikilove-enter-message"/></label>\
 		<span class="mw-wikilove-note" id="mw-wikilove-message-note"><html:msg key="wikilove-omit-sig"/></span>\
-		<textarea id="mw-wikilove-message"></textarea>\
+		<textarea id="mw-wikilove-message" rows="4"></textarea>\
 		<div id="mw-wikilove-notify">\
 			<input type="checkbox" id="mw-wikilove-notify-checkbox" name="notify"/>\
 			<label for="mw-wikilove-notify-checkbox"><html:msg key="wikilove-notify"/></label>\
@@ -186,7 +186,6 @@ $.wikiLove = {
 			$( '#mw-wikilove-subtype' ).change( $.wikiLove.changeSubtype );
 			$( '#mw-wikilove-preview-form' ).submit( $.wikiLove.validatePreviewForm );
 			$( '#mw-wikilove-send-form' ).click( $.wikiLove.submitSend );
-			$( '#mw-wikilove-message' ).elastic(); // have the message textarea grow automatically
 
 			if ( mw.config.get( 'wikilove-anon' ) === 0 ) {
 				$( '#mw-wikilove-anon-warning' ).hide();
