@@ -76,8 +76,8 @@ $wgAPIModules['wikilove'] = 'ApiWikiLove';
 $wgAPIModules['wikiloveimagelog'] = 'ApiWikiLoveImageLog';
 
 $extWikiLoveTpl = array(
-	'localBasePath' => dirname( __FILE__ ) . '/modules/ext.wikiLove',
-	'remoteExtPath' => 'WikiLove/modules/ext.wikiLove',
+	'localBasePath' => dirname( __FILE__ ) . '/resources',
+	'remoteExtPath' => 'WikiLove/resources',
 );
 
 // messages for default options, because we want to use them in the default
