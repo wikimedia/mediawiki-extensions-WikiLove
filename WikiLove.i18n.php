@@ -189,6 +189,7 @@ $messages['en'] = array(
 	'wikilove-terms' => 'By submitting, you agree to transparency under these $1.',
 	'wikilove-terms-link' => 'terms',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement',
+	'tag-wikilove-description' => 'Edit made using the WikiLove tool',
 	'WikiLove.js' => '/* JavaScript placed here customizes WikiLove, see http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
@@ -278,6 +279,7 @@ A notice that appears above the Send WikiLove button in small text. Try to keep 
 {{Identical|Term}}',
 	'wikilove-terms-url' => '{{Optional}}
 This URL can be changed to point to a translated version of the page if it exists.',
+	'tag-wikilove-description' => 'Description for revision tag added when edit is made using WikiLove',
 );
 
 /** Afrikaans (Afrikaans)

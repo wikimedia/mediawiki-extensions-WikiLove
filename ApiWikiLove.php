@@ -61,6 +61,13 @@ class ApiWikiLove extends ApiBase {
 
 		$api->execute();
 
+		$result = $api->getResult()->getData();
+
+		if ( isset( $result['edit'] ) && $result['edit']['result'] === "Success" ) {
+				$revId = $result['edit']['newrevid'];
+				ChangeTags::addTags( "wikilove", null, $revId );
+		}
+
 		if ( isset( $params['email'] ) ) {
 			$this->emailUser( $talk, $strippedSubject, $params['email'], $params['token'] );
 		}

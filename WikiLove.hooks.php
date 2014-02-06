@@ -203,4 +203,16 @@ class WikiLoveHooks {
 			return wfMessage( 'wikilove-err-cannot-edit' )->plain();
 		}
 	}
+
+	/**
+	 * ListDefinedTags hook handler
+	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/ListDefinedTags
+	 * @param $tags
+	 *
+	 * @return bool
+	 */
+	public static function onListDefinedTags( &$tags ) {
+		$tags[] = 'wikilove';
+		return true;
+	}
 }
