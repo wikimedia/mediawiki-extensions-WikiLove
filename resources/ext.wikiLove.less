@@ -13,154 +13,55 @@
 	clear: both; /* for monobook skin */
 }
 
-/* dialog type selection */
+/* dialog type selection *
 /*#mw-wikilove-dialog*/ #mw-wikilove-select-type {
 	float: left;
 	width: 250px;
-}
 
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
 
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type ul li,
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a
-{
-	display: block;
-	width: 250px;
-	height: 66px;
-	padding: 0;
-	margin: 0;
-	position: relative;
-	text-decoration: none;
-	outline: none;
-}
+		li {
+			display: block;
+			border-bottom: 1px solid #aaa;
+			margin: 2px 0;
 
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:hover,
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:focus {
-	text-decoration:none;
-}
+			a {
+				transition: padding-left 0.2s ease;
+				padding: 4px;
+				display: block;
+				text-align: left;
+				text-decoration: none;
 
-/* IGNORED BY IE6 */
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type ul > li,
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type ul li > a {
-	display: inline-block;
-}
+				img {
+					margin-right: 10px;
+				}
 
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-left-cap,
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-right-cap {
-	padding: 0;
-	margin: 0;
-	width: 6px;
-	height: 66px;
-	position: absolute;
-	top: 0;
-}
+				&:hover {
+					padding-left: 10px;
+					text-decoration: none;
+					outline: 0;
+				}
 
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-l-cap,
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-r-cap,
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-icon-box {
-	background-repeat: no-repeat;
-	height: 66px;
-	position: absolute;
-}
+				&:active,
+				&:focus {
+					outline: 0;
+				}
 
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-l-cap,
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-r-cap {
-	width: 6px;
-}
+				&.selected {
+					background-color: #3c68b1;
+					color: #fff;
+					border-radius: 3px;
 
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-l-cap {
-	/* @noflip */
-	left: 0;
-	/* @embed */
-	background-image: url(images/icon-box-left-cap.png);
-}
-
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:hover .mw-wikilove-l-cap,
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:focus .mw-wikilove-l-cap {
-	/* @embed */
-	background-image: url(images/icon-box-hover-left-cap.png);
-}
-
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a.selected .mw-wikilove-l-cap {
-	/* @embed */
-	background-image: url(images/icon-box-selected-left-cap.png);
-}
-
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-r-cap {
-	/* @noflip */
-	right: 0;
-	/* @embed */
-	background-image: url(images/icon-box-right-cap.png);
-}
-
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:hover .mw-wikilove-r-cap,
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:focus .mw-wikilove-r-cap {
-	/* @embed */
-	background-image: url(images/icon-box-hover-right-cap.png);
-}
-
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a.selected .mw-wikilove-r-cap {
-	/* @embed */
-	background-image: url(images/icon-box-selected-right-cap.png);
-}
-
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-inside {
-	padding: 0;
-	margin: 0;
-	width: 238px;
-	height: 66px;
-	position: absolute;
-	top: 0;
-	left: 6px;
-	
-	/* @embed */
-	background-image: url(images/select-bg-sprite.png);
-	background-position: 0 0;
-	background-repeat: repeat-x;
-}
-
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:hover .mw-wikilove-inside,
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:focus .mw-wikilove-inside {
-	background-position: 0 -66px;
-}
-
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a.selected .mw-wikilove-inside {
-	background-position: 0 -132px;
-}
-
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-icon-box {
-	padding: 0;
-	margin: 0;
-	width: 53px;
-	height: 53px;
-	position: absolute;
-	left: 0;
-	top: 5px;
-	/* @embed */
-	background-image: url(images/icon-box.png);
-}
-
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-icon-box img {
-	display: block;
-	padding: 0;
-	margin: 0;
-	width: 53px;
-	height: 53px;
-}
-
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:hover .mw-wikilove-icon-box,
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a:focus .mw-wikilove-icon-box {
-	/* @embed */
-	background-image: url(images/icon-box-hover.png);
-}
-
-/*#mw-wikilove-dialog*/ #mw-wikilove-select-type a.selected .mw-wikilove-icon-box {
-	/* @embed */
-	background-image: url(images/icon-box-selected.png);
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
 }
 
 /*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-link-text {
@@ -190,7 +91,7 @@
 	padding-top: 4px;
 	padding-left: 70px;
 	font-size: 1.1em;
-	
+
 	/* @embed */
 	background-image: url(images/get-started-ltr.png);
 	background-position: top left;
@@ -332,7 +233,7 @@
 	margin-top: 0.9em;
 	margin-right: 0.5em;
 	display: none;
-	
+
 	/* @embed */
 	background-image: url(images/spinner.gif);
 	background-position: 0 0;
@@ -352,7 +253,7 @@
 	margin-right: 5px;
 	font-size: 18px;
 	font-weight: bold;
-	
+
 	/* @embed */
 	background-image: url(images/number.png);
 	background-position: center;
@@ -398,8 +299,4 @@
 	float: none;
 	margin-left:auto;
 	margin-right:auto;
-}
-
-#mw-wikilove-dialog a {
-	color: #0645AD;
 }

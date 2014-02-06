@@ -44,23 +44,19 @@ $.wikiLove = {
 				if ( !$.isPlainObject( type ) ) {
 					continue;
 				}
-				var	$button = $( '<a href="#"></a>' ),
-					$buttonInside = $( '<div class="mw-wikilove-inside"></div>' );
+				var	$button = $( '<a href="#" class=""></a>' );
 
 				if ( typeof type.icon === 'string' ) {
-					$buttonInside.append( '<div class="mw-wikilove-icon-box"><img src="'
-						+ mw.html.escape( type.icon ) + '"/></div>' );
+					$button.append( '<img src="'
+						+ mw.html.escape( type.icon ) + '"/>' );
 				} else {
-					$buttonInside.addClass( 'mw-wikilove-no-icon' );
+					$button.addClass( 'mw-wikilove-no-icon' );
 				}
 
-				$buttonInside.append( '<div class="mw-wikilove-link-text">' + mw.html.escape( type.name ) + '</div>' );
+				$button.append( '<span>' + mw.html.escape( type.name ) + '</span>' );
 
 				$button.data( 'typeId', typeId );
-				$button.append( '<div class="mw-wikilove-l-cap"></div>');
-				$button.append( $buttonInside );
-				$button.append( '<div class="mw-wikilove-r-cap"></div>');
-				$typeList.append( $( '<li tabindex="0"></li>' ).append( $button ) );
+				$typeList.append( $( '<li></li>' ).append( $button ) );
 			}
 
 			var commonsLink = $( '<a>' )

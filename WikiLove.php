@@ -229,7 +229,7 @@ $wgResourceModules += array(
 		'scripts' => array(
 			'ext.wikiLove.core.js',
 		),
-		'styles' => 'ext.wikiLove.css',
+		'styles' => 'ext.wikiLove.less',
 		'messages' => array(
 			'wikilove-tab-text',
 			'wikilove-dialog-title',
