@@ -1194,6 +1194,7 @@ $messages['de'] = array(
 	'wikilove-terms' => 'Mit dem Speichern erklärst du dich mit diesen $1 einverstanden.',
 	'wikilove-terms-link' => 'Bedingungen',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement/de',
+	'tag-wikilove-description' => 'Bearbeitung mit dem WikiLove-Werkzeug durchgeführt',
 	'WikiLove.js' => '/* Das folgende JavaScript passt die persönliche Wertschätzung an, siehe http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
@@ -2741,6 +2742,7 @@ $messages['he'] = array(
 	'wikilove-commons-link' => 'ויקישיתוף',
 	'wikilove-terms' => 'שליחה מביעה את הסכמתך לשקיפות לפי $1 הבאים.',
 	'wikilove-terms-link' => 'התנאים',
+	'tag-wikilove-description' => 'עריכה שנעשתה באמצעות ויקי־אהבה',
 	'WikiLove.js' => "/* זהו דף ג'אווה סקריפט להגדרות של ויקי־אהבה. למידע נוסף ר׳
    http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */",
 );
