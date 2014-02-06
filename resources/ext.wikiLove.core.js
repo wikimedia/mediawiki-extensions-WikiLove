@@ -82,7 +82,7 @@ $.wikiLove = {
 	<ul id="mw-wikilove-types"></ul>\
 </div>\
 <div id="mw-wikilove-get-started">\
-	<h2><html:msg key="wikilove-get-started-header"/></h2>\
+	<h2><span id="mwe-wikilove-pointer-arrow"></span><html:msg key="wikilove-get-started-header"/></h2>\
 	<ol>\
 		<li><html:msg key="wikilove-get-started-list-1"/></li>\
 		<li><html:msg key="wikilove-get-started-list-2"/></li>\

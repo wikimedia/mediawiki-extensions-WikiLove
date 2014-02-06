@@ -94,16 +94,33 @@
 	padding-top: 4px;
 	padding-left: 70px;
 	font-size: 1.1em;
-
-	/* @embed */
-	background-image: url(images/get-started-ltr.png);
-	background-position: top left;
-	background-repeat: no-repeat;
 }
 
 /*#mw-wikilove-dialog*/ #mw-wikilove-get-started h2 {
 	border: none;
 	font-weight: bold;
+	margin-left: -48px;
+
+}
+
+#mwe-wikilove-pointer-arrow {
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	border-radius: 16px;
+	font-size: 24px;
+	background: #00af89;
+	margin-right: 16px;
+	color: #fff;
+	display: inline-block;
+}
+.ltr #mwe-wikilove-pointer-arrow:after {
+	content: "\2190";
+}
+
+.rtl #mwe-wikilove-pointer-arrow:after {
+	content: "\2192";
 }
 
 /*#mw-wikilove-dialog*/ #mw-wikilove-get-started ol {
