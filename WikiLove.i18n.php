@@ -2025,6 +2025,7 @@ $messages['fi'] = array(
  * @author Brunoperel
  * @author Crochet.david
  * @author DavidL
+ * @author Dr Brains
  * @author Geitost
  * @author Gomoko
  * @author Hashar
@@ -2215,6 +2216,7 @@ $messages['fr'] = array(
 	'wikilove-terms' => 'En soumettant, vous acceptez la transparence en accord avec ces $1.',
 	'wikilove-terms-link' => 'conditions',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement/fr',
+	'tag-wikilove-description' => 'Modification faite avec l’outil WikiLove',
 	'WikiLove.js' => '/ * le JavaScript placé ici personnalise WikiLove, voyez http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
 );
 
@@ -2370,7 +2372,7 @@ $messages['gl'] = array(
 	'wikilove-enable-preference' => 'Activar o envío de mostras de aprecio aos outros usuarios mediante a lapela de amor wiki',
 	'wikilove-tab-text' => 'Amor wiki',
 	'tooltip-ca-wikilove' => 'Déixelle unha mensaxe a este usuario mostrando o seu aprecio',
-	'wikilove-dialog-title' => 'Amor wiki - Envíe unha mensaxe de aprecio a outro usuario',
+	'wikilove-dialog-title' => 'Amor wiki – Envíe unha mensaxe de aprecio a outro usuario',
 	'wikilove-select-type' => 'Seleccione o tipo',
 	'wikilove-get-started-header' => 'Comecemos!',
 	'wikilove-get-started-list-1' => 'Seleccione tipo de amor wiki que queira enviar',
@@ -2540,6 +2542,7 @@ $messages['gl'] = array(
 	'wikilove-terms' => 'Se envía os seus comentarios, acepta publicalos baixo estes $1.',
 	'wikilove-terms-link' => 'termos',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement/gl',
+	'tag-wikilove-description' => 'Edición feita mediante a ferramenta de amor wiki',
 	'WikiLove.js' => '/* O JavaScript que se coloque aquí afectará a extensión Amor wiki; lea http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
@@ -3528,6 +3531,7 @@ $messages['it'] = array(
 	'wikilove-terms' => "Con l'invio, accetti $1 di trasparenza per i dati indicate.",
 	'wikilove-terms-link' => 'le condizioni',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement/it',
+	'tag-wikilove-description' => 'Modifica effettuata utilizzando lo strumento WikiLove',
 	'WikiLove.js' => '/* Il codice JavaScript posizionato qui permette di personalizzare WikiLove, vedi http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
@@ -4575,6 +4579,7 @@ $messages['mk'] = array(
 	'wikilove-terms' => 'Поднесувајќи го ова, се согласувате со транспарентноста што ја налагаат овие $1.',
 	'wikilove-terms-link' => 'услови',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement/mk?uselang=mk',
+	'tag-wikilove-description' => 'Уредувањето е направено со алатката ВикиЉубов',
 	'WikiLove.js' => '/* Тука поставениот JavaScript го прилагодува ВикиЉубов. Погл. http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration?uselang=mk */',
 );
 
@@ -5615,6 +5620,7 @@ $messages['ps'] = array(
 
 /** Portuguese (português)
  * @author Hamilton Abreu
+ * @author Imperadeiro98
  * @author Luckas
  * @author Pedroca cerebral
  * @author Vitorvicentevalente
@@ -5793,6 +5799,7 @@ $messages['pt'] = array(
 	'wikilove-commons-text' => 'Pode encontrar imagens na $1.',
 	'wikilove-terms' => 'Ao enviar, concorda com clareza sob este $1.',
 	'wikilove-terms-link' => 'termos',
+	'tag-wikilove-description' => 'Edição feita usando a ferramenta WikiLove',
 	'WikiLove.js' => '/* JavaScript coloca aqui WikiApreços personalizáveis, veja http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
@@ -6186,6 +6193,7 @@ $messages['ru'] = array(
 	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/Заглавная_страница?uselang=ru',
 	'wikilove-terms' => 'Отправляя, вы соглашаетесь об оглашении на этих $1.',
 	'wikilove-terms-link' => 'условиях',
+	'tag-wikilove-description' => 'Правка сделана с помощью инструмента WikiLove',
 	'WikiLove.js' => '/* Размещенный здесь JavaScript кастомизирует WikiLove, см. http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
