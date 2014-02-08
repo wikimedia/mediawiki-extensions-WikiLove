@@ -7900,6 +7900,7 @@ $messages['uk'] = array(
 	'wikilove-commons-url' => 'http://commons.wikimedia.org/wiki/Головна_сторінка?uselang=uk',
 	'wikilove-terms' => 'Надсилаючи, ви погоджуєтесь з публічністю даних на таких $1.',
 	'wikilove-terms-link' => 'умовах',
+	'tag-wikilove-description' => 'Редагування зроблене з допомогою інструмента WikiLove',
 	'WikiLove.js' => '/* Розміщений тут JavaScript налаштовує Вікісимпатію, див. http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
@@ -8216,6 +8217,7 @@ $messages['vi'] = array(
 	'wikilove-terms' => 'Bằng cách gửi thông tin, bạn đồng ý phát hành thông tin này công khai theo các $1 này.',
 	'wikilove-terms-link' => 'điều khoản',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement/vi?uselang=vi',
+	'tag-wikilove-description' => 'Sửa đổi được thực hiện dùng công cụ WikiLove',
 	'WikiLove.js' => '/* Mã JavaScript tại đây sẽ tùy chỉnh WikiLove; xem http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
