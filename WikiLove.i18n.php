@@ -1653,6 +1653,7 @@ $messages['eu'] = array(
 
 /** Persian (فارسی)
  * @author Dalba
+ * @author Ebraminio
  * @author Huji
  * @author Leyth
  * @author Mehran
@@ -1685,7 +1686,7 @@ $messages['fa'] = array(
 	'wikilove-image-example' => '(مثال: Trophy.png)',
 	'wikilove-button-preview' => 'پیش‌نمایش',
 	'wikilove-preview' => 'پیش‌نمایش',
-	'wikilove-notify' => 'آگاه‌سازی کاربر با پست الکترونیکی',
+	'wikilove-notify' => 'آگاه‌سازی کاربر با رایانامه',
 	'wikilove-button-send' => 'فرستادن ویکی‌هدیه',
 	'wikilove-type-barnstars' => 'نشان‌ها',
 	'wikilove-barnstar-header' => 'این نشان برای شما!',
@@ -8237,6 +8238,7 @@ $messages['yi'] = array(
  * @author Anakmalaysia
  * @author Kaldari
  * @author Liangent
+ * @author Liuxinyu970226
  * @author PhiLiP
  * @author Shizhao
  * @author TianyinLee
@@ -8277,7 +8279,7 @@ $messages['zh-hans'] = array(
 	'wikilove-barnstar-admins-desc' => '管理员星章是为尽责的管理员而设。他们可以是常常为非常困难的问题作决定、处理非常繁重的管理员工作，或只是在特定的管理员工作中表现出色，倍受赞赏。',
 	'wikilove-barnstar-admins-title' => '管理员星章',
 	'wikilove-barnstar-antivandalism-option' => '反破坏星章',
-	'wikilove-barnstar-antivandalism-desc' => '反破坏星章奖励致力于防止和修复破坏的维基人，他们努力保护维基百科质量，让其他维基人能无忧无虑地编辑。',
+	'wikilove-barnstar-antivandalism-desc' => '反破坏星章奖励致力于在{{SITENAME}}防止和修复破坏的维基人，他们努力保护维基百科质量，让其他维基人能无忧无虑地编辑。',
 	'wikilove-barnstar-antivandalism-title' => '反破坏星章',
 	'wikilove-barnstar-diligence-option' => '勤奋星章',
 	'wikilove-barnstar-diligence-desc' => '勤奋星章用来奖励那些心思熟虑，能够准确地为社群服务的维基人。',
@@ -8417,6 +8419,7 @@ $messages['zh-hans'] = array(
 	'wikilove-commons-text' => '您可以通过浏览$1找到图像。',
 	'wikilove-terms' => '提交，即表示你同意依据这些$1公开这些信息。',
 	'wikilove-terms-link' => '条款',
+	'tag-wikilove-description' => '使用维基有爱工具做出的编辑',
 	'WikiLove.js' => '/* 放置于这里的JavaScript定制WikiLove，请见http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
@@ -8425,6 +8428,7 @@ $messages['zh-hans'] = array(
  * @author Justincheng12345
  * @author Kaldari
  * @author Liangent
+ * @author Liuxinyu970226
  * @author Simon Shek
  * @author Waihorace
  * @author Xiaomingyan
@@ -8603,5 +8607,6 @@ $messages['zh-hant'] = array(
 	'wikilove-commons-text' => '你可以瀏覽$1找到合適圖像。',
 	'wikilove-terms' => '提交後，您將同意在$1下的透明度。',
 	'wikilove-terms-link' => '條款',
+	'tag-wikilove-description' => '編輯經由維基有愛工具進行之',
 	'WikiLove.js' => '/* 放在此處的JavaScript將會定制WikiLove, 參見http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
