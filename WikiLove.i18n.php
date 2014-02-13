@@ -3995,6 +3995,7 @@ $messages['kn'] = array(
  * @author Daisy2002
  * @author Freebiekr
  * @author Klutzy
+ * @author Priviet
  * @author 관인생략
  * @author 아라
  */
@@ -4173,6 +4174,7 @@ $messages['ko'] = array(
 	'wikilove-commons-link' => '위키미디어 공용',
 	'wikilove-terms' => '글을 보내면 이 $1에 따라 의견 공개에 동의하는 것입니다.',
 	'wikilove-terms-link' => '이용 약관',
+	'tag-wikilove-description' => '위키사랑 도구를 사용하여 이루어진 편집',
 	'WikiLove.js' => '/* 여기 설치된 자바스크립트에서 위키사랑을 설정합니다. http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration 을 참고하세요. */',
 );
 
