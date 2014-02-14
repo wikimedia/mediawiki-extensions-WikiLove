@@ -7197,6 +7197,7 @@ $messages['sr-el'] = array(
  * @author Ainali
  * @author Diupwijk
  * @author Jopparn
+ * @author MagnusA
  * @author Warrakkk
  * @author WikiPhoenix
  */
@@ -7314,6 +7315,7 @@ $messages['sv'] = array(
 	'wikilove-commons-text' => 'Du kan hitta bilder genom att söka i $1.',
 	'wikilove-terms' => 'Genom att skicka samtycker du till insyn under dessa $1.',
 	'wikilove-terms-link' => 'villkor',
+	'tag-wikilove-description' => 'Redigering gjord med [[Wikipedia:Wikikärlek|WikiLove]]-verktyget.', # Fuzzy
 	'WikiLove.js' => '/ * JavaScript som placeras här anpassar WikiLove, se http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
 );
 
