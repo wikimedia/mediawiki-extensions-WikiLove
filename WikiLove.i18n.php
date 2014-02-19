@@ -3122,6 +3122,13 @@ $messages['hu'] = array(
 	'wikilove-terms-link' => 'feltételek',
 );
 
+/** Armenian (Հայերեն)
+ * @author Xelgen
+ */
+$messages['hy'] = array(
+	'wikilove-commons-link' => 'Վիքիպահեստ',
+);
+
 /** Interlingua (interlingua)
  * @author McDutchie
  */
@@ -4937,6 +4944,7 @@ $messages['mr'] = array(
 	'wikilove-button-preview' => 'झलक',
 	'wikilove-preview' => 'झलक',
 	'wikilove-button-send' => 'विकिप्रेम पाठवा',
+	'tag-wikilove-description' => "'विकिलव्ह' साधन वापरून केलेले संपादन",
 );
 
 /** Malay (Bahasa Melayu)
