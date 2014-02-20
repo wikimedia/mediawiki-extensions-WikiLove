@@ -6583,6 +6583,13 @@ $messages['scn'] = array(
 	'wikilove-err-gallery-again' => 'Prova arré',
 );
 
+/** Scots (Scots)
+ * @author John Reid
+ */
+$messages['sco'] = array(
+	'tag-wikilove-description' => 'Edit made uising the WikiLove tuil',
+);
+
 /** Sinhala (සිංහල)
  * @author Singhalawap
  * @author තඹරු විජේසේකර
@@ -7206,6 +7213,7 @@ $messages['sr-el'] = array(
  * @author Ainali
  * @author Diupwijk
  * @author Jopparn
+ * @author Lokal Profil
  * @author MagnusA
  * @author Warrakkk
  * @author WikiPhoenix
@@ -7324,7 +7332,7 @@ $messages['sv'] = array(
 	'wikilove-commons-text' => 'Du kan hitta bilder genom att söka i $1.',
 	'wikilove-terms' => 'Genom att skicka samtycker du till insyn under dessa $1.',
 	'wikilove-terms-link' => 'villkor',
-	'tag-wikilove-description' => 'Redigering gjord med [WikiLove-verktyget.', # Fuzzy
+	'tag-wikilove-description' => 'Redigering gjord med WikiLove-verktyget.',
 	'WikiLove.js' => '/ * JavaScript som placeras här anpassar WikiLove, se http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
 );
 
