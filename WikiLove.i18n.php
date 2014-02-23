@@ -4516,6 +4516,7 @@ $messages['lb'] = array(
 	'wikilove-anon-warning' => 'Notiz: Dëse Benotzer ass net registréiert, hien oder si gesäit dëse Message méiglecherweis net.',
 	'wikilove-commons-text' => 'Dir fannt Biller wann Dir op $1 sicht.',
 	'wikilove-terms-link' => 'Bedingungen',
+	'tag-wikilove-description' => 'Ännerung déi mam WikiLove-Tool gemaach gouf',
 	'WikiLove.js' => '/* Dëse JavaScript adaptéiert déi perséinnlech Wäertschätzung, kuckt http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */',
 );
 
