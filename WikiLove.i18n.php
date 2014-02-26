@@ -1833,6 +1833,7 @@ $messages['eu'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Armin1392
  * @author Dalba
  * @author Ebraminio
  * @author Huji
@@ -2020,6 +2021,7 @@ $messages['fa'] = array(
 	'wikilove-terms' => 'با ارسال فرم، شما با شفاف‌سازی‌های مطابق $1 موافقت می‌کنید.',
 	'wikilove-terms-link' => 'شرایط',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement/fa',
+	'tag-wikilove-description' => 'ویرایش با استفاده از ابزار ویکی‌لاو',
 	'WikiLove.js' => '/ * جاوا اسکریپت مورد استفاده در اینجا ویکی‌هدیه را سفارشی می‌کند، نگاه کنید به http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
 );
 
@@ -7489,6 +7491,7 @@ $messages['ta'] = array(
 );
 
 /** Telugu (తెలుగు)
+ * @author Chaduvari
  * @author Jprmvnvijay5
  * @author Veeven
  */
@@ -7513,7 +7516,7 @@ $messages['te'] = array(
 	'wikilove-type-makeyourown' => 'మీదిగా చేసుకోండి',
 	'wikilove-err-image' => 'జాలిదలచి ఒక బొమ్మను ఎంచుకొనుడి',
 	'wikilove-err-image-bad' => 'బొమ్మ లేదు',
-	'wikilove-err-image-api' => 'ఆ బొమ్మను వెలికితీసేటప్పుడు ఏదో పొరపాటు జరిగింది. జాలిదలచి మళ్ళీ పూనుకొనుడి.',
+	'wikilove-err-image-api' => 'ఆ బొమ్మను వెలికితీసేటప్పుడు ఏదో పొరపాటు జరిగింది. మళ్ళీ ప్రయత్నించండి.',
 	'wikilove-err-sig' => 'జాలిదలచి ఆ సందేశంలో సంతకాలేవీ చేర్చకండి.',
 	'wikilove-err-gallery' => 'ఆ బొమ్మలను తెచ్చేటపుడు ఏదో పొరపాటు జరిగింది.',
 	'wikilove-err-gallery-again' => 'మళ్ళీ ప్రయత్నించండి',
