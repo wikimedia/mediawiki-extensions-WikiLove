@@ -1960,7 +1960,7 @@ $messages['fa'] = array(
 	'wikilove-food-baklava-desc' => 'باقلوا مقوی و شیرین هست و از لایه‌های دانه‌های روغنی و عسل تشکیل شده‌است.',
 	'wikilove-food-baklava-header' => 'کمی باقلوا برای شما!',
 	'wikilove-food-beer-option' => 'آبجو',
-	'wikilove-food-beer-desc' => 'آبجو پرمصرف‌ترین نوشیدنی در جهان و احتمالا قدیمی‌ترین آن‌هاست. آبجو سومین نوشیدنی پرطرفدار پس از آب و چای است.',
+	'wikilove-food-beer-desc' => 'آبجو پرمصرف‌ترین نوشیدنی در جهان و احتمالاً قدیمی‌ترین آن‌هاست. آبجو سومین نوشیدنی پرطرفدار پس از آب و چای است.',
 	'wikilove-food-beer-header' => 'آبجو برای شما!',
 	'wikilove-food-brownie-option' => 'نان شیرین',
 	'wikilove-food-brownie-desc' => 'نان شیرین شکلاتی است که در بارها و میدان‌ها فروخته می‌شود.',
@@ -2935,6 +2935,7 @@ $messages['he'] = array(
 );
 
 /** Hindi (हिन्दी)
+ * @author Adithyavr
  * @author Ansumang
  * @author Kaldari
  * @author Mayur
@@ -2954,7 +2955,7 @@ $messages['hi'] = array(
 	'wikilove-get-started-list-2' => 'अपने विकिप्रेम में विवरण जोड़ें',
 	'wikilove-get-started-list-3' => 'अपना विकिप्रेम भेजें!',
 	'wikilove-add-details' => 'विवरण जोड़ें',
-	'wikilove-image' => 'चित्र फ़ाइल नाम जोड़ें:',
+	'wikilove-image' => 'चित्र फ़ाइल का नाम भरती करे:',
 	'wikilove-select-image' => 'चित्र चुनें:',
 	'wikilove-header' => 'शीर्षक जोड़ें:',
 	'wikilove-title' => 'पुरस्कार नाम जोड़ें:',
