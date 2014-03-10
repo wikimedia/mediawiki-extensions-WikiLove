@@ -40,7 +40,7 @@ class ApiWikiLoveImageLog extends ApiBase {
 
 	public function getDescription() {
 		return array(
-			'This API is for logging each time a user attempts to use a custom image via WikiLove.',
+			'Log user attempts to use a custom image via WikiLove.',
 		);
 	}
 
