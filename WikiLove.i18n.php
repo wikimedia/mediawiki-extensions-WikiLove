@@ -2955,7 +2955,7 @@ $messages['hi'] = array(
 	'wikilove-get-started-list-2' => 'अपने विकिप्रेम में विवरण जोड़ें',
 	'wikilove-get-started-list-3' => 'अपना विकिप्रेम भेजें!',
 	'wikilove-add-details' => 'विवरण जोड़ें',
-	'wikilove-image' => 'चित्र फ़ाइल का नाम भरती करे:',
+	'wikilove-image' => 'चित्र फ़ाइल नाम जोड़ें:',
 	'wikilove-select-image' => 'चित्र चुनें:',
 	'wikilove-header' => 'शीर्षक जोड़ें:',
 	'wikilove-title' => 'पुरस्कार नाम जोड़ें:',
@@ -6726,7 +6726,7 @@ $messages['scn'] = array(
  * @author John Reid
  */
 $messages['sco'] = array(
-	'tag-wikilove-description' => 'Edit made uising the WikiLove tuil',
+	'tag-wikilove-description' => 'Eedit makit uisin the WikiLove tuil',
 );
 
 /** Sinhala (සිංහල)
