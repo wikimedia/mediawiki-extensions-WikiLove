@@ -5531,6 +5531,7 @@ $messages['nl'] = array(
 	'wikilove-terms' => 'Door op te slaan gaat u akkoord met transparantie onder deze $1.',
 	'wikilove-terms-link' => 'voorwaarden',
 	'wikilove-terms-url' => 'http://wikimediafoundation.org/wiki/Feedback_privacy_statement/nl',
+	'tag-wikilove-description' => 'Bewerking gemaakt met het hulpprogramma WikiLove',
 	'WikiLove.js' => '/ * JavaScript die hier wordt geplaatst is van invloed op de weergave van WikiLove. Zie http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /',
 );
 
