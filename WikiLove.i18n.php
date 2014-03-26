@@ -8764,6 +8764,7 @@ $messages['zh-hans'] = array(
 	'wikilove-what-is-this' => '这是什么？',
 	'wikilove-anon-warning' => '注意：此用户未注册，他或她可能不会注意到该信息。',
 	'wikilove-commons-text' => '您可以通过浏览$1找到图像。',
+	'wikilove-commons-link' => '维基共享资源',
 	'wikilove-terms' => '提交，即表示你同意依据这些$1公开这些信息。',
 	'wikilove-terms-link' => '条款',
 	'tag-wikilove-description' => '使用维基有爱工具做出的编辑',
