@@ -39,7 +39,7 @@ EOT;
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'WikiLove',
-	'version' => '1.2',
+	'version' => '1.3.0',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:WikiLove',
 	'author' => array(
 		'Ryan Kaldari', 'Jan Paul Posma'
@@ -62,7 +62,8 @@ $wgAutoloadClasses['WikiLoveHooks']               = $dir . 'WikiLove.hooks.php';
 $wgAutoloadClasses['WikiLoveLocal']               = $dir . 'WikiLove.local.php';
 
 // i18n messages
-$wgExtensionMessagesFiles['WikiLove']             = $dir . 'WikiLove.i18n.php';
+$wgMessagesDirs['WikiLove'] = __DIR__ . '/i18n';
+$wgExtensionMessagesFiles['WikiLove'] = $dir . 'WikiLove.i18n.php';
 
 // register hooks
 $wgHooks['GetPreferences'][]                      = 'WikiLoveHooks::getPreferences';

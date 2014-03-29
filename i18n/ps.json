@@ -1,0 +1,40 @@
+{
+    "@metadata": {
+        "authors": [
+            "Ahmed-Najib-Biabani-Ibrahimkhel"
+        ]
+    },
+    "wikilove": "ويکي مينه",
+    "wikilove-tab-text": "ويکي مينه",
+    "wikilove-select-type": "ډول ټاکل",
+    "wikilove-get-started-header": "راځه چې پيل يې کړو!",
+    "wikilove-add-details": "ځانگړنې ورگډول",
+    "wikilove-image": "د يوې انځوريزې دوتنې نوم وليکۍ:",
+    "wikilove-select-image": "يو انځور ټاکل:",
+    "wikilove-header": "يو سرليک ورکړۍ:",
+    "wikilove-title": "د جايزې يو سرليک وليکۍ:",
+    "wikilove-enter-message": "يو پيغام وليکۍ:",
+    "wikilove-omit-sig": "(د لاسليک پرته)",
+    "wikilove-button-preview": "مخليدنه",
+    "wikilove-preview": "مخليدنه",
+    "wikilove-button-send": "پيغام لېږل",
+    "wikilove-type-barnstars": "ستوري",
+    "wikilove-barnstar-header": "تاسې لپاره يو ستوری",
+    "wikilove-barnstar-select": "يو ستوری ټاکل:",
+    "wikilove-barnstar-admins-option": "د پازوال ستوری",
+    "wikilove-type-food": "خواړه او څښاک",
+    "wikilove-food-baklava-option": "بغلاوه",
+    "wikilove-food-beer-option": "اوربشوب",
+    "wikilove-food-cookie-option": "کوکيز",
+    "wikilove-food-tea-option": "د چايو پياله",
+    "wikilove-type-kittens": "پيشنګوري",
+    "wikilove-kittens-header": "تاسې لپاره يو پيشنګوری!",
+    "wikilove-type-makeyourown": "خپله يې جوړ کړۍ",
+    "wikilove-err-header": "لطفاً يو سرليک ورکړۍ.",
+    "wikilove-err-title": "لطفاً يو سرليک ورکړۍ.",
+    "wikilove-err-image": "لطفاً يو انځور وټاکۍ.",
+    "wikilove-err-image-bad": "انځور نشته.",
+    "wikilove-err-gallery-again": "بيا هڅه",
+    "wikilove-what-is-this": "دا څه دی؟",
+    "wikilove-terms-link": "شرطونه"
+}

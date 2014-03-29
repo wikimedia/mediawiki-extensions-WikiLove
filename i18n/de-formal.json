@@ -1,0 +1,39 @@
+{
+    "@metadata": {
+        "authors": [
+            "Geitost",
+            "Kghbln"
+        ]
+    },
+    "wikilove-image": "Geben Sie den Namen der Bilddatei an:",
+    "wikilove-select-image": "Wählen Sie ein Bild aus:",
+    "wikilove-header": "Geben Sie den Text für die Überschrift ein:",
+    "wikilove-title": "Geben Sie den Titel für die Wertschätzung ein:",
+    "wikilove-enter-message": "Geben Sie eine Nachricht ein:",
+    "wikilove-barnstar-header": "Sie erhalten einen Orden!",
+    "wikilove-barnstar-select": "Wählen Sie einen Orden aus:",
+    "wikilove-food-select": "Wählen Sie ein Essen oder ein Getränk aus:",
+    "wikilove-food-baklava-header": "Baklava für Sie!",
+    "wikilove-food-beer-header": "Ein Bier für Sie!",
+    "wikilove-food-brownie-header": "Ein Brownie für Sie!",
+    "wikilove-food-bubbletea-header": "''Bubble Tea'' für Sie!",
+    "wikilove-food-cheeseburger-header": "Einen Cheeseburger für Sie!",
+    "wikilove-food-cookie-header": "Ein Keks für Sie!",
+    "wikilove-food-coffee-header": "Eine Tasse Kaffee für Sie!",
+    "wikilove-food-tea-header": "Eine Tasse Tee für Sie!",
+    "wikilove-food-cupcake-header": "Ein Muffin für Sie!",
+    "wikilove-food-pie-header": "Ein Obstkuchen für Sie!",
+    "wikilove-food-strawberries-header": "Eine Schale Erdbeeren für Sie!",
+    "wikilove-food-stroopwafels-header": "Sirupwaffeln für Sie!",
+    "wikilove-err-image-api": "Während des Abrufens des Bildes ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+    "wikilove-err-gallery": "Während des Ladens der Bilder ist ein Fehler aufgetreten.",
+    "wikilove-err-gallery-again": "Bitte versuchen Sie es erneut.",
+    "wikilove-err-preview-api": "Während der Vorschau ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+    "wikilove-err-send-api": "Während des Sendens der Wertschätzung ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+    "wikilove-err-invalid-token": "Da die Sitzungsdaten verlorengegangen sind, konnte die Wertschätzung nicht gesandt werden. Versuchen Sie die Seite erneut zu laden oder melden Sie sich ab und anschließend wieder an.",
+    "wikilove-err-not-logged-in": "Sie sind nicht angemeldet. Bitte melden Sie sich an, um Ihre Wertschätzung ausdrücken zu können.",
+    "wikilove-err-no-self-wikilove": "Sie können sich selbst gegenüber keine Wertschätzung ausdrücken.",
+    "wikilove-err-cannot-edit": "Sie haben nicht die erforderliche Berechtigung, um diese Seite bearbeiten zu können.",
+    "wikilove-err-max-exceeded": "Sie könnten nicht mehr als {{PLURAL:$1|einem Benutzer|$1 Benutzern}} gleichzeitig Ihre Wertschätzung ausdrücken.",
+    "wikilove-terms": "Mit dem Speichern erklären Sie sich mit diesen $1 einverstanden."
+}
