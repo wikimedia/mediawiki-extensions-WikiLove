@@ -5,7 +5,8 @@
             "Nedergard",
             "Nike",
             "Olli",
-            "VezonThunder"
+            "VezonThunder",
+            "Pxos"
         ]
     },
     "wikilove-desc": "Käyttöliittymä joka helpottaa positiivisen käyttäjäpalautteen antamista käyttäjien keskustelusivuilla.",
@@ -30,7 +31,7 @@
     "wikilove-button-preview": "Esikatsele",
     "wikilove-preview": "Esikatselu",
     "wikilove-notify": "Ilmoita käyttäjälle sähköpostitse",
-    "wikilove-button-send": "Lähetä Wikirakkaus",
+    "wikilove-button-send": "Lähetä Wikirakkautta",
     "wikilove-type-barnstars": "Palkinnot",
     "wikilove-barnstar-header": "Palkinto sinulle!",
     "wikilove-barnstar-select": "Valitse palkinto",
