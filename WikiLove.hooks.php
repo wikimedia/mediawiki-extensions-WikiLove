@@ -42,7 +42,7 @@ class WikiLoveHooks {
 		if ( !$wgWikiLoveGlobal ) {
 			$preferences['wikilove-enabled'] = array(
 				'type' => 'check',
-				'section' => 'misc/user-pages',
+				'section' => 'editing/advancedediting',
 				'label-message' => 'wikilove-enable-preference',
 			);
 		}
