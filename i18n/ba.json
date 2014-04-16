@@ -1,15 +1,15 @@
 {
-    "@metadata": {
-        "authors": [
-            "Haqmar"
-        ]
-    },
-    "wikilove-select-image": "Рәсем һайлағыҙ:",
-    "wikilove-header": "Исем яҙығыҙ:",
-    "wikilove-title": "Бүләк исемен яҙығыҙ:",
-    "wikilove-enter-message": "Хәбәр яҙығыҙ:",
-    "wikilove-omit-sig": "(имзаһыҙ)",
-    "wikilove-image-example": "(мәҫәлән: Trophy.png)",
-    "wikilove-button-preview": "Алдан байҡау",
-    "wikilove-preview": "Алдан байҡау"
+	"@metadata": {
+		"authors": [
+			"Haqmar"
+		]
+	},
+	"wikilove-select-image": "Рәсем һайлағыҙ:",
+	"wikilove-header": "Исем яҙығыҙ:",
+	"wikilove-title": "Бүләк исемен яҙығыҙ:",
+	"wikilove-enter-message": "Хәбәр яҙығыҙ:",
+	"wikilove-omit-sig": "(имзаһыҙ)",
+	"wikilove-image-example": "(мәҫәлән: Trophy.png)",
+	"wikilove-button-preview": "Алдан байҡау",
+	"wikilove-preview": "Алдан байҡау"
 }

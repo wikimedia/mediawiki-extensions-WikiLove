@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Bishnu Saikia"
-        ]
-    },
-    "wikilove-button-preview": "খচৰা চাওক",
-    "wikilove-preview": "খচৰা চাওক",
-    "wikilove-err-gallery-again": "পুনৰ চেষ্টা কৰক",
-    "wikilove-terms-link": "চৰ্তসমূহ"
+	"@metadata": {
+		"authors": [
+			"Bishnu Saikia"
+		]
+	},
+	"wikilove-button-preview": "খচৰা চাওক",
+	"wikilove-preview": "খচৰা চাওক",
+	"wikilove-err-gallery-again": "পুনৰ চেষ্টা কৰক",
+	"wikilove-terms-link": "চৰ্তসমূহ"
 }

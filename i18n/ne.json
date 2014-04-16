@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "RajeshPandey"
-        ]
-    },
-    "wikilove-desc": "प्रयोगकर्ता वार्ता पृष्ठहरुमा सकारात्मक उपयोगकर्ता राय को सुविधा को लागि इन्टरफेस जोड्छ।",
-    "wikilove": "विकिलभ",
-    "wikilove-enable-preference": "विकिलभ ट्याब (प्रयोगात्मक) संग अन्य प्रयोगकर्ताहरु लाई प्रशंसा हेर्न मिल्ने बनाउनुहोस",
-    "wikilove-tab-text": "विकिलभ",
-    "wikilove-button-preview": "पूर्वावलोकन",
-    "wikilove-food-beer-option": "बियर",
-    "wikilove-food-tea-option": "चिया को कप",
-    "wikilove-food-tea-desc": "पानी पछि संसारमा सबै भन्दा बढी खपत हुने पेय पदार्थ को रुपमा चिया आउँछ। यो तातो वा चिसो, दुध संग वा चिनी संग पिउन सकिन्छ।",
-    "wikilove-type-kittens": "छाउराहरु",
-    "wikilove-kittens-header": "तपाइँ को लागि एउटा छाउरो!",
-    "wikilove-type-makeyourown": "तपाइँको आफ्नै बनाउनुहोस",
-    "wikilove-err-header": "कृपया शिर्षक हाल्नुहोस।",
-    "wikilove-err-title": "कृपया शिर्षक हाल्नुहोस।",
-    "wikilove-what-is-this": "यो के हो ?"
+	"@metadata": {
+		"authors": [
+			"RajeshPandey"
+		]
+	},
+	"wikilove-desc": "प्रयोगकर्ता वार्ता पृष्ठहरुमा सकारात्मक उपयोगकर्ता राय को सुविधा को लागि इन्टरफेस जोड्छ।",
+	"wikilove": "विकिलभ",
+	"wikilove-enable-preference": "विकिलभ ट्याब (प्रयोगात्मक) संग अन्य प्रयोगकर्ताहरु लाई प्रशंसा हेर्न मिल्ने बनाउनुहोस",
+	"wikilove-tab-text": "विकिलभ",
+	"wikilove-button-preview": "पूर्वावलोकन",
+	"wikilove-food-beer-option": "बियर",
+	"wikilove-food-tea-option": "चिया को कप",
+	"wikilove-food-tea-desc": "पानी पछि संसारमा सबै भन्दा बढी खपत हुने पेय पदार्थ को रुपमा चिया आउँछ। यो तातो वा चिसो, दुध संग वा चिनी संग पिउन सकिन्छ।",
+	"wikilove-type-kittens": "छाउराहरु",
+	"wikilove-kittens-header": "तपाइँ को लागि एउटा छाउरो!",
+	"wikilove-type-makeyourown": "तपाइँको आफ्नै बनाउनुहोस",
+	"wikilove-err-header": "कृपया शिर्षक हाल्नुहोस।",
+	"wikilove-err-title": "कृपया शिर्षक हाल्नुहोस।",
+	"wikilove-what-is-this": "यो के हो ?"
 }

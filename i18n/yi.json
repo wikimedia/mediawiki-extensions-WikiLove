@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Imre",
-            "פוילישער"
-        ]
-    },
-    "wikilove-button-preview": "פֿאראויסשטעלונג",
-    "wikilove-preview": "פֿאראויסשטעלונג",
-    "wikilove-food-cookie-option": "קיכל",
-    "wikilove-food-pie-option": "קוכן",
-    "wikilove-food-strawberries-option": "טרוסקאווקעס"
+	"@metadata": {
+		"authors": [
+			"Imre",
+			"פוילישער"
+		]
+	},
+	"wikilove-button-preview": "פֿאראויסשטעלונג",
+	"wikilove-preview": "פֿאראויסשטעלונג",
+	"wikilove-food-cookie-option": "קיכל",
+	"wikilove-food-pie-option": "קוכן",
+	"wikilove-food-strawberries-option": "טרוסקאווקעס"
 }

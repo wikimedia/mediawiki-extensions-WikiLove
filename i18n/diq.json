@@ -1,16 +1,16 @@
 {
-    "@metadata": {
-        "authors": [
-            "Erdemaslancan",
-            "Mirzali"
-        ]
-    },
-    "wikilove": "WikiSinen",
-    "wikilove-tab-text": "WikiSinen",
-    "wikilove-add-details": "Detaya deke",
-    "wikilove-button-preview": "Verqayt",
-    "wikilove-preview": "Verqayt",
-    "wikilove-food-baklava-header": "Tenê beqlewa şıma rê!",
-    "wikilove-what-is-this": "No çıko?",
-    "WikiLove.js": "/* JavaScripto ke tiya ca kerdo, WikiHezi keno xısusi. http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration bıvêne */"
+	"@metadata": {
+		"authors": [
+			"Erdemaslancan",
+			"Mirzali"
+		]
+	},
+	"wikilove": "WikiSinen",
+	"wikilove-tab-text": "WikiSinen",
+	"wikilove-add-details": "Detaya deke",
+	"wikilove-button-preview": "Verqayt",
+	"wikilove-preview": "Verqayt",
+	"wikilove-food-baklava-header": "Tenê beqlewa şıma rê!",
+	"wikilove-what-is-this": "No çıko?",
+	"WikiLove.js": "/* JavaScripto ke tiya ca kerdo, WikiHezi keno xısusi. http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration bıvêne */"
 }

@@ -1,33 +1,33 @@
 {
-    "@metadata": {
-        "authors": [
-            "ZaDiak"
-        ]
-    },
-    "wikilove": "ΒικιΑγάπη",
-    "wikilove-tab-text": "ΒικιΑγάπη",
-    "wikilove-select-type": "Επιλογή τύπου",
-    "wikilove-get-started-header": "Ας αρχίσουμε!",
-    "wikilove-get-started-list-3": "Στείλτε τη ΒικιΑγάπη σας!",
-    "wikilove-add-details": "Προσθήκη λεπτομερειών",
-    "wikilove-image": "Εισάγετε ένα όνομα αρχείου της εικόνας:",
-    "wikilove-select-image": "Επιλέξτε μια εικόνα:",
-    "wikilove-header": "Εισαγάγετε μια επικεφαλίδα:",
-    "wikilove-enter-message": "Εισάγετε ένα μήνυμα:",
-    "wikilove-omit-sig": "(χωρίς υπογραφή)",
-    "wikilove-button-preview": "Προεπισκόπηση",
-    "wikilove-preview": "Προεπισκόπηση",
-    "wikilove-notify": "Ειδοποίηση του χρήστη μέσω e-mail",
-    "wikilove-button-send": "Αποστολή ΒικιΑγάπης",
-    "wikilove-type-food": "Τρόφιμα και ποτά",
-    "wikilove-type-kittens": "Γατάκια",
-    "wikilove-type-makeyourown": "Κάντε δικό σας",
-    "wikilove-err-header": "Παρακαλώ εισάγετε μια επικεφαλίδα.",
-    "wikilove-err-title": "Παρακαλώ εισάγετε έναν τίτλο.",
-    "wikilove-err-image": "Παρακαλώ επιλέξτε μια εικόνα.",
-    "wikilove-err-image-bad": "Η εικόνα δεν υπάρχει.",
-    "wikilove-err-gallery-again": "Δοκιμάστε ξανά",
-    "wikilove-what-is-this": "Τι είναι αυτό;",
-    "wikilove-anon-warning": "Σημείωση: Αυτός ο χρήστης δεν είναι εγγεγραμμένος, μπορεί να μην παρατηρήσει αυτό το μήνυμα.",
-    "wikilove-commons-text": "Μπορείτε να βρείτε εικόνες από την περιήγηση στο $1."
+	"@metadata": {
+		"authors": [
+			"ZaDiak"
+		]
+	},
+	"wikilove": "ΒικιΑγάπη",
+	"wikilove-tab-text": "ΒικιΑγάπη",
+	"wikilove-select-type": "Επιλογή τύπου",
+	"wikilove-get-started-header": "Ας αρχίσουμε!",
+	"wikilove-get-started-list-3": "Στείλτε τη ΒικιΑγάπη σας!",
+	"wikilove-add-details": "Προσθήκη λεπτομερειών",
+	"wikilove-image": "Εισάγετε ένα όνομα αρχείου της εικόνας:",
+	"wikilove-select-image": "Επιλέξτε μια εικόνα:",
+	"wikilove-header": "Εισαγάγετε μια επικεφαλίδα:",
+	"wikilove-enter-message": "Εισάγετε ένα μήνυμα:",
+	"wikilove-omit-sig": "(χωρίς υπογραφή)",
+	"wikilove-button-preview": "Προεπισκόπηση",
+	"wikilove-preview": "Προεπισκόπηση",
+	"wikilove-notify": "Ειδοποίηση του χρήστη μέσω e-mail",
+	"wikilove-button-send": "Αποστολή ΒικιΑγάπης",
+	"wikilove-type-food": "Τρόφιμα και ποτά",
+	"wikilove-type-kittens": "Γατάκια",
+	"wikilove-type-makeyourown": "Κάντε δικό σας",
+	"wikilove-err-header": "Παρακαλώ εισάγετε μια επικεφαλίδα.",
+	"wikilove-err-title": "Παρακαλώ εισάγετε έναν τίτλο.",
+	"wikilove-err-image": "Παρακαλώ επιλέξτε μια εικόνα.",
+	"wikilove-err-image-bad": "Η εικόνα δεν υπάρχει.",
+	"wikilove-err-gallery-again": "Δοκιμάστε ξανά",
+	"wikilove-what-is-this": "Τι είναι αυτό;",
+	"wikilove-anon-warning": "Σημείωση: Αυτός ο χρήστης δεν είναι εγγεγραμμένος, μπορεί να μην παρατηρήσει αυτό το μήνυμα.",
+	"wikilove-commons-text": "Μπορείτε να βρείτε εικόνες από την περιήγηση στο $1."
 }
