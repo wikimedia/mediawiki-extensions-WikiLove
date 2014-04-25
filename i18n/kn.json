@@ -1,11 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nayvik"
+			"Nayvik",
+			"VASANTH S.N."
 		]
 	},
 	"wikilove": "ವಿಕಿಪ್ರೀತಿ",
 	"wikilove-tab-text": "ವಿಕಿಪ್ರೀತಿ",
+	"wikilove-add-details": "ವಿವರಗಳನ್ನು ಸೇರಿಸಿ",
+	"wikilove-select-image": "ಒಂದು ಬಾವಚಿತ್ರವನ್ನು ಆಯ್ಕೆಮಾಡಿ:",
+	"wikilove-header": "ಒಂದು ತಲೆಬರಹವನ್ನು ನೀಡಿ:",
+	"wikilove-enter-message": "ಓಂದು ಸಂದೇಶವನ್ನು ನೀಡಿ:",
 	"wikilove-button-preview": "ಮುನ್ನೋಟ",
 	"wikilove-preview": "ಮುನ್ನೋಟ"
 }
