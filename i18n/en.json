@@ -174,7 +174,7 @@
     "wikilove-success-number": "$1 WikiLove {{PLURAL:$1|message|messages}} sent.",
     "wikilove-summary": "/* $1 */ new WikiLove message",
     "wikilove-what-is-this": "What is this?",
-    "wikilove-what-is-this-link": "https://www.mediawiki.org/wiki/WikiLove",
+    "wikilove-what-is-this-link": "https://www.mediawiki.org/wiki/Special:MyLanguage/WikiLove",
     "wikilove-anon-warning": "Note: This user is not registered, he or she may not notice this message.",
     "wikilove-commons-text": "You can find images by browsing $1.",
     "wikilove-commons-link": "Wikimedia Commons",
@@ -183,5 +183,5 @@
     "wikilove-terms-link": "terms",
     "wikilove-terms-url": "http://wikimediafoundation.org/wiki/Feedback_privacy_statement",
     "tag-wikilove-description": "Edit made using the WikiLove tool",
-    "WikiLove.js": "/* JavaScript placed here customizes WikiLove, see http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */"
+    "WikiLove.js": "/* JavaScript placed here customizes WikiLove, see https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }
