@@ -177,5 +177,5 @@
 	"wikilove-commons-url": "http://commons.wikimedia.org/wiki/Main_Page?uselang=ksh",
 	"wikilove-terms": "Wä heh jät enjitt, moß met dä $1 enverschtande sen, söns moß mer et blieve lohße.",
 	"wikilove-terms-link": "Bedengonge",
-	"WikiLove.js": "/* dat JavaSkrep heh aan dä Stell wirrek nur beim „Leev Wiki“, loor op http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */"
+	"WikiLove.js": "/* dat JavaSkrep heh aan dä Stell wirrek nur beim „Leev Wiki“, loor op https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

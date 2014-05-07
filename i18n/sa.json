@@ -130,5 +130,5 @@
 	"wikilove-commons-text": "भवान् $1 इत्यत्र परिभ्रमणं कृत्वा चित्रम् अन्वेष्टुं शक्नोति।",
 	"wikilove-terms": "अस्य समर्पणेन सहैव भवान्  $1 इत्यन्तर्गते पारदर्शितां अनुमन्यते।",
 	"wikilove-terms-link": "नियमाः",
-	"WikiLove.js": "/* JavaScript placed here customizes WikiLove, see http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */"
+	"WikiLove.js": "/* JavaScript placed here customizes WikiLove, see https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

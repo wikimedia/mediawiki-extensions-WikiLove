@@ -183,5 +183,5 @@
 	"wikilove-terms-link": "voorwaarden",
 	"wikilove-terms-url": "http://wikimediafoundation.org/wiki/Feedback_privacy_statement/nl",
 	"tag-wikilove-description": "Bewerking gemaakt met het hulpprogramma WikiLove",
-	"WikiLove.js": "/ * JavaScript die hier wordt geplaatst is van invloed op de weergave van WikiLove. Zie http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration * /"
+	"WikiLove.js": "/ * JavaScript die hier wordt geplaatst is van invloed op de weergave van WikiLove. Zie https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration * /"
 }

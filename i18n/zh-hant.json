@@ -185,5 +185,5 @@
 	"wikilove-terms": "提交後，您將同意在$1下的透明度。",
 	"wikilove-terms-link": "條款",
 	"tag-wikilove-description": "編輯經由維基有愛工具進行之",
-	"WikiLove.js": "/* 放在此處的JavaScript將會定制WikiLove, 參見http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */"
+	"WikiLove.js": "/* 放在此處的JavaScript將會定制WikiLove, 參見https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

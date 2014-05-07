@@ -180,5 +180,5 @@
 	"wikilove-commons-text": "$1 bağlantısına gözatarak resim bulabilirsiniz.",
 	"wikilove-terms": "Gönderim yaparak $1 uyarınca saydamlığı kabul ediyorsunuz.",
 	"wikilove-terms-link": "koşullar",
-	"WikiLove.js": "/* Buraya yerleştirilen JavaScript, VikiSevgi'yi özelleştirir. Bkz: http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */"
+	"WikiLove.js": "/* Buraya yerleştirilen JavaScript, VikiSevgi'yi özelleştirir. Bkz: https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

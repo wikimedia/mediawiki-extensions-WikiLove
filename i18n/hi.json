@@ -184,5 +184,5 @@
 	"wikilove-terms": "सबमिट कर के आप इन $1 के अंतर्गत पारदर्शिता स्वीकार करते हैं।",
 	"wikilove-terms-link": "शर्तों",
 	"tag-wikilove-description": "विकिप्रेम उपकरण के प्रयोग द्वारा किया गया सम्पादन",
-	"WikiLove.js": "/* यहाँ पर लिखी गयी जावास्क्रिप्ट विकिप्रेम को परिवर्तित करती है, देखें http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */"
+	"WikiLove.js": "/* यहाँ पर लिखी गयी जावास्क्रिप्ट विकिप्रेम को परिवर्तित करती है, देखें https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

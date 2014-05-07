@@ -108,5 +108,5 @@
 	"wikilove-commons-text": "Slike lahko najdete z brskanjem po $1.",
 	"wikilove-terms": "S potrditvijo se strinjate s preglednostjo pod temi $1.",
 	"wikilove-terms-link": "pogoji",
-	"WikiLove.js": "/* Tukaj naveden JavaScript prilagaja WikiLove; oglejte si http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */"
+	"WikiLove.js": "/* Tukaj naveden JavaScript prilagaja WikiLove; oglejte si https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

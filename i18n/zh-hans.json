@@ -188,5 +188,5 @@
 	"wikilove-terms": "提交，即表示你同意依据这些$1公开这些信息。",
 	"wikilove-terms-link": "条款",
 	"tag-wikilove-description": "使用维基有爱工具做出的编辑",
-	"WikiLove.js": "/* 放置于这里的JavaScript定制WikiLove，请见http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */"
+	"WikiLove.js": "/* 放置于这里的JavaScript定制WikiLove，请见https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

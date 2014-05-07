@@ -179,5 +179,5 @@
 	"wikilove-commons-url": "http://commons.wikimedia.org/wiki/Pagina_principal?uselang=ia",
 	"wikilove-terms": "Per submitter, tu te declara de accordo con transparentia sub iste $1.",
 	"wikilove-terms-link": "conditiones",
-	"WikiLove.js": "/* Le JavaScript inserite hic personalisa WikiLove, vide http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */"
+	"WikiLove.js": "/* Le JavaScript inserite hic personalisa WikiLove, vide https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

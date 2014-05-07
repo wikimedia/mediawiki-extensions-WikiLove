@@ -189,5 +189,5 @@
 	"wikilove-terms": "Надсилаючи, ви погоджуєтесь з публічністю даних на таких $1.",
 	"wikilove-terms-link": "умовах",
 	"tag-wikilove-description": "Редагування зроблене з допомогою інструмента WikiLove",
-	"WikiLove.js": "/* Розміщений тут JavaScript налаштовує Вікісимпатію, див. http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */"
+	"WikiLove.js": "/* Розміщений тут JavaScript налаштовує Вікісимпатію, див. https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

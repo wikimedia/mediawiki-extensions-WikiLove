@@ -182,5 +182,5 @@
 	"wikilove-terms": "Ao enviar, concorda com clareza sob este $1.",
 	"wikilove-terms-link": "termos",
 	"tag-wikilove-description": "Edição feita usando a ferramenta WikiLove",
-	"WikiLove.js": "/* JavaScript coloca aqui WikiApreços personalizáveis, veja http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */"
+	"WikiLove.js": "/* JavaScript coloca aqui WikiApreços personalizáveis, veja https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

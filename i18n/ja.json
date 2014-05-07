@@ -128,7 +128,7 @@
 	"wikilove-success-number": "$1 {{PLURAL:$1|件のウィキラブメッセージ}}を送信しました。",
 	"wikilove-summary": "/* $1 */ 新しいウィキラブのメッセージ",
 	"wikilove-what-is-this": "これは何?",
-	"wikilove-what-is-this-link": "https://www.mediawiki.org/wiki/WikiLove/ja",
+	"wikilove-what-is-this-link": "https://www.mediawiki.org/wiki/Special:MyLanguage/WikiLove/ja",
 	"wikilove-anon-warning": "注: この利用者は登録していないため、このメッセージに気付かない可能性があります。",
 	"wikilove-commons-text": "$1で画像を見つけることができます。",
 	"wikilove-commons-link": "ウィキメディア・コモンズ",
@@ -136,5 +136,5 @@
 	"wikilove-terms": "送信することで、これらの$1のもとで透明性に同意したと見なされます。",
 	"wikilove-terms-link": "規約",
 	"tag-wikilove-description": "ウィキラブツールを使用した編集",
-	"WikiLove.js": "/* ここに記述したJavaScriptはウィキラブの設定を変更します。http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration をご覧ください。 */"
+	"WikiLove.js": "/* ここに記述したJavaScriptはウィキラブの設定を変更します。https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration をご覧ください。 */"
 }

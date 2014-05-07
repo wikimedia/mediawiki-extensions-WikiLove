@@ -59,10 +59,10 @@
 	"wikilove-err-invalid-username": "Stu nome utende jè invalide.",
 	"wikilove-summary": "/* $1 */ messàgge nuève de UicchiAmore",
 	"wikilove-what-is-this": "Ce jè quiste?",
-	"wikilove-what-is-this-link": "https://www.mediawiki.org/wiki/WikiLove",
+	"wikilove-what-is-this-link": "https://www.mediawiki.org/wiki/Special:MyLanguage/WikiLove",
 	"wikilove-commons-text": "Tu puè acchià immaggine scorrenne $1",
 	"wikilove-commons-link": "Wikimedia Commons",
 	"wikilove-commons-url": "http://commons.wikimedia.org",
 	"wikilove-terms-link": "termine",
-	"WikiLove.js": "/* 'U JavaScript mise aqquà personalizze UicchiLove, 'ndruche http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */"
+	"WikiLove.js": "/* 'U JavaScript mise aqquà personalizze UicchiLove, 'ndruche https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

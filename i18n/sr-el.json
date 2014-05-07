@@ -168,7 +168,7 @@
 	"wikilove-err-send-api": "Došlo je do greške pri slanju poruke. Pokušajte ponovo.",
 	"wikilove-summary": "/* $1 */ nova poruka (Vikiljubav)",
 	"wikilove-what-is-this": "Šta je ovo?",
-	"wikilove-what-is-this-link": "https://www.mediawiki.org/wiki/WikiLove?uselang=sr-ec",
+	"wikilove-what-is-this-link": "https://www.mediawiki.org/wiki/Special:MyLanguage/WikiLove?uselang=sr-ec",
 	"wikilove-anon-warning": "Napomena: korisnik nema nalog, pa zato možda neće primetiti poruku.",
 	"wikilove-commons-text": "Možete potražiti slike na projektu $1.",
 	"wikilove-commons-link": "Vikimedijina ostava",
@@ -176,5 +176,5 @@
 	"wikilove-terms": "Slanjem prihvatate transparentnost koju nalažu ovi $1.",
 	"wikilove-terms-link": "uslovi",
 	"wikilove-terms-url": "http://wikimediafoundation.org/wiki/Feedback_privacy_statement?uselang=sr-ec",
-	"WikiLove.js": "/* Ovde postavljen javaskript prilagođava Vikiljubav. Pogledajte http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration?uselang=sr-ec */"
+	"WikiLove.js": "/* Ovde postavljen javaskript prilagođava Vikiljubav. Pogledajte https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration?uselang=sr-ec */"
 }

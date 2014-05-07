@@ -49,5 +49,5 @@
 	"wikilove-commons-text": "Du kan finde billeder ved at gennemse $1.",
 	"wikilove-terms": "Ved at sende accepterer du gennemsigtighed under disse $1.",
 	"wikilove-terms-link": "vilkår",
-	"WikiLove.js": "/* JavaScript, der placeres her, tilpasser WikiLove, se http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */"
+	"WikiLove.js": "/* JavaScript, der placeres her, tilpasser WikiLove, se https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

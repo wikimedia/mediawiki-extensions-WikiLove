@@ -174,7 +174,7 @@
 	"wikilove-success-number": "$1 na naipadalang {{PLURAL:$1|mensahe|mga mensahe}} ng WikiLove.",
 	"wikilove-summary": "/* $1 */ bagong mensahe ng WikiLove",
 	"wikilove-what-is-this": "Ano ba ito?",
-	"wikilove-what-is-this-link": "https://www.mediawiki.org/wiki/WikiLove",
+	"wikilove-what-is-this-link": "https://www.mediawiki.org/wiki/Special:MyLanguage/WikiLove",
 	"wikilove-anon-warning": "Paunawa: Hindi nakarehistro ang tagagamit na ito, maaaring hindi niya mapansin ang mensaheng ito.",
 	"wikilove-commons-text": "Makakapaghanap ka ng mga imahe sa pamamagitan ng pagtingin-tingin sa $1.",
 	"wikilove-commons-link": "Wikimedia Commons",
@@ -182,5 +182,5 @@
 	"wikilove-terms": "Sa pamamagitan ng pagpasa, sumasang-ayon ka sa pagkanaaaninag sa ilalim ng $1 na mga ito.",
 	"wikilove-terms-link": "mga kataga",
 	"wikilove-terms-url": "http://wikimediafoundation.org/wiki/Feedback_privacy_statement",
-	"WikiLove.js": "/* Ang JavaScript na inilalagay dito ay nagpapasadya ng WikiLove, tingnan ang http://www.mediawiki.org/wiki/Extension:WikiLove#Custom_configuration */"
+	"WikiLove.js": "/* Ang JavaScript na inilalagay dito ay nagpapasadya ng WikiLove, tingnan ang https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }
