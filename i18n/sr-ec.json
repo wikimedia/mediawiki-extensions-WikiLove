@@ -176,7 +176,7 @@
 	"wikilove-success-number": "$1 WikiLove {{PLURAL:$1|порука}} послато.",
 	"wikilove-summary": "/* $1 */ нова порука (Викиљубав)",
 	"wikilove-what-is-this": "Шта је ово?",
-	"wikilove-what-is-this-link": "https://www.mediawiki.org/wiki/Special:MyLanguage/WikiLove?uselang=sr-ec",
+	"wikilove-what-is-this-link": "https://www.mediawiki.org/wiki/Special:MyLanguage/WikiLove",
 	"wikilove-anon-warning": "Напомена: корисник нема налог, па зато можда неће приметити поруку.",
 	"wikilove-commons-text": "Слике можете да пронађете на пројекту $1.",
 	"wikilove-commons-link": "Викимедијина остава",
@@ -184,5 +184,5 @@
 	"wikilove-terms": "Слањем прихватате транспарентност коју налажу ови $1.",
 	"wikilove-terms-link": "услови",
 	"wikilove-terms-url": "http://wikimediafoundation.org/wiki/Feedback_privacy_statement?uselang=sr-ec",
-	"WikiLove.js": "/* Овде постављен јаваскрипт прилагођава Викиљубав. Погледајте https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration?uselang=sr-ec */"
+	"WikiLove.js": "/* Овде постављен јаваскрипт прилагођава Викиљубав. Погледајте https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }
