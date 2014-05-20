@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"AnakngAraw",
-			"Kaldari"
+			"Kaldari",
+			"Jojit fb"
 		]
 	},
 	"wikilove-desc": "Nagdaragdag ng isang ugnayang-mukha para sa pagpapadali ng positibong puna ng tagagamit sa mga pahina ng usapan",
@@ -164,7 +165,7 @@
 	"wikilove-err-gallery-again": "Subukang muli",
 	"wikilove-err-preview-api": "Nagkaroon ng suliranin ang isang bagay habang pinapaunang tingnan. Paki subukan ulit.",
 	"wikilove-err-send-api": "Nagkaroon ng suliranin ang isang bagay noong ipinapadala ang mensahe. Paki subukang muli.",
-	"wikilove-err-invalid-token": "Hindi maipadala ang WikiLove dahil sa isang pagkawala ng inilaang panahon sa dato. Subukang ikargang muli ang pahina o umalis sa pagkakalagda at lumagdang pabalik sa loob.",
+	"wikilove-err-invalid-token": "Hindi maipadala ang WikiLove dahil sa isang pagkawala ng inilaang panahon sa dato. Subukang ikargang muli ang pahina o mag-logout at mag-login muli.",
 	"wikilove-err-not-logged-in": "Hindi ka nakalagda. Paki lumagda upang magamit ang WikiLove.",
 	"wikilove-err-invalid-username": "Hindi katanggap-tanggap ang pangalan ng tagagamit.",
 	"wikilove-err-no-self-wikilove": "Hindi mo maipapadala ang WikiLove papunta sa sarili mo. Paumanhin!",
