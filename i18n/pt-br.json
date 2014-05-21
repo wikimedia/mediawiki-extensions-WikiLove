@@ -7,12 +7,13 @@
 			"Pedroca cerebral",
 			"Raylton P. Sousa",
 			"555",
-			"Luckas"
+			"Luckas",
+			"Cainamarques"
 		]
 	},
 	"wikilove-desc": "Adiciona uma interface para facilitar a demonstrações de apreço nas páginas de discussão dos usuários",
 	"wikilove": "WikiApreço",
-	"wikilove-enable-preference": "Permite enviar demonstrações de afeto a outros usuários através da tab \"WikiApreço\"",
+	"wikilove-enable-preference": "Permite enviar demonstrações de afeto a outros usuários através da aba \"WikiApreço\"",
 	"wikilove-tab-text": "WikiApreço",
 	"tooltip-ca-wikilove": "Envie uma mensagem a este usuário demonstrando o seu apreço",
 	"wikilove-dialog-title": "WikiApreço - Envie uma mensagem de apreço a outro usuário",
