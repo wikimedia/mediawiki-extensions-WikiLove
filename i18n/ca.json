@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Toniher"
+			"Toniher",
+			"Unapersona"
 		]
 	},
 	"wikilove-desc": "Afegeix una interfície per facilitar els comentaris positius als usuaris en llurs pàgines de discussió",
@@ -28,6 +29,27 @@
 	"wikilove-notify": "Notifica l'usuari per correu electrònic",
 	"wikilove-button-send": "Envia wikiamor",
 	"wikilove-type-barnstars": "Mèrits",
+	"wikilove-barnstar-header": "Una barnstar per a tu!",
+	"wikilove-barnstar-select": "Seleccioneu una Barnstar",
+	"wikilove-barnstar-original-option": "Barnstar Original",
+	"wikilove-barnstar-original-title": "La Barnstar Original",
+	"wikilove-barnstar-admins-option": "Barnstar dels Administradors",
+	"wikilove-barnstar-admins-title": "La Barnstar dels Administradors",
+	"wikilove-barnstar-antivandalism-option": "Barnstar Anti-Vandalisme",
+	"wikilove-barnstar-antivandalism-title": "La Barnstar Anti-Vandalisme",
+	"wikilove-barnstar-diligence-option": "Barnstar de la Diligència",
+	"wikilove-barnstar-diligence-title": "La Barnstar de la Diligència",
+	"wikilove-barnstar-diplomacy-option": "Barnstar de la Diplomàcia",
+	"wikilove-barnstar-diplomacy-title": "La Barnstar de la Diplomàcia",
+	"wikilove-barnstar-goodhumor-option": "Barnstar del Bon Humor",
+	"wikilove-barnstar-goodhumor-title": "La Barnstar del Bon Humor",
+	"wikilove-barnstar-brilliant-option": "Barnstar de la Idea Brillant",
+	"wikilove-barnstar-brilliant-title": "La Barnstar de la Idea Brillant",
+	"wikilove-barnstar-defender-option": "Barnstar del defensor del Wiki",
+	"wikilove-barnstar-defender-title": "La Barnstar del Defesor del Wiki",
+	"wikilove-barnstar-editors-option": "Barnstar de l'Editor",
+	"wikilove-barnstar-editors-title": "La Barnstar de l'Editor",
+	"wikilove-barnstar-designers-option": "Barnstar del Dissenyador de Gràfics",
 	"wikilove-type-food": "Menjar i beure",
 	"wikilove-type-kittens": "Gatets",
 	"wikilove-type-makeyourown": "Feu el vostre propi",
