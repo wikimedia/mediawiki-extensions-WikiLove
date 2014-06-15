@@ -42,7 +42,9 @@ $wgExtensionCredits['other'][] = array(
 	'version' => '1.3.0',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:WikiLove',
 	'author' => array(
-		'Ryan Kaldari', 'Jan Paul Posma'
+		'Ryan Kaldari',
+		'Jan Paul Posma',
+		'Sam Reed',
 	),
 	'descriptionmsg' => 'wikilove-desc',
 );
