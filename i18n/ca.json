@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Toniher",
-			"Unapersona"
+			"Unapersona",
+			"Gerardduenas"
 		]
 	},
 	"wikilove-desc": "Afegeix una interfície per facilitar els comentaris positius als usuaris en llurs pàgines de discussió",
@@ -32,6 +33,7 @@
 	"wikilove-barnstar-header": "Una barnstar per a tu!",
 	"wikilove-barnstar-select": "Seleccioneu una Barnstar",
 	"wikilove-barnstar-original-option": "Barnstar Original",
+	"wikilove-barnstar-original-desc": "Aquesta Viquiestrella s'atorga per reconèixer contribucions especialment bones a {{SITENAME}}, per fer veure a l'usuari que la seva gran feina és àmpliament apreciada.",
 	"wikilove-barnstar-original-title": "La Barnstar Original",
 	"wikilove-barnstar-admins-option": "Barnstar dels Administradors",
 	"wikilove-barnstar-admins-title": "La Barnstar dels Administradors",
