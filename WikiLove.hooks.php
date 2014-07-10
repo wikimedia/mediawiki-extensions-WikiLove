@@ -215,4 +215,19 @@ class WikiLoveHooks {
 		$tags[] = 'wikilove';
 		return true;
 	}
+
+	/**
+	 * Tables that Extension:UserMerge needs to update
+	 *
+	 * @param array $updateFields
+	 * @return bool
+	 */
+	public static function onUserMergeAccountFields( array &$updateFields ) {
+		$updateFields[] = array( 'wikilove_log', 'wll_sender' );
+		$updateFields[] = array( 'wikilove_log', 'wll_receiver' );
+		$updateFields[] = array( 'wikilove_image_log', 'wlil_user_id' );
+
+		return true;
+	}
+
 }
