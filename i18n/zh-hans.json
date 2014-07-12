@@ -11,7 +11,8 @@
 			"Tommyang",
 			"Xiaomingyan",
 			"乌拉跨氪",
-			"Mywood"
+			"Mywood",
+			"Impersonator 1"
 		]
 	},
 	"wikilove-desc": "添加一个界面，用于促进在用户讨论页上进行积极反馈",
@@ -53,10 +54,10 @@
 	"wikilove-barnstar-diligence-desc": "勤奋星章用来奖励那些心思熟虑，能够准确地为社群服务的维基人。",
 	"wikilove-barnstar-diligence-title": "勤奋星章",
 	"wikilove-barnstar-diplomacy-option": "和平星章",
-	"wikilove-barnstar-diplomacy-desc": "和平星章送给善于和平化解维基百科纷争的维基人。",
+	"wikilove-barnstar-diplomacy-desc": "和平星章送给善于和平化解{{SITENAME}}纷争的维基人。",
 	"wikilove-barnstar-diplomacy-title": "和平星章",
 	"wikilove-barnstar-goodhumor-option": "真幽默星章",
-	"wikilove-barnstar-goodhumor-desc": "真幽默星章奖励致力于让大家以轻松心情编辑的维基人，他们是维基的润滑剂，是不可或缺的。",
+	"wikilove-barnstar-goodhumor-desc": "真幽默星章奖励致力于让大家以轻松心情编辑的维基人，他们是{{SITENAME}}的润滑剂，是不可或缺的。",
 	"wikilove-barnstar-goodhumor-title": "真幽默星章",
 	"wikilove-barnstar-brilliant-option": "好主意星章",
 	"wikilove-barnstar-brilliant-desc": "好主意星章可用以奖励那些在一个复杂的问题上提出优秀的应对方案，或是对维基百科的发展提出极具建设性意见的维基人。",
