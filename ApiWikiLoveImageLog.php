@@ -21,12 +21,11 @@ class ApiWikiLoveImageLog extends ApiBase {
 	 * @param $success integer
 	 */
 	private function saveInDb( $image, $success ) {
-		global $wgUser;
 		$dbw = wfGetDB( DB_MASTER );
 
 		$values = array(
 			'wlil_timestamp' => $dbw->timestamp(),
-			'wlil_user_id' => $wgUser->getId(),
+			'wlil_user_id' => $this->getUser()->getId(),
 			'wlil_image' => $image,
 			'wlil_success' => $success,
 		);
