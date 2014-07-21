@@ -74,6 +74,7 @@ $wgHooks['BeforePageDisplay'][]                   = 'WikiLoveHooks::beforePageDi
 $wgHooks['LoadExtensionSchemaUpdates'][]          = 'WikiLoveHooks::loadExtensionSchemaUpdates';
 $wgHooks['MakeGlobalVariablesScript'][]           = 'WikiLoveHooks::makeGlobalVariablesScript';
 $wgHooks['ListDefinedTags'][]                     = 'WikiLoveHooks::onListDefinedTags';
+$wgHooks['UserMergeAccountFields'][]              = 'WikiLoveHooks::onUserMergeAccountFields';
 
 // api modules
 $wgAPIModules['wikilove'] = 'ApiWikiLove';
