@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Anakmalaysia",
-			"Xabier Armendaritz"
+			"Xabier Armendaritz",
+			"Pizza1016"
 		]
 	},
 	"wikilove-desc": "Menambahkan antara muka untuk memudahkan maklum balas pengguna yang positif kepada laman perbincangan pengguna",
@@ -34,9 +35,9 @@
 	"wikilove-barnstar-original-option": "Barnstar Asli",
 	"wikilove-barnstar-original-desc": "Barnstar ini diberikan sebagai tanda pengiktirafan ke atas sumbangan yang bermutu tinggi kepada Wikipedia, demi makluman orang bahawa usaha gigih mereka telah diamati dan dihargai.",
 	"wikilove-barnstar-original-title": "Barnstar Asli",
-	"wikilove-barnstar-admins-option": "Barnstar Pentadbir",
-	"wikilove-barnstar-admins-desc": "Barnstar Pentadbir boleh dianugerahkan kepada seseorang pentadbir yang membuat keputusan yang agak sukar atau melakukan tugas pentadbiran yang payah tetapi diperlukan.",
-	"wikilove-barnstar-admins-title": "Barnstar Pentadbir",
+	"wikilove-barnstar-admins-option": "Barnstar Penyelia",
+	"wikilove-barnstar-admins-desc": "Barnstar Penyelia boleh dianugerahkan kepada seseorang penyelia yang telah membuat keputusan yang agak sukar atau melakukan tugas pentadbiran yang payah tetapi diperlukan.",
+	"wikilove-barnstar-admins-title": "Barnstar Penyelia",
 	"wikilove-barnstar-antivandalism-option": "Barnstar Pencegah Laku Musnah",
 	"wikilove-barnstar-antivandalism-desc": "Barnstar Pencegah Laku Musnah boleh dianugerahkan kepada mereka yang memberikan sumbangan besar demi melindungi dan menterbalikkan serangan laku musnah di Wikipedia.",
 	"wikilove-barnstar-antivandalism-title": "Barnstar Pencegah Laku Musnah",
