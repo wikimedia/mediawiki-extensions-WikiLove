@@ -286,9 +286,6 @@ $wgResourceModules += array(
 	),
 	'ext.wikiLove.local' => array(
 		'class' => 'WikiLoveLocal',
-		'dependencies' => array(
-			'ext.wikiLove.startup',
-		)
 	),
 	'ext.wikiLove.init' => $extWikiLoveTpl + array(
 		'scripts' => array(
@@ -296,7 +293,6 @@ $wgResourceModules += array(
 		),
 		'dependencies' => array(
 			'ext.wikiLove.startup',
-			'ext.wikiLove.local',
 		),
 	),
 );
