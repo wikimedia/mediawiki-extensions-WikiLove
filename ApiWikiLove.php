@@ -206,16 +206,6 @@ class ApiWikiLove extends ApiBase {
 		);
 	}
 
-	public function getPossibleErrors() {
-		return array_merge( parent::getPossibleErrors(), array(
-			array( 'invalidtitle', 'title' ),
-			array(
-				'code' => 'nologging',
-				'info' => 'Warning: action was not logged!'
-			),
-		) );
-	}
-
 	public function getExamples() {
 		return array(
 			'api.php?action=wikilove&title=User:Dummy&text=Love&subject=Hi&token=%2B\\',
