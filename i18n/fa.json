@@ -12,7 +12,8 @@
 			"Reza1615",
 			"Rmashhadi",
 			"Wayiran",
-			"ZxxZxxZ"
+			"ZxxZxxZ",
+			"Alirezaaa"
 		]
 	},
 	"wikilove-desc": "رابطی برای فرستادن راحت نظر مثبت به صفحه‌های بحث کاربران می‌افزاید",
@@ -182,10 +183,11 @@
 	"wikilove-err-cannot-edit": "شما اجازهٔ ویرایش آن صفحه را ندارید.",
 	"wikilove-err-max-exceeded": "نمی‌توانید ویکی‌هدیه را برای بیش از $1 کاربر بفرستید.",
 	"wikilove-success-number": "$1 پیام ویکی‌هدیه فرستاده شد.",
-	"wikilove-summary": "/ * $1 * /  ویکی‌هدیهٔ جدید",
+	"wikilove-summary": "/* $1 */ ویکی‌هدیهٔ تازه",
 	"wikilove-what-is-this": "این چیست؟",
 	"wikilove-anon-warning": "توجه: این کاربر نام‌نویسی نکرده‌است و ممکن است متوجه این پیام نشود.",
 	"wikilove-commons-text": "می‌توانید برای یافتن تصاویر $1 را مرور کنید.",
+	"wikilove-commons-link": "ویکی‌انبار",
 	"wikilove-terms": "با ارسال فرم، شما با شفاف‌سازی‌های مطابق $1 موافقت می‌کنید.",
 	"wikilove-terms-link": "شرایط",
 	"wikilove-terms-url": "http://wikimediafoundation.org/wiki/Feedback_privacy_statement/fa",
