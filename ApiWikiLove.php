@@ -54,7 +54,7 @@ class ApiWikiLove extends ApiBase {
 			new DerivativeRequest(
 				$this->getRequest(),
 				$apiParamArray,
-				false // was posted?
+				true // was posted?
 			),
 			true // enable write?
 		);
