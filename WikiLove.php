@@ -279,6 +279,7 @@ $wgResourceModules += array(
 			'wikilove-success-number',
 		),
 		'dependencies' => array(
+			'mediawiki.api.edit',
 			'ext.wikiLove.defaultOptions',
 			'jquery.ui.dialog',
 			'mediawiki.ui.button',

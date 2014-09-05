@@ -11,7 +11,8 @@ var	options = {}, // options modifiable by the user
 	redirect = true, // whether or not to redirect the user to the WikiLove message after it has been posted
 	targets = [], // the recipients of the WikiLove
 	maxRecipients = 10, // maximum number of simultaneous recipients
-	gallery = {};
+	gallery = {},
+	api = new mw.Api();
 
 $.wikiLove = {
 	/**
@@ -314,20 +315,15 @@ $.wikiLove = {
 		$( '#mw-wikilove-image-preview-spinner' ).fadeIn( 200 );
 		var title = $.wikiLove.normalizeFilename( currentTypeOrSubtype.image );
 		var loadingType = currentTypeOrSubtype;
-		$.ajax({
-			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php?',
-			data: {
-				'action'      : 'query',
-				'format'      : 'json',
-				'prop'        : 'imageinfo',
-				'iiprop'      : 'mime|url',
-				'titles'      : title,
-				'iiurlwidth'  : 75,
-				'iiurlheight' : 68
-			},
-			dataType: 'json',
-			type: 'POST',
-			success: function( data ) {
+		api.post( {
+			'action'      : 'query',
+			'prop'        : 'imageinfo',
+			'iiprop'      : 'mime|url',
+			'titles'      : title,
+			'iiurlwidth'  : 75,
+			'iiurlheight' : 68
+		} )
+			.done( function( data ) {
 				if ( !data || !data.query || !data.query.pages ) {
 					$( '#mw-wikilove-image-preview-spinner' ).fadeOut( 200 );
 					return;
@@ -348,11 +344,10 @@ $.wikiLove = {
 						$( '#mw-wikilove-image-preview-content' ).append( $img );
 					}
 				});
-			},
-			error: function() {
+			} )
+			.fail( function() {
 				$( '#mw-wikilove-image-preview-spinner' ).fadeOut( 200 );
-			}
-		});
+			} );
 	},
 
 	/**
@@ -464,16 +459,12 @@ $.wikiLove = {
 					var imageTitle = $.wikiLove.normalizeFilename( $( '#mw-wikilove-image' ).val() );
 					$( '#mw-wikilove-preview-spinner' ).fadeIn( 200 );
 
-					$.ajax( {
-						url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php?',
-						data: {
-							'action': 'query',
-							'format': 'json',
-							'titles': imageTitle,
-							'prop': 'imageinfo'
-						},
-						dataType: 'json',
-						success: function( data ) {
+					api.get( {
+						'action': 'query',
+						'titles': imageTitle,
+						'prop': 'imageinfo'
+					} )
+						.done( function( data ) {
 							// See if image exists locally or through InstantCommons
 							if ( !data.query.pages[-1] || data.query.pages[-1].imageinfo) {
 								// Image exists
@@ -485,12 +476,11 @@ $.wikiLove = {
 								$.wikiLove.logCustomImageUse( imageTitle, 0 );
 								$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
 							}
-						},
-						error: function() {
+						} )
+						.fail( function() {
 							$.wikiLove.showAddDetailsError( 'wikilove-err-image-api' );
 							$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
-						}
-					} );
+						} );
 				}
 			} else { // doesn't ask for an image
 				$.wikiLove.submitPreview();
@@ -578,15 +568,10 @@ $.wikiLove = {
 	 * Log each time a user attempts to use a custom image via the Make your own feature.
 	 */
 	logCustomImageUse: function( imageTitle, success ) {
-		$.ajax( {
-			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php?',
-			data: {
-				'action': 'wikiloveimagelog',
-				'image': imageTitle,
-				'success': success,
-				'format': 'json'
-			},
-			dataType: 'json'
+		api.get( {
+			'action': 'wikiloveimagelog',
+			'image': imageTitle,
+			'success': success
 		} );
 	},
 
@@ -595,27 +580,21 @@ $.wikiLove = {
 	 */
 	doPreview: function( wikitext ) {
 		$( '#mw-wikilove-preview-spinner' ).fadeIn( 200 );
-		$.ajax({
-			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php?',
-			data: {
-				'action': 'parse',
-				'title': mw.config.get( 'wgPageName' ),
-				'format': 'json',
-				'text': wikitext,
-				'prop': 'text',
-				'pst': true
-			},
-			dataType: 'json',
-			type: 'POST',
-			success: function( data ) {
+		api.post( {
+			'action': 'parse',
+			'title': mw.config.get( 'wgPageName' ),
+			'text': wikitext,
+			'prop': 'text',
+			'pst': true
+		} )
+			.done( function( data ) {
 				$.wikiLove.showPreview( data.parse.text['*'] );
 				$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
-			},
-			error: function() {
+			} )
+			.fail( function() {
 				$.wikiLove.showAddDetailsError( 'wikilove-err-preview-api' );
 				$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
-			}
-		});
+			} );
 	},
 
 	/**
@@ -676,32 +655,23 @@ $.wikiLove = {
 	doSend: function( subject, wikitext, message, type, email ) {
 		$( '#mw-wikilove-send-spinner' ).fadeIn( 200 );
 
-		var editToken = mw.user.tokens.get( 'editToken' );
-
 		var wikiLoveNumberAttempted = 0;
 		var wikiLoveNumberPosted = 0;
 		$.each( targets, function( index, target ) {
 			var sendData = {
 				action: 'wikilove',
-				format: 'json',
 				title: 'User:' + target,
 				type: type,
 				text: wikitext,
 				message: message,
-				subject: subject,
-				token: editToken
+				subject: subject
 			};
 
 			if ( email ) {
 				sendData.email = email;
 			}
-
-			$.ajax( {
-				url: mw.config.get( 'wgScriptPath' ) + '/api.php',
-				data: sendData,
-				dataType: 'json',
-				type: 'POST',
-				success: function( data ) {
+			api.postWithEditToken( sendData )
+				.done( function( data ) {
 					wikiLoveNumberAttempted++;
 					if ( wikiLoveNumberAttempted === targets.length ) {
 						$( '#mw-wikilove-send-spinner' ).fadeOut( 200 );
@@ -756,15 +726,14 @@ $.wikiLove = {
 					} else { // API did not return appropriate information
 						$.wikiLove.showPreviewError( 'wikilove-err-send-api' );
 					}
-				},
-				error: function() {
+				} )
+				.fail( function() {
 					$.wikiLove.showPreviewError( 'wikilove-err-send-api' );
 					wikiLoveNumberAttempted++;
 					if ( wikiLoveNumberAttempted === targets.length ) {
 						$( '#mw-wikilove-send-spinner' ).fadeOut( 200 );
 					}
-				}
-			});
+				} );
 		});
 	},
 
@@ -812,20 +781,15 @@ $.wikiLove = {
 		var	index = 0,
 			loadingType = currentTypeOrSubtype,
 			loadingIndex = 0;
-		$.ajax({
-			url: mw.config.get( 'wgServer' ) + mw.config.get( 'wgScriptPath' ) + '/api.php?',
-			data: {
-				'action'      : 'query',
-				'format'      : 'json',
-				'prop'        : 'imageinfo',
-				'iiprop'      : 'mime|url',
-				'titles'      : titles,
-				'iiurlwidth'  : currentTypeOrSubtype.gallery.width,
-				'iiurlheight' : currentTypeOrSubtype.gallery.height
-			},
-			dataType: 'json',
-			type: 'POST',
-			success: function( data ) {
+		api.post( {
+			'action'      : 'query',
+			'prop'        : 'imageinfo',
+			'iiprop'      : 'mime|url',
+			'titles'      : titles,
+			'iiurlwidth'  : currentTypeOrSubtype.gallery.width,
+			'iiurlheight' : currentTypeOrSubtype.gallery.height
+		} )
+			.done( function( data ) {
 				if ( !data || !data.query || !data.query.pages ) {
 					$( '#mw-wikilove-gallery-error' ).show();
 					$( '#mw-wikilove-gallery-spinner' ).fadeOut( 200 );
@@ -867,12 +831,11 @@ $.wikiLove = {
 				} );
 				// Pre-select first image
 				/* $('#mw-wikilove-gallery-img-0 img').trigger('click'); */
-			},
-			error: function() {
+			} )
+			.fail( function() {
 				$( '#mw-wikilove-gallery-error' ).show();
 				$( '#mw-wikilove-gallery-spinner' ).fadeOut( 200 );
-			}
-		});
+			} );
 	},
 
 	/**
