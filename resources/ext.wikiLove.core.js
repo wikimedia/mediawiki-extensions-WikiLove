@@ -1,5 +1,5 @@
-/*global window:false */
-( function( $ ) {
+/*global alert:false */
+( function ( $, mw ) {
 
 var	options = {}, // options modifiable by the user
 	$dialog = null, // dialog jQuery object
@@ -19,9 +19,9 @@ $.wikiLove = {
 	 * Opens the dialog and builds it if necessary.
 	 * @param array recipients Usernames of recipients (without namespace prefix)
 	 */
-	openDialog: function( recipients ) {
+	openDialog: function ( recipients ) {
 		// If a list of recipients are specified, this will override the normal
-		// behavior of WikiLove, which is to post on the Talk page of the 
+		// behavior of WikiLove, which is to post on the Talk page of the
 		// current page. It will also disable redirecting the user after submitting.
 		if ( recipients ) {
 			if ( recipients.length > maxRecipients ) {
@@ -48,8 +48,8 @@ $.wikiLove = {
 				var	$button = $( '<a href="#" class=""></a>' );
 
 				if ( typeof type.icon === 'string' ) {
-					$button.append( '<img src="'
-						+ mw.html.escape( type.icon ) + '"/>' );
+					$button.append( '<img src="' +
+						mw.html.escape( type.icon ) + '"/>' );
 				} else {
 					$button.addClass( 'mw-wikilove-no-icon' );
 				}
@@ -176,7 +176,7 @@ $.wikiLove = {
 			}
 
 			// When the image changes, we want to reset the preview and error message.
-			$( '#mw-wikilove-image' ).change( function() {
+			$( '#mw-wikilove-image' ).change( function () {
 				$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
 				$( '#mw-wikilove-preview' ).hide();
 			} );
@@ -189,7 +189,7 @@ $.wikiLove = {
 	 * Handler for the left menu. Selects a new type and initialises next section
 	 * depending on whether or not to show subtypes.
 	 */
-	clickType: function( e ) {
+	clickType: function ( e ) {
 		e.preventDefault();
 		$.wikiLove.rememberInputData(); // remember previously entered data
 		$( '#mw-wikilove-get-started' ).hide(); // always hide the get started section
@@ -240,7 +240,7 @@ $.wikiLove = {
 	/**
 	 * Handler for changing the subtype.
 	 */
-	changeSubtype: function() {
+	changeSubtype: function () {
 		$.wikiLove.rememberInputData(); // remember previously entered data
 
 		// find out which subtype is selected
@@ -273,7 +273,7 @@ $.wikiLove = {
 	/**
 	 * Remember data the user entered if it is different from the default.
 	 */
-	rememberInputData: function() {
+	rememberInputData: function () {
 		if ( rememberData === null) {
 			rememberData = {
 				header : '',
@@ -309,7 +309,7 @@ $.wikiLove = {
 	/**
 	 * Show a preview of the image for a subtype.
 	 */
-	showImagePreview: function() {
+	showImagePreview: function () {
 		$( '#mw-wikilove-image-preview' ).show();
 		$( '#mw-wikilove-image-preview-content' ).html( '' );
 		$( '#mw-wikilove-image-preview-spinner' ).fadeIn( 200 );
@@ -323,7 +323,7 @@ $.wikiLove = {
 			'iiurlwidth'  : 75,
 			'iiurlheight' : 68
 		} )
-			.done( function( data ) {
+			.done( function ( data ) {
 				if ( !data || !data.query || !data.query.pages ) {
 					$( '#mw-wikilove-image-preview-spinner' ).fadeOut( 200 );
 					return;
@@ -331,13 +331,13 @@ $.wikiLove = {
 				if ( loadingType !== currentTypeOrSubtype ) {
 					return;
 				}
-				$.each( data.query.pages, function( id, page ) {
+				$.each( data.query.pages, function ( id, page ) {
 					if ( page.imageinfo && page.imageinfo.length ) {
 						// build an image tag with the correct url
-						var $img = $( '<img/>' )
+						var $img = $( '<img>' )
 							.attr( 'src', page.imageinfo[0].thumburl )
 							.hide()
-							.load( function() {
+							.load( function () {
 								$( '#mw-wikilove-image-preview-spinner' ).hide();
 								$( this ).css( 'display', 'inline-block' );
 							} );
@@ -345,7 +345,7 @@ $.wikiLove = {
 					}
 				});
 			} )
-			.fail( function() {
+			.fail( function () {
 				$( '#mw-wikilove-image-preview-spinner' ).fadeOut( 200 );
 			} );
 	},
@@ -353,7 +353,7 @@ $.wikiLove = {
 	/**
 	 * Called when type or subtype changes, updates controls.
 	 */
-	updateAllDetails: function() {
+	updateAllDetails: function () {
 		$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
 
 		// use remembered data for fields that can be set by the user
@@ -392,8 +392,8 @@ $.wikiLove = {
 		// set the new text for the image textbox
 		$( '#mw-wikilove-image' ).val( currentRememberData.image || currentTypeOrSubtype.image || '' );
 
-		if( typeof currentTypeOrSubtype.gallery === 'object'
-			&& $.isArray( currentTypeOrSubtype.gallery.imageList )
+		if( typeof currentTypeOrSubtype.gallery === 'object' &&
+			$.isArray( currentTypeOrSubtype.gallery.imageList )
 		) {
 			$( '#mw-wikilove-gallery, #mw-wikilove-gallery-label' ).show();
 			$.wikiLove.showGallery(); // build gallery from array of images
@@ -420,7 +420,7 @@ $.wikiLove = {
 	/**
 	 * Handler for clicking the preview button.
 	 */
-	validatePreviewForm: function( e ) {
+	validatePreviewForm: function ( e ) {
 		e.preventDefault();
 		$( '#mw-wikilove-success' ).hide();
 		$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
@@ -464,7 +464,7 @@ $.wikiLove = {
 						'titles': imageTitle,
 						'prop': 'imageinfo'
 					} )
-						.done( function( data ) {
+						.done( function ( data ) {
 							// See if image exists locally or through InstantCommons
 							if ( !data.query.pages[-1] || data.query.pages[-1].imageinfo) {
 								// Image exists
@@ -477,7 +477,7 @@ $.wikiLove = {
 								$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
 							}
 						} )
-						.fail( function() {
+						.fail( function () {
 							$.wikiLove.showAddDetailsError( 'wikilove-err-image-api' );
 							$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
 						} );
@@ -498,22 +498,21 @@ $.wikiLove = {
 	/**
 	 * After the form is validated, perform preview.
 	 */
-	submitPreview: function() {
+	submitPreview: function () {
 		var text = $.wikiLove.prepareMsg( currentTypeOrSubtype.text || options.types[currentTypeId].text || options.defaultText );
-		$.wikiLove.doPreview( '==' + $( '#mw-wikilove-header' ).val() + "==\n" + text );
+		$.wikiLove.doPreview( '==' + $( '#mw-wikilove-header' ).val() + '==\n' + text );
 	},
 
-	showAddDetailsError: function( errmsg ) {
+	showAddDetailsError: function ( errmsg ) {
 		$( '#mw-wikilove-add-details' ).append( $( '<div class="mw-wikilove-error"></div>' ).text( mw.msg( errmsg ) ) );
 	},
 
-	showPreviewError: function( errmsg ) {
+	showPreviewError: function ( errmsg ) {
 		$( '#mw-wikilove-preview' ).append( $( '<div class="mw-wikilove-error"></div>' ).text( mw.msg( errmsg ) ) );
 	},
-	
-	showSuccessMsg: function( msg ) {
-		$( '#mw-wikilove-success' ).text( msg );
-		$( '#mw-wikilove-success' ).show();
+
+	showSuccessMsg: function ( msg ) {
+		$( '#mw-wikilove-success' ).text( msg ).show();
 	},
 
 	/**
@@ -526,7 +525,7 @@ $.wikiLove = {
 	 * $6: border color
 	 * $7: username of the recipient
 	 */
-	prepareMsg: function( msg ) {
+	prepareMsg: function ( msg ) {
 
 		msg = msg.replace( '$1', $( '#mw-wikilove-message' ).val() ); // replace the raw message
 		msg = msg.replace( '$2', $( '#mw-wikilove-title' ).val() ); // replace the title
@@ -545,10 +544,10 @@ $.wikiLove = {
 	 * This function will extract a filename from a URL or add a "File:" prefix if there isn't
 	 * already a media namespace prefix.
 	 */
-	normalizeFilename: function( filename ) {
+	normalizeFilename: function ( filename ) {
 		// If a URL is given, extract and decode the filename
-		var index = filename.lastIndexOf( "/" ) + 1;
-		filename = filename.substr( index );
+		var index = filename.lastIndexOf( '/' ) + 1;
+		filename = filename.slice( index );
 		if ( index > 0 ) {
 			filename = decodeURI( filename );
 		}
@@ -567,7 +566,7 @@ $.wikiLove = {
 	/**
 	 * Log each time a user attempts to use a custom image via the Make your own feature.
 	 */
-	logCustomImageUse: function( imageTitle, success ) {
+	logCustomImageUse: function ( imageTitle, success ) {
 		api.get( {
 			'action': 'wikiloveimagelog',
 			'image': imageTitle,
@@ -578,7 +577,7 @@ $.wikiLove = {
 	/**
 	 * Fires AJAX request for previewing wikitext.
 	 */
-	doPreview: function( wikitext ) {
+	doPreview: function ( wikitext ) {
 		$( '#mw-wikilove-preview-spinner' ).fadeIn( 200 );
 		api.post( {
 			'action': 'parse',
@@ -587,11 +586,11 @@ $.wikiLove = {
 			'prop': 'text',
 			'pst': true
 		} )
-			.done( function( data ) {
+			.done( function ( data ) {
 				$.wikiLove.showPreview( data.parse.text['*'] );
 				$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
 			} )
-			.fail( function() {
+			.fail( function () {
 				$.wikiLove.showAddDetailsError( 'wikilove-err-preview-api' );
 				$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
 			} );
@@ -600,7 +599,7 @@ $.wikiLove = {
 	/**
 	 * Callback for the preview function. Sets the preview area with the HTML and fades it in.
 	 */
-	showPreview: function( html ) {
+	showPreview: function ( html ) {
 		$( '#mw-wikilove-preview-area' ).html( html );
 		$( '#mw-wikilove-preview' ).fadeIn( 200 );
 	},
@@ -610,7 +609,7 @@ $.wikiLove = {
 	 * The type sent for statistics is 'typeId-subtypeId' when using subtypes,
 	 * or simply 'typeId' otherwise.
 	 */
-	submitSend: function( e ) {
+	submitSend: function ( e ) {
 		e.preventDefault();
 		$( '#mw-wikilove-success' ).hide();
 		$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
@@ -639,8 +638,7 @@ $.wikiLove = {
 			'header': $( '#mw-wikilove-header' ).val(),
 			'text': $.wikiLove.prepareMsg( currentTypeOrSubtype.text || options.types[currentTypeId].text || options.defaultText ),
 			'message': $( '#mw-wikilove-message' ).val(),
-			'type': currentTypeId
-				+ (currentSubtypeId !== null ? '-' + currentSubtypeId : '')
+			'type': currentTypeId + (currentSubtypeId !== null ? '-' + currentSubtypeId : '')
 		};
 		if ( $( '#mw-wikilove-notify-checkbox:checked' ).val() && emailable ) {
 			submitData.email = $.wikiLove.prepareMsg( currentTypeOrSubtype.email );
@@ -652,12 +650,12 @@ $.wikiLove = {
 	/**
 	 * Fires the final AJAX request and then redirects to the talk page where the content is added.
 	 */
-	doSend: function( subject, wikitext, message, type, email ) {
+	doSend: function ( subject, wikitext, message, type, email ) {
 		$( '#mw-wikilove-send-spinner' ).fadeIn( 200 );
 
 		var wikiLoveNumberAttempted = 0;
 		var wikiLoveNumberPosted = 0;
-		$.each( targets, function( index, target ) {
+		$.each( targets, function ( index, target ) {
 			var sendData = {
 				action: 'wikilove',
 				title: 'User:' + target,
@@ -671,12 +669,12 @@ $.wikiLove = {
 				sendData.email = email;
 			}
 			api.postWithEditToken( sendData )
-				.done( function( data ) {
+				.done( function ( data ) {
 					wikiLoveNumberAttempted++;
 					if ( wikiLoveNumberAttempted === targets.length ) {
 						$( '#mw-wikilove-send-spinner' ).fadeOut( 200 );
 					}
-	
+
 					if ( data.error !== undefined ) {
 						if ( data.error.info === 'Invalid token' ) {
 							$.wikiLove.showPreviewError( 'wikilove-err-invalid-token' );
@@ -691,7 +689,7 @@ $.wikiLove = {
 						if ( redirect ) {
 							var	targetBaseUrl = mw.util.getUrl( data.redirect.pageName ),
 								// currentBaseUrl is the current URL minus the hash fragment
-								currentBaseUrl = window.location.href.split("#")[0];
+								currentBaseUrl = location.href.split('#')[0];
 
 							// Set window location to user talk page URL + WikiLove anchor hash.
 							// Unfortunately, in the most common scenario (starting from the user talk
@@ -701,23 +699,23 @@ $.wikiLove = {
 							// directed to the WikiLove message instead of just being left at the top of
 							// the page. In the case that we are starting from a different page, this sends
 							// the user immediately to the new WikiLove message on the user talk page.
-							window.location = targetBaseUrl + '#' + data.redirect.fragment; // data.redirect.fragment is already encoded
+							location.href = targetBaseUrl + '#' + data.redirect.fragment; // data.redirect.fragment is already encoded
 
 							// If we were already on the user talk page, then reload the page so that the
 							// new WikiLove message is displayed.
 							// @todo: an expandUrl() would be very nice indeed!
 							if (
-								mw.config.get( 'wgServer' ) + targetBaseUrl === currentBaseUrl
+								mw.config.get( 'wgServer' ) + targetBaseUrl === currentBaseUrl ||
 								// Compatibility with protocol-relative URLs in MediaWiki 1.18+
-								|| window.location.protocol + mw.config.get( 'wgServer' ) + targetBaseUrl === currentBaseUrl
+									location.protocol + mw.config.get( 'wgServer' ) + targetBaseUrl === currentBaseUrl
 							) {
-								window.location.reload();
+								location.reload();
 							}
 						} else {
 							$.wikiLove.showSuccessMsg( mw.msg( 'wikilove-success-number', wikiLoveNumberPosted ) );
 							// If there were no errors, close the dialog and reset WikiLove
 							if ( wikiLoveNumberPosted === targets.length ) {
-								setTimeout ( function() {
+								setTimeout ( function () {
 									$dialog.dialog( 'close' );
 									$.wikiLove.reset();
 								}, 1000 );
@@ -727,7 +725,7 @@ $.wikiLove = {
 						$.wikiLove.showPreviewError( 'wikilove-err-send-api' );
 					}
 				} )
-				.fail( function() {
+				.fail( function () {
 					$.wikiLove.showPreviewError( 'wikilove-err-send-api' );
 					wikiLoveNumberAttempted++;
 					if ( wikiLoveNumberAttempted === targets.length ) {
@@ -738,10 +736,10 @@ $.wikiLove = {
 	},
 
 	/**
-	 * Resets WikiLove to its itialized state – removes the dialog box from the 
+	 * Resets WikiLove to its itialized state – removes the dialog box from the
 	 * DOM and resets the pseudo-global variables.
 	 */
-	reset: function() {
+	reset: function () {
 		$dialog.dialog( 'destroy' );
 		$( '#mw-wikilove-dialog' ).remove();
 		$dialog = null;
@@ -755,14 +753,14 @@ $.wikiLove = {
 	 * This function is called if the gallery is an array of images. It retrieves the image
 	 * thumbnails from the API, and constructs a thumbnail gallery with them.
 	 */
-	showGallery: function() {
+	showGallery: function () {
 		$( '#mw-wikilove-gallery-content' ).html( '' );
 		gallery = {};
 		$( '#mw-wikilove-gallery-spinner' ).fadeIn( 200 );
 		$( '#mw-wikilove-gallery-error' ).hide();
 
-		if ( currentTypeOrSubtype.gallery.number === undefined
-		    || currentTypeOrSubtype.gallery.number <= 0
+		if ( currentTypeOrSubtype.gallery.number === undefined ||
+			currentTypeOrSubtype.gallery.number <= 0
 		) {
 			currentTypeOrSubtype.gallery.number = currentTypeOrSubtype.gallery.imageList.length;
 		}
@@ -789,7 +787,7 @@ $.wikiLove = {
 			'iiurlwidth'  : currentTypeOrSubtype.gallery.width,
 			'iiurlheight' : currentTypeOrSubtype.gallery.height
 		} )
-			.done( function( data ) {
+			.done( function ( data ) {
 				if ( !data || !data.query || !data.query.pages ) {
 					$( '#mw-wikilove-gallery-error' ).show();
 					$( '#mw-wikilove-gallery-spinner' ).fadeOut( 200 );
@@ -801,13 +799,13 @@ $.wikiLove = {
 				}
 				var galleryNumber = currentTypeOrSubtype.gallery.number;
 
-				$.each( data.query.pages, function( id, page ) {
+				$.each( data.query.pages, function ( id, page ) {
 					if ( page.imageinfo && page.imageinfo.length ) {
 						// build an image tag with the correct url
-						var $img = $( '<img/>' )
+						var $img = $( '<img>' )
 							.attr( 'src', page.imageinfo[0].thumburl )
 							.hide()
-							.load( function() {
+							.load( function () {
 								$( this ).css( 'display', 'inline-block' );
 								loadingIndex++;
 								if ( loadingIndex >= galleryNumber ) {
@@ -818,7 +816,7 @@ $.wikiLove = {
 							$( '<a href="#"></a>' )
 								.attr( 'id', 'mw-wikilove-gallery-img-' + index )
 								.append( $img )
-								.click( function( e ) {
+								.click( function ( e ) {
 									e.preventDefault();
 									$( '#mw-wikilove-gallery a' ).removeClass( 'selected' );
 									$( this ).addClass( 'selected' );
@@ -832,7 +830,7 @@ $.wikiLove = {
 				// Pre-select first image
 				/* $('#mw-wikilove-gallery-img-0 img').trigger('click'); */
 			} )
-			.fail( function() {
+			.fail( function () {
 				$( '#mw-wikilove-gallery-error' ).show();
 				$( '#mw-wikilove-gallery-spinner' ).fadeOut( 200 );
 			} );
@@ -841,7 +839,7 @@ $.wikiLove = {
 	/**
 	 * Init function which is called upon page load. Binds the WikiLove icon to opening the dialog.
 	 */
-	init: function() {
+	init: function () {
 		var $wikiLoveLink = $( [] );
 		options = $.wikiLoveOptions;
 
@@ -851,7 +849,7 @@ $.wikiLove = {
 			$wikiLoveLink = $( '#topbar a:contains(' + mw.msg( 'wikilove-tab-text' ) + ')' );
 		}
 		$wikiLoveLink.unbind( 'click' );
-		$wikiLoveLink.click( function( e ) {
+		$wikiLoveLink.click( function ( e ) {
 			e.preventDefault();
 			$.wikiLove.openDialog();
 		});
@@ -868,7 +866,7 @@ $.wikiLove = {
 	 * without duplicate code between functions
 	 */
 	/*
-	makeGallery: function() {
+	makeGallery: function () {
 		$( '#mw-wikilove-gallery-content' ).html( '' );
 		gallery = {};
 		$( '#mw-wikilove-gallery-spinner' ).fadeIn( 200 );
@@ -889,7 +887,7 @@ $.wikiLove = {
 			},
 			dataType: 'json',
 			type: 'POST',
-			success: function( data ) {
+			success: function ( data ) {
 				// clear
 				$( '#mw-wikilove-gallery-content' ).html( '' );
 				gallery = {};
@@ -912,20 +910,20 @@ $.wikiLove = {
 							keys.splice(id, 1);
 
 							// only add the image if it's actually an image
-							if( page.imageinfo[0].mime.substr(0,5) == 'image' ) {
+							if( page.imageinfo[0].mime.slice(0, 5) == 'image' ) {
 								// build an image tag with the correct url and width
-								var $img = $( '<img/>' )
+								var $img = $( '<img>' )
 									.attr( 'src', page.imageinfo[0].url )
 									.attr( 'width', currentTypeOrSubtype.gallery.width )
 									.hide()
-									.load( function() { $( this ).css( 'display', 'inline-block' ); } );
+									.load( function () { $( this ).css( 'display', 'inline-block' ); } );
 
 								// append the image to the gallery and also make sure it's selectable
 								$( '#mw-wikilove-gallery-content' ).append(
 									$( '<a href="#"></a>' )
 										.attr( 'id', 'mw-wikilove-gallery-img-' + i )
 										.append( $img )
-										.click( function( e ) {
+										.click( function ( e ) {
 											e.preventDefault();
 											$( '#mw-wikilove-gallery a' ).removeClass( 'selected' );
 											$( this ).addClass( 'selected' );
@@ -954,4 +952,4 @@ $.wikiLove = {
 
 
 $( document ).ready( $.wikiLove.init );
-} ) ( jQuery );
+} ) ( jQuery, mediaWiki );
