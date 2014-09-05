@@ -719,7 +719,7 @@ $.wikiLove = {
 					if ( data.redirect !== undefined ) {
 						wikiLoveNumberPosted++;
 						if ( redirect ) {
-							var	targetBaseUrl = mw.util.wikiGetlink( data.redirect.pageName ),
+							var	targetBaseUrl = mw.util.getUrl( data.redirect.pageName ),
 								// currentBaseUrl is the current URL minus the hash fragment
 								currentBaseUrl = window.location.href.split("#")[0];
 
