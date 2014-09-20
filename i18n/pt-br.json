@@ -8,7 +8,8 @@
 			"Raylton P. Sousa",
 			"555",
 			"Luckas",
-			"Cainamarques"
+			"Cainamarques",
+			"Dianakc"
 		]
 	},
 	"wikilove-desc": "Adiciona uma interface para facilitar a demonstrações de apreço nas páginas de discussão dos usuários",
@@ -50,7 +51,7 @@
 	"wikilove-err-sig": "Não inclua uma assinatura na mensagem, por favor.",
 	"wikilove-err-gallery": "Ocorreu um erro ao carregar as imagens!",
 	"wikilove-err-gallery-again": "Tente novamente",
-	"wikilove-err-preview-api": "Ocorreu um erro durante a antevisão. Tente novamente, por favor.",
+	"wikilove-err-preview-api": "Ocorreu um erro durante a pré-visualização. Tente novamente, por favor.",
 	"wikilove-err-send-api": "Ocorreu um erro ao enviar a mensagem. Tente novamente, por favor.",
 	"wikilove-summary": "/* $1 */ nova mensagem de WikiApreço",
 	"wikilove-what-is-this": "O que é isto?",
