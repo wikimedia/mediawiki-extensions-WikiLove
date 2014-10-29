@@ -177,6 +177,9 @@ class ApiWikiLove extends ApiBase {
 		);
 	}
 
+	/**
+	 * @deprecated since MediaWiki core 1.25
+	 */
 	public function getParamDescription() {
 		return array(
 			'title' => 'Full pagename of the user page or user talk page of the user to send WikiLove to',
@@ -196,6 +199,9 @@ class ApiWikiLove extends ApiBase {
 		);
 	}
 
+	/**
+	 * @deprecated since MediaWiki core 1.25
+	 */
 	public function getDescription() {
 		return array(
 			'Give WikiLove to another user.',
@@ -206,13 +212,22 @@ class ApiWikiLove extends ApiBase {
 		);
 	}
 
+	/**
+	 * @deprecated since MediaWiki core 1.25
+	 */
 	public function getExamples() {
 		return array(
 			'api.php?action=wikilove&title=User:Dummy&text=Love&subject=Hi&token=%2B\\',
 		);
 	}
 
-	public function getVersion() {
-		return __CLASS__ . ': 1.1';
+	/**
+	 * @see ApiBase::getExamplesMessages()
+	 */
+	protected function getExamplesMessages() {
+		return array(
+			'action=wikilove&title=User:Dummy&text=Love&subject=Hi&token=123ABC'
+				=> 'apihelp-wikilove-example-1',
+		);
 	}
 }

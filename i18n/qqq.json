@@ -62,5 +62,16 @@
 	"wikilove-terms": "[[File:Wiki_Love_003.png|right|200px]]\nA notice that appears above the Send WikiLove button in small text. Try to keep this concise. $1 is replaced with the actual link.",
 	"wikilove-terms-link": "The text that links to the terms of service. Should not be capitalized.\n{{Identical|Term}}",
 	"wikilove-terms-url": "{{Optional}}\nThis URL can be changed to point to a translated version of the page if it exists.",
-	"tag-wikilove-description": "Description for revision tag added when edit is made using WikiLove"
+	"tag-wikilove-description": "Description for revision tag added when edit is made using WikiLove",
+	"apihelp-wikilove-description": "{{doc-apihelp-description|wikilove}}",
+	"apihelp-wikilove-param-title": "{{doc-apihelp-param|wikilove|title}}",
+	"apihelp-wikilove-param-text": "{{doc-apihelp-param|wikilove|text}}",
+	"apihelp-wikilove-param-message": "{{doc-apihelp-param|wikilove|message}}",
+	"apihelp-wikilove-param-subject": "{{doc-apihelp-param|wikilove|subject}}",
+	"apihelp-wikilove-param-type": "{{doc-apihelp-param|wikilove|type}}",
+	"apihelp-wikilove-param-email": "{{doc-apihelp-param|wikilove|email}}",
+	"apihelp-wikilove-example-1": "{{doc-apihelp-example|wikilove}}",
+	"apihelp-wikiloveimagelog-description": "{{doc-apihelp-description|wikiloveimagelog}}",
+	"apihelp-wikiloveimagelog-param-image": "{{doc-apihelp-param|wikiloveimagelog|image}}",
+	"apihelp-wikiloveimagelog-param-success": "{{doc-apihelp-param|wikiloveimagelog|success}}"
 }

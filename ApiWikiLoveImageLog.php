@@ -37,6 +37,9 @@ class ApiWikiLoveImageLog extends ApiBase {
 		}
 	}
 
+	/**
+	 * @deprecated since MediaWiki core 1.25
+	 */
 	public function getDescription() {
 		return array(
 			'Log user attempts to use a custom image via WikiLove.',
@@ -54,9 +57,5 @@ class ApiWikiLoveImageLog extends ApiBase {
 				ApiBase::PARAM_REQUIRED => true,
 			)
 		);
-	}
-
-	public function getVersion() {
-		return __CLASS__ . ': $Id$';
 	}
 }
