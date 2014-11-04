@@ -10,7 +10,8 @@
 			"Shirayuki",
 			"Siebrand",
 			"Umherirrender",
-			"Whym"
+			"Whym",
+			"Liuxinyu970226"
 		]
 	},
 	"wikilove-desc": "{{desc|name=Wiki Love|url=http://www.mediawiki.org/wiki/Extension:WikiLove}}",
@@ -72,6 +73,6 @@
 	"apihelp-wikilove-param-email": "{{doc-apihelp-param|wikilove|email}}",
 	"apihelp-wikilove-example-1": "{{doc-apihelp-example|wikilove}}",
 	"apihelp-wikiloveimagelog-description": "{{doc-apihelp-description|wikiloveimagelog}}",
-	"apihelp-wikiloveimagelog-param-image": "{{doc-apihelp-param|wikiloveimagelog|image}}",
-	"apihelp-wikiloveimagelog-param-success": "{{doc-apihelp-param|wikiloveimagelog|success}}"
+	"apihelp-wikiloveimagelog-param-image": "{{notranslate}}\n{{doc-apihelp-param|wikiloveimagelog|image}}",
+	"apihelp-wikiloveimagelog-param-success": "{{notranslate}}\n{{doc-apihelp-param|wikiloveimagelog|success}}"
 }
