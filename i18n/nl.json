@@ -170,7 +170,7 @@
 	"wikilove-err-invalid-token": "Het was niet mogelijk WikiLove te verzenden vanwege het verlies van sessiegegevens. Probeer de pagina opnieuw te laden, of meld u af en aan als dat niet lukt.",
 	"wikilove-err-not-logged-in": "U bent niet aangemeld. Meld u aan om WikiLove te gebruiken.",
 	"wikilove-err-invalid-username": "Deze gebruikersnaam is ongeldig.",
-	"wikilove-err-no-self-wikilove": "U kunt uzelf geen WikiLove zenden. Sorry!",
+	"wikilove-err-no-self-wikilove": "U kunt uzelf helaas geen WikiLove zenden.",
 	"wikilove-err-redirect": "De overlegpagina van de gebruiker is een doorverwijspagina.",
 	"wikilove-err-cannot-edit": "U hebt geen rechten om die pagina te bewerken.",
 	"wikilove-err-max-exceeded": "U kunt WikiLove naar niet meer dan {{PLURAL:$1|één gebruiker|$1 gebruikers}} tegelijk verzenden.",
