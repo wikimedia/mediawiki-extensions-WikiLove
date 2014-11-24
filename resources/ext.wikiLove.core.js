@@ -413,7 +413,7 @@ $.wikiLove = {
 			$( '#mw-wikilove-notify' ).show();
 		} else {
 			$( '#mw-wikilove-notify' ).hide();
-			$( '#mw-wikilove-notify-checkbox' ).attr('checked', false);
+			$( '#mw-wikilove-notify-checkbox' ).prop('checked', false);
 		}
 	},
 
