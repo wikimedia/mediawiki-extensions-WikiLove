@@ -10,7 +10,8 @@
 			"Waihorace",
 			"Xiaomingyan",
 			"LNDDYL",
-			"Cwlin0416"
+			"Cwlin0416",
+			"Hkjacksonhk"
 		]
 	},
 	"wikilove-desc": "加入一個促進正向使用者回饋的介面至使用者對話頁面",
@@ -188,5 +189,14 @@
 	"wikilove-terms": "送出代表您將同意依據 $1 的透通性。",
 	"wikilove-terms-link": "條款",
 	"tag-wikilove-description": "使用維基友愛工具完成的編輯",
-	"WikiLove.js": "/* 此處的 JavaScript 可自訂 WikiLove, 請參考 https://www.mediaWiki.org/Wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"WikiLove.js": "/* 此處的 JavaScript 可自訂 WikiLove, 請參考 https://www.mediaWiki.org/Wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
+	"apihelp-wikilove-description": "給WikiLove給其他用戶。\n\nWikiLove是通過與預設或本地定義模板的方便的接口發布到用戶的討論頁正面的信息。此操作將指定wikitext的一定討論頁。為統計目的，類型和其它數據被記錄。",
+	"apihelp-wikilove-param-title": "用戶的用戶頁面或用戶討論頁的完整頁面名稱發送到維基友愛。",
+	"apihelp-wikilove-param-text": "原維基文本的在新的部分添加。",
+	"apihelp-wikilove-param-message": "實際的消息在用戶輸入，用於日誌記錄。",
+	"apihelp-wikilove-param-subject": "新節的主題標題。",
+	"apihelp-wikilove-param-type": "維基友愛（統計）類型;這相當於在左邊的菜單中選擇一種類型，並（如“原星章”或“小貓”）後，可選的子類型。",
+	"apihelp-wikilove-param-email": "所述可選的電子郵件消息的內容，以發送給用戶。如果用戶無法通過電子郵件發送的警告將被退回。 維基友愛將被發送到用戶的討論頁兩種方式。",
+	"apihelp-wikilove-example-1": "發送維基友愛給[[User:Dummy]]",
+	"apihelp-wikiloveimagelog-description": "登錄用戶試圖通過維基友愛使用自定義圖像。"
 }
