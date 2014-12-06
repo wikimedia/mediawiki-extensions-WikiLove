@@ -191,5 +191,7 @@
 	"wikilove-terms-link": "条款",
 	"tag-wikilove-description": "使用维基有爱工具做出的编辑",
 	"WikiLove.js": "/* 放置于这里的JavaScript定制WikiLove，请见https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
+	"apihelp-wikilove-description": "发送维基有爱至其他用户。\n\n维基有爱（WikiLove）是通过预先设置或由本地定义的模板构造的界面，用于向用户讨论页发送正面消息。此操作会加入指定的wiki文本至某个讨论页。对于统计目的，类型和其他数据将被记录。",
+	"apihelp-wikilove-param-title": "要发送维基有爱的目标用户页或用户讨论页的完整页面名称。",
 	"apihelp-wikilove-example-1": "向[[User:Dummy]]发送维基有爱"
 }
