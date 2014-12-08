@@ -198,5 +198,5 @@
 	"apihelp-wikilove-param-type": "維基友愛（統計）類型;這相當於在左邊的菜單中選擇一種類型，並（如“原星章”或“小貓”）後，可選的子類型。",
 	"apihelp-wikilove-param-email": "所述可選的電子郵件消息的內容，以發送給用戶。如果用戶無法通過電子郵件發送的警告將被退回。 維基友愛將被發送到用戶的討論頁兩種方式。",
 	"apihelp-wikilove-example-1": "發送維基友愛給[[User:Dummy]]",
-	"apihelp-wikiloveimagelog-description": "登錄用戶試圖通過維基友愛使用自定義圖像。"
+	"apihelp-wikiloveimagelog-description": "登入使用者試圖透過維基友愛使用自訂圖像。"
 }
