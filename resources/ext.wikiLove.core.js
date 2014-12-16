@@ -159,6 +159,7 @@ $.wikiLove = {
 					modal: true,
 					resizable: false
 				});
+			$dialog.parent().attr( 'id', 'mw-wikilove-overlay' );
 
 			$( '#mw-wikilove-button-preview' ).text( mw.msg( 'wikilove-button-preview' ) );
 			$( '#mw-wikilove-button-send' ).text( mw.msg( 'wikilove-button-send' ) );
