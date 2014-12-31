@@ -470,11 +470,9 @@ $.wikiLove = {
 							if ( !data.query.pages[-1] || data.query.pages[-1].imageinfo) {
 								// Image exists
 								$.wikiLove.submitPreview();
-								$.wikiLove.logCustomImageUse( imageTitle, 1 );
 							} else {
 								// Image does not exist
 								$.wikiLove.showAddDetailsError( 'wikilove-err-image-bad' );
-								$.wikiLove.logCustomImageUse( imageTitle, 0 );
 								$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
 							}
 						} )
@@ -562,17 +560,6 @@ $.wikiLove = {
 			filename = 'File:' + filename;
 		}
 		return filename;
-	},
-
-	/**
-	 * Log each time a user attempts to use a custom image via the Make your own feature.
-	 */
-	logCustomImageUse: function ( imageTitle, success ) {
-		api.get( {
-			'action': 'wikiloveimagelog',
-			'image': imageTitle,
-			'success': success
-		} );
 	},
 
 	/**

@@ -59,7 +59,6 @@ $dir = dirname( __FILE__ ) . '/';
 
 // add autoload classes
 $wgAutoloadClasses['ApiWikiLove']                 = $dir . 'ApiWikiLove.php';
-$wgAutoloadClasses['ApiWikiLoveImageLog']         = $dir . 'ApiWikiLoveImageLog.php';
 $wgAutoloadClasses['WikiLoveHooks']               = $dir . 'WikiLove.hooks.php';
 $wgAutoloadClasses['WikiLoveLocal']               = $dir . 'WikiLove.local.php';
 
@@ -78,7 +77,6 @@ $wgHooks['UserMergeAccountFields'][]              = 'WikiLoveHooks::onUserMergeA
 
 // api modules
 $wgAPIModules['wikilove'] = 'ApiWikiLove';
-$wgAPIModules['wikiloveimagelog'] = 'ApiWikiLoveImageLog';
 
 $extWikiLoveTpl = array(
 	'localBasePath' => dirname( __FILE__ ) . '/resources',
