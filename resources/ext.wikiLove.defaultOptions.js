@@ -304,7 +304,7 @@ $.wikiLoveOptions = {
 					option: mw.msg( 'wikilove-food-coffee-option' ),
 					descr: mw.msg( 'wikilove-food-coffee-desc' ),
 					header: mw.msg( 'wikilove-food-coffee-header' ),
-					image: 'A small cup of coffee.JPG',
+					image: 'Cup-o-coffee-simple.svg',
 					imageSize: '120px'
 				},
 				'tea': {
