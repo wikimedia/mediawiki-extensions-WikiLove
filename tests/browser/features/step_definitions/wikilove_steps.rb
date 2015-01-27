@@ -34,21 +34,21 @@ Then(/^I should be able to select an image$/) do
 end
 
 Then(/^I should see the Food and drink selectbox$/) do
-  on(WikilovePage).food_drink_select_element.should be_visible
+  expect(on(WikilovePage).food_drink_select_element).to be_visible
 end
 
 Then(/^I should see the header text field containing (.+)$/) do |wikilove_message|
-  on(WikilovePage).food_header.should match Regexp.escape(wikilove_message)
+  expect(on(WikilovePage).food_header).to match Regexp.escape(wikilove_message)
 end
 
 Then(/^I should see the barnstars selectbox$/) do
-  on(WikilovePage).barnstar_select_element.should be_visible
+  expect(on(WikilovePage).barnstar_select_element).to be_visible
 end
 
 Then(/^I should see the message text field$/) do
-  on(WikilovePage).wikilove_message_element.should be_visible
+  expect(on(WikilovePage).wikilove_message_element).to be_visible
 end
 
 Then(/^Wikilove window appears$/) do
-  on(WikilovePage).wikilove_window_element.should be_visible
+  expect(on(WikilovePage).wikilove_window_element).to be_visible
 end
