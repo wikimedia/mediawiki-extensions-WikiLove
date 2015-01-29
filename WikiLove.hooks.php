@@ -202,10 +202,11 @@ class WikiLoveHooks {
 	}
 
 	/**
-	 * ListDefinedTags hook handler
+	 * ListDefinedTags and ChangeTagsListActive hook handler
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/ListDefinedTags
-	 * @param $tags
+	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/ChangeTagsListActive
 	 *
+	 * @param array $tags
 	 * @return bool
 	 */
 	public static function onListDefinedTags( &$tags ) {
