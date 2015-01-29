@@ -1,9 +1,18 @@
 {
 	"@metadata": {
 		"authors": [
-			"පසිඳු කාවින්ද"
+			"පසිඳු කාවින්ද",
+			"Subi"
 		]
 	},
 	"wikilove-button-preview": "Aurrebista",
-	"wikilove-preview": "Aurrebista"
+	"wikilove-preview": "Aurrebista",
+	"wikilove-food-pie-option": "Tarta",
+	"wikilove-food-pie-header": "Tarta bat zuretzat!",
+	"wikilove-food-strawberries-option": "Marrubiak",
+	"wikilove-food-strawberries-header": "Katilukada bat marrubi zuretzat!",
+	"wikilove-type-kittens": "Katutxoak",
+	"wikilove-kittens-header": "Katutxo bat zuretzat!",
+	"wikilove-err-gallery-again": "Saiatu berriro",
+	"wikilove-what-is-this": "Zer da hau?"
 }
