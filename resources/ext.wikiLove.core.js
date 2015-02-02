@@ -75,8 +75,7 @@ $.wikiLove = {
 					.parent()
 					.html();
 
-			$dialog = $( '\
-<div id="mw-wikilove-dialog">\
+			$dialog = $( '<div id="mw-wikilove-dialog">\
 <div id="mw-wikilove-select-type">\
 	<span class="mw-wikilove-number">1</span>\
 	<h3><html:msg key="wikilove-select-type"/></h3>\
