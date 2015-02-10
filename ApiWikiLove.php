@@ -86,13 +86,10 @@ class ApiWikiLove extends ApiBase {
 	 * @return void
 	 */
 	private function saveInDb( $talk, $subject, $message, $type, $email ) {
-		wfProfileIn( __METHOD__ );
-
 		$dbw = wfGetDB( DB_MASTER );
 		$receiver = User::newFromName( $talk->getSubjectPage()->getBaseText() );
 		if ( $receiver === false || $receiver->isAnon() ) {
 			$this->setWarning( 'Not logging unregistered recipients' );
-			wfProfileOut( __METHOD__ );
 			return;
 		}
 
@@ -116,7 +113,6 @@ class ApiWikiLove extends ApiBase {
 		} catch( DBQueryError $dbqe ) {
 			$this->setWarning( 'Action was not logged' );
 		}
-		wfProfileOut( __METHOD__ );
 	}
 
 	/**
@@ -126,7 +122,6 @@ class ApiWikiLove extends ApiBase {
 	 * @param $token string
 	 */
 	private function emailUser( $talk, $subject, $text, $token ) {
-		wfProfileIn( __METHOD__ );
 		$api = new ApiMain( new FauxRequest(
 			array(
 				'action' => 'emailuser',
@@ -144,7 +139,6 @@ class ApiWikiLove extends ApiBase {
 		} catch( DBQueryError $dbqe ) {
 			$this->setWarning( 'Email was not sent' );
 		}
-		wfProfileOut( __METHOD__ );
 	}
 
 	public function getAllowedParams() {
