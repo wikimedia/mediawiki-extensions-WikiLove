@@ -7,12 +7,13 @@
 			"Lokal Profil",
 			"MagnusA",
 			"Warrakkk",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Marfuas"
 		]
 	},
 	"wikilove-desc": "Lägger till ett gränssnitt för att förenkla positiv feedback från användarna till Användardiskussionssidor",
 	"wikilove": "WikiLove",
-	"wikilove-enable-preference": "Gör det möjligt att visa uppskattning till andra användare med WikiLove-fliken",
+	"wikilove-enable-preference": "Gör det möjligt att visa andra användare uppskattning med WikiLove-fliken",
 	"wikilove-tab-text": "WikiLove",
 	"tooltip-ca-wikilove": "Skicka ett meddelande till den här användaren för att visa din uppskattning",
 	"wikilove-dialog-title": "WikiLove – Skicka ett meddelande för att visa uppskattning till en annan användare",
