@@ -51,5 +51,7 @@
 	"wikilove-kittens-header": "Koťátko pro tebe!",
 	"wikilove-type-makeyourown": "Vyrob si vlastní",
 	"wikilove-err-header": "Prosíme, zadejte nadpis",
-	"wikilove-err-gallery-again": "Zkusit znovu"
+	"wikilove-err-gallery-again": "Zkusit znovu",
+	"wikilove-err-not-logged-in": "Nejste přihlášen(a). Pro použití WikiLove se prosím přihlaste.",
+	"wikilove-err-invalid-username": "Toto uživatelské jméno není platné."
 }
