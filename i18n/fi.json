@@ -6,7 +6,8 @@
 			"Nike",
 			"Olli",
 			"VezonThunder",
-			"Pxos"
+			"Pxos",
+			"Stryn"
 		]
 	},
 	"wikilove-desc": "Käyttöliittymä joka helpottaa positiivisen käyttäjäpalautteen antamista käyttäjien keskustelusivuilla.",
@@ -168,6 +169,7 @@
 	"wikilove-err-gallery-again": "Yritä uudelleen",
 	"wikilove-err-preview-api": "Esikatselu epäonnistui. Yritä uudelleen.",
 	"wikilove-err-send-api": "Viestin lähetyksessä tapahtui virhe. Yritä uudelleen.",
+	"wikilove-err-not-logged-in": "Et ole kirjautunut sisään. Kirjaudu sisään, jos haluat käyttää toimintoa WikiLove.",
 	"wikilove-err-invalid-username": "Käyttäjänimi ei kelpaa.",
 	"wikilove-err-redirect": "Käyttäjän keskustelusivu on uudelleenohjaus.",
 	"wikilove-err-cannot-edit": "Sinulla ei ole oikeutta muokata tätä sivua.",

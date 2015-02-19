@@ -179,10 +179,10 @@
 	"wikilove-what-is-this": "Đây là gì?",
 	"wikilove-anon-warning": "Lưu ý: Người dùng này chưa mở tài khoản, họ có thể không nhận được thông điệp này.",
 	"wikilove-commons-text": "Có thể tìm kiếm hình ảnh tại $1.",
-	"wikilove-commons-url": "http://commons.wikimedia.org/wiki/Trang_Chính?uselang=vi",
+	"wikilove-commons-url": "//commons.wikimedia.org/wiki/Trang_Chính?uselang=vi",
 	"wikilove-terms": "Bằng cách gửi thông tin, bạn đồng ý phát hành thông tin này công khai theo các $1 này.",
 	"wikilove-terms-link": "điều khoản",
-	"wikilove-terms-url": "http://wikimediafoundation.org/wiki/Feedback_privacy_statement/vi?uselang=vi",
+	"wikilove-terms-url": "//wikimediafoundation.org/wiki/Feedback_privacy_statement/vi?uselang=vi",
 	"tag-wikilove-description": "Sửa đổi được thực hiện dùng công cụ WikiLove",
 	"WikiLove.js": "/* Mã JavaScript tại đây sẽ tùy chỉnh WikiLove; xem https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
 	"apihelp-wikilove-example-1": "Gửi WikiLove đến [[User:Dummy]]"

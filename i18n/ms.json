@@ -178,7 +178,7 @@
 	"wikilove-anon-warning": "Perhatian: Pengguna ini tidak berdaftar, jadi mungkin dia tidak dapat perasan pesanan ini.",
 	"wikilove-commons-text": "Anda boleh mencari imej dengan melayari $1.",
 	"wikilove-commons-link": "Wikimedia Commons",
-	"wikilove-commons-url": "http://commons.wikimedia.org",
+	"wikilove-commons-url": "//commons.wikimedia.org",
 	"wikilove-terms": "Dengan penyerahan ini, anda bersetuju dengan ketelusan di bawah $1 ini.",
 	"wikilove-terms-link": "syarat-syarat",
 	"WikiLove.js": "/* JavaScript yang terletak di sini mengubah suai WikiLove, rujuk https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"

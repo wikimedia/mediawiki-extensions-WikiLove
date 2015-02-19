@@ -179,9 +179,9 @@
 	"wikilove-anon-warning": "Paunawa: Hindi nakarehistro ang tagagamit na ito, maaaring hindi niya mapansin ang mensaheng ito.",
 	"wikilove-commons-text": "Makakapaghanap ka ng mga imahe sa pamamagitan ng pagtingin-tingin sa $1.",
 	"wikilove-commons-link": "Wikimedia Commons",
-	"wikilove-commons-url": "http://commons.wikimedia.org/wiki/Unang_Pahina?uselang=tl",
+	"wikilove-commons-url": "//commons.wikimedia.org/wiki/Unang_Pahina?uselang=tl",
 	"wikilove-terms": "Sa pamamagitan ng pagpasa, sumasang-ayon ka sa pagkanaaaninag sa ilalim ng $1 na mga ito.",
 	"wikilove-terms-link": "mga kataga",
-	"wikilove-terms-url": "http://wikimediafoundation.org/wiki/Feedback_privacy_statement",
+	"wikilove-terms-url": "//wikimediafoundation.org/wiki/Feedback_privacy_statement",
 	"WikiLove.js": "/* Ang JavaScript na inilalagay dito ay nagpapasadya ng WikiLove, tingnan ang https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

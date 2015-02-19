@@ -177,10 +177,10 @@
 	"wikilove-what-is-this": "Worum handelt es sich?",
 	"wikilove-anon-warning": "Hinweis: Es handelt sich um einen Benutzer ohne Benutzerkonto. Daher wird er oder sie die Nachricht wahrscheinlich nicht bemerken.",
 	"wikilove-commons-text": "Bilder können gefunden werden, indem man $1 durchsucht.",
-	"wikilove-commons-url": "http://commons.wikimedia.org/wiki/Hauptseite?uselang=de",
+	"wikilove-commons-url": "//commons.wikimedia.org/wiki/Hauptseite?uselang=de",
 	"wikilove-terms": "Mit dem Speichern erklärst du dich mit diesen $1 einverstanden.",
 	"wikilove-terms-link": "Bedingungen",
-	"wikilove-terms-url": "http://wikimediafoundation.org/wiki/Feedback_privacy_statement/de",
+	"wikilove-terms-url": "//wikimediafoundation.org/wiki/Feedback_privacy_statement/de",
 	"tag-wikilove-description": "Bearbeitung mit dem WikiLove-Werkzeug durchgeführt",
 	"WikiLove.js": "/* Das folgende JavaScript passt die persönliche Wertschätzung an, siehe https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

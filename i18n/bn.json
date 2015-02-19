@@ -5,7 +5,8 @@
 			"Bellayet",
 			"Jayantanth",
 			"Nasir8891",
-			"Wikitanvir"
+			"Wikitanvir",
+			"Aftabuzzaman"
 		]
 	},
 	"wikilove": "উইকিভালোবাসা",
@@ -45,6 +46,8 @@
 	"wikilove-err-image": "অনুগ্রহ করে একটি চিত্র নির্বাচন করুন।",
 	"wikilove-err-image-bad": "চিত্রটি বিদ্যমান নেই।",
 	"wikilove-err-gallery-again": "আবার চেষ্টা করুন",
+	"wikilove-err-not-logged-in": "আপনি প্রবেশ করেননি। উইকিভালোবাসা ব্যবহার করতে দয়া করে প্রবেশ করুন।",
+	"wikilove-err-invalid-username": "ব্যবহারকারীর নাম বৈধ নয়।",
 	"wikilove-success-number": "$1টি উইকিভালোবাসা {{PLURAL:$1|বার্তা}} পাঠানো হয়েছে।",
 	"wikilove-summary": "/* $1 */ নতুন উইকিভালোবাসা বার্তা",
 	"wikilove-what-is-this": "এটি কী?",

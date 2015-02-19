@@ -177,10 +177,10 @@
 	"wikilove-anon-warning": "Напомена: Корисникот не е регистриран, па затоа може да не ја примети поракава.",
 	"wikilove-commons-text": "Слики можете да најдете во проектот $1.",
 	"wikilove-commons-link": "Ризница",
-	"wikilove-commons-url": "http://commons.wikimedia.org/wiki/Главна_страница?uselang=mk",
+	"wikilove-commons-url": "//commons.wikimedia.org/wiki/Главна_страница?uselang=mk",
 	"wikilove-terms": "Поднесувајќи го ова, се согласувате со транспарентноста што ја налагаат овие $1.",
 	"wikilove-terms-link": "услови",
-	"wikilove-terms-url": "http://wikimediafoundation.org/wiki/Feedback_privacy_statement/mk?uselang=mk",
+	"wikilove-terms-url": "//wikimediafoundation.org/wiki/Feedback_privacy_statement/mk?uselang=mk",
 	"tag-wikilove-description": "Уредувањето е направено со алатката ВикиЉубов",
 	"WikiLove.js": "/* Тука поставениот JavaScript го прилагодува ВикиЉубов. Погл. https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration?uselang=mk */",
 	"apihelp-wikilove-description": "Дајте ВикиЉубов на некој корисник.\n\nВикиЉубов е позитивна порака што му ја оставате на страницата за разговор на некој корисник преку згоден посредник со предзададени или месно зададени шаблони. Ова дејство го става укажаниот викитекст на извесна страница за разговор. За статистички цели се заведува типот и други податоци.",
@@ -190,6 +190,5 @@
 	"apihelp-wikilove-param-subject": "Назив на новиот поднаслов",
 	"apihelp-wikilove-param-type": "Тип на ВикиЉубов (за статистички цели); ова соодветствува с со типот што го внесувате во менито лево, или, по избор, поттипот потоа (на пр. „одликување-нормално“ или „маче“).",
 	"apihelp-wikilove-param-email": "Содржина на незадолжителната порака по е-пошта што му ја испраќате на корисникот. Ќе се прикаже предупредување ако корисникот не може да прима е-пошта. Во секој случај, ВикиЉубовта ќе му виде испратена на страницата за разговор.",
-	"apihelp-wikilove-example-1": "Испрати ВикиЉубов на [[User:Dummy]]",
-	"apihelp-wikiloveimagelog-description": "Заведи ги обидите на корисникот да употреби своја слика преку ВикиЉубов."
+	"apihelp-wikilove-example-1": "Испрати ВикиЉубов на [[User:Dummy]]"
 }

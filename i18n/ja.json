@@ -132,7 +132,7 @@
 	"wikilove-anon-warning": "注: この利用者は登録していないため、このメッセージに気付かない可能性があります。",
 	"wikilove-commons-text": "$1で画像を見つけることができます。",
 	"wikilove-commons-link": "ウィキメディア・コモンズ",
-	"wikilove-commons-url": "http://commons.wikimedia.org/wiki/メインページ?uselang=ja",
+	"wikilove-commons-url": "//commons.wikimedia.org/wiki/メインページ?uselang=ja",
 	"wikilove-terms": "送信することで、これらの$1のもとで透明性に同意したと見なされます。",
 	"wikilove-terms-link": "規約",
 	"tag-wikilove-description": "ウィキラブツールを使用した編集",

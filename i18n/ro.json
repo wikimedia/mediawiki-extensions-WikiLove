@@ -73,7 +73,7 @@
 	"wikilove-anon-warning": "Notă: Acest utilizator nu este înregistrat, el sau ea s-ar putea să nu observe mesajul.",
 	"wikilove-commons-text": "Puteți găsi imagini răsfoind $1.",
 	"wikilove-commons-link": "Wikimedia Commons",
-	"wikilove-commons-url": "http://commons.wikimedia.org/wiki/Pagina_principală?uselang=ro",
+	"wikilove-commons-url": "//commons.wikimedia.org/wiki/Pagina_principală?uselang=ro",
 	"wikilove-terms": "Prin trimitere, sunteți de acord cu acești $1.",
 	"wikilove-terms-link": "termeni",
 	"WikiLove.js": "/* JavaScript plasat aici personalizează WikiLove; vedeți https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"

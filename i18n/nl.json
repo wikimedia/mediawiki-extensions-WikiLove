@@ -181,7 +181,7 @@
 	"wikilove-commons-text": "U kunt afbeeldingen vinden door op $1 te zoeken.",
 	"wikilove-terms": "Door op te slaan gaat u akkoord met transparantie onder deze $1.",
 	"wikilove-terms-link": "voorwaarden",
-	"wikilove-terms-url": "http://wikimediafoundation.org/wiki/Feedback_privacy_statement/nl",
+	"wikilove-terms-url": "//wikimediafoundation.org/wiki/Feedback_privacy_statement/nl",
 	"tag-wikilove-description": "Bewerking gemaakt met het hulpprogramma WikiLove",
 	"WikiLove.js": "/ * JavaScript die hier wordt geplaatst is van invloed op de weergave van WikiLove. Zie https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration * /"
 }

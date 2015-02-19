@@ -9,5 +9,7 @@
 	"wikilove-preview": "פֿאראויסשטעלונג",
 	"wikilove-food-cookie-option": "קיכל",
 	"wikilove-food-pie-option": "קוכן",
-	"wikilove-food-strawberries-option": "טרוסקאווקעס"
+	"wikilove-food-strawberries-option": "טרוסקאווקעס",
+	"wikilove-err-not-logged-in": "איר זענט נישט אריינלאגירטע. ביטע לאגירט אריין צו ניצן וויקיליבע.",
+	"wikilove-err-invalid-username": "דער באניצער־נאמען איז נישט גילטיק."
 }

@@ -9,7 +9,8 @@
 			"555",
 			"Luckas",
 			"Cainamarques",
-			"Dianakc"
+			"Dianakc",
+			"Fasouzafreitas"
 		]
 	},
 	"wikilove-desc": "Adiciona uma interface para facilitar a demonstrações de apreço nas páginas de discussão dos usuários",
@@ -53,6 +54,8 @@
 	"wikilove-err-gallery-again": "Tente novamente",
 	"wikilove-err-preview-api": "Ocorreu um erro durante a pré-visualização. Tente novamente, por favor.",
 	"wikilove-err-send-api": "Ocorreu um erro ao enviar a mensagem. Tente novamente, por favor.",
+	"wikilove-err-not-logged-in": "Você não está autenticado. Por favor, entre na sua conta para usar o WikiApreço.",
+	"wikilove-err-invalid-username": "O nome de usuário é inválido.",
 	"wikilove-summary": "/* $1 */ nova mensagem de WikiApreço",
 	"wikilove-what-is-this": "O que é isto?",
 	"wikilove-anon-warning": "Nota: Este usuário não está registrado e poderá não perceber esta mensagem.",
