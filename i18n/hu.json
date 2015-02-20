@@ -6,7 +6,8 @@
 			"Dj",
 			"Kaldari",
 			"Misibacsi",
-			"Xbspiro"
+			"Xbspiro",
+			"Tacsipacsi"
 		]
 	},
 	"wikilove-desc": "Létrehoz egy felületet, amely megkönnyíti a pozitív szerkesztői visszajelzéseket a szerkesztők vitalapjain.",
@@ -81,6 +82,8 @@
 	"wikilove-err-gallery-again": "Újrapróbálkozás",
 	"wikilove-err-preview-api": "Valami probléma történt az előnézet előkészítése közben. Próbáld újra!",
 	"wikilove-err-send-api": "Valami probléma történt az üzenet elküldése közben. Próbáld újra!",
+	"wikilove-err-not-logged-in": "Nem vagy bejelentkezve. A Wikibók használatához jelentkezz be.",
+	"wikilove-err-invalid-username": "A felhasználónév érvénytelen.",
 	"wikilove-success-number": "{{PLURAL:$1|Egy|$1}} Wikibók elküldve.",
 	"wikilove-summary": "/* $1 */ Új wikibók",
 	"wikilove-what-is-this": "Mi ez?",

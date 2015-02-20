@@ -10,7 +10,8 @@
 			"Nemo bis",
 			"Raoli",
 			"Rippitippi",
-			"Ximo17"
+			"Ximo17",
+			"FRacco"
 		]
 	},
 	"wikilove-desc": "Aggiunge un'interfaccia per facilitare il feedback positivo ad un utente nella sua pagina di discussione",
@@ -173,7 +174,7 @@
 	"wikilove-err-preview-api": "Qualcosa è andato storto durante l'anteprima. Per favore riprova.",
 	"wikilove-err-send-api": "Qualcosa è andato storto durante l'invio del messaggio. Per favore riprova.",
 	"wikilove-err-invalid-token": "Non è stato possibile inviare WikiAffetto a causa della perdita dei dati relativi alla sessione. Prova a ricaricare la pagina; se il problema persiste, chiudi la sessione ed effettua nuovamente l'accesso.",
-	"wikilove-err-not-logged-in": "Non si è effettuato l'accesso. Accedere per usare WikiAffetto.",
+	"wikilove-err-not-logged-in": "Non si è effettuato l'accesso. Accedere per usare WikiLove.",
 	"wikilove-err-invalid-username": "Il nome utente non è valido.",
 	"wikilove-err-no-self-wikilove": "Non è possibile inviare WikiAffetto a se stessi.",
 	"wikilove-err-redirect": "La pagina di discussione dell'utente è un redirect.",

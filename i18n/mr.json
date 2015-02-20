@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"V.narsikar"
+			"V.narsikar",
+			"BPositive"
 		]
 	},
 	"wikilove-desc": "आपणास सकारात्मक सदस्य प्रतिक्रिया देण्याच्या सुविधेसाठी, आपल्या चर्चा पानास एक इंटरफेस जोडते",
@@ -16,5 +17,7 @@
 	"wikilove-button-preview": "झलक",
 	"wikilove-preview": "झलक",
 	"wikilove-button-send": "विकिप्रेम पाठवा",
+	"wikilove-err-not-logged-in": "आपण लॉग इन नाही आहात. विकीप्रेम चा उपयोग करण्यासाठी कृपया लॉग इन करा.",
+	"wikilove-err-invalid-username": "सदस्यनाम मान्य नाही आहे.",
 	"tag-wikilove-description": "'विकिलव्ह' साधन वापरून केलेले संपादन"
 }
