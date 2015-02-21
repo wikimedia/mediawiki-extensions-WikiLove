@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"ZaDiak"
+			"ZaDiak",
+			"Evropi"
 		]
 	},
 	"wikilove": "ΒικιΑγάπη",
@@ -27,6 +28,7 @@
 	"wikilove-err-image": "Παρακαλώ επιλέξτε μια εικόνα.",
 	"wikilove-err-image-bad": "Η εικόνα δεν υπάρχει.",
 	"wikilove-err-gallery-again": "Δοκιμάστε ξανά",
+	"wikilove-err-invalid-username": "Το όνομα χρήστη δεν είναι έγκυρο.",
 	"wikilove-what-is-this": "Τι είναι αυτό;",
 	"wikilove-anon-warning": "Σημείωση: Αυτός ο χρήστης δεν είναι εγγεγραμμένος, μπορεί να μην παρατηρήσει αυτό το μήνυμα.",
 	"wikilove-commons-text": "Μπορείτε να βρείτε εικόνες από την περιήγηση στο $1."
