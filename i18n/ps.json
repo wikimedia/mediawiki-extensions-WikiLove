@@ -36,6 +36,7 @@
 	"wikilove-err-image-bad": "انځور نشته.",
 	"wikilove-err-gallery-again": "بيا هڅه",
 	"wikilove-err-not-logged-in": "تاسې غونډال کې نه ياست ننوتي. د ويکي مينې کارولو لپاره غونډال ته ورننوځئ.",
+	"wikilove-err-invalid-username": "دا کارن-نوم سم نه دی.",
 	"wikilove-what-is-this": "دا څه دی؟",
 	"wikilove-terms-link": "شرطونه"
 }
