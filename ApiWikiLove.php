@@ -61,8 +61,11 @@ class ApiWikiLove extends ApiBase {
 
 		$api->execute();
 
-		$result = $api->getResult()->getData();
-
+		if ( defined( 'ApiResult::META_CONTENT' ) ) {
+			$result = $api->getResult()->getResultData();
+		} else {
+			$result = $api->getResult()->getData();
+		}
 		if ( isset( $result['edit'] ) && $result['edit']['result'] === "Success" ) {
 				$revId = $result['edit']['newrevid'];
 				ChangeTags::addTags( "wikilove", null, $revId );
