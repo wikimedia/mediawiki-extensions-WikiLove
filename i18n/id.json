@@ -47,6 +47,8 @@
 	"wikilove-err-image-api": "Sesuatu tidak beres ketika mengambil gambar. Silakan coba lagi.",
 	"wikilove-err-sig": "Mohon tidak menyertakan tanda tangan dalam pesan.",
 	"wikilove-err-gallery-again": "Coba lagi",
+	"wikilove-err-not-logged-in": "Anda belum masuk log. Silakan masuk log untuk menggunakan fitur WikiSalut.",
+	"wikilove-err-invalid-username": "Nama pengguna tidak valid.",
 	"wikilove-summary": "/ * $1 * / pesan WikiSalut baru",
 	"wikilove-what-is-this": "Apa ini?",
 	"wikilove-commons-text": "Anda dapat menemukan gambar dengan mengunjungi $1."

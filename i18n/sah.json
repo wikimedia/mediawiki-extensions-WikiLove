@@ -4,5 +4,6 @@
 			"HalanTul"
 		]
 	},
-	"wikilove-err-not-logged-in": "Киирбэтэххин. WikiLove туһанарга киириэхтээххин ээ."
+	"wikilove-err-not-logged-in": "Киирбэтэххин. WikiLove туһанарга киириэхтээххин ээ.",
+	"wikilove-err-invalid-username": "Маннык аат көҥүллэммэт."
 }
