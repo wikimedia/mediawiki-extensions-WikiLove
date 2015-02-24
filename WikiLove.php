@@ -17,12 +17,12 @@
  *
  * Heart icon by Mark James (Creative Commons Attribution 3.0 License)
  * Interface design by Brandon Harris
- */
-
-/**
+ *
  * @file
  * @ingroup Extensions
- * @author Ryan Kaldari, Jan Paul Posma
+ * @author Ryan Kaldari
+ * @author Jan Paul Posma
+ * @author Sam Reed
  * @licence MIT License
  */
 
