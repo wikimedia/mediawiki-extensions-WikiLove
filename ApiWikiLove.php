@@ -23,9 +23,11 @@ class ApiWikiLove extends ApiBase {
 			$this->saveInDb( $talk, $params['subject'], $params['message'], $params['type'], isset( $params['email'] ) ? 1 : 0 );
 		}
 
-		// If LQT is installed and enabled, use it.
+		// Create edit summary
 		$summary = $this->msg( 'wikilove-summary', $strippedSubject )->inContentLanguage()
 			->text();
+
+		// If LQT is installed and enabled, use it.
 		if ( class_exists( 'LqtDispatch' ) && LqtDispatch::isLqtPage( $talk ) ) {
 			$apiParamArray = array(
 				'action' => 'threadaction',
@@ -34,6 +36,16 @@ class ApiWikiLove extends ApiBase {
 				'subject' => $params['subject'],
 				'reason' => $summary,
 				'text' => $params['text'],
+				'token' => $params['token']
+			);
+		// If Flow is installed and enabled, use it.
+		} else if ( class_exists( 'ApiFlow' ) && $talk->getContentModel() === CONTENT_MODEL_FLOW_BOARD ) {
+			$apiParamArray = array(
+				'action' => 'flow',
+				'submodule' => 'new-topic',
+				'page' => $talk->getFullText(),
+				'nttopic' => $params['subject'],
+				'ntcontent' => $params['text'],
 				'token' => $params['token']
 			);
 		} else {
