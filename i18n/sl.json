@@ -102,6 +102,8 @@
 	"wikilove-err-gallery-again": "Poskusite znova",
 	"wikilove-err-preview-api": "Med predogledom je nekaj šlo narobe. Prosimo, poskusite znova.",
 	"wikilove-err-send-api": "Med pošiljanjem sporočila je nekaj šlo narobe. Prosimo, poskusite znova.",
+	"wikilove-err-not-logged-in": "Niste prijavljeni. Prosimo, da se za uporabo WikiLjubezni prijavite.",
+	"wikilove-err-invalid-username": "Uporabniško ime ni veljavno.",
 	"wikilove-summary": "/* $1 */ novo sporočilo WikiLjubezen",
 	"wikilove-what-is-this": "Kaj je to?",
 	"wikilove-anon-warning": "Opomba: Uporabnik ni registriran, zato sporočila morda ne bo opazil.",
