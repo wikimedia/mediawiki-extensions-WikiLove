@@ -92,6 +92,7 @@
 	"wikilove-err-gallery-again": "Proovi uuesti",
 	"wikilove-err-preview-api": "Eelvaate kuvamise juures läks midagi valesti. Palun proovi uuesti.",
 	"wikilove-err-send-api": "Sõnumi saatmise juures läks midagi valesti. Palun proovi uuesti.",
+	"wikilove-err-not-logged-in": "Sa pole sisse logitud. Palun logi sisse, et vikitervitust kasutada.",
 	"wikilove-err-invalid-username": "Kasutajanimi ei sobi.",
 	"wikilove-summary": "/* $1 */ uus vikitervitus",
 	"wikilove-what-is-this": "Mis see on?",

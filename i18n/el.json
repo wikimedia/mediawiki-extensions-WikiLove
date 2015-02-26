@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"ZaDiak",
-			"Evropi"
+			"Evropi",
+			"Geraki"
 		]
 	},
 	"wikilove": "ΒικιΑγάπη",
@@ -28,6 +29,7 @@
 	"wikilove-err-image": "Παρακαλώ επιλέξτε μια εικόνα.",
 	"wikilove-err-image-bad": "Η εικόνα δεν υπάρχει.",
 	"wikilove-err-gallery-again": "Δοκιμάστε ξανά",
+	"wikilove-err-not-logged-in": "Δεν είστε συνδεδεμένος. Παρακαλούμε συνδεθείτε για να χρησιμοποιήσετε το WikiLove.",
 	"wikilove-err-invalid-username": "Το όνομα χρήστη δεν είναι έγκυρο.",
 	"wikilove-what-is-this": "Τι είναι αυτό;",
 	"wikilove-anon-warning": "Σημείωση: Αυτός ο χρήστης δεν είναι εγγεγραμμένος, μπορεί να μην παρατηρήσει αυτό το μήνυμα.",
