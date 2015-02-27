@@ -568,7 +568,7 @@ $.wikiLove = {
 		$( '#mw-wikilove-preview-spinner' ).fadeIn( 200 );
 		api.post( {
 			'action': 'parse',
-			'title': mw.config.get( 'wgPageName' ),
+			'contentmodel': 'wikitext',
 			'text': wikitext,
 			'prop': 'text',
 			'pst': true
@@ -640,8 +640,14 @@ $.wikiLove = {
 	doSend: function ( subject, wikitext, message, type, email ) {
 		$( '#mw-wikilove-send-spinner' ).fadeIn( 200 );
 
-		var wikiLoveNumberAttempted = 0;
-		var wikiLoveNumberPosted = 0;
+		var wikiLoveNumberAttempted = 0,
+			wikiLoveNumberPosted = 0;
+
+		// If the talk page is not a Wikitext page, remove the signature
+		if ( mw.config.get( 'wgPageContentModel' ) !== 'wikitext' ) {
+			wikitext = wikitext.replace( /\s*~~~~/, '' );
+		}
+
 		$.each( targets, function ( index, target ) {
 			var sendData = {
 				action: 'wikilove',
