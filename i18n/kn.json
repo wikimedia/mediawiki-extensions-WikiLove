@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Nayvik",
-			"VASANTH S.N."
+			"VASANTH S.N.",
+			"Omshivaprakash"
 		]
 	},
 	"wikilove": "ವಿಕಿಪ್ರೀತಿ",
@@ -12,5 +13,7 @@
 	"wikilove-header": "ಒಂದು ತಲೆಬರಹವನ್ನು ನೀಡಿ:",
 	"wikilove-enter-message": "ಓಂದು ಸಂದೇಶವನ್ನು ನೀಡಿ:",
 	"wikilove-button-preview": "ಮುನ್ನೋಟ",
-	"wikilove-preview": "ಮುನ್ನೋಟ"
+	"wikilove-preview": "ಮುನ್ನೋಟ",
+	"wikilove-err-not-logged-in": "ನೀವು ಲಾಗಿನ್ ಆಗಿಲ್ಲ. ವಿಕಿಲವ್ ಬಳಸಲು ದಯವಿಟ್ಟು ಲಾಗಿನ್ ಆಗಿ.",
+	"wikilove-err-invalid-username": "ಬಳಕೆದಾರರ ಹೆಸರು ಮಾನ್ಯವಾಗಿಲ್ಲ."
 }
