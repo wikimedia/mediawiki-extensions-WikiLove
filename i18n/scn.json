@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Aushulz"
+			"Aushulz",
+			"Gmelfi"
 		]
 	},
 	"wikilove-food-cookie-option": "Viscottu",
 	"wikilove-food-coffee-option": "Tazza di café",
-	"wikilove-err-gallery-again": "Prova arré"
+	"wikilove-err-gallery-again": "Prova arré",
+	"wikilove-err-invalid-username": "Lu nomu di l'utenti nun è vàliddu."
 }
