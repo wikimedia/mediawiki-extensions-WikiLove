@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Babanwalia"
+		]
+	},
+	"wikilove-err-not-logged-in": "ਤੁਸੀਂ ਦਾਖ਼ਲ ਨਹੀਂ ਹੋਂ। ਵਿਕੀਲਵ ਵਰਤਣ ਵਾਸਤੇ ਮਿਹਰਬਾਨੀ ਕਰਕੇ ਦਾਖ਼ਲ ਹੋਵੋ।",
+	"wikilove-err-invalid-username": "ਇਹ ਵਰਤੋਂਕਾਰੀ ਨਾਂ ਸਹੀ ਨਹੀਂ ਹੈ।"
+}
