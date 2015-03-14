@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eitvys200"
+			"Eitvys200",
+			"Hugo.arg"
 		]
 	},
 	"wikilove": "Wikilove",
@@ -53,6 +54,8 @@
 	"wikilove-err-gallery-again": "Bandykite dar kartą",
 	"wikilove-err-preview-api": "Kažkas nutiko per peržiūra. Bandykite dar kartą.",
 	"wikilove-err-send-api": "Siunčiant laišką įvyko klaida. Bandykite dar kartą.",
+	"wikilove-err-not-logged-in": "Jūs nesate prisijungęs. Kad galėtumėte naudoti WikiLove, prisijunkite.",
+	"wikilove-err-invalid-username": "Naudotojo vardas netinkamas.",
 	"wikilove-summary": "/ *  $1  * / nauja WikiLove žinutė",
 	"wikilove-what-is-this": "Kas tai?",
 	"wikilove-anon-warning": "Pastaba: Šis vartotojas neužsiregistravęs, jis ar ji gali nepastebėti šio pranešimo.",
