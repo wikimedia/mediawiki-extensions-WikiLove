@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cedric31"
+		]
+	},
+	"wikilove-err-not-logged-in": "Sètz pas connectat. Connectatz-vos per poder utilizar WikiLove.",
+	"wikilove-err-invalid-username": "Lo nom d’utilizaire es pas valid."
+}

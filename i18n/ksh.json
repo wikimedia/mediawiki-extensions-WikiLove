@@ -178,5 +178,7 @@
 	"wikilove-terms": "Wä heh jät enjitt, moß met dä $1 enverschtande sen, söns moß mer et blieve lohße.",
 	"wikilove-terms-link": "Bedengonge",
 	"WikiLove.js": "/* dat JavaSkrep heh aan dä Stell wirrek nur beim „Leev Wiki“, loor op https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
+	"apihelp-wikilove-param-text": "Dä röhje Wikkitäx för en dä neue Affschnedd zu donn.",
+	"apihelp-wikilove-param-message": "Wat dä Metmaacher tatsäschlesch enjejovve hät, för et Logbohch.",
 	"apihelp-wikilove-param-subject": "De Övverschreff för dä neue Affschnett"
 }
