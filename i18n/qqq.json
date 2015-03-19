@@ -41,7 +41,7 @@
 	"wikilove-barnstar-surreal-desc": "The description contained in the message should be a euphemistically positive description of someone who is weird or unpredictable, and thus makes the project more interesting.",
 	"wikilove-barnstar-technical-desc": "{{doc-singularthey}}",
 	"wikilove-type-food": "[[File:Wiki Love 002.png|thumb]]\nLabel for a button. Should be no longer than 22 characters.",
-	"wikilove-food-cookie-option": "{{Identical|Cookie}}",
+	"wikilove-food-cookie-option": "As a snack.\n{{Identical|Cookie}}",
 	"wikilove-type-kittens": "[[File:Wiki Love 002.png|thumb]]\nLabel for a button. Should be no longer than 22 characters.",
 	"wikilove-type-makeyourown": "[[File:Wiki Love 002.png|thumb]]\nLabel for a button. Should be no longer than 22 characters.",
 	"wikilove-err-header": "[[File:Wiki Love 004.png|thumb]]\nUse the same translation for \"header\" as was used for {{msg-mw|wikilove-header}}.",
