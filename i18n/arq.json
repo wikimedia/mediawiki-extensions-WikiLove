@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bachounda"
+			"Bachounda",
+			"Oldstoneage"
 		]
 	},
-	"wikilove-err-not-logged-in": "ما راكش  مكونيكتي . من فضلك سجل الدخله باش تستخدم ويكي الحب."
+	"wikilove-err-not-logged-in": "ما راكش  مكونيكتي . من فضلك سجل الدخله باش تستخدم ويكي الحب.",
+	"wikilove-err-invalid-username": "سميّت`المستعملي ماشي مقبولة"
 }
