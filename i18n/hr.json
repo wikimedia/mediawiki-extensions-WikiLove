@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"MaGa"
+			"MaGa",
+			"Roberta F."
 		]
 	},
-	"wikilove-enable-preference": "Omogući iskazivanje zahvalnosti drugim suradnicima putem kartice WikiLove"
+	"wikilove-enable-preference": "Omogući iskazivanje zahvalnosti drugim suradnicima putem kartice WikiLove",
+	"wikilove-err-invalid-username": "Suradničko ime nije prihvatljivo."
 }

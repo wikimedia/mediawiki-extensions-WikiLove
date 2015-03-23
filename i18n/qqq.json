@@ -14,7 +14,7 @@
 			"Liuxinyu970226"
 		]
 	},
-	"wikilove-desc": "{{desc|name=Wiki Love|url=http://www.mediawiki.org/wiki/Extension:WikiLove}}",
+	"wikilove-desc": "{{desc|name=Wiki Love|url=https://www.mediawiki.org/wiki/Extension:WikiLove}}",
 	"wikilove": "{{Identical|WikiLove}}",
 	"wikilove-enable-preference": "Label of the option to turn on WikiLove in the preferences",
 	"wikilove-tab-text": "[[File:Wiki Love 001.png|thumb]]\n{{Identical|WikiLove}}",
