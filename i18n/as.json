@@ -1,11 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bishnu Saikia"
+			"Bishnu Saikia",
+			"IKHazarika"
 		]
 	},
 	"wikilove-button-preview": "খচৰা চাওক",
 	"wikilove-preview": "খচৰা চাওক",
 	"wikilove-err-gallery-again": "পুনৰ চেষ্টা কৰক",
+	"wikilove-err-not-logged-in": "আপুনি প্ৰবেশ কৰা নাই। ৱিকিপ্ৰেম ব্যৱহাৰ কৰিবলৈ অনুগ্ৰহ কৰি প্ৰবেশ কৰক।",
+	"wikilove-err-invalid-username": "সদস্যনাম বৈধ নহয়।",
 	"wikilove-terms-link": "চৰ্তসমূহ"
 }
