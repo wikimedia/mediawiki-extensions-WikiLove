@@ -3,7 +3,8 @@
 		"authors": [
 			"Fohanno",
 			"Fulup",
-			"Y-M D"
+			"Y-M D",
+			"Gwenn-Ael"
 		]
 	},
 	"wikilove-desc": "Ouzhpennañ a ra un etrefas evit aesaat merkañ evezhiadennoù pozitivel war pajenn gaozeal un implijer",
@@ -86,6 +87,7 @@
 	"wikilove-err-gallery-again": "Klask en-dro",
 	"wikilove-err-preview-api": "Un dra bennak a-dreuz zo bet e-pad ar rakwelet. Klaskit en-dro mar plij.",
 	"wikilove-err-send-api": "C'hoarvezet ez eus un dra bennak a-dreuz en ur gas ar gemennadenn. Klaskit en-dro.",
+	"wikilove-err-not-logged-in": "N'oc'h ket kevreet. Kevreit, mar plij, evit gallout implijout WikiLove.",
 	"wikilove-err-invalid-username": "Direizh eo an anv implijer",
 	"wikilove-summary": "/* $1 */ kemennadenn WikiLove nevez",
 	"wikilove-what-is-this": "Petra eo se ?",
