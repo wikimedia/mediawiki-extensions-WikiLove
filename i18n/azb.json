@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ebrahimi-amir"
+			"Ebrahimi-amir",
+			"Amir a57"
 		]
 	},
-	"wikilove-enable-preference": "ویکی‌اودول دیلچه‌سین، او بیری ایستیفاده‌چی‌لردن تشکور ائتمک اوچون فعال ائتمک"
+	"wikilove-enable-preference": "ویکی‌اودول دیلچه‌سین، او بیری ایستیفاده‌چی‌لردن تشکور ائتمک اوچون فعال ائتمک",
+	"wikilove-err-not-logged-in": "سیزین گیریشینیز ثبت اولونمویوب خواهیش ائلیرک هدیه ویکی سیندن ایستفاده ائتمک اوچون گیریش ثبت ائدین",
+	"wikilove-err-invalid-username": "بو ایشلدن آدی معتبر دئییل."
 }
