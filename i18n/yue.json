@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yueman"
+		]
+	},
+	"wikilove-err-not-logged-in": "你未簽到。請簽到後先至用WikiLove。",
+	"wikilove-err-invalid-username": "用戶名唔得。"
+}
