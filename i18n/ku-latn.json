@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"George Animal"
+			"George Animal",
+			"Bikarhêner"
 		]
 	},
 	"wikilove-button-preview": "Pêşdîtin",
 	"wikilove-preview": "Pêşdîtin",
-	"wikilove-type-food": "Xwarin û vexwarin"
+	"wikilove-type-food": "Xwarin û vexwarin",
+	"wikilove-err-not-logged-in": "We hêj neket. Ji kerema xwe ji bo ku hûn WikiEvîn bikarin bikarbînin têkevin."
 }
