@@ -43,6 +43,8 @@
 	"wikilove-err-image": "Prošu wubjer wobraz.",
 	"wikilove-err-image-bad": "Wobraz njeeksistuje.",
 	"wikilove-err-gallery-again": "Spytaj hišće raz",
+	"wikilove-err-not-logged-in": "Njejsy přizjewjeny. Prošu přizjew so, zo by WikiLove wužiwał.",
+	"wikilove-err-invalid-username": "Wužiwarske mjeno płaćiwe njeje.",
 	"wikilove-what-is-this": "Što to je?",
 	"wikilove-terms-link": "wuměnjenja"
 }
