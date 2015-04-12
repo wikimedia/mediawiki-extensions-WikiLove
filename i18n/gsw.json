@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Als-Chlämens"
+			"Als-Chlämens",
+			"Als-Holder"
 		]
 	},
 	"wikilove": "Wiki-Liebi",
@@ -9,5 +10,7 @@
 	"wikilove-select-type": "Art usswääle",
 	"wikilove-get-started-header": "Uffe goot's!",
 	"wikilove-get-started-list-3": "Schick dyni Wiki-Liebi ab!",
-	"wikilove-add-details": "Einzelheite dezuefiege"
+	"wikilove-add-details": "Einzelheite dezuefiege",
+	"wikilove-err-not-logged-in": "Du bisch nit aagmeäldet. Bitte mäld Di aa go WikiLove z bruche.",
+	"wikilove-err-invalid-username": "Dää Benutzername isch nit giltig."
 }
