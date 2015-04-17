@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yekrats"
+			"Yekrats",
+			"KuboF"
 		]
 	},
 	"wikilove-desc": "Aldonas interfacon por sendi aprezajn mesaĝojn al la diskutopaĝoj de uzanto",
@@ -52,6 +53,8 @@
 	"wikilove-err-gallery-again": "Reprovi",
 	"wikilove-err-preview-api": "Iu fuŝis dum antaŭvidado. Bonvolu reprovi.",
 	"wikilove-err-send-api": "Iu fuŝis kiam sendante la mesaĝon. Bonvolu reprovi.",
+	"wikilove-err-not-logged-in": "Vi ne estas ensalutiĝinta. Bonvolu ensaluti por uzi VikiAmon.",
+	"wikilove-err-invalid-username": "La uzantonomo ne estas valida.",
 	"wikilove-summary": "/* $1 */ nova mesaĝo VikiAmo",
 	"wikilove-what-is-this": "Kio estas?",
 	"wikilove-anon-warning": "Notu: Ĉi tiu uzanto ne estas registrita, do li aŭ ŝi eble ne notos ĉi tiun mesaĝon.",
