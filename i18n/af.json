@@ -89,6 +89,8 @@
 	"wikilove-err-gallery-again": "Probeer weer",
 	"wikilove-err-preview-api": "Iets het verkeerd geloop met die voorskou. Probeer asseblief weer.",
 	"wikilove-err-send-api": "Iets het verkeerd geloop met die stuur van die boodskap. Probeer asseblief weer.",
+	"wikilove-err-not-logged-in": "U is nie aangemeld nie. Teken aan om WikiLove te gebruik.",
+	"wikilove-err-invalid-username": "Hierdie gebruikersnaam is ongeldig.",
 	"wikilove-summary": "/ * $1 * / nuwe Wikiwaardering-boodskap",
 	"wikilove-what-is-this": "Wat is dit?",
 	"wikilove-anon-warning": "Nota: Hierdie gebruiker is nie geregistreer nie, hy of sy mag moontlik nie die boodskap ontvang nie.",
