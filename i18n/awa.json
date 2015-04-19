@@ -4,5 +4,6 @@
 			"1AnuraagPandey"
 		]
 	},
-	"wikilove-err-not-logged-in": "आपने लॉग इन नहीं किया है। विकिप्रेम का प्रयोग करने के लिए कृपया लॉग इन करें।"
+	"wikilove-err-not-logged-in": "आपने लॉग इन नहीं किया है। विकिप्रेम का प्रयोग करने के लिए कृपया लॉग इन करें।",
+	"wikilove-err-invalid-username": "सदस्यनाँव मान्य नाइ है।"
 }
