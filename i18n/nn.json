@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Njardarlogar",
+			"Ranveig"
+		]
+	},
+	"wikilove-err-not-logged-in": "Du er ikkje innlogga. Gjer vel og logg inn for å bruke WikiLove.",
+	"wikilove-err-invalid-username": "Brukarnamnet er ikkje gyldig."
+}

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"TomášPolonec"
+		]
+	},
+	"wikilove-err-not-logged-in": "Nie ste prihlásený. Prosím prihláste sa pre použitie WikiLove.",
+	"wikilove-err-invalid-username": "Toto užívateľské meno nie je platné."
+}

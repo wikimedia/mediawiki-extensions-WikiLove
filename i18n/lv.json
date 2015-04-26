@@ -8,5 +8,6 @@
 	"wikilove-select-type": "Izvēlēties veidu",
 	"wikilove-get-started-header": "Sākam!",
 	"wikilove-type-kittens": "Kaķēni",
-	"wikilove-err-gallery-again": "Mēģināt vēlreiz"
+	"wikilove-err-gallery-again": "Mēģināt vēlreiz",
+	"wikilove-err-invalid-username": "Lietotājvārds nav derīgs."
 }

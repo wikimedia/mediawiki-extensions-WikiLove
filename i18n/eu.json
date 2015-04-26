@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"පසිඳු කාවින්ද",
-			"Subi"
+			"Subi",
+			"Sator"
 		]
 	},
 	"wikilove-button-preview": "Aurrebista",
@@ -14,5 +15,6 @@
 	"wikilove-type-kittens": "Katutxoak",
 	"wikilove-kittens-header": "Katutxo bat zuretzat!",
 	"wikilove-err-gallery-again": "Saiatu berriro",
+	"wikilove-err-invalid-username": "Lankide izen okerra",
 	"wikilove-what-is-this": "Zer da hau?"
 }

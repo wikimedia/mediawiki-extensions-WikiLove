@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"David1010"
+			"David1010",
+			"SHOTHA"
 		]
 	},
 	"wikilove": "ვიკი-სიყვარული",
@@ -100,6 +101,8 @@
 	"wikilove-err-image": "გთხოვთ, აირჩიეთ სურათი.",
 	"wikilove-err-image-bad": "სურათი არ არსებობს.",
 	"wikilove-err-gallery-again": "კიდევ სცადეთ",
+	"wikilove-err-not-logged-in": "თქვენ არ ხართ სისტემაში შესული. გთხოვთ, გაიარეთ ავტორიზაცია, რათა გამოიყენოთ  WikiLove.",
+	"wikilove-err-invalid-username": "ეს მომხმარებლის სახელი დაუშვებელია.",
 	"wikilove-summary": "/* $1 */ ახალი ვიკი-სიყვარულის შეტყობინება",
 	"wikilove-what-is-this": "რა არის ეს?",
 	"wikilove-terms-link": "პირობები"

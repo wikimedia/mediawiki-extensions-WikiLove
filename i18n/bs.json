@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"CERminator"
+			"CERminator",
+			"Palapa"
 		]
 	},
 	"wikilove-select-type": "Odaberite vrstu",
 	"wikilove-add-details": "Dodaj detalje",
 	"wikilove-enter-message": "Unesite poruku:",
 	"wikilove-button-preview": "Pregled",
-	"wikilove-preview": "Pregled"
+	"wikilove-preview": "Pregled",
+	"wikilove-err-invalid-username": "Korisničko ime nije ispravno."
 }
