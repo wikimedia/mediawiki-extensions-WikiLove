@@ -44,6 +44,7 @@
 	"wikilove-err-preview-api": "Noget gik galt under forhåndsvisningen. Prøv venligst igen.",
 	"wikilove-err-send-api": "Noget gik galt, da beskeden skulle sendes. Prøv venligst igen.",
 	"wikilove-err-not-logged-in": "Du er ikke logget på. Log venligst på for at bruge WikiLove.",
+	"wikilove-err-invalid-username": "Brugernavnet er ikke gyldigt.",
 	"wikilove-summary": "/* $1 */ ny WikiLove-besked",
 	"wikilove-what-is-this": "Hvad er dette?",
 	"wikilove-anon-warning": "Bemærk: Denne bruger er ikke registreret, han eller hun vil måske ikke bemærke denne besked.",

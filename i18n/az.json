@@ -3,12 +3,14 @@
 		"authors": [
 			"AZISS",
 			"Cekli829",
-			"Dağlı95"
+			"Dağlı95",
+			"Wertuose"
 		]
 	},
 	"wikilove": "VikiSevgi",
 	"wikilove-button-preview": "Sınaq görüntüsü",
 	"wikilove-preview": "Sınaq görüntüsü",
+	"wikilove-err-not-logged-in": "Sistemə daxil olmamısınız. Lütfən, \"WikiLove\"u istifadə etmək üçün daxil olun.",
 	"wikilove-err-invalid-username": "Bu istifadəçi adı düz deyil.",
 	"wikilove-what-is-this": "Bu nədir?"
 }
