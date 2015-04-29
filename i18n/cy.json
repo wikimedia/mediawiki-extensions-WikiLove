@@ -4,5 +4,6 @@
 			"Ham II"
 		]
 	},
-	"wikilove-err-not-logged-in": "Nid ydych wedi mewngofnodi. Mewngofnodwch, os gwelwchyn dda, i ddefnyddio WiciGariad"
+	"wikilove-err-not-logged-in": "Nid ydych wedi mewngofnodi. Mewngofnodwch, os gwelwchyn dda, i ddefnyddio WiciGariad",
+	"wikilove-err-invalid-username": "Nid yw'r enw defnyddiwr hwn yn ddilys."
 }
