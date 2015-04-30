@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"NoiX180"
+			"NoiX180",
+			"Pras"
 		]
 	},
 	"wikilove-desc": "Tambah antarmuka kanggo masilitasi lebon saran panganggo sing apik nèng kaca guneman panganggo",
@@ -18,5 +19,7 @@
 	"wikilove-add-details": "Tambah rincian",
 	"wikilove-image": "Lebokaké jenang berkas gambar:",
 	"wikilove-select-image": "Pilih gambar:",
-	"wikilove-header": "Lebokaké irah-irahan:"
+	"wikilove-header": "Lebokaké irah-irahan:",
+	"wikilove-err-not-logged-in": "Panjenengan dereng mlebet log. Mangga mlebet log kangge migunakaken WikiLove.",
+	"wikilove-err-invalid-username": "Nama pangangge boten sah"
 }
