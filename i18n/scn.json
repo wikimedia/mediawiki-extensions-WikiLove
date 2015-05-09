@@ -2,11 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Aushulz",
-			"Gmelfi"
+			"Gmelfi",
+			"Pippinu"
 		]
 	},
 	"wikilove-food-cookie-option": "Viscottu",
 	"wikilove-food-coffee-option": "Tazza di café",
 	"wikilove-err-gallery-again": "Prova arré",
+	"wikilove-err-not-logged-in": "Nun si' trasutu. P'adupirari WikiLove pi' favuri trasi.",
 	"wikilove-err-invalid-username": "Lu nomu di l'utenti nun è vàliddu."
 }
