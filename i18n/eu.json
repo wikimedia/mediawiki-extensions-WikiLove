@@ -3,7 +3,8 @@
 		"authors": [
 			"පසිඳු කාවින්ද",
 			"Subi",
-			"Sator"
+			"Sator",
+			"Xabier Armendaritz"
 		]
 	},
 	"wikilove-button-preview": "Aurrebista",
@@ -15,6 +16,7 @@
 	"wikilove-type-kittens": "Katutxoak",
 	"wikilove-kittens-header": "Katutxo bat zuretzat!",
 	"wikilove-err-gallery-again": "Saiatu berriro",
+	"wikilove-err-not-logged-in": "Ez duzu saioa hasi. WikiLOve erabili ahal izateko, hasi saioa.",
 	"wikilove-err-invalid-username": "Lankide izen okerra",
 	"wikilove-what-is-this": "Zer da hau?"
 }
