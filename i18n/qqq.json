@@ -11,7 +11,8 @@
 			"Siebrand",
 			"Umherirrender",
 			"Whym",
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Legoktm"
 		]
 	},
 	"wikilove-desc": "{{desc|name=Wiki Love|url=https://www.mediawiki.org/wiki/Extension:WikiLove}}",
@@ -64,6 +65,7 @@
 	"wikilove-terms-link": "The text that links to the terms of service. Should not be capitalized.\n{{Identical|Term}}",
 	"wikilove-terms-url": "{{Optional}}\nThis URL can be changed to point to a translated version of the page if it exists.",
 	"tag-wikilove-description": "Description for revision tag added when edit is made using WikiLove",
+	"WikiLove.js": "JavaScript comment indicating what the page is used for",
 	"apihelp-wikilove-description": "{{doc-apihelp-description|wikilove}}",
 	"apihelp-wikilove-param-title": "{{doc-apihelp-param|wikilove|title}}",
 	"apihelp-wikilove-param-text": "{{doc-apihelp-param|wikilove|text}}",
