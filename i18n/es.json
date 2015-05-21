@@ -5,7 +5,8 @@
 			"Dalton2",
 			"Fitoschido",
 			"Imre",
-			"PoLuX124"
+			"PoLuX124",
+			"Macofe"
 		]
 	},
 	"wikilove-desc": "Añade una interfaz para facilitar comentarios positivos de los usuarios a las páginas de discusión de otros usuarios",
@@ -182,5 +183,6 @@
 	"wikilove-terms": "Al enviarlo, usted acepta la transparencia según $1.",
 	"wikilove-terms-link": "condiciones",
 	"wikilove-terms-url": "//wikimediafoundation.org/wiki/Feedback_privacy_statement/es",
+	"tag-wikilove-description": "Edición hecha con la herramienta WikiLove",
 	"WikiLove.js": "/ * El código JavaScript colocado aquí personaliza WikiLove, consulte https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration * /"
 }
