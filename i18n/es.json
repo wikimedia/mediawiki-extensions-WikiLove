@@ -184,5 +184,6 @@
 	"wikilove-terms-link": "condiciones",
 	"wikilove-terms-url": "//wikimediafoundation.org/wiki/Feedback_privacy_statement/es",
 	"tag-wikilove-description": "Edición hecha con la herramienta WikiLove",
-	"WikiLove.js": "/ * El código JavaScript colocado aquí personaliza WikiLove, consulte https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration * /"
+	"WikiLove.js": "/ * El código JavaScript colocado aquí personaliza WikiLove, consulte https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration * /",
+	"apihelp-wikilove-example-1": "Enviar WikiLove a [[User:Dummy]]"
 }

@@ -2,9 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Nepaboy",
-			"Ganesh"
+			"Ganesh",
+			"SatyamMishra"
 		]
 	},
-	"wikilove-err-not-logged-in": "आप खाता में प्रवेश नईखी कईले। कृपया विकीप्रेम के प्रयोग करे खातिर प्रवेश करीं।",
-	"wikilove-err-invalid-username": "सदस्यनाम उपयुक्त नईखे।"
+	"wikilove-err-not-logged-in": "आप लॉग इन नइखी कइले। कृपया विकीप्रेम के प्रयोग करे खातिर लॉग इन करीं।",
+	"wikilove-err-invalid-username": "सदस्यनाँव मान्य नइखे।"
 }

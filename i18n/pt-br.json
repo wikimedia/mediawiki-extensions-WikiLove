@@ -10,7 +10,8 @@
 			"Luckas",
 			"Cainamarques",
 			"Dianakc",
-			"Fasouzafreitas"
+			"Fasouzafreitas",
+			"Araceletorres"
 		]
 	},
 	"wikilove-desc": "Adiciona uma interface para facilitar a demonstrações de apreço nas páginas de discussão dos usuários",
@@ -40,6 +41,11 @@
 	"wikilove-barnstar-header": "Uma medalha para você!",
 	"wikilove-barnstar-select": "Selecione uma medalha:",
 	"wikilove-barnstar-original-option": "Medalha original",
+	"wikilove-barnstar-original-desc": "Esta medalha é concedida para reconhecer as contribuições particularmente boas em {{SITENAME}}, para que as pessoas saibam que o seu trabalho é visto e apreciado.",
+	"wikilove-barnstar-original-title": "Medalha original",
+	"wikilove-barnstar-admins-option": "A medalha de administrador",
+	"wikilove-barnstar-admins-desc": "A medalha de administrador é concedida a um administrador que teve de tomar uma medida particularmente difícil ou que desempenhou tarefas entediantes, mas necessárias.",
+	"wikilove-barnstar-admins-title": "A medalha de administrador",
 	"wikilove-type-food": "Comes e bebes",
 	"wikilove-type-kittens": "Gatinhos",
 	"wikilove-type-makeyourown": "Crie o seu",
