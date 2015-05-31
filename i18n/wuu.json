@@ -4,5 +4,6 @@
 			"Poiuyt"
 		]
 	},
-	"wikilove-err-not-logged-in": "你呒不登录。请登录使用维基友爱。"
+	"wikilove-err-not-logged-in": "你呒不登录。请登录使用维基友爱。",
+	"wikilove-err-invalid-username": "用户名无效。"
 }
