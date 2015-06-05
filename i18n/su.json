@@ -4,5 +4,6 @@
 			"Kandar"
 		]
 	},
-	"wikilove-err-not-logged-in": "Anjeun can lebet log. Mangga lebet log pikeun migunakeun WikiLove."
+	"wikilove-err-not-logged-in": "Anjeun can lebet log. Mangga lebet log pikeun migunakeun WikiLove.",
+	"wikilove-err-invalid-username": "Sandiasma henteu sah."
 }
