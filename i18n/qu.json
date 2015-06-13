@@ -4,5 +4,6 @@
 			"AlimanRuna"
 		]
 	},
-	"wikilove-err-not-logged-in": "Manam yaykusqa kachkankichu. Ama hina kaspa, WikiLove (WikiKhuyay) nisqata llamk'achispa yaykuriy."
+	"wikilove-err-not-logged-in": "Manam yaykusqa kachkankichu. Ama hina kaspa, WikiLove (WikiKhuyay) nisqata llamk'achispa yaykuriy.",
+	"wikilove-err-invalid-username": "Ruraqpa sutinqa manam allinchu."
 }
