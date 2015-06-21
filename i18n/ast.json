@@ -183,5 +183,8 @@
 	"apihelp-wikilove-param-title": "Nome completu de la páxina d'usuariu o de la páxina d'alderique d'usuariu del usuariu al qu'unviar WikiCiñu.",
 	"apihelp-wikilove-param-text": "Testu wiki puru qu'amestar na seición nueva.",
 	"apihelp-wikilove-param-message": "Mensaxe concretu qu'escribió l'usuariu, pa propósitos de rexistru.",
-	"apihelp-wikilove-param-subject": "Testera d'asuntu de la seición nueva."
+	"apihelp-wikilove-param-subject": "Testera d'asuntu de la seición nueva.",
+	"apihelp-wikilove-param-type": "Tipu de WikiCiñu (pa estadístiques); esto correspuende col tipu seleicionáu nel menú de la izquierda y, opcionalmente, un subtipu después d'ello (p. ex. \"barnstar-normal\" o \"kitten\").",
+	"apihelp-wikilove-param-email": "Conteníu del mensaxe de corréu electrónicu opcional a unviar al usuariu. Devolveráse un avisu si nun pueden unviase correos al usuariu. Unviaráse WikiCiñu a la páxina d'alderique del usuariu de toles maneres.",
+	"apihelp-wikilove-example-1": "Unviar WikiCiñu a [[User:Dummy]]"
 }
