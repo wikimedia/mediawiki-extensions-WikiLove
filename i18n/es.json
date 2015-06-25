@@ -185,5 +185,7 @@
 	"wikilove-terms-url": "//wikimediafoundation.org/wiki/Feedback_privacy_statement/es",
 	"tag-wikilove-description": "Edición hecha con la herramienta WikiLove",
 	"WikiLove.js": "/ * El código JavaScript colocado aquí personaliza WikiLove, consulte https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration * /",
-	"apihelp-wikilove-example-1": "Enviar WikiLove a [[User:Dummy]]"
+	"apihelp-wikilove-param-type": "Tipo de WikiLove (para estadísticas); esto corresponde con un tipo seleccionado en el menú y, opcionalmente, un subtipo a continuación (por ejemplo, como en \"{{int:wikilove-barnstar-original-title}}\" o \"{{int:wikilove-kittens-header}}\").",
+	"apihelp-wikilove-param-email": "El contenido del correo electrónico opcional para enviar al usuario. Si no se puede mandarle un correo electrónico, se devolverá una advertencia. De todas formas, se enviará WikiLove a la página de discusión de los usuarios.",
+	"apihelp-wikilove-example-1": "Enviar WikiLove a \"[[User:Dummy]]\""
 }

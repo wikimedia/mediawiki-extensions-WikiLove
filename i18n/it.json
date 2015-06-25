@@ -11,7 +11,8 @@
 			"Raoli",
 			"Rippitippi",
 			"Ximo17",
-			"FRacco"
+			"FRacco",
+			"Fringio"
 		]
 	},
 	"wikilove-desc": "Aggiunge un'interfaccia per facilitare il feedback positivo ad un utente nella sua pagina di discussione",
@@ -190,5 +191,6 @@
 	"wikilove-terms-link": "le condizioni",
 	"wikilove-terms-url": "//wikimediafoundation.org/wiki/Feedback_privacy_statement/it",
 	"tag-wikilove-description": "Modifica effettuata utilizzando lo strumento WikiLove",
-	"WikiLove.js": "/* Il codice JavaScript posizionato qui permette di personalizzare WikiLove, vedi https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"WikiLove.js": "/* Il codice JavaScript posizionato qui permette di personalizzare WikiLove, vedi https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
+	"apihelp-wikilove-example-1": "Invia WikiLove a \"[[User:Dummy]]\""
 }
