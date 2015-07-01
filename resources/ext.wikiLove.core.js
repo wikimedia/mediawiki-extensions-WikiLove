@@ -661,7 +661,7 @@ $.wikiLove = {
 			if ( email ) {
 				sendData.email = email;
 			}
-			api.postWithEditToken( sendData )
+			api.postWithToken( 'edit', sendData )
 				.done( function ( data ) {
 					wikiLoveNumberAttempted++;
 					if ( wikiLoveNumberAttempted === targets.length ) {

@@ -279,7 +279,6 @@ $wgResourceModules += array(
 		),
 		'dependencies' => array(
 			'mediawiki.api',
-			'mediawiki.api.edit',
 			'ext.wikiLove.defaultOptions',
 			'jquery.ui.dialog',
 			'mediawiki.ui.button',
