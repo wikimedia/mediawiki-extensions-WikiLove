@@ -221,8 +221,14 @@ class WikiLoveHooks {
 	 * @return bool
 	 */
 	public static function onUserMergeAccountFields( array &$updateFields ) {
-		$updateFields[] = array( 'wikilove_log', 'wll_sender' );
-		$updateFields[] = array( 'wikilove_log', 'wll_receiver' );
+		global $wgWikiLoveLogging;
+		$dbr = wfGetDB( DB_SLAVE );
+		// FIXME HACK: The extension never actually required the 'wikilove_log' table
+		// and would suppress db errors if it didn't exist
+		if ( $wgWikiLoveLogging && $dbr->tableExists( 'wikilove_log' ) ) {
+			$updateFields[] = array( 'wikilove_log', 'wll_sender' );
+			$updateFields[] = array( 'wikilove_log', 'wll_receiver' );
+		}
 
 		return true;
 	}
