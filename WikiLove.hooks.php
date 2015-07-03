@@ -223,7 +223,6 @@ class WikiLoveHooks {
 	public static function onUserMergeAccountFields( array &$updateFields ) {
 		$updateFields[] = array( 'wikilove_log', 'wll_sender' );
 		$updateFields[] = array( 'wikilove_log', 'wll_receiver' );
-		$updateFields[] = array( 'wikilove_image_log', 'wlil_user_id' );
 
 		return true;
 	}
