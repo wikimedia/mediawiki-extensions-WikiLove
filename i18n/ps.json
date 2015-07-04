@@ -40,11 +40,11 @@
 	"wikilove-barnstar-goodhumor-title": "د ښه طبعې ستوری",
 	"wikilove-barnstar-brilliant-option": "د ستر نظر ستوری",
 	"wikilove-barnstar-brilliant-desc": "د ښه تجويز ستوری هغه چا ته ورکړی کيږي څوک چې په گران وخت کې يو ښه تجويز پېش کړي۔",
-	"wikilove-barnstar-brilliant-title": "د ښه تجويز ستوری",
-	"wikilove-barnstar-citation-option": "د سرچينو ستوری",
+	"wikilove-barnstar-brilliant-title": "د ستر نظر ستوری",
+	"wikilove-barnstar-citation-option": "د اخځ ښودنې ستوری",
 	"wikilove-barnstar-citation-desc": "د سرچينو ستوری هغه چا ته ورکړی کيږي څوک چې په ليکنو کې سرچينې ورگډې کړي.",
-	"wikilove-barnstar-citation-title": "د سرچينو ستوری",
-	"wikilove-barnstar-civility-option": "د ادبۍ ستوری",
+	"wikilove-barnstar-citation-title": "د اخځ ښودلو ستوری",
+	"wikilove-barnstar-civility-option": "د باادبۍ ستوری",
 	"wikilove-type-food": "خواړه او څښاک",
 	"wikilove-food-baklava-option": "بغلاوه",
 	"wikilove-food-beer-option": "اوربشوب",
@@ -64,6 +64,6 @@
 	"wikilove-what-is-this": "دا څه دی؟",
 	"wikilove-commons-link": "ويکيمېډيا کامنز",
 	"wikilove-terms-link": "شرطونه",
-	"apihelp-wikilove-param-subject": "د نوې برخې سرليک.",
+	"apihelp-wikilove-param-subject": "د نوې برخې د سکالو سرليک.",
 	"apihelp-wikilove-example-1": "[[User:Dummy]]ته ويکي مينه وليږه."
 }
