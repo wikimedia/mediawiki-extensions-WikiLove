@@ -149,11 +149,7 @@ class ApiWikiLove extends ApiBase {
 			array( 'wsEditToken' => $this->getRequest()->getSessionData( 'wsEditToken' ) )
 		), true );
 
-		try {
-			$api->execute();
-		} catch( DBQueryError $dbqe ) {
-			$this->setWarning( 'Email was not sent' );
-		}
+		$api->execute();
 	}
 
 	public function getAllowedParams() {
