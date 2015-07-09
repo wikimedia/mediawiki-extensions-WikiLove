@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Bedynokue.nart",
-			"SmartNart12"
+			"SmartNart12",
+			"GR44 Luc"
 		]
 	},
 	"wikilove-err-not-logged-in": "Системэм ухэхьагъэп. Хахьэба, WikiLove бгъэфедэнэу уфаемэ.",
+	"wikilove-err-invalid-username": "Хэлэжьак1ом ыц1эр тэрэзэп.",
 	"apihelp-wikilove-example-1": "\"[[User:Dummy]]-м WikiLove фегъэхь"
 }
