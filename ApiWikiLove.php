@@ -79,8 +79,10 @@ class ApiWikiLove extends ApiBase {
 			$result = $api->getResult()->getData();
 		}
 		if ( isset( $result['edit'] ) && $result['edit']['result'] === "Success" ) {
-				$revId = $result['edit']['newrevid'];
+			$revId = $result['edit']['newrevid'];
+			DeferredUpdates::addCallableUpdate( function() use ( $revId ) {
 				ChangeTags::addTags( "wikilove", null, $revId );
+			} );
 		}
 
 		if ( isset( $params['email'] ) ) {
