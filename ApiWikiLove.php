@@ -39,7 +39,7 @@ class ApiWikiLove extends ApiBase {
 				'token' => $params['token']
 			);
 		// If Flow is installed and enabled, use it.
-		} else if ( class_exists( 'ApiFlow' ) && $talk->getContentModel() === CONTENT_MODEL_FLOW_BOARD ) {
+		} elseif ( defined( 'CONTENT_MODEL_FLOW_BOARD' ) && $talk->hasContentModel( CONTENT_MODEL_FLOW_BOARD ) ) {
 			$apiParamArray = array(
 				'action' => 'flow',
 				'submodule' => 'new-topic',
