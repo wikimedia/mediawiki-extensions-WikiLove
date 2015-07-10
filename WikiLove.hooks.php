@@ -64,7 +64,8 @@ class WikiLoveHooks {
 		$title = self::getUserTalkPage( $skin->getTitle(), $skin->getUser() );
 		// getUserTalkPage() returns a string on error
 		if ( !is_string( $title ) ) {
-			$out->addModules( array( 'ext.wikiLove.icon', 'ext.wikiLove.init' ) );
+			$out->addModules( 'ext.wikiLove.init' );
+			$out->addModuleStyles( 'ext.wikiLove.icon' );
 			self::$recipient = $title->getBaseText();
 		}
 		return true;

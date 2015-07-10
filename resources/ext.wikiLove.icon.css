@@ -50,3 +50,7 @@ div.vectorTabs li#ca-wikilove {
 #ca-wikilove.icon a:focus {
 	background-position: -19px 60%;
 }
+
+.client-nojs li#ca-wikilove {
+	display: none;
+}
