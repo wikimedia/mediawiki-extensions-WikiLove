@@ -161,7 +161,7 @@
 	"wikilove-err-title": "상 이름을 입력하세요.",
 	"wikilove-err-msg": "알맞은 내용을 입력하세요.",
 	"wikilove-err-image": "그림을 선택하세요.",
-	"wikilove-err-image-bad": "그림이 없습니다.",
+	"wikilove-err-image-bad": "그림이 존재하지 않습니다.",
 	"wikilove-err-image-api": "그림을 찾을 때 문제가 생겼습니다. 다시 시도하세요.",
 	"wikilove-err-sig": "글에 서명을 넣지 마세요.",
 	"wikilove-err-gallery": "그림을 불러올 때 문제가 생겼습니다.",
