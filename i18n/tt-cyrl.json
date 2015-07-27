@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Derslek"
+			"Derslek",
+			"Ильнар"
 		]
 	},
-	"wikilove-err-not-logged-in": "Сез системага кермәгәнсез. WikiLove кулланыр өчен логин белән керегез."
+	"wikilove-err-not-logged-in": "Сез системага кермәгәнсез. WikiLove кулланыр өчен логин белән керегез.",
+	"wikilove-err-invalid-username": "Кулланучының мондый исемен куллану мөмкин түгел."
 }

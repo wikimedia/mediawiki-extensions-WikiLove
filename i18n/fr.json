@@ -17,7 +17,8 @@
 			"Sherbrooke",
 			"Urhixidur",
 			"Verdy p",
-			"ZxxZxxZ"
+			"ZxxZxxZ",
+			"Wladek92"
 		]
 	},
 	"wikilove-desc": "Ajoute une interface pour faciliter la rétroaction positive sur la page de discussion d’un utilisateur",
@@ -197,5 +198,6 @@
 	"wikilove-terms-link": "conditions",
 	"wikilove-terms-url": "//wikimediafoundation.org/wiki/Feedback_privacy_statement/fr",
 	"tag-wikilove-description": "Modification faite avec l’outil WikiLove",
-	"WikiLove.js": "/ * le JavaScript placé ici personnalise WikiLove, voyez https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration * /"
+	"WikiLove.js": "/ * le JavaScript placé ici personnalise WikiLove, voyez https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration * /",
+	"apihelp-wikilove-example-1": "Envoyer WikiLove à \"[[Utilisateur:Dummy]]\""
 }
