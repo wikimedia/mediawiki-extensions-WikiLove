@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Caoimhin"
+			"Caoimhin",
+			"GunChleoc"
 		]
 	},
-	"wikilove-err-not-logged-in": "Chan eil thu logged a-steach.  Log a-steach gus WikiLove a chleachdadh."
+	"wikilove-err-not-logged-in": "Chan eil thu logged a-steach.  Log a-steach gus WikiLove a chleachdadh.",
+	"wikilove-err-invalid-username": "Chan eil an t-ainm-cleachdaiche dligheach."
 }
