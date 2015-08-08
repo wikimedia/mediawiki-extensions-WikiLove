@@ -150,5 +150,5 @@
 	"wikilove-terms-link": "villkor",
 	"tag-wikilove-description": "Redigering gjord med WikiLove-verktyget.",
 	"WikiLove.js": "/ * JavaScript som placeras här anpassar WikiLove, se https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration * /",
-	"apihelp-wikilove-example-1": "Skicka WikiLove till [[User:Dummy]]"
+	"apihelp-wikilove-example-1": "Skicka WikiLove till \"[[User:Dummy]]\""
 }
