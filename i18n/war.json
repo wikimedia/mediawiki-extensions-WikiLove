@@ -4,5 +4,6 @@
 			"JinJian"
 		]
 	},
-	"wikilove-err-not-logged-in": "Diri ka nakalog-in. Alayon paglog-in para ka makagamit hin WikiLove."
+	"wikilove-err-not-logged-in": "Diri ka nakalog-in. Alayon paglog-in para ka makagamit hin WikiLove.",
+	"wikilove-err-invalid-username": "Ini nga agnay-gumaramit in diri magagamitan."
 }
