@@ -3,10 +3,11 @@
 		"authors": [
 			"Bedynokue.nart",
 			"SmartNart12",
-			"GR44 Luc"
+			"GR44 Luc",
+			"Inyzh"
 		]
 	},
 	"wikilove-err-not-logged-in": "Системэм ухэхьагъэп. Хахьэба, WikiLove бгъэфедэнэу уфаемэ.",
-	"wikilove-err-invalid-username": "Хэлэжьак1ом ыц1эр тэрэзэп.",
+	"wikilove-err-invalid-username": "ХэлэжьакIом ыцIэр тэрэзэп.",
 	"apihelp-wikilove-example-1": "\"[[User:Dummy]]-м WikiLove фегъэхь"
 }
