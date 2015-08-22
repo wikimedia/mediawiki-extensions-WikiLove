@@ -178,7 +178,7 @@
 	"wikilove-err-not-logged-in": "您尚未登入。請登入後再使用維基友愛。",
 	"wikilove-err-invalid-username": "使用者名稱無效。",
 	"wikilove-err-no-self-wikilove": "您不能發送維基友愛給自己，抱歉！",
-	"wikilove-err-redirect": "此使用者的對話頁面是重新導向。",
+	"wikilove-err-redirect": "此用戶的對話頁是重定向。",
 	"wikilove-err-cannot-edit": "您沒有權限編輯該頁面。",
 	"wikilove-err-max-exceeded": "您無法一次發送給超過 $1 個的使用者維基友愛。",
 	"wikilove-success-number": "已發送 $1 筆維基友愛訊息。",
