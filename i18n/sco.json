@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"John Reid"
+			"John Reid",
+			"AmaryllisGardener"
 		]
 	},
 	"wikilove-err-not-logged-in": "Ye'r no loggit in. Please log in tae uise WikiLove.",
+	"wikilove-err-invalid-username": "The uisername is nae valid.",
 	"tag-wikilove-description": "Eedit makit uisin the WikiLove tuil"
 }
