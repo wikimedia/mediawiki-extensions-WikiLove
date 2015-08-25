@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Gott wisst"
+			"Gott wisst",
+			"JJohnson1701"
 		]
 	},
+	"wikilove-err-not-logged-in": "Þu neart ingemeldod.  Bidde melda þec in, tō brūcenne WikiLove.",
 	"wikilove-err-invalid-username": "Þes brūcendnama nis genge."
 }
