@@ -14,8 +14,7 @@ require "page-object"
 class WikilovePage
   include PageObject
 
-  include URL
-  page_url URL.url("User:Selenium_user2")
+  page_url "User:Selenium_user2"
 
   select_list(:barnstar_select, id: "mw-wikilove-subtype")
   span(:barnstars, text: "Barnstars")
