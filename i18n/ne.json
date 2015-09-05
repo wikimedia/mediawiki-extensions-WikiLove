@@ -161,7 +161,7 @@
 	"wikilove-err-invalid-username": "प्रयोगकर्ता नाम अमान्य छ।",
 	"wikilove-err-no-self-wikilove": "माफ गर्नुहोला! तपाईं स्वयंलाई विकिलभ पठाउन सक्नुहुन्न।",
 	"wikilove-err-redirect": "यो प्रयोगकर्ताको वार्ता पृष्ठ अनुप्रेषित छ।",
-	"wikilove-err-cannot-edit": "तपाईलाई यो पृष्ठ सम्पादन गर्न अनुमति छैन।",
+	"wikilove-err-cannot-edit": "तपाईंलाई यो पृष्ठ सम्पादन गर्न अनुमति छैन।",
 	"wikilove-err-max-exceeded": "तपाईं $1 भन्दा बढी {{PLURAL:$1|प्रयोगकर्ता|प्रयोगकर्ताहरू}}लाई एकै पटक विकिलभ पठाउन सक्नुहुन्न।",
 	"wikilove-success-number": "$1 विकिलभ सन्देस {{PLURAL:$1|पठाए|पठाउनुस}}।",
 	"wikilove-summary": "/* $1 */ नयाँ विकिलभ सन्देस",
