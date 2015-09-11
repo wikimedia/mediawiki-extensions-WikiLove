@@ -3,9 +3,10 @@
 		"authors": [
 			"Konknni mogi 24",
 			"Supriya kankumbikar",
-			"The Discoverer"
+			"The Discoverer",
+			"Vaishali Parab"
 		]
 	},
-	"wikilove-err-not-logged-in": "तुवें सत्ररंभ करूेक न्हाय. विकीमोगाचो उपेग करपा खातीर उपकार करून सत्ररंभ करात.",
+	"wikilove-err-not-logged-in": "तुवें सत्रारंभ करूंक ना. विकीमोगाचो उपेग करपा खातीर उपकार करून सत्रारंभ करात.",
 	"wikilove-err-invalid-username": "वांगड्याचें नावं सारकें ना"
 }
