@@ -4,5 +4,6 @@
 			"Jyllanj"
 		]
 	},
-	"wikilove-err-not-logged-in": "Du ä ett loggen på. Logg wenlist på for å brug WikiLove."
+	"wikilove-err-not-logged-in": "Du ä ett loggen på. Logg wenlist på for å brug WikiLove.",
+	"wikilove-err-invalid-username": "Brugenaune ä ett gjylji."
 }
