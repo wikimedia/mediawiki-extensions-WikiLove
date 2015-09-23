@@ -173,7 +173,7 @@
 	"wikilove-err-not-logged-in": "Вы не вошли в систему. Пожалуйста, войдите для того, чтобы использовать WikiLove.",
 	"wikilove-err-invalid-username": "Такое имя участника недопустимо.",
 	"wikilove-err-no-self-wikilove": "Вы не можете отправить WikiLove самому себе, извините!",
-	"wikilove-err-redirect": "Страница обсуждения пользователя является перенаправлением.",
+	"wikilove-err-redirect": "Персональная страница обсуждения участника — перенаправление.",
 	"wikilove-err-cannot-edit": "У вас нет прав, чтобы править эту страницу.",
 	"wikilove-err-max-exceeded": "За один раз вы не можете отправить WikiLove более чем $1 {{PLURAL:$1|участнику|участникам}}.",
 	"wikilove-success-number": "$1 {{PLURAL:$1|сообщение|сообщения|сообщений}} отправлен{{PLURAL:$1|о|ы|о}}.",
