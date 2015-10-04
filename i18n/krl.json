@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mashoi7"
+			"Mashoi7",
+			"Ilja.mos"
 		]
 	},
+	"wikilove-err-not-logged-in": "Et ole kirjautun. Ole hyvä, kirjauvvu, jotta piäsisit käyttämäh WikiLove.",
 	"wikilove-err-invalid-username": "Käyttäjänimi ei kelpua."
 }
