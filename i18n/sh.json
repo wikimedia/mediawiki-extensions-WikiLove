@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"OC Ripper"
+		]
+	},
+	"wikilove-err-not-logged-in": "Niste prijavljeni. Molimo da se prijavite prije korištenja WikiLove.",
+	"wikilove-err-invalid-username": "Korisničko ime nije valjano."
+}

@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sindhu"
+			"Sindhu",
+			"Aursani"
 		]
 	},
-	"wikilove-err-not-logged-in": "توهان لاگ ان ناهيو ٿيل. مهرباني ڪري وڪي لو استعمال ڪرڻ لاءِ لاگ ان ٿيو"
+	"wikilove-err-not-logged-in": "توهان لاگ ان ناهيو ٿيل. مهرباني ڪري وڪي لو استعمال ڪرڻ لاءِ لاگ ان ٿيو",
+	"wikilove-err-invalid-username": "اهو يوزرنانءُ ڪار ڪونهي."
 }
