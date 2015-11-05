@@ -6,7 +6,8 @@
 			"Micki",
 			"Milicevic01",
 			"Nikola Smolenski",
-			"Rancher"
+			"Rancher",
+			"Сербијана"
 		]
 	},
 	"wikilove-desc": "Додаје интерфејс за исказивање позитивних повратних информација на корисничке странице за разговор",
@@ -30,7 +31,7 @@
 	"wikilove-image-example": "(пример: Trophy.png)",
 	"wikilove-button-preview": "Прикажи претпреглед",
 	"wikilove-preview": "Преглед",
-	"wikilove-notify": "Обавести корисника преко е-поште",
+	"wikilove-notify": "Обавести корисника преко имејла",
 	"wikilove-button-send": "Пошаљи",
 	"wikilove-type-barnstars": "Споменице",
 	"wikilove-barnstar-header": "Споменица за тебе!",
