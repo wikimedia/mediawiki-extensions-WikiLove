@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"VASANTH S.N."
+			"VASANTH S.N.",
+			"Vishwanatha Badikana"
 		]
 	},
-	"wikilove-err-not-logged-in": "ಈರ್ ಲಾಗಿನ್ ಆತ್‍ಜ್ಜರ್. ವಿಕಿಲವ್ ಉಪಯೋಗ ಮಲ್ಪರೆ ದಯದೀದ್ ಲಾಗಿನ್ ಆಲೆ.",
-	"wikilove-err-invalid-username": "ಬಳಕೆದಾರೆರೆನ ಪುದರ್ ಮಾನ್ಯ ಆತ್‍ಜ್ಜಿ"
+	"wikilove-err-not-logged-in": "ಈರ್ ಲಾಗಿನ್ ಆತ್‍ಜರ್. ವಿಕಿಲವ್ ಉಪಯೋಗ ಮಲ್ಪರೆ ದಯದೀದ್ ಲಾಗಿನ್ ಆಲೆ.",
+	"wikilove-err-invalid-username": "ಬಳಕೆದಾರೆರೆನ ಪುದರ್ ಮಾನ್ಯೊ ಆತ್‍ಜಿ"
 }
