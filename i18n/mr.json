@@ -18,7 +18,7 @@
 	"wikilove-button-preview": "झलक",
 	"wikilove-preview": "झलक",
 	"wikilove-button-send": "विकिप्रेम पाठवा",
-	"wikilove-err-not-logged-in": "आपण लॉग इन नाही आहात. विकीलव्ह चा उपयोग करण्यासाठी कृपया लॉग इन करा.",
-	"wikilove-err-invalid-username": "सदस्यनाम मान्य नाही आहे.",
+	"wikilove-err-not-logged-in": "आपण सनोंद प्रवेशित नाहीत. विकीलव्हचा उपयोग करण्यासाठी कृपया सनोंद प्रवेश करा.",
+	"wikilove-err-invalid-username": "सदस्यनाम वैध नाही.",
 	"tag-wikilove-description": "'विकिलव्ह' साधन वापरून केलेले संपादन"
 }
