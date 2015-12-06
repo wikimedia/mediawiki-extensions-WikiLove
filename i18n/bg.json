@@ -3,7 +3,8 @@
 		"authors": [
 			"DCLXVI",
 			"Spiritia",
-			"StanProg"
+			"StanProg",
+			"Лорд Бъмбъри"
 		]
 	},
 	"wikilove": "УикиОбич",
@@ -38,7 +39,7 @@
 	"wikilove-err-gallery-again": "Опитайте отново",
 	"wikilove-err-preview-api": "Нещо се обърка по време на предварителния преглед. Моля, опитайте отново.",
 	"wikilove-err-send-api": "Нещо се обърка, докато се изпращаше това съобщение. Моля, опитайте отново.",
-	"wikilove-err-not-logged-in": "Не сте влезли в системата. Моля влезте, за да използвате WikiLove.",
+	"wikilove-err-not-logged-in": "Не сте влезли в системата. Моля влезте, за да използвате УикиОбич.",
 	"wikilove-err-invalid-username": "Невалидно потребителско име.",
 	"wikilove-summary": "/* $1 */ ново съобщение за УикиОбич",
 	"wikilove-what-is-this": "Какво е това?",
