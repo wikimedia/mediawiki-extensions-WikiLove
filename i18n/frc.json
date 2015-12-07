@@ -4,5 +4,6 @@
 			"Hangmanwa7id"
 		]
 	},
-	"wikilove-err-not-logged-in": "Vous n’êtes pas connecté. Veuillez vous connecter pour pouvoir utiliser WikiLove."
+	"wikilove-err-not-logged-in": "Vous n’êtes pas connecté. Veuillez vous connecter pour pouvoir utiliser WikiLove.",
+	"wikilove-err-invalid-username": "Le nom d'useur est pas valide."
 }
