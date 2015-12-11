@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Игорь Бродский"
+		]
+	},
+	"wikilove-err-not-logged-in": "Tö et olgoi kirjutanus sistemha. Olgat hüväd, kirjutagatoiš sistemha, miše kävutada WikiLove.",
+	"wikilove-err-invalid-username": "Ningoi kävutajannimi om vär."
+}
