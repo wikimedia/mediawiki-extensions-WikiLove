@@ -184,6 +184,10 @@ class ApiWikiLove extends ApiBase {
 		);
 	}
 
+	public function needsToken() {
+		return 'csrf';
+	}
+
 	/**
 	 * @deprecated since MediaWiki core 1.25
 	 */
