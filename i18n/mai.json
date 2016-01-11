@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Tulsi Bhagat"
+			"Tulsi Bhagat",
+			"बिप्लब आनन्द"
 		]
 	},
 	"wikilove": "विकिप्रेम",
 	"wikilove-tab-text": "विकिप्रेम",
-	"wikilove-err-not-logged-in": "आपने सभ लॉग इन नै केने छि। विकिप्रेम कऽ प्रयोग करबाक के लेल कृपया लॉग इन करु।"
+	"wikilove-err-not-logged-in": "आपने सभ लॉग इन नै केने छि। विकिप्रेम कऽ प्रयोग करबाक के लेल कृपया लॉग इन करु।",
+	"wikilove-err-invalid-username": "प्रयोक्तानाम अमान्य अछि।"
 }
