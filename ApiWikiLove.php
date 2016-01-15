@@ -139,7 +139,9 @@ class ApiWikiLove extends ApiBase {
 	 * @param $token string
 	 */
 	private function emailUser( $talk, $subject, $text, $token ) {
-		$api = new ApiMain( new FauxRequest(
+		$context = new DerivativeContext( $this->getContext() );
+		$context->setRequest( new DerivativeRequest(
+			$this->getRequest(),
 			array(
 				'action' => 'emailuser',
 				'target' => User::newFromName( $talk->getSubjectPage()->getBaseText() )->getName(),
@@ -147,10 +149,9 @@ class ApiWikiLove extends ApiBase {
 				'text' => $text,
 				'token' => $token
 			),
-			false,
-			array( 'wsEditToken' => $this->getRequest()->getSessionData( 'wsEditToken' ) )
-		), true );
-
+			true
+		) );
+		$api = new ApiMain( $context, true );
 		$api->execute();
 	}
 
