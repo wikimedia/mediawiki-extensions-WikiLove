@@ -190,50 +190,6 @@ class ApiWikiLove extends ApiBase {
 	}
 
 	/**
-	 * @deprecated since MediaWiki core 1.25
-	 */
-	public function getParamDescription() {
-		return array(
-			'title' => 'Full pagename of the user page or user talk page of the user to send WikiLove to',
-			'text' => 'Raw wikitext to add in the new section',
-			'message' => 'Actual message the user has entered, for logging purposes',
-			'token' => array( 'Edit token. You can get one of these through the API with prop=info,',
-				'or when on a MediaWiki page through mw.user.tokens',
-			),
-			'subject' => 'Subject header of the new section',
-			'email' => array( 'Content of the optional email message to send to the user.',
-				'A warning will be returned if the user cannot be emailed. WikiLove will be sent to user talk page either way.',
-			),
-			'type' => array( 'Type of WikiLove (for statistics); this corresponds with a type',
-				'selected in the left menu, and optionally a subtype after that',
-				'(e.g. "barnstar-normal" or "kitten")',
-			),
-		);
-	}
-
-	/**
-	 * @deprecated since MediaWiki core 1.25
-	 */
-	public function getDescription() {
-		return array(
-			'Give WikiLove to another user.',
-			"WikiLove is a positive message posted to a user's talk page through a",
-			'convenient interface with preset or locally defined templates. This action',
-			'adds the specified wikitext to a certain talk page. For statistical purposes,',
-			'the type and other data are logged.',
-		);
-	}
-
-	/**
-	 * @deprecated since MediaWiki core 1.25
-	 */
-	public function getExamples() {
-		return array(
-			'api.php?action=wikilove&title=User:Dummy&text=Love&subject=Hi&token=%2B\\',
-		);
-	}
-
-	/**
 	 * @see ApiBase::getExamplesMessages()
 	 */
 	protected function getExamplesMessages() {
