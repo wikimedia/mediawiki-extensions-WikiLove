@@ -18,7 +18,8 @@
 			"Urhixidur",
 			"Verdy p",
 			"ZxxZxxZ",
-			"Wladek92"
+			"Wladek92",
+			"Fredlefred"
 		]
 	},
 	"wikilove-desc": "Ajoute une interface pour faciliter la rétroaction positive sur la page de discussion d’un utilisateur",
@@ -181,7 +182,7 @@
 	"wikilove-err-preview-api": "Quelque chose n’a pas fonctionné pendant la prévisualisation. Veuillez réessayer.",
 	"wikilove-err-send-api": "Quelque chose n’a pas fonctionné lors de l’envoi du message. Veuillez réessayer.",
 	"wikilove-err-invalid-token": "Impossible d’envoyer des WikiLove à cause d’une perte de données de session. Essayez de recharger la page ou fermez la session puis reconnectez-vous.",
-	"wikilove-err-not-logged-in": "Vous n’êtes pas connecté. Veuillez vous connecter pour pouvoir utiliser WikiLove.",
+	"wikilove-err-not-logged-in": "Vous n’êtes pas connecté. Veuillez vous connecter pour utiliser WikiLove.",
 	"wikilove-err-invalid-username": "Le nom d’utilisateur n’est pas valide.",
 	"wikilove-err-no-self-wikilove": "Vous ne pouvez pas envoyer de WikiLove à vous-même. Désolé !",
 	"wikilove-err-redirect": "La page de discussion de l’utilisateur est une redirection.",
