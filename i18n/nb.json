@@ -4,7 +4,8 @@
 			"Cocu",
 			"Danmichaelo",
 			"Diupwijk",
-			"Stigmj"
+			"Stigmj",
+			"SuperPotato"
 		]
 	},
 	"wikilove-desc": "Legger til et grensesnitt for å gjøre det enklere å legge inn positive tilbakemeldinger på brukeres diskusjonssider",
@@ -53,7 +54,7 @@
 	"wikilove-err-gallery-again": "Prøv igjen",
 	"wikilove-err-preview-api": "Noe gikk galt under forhåndsvisningen. Vennligst prøv igjen.",
 	"wikilove-err-send-api": "Noe gikk galt under sending av meldingen. Vennligst prøv igjen.",
-	"wikilove-err-not-logged-in": "Du er ikke innlogget. Vennligst logg inn for å bruke Wikiheder.",
+	"wikilove-err-not-logged-in": "Du er ikke innlogget. Vennligst logg inn for å bruke WikiLove.",
 	"wikilove-err-invalid-username": "Brukernavnet er ikke gyldig.",
 	"wikilove-err-no-self-wikilove": "Du kan ikke sende Wikiheder til deg selv. Beklager!",
 	"wikilove-err-redirect": "Brukerens diskusjonsside er en omdirigeringsside.",
