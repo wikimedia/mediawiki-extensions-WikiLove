@@ -5,6 +5,9 @@
 			"Ranveig"
 		]
 	},
+	"wikilove-select-type": "Vel type",
+	"wikilove-select-image": "Vel eit bilete:",
+	"wikilove-barnstar-select": "Vel ei stjerne:",
 	"wikilove-err-not-logged-in": "Du er ikkje innlogga. Gjer vel og logg inn for å bruke WikiLove.",
 	"wikilove-err-invalid-username": "Brukarnamnet er ikkje gyldig."
 }
