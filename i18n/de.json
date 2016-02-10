@@ -184,6 +184,7 @@
 	"tag-wikilove-description": "Bearbeitung mit dem WikiLove-Werkzeug durchgeführt",
 	"WikiLove.js": "/* Das folgende JavaScript passt die persönliche Wertschätzung an, siehe https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
 	"apihelp-wikilove-param-text": "Roher Wikitext, der in den neuen Abschnitt eingefügt werden soll.",
+	"apihelp-wikilove-param-message": "Tatsächliche Nachricht, die der Benutzer eingegeben hat, für Protokollierungszwecke.",
 	"apihelp-wikilove-param-subject": "Betreffzeile des neuen Abschnitts.",
 	"apihelp-wikilove-example-1": "Sendet WikiLove an [[User:Dummy]]"
 }
