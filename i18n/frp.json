@@ -125,6 +125,7 @@
 	"wikilove-err-gallery-again": "Tornâd èprovar",
 	"wikilove-err-preview-api": "Quârque-ren s’est mâl passâ pendent la prèvisualisacion. Volyéd tornar èprovar.",
 	"wikilove-err-send-api": "Quârque-ren s’est mâl passâ pendent l’èxpèdicion du mèssâjo. Volyéd tornar èprovar.",
+	"wikilove-err-not-logged-in": "Vos éte pas branchiê. Se vos plét, branchiéd-vos por empleyér VouiquiAmôr.",
 	"wikilove-err-invalid-username": "Lo nom d’utilisator est envalido.",
 	"wikilove-err-redirect": "La pâge de discussion de l’utilisator est na redirèccion.",
 	"wikilove-summary": "/* $1 */ mèssâjo novél VouiquiAmôr",
