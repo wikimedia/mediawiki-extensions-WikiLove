@@ -8,6 +8,7 @@
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:WikiLove",
 	"descriptionmsg": "wikilove-desc",
+	"license-name": "MIT",
 	"type": "other",
 	"APIModules": {
 		"wikilove": "ApiWikiLove"
