@@ -6,5 +6,6 @@
 			"Ninjastrikers"
 		]
 	},
-	"wikilove-err-not-logged-in": "သင်၏အကောင့်ကို Log in မပြုလုပ်ရသေးပါ။ WikiLove ကို အသုံးပြုရန်အတွက် Log in ပြုလုပ်ပါ။"
+	"wikilove-err-not-logged-in": "သင်၏အကောင့်ကို Log in မပြုလုပ်ရသေးပါ။ WikiLove ကို အသုံးပြုရန်အတွက် Log in ပြုလုပ်ပါ။",
+	"wikilove-err-invalid-username": "အသုံးပြုအမည် မမှန်ကန်ပါ။"
 }
