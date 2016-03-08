@@ -13,12 +13,4 @@ class WikiLoveLocal extends ResourceLoaderWikiModule {
 			'MediaWiki:WikiLove.js'      => array( 'type' => 'script' ),
 		);
 	}
-
-	/**
-	 * @return array
-	 */
-	public function getMessages() {
-		global $wgWikiLoveOptionMessages;
-		return $wgWikiLoveOptionMessages;
-	}
 }
