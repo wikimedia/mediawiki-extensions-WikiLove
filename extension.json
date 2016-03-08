@@ -10,6 +10,7 @@
 	"descriptionmsg": "wikilove-desc",
 	"license-name": "MIT",
 	"type": "other",
+	"license-name": "MIT",
 	"APIModules": {
 		"wikilove": "ApiWikiLove"
 	},
