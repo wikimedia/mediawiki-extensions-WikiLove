@@ -13,10 +13,8 @@ class WikiLoveHooks {
 	 * LoadExtensionSchemaUpdates hook
 	 *
 	 * @param DatabaseUpdater $updater
-	 *
-	 * @return bool true
 	 */
-	public static function loadExtensionSchemaUpdates( $updater = null ) {
+	public static function onLoadExtensionSchemaUpdates( $updater = null ) {
 		if ( $updater === null ) {
 			global $wgExtNewTables;
 			$wgExtNewTables[] = array( 'wikilove_log', dirname( __FILE__ ) . '/patches/WikiLoveLog.sql' );
@@ -24,17 +22,15 @@ class WikiLoveHooks {
 			$updater->addExtensionUpdate( array( 'addTable', 'wikilove_log',
 				dirname( __FILE__ ) . '/patches/WikiLoveLog.sql', true ) );
 		}
-		return true;
 	}
 
 	/**
 	 * Add the preference in the user preferences with the GetPreferences hook.
+	 *
 	 * @param User $user
 	 * @param array $preferences
-	 *
-	 * @return bool true
 	 */
-	public static function getPreferences( $user, &$preferences ) {
+	public static function onGetPreferences( $user, &$preferences ) {
 		global $wgWikiLoveGlobal;
 		if ( !$wgWikiLoveGlobal ) {
 			$preferences['wikilove-enabled'] = array(
@@ -43,7 +39,6 @@ class WikiLoveHooks {
 				'label-message' => 'wikilove-enable-preference',
 			);
 		}
-		return true;
 	}
 
 	/**
@@ -51,10 +46,8 @@ class WikiLoveHooks {
 	 *
 	 * @param OutputPage $out
 	 * @param Skin $skin
-	 *
-	 * @return bool true
 	 */
-	public static function beforePageDisplay( $out, $skin ) {
+	public static function onBeforePageDisplay( $out, $skin ) {
 		global $wgWikiLoveGlobal;
 
 		if ( !$wgWikiLoveGlobal && !$out->getUser()->getOption( 'wikilove-enabled' ) ) {
@@ -68,17 +61,14 @@ class WikiLoveHooks {
 			$out->addModuleStyles( 'ext.wikiLove.icon' );
 			self::$recipient = $title->getBaseText();
 		}
-		return true;
 	}
 
 	/**
-	 * Exports wikilove-recipient and wikilove-anon variables to JS
+	 * Export page/user specific WikiLove variables to JS
 	 *
 	 * @param array $vars
-	 *
-	 * @return bool true
 	 */
-	public static function makeGlobalVariablesScript( &$vars ) {
+	public static function onMakeGlobalVariablesScript( &$vars ) {
 		$vars['wikilove-recipient'] = self::$recipient;
 
 		$vars['wikilove-anon'] = 0;
@@ -86,39 +76,37 @@ class WikiLoveHooks {
 			$receiver = User::newFromName( self::$recipient );
 			if ( $receiver === false || $receiver->isAnon() ) $vars['wikilove-anon'] = 1;
 		}
-		return true;
 	}
 
 	/**
-	 * Adds a tab or an icon the new way (MediaWiki 1.18+)
+	 * Add a tab or an icon the new way (MediaWiki 1.18+)
+	 *
 	 * @param SkinTemplate $skin
 	 * @param array $links Navigation links
-	 * @return boolean
 	 */
-	public static function skinTemplateNavigation( &$skin, &$links ) {
+	public static function onSkinTemplateNavigation( &$skin, &$links ) {
 		if ( self::showIcon( $skin ) ) {
 			self::skinConfigViewsLinks( $skin, $links['views']);
 		} else {
 			self::skinConfigViewsLinks( $skin, $links['actions']);
 		}
-		return true;
 	}
 
 	/**
 	 * Configure views links.
+	 *
 	 * Helper function for SkinTemplateTabs and SkinTemplateNavigation hooks
 	 * to configure views links.
 	 *
 	 * @param Skin $skin
 	 * @param array $views
-	 * @return boolean
 	 */
 	private static function skinConfigViewsLinks( $skin, &$views ) {
 		global $wgWikiLoveGlobal;
 
 		// If WikiLove is turned off for this user, don't display tab.
 		if ( !$wgWikiLoveGlobal && !$skin->getUser()->getOption( 'wikilove-enabled' ) ) {
-			return true;
+			return;
 		}
 
 		// getUserTalkPage() returns a string on error
@@ -132,14 +120,12 @@ class WikiLoveHooks {
 				$views['wikilove']['primary'] = true;
 			}
 		}
-		return true;
 	}
 
 	/**
 	 * Only show an icon when the global preference is enabled and the current skin is Vector.
 	 *
 	 * @param Skin $skin
-	 *
 	 * @return boolean
 	 */
 	private static function showIcon( $skin ) {
@@ -154,7 +140,6 @@ class WikiLoveHooks {
 	 *
 	 * @param Title $title The title of a user page or user talk page
 	 * @param User $user the current user
-	 *
 	 * @return Title|string Returns either the Title object for the talk page or an error string
 	 */
 	public static function getUserTalkPage( $title, $user ) {
@@ -195,31 +180,28 @@ class WikiLoveHooks {
 		}
 
 		// Make sure we can edit the page
-		if ( $talkTitle->quickUserCan( 'edit' ) ) {
-			return $talkTitle;
-		} else {
+		if ( !$talkTitle->quickUserCan( 'edit' ) ) {
 			return wfMessage( 'wikilove-err-cannot-edit' )->plain();
 		}
+
+		return $talkTitle;
 	}
 
 	/**
 	 * ListDefinedTags and ChangeTagsListActive hook handler
+	 *
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/ListDefinedTags
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/ChangeTagsListActive
-	 *
 	 * @param array $tags
-	 * @return bool
 	 */
 	public static function onListDefinedTags( &$tags ) {
 		$tags[] = 'wikilove';
-		return true;
 	}
 
 	/**
 	 * Tables that Extension:UserMerge needs to update
 	 *
 	 * @param array $updateFields
-	 * @return bool
 	 */
 	public static function onUserMergeAccountFields( array &$updateFields ) {
 		global $wgWikiLoveLogging;
@@ -230,8 +212,6 @@ class WikiLoveHooks {
 			$updateFields[] = array( 'wikilove_log', 'wll_sender' );
 			$updateFields[] = array( 'wikilove_log', 'wll_receiver' );
 		}
-
-		return true;
 	}
 
 }

@@ -236,19 +236,19 @@
 	},
 	"Hooks": {
 		"GetPreferences": [
-			"WikiLoveHooks::getPreferences"
+			"WikiLoveHooks::onGetPreferences"
 		],
 		"SkinTemplateNavigation": [
-			"WikiLoveHooks::skinTemplateNavigation"
+			"WikiLoveHooks::onSkinTemplateNavigation"
 		],
 		"BeforePageDisplay": [
-			"WikiLoveHooks::beforePageDisplay"
+			"WikiLoveHooks::onBeforePageDisplay"
 		],
 		"LoadExtensionSchemaUpdates": [
-			"WikiLoveHooks::loadExtensionSchemaUpdates"
+			"WikiLoveHooks::onLoadExtensionSchemaUpdates"
 		],
 		"MakeGlobalVariablesScript": [
-			"WikiLoveHooks::makeGlobalVariablesScript"
+			"WikiLoveHooks::onMakeGlobalVariablesScript"
 		],
 		"ListDefinedTags": [
 			"WikiLoveHooks::onListDefinedTags"
