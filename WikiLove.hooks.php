@@ -7,7 +7,7 @@
  */
 
 class WikiLoveHooks {
-	private static $recipient = '';
+	private static $recipient = null;
 
 	/**
 	 * LoadExtensionSchemaUpdates hook
@@ -69,12 +69,12 @@ class WikiLoveHooks {
 	 * @param array $vars
 	 */
 	public static function onMakeGlobalVariablesScript( &$vars ) {
-		$vars['wikilove-recipient'] = self::$recipient;
-
-		$vars['wikilove-anon'] = 0;
-		if ( self::$recipient !== '' ) {
+		if ( self::$recipient !== null ) {
+			$vars['wikilove-recipient'] = self::$recipient;
 			$receiver = User::newFromName( self::$recipient );
-			if ( $receiver === false || $receiver->isAnon() ) $vars['wikilove-anon'] = 1;
+			if ( $receiver === false || $receiver->isAnon() ) {
+				$vars['wikilove-anon'] = 1;
+			}
 		}
 	}
 
