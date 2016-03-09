@@ -57,23 +57,17 @@ $.wikiLove = {
 				$button.append( '<span>' + mw.html.escape( type.name ) + '</span>' );
 
 				$button.data( 'typeId', typeId );
-				$typeList.append( $( '<li></li>' ).append( $button ) );
+				$typeList.append( $( '<li>' ).append( $button ) );
 			}
 
-			var commonsLink = $( '<a>' )
-					.attr( 'href', mw.msg( 'wikilove-commons-url' ) )
-					.attr( 'target', '_blank' )
-					.text( mw.msg( 'wikilove-commons-link' ) )
-					.wrap( '<div>' ) // or .html() will only return the link text
-					.parent()
-					.html();
-			var termsLink = $( '<a> ')
-					.attr( 'href', mw.msg( 'wikilove-terms-url' ) )
-					.attr( 'target', '_blank' )
-					.text( mw.msg( 'wikilove-terms-link' ) )
-					.wrap( '<div>' )
-					.parent()
-					.html();
+			var commonsLink = mw.html.element( 'a', {
+					href: mw.msg( 'wikilove-commons-url' ),
+					target: '_blank'
+				}, mw.msg( 'wikilove-commons-link' ) );
+			var termsLink = mw.html.element( 'a', {
+					href: mw.msg( 'wikilove-terms-url' ),
+					target: '_blank'
+				}, mw.msg( 'wikilove-terms-link' ) );
 
 			$dialog = $( '<div id="mw-wikilove-dialog">\
 <div id="mw-wikilove-select-type">\
@@ -88,7 +82,7 @@ $.wikiLove = {
 		<li><html:msg key="wikilove-get-started-list-2"/></li>\
 		<li><html:msg key="wikilove-get-started-list-3"/></li>\
 	</ol>\
-	<p><a target="_blank" href="' + mw.html.escape( mw.msg( 'wikilove-what-is-this-link' ) ) + '">\
+	<p><a target="_blank" href="' + mw.message( 'wikilove-what-is-this-link' ).escaped() + '">\
 		<html:msg key="wikilove-what-is-this"/>\
 	</a></p>\
 	<p id="mw-wikilove-anon-warning"><strong><html:msg key="wikilove-anon-warning"/></strong></p>\
@@ -121,7 +115,7 @@ $.wikiLove = {
 		<span class="mw-wikilove-note" id="mw-wikilove-image-note"><html:msg key="wikilove-image-example"/></span>\
 		<input type="text" class="text" id="mw-wikilove-image"/>\
 		<div id="mw-wikilove-commons-text">\
-		' + mw.html.escape( mw.msg( 'wikilove-commons-text' ) ).replace( /\$1/, commonsLink ) + '\
+		' + mw.message( 'wikilove-commons-text' ).escaped().replace( /\$1/, commonsLink ) + '\
 		</div>\
 		<label for="mw-wikilove-message" id="mw-wikilove-message-label"><html:msg key="wikilove-enter-message"/></label>\
 		<span class="mw-wikilove-note" id="mw-wikilove-message-note"><html:msg key="wikilove-omit-sig"/></span>\
@@ -139,7 +133,7 @@ $.wikiLove = {
 	<h3><html:msg key="wikilove-preview"/></h3>\
 	<div id="mw-wikilove-preview-area"></div>\
 	<div id="mw-wikilove-terms">\
-	' + mw.html.escape( mw.msg( 'wikilove-terms' ) ).replace( /\$1/, termsLink ) + '\
+	' + mw.message( 'wikilove-terms' ).escaped().replace( /\$1/, termsLink ) + '\
 	</div>\
 	<form id="mw-wikilove-send-form">\
 		<button class="submit mw-ui-button mw-ui-constructive" id="mw-wikilove-button-send" type="submit"></button>\
@@ -151,13 +145,13 @@ $.wikiLove = {
 			$dialog.localize();
 
 			$dialog.dialog({
-					width: 800,
-					position: ['center', 80],
-					autoOpen: false,
-					title: mw.msg( 'wikilove-dialog-title' ),
-					modal: true,
-					resizable: false
-				});
+				width: 800,
+				position: ['center', 80],
+				autoOpen: false,
+				title: mw.msg( 'wikilove-dialog-title' ),
+				modal: true,
+				resizable: false
+			});
 			$dialog.parent().attr( 'id', 'mw-wikilove-overlay' );
 
 			$( '#mw-wikilove-button-preview' ).text( mw.msg( 'wikilove-button-preview' ) );
@@ -171,7 +165,7 @@ $.wikiLove = {
 			$( '#mw-wikilove-preview-form' ).submit( $.wikiLove.validatePreviewForm );
 			$( '#mw-wikilove-send-form' ).click( $.wikiLove.submitSend );
 
-			if ( mw.config.get( 'wikilove-anon' ) === 0 ) {
+			if ( !mw.config.get( 'wikilove-anon' ) ) {
 				$( '#mw-wikilove-anon-warning' ).hide();
 			}
 
@@ -532,7 +526,7 @@ $.wikiLove = {
 		msg = msg.replace( '$4', currentTypeOrSubtype.imageSize || options.defaultImageSize ); // replace the image size
 		msg = msg.replace( '$5', currentTypeOrSubtype.backgroundColor || options.defaultBackgroundColor ); // replace the background color
 		msg = msg.replace( '$6', currentTypeOrSubtype.borderColor || options.defaultBorderColor ); // replace the border color
-		msg = msg.replace( '$7', '<nowiki>' + mw.config.get( 'wikilove-recipient' ) + '</nowiki>' ); // replace the username we're sending to
+		msg = msg.replace( '$7', '<nowiki>' + mw.config.get( 'wikilove-recipient', '' ) + '</nowiki>' ); // replace the username we're sending to
 
 		return msg;
 	},
