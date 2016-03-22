@@ -166,7 +166,7 @@
 	"wikilove-type-makeyourown": "自己製作",
 	"wikilove-err-header": "請輸入標頭。",
 	"wikilove-err-title": "請輸入標題",
-	"wikilove-err-msg": "請輸入一個個人化的訊息。",
+	"wikilove-err-msg": "請輸入一則個人化的訊息。",
 	"wikilove-err-image": "請選擇圖片。",
 	"wikilove-err-image-bad": "圖片不存在。",
 	"wikilove-err-image-api": "取得圖片時出錯，請再試一次。",
