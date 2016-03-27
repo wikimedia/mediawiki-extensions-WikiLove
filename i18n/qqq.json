@@ -49,6 +49,7 @@
 	"wikilove-err-header": "[[File:Wiki Love 004.png|thumb]]\nUse the same translation for \"header\" as was used for {{msg-mw|wikilove-header}}.",
 	"wikilove-err-title": "\nTitle is the title of the wikilove box (e.g. \"Barnstar\")",
 	"wikilove-err-msg": "A warning shown when the message is empty.",
+	"wikilove-err-invalid-token": "{{Identical|Loss of session data}}",
 	"wikilove-err-not-logged-in": "A warning shown when the user is not logged in.",
 	"wikilove-err-invalid-username": "A warning shown when provided username is invalid.",
 	"wikilove-err-no-self-wikilove": "A warning shown when someone tries to send WikiLove to themself.",

@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"පසිඳු කාවින්ද"
+			"පසිඳු කාවින්ද",
+			"Tem"
 		]
 	},
 	"wikilove-button-preview": "Réamhamharc",
-	"wikilove-preview": "Réamhamharc"
+	"wikilove-preview": "Réamhamharc",
+	"wikilove-err-not-logged-in": "Níl tú logáilte isteach. Logáil isteach chun VicíGhrá a úsáid."
 }
