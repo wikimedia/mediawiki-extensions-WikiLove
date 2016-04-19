@@ -189,6 +189,10 @@ class ApiWikiLove extends ApiBase {
 		return 'csrf';
 	}
 
+	public function isWriteMode() {
+		return true;
+	}
+
 	/**
 	 * @see ApiBase::getExamplesMessages()
 	 */
