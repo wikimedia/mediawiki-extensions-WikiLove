@@ -21,8 +21,7 @@
 	},
 	"AutoloadClasses": {
 		"ApiWikiLove": "ApiWikiLove.php",
-		"WikiLoveHooks": "WikiLove.hooks.php",
-		"WikiLoveLocal": "WikiLove.local.php"
+		"WikiLoveHooks": "WikiLove.hooks.php"
 	},
 	"ResourceModules": {
 		"ext.wikiLove.icon": {
@@ -220,7 +219,10 @@
 			]
 		},
 		"ext.wikiLove.local": {
-			"class": "WikiLoveLocal"
+			"class": "ResourceLoaderWikiModule",
+			"scripts": [
+				"MediaWiki:WikiLove.js"
+			]
 		},
 		"ext.wikiLove.init": {
 			"scripts": [
