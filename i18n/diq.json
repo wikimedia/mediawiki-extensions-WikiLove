@@ -3,7 +3,8 @@
 		"authors": [
 			"Erdemaslancan",
 			"Mirzali",
-			"Gorizon"
+			"Gorizon",
+			"Kumkumuk"
 		]
 	},
 	"wikilove": "WikiSinen",
@@ -12,7 +13,7 @@
 	"wikilove-button-preview": "Verqayt",
 	"wikilove-preview": "Verqayt",
 	"wikilove-food-baklava-header": "Tenê beqlewa şıma rê!",
-	"wikilove-err-not-logged-in": "Akerdışa şıma aktiv niya. Qands wikisinayışi ronıştış akerê",
+	"wikilove-err-not-logged-in": "Akerdışa şıma aktiv niya. Qandê wikisinayışi ronıştış akerê",
 	"wikilove-err-invalid-username": "No nameyê karberi nêvêreno.",
 	"wikilove-what-is-this": "No çıko?",
 	"WikiLove.js": "/* JavaScripto ke tiya ca kerdo, WikiHezi keno xısusi. https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration bıvêne */"
