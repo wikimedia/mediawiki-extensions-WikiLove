@@ -171,7 +171,7 @@
 	"wikilove-err-send-api": "Дошло је до грешке при слању поруке. Покушајте поново.",
 	"wikilove-err-not-logged-in": "Нисте пријављени. Молимо вас пријавите се да бисте користили Вики љубав.",
 	"wikilove-err-invalid-username": "Корисничко име је неисправно.",
-	"wikilove-err-no-self-wikilove": "Нажалост, не можете послати WikiLove сами себи.",
+	"wikilove-err-no-self-wikilove": "Нажалост, не можете послати Викиљубав сами себи.",
 	"wikilove-err-cannot-edit": "Немате дозволу да мењате ову страницу.",
 	"wikilove-err-max-exceeded": "Не можете послати WikiLove на више од $1 {{PLURAL:$1|кориснику|корисника}} одједном.",
 	"wikilove-success-number": "$1 WikiLove {{PLURAL:$1|порука}} послато.",
