@@ -6,7 +6,8 @@
 			"Klutzy",
 			"Priviet",
 			"관인생략",
-			"아라"
+			"아라",
+			"Ykhwong"
 		]
 	},
 	"wikilove-desc": "다른 사용자에게 감사의 뜻을 쉽게 전하기 위한 인터페이스를 사용자 문서에 추가합니다.",
@@ -51,7 +52,7 @@
 	"wikilove-barnstar-diplomacy-desc": "평화의 반스타는 {{SITENAME}}에서 분쟁을 평화적으로 해결하도록 도운 사용자에게 주어집니다.",
 	"wikilove-barnstar-diplomacy-title": "평화의 반스타",
 	"wikilove-barnstar-goodhumor-option": "유머 반스타",
-	"wikilove-barnstar-goodhumor-desc": "유머 반스타는 분위기를 가볍게 하고 충돌을 해소하여 {{SITENAME}}(을)를 더 나은 곳으로 만드는 사용자에게 주어집니다.",
+	"wikilove-barnstar-goodhumor-desc": "유머 반스타는 분위기를 가볍게 하고 충돌을 해소하여 {{SITENAME}}을(를) 더 나은 곳으로 만드는 사용자에게 주어집니다.",
 	"wikilove-barnstar-goodhumor-title": "유머 반스타",
 	"wikilove-barnstar-brilliant-option": "참신한 아이디어 반스타",
 	"wikilove-barnstar-brilliant-desc": "참신한 아이디어 반스타는 아주 어려운 문제에 대한 멋진 해결책을 찾아낸 사용자에게 주어집니다.",
@@ -84,7 +85,7 @@
 	"wikilove-barnstar-antispam-desc": "스팸 방지 반스타는 {{SITENAME}}에서 스팸에 맞서 뛰어난 일을 하는 사용자에게 주어집니다.",
 	"wikilove-barnstar-antispam-title": "스팸 방지 반스타",
 	"wikilove-barnstar-photographers-option": "사진 반스타",
-	"wikilove-barnstar-photographers-desc": "사진 반스타는 사진 기술을 활용한 기여로 {{SITENAME}}(을)를 끊임없이 개선하는 사용자에게 주어집니다.",
+	"wikilove-barnstar-photographers-desc": "사진사 반스타는 사진 기술과 기여를 통해 {{SITENAME}}을(를) 꾸준히 개선하는 사용자에게 주어집니다.",
 	"wikilove-barnstar-photographers-title": "사진 반스타",
 	"wikilove-barnstar-kindness-option": "임의의 친절 반스타",
 	"wikilove-barnstar-kindness-desc": "임의의 친절 반스타는 자발적으로 친철을 베푸는 사용자에게 주어집니다.",
@@ -108,7 +109,7 @@
 	"wikilove-barnstar-teamwork-desc": "팀워크 반스타는 편집자 몇 사람이 사전 항목을 개선하기 위해 함께 작업할 때 주어집니다.",
 	"wikilove-barnstar-teamwork-title": "팀워크 반스타",
 	"wikilove-barnstar-technical-option": "기술 반스타",
-	"wikilove-barnstar-technical-desc": "기술 반스타는 기술적 작업(프로그래밍, 봇 작성, 링크 수정 등)으로 {{SITENAME}}(을)를 개선해 온 사람에게 주어집니다.",
+	"wikilove-barnstar-technical-desc": "기술 반스타는 기술적 작업(프로그래밍, 봇 작성, 링크 수정 등)으로 {{SITENAME}}을(를) 개선해 온 사람에게 주어집니다.",
 	"wikilove-barnstar-technical-title": "기술 반스타",
 	"wikilove-barnstar-tireless-option": "꾸준한 기여자 반스타",
 	"wikilove-barnstar-tireless-desc": "꾸준한 기여자 반스타는 항목 품질을 손상하지 않고 매우 많은 기여를 하는 꾸준한 사용자에게 주어집니다.",
