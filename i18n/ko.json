@@ -7,7 +7,8 @@
 			"Priviet",
 			"관인생략",
 			"아라",
-			"Ykhwong"
+			"Ykhwong",
+			"IRTC1015"
 		]
 	},
 	"wikilove-desc": "다른 사용자에게 감사의 뜻을 쉽게 전하기 위한 인터페이스를 사용자 문서에 추가합니다.",
@@ -170,7 +171,7 @@
 	"wikilove-err-preview-api": "미리 보는 동안 문제가 생겼습니다. 다시 시도하세요.",
 	"wikilove-err-send-api": "글을 보낼 때 문제가 생겼습니다. 다시 시도하세요.",
 	"wikilove-err-invalid-token": "세션 데이터를 잃어버려서 위키사랑을 보낼 수 없습니다. 페이지를 새로 고치거나 로그아웃하고 다시 로그인하세요.",
-	"wikilove-err-not-logged-in": "로그인하고 있지 않습니다. 위키사랑을 사용하려면 로그인하세요.",
+	"wikilove-err-not-logged-in": "로그인하지 않았습니다. 위키사랑을 사용하려면 로그인하세요.",
 	"wikilove-err-invalid-username": "사용자 이름이 올바르지 않습니다.",
 	"wikilove-err-no-self-wikilove": "자신에게 위키사랑을 보낼 수 없습니다, 죄송합니다!",
 	"wikilove-err-redirect": "사용자 토론 문서는 넘겨주기입니다.",
