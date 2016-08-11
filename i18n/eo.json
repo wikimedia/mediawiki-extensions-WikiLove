@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Yekrats",
-			"KuboF"
+			"KuboF",
+			"Robin van der Vliet"
 		]
 	},
 	"wikilove-desc": "Aldonas interfacon por sendi aprezajn mesaĝojn al la diskutopaĝoj de uzanto",
@@ -57,7 +58,7 @@
 	"wikilove-err-invalid-username": "La uzantonomo ne estas valida.",
 	"wikilove-summary": "/* $1 */ nova mesaĝo VikiAmo",
 	"wikilove-what-is-this": "Kio estas?",
-	"wikilove-anon-warning": "Notu: Ĉi tiu uzanto ne estas registrita, do li aŭ ŝi eble ne notos ĉi tiun mesaĝon.",
+	"wikilove-anon-warning": "Rimarko: Ĉi tiu uzanto ne estas registrita, do ĝi eble ne rimarkos ĉi tiun mesaĝon.",
 	"wikilove-commons-text": "Vi povas trovi bildojn krozante $1.",
 	"wikilove-terms-link": "kondiĉoj"
 }
