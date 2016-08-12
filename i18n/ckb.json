@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Calak"
+			"Calak",
+			"Sarchia"
 		]
 	},
 	"wikilove": "ویکیدیاری",
@@ -96,7 +97,7 @@
 	"wikilove-err-gallery-again": "دیسان ھەوڵ بدە",
 	"wikilove-err-preview-api": "لە کاتی پێشبینیندا ھەڵەیەک ھاتە پێش. تکایە دیسان ھەوڵ بدە.",
 	"wikilove-err-send-api": "لە کاتی ناردنی پەیامدا ھەڵەیەک ھاتە پێش. تکایە دیسان ھەوڵ بدە.",
-	"wikilove-err-not-logged-in": "نەچوویتە ژوورەوە. بۆ بەکارھێنانی ویکیدیاری تکایە بچۆ ژوورەوە.",
+	"wikilove-err-not-logged-in": "نەچوویتە ناوەوە. بۆ بەکارھێنانی ویکیدیاری تکایە بچۆ ناوەوە.",
 	"wikilove-err-invalid-username": "ناوی بەکارھێنەری نادروستە.",
 	"wikilove-err-no-self-wikilove": "ببوورە! ناتوانی ویکیدیاری بۆ خۆت بنێری.",
 	"wikilove-err-redirect": "پەڕەی لێدوانی بەکارھێنەر ڕەوانەکەرە.",
