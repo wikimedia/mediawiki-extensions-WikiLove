@@ -2,11 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"रमेश सिंह बोहरा",
-			"राम प्रसाद जोशी"
+			"राम प्रसाद जोशी",
+			"Nirajan pant"
 		]
 	},
 	"wikilove-food-bubbletea-header": "तमरी लेखा क्यै बबाल चाहा !",
-	"wikilove-err-not-logged-in": "तमले प्रवेश(लगइन) गर्याको आथिन, कृपया विकिलभ प्रयोग अद्दाकी पैल्ली प्रवेश अर ।",
+	"wikilove-err-not-logged-in": "तमले प्रवेश(लगइन) गर्याको आथिन, कृपया विकिलभ प्रयोग अद्दाकी पैल्ली प्रवेश अर:।",
 	"wikilove-err-invalid-username": "प्रयोगकर्ता नाम मानियाको नाइथी",
 	"wikilove-err-no-self-wikilove": "माफ गर्या ! तमी स्वयंलाई विकिलभ पठाउन सक्दाइनौ ।",
 	"wikilove-err-cannot-edit": "तमलाई यो पानो सम्पादन गद्द अनुमति छैन।",
