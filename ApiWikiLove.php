@@ -73,11 +73,7 @@ class ApiWikiLove extends ApiBase {
 
 		$api->execute();
 
-		if ( defined( 'ApiResult::META_CONTENT' ) ) {
-			$result = $api->getResult()->getResultData();
-		} else {
-			$result = $api->getResult()->getData();
-		}
+		$result = $api->getResult()->getResultData();
 		if ( isset( $result['edit'] ) && $result['edit']['result'] === "Success" ) {
 			$revId = $result['edit']['newrevid'];
 			DeferredUpdates::addCallableUpdate( function() use ( $revId ) {
