@@ -136,7 +136,7 @@ $.wikiLove = {
 	' + mw.message( 'wikilove-terms' ).escaped().replace( /\$1/, termsLink ) + '\
 	</div>\
 	<form id="mw-wikilove-send-form">\
-		<button class="submit mw-ui-button mw-ui-constructive" id="mw-wikilove-button-send" type="submit"></button>\
+		<button class="submit mw-ui-button mw-ui-progressive" id="mw-wikilove-button-send" type="submit"></button>\
 		<div id="mw-wikilove-send-spinner" class="mw-wikilove-spinner"></div>\
 	</form>\
 	<div id="mw-wikilove-success"></div>\
