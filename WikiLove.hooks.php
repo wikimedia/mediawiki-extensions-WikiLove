@@ -55,8 +55,8 @@ class WikiLoveHooks {
 		}
 
 		$title = self::getUserTalkPage( $skin->getTitle(), $skin->getUser() );
-		// getUserTalkPage() returns a string on error
-		if ( !is_string( $title ) ) {
+		// getUserTalkPage() returns an ApiMessage on error
+		if ( !$title instanceof ApiMessage ) {
 			$out->addModules( 'ext.wikiLove.init' );
 			$out->addModuleStyles( 'ext.wikiLove.icon' );
 			self::$recipient = $title->getBaseText();
@@ -109,8 +109,8 @@ class WikiLoveHooks {
 			return;
 		}
 
-		// getUserTalkPage() returns a string on error
-		if ( !is_string( self::getUserTalkPage( $skin->getTitle(), $skin->getUser() ) ) ) {
+		// getUserTalkPage() returns an ApiMessage on error
+		if ( !self::getUserTalkPage( $skin->getTitle(), $skin->getUser() ) instanceof ApiMessage ) {
 			$views['wikilove'] = array(
 				'text' => $skin->msg( 'wikilove-tab-text' )->text(),
 				'href' => '#',
@@ -140,18 +140,18 @@ class WikiLoveHooks {
 	 *
 	 * @param Title $title The title of a user page or user talk page
 	 * @param User $user the current user
-	 * @return Title|string Returns either the Title object for the talk page or an error string
+	 * @return Title|ApiMessage Returns either the Title object for the talk page or an error message
 	 */
 	public static function getUserTalkPage( $title, $user ) {
 		// Exit early if the sending user isn't logged in
 		if ( !$user->isLoggedIn() ) {
-			return wfMessage( 'wikilove-err-not-logged-in' )->plain();
+			return ApiMessage::create( 'wikilove-err-not-logged-in', 'notloggedin' );
 		}
 
 		// Exit early if the page is in the wrong namespace
 		$ns = $title->getNamespace();
 		if ( $ns != NS_USER && $ns != NS_USER_TALK ) {
-			return wfMessage( 'wikilove-err-invalid-username' )->plain();
+			return ApiMessage::create( 'wikilove-err-invalid-username', 'invalidusername' );
 		}
 
 		// If we're on a subpage, get the root page title
@@ -159,7 +159,7 @@ class WikiLoveHooks {
 
 		// Users can't send WikiLove to themselves
 		if ( $user->getName() === $baseTitle->getText() ) {
-			return wfMessage( 'wikilove-err-no-self-wikilove' )->plain();
+			return ApiMessage::create( 'wikilove-err-no-self-wikilove', 'no-self-wikilove' );
 		}
 
 		// Get the user talk page
@@ -176,12 +176,12 @@ class WikiLoveHooks {
 		// This means that the WikiLove tab will not appear on user pages or user talk pages if
 		// the user talk page is a redirect.
 		if ( $talkTitle->isRedirect() ) {
-			return wfMessage( 'wikilove-err-redirect' )->plain();
+			return ApiMessage::create( 'wikilove-err-redirect', 'isredirect' );
 		}
 
 		// Make sure we can edit the page
 		if ( !$talkTitle->quickUserCan( 'edit' ) ) {
-			return wfMessage( 'wikilove-err-cannot-edit' )->plain();
+			return ApiMessage::create( 'wikilove-err-cannot-edit', 'cannotedit' );
 		}
 
 		return $talkTitle;

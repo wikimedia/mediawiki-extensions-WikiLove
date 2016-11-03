@@ -75,5 +75,7 @@
 	"apihelp-wikilove-param-subject": "{{doc-apihelp-param|wikilove|subject}}",
 	"apihelp-wikilove-param-type": "{{doc-apihelp-param|wikilove|type}}",
 	"apihelp-wikilove-param-email": "{{doc-apihelp-param|wikilove|email}}",
-	"apihelp-wikilove-example-1": "{{doc-apihelp-example|wikilove}}"
+	"apihelp-wikilove-example-1": "{{doc-apihelp-example|wikilove}}",
+	"apiwarn-wikilove-ignoringunregistered": "{{doc-apierror}}",
+	"apiwarn-wikilove-notlogged": "{{doc-apierror}}"
 }
