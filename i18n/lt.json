@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Eitvys200",
-			"Hugo.arg"
+			"Hugo.arg",
+			"Homo"
 		]
 	},
 	"wikilove": "Wikilove",
@@ -20,7 +21,7 @@
 	"wikilove-image-example": "(pavyzdžiui: Trophy.png)",
 	"wikilove-button-preview": "Peržiūrėti",
 	"wikilove-preview": "Peržiūrėti",
-	"wikilove-notify": "Pranešti vartotojui e-paštu",
+	"wikilove-notify": "Pranešti naudotojui e-paštu",
 	"wikilove-button-send": "Siųsti WikiLove",
 	"wikilove-type-food": "Maistas ir gėrimai",
 	"wikilove-food-select": "Pasirinkite maistą ar gėrimą:",
