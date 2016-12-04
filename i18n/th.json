@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Pilarbini"
+			"Pilarbini",
+			"Aefgh39622"
 		]
 	},
-	"wikilove-err-not-logged-in": "คุณยังไม่ได้เข้าสู่ระบบ โปรดลงล็อกอินเพื่อใช้ WikiLove",
+	"wikilove-err-not-logged-in": "คุณยังไม่ได้เข้าสู่ระบบ โปรดเข้าสู่ระบบเพื่อใช้ WikiLove",
 	"wikilove-err-invalid-username": "ชื่อผู้ใช้ไม่ถูกต้อง"
 }

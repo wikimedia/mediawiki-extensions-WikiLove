@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Khanmarat"
+			"Khanmarat",
+			"Sorbat"
 		]
 	},
-	"wikilove-err-not-logged-in": "Сес ситстемаға кермәтегес. WikiLoveны ҡулланҡалы логинығыс пелән керең"
+	"wikilove-err-not-logged-in": "Сес системаға кермәтегес. WikiLove'ны ошланыу өцөн логин пелән керең."
 }
