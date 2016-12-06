@@ -10,13 +10,13 @@ class ApiWikiLove extends ApiBase {
 
 		$title = Title::newFromText( $params['title'] );
 		if ( is_null( $title ) ) {
-			$this->dieUsageMsg( array( 'invaliduser', $params['title'] ) );
+			$this->dieWithError( [ 'nosuchusershort', $params['title'] ], 'nosuchuser' );
 		}
 
 		$talk = WikiLoveHooks::getUserTalkPage( $title, $this->getUser() );
-		// getUserTalkPage() returns a string on error
-		if ( is_string( $talk ) ) {
-			$this->dieUsage( $talk, 'nowikilove' );
+		// getUserTalkPage() returns an ApiMessage on error
+		if ( $talk instanceof ApiMessage ) {
+			$this->dieWithError( $talk );
 		}
 
 		if ( $wgWikiLoveLogging ) {
@@ -102,7 +102,7 @@ class ApiWikiLove extends ApiBase {
 		$dbw = wfGetDB( DB_MASTER );
 		$receiver = User::newFromName( $talk->getSubjectPage()->getBaseText() );
 		if ( $receiver === false || $receiver->isAnon() ) {
-			$this->setWarning( 'Not logging unregistered recipients' );
+			$this->addWarning( 'apiwarn-wikilove-ignoringunregistered' );
 			return;
 		}
 
@@ -124,7 +124,7 @@ class ApiWikiLove extends ApiBase {
 		try{
 			$dbw->insert( 'wikilove_log', $values, __METHOD__ );
 		} catch( DBQueryError $dbqe ) {
-			$this->setWarning( 'Action was not logged' );
+			$this->addWarning( 'Action was not logged' );
 		}
 	}
 
