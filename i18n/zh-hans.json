@@ -204,5 +204,7 @@
 	"apihelp-wikilove-param-subject": "新章节的主题标题。",
 	"apihelp-wikilove-param-type": "维基友爱的类型（用于统计）；这相当于在菜单中选择的一个类型，及之后可选的子类型（例如“{{int:wikilove-barnstar-original-title}}”或“{{int:wikilove-kittens-header}}”）。",
 	"apihelp-wikilove-param-email": "可选填写的发送给用户的电子邮件消息内容。如果不能向该用户发送电子邮件，将返回一个警告。维基友爱将被发送到用户讨论页，无论是否设置此项。",
-	"apihelp-wikilove-example-1": "向“[[User:Dummy]]”发送维基有爱"
+	"apihelp-wikilove-example-1": "向“[[User:Dummy]]”发送维基有爱",
+	"apiwarn-wikilove-ignoringunregistered": "不记载未注册接收者",
+	"apiwarn-wikilove-notlogged": "操作没有记录"
 }

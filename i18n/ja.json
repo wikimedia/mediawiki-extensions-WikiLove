@@ -6,7 +6,8 @@
 			"Fryed-peach",
 			"Schu",
 			"Shirayuki",
-			"Whym"
+			"Whym",
+			"Mirinano"
 		]
 	},
 	"wikilove-desc": "利用者のトークページに前向きな反応を寄せやすくするインターフェイスを追加する",
@@ -19,7 +20,7 @@
 	"wikilove-get-started-header": "さあ、始めましょう!",
 	"wikilove-get-started-list-1": "送りたいウィキラブの種類を選択してください",
 	"wikilove-get-started-list-2": "そのウィキラブに詳細を加えてください",
-	"wikilove-get-started-list-3": "ウィキラブを送ってください!",
+	"wikilove-get-started-list-3": "ウィキラブを送ってください！",
 	"wikilove-add-details": "詳細をご記入ください",
 	"wikilove-image": "画像のファイル名を入力:",
 	"wikilove-select-image": "画像を選択:",

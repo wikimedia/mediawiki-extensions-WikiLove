@@ -4,5 +4,6 @@
 			"Wadorgurt"
 		]
 	},
-	"wikilove-err-not-logged-in": "Тӥ системае ӧд пырелэ. Тау на, пырелэ WikiLove уже кутыны вылысь."
+	"wikilove-err-not-logged-in": "Тӥ системае ӧд пырелэ. Тау на, пырелэ WikiLove уже кутыны вылысь.",
+	"wikilove-err-invalid-username": "Викиавторлэн сыӵе нимыз лэзёнтэм луэ."
 }

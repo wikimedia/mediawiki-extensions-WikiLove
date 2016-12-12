@@ -186,5 +186,7 @@
 	"apihelp-wikilove-param-text": "Roher Wikitext, der in den neuen Abschnitt eingefügt werden soll.",
 	"apihelp-wikilove-param-message": "Tatsächliche Nachricht, die der Benutzer eingegeben hat, für Protokollierungszwecke.",
 	"apihelp-wikilove-param-subject": "Betreffzeile des neuen Abschnitts.",
-	"apihelp-wikilove-example-1": "Sendet WikiLove an [[User:Dummy]]"
+	"apihelp-wikilove-example-1": "Sendet WikiLove an [[User:Dummy]]",
+	"apiwarn-wikilove-ignoringunregistered": "Unregistrierte Empfänger nicht protokollieren",
+	"apiwarn-wikilove-notlogged": "Die Aktion wurde nicht protokolliert"
 }

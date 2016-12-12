@@ -4,7 +4,8 @@
 			"Erdemaslancan",
 			"Mirzali",
 			"Gorizon",
-			"Kumkumuk"
+			"Kumkumuk",
+			"Gırd"
 		]
 	},
 	"wikilove": "WikiSinen",
@@ -14,7 +15,7 @@
 	"wikilove-preview": "Verqayt",
 	"wikilove-food-baklava-header": "Tenê beqlewa şıma rê!",
 	"wikilove-err-not-logged-in": "Şıma nêkewtê cı. Kerem kerên, seba gurenayışê WikiSinayışi ra cı kewê.",
-	"wikilove-err-invalid-username": "No nameyê karberi nêvêreno.",
+	"wikilove-err-invalid-username": "No namey karberi nêvêreno.",
 	"wikilove-what-is-this": "No çıko?",
 	"WikiLove.js": "/* JavaScripto ke tiya ca kerdo, WikiHezi keno xısusi. https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration bıvêne */"
 }
