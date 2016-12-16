@@ -208,5 +208,6 @@
 	"apihelp-wikilove-param-type": "Type de WikiLove (pour les statistiques) ; cela correspond à un type sélectionné dans le menu, et éventuellement à un sous-type après cela (par ex. comme dans « {{int:wikilove-barnstar-original-title}} » ou « {{int:wikilove-kittens-header}} »).",
 	"apihelp-wikilove-param-email": "Contenu du message de courriel facultatif envoyé à l’utilisateur? Un avertissement sera renvoyé si l’utilisateur ne peut être joint par courriel. WikiLove sera sinon envoyé aux pages de discussion des utilisateurs.",
 	"apihelp-wikilove-example-1": "Envoyer WikiLove à \"[[User:Dummy]]\"",
+	"apiwarn-wikilove-ignoringunregistered": "Pas de journalisation des destinataires non enregistrés.",
 	"apiwarn-wikilove-notlogged": "L'action n'a pas été enregistrée"
 }
