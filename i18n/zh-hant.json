@@ -202,5 +202,5 @@
 	"apihelp-wikilove-param-subject": "新節的主題標題。",
 	"apihelp-wikilove-param-type": "維基友愛的類型（用於統計）；這相當於在左邊的選單中選擇一種類型，以及之後可選擇的子類型 (如\"原星章\"或\"小貓\") 。",
 	"apihelp-wikilove-param-email": "將所述選填的電子郵件訊息內容傳送至使用者。如果使用者無法透過電子郵件傳送，將傳回一個警告。總之，維基友愛會被傳送至使用者討論頁面。",
-	"apihelp-wikilove-example-1": "發送維基友愛給''[[User:Dummy]]''"
+	"apihelp-wikilove-example-1": "向''[[User:Dummy]]''傳送維基友愛"
 }
