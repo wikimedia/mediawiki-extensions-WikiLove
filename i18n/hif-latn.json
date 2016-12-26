@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Thakurji"
+			"Thakurji",
+			"Abdul Kadir"
 		]
 	},
-	"wikilove-err-not-logged-in": "Aap abhi logged in nai hai. WikiLove ke use kare ke khaatir, meharbaani kar ke log in ho."
+	"wikilove-err-not-logged-in": "Aap abhi logged in nai hai. WikiLove ke use kare ke khaatir, meharbaani kar ke log in ho.",
+	"wikilove-err-invalid-username": "Username vaild nai hai"
 }
