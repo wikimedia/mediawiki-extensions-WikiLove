@@ -197,5 +197,7 @@
 	"apihelp-wikilove-param-subject": "כותרת הנושא של הפסקה החדשה.",
 	"apihelp-wikilove-param-type": "סוג הוויקי־אהבה (בשביל סטטיסטיקה); זה מקביל לסוג שנבחר בתפריט, ואולי גם תת־סוג אחרי־כן (למשל, \"{{int:wikilove-barnstar-original-title}}\" או \"{{int:wikilove-kittens-header}}\").",
 	"apihelp-wikilove-param-email": "התוכן של המכתב שיישלח בדוא\"ל למשתמש (לא חובה). תוחזר אזהרה אם אי־אפשר לשלוח דוא\"ל למשתמש. ויקי־אהבה תישלח למשתמש בכל מקרה.",
-	"apihelp-wikilove-example-1": "לשלוח ויקי־אהבה ל־\"[[User:Dummy]]\""
+	"apihelp-wikilove-example-1": "לשלוח ויקי־אהבה ל־\"[[User:Dummy]]\"",
+	"apiwarn-wikilove-ignoringunregistered": "לא יירשמו ביומן מקבלים בלתי־רשומים",
+	"apiwarn-wikilove-notlogged": "הפעולה לא נרשמה ביומן"
 }
