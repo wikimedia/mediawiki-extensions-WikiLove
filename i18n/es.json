@@ -6,7 +6,8 @@
 			"Fitoschido",
 			"Imre",
 			"PoLuX124",
-			"Macofe"
+			"Macofe",
+			"Dgstranz"
 		]
 	},
 	"wikilove-desc": "Añade una interfaz para facilitar comentarios positivos de los usuarios a las páginas de discusión de otros usuarios",
@@ -187,5 +188,6 @@
 	"WikiLove.js": "/ * El código JavaScript colocado aquí personaliza WikiLove, consulte https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration * /",
 	"apihelp-wikilove-param-type": "Tipo de WikiLove (para estadísticas); esto corresponde con un tipo seleccionado en el menú y, opcionalmente, un subtipo a continuación (por ejemplo, como en \"{{int:wikilove-barnstar-original-title}}\" o \"{{int:wikilove-kittens-header}}\").",
 	"apihelp-wikilove-param-email": "El contenido del correo electrónico opcional para enviar al usuario. Si no se puede mandarle un correo electrónico, se devolverá una advertencia. De todas formas, se enviará wikiaprecio a la página de discusión del usuario.",
-	"apihelp-wikilove-example-1": "Enviar wikiaprecio a «[[User:Dummy]]»"
+	"apihelp-wikilove-example-1": "Enviar wikiaprecio a «[[User:Dummy]]»",
+	"apiwarn-wikilove-notlogged": "La acción no se ha registrado"
 }
