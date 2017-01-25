@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joao Xavier"
+		]
+	},
+	"wikilove-err-not-logged-in": "Vu ne esas konektita. Voluntez facar \"log in\" por uzar WikiLove.",
+	"wikilove-err-invalid-username": "La uzantonomo esas nevalida."
+}
