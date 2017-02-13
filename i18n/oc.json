@@ -6,6 +6,9 @@
 	},
 	"wikilove-get-started-list-2": "Apondètz de detalhs a vòstre WikiLove",
 	"wikilove-add-details": "Apondre de detalhs",
+	"wikilove-err-image-api": "Quicòm a pas foncionat en recuperant l’imatge. Reensajatz.",
+	"wikilove-err-gallery": "Quicòm a pas foncionat al moment del cargament dels imatges !",
+	"wikilove-err-preview-api": "Quicòm a pas foncionat pendent la previsualizacion. Tornatz ensajar.",
 	"wikilove-err-not-logged-in": "Sètz pas connectat. Connectatz-vos per poder utilizar WikiLove.",
 	"wikilove-err-invalid-username": "Lo nom d’utilizaire es pas valid.",
 	"wikilove-commons-text": "Podètz trobar d'imatges en surfant sus $1."
