@@ -9,6 +9,7 @@
 	"wikilove-notify": "Notificar l’utilizaire per corrièl",
 	"wikilove-err-image-api": "Quicòm a pas foncionat en recuperant l’imatge. Reensajatz.",
 	"wikilove-err-gallery": "Quicòm a pas foncionat al moment del cargament dels imatges !",
+	"wikilove-err-gallery-again": "Ensajatz tornarmai",
 	"wikilove-err-preview-api": "Quicòm a pas foncionat pendent la previsualizacion. Tornatz ensajar.",
 	"wikilove-err-not-logged-in": "Sètz pas connectat. Connectatz-vos per poder utilizar WikiLove.",
 	"wikilove-err-invalid-username": "Lo nom d’utilizaire es pas valid.",
