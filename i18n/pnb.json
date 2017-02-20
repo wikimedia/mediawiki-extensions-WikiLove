@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Khalid Mahmood"
+			"Khalid Mahmood",
+			"Abbas dhothar"
 		]
 	},
-	"wikilove-err-not-logged-in": "تسیں لاگ ان نئیں ہووۓ۔ وکی لو ورتن لئی لاگ ان ہوو۔",
+	"wikilove-err-not-logged-in": "تسیں لاگ ان نئیں ہوئے۔ وکی لَوّ ورتن لئی لاگ ان ہوو۔",
 	"wikilove-err-invalid-username": "ایہ ورتنوالا ناں ٹھیک نہیں"
 }
