@@ -4,11 +4,12 @@
 			"MaGa",
 			"Roberta F.",
 			"Fraxinus",
-			"Irus"
+			"Irus",
+			"Bugoslav"
 		]
 	},
 	"wikilove": "WikiLove",
 	"wikilove-enable-preference": "Omogući iskazivanje zahvalnosti drugim suradnicima putem kartice WikiLove",
-	"wikilove-err-not-logged-in": "Niste prijavljeni. Molimo prijavite se kako bi koristili WikiLove.",
+	"wikilove-err-not-logged-in": "Niste prijavljeni. Molimo Vas prijavite se kako bi rabili WikiLove.",
 	"wikilove-err-invalid-username": "Suradničko ime nije prihvatljivo."
 }
