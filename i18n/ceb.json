@@ -4,5 +4,6 @@
 			"Bentong Isles"
 		]
 	},
-	"wikilove-err-not-logged-in": "Wala ka maka-log in. Palihog sa pag-log in aron makagamit sa WikiLove."
+	"wikilove-err-not-logged-in": "Wala ka maka-log in. Palihog sa pag-log in aron makagamit sa WikiLove.",
+	"wikilove-err-invalid-username": "Kining maong ngalan sa gumagamit dili madawat."
 }
