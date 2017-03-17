@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Amqui"
+			"Amqui",
+			"Jeannette Coocoo"
 		]
 	},
-	"wikilove-err-not-logged-in": "Nama ki tapikecinin."
+	"wikilove-err-not-logged-in": "Nama ki tapikecinin.",
+	"wikilove-err-invalid-username": "Nama mirowacin icinikasowin"
 }
