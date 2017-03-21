@@ -1,9 +1,40 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yueman"
+			"Yueman",
+			"Deryck Chan"
 		]
 	},
+	"wikilove": "維基愛心",
+	"wikilove-tab-text": "維基愛心",
+	"wikilove-get-started-header": "開始！",
+	"wikilove-get-started-list-1": "揀你想送邊種維基愛心",
+	"wikilove-get-started-list-2": "加細節落你個愛心訊息",
+	"wikilove-get-started-list-3": "寄出維基愛心！",
+	"wikilove-add-details": "加細節",
+	"wikilove-image": "入檔案名：",
+	"wikilove-select-image": "揀圖：",
+	"wikilove-header": "入標題：",
+	"wikilove-title": "入獎品題：",
+	"wikilove-enter-message": "寫段賀辭：",
+	"wikilove-omit-sig": "（唔使加簽名）",
+	"wikilove-image-example": "（例：Trophy.png）",
+	"wikilove-button-preview": "睇下",
+	"wikilove-preview": "預覽",
+	"wikilove-notify": "電郵通知用戶",
+	"wikilove-button-send": "寄出維基愛心",
+	"wikilove-type-barnstars": "星章",
+	"wikilove-barnstar-header": "送個星章畀你！",
+	"wikilove-barnstar-select": "揀個星章：",
+	"wikilove-err-gallery-again": "再試過",
+	"wikilove-err-preview-api": "預覽嗰陣出錯。唔該再試過。",
+	"wikilove-err-send-api": "寄出訊息嗰陣出錯。唔該再試過。",
 	"wikilove-err-not-logged-in": "你未簽到。請簽到後先至用WikiLove。",
-	"wikilove-err-invalid-username": "用戶名唔得。"
+	"wikilove-err-invalid-username": "用戶名唔得。",
+	"wikilove-err-redirect": "呢位用戶嘅傾偈版係個跳轉版。",
+	"wikilove-err-cannot-edit": "你無權改嗰版。",
+	"wikilove-err-max-exceeded": "你唔可以同時送維基愛心畀多過$1個用戶。",
+	"wikilove-what-is-this": "呢舊咩嚟㗎？",
+	"wikilove-terms-link": "條款",
+	"apiwarn-wikilove-notlogged": "冇登錄到呢個動作"
 }
