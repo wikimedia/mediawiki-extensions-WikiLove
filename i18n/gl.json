@@ -190,5 +190,6 @@
 	"apihelp-wikilove-param-subject": "Cabeceira de tema na nova sección.",
 	"apihelp-wikilove-param-type": "Tipo de WikiAmor (para estatísticas); isto corresponde co tipo seleccionado no menú da esquerda, e opcionalmente un subtipo despois dese (p. ex. como en \"{{int:wikilove-barnstar-original-title}}\" ou \"{{int:wikilove-kittens-header}}\").",
 	"apihelp-wikilove-param-email": "Contido da mensaxe de correo electrónico opcional a enviar ó usuario. Devolverase un aviso se non se lle pode enviar correos ó usuario. Enviarase o WikiAmor á páxina de conversa do usuario de tódolos xeitos.",
-	"apihelp-wikilove-example-1": "Enviar WikiAmor a \"[[User:Dummy]]\""
+	"apihelp-wikilove-example-1": "Enviar WikiAmor a \"[[User:Dummy]]\"",
+	"apiwarn-wikilove-notlogged": "A acción non foi rexistrada"
 }
