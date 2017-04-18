@@ -16,7 +16,7 @@
 	clear: both; /* for monobook skin */
 }
 
-/* dialog type selection *
+/* dialog type selection */
 /*#mw-wikilove-dialog*/ #mw-wikilove-select-type {
 	float: left;
 	width: 250px;
@@ -78,7 +78,7 @@
 	font-size: 1.2em;
 	font-weight: bold;
 	text-decoration: none;
-	color: white;
+	color: #fff;
 }
 
 /*#mw-wikilove-dialog*/ #mw-wikilove-select-type a .mw-wikilove-no-icon .mw-wikilove-link-text {
@@ -96,7 +96,7 @@
 }
 
 /*#mw-wikilove-dialog*/ #mw-wikilove-get-started h2 {
-	border: none;
+	border: 0;
 	font-weight: bold;
 	margin-left: -48px;
 
@@ -115,11 +115,11 @@
 	display: inline-block;
 }
 .ltr #mwe-wikilove-pointer-arrow:after {
-	content: "\2190";
+	content: '\2190';
 }
 
 .rtl #mwe-wikilove-pointer-arrow:after {
-	content: "\2192";
+	content: '\2192';
 }
 
 /*#mw-wikilove-dialog*/ #mw-wikilove-get-started ol {
@@ -149,14 +149,14 @@
 
 /*#mw-wikilove-dialog #mw-wikilove-add-details*/ #mw-wikilove-subtype-description {
 	margin: 5px 85px 8px 15px;
-	font-size: 1.0em;
+	font-size: 1em;
 	line-height: 1.2em;
 }
 
 /*#mw-wikilove-dialog*/ #mw-wikilove-add-details .mw-wikilove-note {
-	font-weight: light;
+	font-weight: lighter;
 	font-size: 0.9em;
-	color: #888888;
+	color: #888;
 }
 
 /*#mw-wikilove-dialog*/ #mw-wikilove-commons-text {
@@ -174,7 +174,7 @@
 }
 
 /*#mw-wikilove-dialog #mw-wikilove-gallery #mw-wikilove-gallery-error*/ #mw-wikilove-gallery-error-again {
-	color: #0645AD;
+	color: #0645ad;
 }
 
 /*#mw-wikilove-dialog*/ #mw-wikilove-gallery img {
@@ -184,7 +184,7 @@
 }
 
 /*#mw-wikilove-dialog*/ #mw-wikilove-gallery a:hover img,
-/*#mw-wikilove-dialog*/ #mw-wikilove-gallery a:focus img {
+#mw-wikilove-gallery a:focus img {
 	background-color: #aacfe9;
 }
 
@@ -218,7 +218,7 @@
 }
 
 /* dialog misc */
-#mw-wikilove-dialog input[type=text],
+#mw-wikilove-dialog input[type='text'],
 #mw-wikilove-dialog textarea,
 #mw-wikilove-dialog select {
 	margin: 5px 0 5px 15px;
@@ -226,8 +226,8 @@
 	display: block;
 }
 
-#mw-wikilove-dialog input[type=checkbox] {
-	display:inline-box;
+#mw-wikilove-dialog input[type='checkbox'] {
+	display: inline-box;
 	margin: 5px 0 5px 0;
 }
 
@@ -244,7 +244,7 @@
 	margin-bottom: 0.5em;
 	text-align: right;
 	font-size: 0.9em;
-	color: #888888;
+	color: #888;
 }
 
 #mw-wikilove-dialog .mw-wikilove-spinner {
@@ -254,7 +254,7 @@
 	display: none;
 
 	/* @embed */
-	background-image: url(images/spinner.gif);
+	background-image: url( images/spinner.gif );
 	background-position: 0 0;
 	background-repeat: repeat-x;
 	width: 16px;
@@ -262,7 +262,7 @@
 }
 
 #mw-wikilove-dialog .mw-wikilove-number {
-	color: white;
+	color: #fff;
 	float: left;
 	display: block;
 	width: 32px;
@@ -279,10 +279,10 @@
 
 #mw-wikilove-dialog .mw-wikilove-error {
 	/* @embed */
-	background-image: url(images/alert.png);
+	background-image: url( images/alert.png );
 	background-position: center left;
 	background-repeat: no-repeat;
-	color: red;
+	color: #f00;
 	font-weight: bold;
 	line-height: 1.4em;
 	padding: 7px 0 10px 34px;
@@ -291,10 +291,10 @@
 #mw-wikilove-dialog #mw-wikilove-success {
 	display: none;
 	/* @embed */
-	background-image: url(images/checkmark.png);
+	background-image: url( images/checkmark.png );
 	background-position: center left;
 	background-repeat: no-repeat;
-	color: #30925F;
+	color: #30925f;
 	font-weight: bold;
 	line-height: 1.4em;
 	padding: 7px 0 10px 34px;
@@ -314,6 +314,6 @@
 
 #mw-wikilove-dialog #mw-wikilove-image-preview-spinner {
 	float: none;
-	margin-left:auto;
-	margin-right:auto;
+	margin-left: auto;
+	margin-right: auto;
 }
