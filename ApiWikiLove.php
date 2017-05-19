@@ -20,7 +20,8 @@ class ApiWikiLove extends ApiBase {
 		}
 
 		if ( $wgWikiLoveLogging ) {
-			$this->saveInDb( $talk, $params['subject'], $params['message'], $params['type'], isset( $params['email'] ) ? 1 : 0 );
+			$this->saveInDb( $talk, $params['subject'], $params['message'], $params['type'],
+				isset( $params['email'] ) ? 1 : 0 );
 		}
 
 		// Create edit summary
@@ -29,7 +30,7 @@ class ApiWikiLove extends ApiBase {
 
 		// If LQT is installed and enabled, use it.
 		if ( class_exists( 'LqtDispatch' ) && LqtDispatch::isLqtPage( $talk ) ) {
-			$apiParamArray = array(
+			$apiParamArray = [
 				'action' => 'threadaction',
 				'threadaction' => 'newthread',
 				'talkpage' => $talk->getFullText(),
@@ -37,20 +38,22 @@ class ApiWikiLove extends ApiBase {
 				'reason' => $summary,
 				'text' => $params['text'],
 				'token' => $params['token']
-			);
+			];
 		// If Flow is installed and enabled, use it.
-		} elseif ( defined( 'CONTENT_MODEL_FLOW_BOARD' ) && $talk->hasContentModel( CONTENT_MODEL_FLOW_BOARD ) ) {
-			$apiParamArray = array(
+		} elseif ( defined( 'CONTENT_MODEL_FLOW_BOARD' )
+			&& $talk->hasContentModel( CONTENT_MODEL_FLOW_BOARD )
+		) {
+			$apiParamArray = [
 				'action' => 'flow',
 				'submodule' => 'new-topic',
 				'page' => $talk->getFullText(),
 				'nttopic' => $params['subject'],
 				'ntcontent' => $params['text'],
 				'token' => $params['token']
-			);
+			];
 		} else {
 			// Requires MediaWiki 1.19 or later
-			$apiParamArray = array(
+			$apiParamArray = [
 				'action' => 'edit',
 				'title' => $talk->getFullText(),
 				'section' => 'new',
@@ -59,7 +62,7 @@ class ApiWikiLove extends ApiBase {
 				'token' => $params['token'],
 				'summary' => $summary,
 				'notminor' => true
-			);
+			];
 		}
 
 		$api = new ApiMain(
@@ -86,7 +89,8 @@ class ApiWikiLove extends ApiBase {
 		}
 
 		$this->getResult()->addValue( 'redirect', 'pageName', $talk->getPrefixedDBkey() );
-		$this->getResult()->addValue( 'redirect', 'fragment', Title::escapeFragmentForURL( $strippedSubject ) );
+		$this->getResult()->addValue( 'redirect', 'fragment',
+			Title::escapeFragmentForURL( $strippedSubject ) );
 		// note that we cannot use Title::makeTitle here as it doesn't sanitize the fragment
 	}
 
@@ -107,7 +111,7 @@ class ApiWikiLove extends ApiBase {
 		}
 
 		$user = $this->getUser();
-		$values = array(
+		$values = [
 			'wll_timestamp' => $dbw->timestamp(),
 			'wll_sender' => $user->getId(),
 			'wll_sender_editcount' => $user->getEditCount(),
@@ -119,11 +123,11 @@ class ApiWikiLove extends ApiBase {
 			'wll_subject' => $subject,
 			'wll_message' => $message,
 			'wll_email' => $email,
-		);
+		];
 
 		try{
 			$dbw->insert( 'wikilove_log', $values, __METHOD__ );
-		} catch( DBQueryError $dbqe ) {
+		} catch ( DBQueryError $dbqe ) {
 			$this->addWarning( 'Action was not logged' );
 		}
 	}
@@ -138,13 +142,13 @@ class ApiWikiLove extends ApiBase {
 		$context = new DerivativeContext( $this->getContext() );
 		$context->setRequest( new DerivativeRequest(
 			$this->getRequest(),
-			array(
+			[
 				'action' => 'emailuser',
 				'target' => User::newFromName( $talk->getSubjectPage()->getBaseText() )->getName(),
 				'subject' => $subject,
 				'text' => $text,
 				'token' => $token
-			),
+			],
 			true
 		) );
 		$api = new ApiMain( $context, true );
@@ -152,33 +156,33 @@ class ApiWikiLove extends ApiBase {
 	}
 
 	public function getAllowedParams() {
-		return array(
-			'title' => array(
+		return [
+			'title' => [
 				ApiBase::PARAM_TYPE => 'string',
 				ApiBase::PARAM_REQUIRED => true,
-			),
-			'text' => array(
+			],
+			'text' => [
 				ApiBase::PARAM_TYPE => 'string',
 				ApiBase::PARAM_REQUIRED => true,
-			),
-			'message' => array(
+			],
+			'message' => [
 				ApiBase::PARAM_TYPE => 'string',
-			),
-			'token' => array(
-				ApiBase::PARAM_TYPE => 'string',
-				ApiBase::PARAM_REQUIRED => true,
-			),
-			'subject' => array(
+			],
+			'token' => [
 				ApiBase::PARAM_TYPE => 'string',
 				ApiBase::PARAM_REQUIRED => true,
-			),
-			'type' => array(
+			],
+			'subject' => [
 				ApiBase::PARAM_TYPE => 'string',
-			),
-			'email' => array(
+				ApiBase::PARAM_REQUIRED => true,
+			],
+			'type' => [
 				ApiBase::PARAM_TYPE => 'string',
-			),
-		);
+			],
+			'email' => [
+				ApiBase::PARAM_TYPE => 'string',
+			],
+		];
 	}
 
 	public function needsToken() {
@@ -193,9 +197,9 @@ class ApiWikiLove extends ApiBase {
 	 * @see ApiBase::getExamplesMessages()
 	 */
 	protected function getExamplesMessages() {
-		return array(
+		return [
 			'action=wikilove&title=User:Dummy&text=Love&subject=Hi&token=123ABC'
 				=> 'apihelp-wikilove-example-1',
-		);
+		];
 	}
 }
