@@ -17,10 +17,10 @@ class WikiLoveHooks {
 	public static function onLoadExtensionSchemaUpdates( $updater = null ) {
 		if ( $updater === null ) {
 			global $wgExtNewTables;
-			$wgExtNewTables[] = array( 'wikilove_log', dirname( __FILE__ ) . '/patches/WikiLoveLog.sql' );
+			$wgExtNewTables[] = [ 'wikilove_log', __DIR__ . '/patches/WikiLoveLog.sql' ];
 		} else {
-			$updater->addExtensionUpdate( array( 'addTable', 'wikilove_log',
-				dirname( __FILE__ ) . '/patches/WikiLoveLog.sql', true ) );
+			$updater->addExtensionUpdate( [ 'addTable', 'wikilove_log',
+				__DIR__ . '/patches/WikiLoveLog.sql', true ] );
 		}
 	}
 
@@ -33,11 +33,11 @@ class WikiLoveHooks {
 	public static function onGetPreferences( $user, &$preferences ) {
 		global $wgWikiLoveGlobal;
 		if ( !$wgWikiLoveGlobal ) {
-			$preferences['wikilove-enabled'] = array(
+			$preferences['wikilove-enabled'] = [
 				'type' => 'check',
 				'section' => 'editing/advancedediting',
 				'label-message' => 'wikilove-enable-preference',
-			);
+			];
 		}
 	}
 
@@ -86,9 +86,9 @@ class WikiLoveHooks {
 	 */
 	public static function onSkinTemplateNavigation( &$skin, &$links ) {
 		if ( self::showIcon( $skin ) ) {
-			self::skinConfigViewsLinks( $skin, $links['views']);
+			self::skinConfigViewsLinks( $skin, $links['views'] );
 		} else {
-			self::skinConfigViewsLinks( $skin, $links['actions']);
+			self::skinConfigViewsLinks( $skin, $links['actions'] );
 		}
 	}
 
@@ -111,10 +111,10 @@ class WikiLoveHooks {
 
 		// getUserTalkPage() returns an ApiMessage on error
 		if ( !self::getUserTalkPage( $skin->getTitle(), $skin->getUser() ) instanceof ApiMessage ) {
-			$views['wikilove'] = array(
+			$views['wikilove'] = [
 				'text' => $skin->msg( 'wikilove-tab-text' )->text(),
 				'href' => '#',
-			);
+			];
 			if ( self::showIcon( $skin ) ) {
 				$views['wikilove']['class'] = 'icon';
 				$views['wikilove']['primary'] = true;
@@ -209,8 +209,8 @@ class WikiLoveHooks {
 		// FIXME HACK: The extension never actually required the 'wikilove_log' table
 		// and would suppress db errors if it didn't exist
 		if ( $wgWikiLoveLogging && $dbr->tableExists( 'wikilove_log' ) ) {
-			$updateFields[] = array( 'wikilove_log', 'wll_sender' );
-			$updateFields[] = array( 'wikilove_log', 'wll_receiver' );
+			$updateFields[] = [ 'wikilove_log', 'wll_sender' ];
+			$updateFields[] = [ 'wikilove_log', 'wll_receiver' ];
 		}
 	}
 
