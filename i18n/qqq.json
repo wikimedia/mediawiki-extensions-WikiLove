@@ -196,6 +196,8 @@
 	"tag-wikilove-description": "Description for revision tag added when edit is made using WikiLove",
 	"WikiLove.js": "JavaScript comment indicating what the page is used for",
 	"apihelp-wikilove-description": "{{doc-apihelp-description|wikilove}}",
+	"apihelp-wikilove-summary": "{{doc-apihelp-summary|wikilove}}",
+	"apihelp-wikilove-extended-description": "{{doc-apihelp-extended-description|wikilove}}",
 	"apihelp-wikilove-param-title": "{{doc-apihelp-param|wikilove|title}}",
 	"apihelp-wikilove-param-text": "{{doc-apihelp-param|wikilove|text}}",
 	"apihelp-wikilove-param-message": "{{doc-apihelp-param|wikilove|message}}",
