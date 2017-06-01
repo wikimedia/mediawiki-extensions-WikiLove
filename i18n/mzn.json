@@ -5,5 +5,6 @@
 		]
 	},
 	"wikilove-err-not-logged-in": "شمه دله بموئن ثبت نیّه. اگه خانّی ویکی‌هدیه جه کار هاکنین، ونه دِباره لاگین بَواشین.",
-	"wikilove-err-invalid-username": "کاروری نوم معتبر نی‌یه."
+	"wikilove-err-invalid-username": "کاروری نوم معتبر نی‌یه.",
+	"wikilove-commons-link": "ویکی‌تلمبار"
 }
