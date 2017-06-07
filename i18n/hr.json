@@ -10,6 +10,7 @@
 	},
 	"wikilove": "WikiLove",
 	"wikilove-enable-preference": "Omogući iskazivanje zahvalnosti drugim suradnicima putem kartice WikiLove",
+	"tooltip-ca-wikilove": "Pošaljite poruku kojom pokazujete Vaše cijenjenje ovoga suradnika",
 	"wikilove-err-not-logged-in": "Niste prijavljeni. Molimo Vas prijavite se kako bi rabili WikiLove.",
 	"wikilove-err-invalid-username": "Suradničko ime nije prihvatljivo."
 }
