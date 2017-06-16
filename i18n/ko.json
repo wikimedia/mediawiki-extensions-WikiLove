@@ -188,6 +188,7 @@
 	"tag-wikilove-description": "위키사랑 도구를 사용하여 이루어진 편집",
 	"WikiLove.js": "/* 여기 설치된 자바스크립트에서 위키사랑을 설정합니다. https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration 을 참고하세요. */",
 	"apihelp-wikilove-description": "위키사랑을 다른 사용자에게 부여합니다.\n\n위키사랑은 프리셋이나 지역적으로 정의된 틀이 있는 편리한 인터페이스를 통해 사용자의 토론 문서에 게시되는 긍정적인 메시지입니다. 이 동작은 지정된 위키텍스트를 특정 토론 문서에 추가합니다. 통계적인 목적의 경우 유형과 기타 데이터가 기록됩니다.",
+	"apihelp-wikilove-summary": "다른 사용자에게 위키사랑을 수여합니다.",
 	"apihelp-wikilove-param-title": "위키사랑을 보낼 사용자 문서나 사용자 토론 문서의 완전한 이름.",
 	"apihelp-wikilove-param-text": "새로운 문단에 추가할 순수 위키텍스트.",
 	"apihelp-wikilove-param-message": "기록 목적을 위해 사용자가 입력한 실제 메시지.",
