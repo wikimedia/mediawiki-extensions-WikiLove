@@ -19,7 +19,8 @@
 			"Verdy p",
 			"ZxxZxxZ",
 			"Wladek92",
-			"Fredlefred"
+			"Fredlefred",
+			"Thibaut120094"
 		]
 	},
 	"wikilove-desc": "Ajoute une interface pour faciliter la rétroaction positive sur la page de discussion d’un utilisateur",
@@ -201,6 +202,8 @@
 	"tag-wikilove-description": "Modification faite avec l’outil WikiLove",
 	"WikiLove.js": "/ * le JavaScript placé ici personnalise WikiLove, voyez https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration * /",
 	"apihelp-wikilove-description": "Donner un WikiLove à un autre utilisateur.\n\nWikiLove est un message positif posté sur la page de discussion d’un utilisateur via une interface appropriée avec des modèles prédéfinis ou définis en local. Cette action ajoute le wikitexte spécifié à une certaine page de discussion. À des fins statistiques, le type et d’autres données sont tracés.",
+	"apihelp-wikilove-summary": "Donner du WikiLove à un autre utilisateur.",
+	"apihelp-wikilove-extended-description": "WikiLove est un message positif posté sur la page de discussion d’un utilisateur via une interface appropriée avec des modèles prédéfinis ou définis en local. Cette action ajoute le wikitexte spécifié à une certaine page de discussion. À des fins statistiques, le type et d’autres données sont tracés.",
 	"apihelp-wikilove-param-title": "Nom de page complet de la page utilisateur ou de la page de discussion de l’utilisateur auquel envoyer le WikiLove.",
 	"apihelp-wikilove-param-text": "Wikitexte brut à ajouter dans la nouvelle section.",
 	"apihelp-wikilove-param-message": "Message réellement saisi par l’utilisateur, à des fins de traçage.",
