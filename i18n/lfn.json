@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Cgboeree"
+			"Cgboeree",
+			"Katxis"
 		]
 	},
-	"wikilove-err-not-logged-in": "Tu no es identifiada. Per favore identifia se per usa WikiLove.",
-	"wikilove-err-invalid-username": "La nom de usor no es asetable."
+	"wikilove-err-not-logged-in": "Tu no ia identifia tu. Per favore identifia tu per usa WikiLove.",
+	"wikilove-err-invalid-username": "La nom de usor no es valida."
 }
