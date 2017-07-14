@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dinkawiki"
+			"Dinkawiki",
+			"Amire80"
 		]
 	},
-	"wikilove-err-not-logged-in": "Yïn cïï ŋaanythïn. ŋaanythïn bë WikiLove looi.",
-	"wikilove-err-invalid-username": "rinluui cïïlui"
+	"wikilove-err-not-logged-in": "Yïn cïï ŋaanythïn. Ŋaanythïn bë WikiLove looi.",
+	"wikilove-err-invalid-username": "Rinluui cïïlui"
 }
