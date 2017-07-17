@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ibrahim"
+			"Ibrahim",
+			"ToJack"
 		]
 	},
-	"wikilove-err-not-logged-in": "Шумо ворид нашудаед. Лутфан барои истифодаи ВикиОшиқӣ ворид шавад."
+	"wikilove-err-not-logged-in": "Шумо ворид нашудаед. Лутфан барои истифодаи ВикиОшиқӣ ворид шавад.",
+	"wikilove-commons-link": "Викианбор"
 }
