@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Haqmar",
-			"Рустам Нурыев"
+			"Рустам Нурыев",
+			"Ләйсән"
 		]
 	},
 	"wikilove-select-image": "Рәсем һайлағыҙ:",
@@ -13,6 +14,6 @@
 	"wikilove-image-example": "(мәҫәлән: Trophy.png)",
 	"wikilove-button-preview": "Алдан байҡау",
 	"wikilove-preview": "Алдан байҡау",
-	"wikilove-err-not-logged-in": "Һеҙ системала танылмағанһығыҙ. WikiLove менән ҡулланыу өсөн, зинһар, танылығыҙ.",
+	"wikilove-err-not-logged-in": "Һеҙ системала танылмағанһығыҙ. WikiLove менән ҡулланыу өсөн танылығыҙ.",
 	"wikilove-err-invalid-username": "Бындай ҡулланыусы исеме алырға ярамай"
 }
