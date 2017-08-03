@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hitaypayan"
+			"Hitaypayan",
+			"Translatealcd"
 		]
 	},
-	"wikilove-err-not-logged-in": "Ini’ su’ kzyup na’.\nKzyup hru bing sa ani cisal miru’ na Beki’ yo’ay."
+	"wikilove-err-not-logged-in": "Ini’ su’ kzyup na’.\nKzyup hru bing sa ani cisal miru’ na Beki’ yo’ay.",
+	"wikilove-err-invalid-username": "Ungat zyuwaw na sinllwan sa pbiru’"
 }
