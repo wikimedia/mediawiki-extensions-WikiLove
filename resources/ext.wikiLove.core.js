@@ -835,7 +835,7 @@ $.wikiLove = {
 		} else { // legacy skins
 			$wikiLoveLink = $( '#topbar a:contains(' + mw.msg( 'wikilove-tab-text' ) + ')' );
 		}
-		$wikiLoveLink.unbind( 'click' );
+		$wikiLoveLink.off( 'click' );
 		$wikiLoveLink.click( function ( e ) {
 			e.preventDefault();
 			$.wikiLove.openDialog();
