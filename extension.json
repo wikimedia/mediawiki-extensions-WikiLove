@@ -35,6 +35,7 @@
 				"wikilove-type-barnstars",
 				"wikilove-type-food",
 				"wikilove-type-kittens",
+				"wikilove-type-goats",
 				"wikilove-type-makeyourown",
 				"wikilove-barnstar-header",
 				"wikilove-barnstar-select",
@@ -157,7 +158,8 @@
 				"wikilove-food-stroopwafels-option",
 				"wikilove-food-stroopwafels-desc",
 				"wikilove-food-stroopwafels-header",
-				"wikilove-kittens-header"
+				"wikilove-kittens-header",
+				"wikilove-goats-header"
 			]
 		},
 		"ext.wikiLove.startup": {

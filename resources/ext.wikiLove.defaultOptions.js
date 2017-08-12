@@ -363,6 +363,19 @@ $.wikiLoveOptions = {
 			},
 			icon: mw.config.get( 'wgExtensionAssetsPath' ) + '/WikiLove/resources/images/icons/wikilove-icon-kitten.png'
 		},
+		'goat': {
+			name: mw.msg( 'wikilove-type-goats' ),
+			fields: [ 'header', 'message' ],
+			header: mw.msg( 'wikilove-goats-header' ),
+			text: '[[$3|left|150px]]\n$1\n\n~~~~\n<br style="clear: both;"/>', // $3 is the image filename
+			gallery: {
+				imageList: [ 'A aesthetic goat.JPG', 'Boer Goat (8742860752).jpg', 'Házikecske portré.JPG' ],
+				width: 145,
+				height: 150,
+				number: 3
+			},
+			icon: mw.config.get( 'wgExtensionAssetsPath' ) + '/WikiLove/resources/images/icons/wikilove-icon-goat.png'
+		},
 		// default type, nice to leave this one in place when adding other types
 		'makeyourown': {
 			name: mw.msg( 'wikilove-type-makeyourown' ),
