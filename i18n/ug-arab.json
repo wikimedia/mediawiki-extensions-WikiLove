@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sahran"
+			"Sahran",
+			"Uzdil"
 		]
 	},
 	"wikilove-select-type": "تىپىنى تاللاڭ",
@@ -11,6 +12,7 @@
 	"wikilove-err-image": "سۈرەت تاللاڭ.",
 	"wikilove-err-gallery-again": "قايتا سىنا",
 	"wikilove-err-not-logged-in": "تېخى تىزىمغا كىرمەپسىز. WikiLove نى ئىشلىتىش ئۈچۈن تىزىمغا كىرىڭ.",
+	"wikilove-err-invalid-username": "ئەزا نامى ئىناۋەتسىز.",
 	"wikilove-commons-link": "ۋىكى ۋاستە ھەمبەھىر",
 	"wikilove-terms-url": "//wikimediafoundation.org/wiki/Feedback_privacy_statement"
 }
