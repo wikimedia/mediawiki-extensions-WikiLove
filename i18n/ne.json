@@ -4,7 +4,8 @@
 			"RajeshPandey",
 			"Nirmal Dulal",
 			"बिप्लब आनन्द",
-			"राम प्रसाद जोशी"
+			"राम प्रसाद जोशी",
+			"Nirajan pant"
 		]
 	},
 	"wikilove-desc": "प्रयोगकर्ता वार्ता पृष्ठहरूमा प्रयोगकर्ताको सकारात्मक प्रतिकृया व्यक्त गर्ने सुविधाको लागि इन्टरफेस जोड्छ।",
@@ -144,6 +145,8 @@
 	"wikilove-food-strawberries-option": "स्ट्रबेरी",
 	"wikilove-type-kittens": "छाउराहरू",
 	"wikilove-kittens-header": "तपाईंको लागि एक छाउरो!",
+	"wikilove-type-goats": "बाख्राहरू",
+	"wikilove-goats-header": "एउटा बाख्रा तपाईंको लागि!",
 	"wikilove-type-makeyourown": "तपाईंको आफ्नै बनाउनुहोस्",
 	"wikilove-err-header": "कृपया शिर्षक हाल्नुहोस।",
 	"wikilove-err-title": "कृपया शिर्षक हाल्नुहोस।",

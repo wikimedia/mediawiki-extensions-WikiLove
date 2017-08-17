@@ -15,7 +15,8 @@
 			"Zhxy 519",
 			"飞舞回堂前",
 			"EagerLin",
-			"S8321414"
+			"S8321414",
+			"Wwycheuk"
 		]
 	},
 	"wikilove-desc": "加入一個促進正向使用者回饋的介面至使用者對話頁面",
@@ -178,7 +179,7 @@
 	"wikilove-err-preview-api": "預覽時發生錯誤，請再試一次。",
 	"wikilove-err-send-api": "傳送訊息時發生錯誤，請再試一次。",
 	"wikilove-err-invalid-token": "連線階段資料遺失，無法發送維基友愛。 請嘗試重新載入頁面或登出再重新登入。",
-	"wikilove-err-not-logged-in": "您尚未登入。請登入後再使用維基友愛。",
+	"wikilove-err-not-logged-in": "尚未登入。請您登入後再使用維基友愛。",
 	"wikilove-err-invalid-username": "使用者名稱無效。",
 	"wikilove-err-no-self-wikilove": "很抱歉，您不能給自己傳送維基友愛！",
 	"wikilove-err-redirect": "此使用者的對話頁面是重新導向。",
