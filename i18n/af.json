@@ -3,7 +3,8 @@
 		"authors": [
 			"Ansumang",
 			"Naudefj",
-			"Fwolff"
+			"Fwolff",
+			"Biggs ZA"
 		]
 	},
 	"wikilove-desc": "Voeg 'n koppelvlak by vir die fasilitering van positiewe terugvoer op gebruikers se besprekingsblaaie",
@@ -78,6 +79,8 @@
 	"wikilove-food-stroopwafels-header": "'n Paar stroopwafels vir jou!",
 	"wikilove-type-kittens": "Katjies",
 	"wikilove-kittens-header": "'n Katjie vir jou!",
+	"wikilove-type-goats": "Bokke",
+	"wikilove-goats-header": "'n Bok vir jou!",
 	"wikilove-type-makeyourown": "Maak u eie",
 	"wikilove-err-header": "Verskaf asseblief 'n opskrif.",
 	"wikilove-err-title": "Verskaf asseblief 'n titel.",

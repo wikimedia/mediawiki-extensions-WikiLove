@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"MokaAkashiyaPT"
+		]
+	},
+	"wikilove": "BiquiAprécio",
+	"wikilove-tab-text": "BiquiAprécio",
+	"wikilove-select-type": "Scolha l tipo",
+	"wikilove-header": "Antroduza un cabeçalho:",
+	"wikilove-title": "Antroduza l títalo dun prémio:",
+	"wikilove-button-preview": "Ber cumo queda",
+	"wikilove-preview": "Antebison",
+	"wikilove-type-barnstars": "Medalhas",
+	"wikilove-type-food": "Quemidos i bubidas",
+	"wikilove-food-baklava-option": "Baclava",
+	"wikilove-food-baklava-header": "Ua baclava pa ti!",
+	"wikilove-food-cookie-option": "Bolaixa",
+	"wikilove-type-kittens": "Gatinhos",
+	"wikilove-err-header": "Antroduza un cabeçalho, por fabor.",
+	"wikilove-err-invalid-token": "Nun fui possible ambiar l BiquiAprécio debido a la perda de dados de la sue sesson. Tente recargar la páigina ó buoltar a outenticar-se.",
+	"wikilove-err-invalid-username": "L nome d'outelizador ye ambálido.",
+	"wikilove-what-is-this": "L que ye esto?",
+	"wikilove-commons-link": "Wikimedia Commons",
+	"wikilove-commons-url": "//commons.wikimedia.org/wiki/Páigina_percipal?uselang=mwl",
+	"wikilove-terms-link": "estas cundiçones",
+	"wikilove-terms-url": "//wikimediafoundation.org/wiki/Feedback_privacy_statement",
+	"apihelp-wikilove-description": "Ambie un BiquiAprécio a outro outelizador.\n\nUn BiquiAprécio ye ua mensaige positiba publicada na páigina de cumbersa dun outelizador, atrabeç dua anterface cumbeniente, cun modelos gerales ó defenidos lhocalmente. Esta açon adiciona a ua detreminada páigina de cumbersa l testo biqui (wiki) specificado. Pa fines statísticos, será registrado l tipo i outros dados."
+}
