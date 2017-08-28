@@ -8,7 +8,8 @@
 			"관인생략",
 			"아라",
 			"Ykhwong",
-			"IRTC1015"
+			"IRTC1015",
+			"Bluemersen"
 		]
 	},
 	"wikilove-desc": "다른 사용자에게 감사의 뜻을 쉽게 전하기 위한 인터페이스를 사용자 문서에 추가합니다.",
@@ -158,6 +159,8 @@
 	"wikilove-food-stroopwafels-header": "당신을 위한 스트룹와플!",
 	"wikilove-type-kittens": "새끼 고양이",
 	"wikilove-kittens-header": "당신을 위한 고양이!",
+	"wikilove-type-goats": "염소",
+	"wikilove-goats-header": "당신을 위한 염소!",
 	"wikilove-type-makeyourown": "자신이 직접 만들기",
 	"wikilove-err-header": "주제를 입력하세요.",
 	"wikilove-err-title": "상 이름을 입력하세요.",
