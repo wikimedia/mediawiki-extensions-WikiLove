@@ -7,7 +7,8 @@
 			"Milicevic01",
 			"Nikola Smolenski",
 			"Rancher",
-			"Сербијана"
+			"Сербијана",
+			"Zoranzoki21"
 		]
 	},
 	"wikilove-desc": "Додаје интерфејс за исказивање позитивних повратних информација на корисничке странице за разговор",
@@ -157,6 +158,8 @@
 	"wikilove-food-stroopwafels-header": "Стропвафли за тебе!",
 	"wikilove-type-kittens": "Мачићи",
 	"wikilove-kittens-header": "Маче за тебе!",
+	"wikilove-type-goats": "Козе",
+	"wikilove-goats-header": "Коза за тебе!",
 	"wikilove-type-makeyourown": "Направите своје",
 	"wikilove-err-header": "Унесите заглавље.",
 	"wikilove-err-title": "Унесите наслов.",
@@ -172,6 +175,7 @@
 	"wikilove-err-not-logged-in": "Нисте пријављени. Молимо вас пријавите се да бисте користили Вики љубав.",
 	"wikilove-err-invalid-username": "Корисничко име је неисправно.",
 	"wikilove-err-no-self-wikilove": "Нажалост, не можете послати Викиљубав сами себи.",
+	"wikilove-err-redirect": "Корисничка страница за разговор је преусмерење.",
 	"wikilove-err-cannot-edit": "Немате дозволу да мењате ову страницу.",
 	"wikilove-err-max-exceeded": "Не можете послати WikiLove на више од $1 {{PLURAL:$1|кориснику|корисника}} одједном.",
 	"wikilove-success-number": "$1 WikiLove {{PLURAL:$1|порука}} послато.",
@@ -185,5 +189,7 @@
 	"wikilove-terms": "Слањем прихватате транспарентност коју налажу ови $1.",
 	"wikilove-terms-link": "услови",
 	"wikilove-terms-url": "//wikimediafoundation.org/wiki/Feedback_privacy_statement?uselang=sr-ec",
-	"WikiLove.js": "/* Овде постављен јаваскрипт прилагођава Викиљубав. Погледајте https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"tag-wikilove-description": "Измена направљена користећи алатку Викиљубав",
+	"WikiLove.js": "/* Овде постављен јаваскрипт прилагођава Викиљубав. Погледајте https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
+	"apihelp-wikilove-example-1": "Доделите викиљубав кориснику \"[[User:Dummy|Dummy]]\""
 }
