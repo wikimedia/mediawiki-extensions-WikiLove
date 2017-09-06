@@ -565,6 +565,7 @@ $.wikiLove = {
 			'contentmodel': 'wikitext',
 			'text': wikitext,
 			'prop': 'text',
+			'disableeditsection': true,
 			'pst': true
 		} )
 			.done( function ( data ) {
