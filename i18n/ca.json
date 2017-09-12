@@ -6,7 +6,8 @@
 			"Gerardduenas",
 			"Anskar",
 			"Joan manel",
-			"Qllach"
+			"Qllach",
+			"Abella"
 		]
 	},
 	"wikilove-desc": "Afegeix una interfície per facilitar els comentaris positius als usuaris en llurs pàgines de discussió",
@@ -106,7 +107,7 @@
 	"wikilove-err-gallery-again": "Torneu-ho a provar",
 	"wikilove-err-preview-api": "Quelcom ha fallat en la previsualització. Torneu-ho a provar.",
 	"wikilove-err-send-api": "Quelcom ha fallat en enviar el missatge. Torneu-ho a provar.",
-	"wikilove-err-not-logged-in": "No heu iniciat la sessió. Inicieu-la per poder utilitzar WikiLove.",
+	"wikilove-err-not-logged-in": "No heu iniciat la sessió. Inicieu-la per a poder utilitzar el WikiLove.",
 	"wikilove-err-invalid-username": "Aquest nom d'usuari no està permès.",
 	"wikilove-summary": "/* $1 */ nou missatge d'EmpatiWiki",
 	"wikilove-what-is-this": "Què és això?",

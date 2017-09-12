@@ -19,6 +19,7 @@
 	"wikilove-type-kittens": "Gatinhos",
 	"wikilove-err-header": "Antroduza un cabeçalho, por fabor.",
 	"wikilove-err-invalid-token": "Nun fui possible ambiar l BiquiAprécio debido a la perda de dados de la sue sesson. Tente recargar la páigina ó buoltar a outenticar-se.",
+	"wikilove-err-not-logged-in": "Nun stá outenticado. Por fabor, antre na sue cuonta pa outelizar l WikiAprécio.",
 	"wikilove-err-invalid-username": "L nome d'outelizador ye ambálido.",
 	"wikilove-what-is-this": "L que ye esto?",
 	"wikilove-commons-link": "Wikimedia Commons",
