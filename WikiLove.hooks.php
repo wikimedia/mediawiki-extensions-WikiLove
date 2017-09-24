@@ -205,7 +205,7 @@ class WikiLoveHooks {
 	 */
 	public static function onUserMergeAccountFields( array &$updateFields ) {
 		global $wgWikiLoveLogging;
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		// FIXME HACK: The extension never actually required the 'wikilove_log' table
 		// and would suppress db errors if it didn't exist
 		if ( $wgWikiLoveLogging && $dbr->tableExists( 'wikilove_log' ) ) {
