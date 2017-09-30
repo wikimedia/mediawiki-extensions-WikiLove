@@ -172,7 +172,7 @@
 	"wikilove-err-invalid-token": "No se pudo enviar el WikiLove debido a una pérdida de datos de sesión. Intenta volver a cargar la página o cierra la sesión y posteriormente vuelve a iniciarla.",
 	"wikilove-err-not-logged-in": "No estás conectado. Inicia sesión para utilizar WikiLove.",
 	"wikilove-err-invalid-username": "El nombre de usuario no es válido.",
-	"wikilove-err-no-self-wikilove": "No te puedes enviar WikiLove a ti mismo. ¡Lo siento!",
+	"wikilove-err-no-self-wikilove": "No es posible enviarse wikiaprecio a sí mismo. ¡Lo sentimos!",
 	"wikilove-err-redirect": "La página de discusión del usuario es una redirección.",
 	"wikilove-err-cannot-edit": "No tienes permiso para editar esa página.",
 	"wikilove-err-max-exceeded": "No puedes enviar WikiLove a más de $1 {{PLURAL:$1|usuario|usuarios}} a la vez.",
