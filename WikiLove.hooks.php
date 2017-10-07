@@ -28,7 +28,7 @@ class WikiLoveHooks {
 	 * Add the preference in the user preferences with the GetPreferences hook.
 	 *
 	 * @param User $user
-	 * @param array $preferences
+	 * @param array &$preferences
 	 */
 	public static function onGetPreferences( $user, &$preferences ) {
 		global $wgWikiLoveGlobal;
@@ -46,6 +46,7 @@ class WikiLoveHooks {
 	 *
 	 * @param OutputPage $out
 	 * @param Skin $skin
+	 * @return true
 	 */
 	public static function onBeforePageDisplay( $out, $skin ) {
 		global $wgWikiLoveGlobal;
@@ -66,7 +67,7 @@ class WikiLoveHooks {
 	/**
 	 * Export page/user specific WikiLove variables to JS
 	 *
-	 * @param array $vars
+	 * @param array &$vars
 	 */
 	public static function onMakeGlobalVariablesScript( &$vars ) {
 		if ( self::$recipient !== null ) {
@@ -81,8 +82,8 @@ class WikiLoveHooks {
 	/**
 	 * Add a tab or an icon the new way (MediaWiki 1.18+)
 	 *
-	 * @param SkinTemplate $skin
-	 * @param array $links Navigation links
+	 * @param SkinTemplate &$skin
+	 * @param array &$links Navigation links
 	 */
 	public static function onSkinTemplateNavigation( &$skin, &$links ) {
 		if ( self::showIcon( $skin ) ) {
@@ -192,7 +193,7 @@ class WikiLoveHooks {
 	 *
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/ListDefinedTags
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/ChangeTagsListActive
-	 * @param array $tags
+	 * @param array &$tags
 	 */
 	public static function onListDefinedTags( &$tags ) {
 		$tags[] = 'wikilove';
@@ -201,7 +202,7 @@ class WikiLoveHooks {
 	/**
 	 * Tables that Extension:UserMerge needs to update
 	 *
-	 * @param array $updateFields
+	 * @param array &$updateFields
 	 */
 	public static function onUserMergeAccountFields( array &$updateFields ) {
 		global $wgWikiLoveLogging;

@@ -95,11 +95,11 @@ class ApiWikiLove extends ApiBase {
 	}
 
 	/**
-	 * @param $talk Title
-	 * @param $subject
-	 * @param $message
-	 * @param $type
-	 * @param $email
+	 * @param Title $talk
+	 * @param string $subject
+	 * @param string $message
+	 * @param string $type
+	 * @param string $email
 	 * @return void
 	 */
 	private function saveInDb( $talk, $subject, $message, $type, $email ) {
@@ -133,10 +133,10 @@ class ApiWikiLove extends ApiBase {
 	}
 
 	/**
-	 * @param $talk Title
-	 * @param $subject string
-	 * @param $text string
-	 * @param $token string
+	 * @param Title $talk
+	 * @param string $subject
+	 * @param string $text
+	 * @param string $token
 	 */
 	private function emailUser( $talk, $subject, $text, $token ) {
 		$context = new DerivativeContext( $this->getContext() );
@@ -193,9 +193,7 @@ class ApiWikiLove extends ApiBase {
 		return true;
 	}
 
-	/**
-	 * @see ApiBase::getExamplesMessages()
-	 */
+	/** @inheritDoc */
 	protected function getExamplesMessages() {
 		return [
 			'action=wikilove&title=User:Dummy&text=Love&subject=Hi&token=123ABC'
