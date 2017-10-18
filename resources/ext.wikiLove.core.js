@@ -387,7 +387,7 @@ $.wikiLove = {
 		$( '#mw-wikilove-image' ).val( currentRememberData.image || currentTypeOrSubtype.image || '' );
 
 		if( typeof currentTypeOrSubtype.gallery === 'object' &&
-			$.isArray( currentTypeOrSubtype.gallery.imageList )
+			Array.isArray( currentTypeOrSubtype.gallery.imageList )
 		) {
 			$( '#mw-wikilove-gallery, #mw-wikilove-gallery-label' ).show();
 			$.wikiLove.showGallery(); // build gallery from array of images
