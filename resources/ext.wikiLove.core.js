@@ -939,5 +939,5 @@ $.wikiLove = {
 };
 
 
-$( document ).ready( $.wikiLove.init );
+$( $.wikiLove.init );
 } ) ( jQuery, mediaWiki );
