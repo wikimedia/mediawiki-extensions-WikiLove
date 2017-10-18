@@ -560,16 +560,13 @@ $.wikiLove = {
 	 */
 	doPreview: function ( wikitext ) {
 		$( '#mw-wikilove-preview-spinner' ).fadeIn( 200 );
-		api.post( {
-			'action': 'parse',
-			'contentmodel': 'wikitext',
-			'text': wikitext,
-			'prop': 'text',
-			'disableeditsection': true,
-			'pst': true
+		api.parse( wikitext, {
+			prop: 'text',
+			disableeditsection: true,
+			pst: true
 		} )
-			.done( function ( data ) {
-				$.wikiLove.showPreview( data.parse.text['*'] );
+			.done( function ( html ) {
+				$.wikiLove.showPreview( html );
 				$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
 			} )
 			.fail( function () {

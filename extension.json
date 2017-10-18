@@ -216,6 +216,7 @@
 			],
 			"dependencies": [
 				"mediawiki.api",
+				"mediawiki.api.parse",
 				"ext.wikiLove.defaultOptions",
 				"jquery.ui.dialog",
 				"mediawiki.ui.button",
