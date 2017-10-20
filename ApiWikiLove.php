@@ -90,7 +90,7 @@ class ApiWikiLove extends ApiBase {
 
 		$this->getResult()->addValue( 'redirect', 'pageName', $talk->getPrefixedDBkey() );
 		$this->getResult()->addValue( 'redirect', 'fragment',
-			Title::escapeFragmentForURL( $strippedSubject ) );
+			Sanitizer::escapeIdForLink( $strippedSubject ) );
 		// note that we cannot use Title::makeTitle here as it doesn't sanitize the fragment
 	}
 
