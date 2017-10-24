@@ -750,12 +750,12 @@ $.wikiLove = {
 			currentTypeOrSubtype.gallery.number = currentTypeOrSubtype.gallery.imageList.length;
 		}
 
-		var titles = '';
+		var titles = [];
 		var imageList = currentTypeOrSubtype.gallery.imageList.slice( 0 );
 		for ( var i=0; i<currentTypeOrSubtype.gallery.number; i++ ) {
 			// get a random image from imageList and add it to the list of titles to be retrieved
 			var id = Math.floor( Math.random() * imageList.length );
-			titles = titles + $.wikiLove.normalizeFilename( imageList[id] ) + '|';
+			titles.push( $.wikiLove.normalizeFilename( imageList[id] ) );
 
 			// remove the randomly selected image from imageList so that it can't be added twice
 			imageList.splice(id, 1);
