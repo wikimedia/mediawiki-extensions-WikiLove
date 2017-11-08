@@ -174,7 +174,7 @@
 	"wikilove-err-invalid-username": "O nome de utilizador é inválido.",
 	"wikilove-err-no-self-wikilove": "Não é possível enviar um WikiApreço a si próprio. Lamentamos!",
 	"wikilove-err-redirect": "A página de discussão do utilizador é um redirecionamento.",
-	"wikilove-err-cannot-edit": "Não possui privilégios para editar esta página.",
+	"wikilove-err-cannot-edit": "Não tem privilégios para editar esta página.",
 	"wikilove-err-max-exceeded": "Não pode enviar um WikiApreço a mais do que $1 {{PLURAL:$1|utilizador|utilizadores}} de uma vez.",
 	"wikilove-success-number": "$1 {{PLURAL:$1|mensagem|mensagens}} de WikiApreço {{PLURAL:$1|enviada|enviadas}}.",
 	"wikilove-summary": "/* $1 */ nova mensagem de WikiApreço",
