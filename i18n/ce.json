@@ -10,5 +10,7 @@
 	"wikilove-preview": "Хьалха хьажар",
 	"wikilove-err-title": "Дехар до, дӀаязъе цӀе.",
 	"wikilove-err-gallery-again": "Кхин цӀа гӀорта",
+	"wikilove-err-not-logged-in": "Дехар до, WikiLove лелаян системин чугӀо.",
+	"wikilove-err-invalid-username": "Иштта цӀе декъашхочуна магийна яц.",
 	"wikilove-commons-link": "Викигулам"
 }
