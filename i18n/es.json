@@ -170,7 +170,7 @@
 	"wikilove-err-preview-api": "Algo salió mal durante la previsualización. Inténtalo de nuevo.",
 	"wikilove-err-send-api": "Algo salió mal al enviar el mensaje. Inténtalo de nuevo.",
 	"wikilove-err-invalid-token": "No se pudo enviar el WikiLove debido a una pérdida de datos de sesión. Intenta volver a cargar la página o cierra la sesión y posteriormente vuelve a iniciarla.",
-	"wikilove-err-not-logged-in": "No estás conectado. Inicia sesión para utilizar WikiLove.",
+	"wikilove-err-not-logged-in": "No estás conectado. Accede a tu cuenta para utilizar Wikiaprecio.",
 	"wikilove-err-invalid-username": "El nombre de usuario no es válido.",
 	"wikilove-err-no-self-wikilove": "No es posible enviarse wikiaprecio a sí mismo. ¡Lo sentimos!",
 	"wikilove-err-redirect": "La página de discusión del usuario es una redirección.",
