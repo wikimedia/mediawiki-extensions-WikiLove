@@ -3,7 +3,8 @@
 		"authors": [
 			"Kaldari",
 			"Toliño",
-			"Elisardojm"
+			"Elisardojm",
+			"Athena in Wonderland"
 		]
 	},
 	"wikilove-desc": "Engade unha interface para facilitar a mostra de aprecio cara a un usuario na súa páxina de conversa",
@@ -186,6 +187,7 @@
 	"tag-wikilove-description": "Edición feita mediante a ferramenta de amor wiki",
 	"WikiLove.js": "/* O JavaScript que se coloque aquí afectará a extensión Amor wiki; lea https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
 	"apihelp-wikilove-description": "Dar WikiAmor a outro usuario.\n\nWikiAmor é unha mensaxe positiva enviada á páxina de conversa dun usuario a través dunha interface práctica con modelos predefinidos ou definidos localmente. Esta acción engade o wikitexto especificado á páxina de conversa indicada. Por temas estatísticos, o tipo e outros datos son rexistrados.",
+	"apihelp-wikilove-summary": "Envíe un WikiAmor a outro usuario.",
 	"apihelp-wikilove-param-title": "Nome completo da páxina de usuario ou páxina de conversa do usuario ó que enviar o WikiAmor.",
 	"apihelp-wikilove-param-text": "Texto wiki en bruto a engadir na nova sección.",
 	"apihelp-wikilove-param-message": "Mensaxe actual que enviou o usuario, para propósitos de rexistro.",
