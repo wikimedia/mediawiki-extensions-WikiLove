@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Adam-Yourist"
+			"Adam-Yourist",
+			"Tusholi"
 		]
 	},
-	"wikilove-err-not-logged-in": "Ража чу ваьннавац хьо. Дехар да, чувала, WikiLove лелаеяра духьа.",
+	"wikilove-err-not-logged-in": "Ражача чуваьннавац хьо. Дехар да, чувала, WikiLove лелаяра духьа.",
 	"wikilove-err-invalid-username": "Цу тайпара доакъашхочун цIи мегаш яц"
 }
