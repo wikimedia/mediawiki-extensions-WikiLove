@@ -5,7 +5,8 @@
 			"Imperadeiro98",
 			"Luckas",
 			"Pedroca cerebral",
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Athena in Wonderland"
 		]
 	},
 	"wikilove-desc": "Adiciona uma interface para facilitar a colocação de demonstrações de apreço nas páginas de discussão dos utilizadores",
@@ -107,7 +108,7 @@
 	"wikilove-barnstar-teamwork-desc": "A medalha de trabalho em equipa é concedida quando vários utilizadores melhoram um artigo em conjunto.",
 	"wikilove-barnstar-teamwork-title": "A medalha de trabalho em equipa",
 	"wikilove-barnstar-technical-option": "Medalha de técnico",
-	"wikilove-barnstar-technical-desc": "A medalha de técnico é concedida a quem aprimorou a wiki {{SITENAME}} através do seu trabalho técnico (programação, criação de robôs, reparação de links, etc.).",
+	"wikilove-barnstar-technical-desc": "A medalha de técnico é concedida a quem aprimorou a wiki {{SITENAME}} através do seu trabalho técnico (programação, criação de robôs, reparação de hiperligações, etc.).",
 	"wikilove-barnstar-technical-title": "Medalha de técnico",
 	"wikilove-barnstar-tireless-option": "Medalha de contribuidor incansável",
 	"wikilove-barnstar-tireless-desc": "A medalha de contribuidor incansável é concedida aos editores especialmente incansáveis com um contributo particularmente extenso e sem sacrificar a qualidade.",
