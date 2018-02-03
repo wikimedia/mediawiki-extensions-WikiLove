@@ -27,8 +27,7 @@
 	},
 	"ResourceModules": {
 		"ext.wikiLove.icon": {
-			"styles": "ext.wikiLove.icon.css",
-			"position": "top"
+			"styles": "ext.wikiLove.icon.css"
 		},
 		"ext.wikiLove.defaultOptions": {
 			"scripts": [
