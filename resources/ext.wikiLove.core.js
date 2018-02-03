@@ -653,7 +653,7 @@ $.wikiLove = {
 			if ( email ) {
 				sendData.email = email;
 			}
-			api.postWithToken( 'edit', sendData )
+			api.postWithToken( 'csrf', sendData )
 				.done( function ( data ) {
 					wikiLoveNumberAttempted++;
 					if ( wikiLoveNumberAttempted === targets.length ) {
