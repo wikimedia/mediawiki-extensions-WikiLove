@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Arsenekoumyk"
+			"Arsenekoumyk",
+			"ArslanX"
 		]
 	},
-	"wikilove-err-not-logged-in": "Гириш этмединг. Буюр, WikiLove'ну къолламакъ учун гириш эт."
+	"wikilove-err-not-logged-in": "Гириш этмединг. Буюр, WikiLove'ну къолламакъ учун гириш эт.",
+	"wikilove-err-invalid-username": "Булай ортакъчы аты ярамас."
 }
