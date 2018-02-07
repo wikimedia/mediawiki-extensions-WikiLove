@@ -3,4 +3,4 @@
 		mw.loader.using( 'ext.wikiLove.local' ),
 		$.ready
 	).done( $.wikiLove.init );
-} )( jQuery, mediaWiki );
+}( jQuery, mediaWiki ) );

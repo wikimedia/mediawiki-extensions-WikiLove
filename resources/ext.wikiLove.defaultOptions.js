@@ -1,5 +1,5 @@
-//See http://www.mediawiki.org/wiki/Extension:WikiLove for basic documentation on configuration.
-//<nowiki>
+// See http://www.mediawiki.org/wiki/Extension:WikiLove for basic documentation on configuration.
+
 ( function ( $, mw ) {
 $.wikiLoveOptions = {
 	defaultText: '{| style="background-color: $5; border: 1px solid $6;"\n\
@@ -15,13 +15,13 @@ $.wikiLoveOptions = {
 
 	types: {
 		// example type, could be removed later
-		'barnstar': {
+		barnstar: {
 			name: mw.msg( 'wikilove-type-barnstars' ), // name of the type (appears in the types menu)
 			select: mw.msg( 'wikilove-barnstar-select' ), // subtype select label
 			subtypes: { // some different subtypes
 				// note that when not using subtypes you should use these subtype options
 				// for the top-level type
-				'original': {
+				original: {
 					fields: [ 'message' ], // fields to ask for in form
 					option: mw.msg( 'wikilove-barnstar-original-option' ), // option listed in the select list
 					descr: mw.msg( 'wikilove-barnstar-original-desc' ), // description
@@ -29,7 +29,7 @@ $.wikiLoveOptions = {
 					title: mw.msg( 'wikilove-barnstar-original-title' ), // title that appears inside the award box (optional)
 					image: 'Original Barnstar Hires.png' // image for the award
 				},
-				'admins': {
+				admins: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-admins-option' ),
 					descr: mw.msg( 'wikilove-barnstar-admins-desc' ),
@@ -37,7 +37,7 @@ $.wikiLoveOptions = {
 					title: mw.msg( 'wikilove-barnstar-admins-title' ),
 					image: 'Administrator Barnstar Hires.png'
 				},
-				'antivandalism': {
+				antivandalism: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-antivandalism-option' ),
 					descr: mw.msg( 'wikilove-barnstar-antivandalism-desc' ),
@@ -45,7 +45,7 @@ $.wikiLoveOptions = {
 					title: mw.msg( 'wikilove-barnstar-antivandalism-title' ),
 					image: 'Barnstar of Reversion Hires.png'
 				},
-				'diligence': {
+				diligence: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-diligence-option' ),
 					descr: mw.msg( 'wikilove-barnstar-diligence-desc' ),
@@ -53,7 +53,7 @@ $.wikiLoveOptions = {
 					title: mw.msg( 'wikilove-barnstar-diligence-title' ),
 					image: 'Barnstar of Diligence Hires.png'
 				},
-				'diplomacy': {
+				diplomacy: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-diplomacy-option' ),
 					descr: mw.msg( 'wikilove-barnstar-diplomacy-desc' ),
@@ -61,7 +61,7 @@ $.wikiLoveOptions = {
 					title: mw.msg( 'wikilove-barnstar-diplomacy-title' ),
 					image: 'Peace Barnstar Hires.png'
 				},
-				'goodhumor': {
+				goodhumor: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-goodhumor-option' ),
 					descr: mw.msg( 'wikilove-barnstar-goodhumor-desc' ),
@@ -69,7 +69,7 @@ $.wikiLoveOptions = {
 					title: mw.msg( 'wikilove-barnstar-goodhumor-title' ),
 					image: 'Barnstar of Humour Hires.png'
 				},
-				'brilliant': {
+				brilliant: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-brilliant-option' ),
 					descr: mw.msg( 'wikilove-barnstar-brilliant-desc' ),
@@ -77,7 +77,7 @@ $.wikiLoveOptions = {
 					title: mw.msg( 'wikilove-barnstar-brilliant-title' ),
 					image: 'Brilliant Idea Barnstar Hires.png'
 				},
-				'citation': {
+				citation: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-citation-option' ),
 					descr: mw.msg( 'wikilove-barnstar-citation-desc' ),
@@ -85,7 +85,7 @@ $.wikiLoveOptions = {
 					title: mw.msg( 'wikilove-barnstar-citation-title' ),
 					image: 'Citation Barnstar Hires.png'
 				},
-				'civility': {
+				civility: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-civility-option' ),
 					descr: mw.msg( 'wikilove-barnstar-civility-desc' ),
@@ -93,7 +93,7 @@ $.wikiLoveOptions = {
 					title: mw.msg( 'wikilove-barnstar-civility-title' ),
 					image: 'Civility Barnstar Hires.png'
 				},
-				'copyeditor': {
+				copyeditor: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-copyeditor-option' ),
 					descr: mw.msg( 'wikilove-barnstar-copyeditor-desc' ),
@@ -101,7 +101,7 @@ $.wikiLoveOptions = {
 					title: mw.msg( 'wikilove-barnstar-copyeditor-title' ),
 					image: 'Copyeditor Barnstar Hires.png'
 				},
-				'defender': {
+				defender: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-defender-option' ),
 					descr: mw.msg( 'wikilove-barnstar-defender-desc' ),
@@ -109,7 +109,7 @@ $.wikiLoveOptions = {
 					title: mw.msg( 'wikilove-barnstar-defender-title' ),
 					image: 'WikiDefender Barnstar Hires.png'
 				},
-				'editors': {
+				editors: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-editors-option' ),
 					descr: mw.msg( 'wikilove-barnstar-editors-desc' ),
@@ -117,7 +117,7 @@ $.wikiLoveOptions = {
 					title: mw.msg( 'wikilove-barnstar-editors-title' ),
 					image: 'Editors Barnstar Hires.png'
 				},
-				'designers': {
+				designers: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-designers-option' ),
 					descr: mw.msg( 'wikilove-barnstar-designers-desc' ),
@@ -125,7 +125,7 @@ $.wikiLoveOptions = {
 					title: mw.msg( 'wikilove-barnstar-designers-title' ),
 					image: 'Graphic Designer Barnstar Hires.png'
 				},
-				'half': {
+				half: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-half-option' ),
 					descr: mw.msg( 'wikilove-barnstar-half-desc' ),
@@ -134,7 +134,7 @@ $.wikiLoveOptions = {
 					image: 'Halfstar Hires.png',
 					imageSize: '60px'
 				},
-				'minor': {
+				minor: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-minor-option' ),
 					descr: mw.msg( 'wikilove-barnstar-minor-desc' ),
@@ -142,7 +142,7 @@ $.wikiLoveOptions = {
 					title: mw.msg( 'wikilove-barnstar-minor-title' ),
 					image: 'Minor Barnstar Hires.png'
 				},
-				'antispam': {
+				antispam: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-antispam-option' ),
 					descr: mw.msg( 'wikilove-barnstar-antispam-desc' ),
@@ -150,7 +150,7 @@ $.wikiLoveOptions = {
 					title: mw.msg( 'wikilove-barnstar-antispam-title' ),
 					image: 'No Spam Barnstar Hires.png'
 				},
-				'photographers': {
+				photographers: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-photographers-option' ),
 					descr: mw.msg( 'wikilove-barnstar-photographers-desc' ),
@@ -158,7 +158,7 @@ $.wikiLoveOptions = {
 					title: mw.msg( 'wikilove-barnstar-photographers-title' ),
 					image: 'Camera Barnstar Hires.png'
 				},
-				'kindness': {
+				kindness: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-kindness-option' ),
 					descr: mw.msg( 'wikilove-barnstar-kindness-desc' ),
@@ -166,7 +166,7 @@ $.wikiLoveOptions = {
 					title: mw.msg( 'wikilove-barnstar-kindness-title' ),
 					image: 'Kindness Barnstar Hires.png'
 				},
-				'reallife': {
+				reallife: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-reallife-option' ),
 					descr: mw.msg( 'wikilove-barnstar-reallife-desc' ),
@@ -174,7 +174,7 @@ $.wikiLoveOptions = {
 					title: mw.msg( 'wikilove-barnstar-reallife-title' ),
 					image: 'Real Life Barnstar.jpg'
 				},
-				'resilient': {
+				resilient: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-resilient-option' ),
 					descr: mw.msg( 'wikilove-barnstar-resilient-desc' ),
@@ -182,7 +182,7 @@ $.wikiLoveOptions = {
 					title: mw.msg( 'wikilove-barnstar-resilient-title' ),
 					image: 'Resilient Barnstar Hires.png'
 				},
-				'rosetta': {
+				rosetta: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-rosetta-option' ),
 					descr: mw.msg( 'wikilove-barnstar-rosetta-desc' ),
@@ -190,7 +190,7 @@ $.wikiLoveOptions = {
 					title: mw.msg( 'wikilove-barnstar-rosetta-title' ),
 					image: 'Rosetta Barnstar Hires.png'
 				},
-				'special': {
+				special: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-special-option' ),
 					descr: mw.msg( 'wikilove-barnstar-special-desc' ),
@@ -198,7 +198,7 @@ $.wikiLoveOptions = {
 					title: mw.msg( 'wikilove-barnstar-special-title' ),
 					image: 'Special Barnstar Hires.png'
 				},
-				'surreal': {
+				surreal: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-surreal-option' ),
 					descr: mw.msg( 'wikilove-barnstar-surreal-desc' ),
@@ -206,7 +206,7 @@ $.wikiLoveOptions = {
 					title: mw.msg( 'wikilove-barnstar-surreal-title' ),
 					image: 'Surreal Barnstar Hires.png'
 				},
-				'teamwork': {
+				teamwork: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-teamwork-option' ),
 					descr: mw.msg( 'wikilove-barnstar-teamwork-desc' ),
@@ -214,7 +214,7 @@ $.wikiLoveOptions = {
 					title: mw.msg( 'wikilove-barnstar-teamwork-title' ),
 					image: 'Team Barnstar Hires.png'
 				},
-				'technical': {
+				technical: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-technical-option' ),
 					descr: mw.msg( 'wikilove-barnstar-technical-desc' ),
@@ -222,7 +222,7 @@ $.wikiLoveOptions = {
 					title: mw.msg( 'wikilove-barnstar-technical-title' ),
 					image: 'Vitruvian Barnstar Hires.png'
 				},
-				'tireless': {
+				tireless: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-tireless-option' ),
 					descr: mw.msg( 'wikilove-barnstar-tireless-desc' ),
@@ -230,7 +230,7 @@ $.wikiLoveOptions = {
 					title: mw.msg( 'wikilove-barnstar-tireless-title' ),
 					image: 'Tireless Contributor Barnstar Hires.gif'
 				},
-				'writers': {
+				writers: {
 					fields: [ 'message' ],
 					option: mw.msg( 'wikilove-barnstar-writers-option' ),
 					descr: mw.msg( 'wikilove-barnstar-writers-desc' ),
@@ -241,7 +241,7 @@ $.wikiLoveOptions = {
 			},
 			icon: mw.config.get( 'wgExtensionAssetsPath' ) + '/WikiLove/resources/images/icons/wikilove-icon-barnstar.png' // icon for left-side menu
 		},
-		'food': {
+		food: {
 			name: mw.msg( 'wikilove-type-food' ), // name of the type (appears in the types menu)
 			select: mw.msg( 'wikilove-food-select' ), // subtype select label
 			text: '{| style="background-color: $5; border: 1px solid $6;"\n\
@@ -251,7 +251,7 @@ $.wikiLoveOptions = {
 			subtypes: { // some different subtypes
 				// note that when not using subtypes you should use these subtype options
 				// for the top-level type
-				'baklava': {
+				baklava: {
 					fields: [ 'header', 'message' ], // fields to ask for in form
 					option: mw.msg( 'wikilove-food-baklava-option' ), // option listed in the select list
 					descr: mw.msg( 'wikilove-food-baklava-desc' ),
@@ -259,7 +259,7 @@ $.wikiLoveOptions = {
 					image: 'Baklava - Turkish special, 80-ply.JPEG', // image for the award
 					imageSize: '135px' // size to display image
 				},
-				'beer': {
+				beer: {
 					fields: [ 'header', 'message' ],
 					option: mw.msg( 'wikilove-food-beer-option' ),
 					descr: mw.msg( 'wikilove-food-beer-desc' ),
@@ -267,7 +267,7 @@ $.wikiLoveOptions = {
 					image: 'Export hell seidel steiner.png',
 					imageSize: '70px'
 				},
-				'brownie': {
+				brownie: {
 					fields: [ 'header', 'message' ],
 					option: mw.msg( 'wikilove-food-brownie-option' ),
 					descr: mw.msg( 'wikilove-food-brownie-desc' ),
@@ -275,7 +275,7 @@ $.wikiLoveOptions = {
 					image: 'Brownie transparent.png',
 					imageSize: '120px'
 				},
-				'bubbletea': {
+				bubbletea: {
 					fields: [ 'header', 'message' ],
 					option: mw.msg( 'wikilove-food-bubbletea-option' ),
 					descr: mw.msg( 'wikilove-food-bubbletea-desc' ),
@@ -283,7 +283,7 @@ $.wikiLoveOptions = {
 					image: 'Bubble_Tea.png',
 					imageSize: '65px'
 				},
-				'cheeseburger': {
+				cheeseburger: {
 					fields: [ 'header', 'message' ],
 					option: mw.msg( 'wikilove-food-cheeseburger-option' ),
 					descr: mw.msg( 'wikilove-food-cheeseburger-desc' ),
@@ -291,7 +291,7 @@ $.wikiLoveOptions = {
 					image: 'Cheeseburger.png',
 					imageSize: '120px'
 				},
-				'cookie': {
+				cookie: {
 					fields: [ 'header', 'message' ],
 					option: mw.msg( 'wikilove-food-cookie-option' ),
 					descr: mw.msg( 'wikilove-food-cookie-desc' ),
@@ -299,7 +299,7 @@ $.wikiLoveOptions = {
 					image: 'Choco_chip_cookie.png',
 					imageSize: '120px'
 				},
-				'coffee': {
+				coffee: {
 					fields: [ 'header', 'message' ],
 					option: mw.msg( 'wikilove-food-coffee-option' ),
 					descr: mw.msg( 'wikilove-food-coffee-desc' ),
@@ -307,7 +307,7 @@ $.wikiLoveOptions = {
 					image: 'Cup-o-coffee-simple.svg',
 					imageSize: '120px'
 				},
-				'tea': {
+				tea: {
 					fields: [ 'header', 'message' ],
 					option: mw.msg( 'wikilove-food-tea-option' ),
 					descr: mw.msg( 'wikilove-food-tea-desc' ),
@@ -315,7 +315,7 @@ $.wikiLoveOptions = {
 					image: 'Meissen-teacup pinkrose01.jpg',
 					imageSize: '120px'
 				},
-				'cupcake': {
+				cupcake: {
 					fields: [ 'header', 'message' ],
 					option: mw.msg( 'wikilove-food-cupcake-option' ),
 					descr: mw.msg( 'wikilove-food-cupcake-desc' ),
@@ -323,7 +323,7 @@ $.wikiLoveOptions = {
 					image: 'Choco-Nut Bake with Meringue Top cropped.jpg',
 					imageSize: '120px'
 				},
-				'pie': {
+				pie: {
 					fields: [ 'header', 'message' ],
 					option: mw.msg( 'wikilove-food-pie-option' ),
 					descr: mw.msg( 'wikilove-food-pie-desc' ),
@@ -331,7 +331,7 @@ $.wikiLoveOptions = {
 					image: 'A very beautiful Nectarine Pie.jpg',
 					imageSize: '120px'
 				},
-				'strawberries': {
+				strawberries: {
 					fields: [ 'header', 'message' ],
 					option: mw.msg( 'wikilove-food-strawberries-option' ),
 					descr: mw.msg( 'wikilove-food-strawberries-desc' ),
@@ -339,7 +339,7 @@ $.wikiLoveOptions = {
 					image: 'Erdbeerteller01.jpg',
 					imageSize: '120px'
 				},
-				'stroopwafels': {
+				stroopwafels: {
 					fields: [ 'header', 'message' ],
 					option: mw.msg( 'wikilove-food-stroopwafels-option' ),
 					descr: mw.msg( 'wikilove-food-stroopwafels-desc' ),
@@ -350,7 +350,7 @@ $.wikiLoveOptions = {
 			},
 			icon: mw.config.get( 'wgExtensionAssetsPath' ) + '/WikiLove/resources/images/icons/wikilove-icon-food.png'
 		},
-		'kitten': {
+		kitten: {
 			name: mw.msg( 'wikilove-type-kittens' ),
 			fields: [ 'header', 'message' ],
 			header: mw.msg( 'wikilove-kittens-header' ),
@@ -363,7 +363,7 @@ $.wikiLoveOptions = {
 			},
 			icon: mw.config.get( 'wgExtensionAssetsPath' ) + '/WikiLove/resources/images/icons/wikilove-icon-kitten.png'
 		},
-		'goat': {
+		goat: {
 			name: mw.msg( 'wikilove-type-goats' ),
 			fields: [ 'header', 'message' ],
 			header: mw.msg( 'wikilove-goats-header' ),
@@ -377,7 +377,7 @@ $.wikiLoveOptions = {
 			icon: mw.config.get( 'wgExtensionAssetsPath' ) + '/WikiLove/resources/images/icons/wikilove-icon-goat.png'
 		},
 		// default type, nice to leave this one in place when adding other types
-		'makeyourown': {
+		makeyourown: {
 			name: mw.msg( 'wikilove-type-makeyourown' ),
 			fields: [ 'header', 'title', 'image', 'message' ],
 			icon: mw.config.get( 'wgExtensionAssetsPath' ) + '/WikiLove/resources/images/icons/wikilove-icon-create.png'
@@ -385,5 +385,4 @@ $.wikiLoveOptions = {
 	}
 };
 
-} )( jQuery, mediaWiki );
-//</nowiki>
+}( jQuery, mediaWiki ) );
