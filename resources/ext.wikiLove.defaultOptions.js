@@ -1,4 +1,4 @@
-// See http://www.mediawiki.org/wiki/Extension:WikiLove for basic documentation on configuration.
+// See https://www.mediawiki.org/wiki/Extension:WikiLove for basic documentation on configuration.
 
 ( function ( $, mw ) {
 $.wikiLoveOptions = {
