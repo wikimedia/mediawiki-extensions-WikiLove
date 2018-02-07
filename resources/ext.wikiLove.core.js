@@ -16,7 +16,7 @@
 	$.wikiLove = {
 		/**
 		 * Opens the dialog and builds it if necessary.
-		 * @param array recipients Usernames of recipients (without namespace prefix)
+		 * @param {string[]} recipients Usernames of recipients (without namespace prefix)
 		 */
 		openDialog: function ( recipients ) {
 			// If a list of recipients are specified, this will override the normal
@@ -182,6 +182,8 @@
 		/**
 		 * Handler for the left menu. Selects a new type and initialises next section
 		 * depending on whether or not to show subtypes.
+		 *
+		 * @param {jQuery.Event} e Click event
 		 */
 		clickType: function ( e ) {
 			e.preventDefault();
@@ -411,6 +413,9 @@
 
 		/**
 		 * Handler for clicking the preview button.
+		 *
+		 * @param {jQuery.Event} e Click event
+		 * @return {boolean} Event propagates
 		 */
 		validatePreviewForm: function ( e ) {
 			e.preventDefault();
@@ -483,6 +488,7 @@
 					$.wikiLove.submitPreview();
 				}
 			}
+			return true;
 		},
 
 		/**
@@ -514,6 +520,9 @@
 		 * $5: background color
 		 * $6: border color
 		 * $7: username of the recipient
+		 *
+		 * @param {string} msg Message with placeholders
+		 * @return {string} Prepared message
 		 */
 		prepareMsg: function ( msg ) {
 
@@ -533,6 +542,9 @@
 		 * Normalize a filename.
 		 * This function will extract a filename from a URL or add a "File:" prefix if there isn't
 		 * already a media namespace prefix.
+		 *
+		 * @param {string} filename Filename or URL from user input
+		 * @return {string} Normalized filename with prefix
 		 */
 		normalizeFilename: function ( filename ) {
 			var title = mw.Title.newFromImg( { src: filename } ) || mw.Title.newFromFileName( filename );
@@ -544,6 +556,8 @@
 
 		/**
 		 * Fires AJAX request for previewing wikitext.
+		 *
+		 * @param {string} wikitext Wikitext to preview
 		 */
 		doPreview: function ( wikitext ) {
 			$( '#mw-wikilove-preview-spinner' ).fadeIn( 200 );
@@ -564,6 +578,8 @@
 
 		/**
 		 * Callback for the preview function. Sets the preview area with the HTML and fades it in.
+		 *
+		 * @param {string} html HTML to preview
 		 */
 		showPreview: function ( html ) {
 			$( '#mw-wikilove-preview-area' ).html( html );
@@ -574,6 +590,9 @@
 		 * Handler for the send (final submit) button. Builds the data for the AJAX request.
 		 * The type sent for statistics is 'typeId-subtypeId' when using subtypes,
 		 * or simply 'typeId' otherwise.
+		 *
+		 * @param {jQuery.Event} e Click event
+		 * @return {boolean} Event propagates
 		 */
 		submitSend: function ( e ) {
 			e.preventDefault();
@@ -611,10 +630,17 @@
 			}
 			$.wikiLove.doSend( submitData.header, submitData.text,
 				submitData.message, submitData.type, submitData.email );
+			return true;
 		},
 
 		/**
 		 * Fires the final AJAX request and then redirects to the talk page where the content is added.
+		 *
+		 * @param {string} subject Subject
+		 * @param {string} wikitext Wikitext
+		 * @param {string} message Message
+		 * @param {string} type Type ID
+		 * @param {string} email E-mail
 		 */
 		doSend: function ( subject, wikitext, message, type, email ) {
 			$( '#mw-wikilove-send-spinner' ).fadeIn( 200 );

@@ -10,7 +10,6 @@
 	"rules": {
 		"no-multi-str": "off",
 		"one-var": "off",
-		"valid-jsdoc": "off",
 		"vars-on-top": "off"
 	}
 }
