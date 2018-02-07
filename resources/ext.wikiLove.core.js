@@ -19,6 +19,7 @@
 		 * @param {string[]} recipients Usernames of recipients (without namespace prefix)
 		 */
 		openDialog: function ( recipients ) {
+			var type, $typeList, typeId, $button, commonsLink, termsLink;
 			// If a list of recipients are specified, this will override the normal
 			// behavior of WikiLove, which is to post on the Talk page of the
 			// current page. It will also disable redirecting the user after submitting.
@@ -38,14 +39,13 @@
 			}
 			if ( $dialog === null ) {
 				// Build a type list like this:
-				var $typeList = $( '<ul id="mw-wikilove-types"></ul>' ),
-					type;
-				for ( var typeId in options.types ) {
+				$typeList = $( '<ul id="mw-wikilove-types"></ul>' );
+				for ( typeId in options.types ) {
 					type = options.types[ typeId ];
 					if ( !$.isPlainObject( type ) ) {
 						continue;
 					}
-					var $button = $( '<a href="#" class=""></a>' );
+					$button = $( '<a href="#" class=""></a>' );
 
 					if ( typeof type.icon === 'string' ) {
 						$button.append( '<img src="' +
@@ -60,11 +60,11 @@
 					$typeList.append( $( '<li>' ).append( $button ) );
 				}
 
-				var commonsLink = mw.html.element( 'a', {
+				commonsLink = mw.html.element( 'a', {
 					href: mw.msg( 'wikilove-commons-url' ),
 					target: '_blank'
 				}, mw.msg( 'wikilove-commons-link' ) );
-				var termsLink = mw.html.element( 'a', {
+				termsLink = mw.html.element( 'a', {
 					href: mw.msg( 'wikilove-terms-url' ),
 					target: '_blank'
 				}, mw.msg( 'wikilove-terms-link' ) );
@@ -186,11 +186,13 @@
 		 * @param {jQuery.Event} e Click event
 		 */
 		clickType: function ( e ) {
+			var subtypeId, subtype,
+				newTypeId = $( this ).data( 'typeId' );
+
 			e.preventDefault();
 			$.wikiLove.rememberInputData(); // remember previously entered data
 			$( '#mw-wikilove-get-started' ).hide(); // always hide the get started section
 
-			var newTypeId = $( this ).data( 'typeId' );
 			if ( currentTypeId !== newTypeId ) { // only do stuff when a different type is selected
 				currentTypeId = newTypeId;
 				currentSubtypeId = null; // reset the subtype id
@@ -203,9 +205,9 @@
 					currentTypeOrSubtype = null; // reset the (sub)type object until a subtype is selected
 					$( '#mw-wikilove-subtype' ).html( '' ); // clear the subtype menu
 
-					for ( var subtypeId in options.types[ currentTypeId ].subtypes ) {
+					for ( subtypeId in options.types[ currentTypeId ].subtypes ) {
 						// add all the subtypes to the menu while setting their subtype ids in jQuery data
-						var subtype = options.types[ currentTypeId ].subtypes[ subtypeId ];
+						subtype = options.types[ currentTypeId ].subtypes[ subtypeId ];
 						if ( typeof subtype.option !== 'undefined' ) {
 							$( '#mw-wikilove-subtype' ).append(
 								$( '<option></option>' ).text( subtype.option ).data( 'subtypeId', subtypeId )
@@ -236,10 +238,11 @@
 		 * Handler for changing the subtype.
 		 */
 		changeSubtype: function () {
+			var newSubtypeId = $( '#mw-wikilove-subtype option:selected' ).first().data( 'subtypeId' );
+
 			$.wikiLove.rememberInputData(); // remember previously entered data
 
 			// find out which subtype is selected
-			var newSubtypeId = $( '#mw-wikilove-subtype option:selected' ).first().data( 'subtypeId' );
 			if ( currentSubtypeId !== newSubtypeId ) { // only change stuff when a different subtype is selected
 				currentSubtypeId = newSubtypeId;
 				currentTypeOrSubtype = options.types[ currentTypeId ]
@@ -249,8 +252,7 @@
 				if ( typeof currentTypeOrSubtype.descr === 'string' ) {
 					// Replace {{SITENAME}} in messages. Yes, we could have mediawiki.jqueryMsg
 					// handle this, but this is a much more lightweight solution.
-					var siteName = mw.config.get( 'wgSiteName' );
-					currentTypeOrSubtype.descr = currentTypeOrSubtype.descr.replace( /\{\{SITENAME\}\}/g, siteName );
+					currentTypeOrSubtype.descr = currentTypeOrSubtype.descr.replace( /\{\{SITENAME\}\}/g, mw.config.get( 'wgSiteName' ) );
 					$( '#mw-wikilove-subtype-description' ).text( currentTypeOrSubtype.descr );
 				}
 
@@ -305,11 +307,12 @@
 		 * Show a preview of the image for a subtype.
 		 */
 		showImagePreview: function () {
+			var $img,
+				title = $.wikiLove.normalizeFilename( currentTypeOrSubtype.image ),
+				loadingType = currentTypeOrSubtype;
 			$( '#mw-wikilove-image-preview' ).show();
 			$( '#mw-wikilove-image-preview-content' ).html( '' );
 			$( '#mw-wikilove-image-preview-spinner' ).fadeIn( 200 );
-			var title = $.wikiLove.normalizeFilename( currentTypeOrSubtype.image );
-			var loadingType = currentTypeOrSubtype;
 			api.post( {
 				action: 'query',
 				prop: 'imageinfo',
@@ -329,7 +332,7 @@
 					$.each( data.query.pages, function ( id, page ) {
 						if ( page.imageinfo && page.imageinfo.length ) {
 							// build an image tag with the correct url
-							var $img = $( '<img>' )
+							$img = $( '<img>' )
 								.attr( 'src', page.imageinfo[ 0 ].thumburl )
 								.hide()
 								.on( 'load', function () {
@@ -349,8 +352,6 @@
 		 * Called when type or subtype changes, updates controls.
 		 */
 		updateAllDetails: function () {
-			$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
-
 			// use remembered data for fields that can be set by the user
 			var currentRememberData = {
 				header: ( $.inArray( 'header', currentTypeOrSubtype.fields ) >= 0 ? rememberData.header : '' ),
@@ -358,6 +359,8 @@
 				message: ( $.inArray( 'message', currentTypeOrSubtype.fields ) >= 0 ? rememberData.message : '' ),
 				image: ( $.inArray( 'image', currentTypeOrSubtype.fields ) >= 0 ? rememberData.image : '' )
 			};
+
+			$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
 
 			// only show the description if it exists for this type or subtype
 			if ( typeof currentTypeOrSubtype.descr === 'string' ) {
@@ -418,6 +421,8 @@
 		 * @return {boolean} Event propagates
 		 */
 		validatePreviewForm: function ( e ) {
+			var imageTitle;
+
 			e.preventDefault();
 			$( '#mw-wikilove-success' ).hide();
 			$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
@@ -453,7 +458,7 @@
 						$.wikiLove.submitPreview();
 					} else { // image was entered by user
 						// Make sure the image exists
-						var imageTitle = $.wikiLove.normalizeFilename( $( '#mw-wikilove-image' ).val() );
+						imageTitle = $.wikiLove.normalizeFilename( $( '#mw-wikilove-image' ).val() );
 						$( '#mw-wikilove-preview-spinner' ).fadeIn( 200 );
 
 						api.get( {
@@ -525,11 +530,9 @@
 		 * @return {string} Prepared message
 		 */
 		prepareMsg: function ( msg ) {
-
 			msg = msg.replace( '$1', $( '#mw-wikilove-message' ).val() ); // replace the raw message
 			msg = msg.replace( '$2', $( '#mw-wikilove-title' ).val() ); // replace the title
-			var imageName = $.wikiLove.normalizeFilename( $( '#mw-wikilove-image' ).val() );
-			msg = msg.replace( '$3', imageName ); // replace the image
+			msg = msg.replace( '$3', $.wikiLove.normalizeFilename( $( '#mw-wikilove-image' ).val() ) ); // replace the image
 			msg = msg.replace( '$4', currentTypeOrSubtype.imageSize || options.defaultImageSize ); // replace the image size
 			msg = msg.replace( '$5', currentTypeOrSubtype.backgroundColor || options.defaultBackgroundColor ); // replace the background color
 			msg = msg.replace( '$6', currentTypeOrSubtype.borderColor || options.defaultBorderColor ); // replace the border color
@@ -595,6 +598,8 @@
 		 * @return {boolean} Event propagates
 		 */
 		submitSend: function ( e ) {
+			var submitData;
+
 			e.preventDefault();
 			$( '#mw-wikilove-success' ).hide();
 			$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
@@ -619,7 +624,7 @@
 			// We don't need to do any image validation here since its not actually possible to click
 			// Send WikiLove without having a valid image entered.
 
-			var submitData = {
+			submitData = {
 				header: $( '#mw-wikilove-header' ).val(),
 				text: $.wikiLove.prepareMsg( currentTypeOrSubtype.text || options.types[ currentTypeId ].text || options.defaultText ),
 				message: $( '#mw-wikilove-message' ).val(),
@@ -643,10 +648,11 @@
 		 * @param {string} email E-mail
 		 */
 		doSend: function ( subject, wikitext, message, type, email ) {
-			$( '#mw-wikilove-send-spinner' ).fadeIn( 200 );
-
-			var wikiLoveNumberAttempted = 0,
+			var targetBaseUrl, currentBaseUrl,
+				wikiLoveNumberAttempted = 0,
 				wikiLoveNumberPosted = 0;
+
+			$( '#mw-wikilove-send-spinner' ).fadeIn( 200 );
 
 			// If the talk page is not a Wikitext page, remove the signature
 			if ( mw.config.get( 'wgPageContentModel' ) !== 'wikitext' ) {
@@ -685,9 +691,9 @@
 						if ( data.redirect !== undefined ) {
 							wikiLoveNumberPosted++;
 							if ( redirect ) {
-								var targetBaseUrl = mw.util.getUrl( data.redirect.pageName ),
-									// currentBaseUrl is the current URL minus the hash fragment
-									currentBaseUrl = location.href.split( '#' )[ 0 ];
+								targetBaseUrl = mw.util.getUrl( data.redirect.pageName );
+								// currentBaseUrl is the current URL minus the hash fragment
+								currentBaseUrl = location.href.split( '#' )[ 0 ];
 
 								// Set window location to user talk page URL + WikiLove anchor hash.
 								// Unfortunately, in the most common scenario (starting from the user talk
@@ -752,31 +758,34 @@
 		 * thumbnails from the API, and constructs a thumbnail gallery with them.
 		 */
 		showGallery: function () {
+			var i, id, index, loadingType, loadingIndex, galleryNumber, $img,
+				titles = [],
+				imageList = currentTypeOrSubtype.gallery.imageList.slice();
+
 			$( '#mw-wikilove-gallery-content' ).html( '' );
 			gallery = {};
 			$( '#mw-wikilove-gallery-spinner' ).fadeIn( 200 );
 			$( '#mw-wikilove-gallery-error' ).hide();
 
-			if ( currentTypeOrSubtype.gallery.number === undefined ||
+			if (
+				currentTypeOrSubtype.gallery.number === undefined ||
 				currentTypeOrSubtype.gallery.number <= 0
 			) {
 				currentTypeOrSubtype.gallery.number = currentTypeOrSubtype.gallery.imageList.length;
 			}
 
-			var titles = [];
-			var imageList = currentTypeOrSubtype.gallery.imageList.slice( 0 );
-			for ( var i = 0; i < currentTypeOrSubtype.gallery.number; i++ ) {
+			for ( i = 0; i < currentTypeOrSubtype.gallery.number; i++ ) {
 				// get a random image from imageList and add it to the list of titles to be retrieved
-				var id = Math.floor( Math.random() * imageList.length );
+				id = Math.floor( Math.random() * imageList.length );
 				titles.push( $.wikiLove.normalizeFilename( imageList[ id ] ) );
 
 				// remove the randomly selected image from imageList so that it can't be added twice
 				imageList.splice( id, 1 );
 			}
 
-			var index = 0,
-				loadingType = currentTypeOrSubtype,
-				loadingIndex = 0;
+			index = 0;
+			loadingType = currentTypeOrSubtype;
+			loadingIndex = 0;
 			api.post( {
 				action: 'query',
 				prop: 'imageinfo',
@@ -795,12 +804,12 @@
 					if ( loadingType !== currentTypeOrSubtype ) {
 						return;
 					}
-					var galleryNumber = currentTypeOrSubtype.gallery.number;
+					galleryNumber = currentTypeOrSubtype.gallery.number;
 
 					$.each( data.query.pages, function ( id, page ) {
 						if ( page.imageinfo && page.imageinfo.length ) {
 							// build an image tag with the correct url
-							var $img = $( '<img>' )
+							$img = $( '<img>' )
 								.attr( 'src', page.imageinfo[ 0 ].thumburl )
 								.hide()
 								.on( 'load', function () {
@@ -886,6 +895,8 @@
 				dataType: 'json',
 				type: 'POST',
 				success: function ( data ) {
+					var keys, i, id, page, $img;
+
 					// clear
 					$( '#mw-wikilove-gallery-content' ).html( '' );
 					gallery = {};
@@ -893,24 +904,24 @@
 					// if we have any images at all
 					if ( data.query ) {
 						// get the page keys which are just ids
-						var keys = Object.keys( data.query.pages );
+						keys = Object.keys( data.query.pages );
 
 						// try to find "num" images to show
-						for ( var i = 0; i < currentTypeOrSubtype.gallery.num; i++ ) {
+						for ( i = 0; i < currentTypeOrSubtype.gallery.num; i++ ) {
 							// continue looking for a new image until we have found one thats valid
 							// or until we run out of images
-							while( keys.length > 0 ) {
+							while ( keys.length > 0 ) {
 								// get a random page
-								var id = Math.floor( Math.random() * keys.length );
-								var page = data.query.pages[ keys[ id ] ];
+								id = Math.floor( Math.random() * keys.length );
+								page = data.query.pages[ keys[ id ] ];
 
 								// remove the random page from the keys array
 								keys.splice( id, 1 );
 
 								// only add the image if it's actually an image
-								if ( page.imageinfo[ 0 ].mime.slice( 0, 5 ) == 'image' ) {
+								if ( page.imageinfo[ 0 ].mime.slice( 0, 5 ) === 'image' ) {
 									// build an image tag with the correct url and width
-									var $img = $( '<img>' )
+									$img = $( '<img>' )
 										.attr( 'src', page.imageinfo[ 0 ].url )
 										.attr( 'width', currentTypeOrSubtype.gallery.width )
 										.hide()
@@ -921,6 +932,7 @@
 										$( '<a href="#"></a>' )
 											.attr( 'id', 'mw-wikilove-gallery-img-' + i )
 											.append( $img )
+											// eslint-disable-next-line no-loop-func
 											.on( 'click', function ( e ) {
 												e.preventDefault();
 												$( '#mw-wikilove-gallery a' ).removeClass( 'selected' );
