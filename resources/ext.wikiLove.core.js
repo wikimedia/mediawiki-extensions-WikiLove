@@ -159,18 +159,18 @@
 				$( '#mw-wikilove-add-details' ).hide();
 				$( '#mw-wikilove-preview' ).hide();
 				$( '#mw-wikilove-types' ).replaceWith( $typeList );
-				$( '#mw-wikilove-gallery-error-again' ).click( $.wikiLove.showGallery );
-				$( '#mw-wikilove-types a' ).click( $.wikiLove.clickType );
-				$( '#mw-wikilove-subtype' ).change( $.wikiLove.changeSubtype );
-				$( '#mw-wikilove-preview-form' ).submit( $.wikiLove.validatePreviewForm );
-				$( '#mw-wikilove-send-form' ).click( $.wikiLove.submitSend );
+				$( '#mw-wikilove-gallery-error-again' ).on( 'click', $.wikiLove.showGallery );
+				$( '#mw-wikilove-types a' ).on( 'click', $.wikiLove.clickType );
+				$( '#mw-wikilove-subtype' ).on( 'change', $.wikiLove.changeSubtype );
+				$( '#mw-wikilove-preview-form' ).on( 'submit', $.wikiLove.validatePreviewForm );
+				$( '#mw-wikilove-send-form' ).on( 'click', $.wikiLove.submitSend );
 
 				if ( !mw.config.get( 'wikilove-anon' ) ) {
 					$( '#mw-wikilove-anon-warning' ).hide();
 				}
 
 				// When the image changes, we want to reset the preview and error message.
-				$( '#mw-wikilove-image' ).change( function () {
+				$( '#mw-wikilove-image' ).on( 'change', function () {
 					$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
 					$( '#mw-wikilove-preview' ).hide();
 				} );
@@ -330,7 +330,7 @@
 							var $img = $( '<img>' )
 								.attr( 'src', page.imageinfo[ 0 ].thumburl )
 								.hide()
-								.load( function () {
+								.on( 'load', function () {
 									$( '#mw-wikilove-image-preview-spinner' ).hide();
 									$( this ).css( 'display', 'inline-block' );
 								} );
@@ -777,7 +777,7 @@
 							var $img = $( '<img>' )
 								.attr( 'src', page.imageinfo[ 0 ].thumburl )
 								.hide()
-								.load( function () {
+								.on( 'load', function () {
 									$( this ).css( 'display', 'inline-block' );
 									loadingIndex++;
 									if ( loadingIndex >= galleryNumber ) {
@@ -788,7 +788,7 @@
 								$( '<a href="#"></a>' )
 									.attr( 'id', 'mw-wikilove-gallery-img-' + index )
 									.append( $img )
-									.click( function ( e ) {
+									.on( 'click', function ( e ) {
 										e.preventDefault();
 										$( '#mw-wikilove-gallery a' ).removeClass( 'selected' );
 										$( this ).addClass( 'selected' );
@@ -821,7 +821,7 @@
 				$wikiLoveLink = $( '#topbar a:contains(' + mw.msg( 'wikilove-tab-text' ) + ')' );
 			}
 			$wikiLoveLink.off( 'click' );
-			$wikiLoveLink.click( function ( e ) {
+			$wikiLoveLink.on( 'click', function ( e ) {
 				e.preventDefault();
 				$.wikiLove.openDialog();
 			} );
@@ -888,14 +888,14 @@
 										.attr( 'src', page.imageinfo[ 0 ].url )
 										.attr( 'width', currentTypeOrSubtype.gallery.width )
 										.hide()
-										.load( function () { $( this ).css( 'display', 'inline-block' ); } );
+										.on( 'load', function () { $( this ).css( 'display', 'inline-block' ); } );
 
 									// append the image to the gallery and also make sure it's selectable
 									$( '#mw-wikilove-gallery-content' ).append(
 										$( '<a href="#"></a>' )
 											.attr( 'id', 'mw-wikilove-gallery-img-' + i )
 											.append( $img )
-											.click( function ( e ) {
+											.on( 'click', function ( e ) {
 												e.preventDefault();
 												$( '#mw-wikilove-gallery a' ).removeClass( 'selected' );
 												$( this ).addClass( 'selected' );
