@@ -535,22 +535,11 @@
 		 * already a media namespace prefix.
 		 */
 		normalizeFilename: function ( filename ) {
-			// If a URL is given, extract and decode the filename
-			var index = filename.lastIndexOf( '/' ) + 1;
-			filename = filename.slice( index );
-			if ( index > 0 ) {
-				filename = decodeURI( filename );
+			var title = mw.Title.newFromImg( { src: filename } ) || mw.Title.newFromFileName( filename );
+			if ( !title ) {
+				return filename;
 			}
-			// Can't use mw.Title in 1.17
-			var prefixSplit = filename.split( ':' ),
-				// Make sure the we don't fail in case input is like "File.jpg"
-				prefix = prefixSplit[ 1 ] ? prefixSplit[ 0 ] : '',
-				normalized = $.trim( prefix ).toLowerCase().replace( /\s/g, '_' );
-			// wgNamespaceIds is missing 'file' in 1.17 on non-English wikis
-			if ( mw.config.get( 'wgNamespaceIds' )[ normalized ] !== 6 && normalized !== 'file' ) {
-				filename = 'File:' + filename;
-			}
-			return filename;
+			return title.getPrefixedText();
 		},
 
 		/**
