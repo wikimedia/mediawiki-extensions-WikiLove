@@ -8,8 +8,6 @@
 		"mediaWiki": false
 	},
 	"rules": {
-		"indent": "off",
-		"no-alert": "off",
 		"no-multi-str": "off",
 		"one-var": "off",
 		"valid-jsdoc": "off",
