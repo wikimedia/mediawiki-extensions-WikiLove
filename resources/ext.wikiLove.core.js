@@ -48,13 +48,12 @@
 					$button = $( '<a href="#" class=""></a>' );
 
 					if ( typeof type.icon === 'string' ) {
-						$button.append( '<img src="' +
-							mw.html.escape( type.icon ) + '"/>' );
+						$button.append( $( '<img>' ).attr( 'src', type.icon ) );
 					} else {
 						$button.addClass( 'mw-wikilove-no-icon' );
 					}
 
-					$button.append( '<span>' + mw.html.escape( type.name ) + '</span>' );
+					$button.append( $( '<span>' ).text( type.name ) );
 
 					$button.data( 'typeId', typeId );
 					$typeList.append( $( '<li>' ).append( $button ) );
