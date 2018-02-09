@@ -313,6 +313,7 @@
 			$( '#mw-wikilove-image-preview-content' ).html( '' );
 			$( '#mw-wikilove-image-preview-spinner' ).fadeIn( 200 );
 			api.post( {
+				formatversion: 2,
 				action: 'query',
 				prop: 'imageinfo',
 				iiprop: 'mime|url',
@@ -328,7 +329,7 @@
 					if ( loadingType !== currentTypeOrSubtype ) {
 						return;
 					}
-					$.each( data.query.pages, function ( id, page ) {
+					data.query.pages.forEach( function ( page ) {
 						if ( page.imageinfo && page.imageinfo.length ) {
 							// build an image tag with the correct url
 							$img = $( '<img>' )
@@ -461,13 +462,15 @@
 						$( '#mw-wikilove-preview-spinner' ).fadeIn( 200 );
 
 						api.get( {
+							formatversion: 2,
 							action: 'query',
 							titles: imageTitle,
 							prop: 'imageinfo'
 						} )
 							.done( function ( data ) {
+								var page = data.query.pages[ 0 ];
 								// See if image exists locally or through InstantCommons
-								if ( !data.query.pages[ -1 ] || data.query.pages[ -1 ].imageinfo ) {
+								if ( !page.missing || page.imageinfo ) {
 									// Image exists
 									$.wikiLove.submitPreview();
 								} else {
@@ -786,6 +789,7 @@
 			loadingType = currentTypeOrSubtype;
 			loadingIndex = 0;
 			api.post( {
+				formatversion: 2,
 				action: 'query',
 				prop: 'imageinfo',
 				iiprop: 'mime|url',
@@ -805,7 +809,7 @@
 					}
 					galleryNumber = currentTypeOrSubtype.gallery.number;
 
-					$.each( data.query.pages, function ( id, page ) {
+					data.query.pages.forEach( function ( page ) {
 						if ( page.imageinfo && page.imageinfo.length ) {
 							// build an image tag with the correct url
 							$img = $( '<img>' )
