@@ -5,7 +5,8 @@
 			"Nirmal Dulal",
 			"बिप्लब आनन्द",
 			"राम प्रसाद जोशी",
-			"Nirajan pant"
+			"Nirajan pant",
+			"सरोज कुमार ढकाल"
 		]
 	},
 	"wikilove-desc": "प्रयोगकर्ता वार्ता पृष्ठहरूमा प्रयोगकर्ताको सकारात्मक प्रतिकृया व्यक्त गर्ने सुविधाको लागि इन्टरफेस जोड्छ।",
@@ -128,7 +129,7 @@
 	"wikilove-food-brownie-header": "तपाईंको लागि ब्राउनी!",
 	"wikilove-food-bubbletea-option": "बबल चिया",
 	"wikilove-food-bubbletea-desc": "बबल चिया एउटा चिया वा जुस पेय हो जसमा साबुदाना वा जेलीको सानो गोली हुन्छन। यो ताइवानमा पत्ता लागेको हो र अब विश्वको कयौं भागमा यो लोकप्रिय छ।",
-	"wikilove-food-bubbletea-header": "तपाईंको लागी केही बबाल चिया !",
+	"wikilove-food-bubbletea-header": "तपाईँको लागि केही बबल चिया!",
 	"wikilove-food-cheeseburger-option": "चीजबर्गर",
 	"wikilove-food-cheeseburger-header": "तपाईंको लागि एक चीजबर्गर!",
 	"wikilove-food-cookie-option": "कुकी",
@@ -172,7 +173,7 @@
 	"wikilove-anon-warning": "नोट:यो प्रयोगकर्ता दर्ता भएको छैन यसैले उनले यो सन्देस देख्न सक्दैनन्।",
 	"wikilove-commons-text": "तपाईं $1 लाई ब्राउज गरेर चित्र खोज्न सक्नुहुन्छ।",
 	"wikilove-terms": "सबमिट गरेर तपाईं यस $1 को अन्तर्गत पारदर्शिता स्वीकार गर्नुहुन्छ।",
-	"wikilove-terms-link": "शर्तहरू",
+	"wikilove-terms-link": "सर्तहरू",
 	"tag-wikilove-description": "विकिलभ उपकरणको प्रयोग गरी गरिएको सम्पादन",
 	"WikiLove.js": "/* यहाँ लेखिएको जावास्क्रिप्ट विकिलभलाई परिवर्तित गर्छन, हेर्नुहोस् https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }
