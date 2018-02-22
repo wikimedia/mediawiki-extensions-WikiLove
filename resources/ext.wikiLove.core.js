@@ -552,7 +552,7 @@
 		 * @return {string} Normalized filename with prefix
 		 */
 		normalizeFilename: function ( filename ) {
-			var title = mw.Title.newFromImg( { src: filename } ) || mw.Title.newFromFileName( filename );
+			var title = mw.Title.newFromImg( { src: filename } ) || mw.Title.newFromText( filename, mw.config.get( 'wgNamespaceIds' ).file );
 			if ( !title ) {
 				return filename;
 			}
