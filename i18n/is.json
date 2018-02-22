@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Bjarki S",
-			"Snævar"
+			"Snævar",
+			"Sveinn í Felli"
 		]
 	},
 	"wikilove-desc": "Bætir við viðmóti til þess að auðvelda jákvæð skilaboð á notendaspjallsíðum",
@@ -176,6 +177,7 @@
 	"wikilove-what-is-this": "Hvað er þetta?",
 	"wikilove-anon-warning": "Athugið: Notandinn er ekki skráður, svo hann eða hún tekur mögulega ekki eftir skilaboðunum.",
 	"wikilove-commons-text": "Þú getur fundið myndir með því að leita á $1.",
+	"wikilove-commons-link": "Wikimedia Commons",
 	"wikilove-terms": "Með því að senda, samþykkir þú gegnsæi undir $1",
 	"wikilove-terms-link": "skilmálum",
 	"WikiLove.js": "/* JavaScript á þessari síðu sérsníður WikiLove, sjá https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
