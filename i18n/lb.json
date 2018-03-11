@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Robby",
-			"Soued031"
+			"Soued031",
+			"Les Meloures"
 		]
 	},
-	"wikilove-desc": "Setzt en Interface dobäi deen et erliichtert fir positive Benotzer-Feedback op d'Benotzer-Diskussiouns-Säiten ze setzen",
+	"wikilove-desc": "Setzt en Interface derbäi deen et erliichtert fir e positive Benotzer-Feedback op d'Benotzer-Diskussiounssäiten ze setzen",
 	"wikilove": "WikiLove",
 	"wikilove-enable-preference": "Erlaabt et d'Wäertschätzung fir aner Benotzer iwwer e speziellen Tab auszedrécken",
 	"wikilove-tab-text": "WikiLove",
