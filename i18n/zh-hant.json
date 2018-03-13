@@ -17,7 +17,8 @@
 			"EagerLin",
 			"S8321414",
 			"Wwycheuk",
-			"A2093064"
+			"A2093064",
+			"和平至上"
 		]
 	},
 	"wikilove-desc": "加入一個促進正向使用者回饋的介面至使用者對話頁面",
@@ -193,7 +194,7 @@
 	"wikilove-commons-text": "您可以瀏覽 $1 尋找合適的圖片。",
 	"wikilove-commons-link": "維基共享資源",
 	"wikilove-commons-url": "//commons.wikimedia.org/wiki/首頁",
-	"wikilove-terms": "送出代表您將同意依據這些$1公開資訊。",
+	"wikilove-terms": "送出即代表您同意依據這些$1公開傳送的內容。",
 	"wikilove-terms-link": "條款",
 	"tag-wikilove-description": "使用維基友愛工具完成的編輯",
 	"WikiLove.js": "/* 此處的 JavaScript 可自訂 WikiLove, 請參考 https://www.mediaWiki.org/Wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
