@@ -3,7 +3,9 @@ div.vectorTabs li#ca-wikilove {
 }
 
 /* icon style */
-#ca-wikilove.icon a {
+/* Only use icon if the menu item is not collapsed into the "More" dropdown
+ * (in which case it is inside .vectorMenu instead of .vectorTabs). */
+.vectorTabs #ca-wikilove.icon a {
 	margin: 0;
 	padding: 0;
 	outline: 0;
@@ -20,11 +22,11 @@ div.vectorTabs li#ca-wikilove {
 	/* @embed */
 	background-image: linear-gradient( transparent, transparent ), url( images/heart-icons-red.svg );
 }
-#ca-wikilove.icon a {
+.vectorTabs #ca-wikilove.icon a {
 	background-position: 5px 60%;
 }
-#ca-wikilove.icon a:hover,
-#ca-wikilove.icon a:focus {
+.vectorTabs #ca-wikilove.icon a:hover,
+.vectorTabs #ca-wikilove.icon a:focus {
 	background-position: -19px 60%;
 }
 
