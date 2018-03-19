@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"ⵕⴰⵊⵉ"
+			"ⵕⴰⵊⵉ",
+			"Brahim-essaidi"
 		]
 	},
-	"wikilove-err-not-logged-in": "ⵓⵔ ⵜⴽⵛⵉⵎⴷ. ⴽⵛⵎ ⴰⴽ ⵜⵙⵙⵎⵔⵙⴷ WikiLove."
+	"wikilove-err-not-logged-in": "ⵓⵔ ⵜⴽⵛⵉⵎⴷ. ⴽⵛⵎ ⴰⴽ ⵜⵙⵙⵎⵔⵙⴷ WikiLove.",
+	"wikilove-err-invalid-username": "ⵉⵙⵎ ⵏ ⵓⵙⵎⵔⴰⵙ ⵓⵔ ⵉⵥⵉⵍ."
 }
