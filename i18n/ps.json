@@ -2,13 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Ahmed-Najib-Biabani-Ibrahimkhel",
-			"عثمان خان شاہ"
+			"عثمان خان شاہ",
+			"Baloch Khan"
 		]
 	},
 	"wikilove": "ويکي مينه",
 	"wikilove-tab-text": "ويکي مينه",
 	"wikilove-select-type": "ډول ټاکل",
 	"wikilove-get-started-header": "راځه چې پيل يې کړو!",
+	"wikilove-get-started-list-1": "د ویکي مينې ډول چې تاسو یې غواړئ وليږدوي",
 	"wikilove-get-started-list-3": "خپله ويکي مينه ولېږئ!",
 	"wikilove-add-details": "ځانگړنې ورگډول",
 	"wikilove-image": "د يوې انځوريزې دوتنې نوم وليکۍ:",
