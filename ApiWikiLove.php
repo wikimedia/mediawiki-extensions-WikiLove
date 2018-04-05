@@ -1,4 +1,7 @@
 <?php
+
+use Wikimedia\Rdbms\DBQueryError;
+
 class ApiWikiLove extends ApiBase {
 	public function execute() {
 		global $wgWikiLoveLogging, $wgParser;
