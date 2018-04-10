@@ -4,5 +4,6 @@
 			"Rueter"
 		]
 	},
-	"wikilove-err-not-logged-in": "Зярс эзить сова. WikiLove-нть нолдавлик тевс, васня совак."
+	"wikilove-err-not-logged-in": "Зярс эзить сова. WikiLove-нть нолдавлик тевс, васня совак.",
+	"wikilove-err-invalid-username": "Совамовалось а маштови."
 }
