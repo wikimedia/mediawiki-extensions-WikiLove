@@ -7,7 +7,8 @@
 			"OsamaK",
 			"Zack wadghiri",
 			"روخو",
-			"زكريا"
+			"زكريا",
+			"ديفيد"
 		]
 	},
 	"wikilove-desc": "لإضافة واجهة للإثناء على المستخدم في صفحة نقاشه",
@@ -157,6 +158,8 @@
 	"wikilove-food-stroopwafels-header": "إليك ستروبوافل!",
 	"wikilove-type-kittens": "قطط",
 	"wikilove-kittens-header": "إليك قطيطة!",
+	"wikilove-type-goats": "ماعز",
+	"wikilove-goats-header": "ماعز لك!",
 	"wikilove-type-makeyourown": "غير ذلك",
 	"wikilove-err-header": "ضع ترويسة",
 	"wikilove-err-title": "ضع عنوانا",
@@ -184,5 +187,14 @@
 	"wikilove-terms": "بإرسالها تكون قد وافقت بالشفافية على هذه $1.",
 	"wikilove-terms-link": "الشروط",
 	"tag-wikilove-description": "باستخدام أداة ويكي الحب",
-	"WikiLove.js": "/* JavaScript placed here customizes WikiLove, see https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"WikiLove.js": "/* JavaScript placed here customizes WikiLove, see https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
+	"apihelp-wikilove-summary": "منح ويكي الحب لمستخدم آخر.",
+	"apihelp-wikilove-extended-description": "ويكي الحب رسالة إيجابية يتم نشرها في صفحة نقاش المستخدم من خلال واجهة ملائمة بقوالب محددة مسبقا أو محددة محليا، يضيف هذا الإجراء نص الويكي المحدد إلى صفحة نقاش معينة، لأغراض إحصائية; يتم تسجيل النوع والبيانات الأخرى.",
+	"apihelp-wikilove-param-title": "اسم الصفحة الكامل لصفحة المستخدم أو صفحة نقاش المستخدم للمستخدم لإرسال ويكي الحب إليه.",
+	"apihelp-wikilove-param-text": "نص الويكي الخام لإضافته في القسم الجديد.",
+	"apihelp-wikilove-param-message": "الرسالة الفعلية التي أدخلها المستخدم; لأغراض التسجيل.",
+	"apihelp-wikilove-param-subject": "عنوان موضوع القسم الجديد.",
+	"apihelp-wikilove-example-1": "إرسال ويكي الحب إلى \"[[User:Dummy]]\"",
+	"apiwarn-wikilove-ignoringunregistered": "عدم تسجيل المستلمين غير المسجلين",
+	"apiwarn-wikilove-notlogged": "لم يتم تسجيل الإجراء"
 }
