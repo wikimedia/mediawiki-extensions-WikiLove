@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Чаховіч Уладзіслаў"
+			"Чаховіч Уладзіслаў",
+			"Artsiom91"
 		]
 	},
 	"wikilove-desc": "Дадае інтэрфейс для спрашчэння дадання станоўчых водгукаў на старонкі размоў удзельнікаў",
 	"wikilove": "ВікіСімпатыя",
 	"wikilove-tab-text": "ВікіСімпатыя",
 	"wikilove-err-not-logged-in": "Вы не ўвайшлі ў сістэму. Калі ласка, увайдзіце, каб выкарыстоўваць WikiLove.",
-	"wikilove-err-invalid-username": "Недапушчальнае імя ўдзельніка."
+	"wikilove-err-invalid-username": "Недапушчальнае імя ўдзельніка.",
+	"tag-wikilove-description": "Праўка зроблена з дапамогай інструменту WikiLove"
 }
