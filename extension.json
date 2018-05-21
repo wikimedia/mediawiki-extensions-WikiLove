@@ -217,6 +217,7 @@
 				"mediawiki.api",
 				"mediawiki.api.parse",
 				"mediawiki.Title",
+				"mediawiki.util",
 				"ext.wikiLove.defaultOptions",
 				"jquery.ui.dialog",
 				"mediawiki.ui.button",
