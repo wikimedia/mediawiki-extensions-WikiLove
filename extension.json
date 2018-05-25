@@ -11,7 +11,7 @@
 	"license-name": "MIT",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.30.0"
+		"MediaWiki": ">= 1.32.0"
 	},
 	"APIModules": {
 		"wikilove": "ApiWikiLove"
@@ -215,7 +215,6 @@
 			],
 			"dependencies": [
 				"mediawiki.api",
-				"mediawiki.api.parse",
 				"mediawiki.Title",
 				"mediawiki.util",
 				"ext.wikiLove.defaultOptions",
