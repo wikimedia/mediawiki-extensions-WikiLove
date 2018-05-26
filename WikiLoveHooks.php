@@ -12,7 +12,7 @@ class WikiLoveHooks {
 	/**
 	 * LoadExtensionSchemaUpdates hook
 	 *
-	 * @param DatabaseUpdater $updater
+	 * @param DatabaseUpdater|null $updater
 	 */
 	public static function onLoadExtensionSchemaUpdates( $updater = null ) {
 		if ( $updater === null ) {
