@@ -7,7 +7,8 @@
 			"Kalan",
 			"Okras",
 			"Ole Yves",
-			"Александр Сигачёв"
+			"Александр Сигачёв",
+			"Abiyoyo"
 		]
 	},
 	"wikilove-desc": "Добавляет интерфейс для упрощения добавления положительных отзывов на страницы обсуждения участников",
@@ -157,6 +158,8 @@
 	"wikilove-food-stroopwafels-header": "Немного струпвафель для вас!",
 	"wikilove-type-kittens": "Котята",
 	"wikilove-kittens-header": "Котёночек для вас!",
+	"wikilove-type-goats": "Козы",
+	"wikilove-goats-header": "Вам коза!",
 	"wikilove-type-makeyourown": "Сделать собственный",
 	"wikilove-err-header": "Пожалуйста, введите заголовок.",
 	"wikilove-err-title": "Пожалуйста, введите название.",
