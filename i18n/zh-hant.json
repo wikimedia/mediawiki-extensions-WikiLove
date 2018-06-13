@@ -18,7 +18,8 @@
 			"S8321414",
 			"Wwycheuk",
 			"A2093064",
-			"和平至上"
+			"和平至上",
+			"Kly"
 		]
 	},
 	"wikilove-desc": "加入一個促進正向使用者回饋的介面至使用者對話頁面",
@@ -168,6 +169,8 @@
 	"wikilove-food-stroopwafels-header": "荷式鬆餅送給您！",
 	"wikilove-type-kittens": "小貓",
 	"wikilove-kittens-header": "一隻小貓送給您！",
+	"wikilove-type-goats": "山羊",
+	"wikilove-goats-header": "一頭山羊送給您！",
 	"wikilove-type-makeyourown": "自己製作",
 	"wikilove-err-header": "請輸入標頭。",
 	"wikilove-err-title": "請輸入標題",
@@ -198,12 +201,16 @@
 	"wikilove-terms-link": "條款",
 	"tag-wikilove-description": "使用維基友愛工具完成的編輯",
 	"WikiLove.js": "/* 此處的 JavaScript 可自訂 WikiLove, 請參考 https://www.mediaWiki.org/Wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
-	"apihelp-wikilove-description": "發送維基有愛至其他用戶。\n\n維基有愛（WikiLove）是通過與預設或由本地定義模板構造的界面，用於向用戶討論頁發送正面信息。此操作會將指定的wiki文本加入某個討論頁。出於統計目的，類型和其它數據將被記錄。",
+	"apihelp-wikilove-description": "發送維基友愛給其他使用者。\n\n維基友愛（WikiLove）是用於透過帶有預設或本地端所定義模板的便利介面，來向使用者討論頁發送正面鼓勵的訊息。此操作會將指定 wiki 文字加入到特定的討論頁。出於統計目的，類型和其它資料將會被記錄下來。",
+	"apihelp-wikilove-summary": "給其他使用者維基友愛。",
+	"apihelp-wikilove-extended-description": "維基友愛（WikiLove）是用於透過帶有預設或本地端所定義模板的便利介面，來向使用者討論頁發送正面鼓勵的訊息。此操作會將指定 wiki 文字加入到特定的討論頁。出於統計目的，類型和其它資料將會被記錄下來。",
 	"apihelp-wikilove-param-title": "使用者的使用者頁面或使用者討論頁的完整頁面名稱發送到維基友愛。",
 	"apihelp-wikilove-param-text": "原維基內容的在新的部分加入。",
 	"apihelp-wikilove-param-message": "實際的消息在使用者輸入，用於日誌記錄。",
 	"apihelp-wikilove-param-subject": "新節的主題標題。",
 	"apihelp-wikilove-param-type": "維基友愛的類型（用於統計）；這相當於在左邊的選單中選擇一種類型，以及之後可選擇的子類型 (如\"原星章\"或\"小貓\") 。",
 	"apihelp-wikilove-param-email": "將所述選填的電子郵件訊息內容傳送至使用者。如果使用者無法透過電子郵件傳送，將傳回一個警告。總之，維基友愛會被傳送至使用者討論頁面。",
-	"apihelp-wikilove-example-1": "向''[[User:Dummy]]''傳送維基友愛"
+	"apihelp-wikilove-example-1": "向''[[User:Dummy]]''傳送維基友愛",
+	"apiwarn-wikilove-ignoringunregistered": "不記錄未註冊的接收者",
+	"apiwarn-wikilove-notlogged": "操作沒有記錄到"
 }
