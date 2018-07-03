@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Junaidpv",
-			"Praveenp"
+			"Praveenp",
+			"Jinoytommanjaly"
 		]
 	},
 	"wikilove-desc": "ഉപയോക്താക്കൾക്ക് സംവാദം താളുകൾ വഴി ഗുണാത്മക അഭിപ്രായങ്ങൾ പ്രകടിപ്പിക്കാനുള്ള സമ്പർക്കമുഖം കൂട്ടിച്ചേർക്കുന്നു",
@@ -123,7 +124,9 @@
 	"wikilove-food-tea-option": "ഒരു കപ്പ് ചായ",
 	"wikilove-food-tea-desc": "ശുദ്ധജലത്തിനു ശേഷം, ഏറ്റവുമധികം കുടിക്കപ്പെടുന്ന പാനീയമാണ് ചായ. ചൂടാക്കിയോ, തണുപ്പിച്ചോ, പാലും പഞ്ചസാരയും ചേർത്തോ ഒക്കെ ഉപയോഗിക്കാം.",
 	"wikilove-food-tea-header": "ഇതാ താങ്കൾക്ക് ഒരു കപ്പ് ചായ!",
+	"wikilove-food-cupcake-header": "തകൾക് ഒരു കപ്പ്!",
 	"wikilove-food-strawberries-option": "സ്ട്രോബെറികൾ",
+	"wikilove-food-strawberries-header": "നിങ്ങൾക്കായി ഒരു പാത്രം സ്ട്രോബറി!",
 	"wikilove-type-kittens": "പൂച്ചക്കുട്ടികൾ",
 	"wikilove-kittens-header": "താങ്കൾക്കിതാ ഒരു പുച്ചക്കുട്ടി!",
 	"wikilove-type-goats": "ആടുകൾ",
