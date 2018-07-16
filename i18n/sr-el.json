@@ -5,7 +5,8 @@
 			"Micki",
 			"Milicevic01",
 			"Rancher",
-			"Сербијана"
+			"Сербијана",
+			"Zoranzoki21"
 		]
 	},
 	"wikilove-desc": "Dodaje sučelje za iskazivanje pozitivnih povratnih informacija na korisničke stranice za razgovor",
@@ -167,8 +168,8 @@
 	"wikilove-err-gallery-again": "Pokušajte ponovo",
 	"wikilove-err-preview-api": "Došlo je do greške pri pregledanju. Pokušajte ponovo.",
 	"wikilove-err-send-api": "Došlo je do greške pri slanju poruke. Pokušajte ponovo.",
-	"wikilove-err-not-logged-in": "Niste prijavljeni. Molimo vas prijavite se da biste koristili Viki ljubav.",
-	"wikilove-err-invalid-username": "Korisničko ime je neispravno.",
+	"wikilove-err-not-logged-in": "Niste prijavljeni. Prijavite se da biste koristili Vikiljubav.",
+	"wikilove-err-invalid-username": "Korisničko ime nije valjano.",
 	"wikilove-summary": "/* $1 */ nova poruka (Vikiljubav)",
 	"wikilove-what-is-this": "Šta je ovo?",
 	"wikilove-what-is-this-link": "https://www.mediawiki.org/wiki/Special:MyLanguage/WikiLove",
