@@ -200,7 +200,7 @@
 	"wikilove-commons-url": "//commons.wikimedia.org/wiki/Accueil",
 	"wikilove-terms": "En soumettant, vous acceptez la transparence en accord avec ces $1.",
 	"wikilove-terms-link": "conditions",
-	"wikilove-terms-url": "//wikimediafoundation.org/wiki/Feedback_privacy_statement/fr",
+	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement/fr",
 	"tag-wikilove-description": "Modification faite avec l’outil WikiLove",
 	"WikiLove.js": "/ * le JavaScript placé ici personnalise WikiLove, voyez https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration * /",
 	"apihelp-wikilove-description": "Donner un WikiLove à un autre utilisateur.\n\nWikiLove est un message positif publié sur la page de discussion d’un utilisateur via une interface appropriée avec des modèles prédéfinis ou définis en local. Cette action ajoute le wikitexte spécifié à une certaine page de discussion. À des fins statistiques, le type et d’autres données sont tracés.",

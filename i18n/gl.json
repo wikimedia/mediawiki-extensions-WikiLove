@@ -183,7 +183,7 @@
 	"wikilove-commons-url": "//commons.wikimedia.org/wiki/Portada_galega?uselang=gl",
 	"wikilove-terms": "Se envía os seus comentarios, acepta publicalos baixo estes $1.",
 	"wikilove-terms-link": "termos",
-	"wikilove-terms-url": "//wikimediafoundation.org/wiki/Feedback_privacy_statement/gl",
+	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement/gl",
 	"tag-wikilove-description": "Edición feita mediante a ferramenta de amor wiki",
 	"WikiLove.js": "/* O JavaScript que se coloque aquí afectará a extensión Amor wiki; lea https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
 	"apihelp-wikilove-description": "Dar WikiAmor a outro usuario.\n\nWikiAmor é unha mensaxe positiva enviada á páxina de conversa dun usuario a través dunha interface práctica con modelos predefinidos ou definidos localmente. Esta acción engade o wikitexto especificado á páxina de conversa indicada. Por temas estatísticos, o tipo e outros datos son rexistrados.",

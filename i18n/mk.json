@@ -182,7 +182,7 @@
 	"wikilove-commons-url": "//commons.wikimedia.org/wiki/Главна_страница?uselang=mk",
 	"wikilove-terms": "Поднесувајќи го ова, се согласувате со транспарентноста што ја налагаат овие $1.",
 	"wikilove-terms-link": "услови",
-	"wikilove-terms-url": "//wikimediafoundation.org/wiki/Feedback_privacy_statement/mk?uselang=mk",
+	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement/mk?uselang=mk",
 	"tag-wikilove-description": "Уредувањето е направено со алатката ВикиЉубов",
 	"WikiLove.js": "/* Тука поставениот JavaScript го прилагодува ВикиЉубов. Погл. https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration?uselang=mk */",
 	"apihelp-wikilove-description": "Дајте ВикиЉубов на некој корисник.\n\nВикиЉубов е позитивна порака што му ја оставате на разговорната страница на некој корисник преку згоден посредник со предзададени или месно зададени шаблони. Ова дејство го става укажаниот викитекст на извесна разговорна страница. За статистички цели се заведува типот и други податоци.",

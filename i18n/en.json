@@ -183,7 +183,7 @@
 	"wikilove-commons-url": "//commons.wikimedia.org",
 	"wikilove-terms": "By submitting, you agree to transparency under these $1.",
 	"wikilove-terms-link": "terms",
-	"wikilove-terms-url": "//wikimediafoundation.org/wiki/Feedback_privacy_statement",
+	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement",
 	"tag-wikilove-description": "Edit made using the WikiLove tool",
 	"WikiLove.js": "/* JavaScript placed here customizes WikiLove, see https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
 	"apihelp-wikilove-description": "Give WikiLove to another user.\n\nWikiLove is a positive message posted to a user's talk page through a convenient interface with preset or locally defined templates. This action adds the specified wikitext to a certain talk page. For statistical purposes, the type and other data are logged.",

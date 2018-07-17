@@ -194,7 +194,7 @@
 	"wikilove-commons-url": "//commons.wikimedia.org",
 	"wikilove-terms": "Ao enviar, concorda que os seus comentários podem se tornar públicos, conforme esses $1.",
 	"wikilove-terms-link": "termos",
-	"wikilove-terms-url": "//wikimediafoundation.org/wiki/Feedback_privacy_statement",
+	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement",
 	"tag-wikilove-description": "Edição feita usando a ferramenta WikiLove",
 	"WikiLove.js": "/* O Javascript que colocar aqui personalizará a extensão WikiLove. Favor ler https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
 	"apihelp-wikilove-description": "Dê WikiLove para outro usuário.\n\nWikiLove é uma mensagem positiva postada numa página de discussão de um usuário através de uma interface conveniente, com modelos predefinidos ou definidos localmente. Essa ação adiciona o wikitexto especificado para uma determinada página de conversa. Para fins estatísticos, o tipo e outros dados são registrados.",

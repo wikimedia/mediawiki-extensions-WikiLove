@@ -189,7 +189,7 @@
 	"wikilove-commons-link": "Wikimedia Commons",
 	"wikilove-terms": "Con l'invio, accetti $1 di trasparenza per i dati indicate.",
 	"wikilove-terms-link": "le condizioni",
-	"wikilove-terms-url": "//wikimediafoundation.org/wiki/Feedback_privacy_statement/it",
+	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement/it",
 	"tag-wikilove-description": "Modifica effettuata utilizzando lo strumento WikiLove",
 	"WikiLove.js": "/* Il codice JavaScript posizionato qui permette di personalizzare WikiLove, vedi https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
 	"apihelp-wikilove-example-1": "Invia WikiLove a \"[[User:Dummy]]\""
