@@ -2,9 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Azniv Stepanian",
-			"ArmenBakkalian"
+			"ArmenBakkalian",
+			"Rajemian"
 		]
 	},
-	"wikilove-err-not-logged-in": "Դուք համակարգ չէք մտած։ ՈւիքիՍէրը օգտագործելու համար կը խնդրուի մուտք գործել։",
+	"wikilove-err-not-logged-in": "Մուտք գործած չէք։ ՈւիքիՍէրը օգտագործելու համար կը խնդրուի մուտք գործել։",
 	"wikilove-err-invalid-username": "Մասնակիցի անունը սխալ է։"
 }
