@@ -166,7 +166,7 @@
 	"wikilove-err-preview-api": "Nagkaroon ng suliranin ang isang bagay habang pinapaunang tingnan. Paki subukan ulit.",
 	"wikilove-err-send-api": "Nagkaroon ng suliranin ang isang bagay noong ipinapadala ang mensahe. Paki subukang muli.",
 	"wikilove-err-invalid-token": "Hindi maipadala ang WikiLove dahil sa isang pagkawala ng inilaang panahon sa dato. Subukang ikargang muli ang pahina o mag-logout at mag-login muli.",
-	"wikilove-err-not-logged-in": "Hindi ka nakalagda. Paki lumagda upang magamit ang WikiLove.",
+	"wikilove-err-not-logged-in": "Hindi ka naka-login. Paki login upang magamit ang WikiLove.",
 	"wikilove-err-invalid-username": "Hindi katanggap-tanggap ang pangalan ng tagagamit.",
 	"wikilove-err-no-self-wikilove": "Hindi mo maipapadala ang WikiLove papunta sa sarili mo. Paumanhin!",
 	"wikilove-err-redirect": "Ang pahina na pang-usapan ng tagagamit ay isang pagpapapunta sa ibang lugar.",
