@@ -4,7 +4,8 @@
 			"Cekli829",
 			"Emperyan",
 			"Koc61",
-			"Vito Genovese"
+			"Vito Genovese",
+			"Rapsar"
 		]
 	},
 	"wikilove-desc": "Kullanıcı mesaj sayfalarına, kolaylıkla olumlu kullanıcı geribildirimi yollayabilmek için bir arayüz ekler",
@@ -26,7 +27,7 @@
 	"wikilove-enter-message": "Bir mesaj girin:",
 	"wikilove-omit-sig": "(imza atmayın)",
 	"wikilove-image-example": "(örnek: Trophy.png)",
-	"wikilove-button-preview": "Ön izle",
+	"wikilove-button-preview": "Önizle",
 	"wikilove-preview": "Ön izleme",
 	"wikilove-notify": "Kullanıcıyı e-posta yoluyla bilgilendirin",
 	"wikilove-button-send": "VikiSevgi gönder",
