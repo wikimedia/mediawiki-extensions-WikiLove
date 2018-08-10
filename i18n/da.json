@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Christian List",
-			"Peter Alberti"
+			"Peter Alberti",
+			"Saederup92"
 		]
 	},
 	"wikilove-desc": "Tilføjer en brugerflade til at hjælpe med at give positive tilbagemeldinger til brugeres diskussionssider",
@@ -30,6 +31,10 @@
 	"wikilove-button-send": "Send WikiLove",
 	"wikilove-type-barnstars": "Barnstars",
 	"wikilove-type-food": "Mad og drikke",
+	"wikilove-food-beer-option": "Øl",
+	"wikilove-food-beer-header": "En øl til dig!",
+	"wikilove-food-pie-option": "Tærte",
+	"wikilove-food-pie-header": "En tærte til dig!",
 	"wikilove-type-kittens": "Killinger",
 	"wikilove-type-makeyourown": "Lav din egen",
 	"wikilove-err-header": "Skriv venligst en overskrift.",
