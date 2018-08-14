@@ -175,7 +175,7 @@
 	"wikilove-err-preview-api": "Дошло је до грешке при прегледању. Покушајте поново.",
 	"wikilove-err-send-api": "Дошло је до грешке при слању поруке. Покушајте поново.",
 	"wikilove-err-not-logged-in": "Нисте пријављени. Пријавите се да бисте користили Викиљубав.",
-	"wikilove-err-invalid-username": "Корисничко име није ваљано.",
+	"wikilove-err-invalid-username": "Корисничко име није важеће.",
 	"wikilove-err-no-self-wikilove": "Нажалост, не можете послати Викиљубав сами себи.",
 	"wikilove-err-redirect": "Корисничка страница за разговор је преусмерење.",
 	"wikilove-err-cannot-edit": "Немате дозволу да мењате ову страницу.",
