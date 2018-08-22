@@ -13,7 +13,8 @@
 			"Whym",
 			"Liuxinyu970226",
 			"Legoktm",
-			"Pikne"
+			"Pikne",
+			"Deryck Chan"
 		]
 	},
 	"wikilove-desc": "{{desc|name=Wiki Love|url=https://www.mediawiki.org/wiki/Extension:WikiLove}}",
@@ -157,7 +158,7 @@
 	"wikilove-food-pie-header": "A header of a [[:wikipedia:Barnstar]] of type \"food\" appears at the top of the talk page post.",
 	"wikilove-food-strawberries-option": "A text of a [[:wikipedia:Barnstar]] of type \"food\" that appears inside of a select list.",
 	"wikilove-food-strawberries-desc": "A description for a [[:wikipedia:Barnstar]] of type \"food\".",
-	"wikilove-food-strawberries-header": "A header of a [[:wikipedia:Barnstar]] of type \"food\" appears at the top of the talk page post.",
+	"wikilove-food-strawberries-header": "A header of a [[:wikipedia:Barnstar]] of type \"food\" appears at the top of the talk page post.　Ｔhe strawberries involved are on [[:File:Erdbeerteller01.jpg]], which may influence your translation of the messages (e.g. bowl).",
 	"wikilove-food-stroopwafels-option": "A text of a [[:wikipedia:Barnstar]] of type \"food\" that appears inside of a select list.",
 	"wikilove-food-stroopwafels-desc": "A description for a [[:wikipedia:Barnstar]] of type \"food\".",
 	"wikilove-food-stroopwafels-header": "A header of a [[:wikipedia:Barnstar]] of type \"food\" appears at the top of the talk page post.",
