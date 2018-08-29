@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jawadywn"
+			"Jawadywn",
+			"Masjawad99"
 		]
 	},
-	"wikilove-err-not-logged-in": "Kau lum masuk. Diaturi masuk amen nak makék pitur WikiSalut."
+	"wikilove-err-not-logged-in": "Dulur lum masuk. Diaturi masuk amen nak makék pitur WikiSalut.",
+	"wikilove-err-invalid-username": "Namo pemake idak valid."
 }
