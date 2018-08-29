@@ -219,8 +219,7 @@
 				"mediawiki.util",
 				"ext.wikiLove.defaultOptions",
 				"jquery.ui.dialog",
-				"mediawiki.ui.button",
-				"jquery.localize"
+				"mediawiki.ui.button"
 			]
 		},
 		"ext.wikiLove.local": {

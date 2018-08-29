@@ -19,7 +19,7 @@
 		 * @param {string[]} recipients Usernames of recipients (without namespace prefix)
 		 */
 		openDialog: function ( recipients ) {
-			var type, $typeList, typeId, $button, commonsLink, termsLink;
+			var type, $typeList, typeId, $button, commonsLink, termsLink, dialogHtml;
 			// If a list of recipients are specified, this will override the normal
 			// behavior of WikiLove, which is to post on the Talk page of the
 			// current page. It will also disable redirecting the user after submitting.
@@ -68,27 +68,27 @@
 					target: '_blank'
 				}, mw.msg( 'wikilove-terms-link' ) );
 
-				$dialog = $( '<div id="mw-wikilove-dialog">\
+				dialogHtml = '<div id="mw-wikilove-dialog">\
 <div id="mw-wikilove-select-type">\
 	<span class="mw-wikilove-number">1</span>\
-	<h3><html:msg key="wikilove-select-type"/></h3>\
+	<h3>' + mw.message( 'wikilove-select-type' ).escaped() + '</h3>\
 	<ul id="mw-wikilove-types"></ul>\
 </div>\
 <div id="mw-wikilove-get-started">\
-	<h2><span id="mwe-wikilove-pointer-arrow"></span><html:msg key="wikilove-get-started-header"/></h2>\
+	<h2><span id="mwe-wikilove-pointer-arrow"></span>' + mw.message( 'wikilove-get-started-header' ).escaped() + '</h2>\
 	<ol>\
-		<li><html:msg key="wikilove-get-started-list-1"/></li>\
-		<li><html:msg key="wikilove-get-started-list-2"/></li>\
-		<li><html:msg key="wikilove-get-started-list-3"/></li>\
+		<li>' + mw.message( 'wikilove-get-started-list-1' ).escaped() + '</li>\
+		<li>' + mw.message( 'wikilove-get-started-list-2' ).escaped() + '</li>\
+		<li>' + mw.message( 'wikilove-get-started-list-3' ).escaped() + '</li>\
 	</ol>\
 	<p><a target="_blank" href="' + mw.message( 'wikilove-what-is-this-link' ).escaped() + '">\
-		<html:msg key="wikilove-what-is-this"/>\
+		' + mw.message( 'wikilove-what-is-this' ).escaped() + '\
 	</a></p>\
-	<p id="mw-wikilove-anon-warning"><strong><html:msg key="wikilove-anon-warning"/></strong></p>\
+	<p id="mw-wikilove-anon-warning"><strong>' + mw.message( 'wikilove-anon-warning' ).escaped() + '</strong></p>\
 </div>\
 <div id="mw-wikilove-add-details">\
 	<span class="mw-wikilove-number">2</span>\
-	<h3><html:msg key="wikilove-add-details"/></h3>\
+	<h3>' + mw.message( 'wikilove-add-details' ).escaped() + '</h3>\
 	<form id="mw-wikilove-preview-form">\
 		<div id="mw-wikilove-image-preview">\
 			<div id="mw-wikilove-image-preview-spinner" class="mw-wikilove-spinner"></div>\
@@ -97,31 +97,31 @@
 		<label for="mw-wikilove-subtype" id="mw-wikilove-subtype-label"></label>\
 		<select id="mw-wikilove-subtype"></select>\
 		<div id="mw-wikilove-subtype-description"></div>\
-		<label id="mw-wikilove-gallery-label"><html:msg key="wikilove-select-image"/></label>\
+		<label id="mw-wikilove-gallery-label">' + mw.message( 'wikilove-select-image' ).escaped() + '</label>\
 		<div id="mw-wikilove-gallery">\
 			<div id="mw-wikilove-gallery-error">\
-				<html:msg key="wikilove-err-gallery"/>\
-				<a href="#" id="mw-wikilove-gallery-error-again"><html:msg key="wikilove-err-gallery-again"/></a>\
+				' + mw.message( 'wikilove-err-gallery' ).escaped() + '\
+				<a href="#" id="mw-wikilove-gallery-error-again">' + mw.message( 'wikilove-err-gallery-again' ).escaped() + '</a>\
 			</div>\
 			<div id="mw-wikilove-gallery-spinner" class="mw-wikilove-spinner"></div>\
 			<div id="mw-wikilove-gallery-content"></div>\
 		</div>\
-		<label for="mw-wikilove-header" id="mw-wikilove-header-label"><html:msg key="wikilove-header"/></label>\
+		<label for="mw-wikilove-header" id="mw-wikilove-header-label">' + mw.message( 'wikilove-header' ).escaped() + '</label>\
 		<input type="text" class="text" id="mw-wikilove-header"/>\
-		<label for="mw-wikilove-title" id="mw-wikilove-title-label"><html:msg key="wikilove-title"/></label>\
+		<label for="mw-wikilove-title" id="mw-wikilove-title-label">' + mw.message( 'wikilove-title' ).escaped() + '</label>\
 		<input type="text" class="text" id="mw-wikilove-title"/>\
-		<label for="mw-wikilove-image" id="mw-wikilove-image-label"><html:msg key="wikilove-image"/></label>\
-		<span class="mw-wikilove-note" id="mw-wikilove-image-note"><html:msg key="wikilove-image-example"/></span>\
+		<label for="mw-wikilove-image" id="mw-wikilove-image-label">' + mw.message( 'wikilove-image' ).escaped() + '</label>\
+		<span class="mw-wikilove-note" id="mw-wikilove-image-note">' + mw.message( 'wikilove-image-example' ).escaped() + '</span>\
 		<input type="text" class="text" id="mw-wikilove-image"/>\
 		<div id="mw-wikilove-commons-text">\
 		' + mw.message( 'wikilove-commons-text' ).escaped().replace( /\$1/, commonsLink ) + '\
 		</div>\
-		<label for="mw-wikilove-message" id="mw-wikilove-message-label"><html:msg key="wikilove-enter-message"/></label>\
-		<span class="mw-wikilove-note" id="mw-wikilove-message-note"><html:msg key="wikilove-omit-sig"/></span>\
+		<label for="mw-wikilove-message" id="mw-wikilove-message-label">' + mw.message( 'wikilove-enter-message' ).escaped() + '</label>\
+		<span class="mw-wikilove-note" id="mw-wikilove-message-note">' + mw.message( 'wikilove-omit-sig' ).escaped() + '</span>\
 		<textarea id="mw-wikilove-message" rows="4"></textarea>\
 		<div id="mw-wikilove-notify">\
 			<input type="checkbox" id="mw-wikilove-notify-checkbox" name="notify"/>\
-			<label for="mw-wikilove-notify-checkbox"><html:msg key="wikilove-notify"/></label>\
+			<label for="mw-wikilove-notify-checkbox">' + mw.message( 'wikilove-notify' ).escaped() + '</label>\
 		</div>\
 		<button class="submit mw-ui-button mw-ui-progressive" id="mw-wikilove-button-preview" type="submit"></button>\
 		<div id="mw-wikilove-preview-spinner" class="mw-wikilove-spinner"></div>\
@@ -129,7 +129,7 @@
 </div>\
 <div id="mw-wikilove-preview">\
 	<span class="mw-wikilove-number">3</span>\
-	<h3><html:msg key="wikilove-preview"/></h3>\
+	<h3>' + mw.message( 'wikilove-preview' ).escaped() + '</h3>\
 	<div id="mw-wikilove-preview-area"></div>\
 	<div id="mw-wikilove-terms">\
 	' + mw.message( 'wikilove-terms' ).escaped().replace( /\$1/, termsLink ) + '\
@@ -140,10 +140,8 @@
 	</form>\
 	<div id="mw-wikilove-success"></div>\
 </div>\
-</div>' );
-				$dialog.localize();
-
-				$dialog.dialog( {
+</div>';
+				$dialog = $( dialogHtml ).dialog( {
 					width: 800,
 					position: [ 'center', 80 ],
 					autoOpen: false,
