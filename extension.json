@@ -29,10 +29,12 @@
 		"ext.wikiLove.icon": {
 			"styles": "ext.wikiLove.icon.css"
 		},
-		"ext.wikiLove.defaultOptions": {
+		"ext.wikiLove.startup": {
 			"scripts": [
-				"ext.wikiLove.defaultOptions.js"
+				"ext.wikiLove.defaultOptions.js",
+				"ext.wikiLove.core.js"
 			],
+			"styles": "ext.wikiLove.less",
 			"messages": [
 				"wikilove-type-barnstars",
 				"wikilove-type-food",
@@ -161,15 +163,7 @@
 				"wikilove-food-stroopwafels-desc",
 				"wikilove-food-stroopwafels-header",
 				"wikilove-kittens-header",
-				"wikilove-goats-header"
-			]
-		},
-		"ext.wikiLove.startup": {
-			"scripts": [
-				"ext.wikiLove.core.js"
-			],
-			"styles": "ext.wikiLove.less",
-			"messages": [
+				"wikilove-goats-header",
 				"wikilove-tab-text",
 				"wikilove-dialog-title",
 				"wikilove-select-type",
@@ -217,7 +211,6 @@
 				"mediawiki.api",
 				"mediawiki.Title",
 				"mediawiki.util",
-				"ext.wikiLove.defaultOptions",
 				"jquery.ui.dialog",
 				"mediawiki.ui.button"
 			]
