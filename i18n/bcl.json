@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Filipinayzd"
+			"Filipinayzd",
+			"ShimunUfesoj"
 		]
 	},
-	"wikilove-err-not-logged-in": "Dai ka nakalaog. Maglaog tabi tanganing magamit an WikiLove."
+	"wikilove-err-not-logged-in": "Dai ka nakalaog. Maglaog tabi tanganing magamit an WikiLove.",
+	"wikilove-err-invalid-username": "Dae balido an paragamit-na-ngaran"
 }
