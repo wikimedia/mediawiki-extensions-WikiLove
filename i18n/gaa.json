@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Flixtey"
+			"Flixtey",
+			"Mybluberet"
 		]
 	},
-	"wikilove-err-not-logged-in": "Obɛ mli. Ofainɛ yaa mli koni Wikisuɔmɔ lɛ atsu nii."
+	"wikilove-err-not-logged-in": "Obɛ mli. Ofainɛ yaa mli koni Wikisuɔmɔ lɛ atsu nii.",
+	"wikilove-err-invalid-username": "Nitsulɔ gbɛi lɛ bɛ"
 }
