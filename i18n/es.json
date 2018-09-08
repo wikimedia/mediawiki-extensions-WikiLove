@@ -7,14 +7,15 @@
 			"Imre",
 			"PoLuX124",
 			"Macofe",
-			"Dgstranz"
+			"Dgstranz",
+			"Jelou"
 		]
 	},
 	"wikilove-desc": "Añade una interfaz para facilitar comentarios positivos de los usuarios a las páginas de discusión de otros usuarios",
 	"wikilove": "Wikiaprecio",
 	"wikilove-enable-preference": "Permitir agradecer a otros usuarios con la pestaña Wikiaprecio",
 	"wikilove-tab-text": "Wikiaprecio",
-	"tooltip-ca-wikilove": "Publicar un mensaje para este usuario mostrando tu agradecimiento",
+	"tooltip-ca-wikilove": "Publicar un mensaje mostrando tu agradecimiento a este usuario",
 	"wikilove-dialog-title": "Wikiaprecio – Enviar un mensaje de agradecimiento a otro usuario",
 	"wikilove-select-type": "Seleccionar tipo",
 	"wikilove-get-started-header": "¡Comencemos!",
