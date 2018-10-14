@@ -4,5 +4,6 @@
 			"Asenoner"
 		]
 	},
-	"wikilove-err-not-logged-in": "Te ne ies nia culegà. Culeghete prëibel per adurvé WikiLove."
+	"wikilove-err-not-logged-in": "Te ne ies nia culegà. Culeghete prëibel per adurvé WikiLove.",
+	"wikilove-err-invalid-username": "L inuem dl utënt ne vel nia."
 }
