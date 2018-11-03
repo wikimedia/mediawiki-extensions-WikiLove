@@ -1,6 +1,6 @@
 // See https://www.mediawiki.org/wiki/Extension:WikiLove for basic documentation on configuration.
 
-( function ( $, mw ) {
+( function () {
 	$.wikiLoveOptions = {
 		defaultText:
 			'{| style="background-color: $5; border: 1px solid $6;"\n' +
@@ -387,4 +387,4 @@
 		}
 	};
 
-}( jQuery, mediaWiki ) );
+}() );
