@@ -177,7 +177,7 @@
 	"wikilove-err-not-logged-in": "Нисте пријављени. Пријавите се да бисте користили Викиљубав.",
 	"wikilove-err-invalid-username": "Корисничко име није важеће.",
 	"wikilove-err-no-self-wikilove": "Нажалост, не можете послати Викиљубав сами себи.",
-	"wikilove-err-redirect": "Корисничка страница за разговор је преусмерење.",
+	"wikilove-err-redirect": "Корисничка страница за разговор је преусмеравање.",
 	"wikilove-err-cannot-edit": "Немате дозволу да мењате ову страницу.",
 	"wikilove-err-max-exceeded": "Не можете послати WikiLove на више од $1 {{PLURAL:$1|кориснику|корисника}} одједном.",
 	"wikilove-success-number": "$1 WikiLove {{PLURAL:$1|порука}} послато.",
