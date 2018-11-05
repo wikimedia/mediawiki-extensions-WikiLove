@@ -1,4 +1,4 @@
-( function ( $, mw ) {
+( function () {
 
 	var options = {}, // options modifiable by the user
 		$dialog = null, // dialog jQuery object
@@ -962,4 +962,4 @@
 	};
 
 	$( $.wikiLove.init );
-}( jQuery, mediaWiki ) );
+}() );
