@@ -8,6 +8,7 @@
 		"mediaWiki": false
 	},
 	"rules": {
-		"no-multi-str": "off"
+		"no-multi-str": "off",
+		"max-len": "off"
 	}
 }
