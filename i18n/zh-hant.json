@@ -19,7 +19,8 @@
 			"Wwycheuk",
 			"A2093064",
 			"和平至上",
-			"Kly"
+			"Kly",
+			"Jdforrester"
 		]
 	},
 	"wikilove-desc": "加入一個促進正向使用者回饋的介面至使用者對話頁面",
@@ -200,7 +201,7 @@
 	"wikilove-terms": "送出即代表您同意依據這些$1公開傳送的內容。",
 	"wikilove-terms-link": "條款",
 	"tag-wikilove-description": "使用維基友愛工具完成的編輯",
-	"WikiLove.js": "/* 此處的 JavaScript 可自訂 WikiLove, 請參考 https://www.mediaWiki.org/Wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
+	"WikiLove.js": "/* 此處的 JavaScript 可自訂 WikiLove, 請參考 https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
 	"apihelp-wikilove-description": "發送維基友愛給其他使用者。\n\n維基友愛（WikiLove）是用於透過帶有預設或本地端所定義模板的便利介面，來向使用者討論頁發送正面鼓勵的訊息。此操作會將指定 wiki 文字加入到特定的討論頁。出於統計目的，類型和其它資料將會被記錄下來。",
 	"apihelp-wikilove-summary": "給其他使用者維基友愛。",
 	"apihelp-wikilove-extended-description": "維基友愛（WikiLove）是用於透過帶有預設或本地端所定義模板的便利介面，來向使用者討論頁發送正面鼓勵的訊息。此操作會將指定 wiki 文字加入到特定的討論頁。出於統計目的，類型和其它資料將會被記錄下來。",
