@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ryan Kaldari",
+			"Jan Paul Posma",
+			"Zoranzoki21"
+		]
+	},
+	"apihelp-wikilove-description": "Give WikiLove to another user.\n\nWikiLove is a positive message posted to a user's talk page through a convenient interface with preset or locally defined templates. This action adds the specified wikitext to a certain talk page. For statistical purposes, the type and other data are logged.",
+	"apihelp-wikilove-summary": "Give WikiLove to another user.",
+	"apihelp-wikilove-extended-description": "WikiLove is a positive message posted to a user's talk page through a convenient interface with preset or locally defined templates. This action adds the specified wikitext to a certain talk page. For statistical purposes, the type and other data are logged.",
+	"apihelp-wikilove-param-title": "Full pagename of the user page or user talk page of the user to send WikiLove to.",
+	"apihelp-wikilove-param-text": "Raw wikitext to add in the new section.",
+	"apihelp-wikilove-param-message": "Actual message the user has entered, for logging purposes.",
+	"apihelp-wikilove-param-subject": "Subject header of the new section.",
+	"apihelp-wikilove-param-type": "Type of WikiLove (for statistics); this corresponds with a type selected in the menu, and optionally a subtype after that (e.g. as in \"{{int:wikilove-barnstar-original-title}}\" or \"{{int:wikilove-kittens-header}}\").",
+	"apihelp-wikilove-param-email": "Content of the optional email message to send to the user. A warning will be returned if the user cannot be emailed. WikiLove will be sent to the users talk page either way.",
+	"apihelp-wikilove-example-1": "Send WikiLove to \"[[User:Dummy]]\"",
+	"apiwarn-wikilove-ignoringunregistered": "Not logging unregistered recipients",
+	"apiwarn-wikilove-notlogged": "Action was not logged"
+}

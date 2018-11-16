@@ -8,7 +8,8 @@ module.exports = function ( grunt ) {
 	grunt.initConfig( {
 		banana: {
 			all: [
-				'i18n/'
+				'i18n/',
+				'i18n/api'
 			]
 		},
 		eslint: {
