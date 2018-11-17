@@ -184,12 +184,5 @@
 	"wikilove-terms-link": "Bedingungen",
 	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement/de",
 	"tag-wikilove-description": "Bearbeitung mit dem WikiLove-Werkzeug durchgeführt",
-	"WikiLove.js": "/* Das folgende JavaScript passt die persönliche Wertschätzung an, siehe https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
-	"apihelp-wikilove-summary": "Sendet WikiLove an einen anderen Benutzer.",
-	"apihelp-wikilove-param-text": "Roher Wikitext, der in den neuen Abschnitt eingefügt werden soll.",
-	"apihelp-wikilove-param-message": "Tatsächliche Nachricht, die der Benutzer eingegeben hat, für Protokollierungszwecke.",
-	"apihelp-wikilove-param-subject": "Betreffzeile des neuen Abschnitts.",
-	"apihelp-wikilove-example-1": "Sendet WikiLove an [[User:Dummy]]",
-	"apiwarn-wikilove-ignoringunregistered": "Unregistrierte Empfänger nicht protokollieren",
-	"apiwarn-wikilove-notlogged": "Die Aktion wurde nicht protokolliert"
+	"WikiLove.js": "/* Das folgende JavaScript passt die persönliche Wertschätzung an, siehe https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

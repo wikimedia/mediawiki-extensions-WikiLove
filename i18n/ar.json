@@ -187,17 +187,5 @@
 	"wikilove-terms": "بإرسالها تكون قد وافقت بالشفافية على هذه $1.",
 	"wikilove-terms-link": "الشروط",
 	"tag-wikilove-description": "باستخدام أداة ويكي الحب",
-	"WikiLove.js": "/* JavaScript placed here customizes WikiLove, see https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
-	"apihelp-wikilove-description": "منح ويكي الحب لمستخدم آخر\n\nويكي الحب رسالة إيجابية يتم نشرها في صفحة نقاش المستخدم من خلال واجهة ملائمة بقوالب محددة مسبقا أو محددة محليا، يضيف هذا الإجراء نص الويكي المحدد إلى صفحة نقاش معينة، لأغراض إحصائية; يتم تسجيل النوع والبيانات الأخرى.",
-	"apihelp-wikilove-summary": "منح ويكي الحب لمستخدم آخر.",
-	"apihelp-wikilove-extended-description": "ويكي الحب رسالة إيجابية يتم نشرها في صفحة نقاش المستخدم من خلال واجهة ملائمة بقوالب محددة مسبقا أو محددة محليا، يضيف هذا الإجراء نص الويكي المحدد إلى صفحة نقاش معينة، لأغراض إحصائية; يتم تسجيل النوع والبيانات الأخرى.",
-	"apihelp-wikilove-param-title": "اسم الصفحة الكامل لصفحة المستخدم أو صفحة نقاش المستخدم للمستخدم لإرسال ويكي الحب إليه.",
-	"apihelp-wikilove-param-text": "نص الويكي الخام لإضافته في القسم الجديد.",
-	"apihelp-wikilove-param-message": "الرسالة الفعلية التي أدخلها المستخدم; لأغراض التسجيل.",
-	"apihelp-wikilove-param-subject": "عنوان موضوع القسم الجديد.",
-	"apihelp-wikilove-param-type": "نوع ويكي الحب (للإحصاءات)، هذا يتوافق مع نوع محدد في القائمة، واختياريا نوع فرعي بعد ذلك (على سبيل المثال في \"{{int:wikilove-barnstar-original-title}}\" أو \"{{int:wikilove-kittens-header}}\") .",
-	"apihelp-wikilove-param-email": "محتوى رسالة البريد الإلكتروني الاختيارية لإرسالها إلى المستخدم، سيتم إرجاع تحذير في حالة تعذر إرسالها عبر البريد الإلكتروني، سيتم إرسال ويكي الحب إلى صفحة نقاش المستخدمين في كلتا الحالتين.",
-	"apihelp-wikilove-example-1": "إرسال ويكي الحب إلى \"[[User:Dummy]]\"",
-	"apiwarn-wikilove-ignoringunregistered": "عدم تسجيل المستلمين غير المسجلين",
-	"apiwarn-wikilove-notlogged": "لم يتم تسجيل الإجراء"
+	"WikiLove.js": "/* JavaScript placed here customizes WikiLove, see https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

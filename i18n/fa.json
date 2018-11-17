@@ -196,10 +196,5 @@
 	"wikilove-terms-link": "شرایط",
 	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement/fa",
 	"tag-wikilove-description": "ویرایش با استفاده از ابزار ویکی‌لاو",
-	"WikiLove.js": "/ * جاوااسکریپت مورد استفاده در اینجا ویکی‌هدیه را سفارشی می‌کند، نگاه کنید به https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration * /",
-	"apihelp-wikilove-summary": "فرستادن ویکی‌عشق به یک کاربر دیگر",
-	"apihelp-wikilove-param-text": "ویکی‌متن خام برای افزودن در بخش جدید",
-	"apihelp-wikilove-param-subject": "نام بخش جدید",
-	"apihelp-wikilove-example-1": "فرستادن ویکی‌عشق به \"[[User:Dummy]]\"",
-	"apiwarn-wikilove-notlogged": "عملیات سیاهه نشد"
+	"WikiLove.js": "/ * جاوااسکریپت مورد استفاده در اینجا ویکی‌هدیه را سفارشی می‌کند، نگاه کنید به https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration * /"
 }

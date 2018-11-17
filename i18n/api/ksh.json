@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Purodha"
+		]
+	},
+	"apihelp-wikilove-description": "Donn de päsöhnlesche Aanäkännong för ene anndere Metmaacher ußdröke.\n\nDadd es en aanjenämme Täx_Nohreesch, di dä Metmaacher op sing Klaafsigg kritt. Derför jidd_et e eijfach bedehnbaa Zohsazprojramm met fähdijje Schablohne. Mer kann och för sing Wikki noch wällsche derbei donn. Esu en päsöhnlesche Aanäkännong deihd dä fürjekeute Wikkitäx op beschtemmpte Klaafsigge schriive. För en Schtatestek maache ze künne, wähde Zood un annder Dahte em Logbohch faßjehallde.",
+	"apihelp-wikilove-param-title": "De kumplätte Övverschreff vun dä Metmaacher_Sigg udder Klaafsigg vun enem Metmaacher, woh de päsöhnlesche Aanäkännong för ußjedrök wähde sull.",
+	"apihelp-wikilove-param-text": "Dä röhje Wikkitäx för en dä neue Affschnedd zu donn.",
+	"apihelp-wikilove-param-message": "Wat dä Metmaacher tatsäschlesch enjejovve hät, för et Logbohch.",
+	"apihelp-wikilove-param-subject": "De Övverschreff för dä neue Affschnett",
+	"apihelp-wikilove-param-type": "De Zoot päsöhnlesche Aanäkännong för de Schtatestek. Se deiht zesammehange met dä Zoot, di em Mennüh ußjewähld wood un och dä Ongerzoot derfun, wi för e Beijschpell „{{int:wikilove-barnstar-original-title}}“ udder „{{int:wikilove-kittens-header}}“.",
+	"apihelp-wikilove-param-email": "Der Ennhald vun dä <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"„de eläktrohnesche Poß“\">e-mail</i>, di mer aan dä Metmaacher scheke künne, wadd ävver nit nühdesch es. Mer kridd en Warnong, wann mer dämm Metmaacher jaa kein <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"„de eläktrohnesche Poß“\">e-mail</i> scheke künne. De päsöhnlesche Aanäkännong  küdd äver esu udder esu op däm Metmaacher sing Klaafsigg drop.",
+	"apihelp-wikilove-example-1": "Schegg en päsöhnlesche Aanäkännong aan dä Metmaacher „<code lang=\"en\" xml:lang=\"en\" dir=\"ltr\">[[User:Dummy]]</code>“"
+}

@@ -182,13 +182,5 @@
 	"wikilove-terms": "Հաստատելով, դու ընդունում ես $1 կանոնադրությունը։",
 	"wikilove-terms-link": "պայմաններ",
 	"tag-wikilove-description": "Խմբագրումը կատարվել է ՎիքիՍեր գործիքով",
-	"WikiLove.js": "/* JavaScript placed here customizes WikiLove, see https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
-	"apihelp-wikilove-description": "Ուղարկիր ՎիքիՍեր այլ մասնակցի:\n\nՎիքիՍերը օգնում է թողնել դրական հաղորդագրություն մասնակցի քննարկման էջում հարմարավետ ինտերֆեյսի միջոցով՝ օգտագործելով արդեն առկա կամ ավելացված կաղապարները: ՎիքիՍերն ավելացնում է հատուկ վիքիտեքստ քննարկման էջերում:",
-	"apihelp-wikilove-param-title": "Մասնակցի կամ մասնակցի քննարկման էջի անվանումը, որին պետք է ուղարկվի ՎիքիՍերը:",
-	"apihelp-wikilove-param-text": "Նոր բաժնում ավելացման ենթակա վիքիտեքստը:",
-	"apihelp-wikilove-param-message": "Մասնակցի թողած հաղորդագրությունը:",
-	"apihelp-wikilove-param-subject": "Նոր բաժնի ենթավերնագիրը:",
-	"apihelp-wikilove-param-type": "ՎիքիՍիրո տեսակը (վիճակագրության համար), որը համապատասխանում է ձախ ցանկում ընտրված տեսակի և ենթատեսակի հետ (օրինակ՝ «շքանշան» կամ «փիսիկ»):",
-	"apihelp-wikilove-param-email": "Մասնակցին ուղարկվող ընտրողական էլեկտրոնային նամակի պարունակությունը: Եթե մասնակցին հնարավոր չէ թողնել էլեկտրոնային նամակ, կտեսնեք սխալի մասին հաղորդագրություն: ՎիքիՍերը ամեն դեպքում կավելանա մասնակցի քննարկման էջում:",
-	"apihelp-wikilove-example-1": "ՎիքիՍեր ուղարկել [[User:Dummy]] մասնակցին"
+	"WikiLove.js": "/* JavaScript placed here customizes WikiLove, see https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

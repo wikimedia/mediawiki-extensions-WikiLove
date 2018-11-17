@@ -191,17 +191,5 @@
 	"wikilove-terms": "שליחה מביעה את הסכמתך לשקיפות לפי $1 הבאים.",
 	"wikilove-terms-link": "התנאים",
 	"tag-wikilove-description": "עריכה שנעשתה באמצעות ויקי־אהבה",
-	"WikiLove.js": "/* זהו דף ג'אווה סקריפט להגדרות של ויקי־אהבה. למידע נוסף ר׳\n   https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
-	"apihelp-wikilove-description": "לתת ויקי־אהבה למשתמש אחר.\n\nויקי־אהבה היא הודעה חיובית שנשלחת לדף שיחת משתמש דרך ממשק נוח עם תבניות מוגדרות מראש או מקומית. הפעולה הזאת מוסיפה את קוד הוויקי שצוין לדף שיחה מסוים. למטרות סטטיסטיקה, הסוג ונתונים אחרים נרשמים ביומן.",
-	"apihelp-wikilove-summary": "שליחת הודעת ויקי־אהבה למשתמש אחר.",
-	"apihelp-wikilove-extended-description": "\"ויקי־אהבה\" היא הודעה חיובית שנשלחת לדף שיחה של משתמש באמצעות ממשק נוח עם תבניות מוגדרות מראש או מקומיות. פעולה זו מוסיפה את קוד הוויקי שצוין לדף שיחה מסוים. למטרות סטטיסטיקה, הסוג ונתונים אחרים נשמרים ביומן.",
-	"apihelp-wikilove-param-title": "שם הדף המלא של דף המשתמש או דף השיחה של המשתמש שצריך לשלוח לו ויקי־אהבה.",
-	"apihelp-wikilove-param-text": "קוד הוויקי הגולמי שיתווסף לפסקה החדשה.",
-	"apihelp-wikilove-param-message": "ההודעה האמתית שהמשתמש הזין, למטרות רישום ביומן.",
-	"apihelp-wikilove-param-subject": "כותרת הנושא של הפסקה החדשה.",
-	"apihelp-wikilove-param-type": "סוג הוויקי־אהבה (בשביל סטטיסטיקה); זה מקביל לסוג שנבחר בתפריט, ואולי גם תת־סוג אחרי־כן (למשל, \"{{int:wikilove-barnstar-original-title}}\" או \"{{int:wikilove-kittens-header}}\").",
-	"apihelp-wikilove-param-email": "התוכן של המכתב שיישלח בדוא\"ל למשתמש (לא חובה). תוחזר אזהרה אם אי־אפשר לשלוח דוא\"ל למשתמש. ויקי־אהבה תישלח למשתמש בכל מקרה.",
-	"apihelp-wikilove-example-1": "לשלוח ויקי־אהבה ל־\"[[User:Dummy]]\"",
-	"apiwarn-wikilove-ignoringunregistered": "לא יירשמו ביומן מקבלים בלתי־רשומים",
-	"apiwarn-wikilove-notlogged": "הפעולה לא נרשמה ביומן"
+	"WikiLove.js": "/* זהו דף ג'אווה סקריפט להגדרות של ויקי־אהבה. למידע נוסף ר׳\n   https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

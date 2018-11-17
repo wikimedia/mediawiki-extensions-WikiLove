@@ -9,6 +9,5 @@
 		]
 	},
 	"wikilove-err-not-logged-in": "Системэм ухэхьагъэп. Хахьэба, WikiLove бгъэфедэнэу уфаемэ.",
-	"wikilove-err-invalid-username": "ХэлэжьакӀом ыцӀэр тэрэзэп.",
-	"apihelp-wikilove-example-1": "\"[[User:Dummy]]-м WikiLove фегъэхь"
+	"wikilove-err-invalid-username": "ХэлэжьакӀом ыцӀэр тэрэзэп."
 }

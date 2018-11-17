@@ -185,15 +185,5 @@
 	"wikilove-terms-link": "termos",
 	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement/gl",
 	"tag-wikilove-description": "Edición feita mediante a ferramenta de amor wiki",
-	"WikiLove.js": "/* O JavaScript que se coloque aquí afectará a extensión Amor wiki; lea https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
-	"apihelp-wikilove-description": "Dar WikiAmor a outro usuario.\n\nWikiAmor é unha mensaxe positiva enviada á páxina de conversa dun usuario a través dunha interface práctica con modelos predefinidos ou definidos localmente. Esta acción engade o wikitexto especificado á páxina de conversa indicada. Por temas estatísticos, o tipo e outros datos son rexistrados.",
-	"apihelp-wikilove-summary": "Envíe un WikiAmor a outro usuario.",
-	"apihelp-wikilove-param-title": "Nome completo da páxina de usuario ou páxina de conversa do usuario ó que enviar o WikiAmor.",
-	"apihelp-wikilove-param-text": "Texto wiki en bruto a engadir na nova sección.",
-	"apihelp-wikilove-param-message": "Mensaxe actual que enviou o usuario, para propósitos de rexistro.",
-	"apihelp-wikilove-param-subject": "Cabeceira de tema na nova sección.",
-	"apihelp-wikilove-param-type": "Tipo de WikiAmor (para estatísticas); isto corresponde co tipo seleccionado no menú da esquerda, e opcionalmente un subtipo despois dese (p. ex. como en \"{{int:wikilove-barnstar-original-title}}\" ou \"{{int:wikilove-kittens-header}}\").",
-	"apihelp-wikilove-param-email": "Contido da mensaxe de correo electrónico opcional a enviar ó usuario. Devolverase un aviso se non se lle pode enviar correos ó usuario. Enviarase o WikiAmor á páxina de conversa do usuario de tódolos xeitos.",
-	"apihelp-wikilove-example-1": "Enviar WikiAmor a \"[[User:Dummy]]\"",
-	"apiwarn-wikilove-notlogged": "A acción non foi rexistrada"
+	"WikiLove.js": "/* O JavaScript que se coloque aquí afectará a extensión Amor wiki; lea https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

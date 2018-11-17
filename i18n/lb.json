@@ -141,6 +141,5 @@
 	"wikilove-commons-text": "Dir fannt Biller wann Dir op $1 sicht.",
 	"wikilove-terms-link": "Bedingungen",
 	"tag-wikilove-description": "Ännerung déi mam WikiLove-Tool gemaach gouf",
-	"WikiLove.js": "/* Dëse JavaScript adaptéiert déi perséinnlech Wäertschätzung, kuckt https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
-	"apiwarn-wikilove-notlogged": "Aktioun gouf net geloggt"
+	"WikiLove.js": "/* Dëse JavaScript adaptéiert déi perséinnlech Wäertschätzung, kuckt https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

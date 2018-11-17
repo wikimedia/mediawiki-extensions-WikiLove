@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"AZISS",
+			"Serkanland"
+		]
+	},
+	"apihelp-wikilove-param-text": "Yeni bölməyə xam vikimətn əlavə etmək.",
+	"apihelp-wikilove-param-subject": "Yeni bölmənin mövzu başlığı.",
+	"apihelp-wikilove-example-1": "\"[[User:Dummy]]\" istifadəçisinə VikiRəğbət göndər"
+}

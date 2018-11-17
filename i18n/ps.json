@@ -65,7 +65,5 @@
 	"wikilove-err-invalid-username": "دا کارن-نوم سم نه دی.",
 	"wikilove-what-is-this": "دا څه دی؟",
 	"wikilove-commons-link": "ويکيمېډيا کامنز",
-	"wikilove-terms-link": "شرطونه",
-	"apihelp-wikilove-param-subject": "د نوې برخې د سکالو سرليک.",
-	"apihelp-wikilove-example-1": "[[User:Dummy]]ته ويکي مينه وليږه."
+	"wikilove-terms-link": "شرطونه"
 }

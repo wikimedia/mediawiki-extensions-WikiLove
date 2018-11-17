@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gomoko",
+			"Thibaut120094",
+			"Urhixidur",
+			"Wladek92"
+		]
+	},
+	"apihelp-wikilove-description": "Donner un WikiLove à un autre utilisateur.\n\nWikiLove est un message positif publié sur la page de discussion d’un utilisateur via une interface appropriée avec des modèles prédéfinis ou définis en local. Cette action ajoute le wikitexte spécifié à une certaine page de discussion. À des fins statistiques, le type et d’autres données sont tracés.",
+	"apihelp-wikilove-summary": "Donner du WikiLove à un autre utilisateur.",
+	"apihelp-wikilove-extended-description": "WikiLove est un message positif publié sur la page de discussion d’un utilisateur via une interface appropriée avec des modèles prédéfinis ou définis en local. Cette action ajoute le wikitexte spécifié à une certaine page de discussion. À des fins statistiques, le type et d’autres données sont tracés.",
+	"apihelp-wikilove-param-title": "Nom de page complet de la page d’utilisateur ou de la page de discussion de l’utilisateur auquel envoyer le WikiLove.",
+	"apihelp-wikilove-param-text": "Wikitexte brut à ajouter dans la nouvelle section.",
+	"apihelp-wikilove-param-message": "Message réellement saisi par l’utilisateur, à des fins de traçage.",
+	"apihelp-wikilove-param-subject": "Entête de la nouvelle section.",
+	"apihelp-wikilove-param-type": "Type de WikiLove (pour les statistiques) ; cela correspond à un type sélectionné dans le menu, et éventuellement à un sous-type après cela (par ex. comme dans « {{int:wikilove-barnstar-original-title}} » ou « {{int:wikilove-kittens-header}} »).",
+	"apihelp-wikilove-param-email": "Contenu du message de courriel facultatif envoyé à l’utilisateur? Un avertissement sera renvoyé si l’utilisateur ne peut être joint par courriel. WikiLove sera sinon envoyé aux pages de discussion des utilisateurs.",
+	"apihelp-wikilove-example-1": "Envoyer WikiLove à \"[[User:Dummy]]\"",
+	"apiwarn-wikilove-ignoringunregistered": "Pas de journalisation des destinataires non enregistrés.",
+	"apiwarn-wikilove-notlogged": "L'action n'a pas été enregistrée"
+}

@@ -185,17 +185,5 @@
 	"wikilove-terms": "Ao enviar, aceita transparência de acordo com $1.",
 	"wikilove-terms-link": "estas condições",
 	"tag-wikilove-description": "Edição feita usando a ferramenta WikiLove",
-	"WikiLove.js": "/* Código JavaScript colocado aqui personaliza o WikiApreço; consulte https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
-	"apihelp-wikilove-description": "Envie um WikiApreço a outro utilizador.\n\nUm WikiApreço é uma mensagem positiva publicada na página de discussão de um utilizador, através de uma interface conveniente, com predefinições gerais ou definidas localmente. Esta ação adiciona a uma determinada página de discussão o texto wiki especificado. Para fins estatísticos, será registado o tipo e outros dados.",
-	"apihelp-wikilove-summary": "Envie um WikiApreço a outro utilizador.",
-	"apihelp-wikilove-extended-description": "Um WikiApreço é uma mensagem positiva publicada na página de discussão de um utilizador, através de uma interface conveniente, com predefinições gerais ou definidas localmente. Esta ação adiciona a uma determinada página de discussão o texto wiki especificado. Para fins estatísticos, será registado o tipo e outros dados.",
-	"apihelp-wikilove-param-title": "Nome completo da página de utilizador ou de discussão, do utilizador a quem será enviado o WikiApreço.",
-	"apihelp-wikilove-param-text": "Texto wiki a ser adicionado na nova secção.",
-	"apihelp-wikilove-param-message": "Mensagem real introduzida pelo utilizador, para fins de registo.",
-	"apihelp-wikilove-param-subject": "Cabeçalho de assunto da nova secção.",
-	"apihelp-wikilove-param-type": "Tipo de WikiApreço (para fins estatísticos); isto corresponde a um tipo selecionado no menu e, opcionalmente, a um subtipo posterior (por exemplo, como em \"{{int:wikilove-barnstar-original-title}}\" ou \"{{int:wikilove-kittens-header}}\").",
-	"apihelp-wikilove-param-email": "Conteúdo da mensagem de correio opcional a ser enviada ao utilizador. Será devolvido um aviso se o utilizador não puder ser contactado por correio eletrónico. Independentemente, é enviado um WikiApreço para a página de discussão do utilizador.",
-	"apihelp-wikilove-example-1": "Enviar um WikiApreço a \"[[User:Dummy]]\"",
-	"apiwarn-wikilove-ignoringunregistered": "Não são criados registos de destinatários não registados",
-	"apiwarn-wikilove-notlogged": "A ação não foi registada"
+	"WikiLove.js": "/* Código JavaScript colocado aqui personaliza o WikiApreço; consulte https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

@@ -149,8 +149,5 @@
 	"wikilove-anon-warning": "Qeyd: Bu istifadəçi qeydiyyatdan keçməyib, istifadəçi bu mesajı görməyə bilər.",
 	"wikilove-commons-text": "$1 yükləyərək şəkillər tapa bilərsiz.",
 	"wikilove-terms": "Təsdiq etməklə siz bu $1i qəbul etmiş olursuz.",
-	"wikilove-terms-link": "şərtlər",
-	"apihelp-wikilove-param-text": "Yeni bölməyə xam vikimətn əlavə etmək.",
-	"apihelp-wikilove-param-subject": "Yeni bölmənin mövzu başlığı.",
-	"apihelp-wikilove-example-1": "\"[[User:Dummy]]\" istifadəçisinə VikiRəğbət göndər"
+	"wikilove-terms-link": "şərtlər"
 }

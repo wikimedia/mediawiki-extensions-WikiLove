@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bugoslav"
+		]
+	},
+	"apihelp-wikilove-summary": "Daruj wikiljubav drugom suradniku.",
+	"apihelp-wikilove-example-1": "Pošalji wikiljubav za: »[[Suradnik:Ja suradnik]]«"
+}

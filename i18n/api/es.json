@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dgstranz",
+			"Fitoschido",
+			"Macofe"
+		]
+	},
+	"apihelp-wikilove-param-type": "Tipo de WikiLove (para estadísticas); esto corresponde con un tipo seleccionado en el menú y, opcionalmente, un subtipo a continuación (por ejemplo, como en \"{{int:wikilove-barnstar-original-title}}\" o \"{{int:wikilove-kittens-header}}\").",
+	"apihelp-wikilove-param-email": "El contenido del correo electrónico opcional para enviar al usuario. Si no se puede mandarle un correo electrónico, se devolverá una advertencia. De todas formas, se enviará wikiaprecio a la página de discusión del usuario.",
+	"apihelp-wikilove-example-1": "Enviar wikiaprecio a «[[User:Dummy]]»",
+	"apiwarn-wikilove-notlogged": "La acción no se ha registrado"
+}

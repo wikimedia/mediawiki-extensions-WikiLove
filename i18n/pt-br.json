@@ -196,17 +196,5 @@
 	"wikilove-terms-link": "termos",
 	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement",
 	"tag-wikilove-description": "Edição feita usando a ferramenta WikiLove",
-	"WikiLove.js": "/* O Javascript que colocar aqui personalizará a extensão WikiLove. Favor ler https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
-	"apihelp-wikilove-description": "Dê WikiLove para outro usuário.\n\nWikiLove é uma mensagem positiva postada numa página de discussão de um usuário através de uma interface conveniente, com modelos predefinidos ou definidos localmente. Essa ação adiciona o wikitexto especificado para uma determinada página de conversa. Para fins estatísticos, o tipo e outros dados são registrados.",
-	"apihelp-wikilove-summary": "Dê o WikiLove a outro usuário.",
-	"apihelp-wikilove-extended-description": "WikiLove é uma mensagem positiva postada na página de de discussão de um usuário através de uma interface conveniente com predefinições ou preset definidos localmente. Esta ação adiciona o texto wiki especificado a uma determinada página de discussão. Para fins estatísticos, o tipo e outros dados são registrados.",
-	"apihelp-wikilove-param-title": "Nome de página completo da página do usuário ou página de discussão do usuário para enviar WikiLove.",
-	"apihelp-wikilove-param-text": "Texto wiki raw para adicionar na nova seção.",
-	"apihelp-wikilove-param-message": "Mensagem atual que o usuário entrou, para fins de registro.",
-	"apihelp-wikilove-param-subject": "Cabeçalho do assunto da nova seção.",
-	"apihelp-wikilove-param-type": "Tipo de WikiLove (para estatísticas); Isso corresponde a um tipo selecionado no menu e, opcionalmente, um subtipo depois (por exemplo, em \"{{int: wikilove-barnstar-original-title}}\" ou \"{{int: wikilove-kittens-header}}\") .",
-	"apihelp-wikilove-param-email": "Conteúdo da mensagem de e-mail opcional para enviar ao usuário. Um aviso será retornado se o usuário não puder receber e-mail. O WikiLove será enviado para a página de conversação dos usuários de qualquer maneira.",
-	"apihelp-wikilove-example-1": "Enviar WikiLove a \"[[User:Dummy]]\"",
-	"apiwarn-wikilove-ignoringunregistered": "Não registrar destinatários não registrados",
-	"apiwarn-wikilove-notlogged": "A ação não foi registrada"
+	"WikiLove.js": "/* O Javascript que colocar aqui personalizará a extensão WikiLove. Favor ler https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

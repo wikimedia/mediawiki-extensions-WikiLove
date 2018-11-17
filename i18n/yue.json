@@ -185,17 +185,5 @@
 	"wikilove-terms-link": "條款",
 	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement",
 	"tag-wikilove-description": "用維基愛心 (WikiＬove)　做嘅修改",
-	"WikiLove.js": "/* 呢段　JavaScript　係用嚟設定《維基愛心》 (WikiLove)　嘅，詳情請睇 https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */",
-	"apihelp-wikilove-description": "送維基愛心畀另一個用戶。\n\n維基愛心係一個用嚟傳統正能量嘅用戶傾偈版留言，內容可以預設倒模，亦都可以本站自製。呢個工具會自動將預設嘅維基字加落一個傾偈版度。維基愛心嘅種類同埋其他數據會收集做統計用途。",
-	"apihelp-wikilove-summary": "送維基愛心畀另一個用戶",
-	"apihelp-wikilove-extended-description": "維基愛心係一個用嚟傳統正能量嘅用戶傾偈版留言，內容可以預設倒模，亦都可以本站自製。呢個工具會自動將預設嘅維基字加落一個傾偈版度。維基愛心嘅種類同埋其他數據會收集做統計用途。",
-	"apihelp-wikilove-param-title": "維基愛心收件人個用戶版或者傾偈版嘅完整版名",
-	"apihelp-wikilove-param-text": "加咗未處理嘅維基字去新小節",
-	"apihelp-wikilove-param-message": "用戶實際上留嘅言。用嚟做日誌。",
-	"apihelp-wikilove-param-subject": "新小節嘅標題。",
-	"apihelp-wikilove-param-type": "維基愛心種類（統計用）；對應選單上面揀嘅種類，有時亦包括細類，例如（「{{int:wikilove-barnstar-original-title}}」、「{{int:wikilove-kittens-header}}」）。",
-	"apihelp-wikilove-param-email": "額外寄畀呢個用戶嘅電郵嘅內容。如果個用戶唔俾人寄電郵畀佢，會出錯誤訊息。點都好，收件人都會收到維基愛心訊息。",
-	"apihelp-wikilove-example-1": "送贈維基愛心畀\"[[User:Dummy]]\"",
-	"apiwarn-wikilove-ignoringunregistered": "唔會記低無簽到嘅收信人",
-	"apiwarn-wikilove-notlogged": "冇登錄到呢個動作"
+	"WikiLove.js": "/* 呢段　JavaScript　係用嚟設定《維基愛心》 (WikiLove)　嘅，詳情請睇 https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

@@ -175,9 +175,5 @@
 	"wikilove-commons-link": "ویکیمیدیا کۆمنز",
 	"wikilove-terms": "بە ناردنی ئەمە، مل دەدەیە ڕووتەنکی لە ژێر $1.",
 	"wikilove-terms-link": "مەرجەکان",
-	"tag-wikilove-description": "دەستکاریی ئامرازی ویکیدیاری",
-	"apihelp-wikilove-description": "ویکیدیاری پەیامێکی دڵخۆشکەرە کە لەسەر پەڕەکانی وتووێژی بەکارھێنەرانی تر دابندرێت بە ڕووکەشێکی جیاواز. ئەم کردارە ویکیدەقێک دەخاتە سەر پەڕەی وتووێژ لەگەڵ ئەو ئایکۆنەیھەڵت بژاردووە.",
-	"apihelp-wikilove-summary": "ویکیدیاری بدە بە بەکارھێنەرێکی تر.",
-	"apihelp-wikilove-example-1": "ناردنی ویکیدیاری بۆ [[User:Dummy]]",
-	"apiwarn-wikilove-notlogged": "کردارەکە لۆگ نەکرا"
+	"tag-wikilove-description": "دەستکاریی ئامرازی ویکیدیاری"
 }
