@@ -169,7 +169,7 @@
 	"wikilove-err-preview-api": "Došlo je do greške pri pregledanju. Pokušajte ponovo.",
 	"wikilove-err-send-api": "Došlo je do greške pri slanju poruke. Pokušajte ponovo.",
 	"wikilove-err-not-logged-in": "Niste prijavljeni. Prijavite se da biste koristili Vikiljubav.",
-	"wikilove-err-invalid-username": "Korisničko ime nije valjano.",
+	"wikilove-err-invalid-username": "Korisničko ime nije važeće.",
 	"wikilove-summary": "/* $1 */ nova poruka (Vikiljubav)",
 	"wikilove-what-is-this": "Šta je ovo?",
 	"wikilove-what-is-this-link": "https://www.mediawiki.org/wiki/Special:MyLanguage/WikiLove",
