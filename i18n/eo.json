@@ -3,7 +3,8 @@
 		"authors": [
 			"Yekrats",
 			"KuboF",
-			"Robin van der Vliet"
+			"Robin van der Vliet",
+			"YvesNevelsteen"
 		]
 	},
 	"wikilove-desc": "Aldonas interfacon por sendi aprezajn mesaĝojn al la diskutopaĝoj de uzanto",
@@ -54,7 +55,7 @@
 	"wikilove-err-gallery-again": "Reprovi",
 	"wikilove-err-preview-api": "Iu fuŝis dum antaŭvidado. Bonvolu reprovi.",
 	"wikilove-err-send-api": "Iu fuŝis kiam sendante la mesaĝon. Bonvolu reprovi.",
-	"wikilove-err-not-logged-in": "Vi ne estas ensalutinta. Bonvolu ensaluti por uzi VikiAmon.",
+	"wikilove-err-not-logged-in": "Vi ne estas ensalutinta. Bonvolu ensaluti por uzi VikiLove.",
 	"wikilove-err-invalid-username": "La uzantonomo ne estas valida.",
 	"wikilove-summary": "/* $1 */ nova mesaĝo VikiAmo",
 	"wikilove-what-is-this": "Kio estas?",
