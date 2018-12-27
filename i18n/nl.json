@@ -5,7 +5,8 @@
 			"SPQRobin",
 			"Saruman",
 			"Siebrand",
-			"Tjcool007"
+			"Tjcool007",
+			"Robin van der Vliet"
 		]
 	},
 	"wikilove-desc": "Voegt een interface toe voor het geven van positieve terugkoppeling op overlegpagina's van gebruikers",
@@ -177,7 +178,7 @@
 	"wikilove-success-number": "{{PLURAL:$1|Eén bericht|$1 berichten}} met WikiLove verzonden.",
 	"wikilove-summary": "/* $1 */ nieuw Wikiwaarderingbericht",
 	"wikilove-what-is-this": "Wat is dit?",
-	"wikilove-anon-warning": "Opmerking: Deze gebruiker is niet geregistreerd, hij of zij ziet dit bericht misschien niet.",
+	"wikilove-anon-warning": "Opmerking: Deze gebruiker is niet geregistreerd en ziet dit bericht misschien niet.",
 	"wikilove-commons-text": "U kunt afbeeldingen vinden door op $1 te zoeken.",
 	"wikilove-terms": "Door op te slaan gaat u akkoord met transparantie onder deze $1.",
 	"wikilove-terms-link": "voorwaarden",
