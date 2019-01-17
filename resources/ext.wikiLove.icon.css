@@ -1,3 +1,7 @@
+.client-nojs li#ca-wikilove {
+	display: none;
+}
+
 div.vectorTabs li#ca-wikilove {
 	line-height: 1.4em; /* account for scripts with tall ascenders */
 }
@@ -21,15 +25,10 @@ div.vectorTabs li#ca-wikilove {
 	* compatibility (browsers able to understand gradient syntax support also SVG) */
 	/* @embed */
 	background-image: linear-gradient( transparent, transparent ), url( images/heart-icons-red.svg );
-}
-.vectorTabs #ca-wikilove.icon a {
 	background-position: 5px 60%;
 }
+
 .vectorTabs #ca-wikilove.icon a:hover,
 .vectorTabs #ca-wikilove.icon a:focus {
 	background-position: -19px 60%;
-}
-
-.client-nojs li#ca-wikilove {
-	display: none;
 }
