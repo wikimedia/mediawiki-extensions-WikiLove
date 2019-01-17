@@ -6,6 +6,7 @@
 #mw-wikilove-dialog {
 	margin: 10px;
 	overflow: hidden;
+
 	h3 {
 		margin-bottom: 20px;
 	}
@@ -16,6 +17,7 @@
 	clear: both; /* for monobook skin */
 }
 
+/* stylelint-disable comment-whitespace-inside */
 /* dialog type selection */
 /*#mw-wikilove-dialog*/ #mw-wikilove-select-type {
 	float: left;
@@ -99,7 +101,6 @@
 	border: 0;
 	font-weight: bold;
 	margin-left: -48px;
-
 }
 
 #mwe-wikilove-pointer-arrow {
@@ -114,6 +115,7 @@
 	color: #fff;
 	display: inline-block;
 }
+
 .ltr #mwe-wikilove-pointer-arrow:after {
 	content: '\2190';
 }
@@ -177,7 +179,7 @@
 	color: #0645ad;
 }
 
-/*#mw-wikilove-dialog*/ #mw-wikilove-gallery img {
+/*#mw-wikilove-dialog*/ #mw-wikilove-gallery img { // stylelint-disable-line no-descending-specificity
 	margin-right: 5px;
 	margin-bottom: 5px;
 	padding: 5px;
@@ -216,6 +218,7 @@
 /*#mw-wikilove-dialog #mw-wikilove-preview*/ #mw-wikilove-preview-area .editsection {
 	display: none;
 }
+/* stylelint-enable comment-whitespace-inside */
 
 /* dialog misc */
 #mw-wikilove-dialog input[ type='text' ],
@@ -272,7 +275,6 @@
 	margin-right: 5px;
 	font-size: 18px;
 	font-weight: bold;
-
 	background: #00af89;
 	border-radius: 100%;
 }
