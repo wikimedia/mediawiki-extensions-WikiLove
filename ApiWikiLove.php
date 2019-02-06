@@ -3,6 +3,7 @@
 use Wikimedia\Rdbms\DBQueryError;
 
 class ApiWikiLove extends ApiBase {
+	/** @inheritDoc */
 	public function execute() {
 		global $wgWikiLoveLogging, $wgParser;
 
@@ -158,6 +159,7 @@ class ApiWikiLove extends ApiBase {
 		$api->execute();
 	}
 
+	/** @inheritDoc */
 	public function getAllowedParams() {
 		return [
 			'title' => [
@@ -188,10 +190,12 @@ class ApiWikiLove extends ApiBase {
 		];
 	}
 
+	/** @inheritDoc */
 	public function needsToken() {
 		return 'csrf';
 	}
 
+	/** @inheritDoc */
 	public function isWriteMode() {
 		return true;
 	}
