@@ -33,7 +33,7 @@ class ApiWikiLove extends ApiBase {
 			->text();
 
 		// If LQT is installed and enabled, use it.
-		if ( class_exists( 'LqtDispatch' ) && LqtDispatch::isLqtPage( $talk ) ) {
+		if ( class_exists( LqtDispatch::class ) && LqtDispatch::isLqtPage( $talk ) ) {
 			$apiParamArray = [
 				'action' => 'threadaction',
 				'threadaction' => 'newthread',
