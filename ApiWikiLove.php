@@ -32,8 +32,10 @@ class ApiWikiLove extends ApiBase {
 		$summary = $this->msg( 'wikilove-summary', $strippedSubject )->inContentLanguage()
 			->text();
 
+		$extReg = ExtensionRegistry::getInstance();
+
 		// If LQT is installed and enabled, use it.
-		if ( class_exists( LqtDispatch::class ) && LqtDispatch::isLqtPage( $talk ) ) {
+		if ( $extReg->isLoaded( 'Liquid Threads' ) && LqtDispatch::isLqtPage( $talk ) ) {
 			$apiParamArray = [
 				'action' => 'threadaction',
 				'threadaction' => 'newthread',
@@ -44,9 +46,7 @@ class ApiWikiLove extends ApiBase {
 				'token' => $params['token']
 			];
 		// If Flow is installed and enabled, use it.
-		} elseif ( defined( 'CONTENT_MODEL_FLOW_BOARD' )
-			&& $talk->hasContentModel( CONTENT_MODEL_FLOW_BOARD )
-		) {
+		} elseif ( $extReg->isLoaded( 'Flow' ) && $talk->hasContentModel( CONTENT_MODEL_FLOW_BOARD ) ) {
 			$apiParamArray = [
 				'action' => 'flow',
 				'submodule' => 'new-topic',
