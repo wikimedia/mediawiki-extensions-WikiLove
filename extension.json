@@ -23,8 +23,8 @@
 		]
 	},
 	"AutoloadClasses": {
-		"ApiWikiLove": "ApiWikiLove.php",
-		"WikiLoveHooks": "WikiLoveHooks.php"
+		"ApiWikiLove": "includes/ApiWikiLove.php",
+		"WikiLoveHooks": "includes/WikiLoveHooks.php"
 	},
 	"ResourceModules": {
 		"ext.wikiLove.icon": {

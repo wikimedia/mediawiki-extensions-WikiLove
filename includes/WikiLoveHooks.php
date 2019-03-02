@@ -17,10 +17,10 @@ class WikiLoveHooks {
 	public static function onLoadExtensionSchemaUpdates( $updater = null ) {
 		if ( $updater === null ) {
 			global $wgExtNewTables;
-			$wgExtNewTables[] = [ 'wikilove_log', __DIR__ . '/patches/WikiLoveLog.sql' ];
+			$wgExtNewTables[] = [ 'wikilove_log', dirname( __DIR__ ) . '/patches/WikiLoveLog.sql' ];
 		} else {
 			$updater->addExtensionUpdate( [ 'addTable', 'wikilove_log',
-				__DIR__ . '/patches/WikiLoveLog.sql', true ] );
+				dirname( __DIR__ ) . '/patches/WikiLoveLog.sql', true ] );
 		}
 	}
 
