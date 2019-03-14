@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Csisc"
+			"Csisc",
+			"Meno25"
 		]
 	},
-	"wikilove-err-invalid-username": "إسم المستعمل ماهوش صحيح."
+	"wikilove-err-invalid-username": "اسم المستعمل ماهوش صحيح."
 }
