@@ -5,6 +5,7 @@
 		]
 	},
 	"apihelp-wikilove-summary": "Sendet WikiLove an einen anderen Benutzer.",
+	"apihelp-wikilove-param-title": "Vollständiger Name der Benutzer- oder -diskussionsseite des Benutzers, an den WikiLove gesendet werden soll.",
 	"apihelp-wikilove-param-text": "Roher Wikitext, der in den neuen Abschnitt eingefügt werden soll.",
 	"apihelp-wikilove-param-message": "Tatsächliche Nachricht, die der Benutzer eingegeben hat, für Protokollierungszwecke.",
 	"apihelp-wikilove-param-subject": "Betreffzeile des neuen Abschnitts.",
