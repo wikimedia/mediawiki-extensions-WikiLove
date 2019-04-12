@@ -428,7 +428,8 @@
 
 			// Check for a header if it is required
 			if ( currentTypeOrSubtype.fields.indexOf( 'header' ) !== -1 && $( '#mw-wikilove-header' ).val().length === 0 ) {
-				$.wikiLove.showAddDetailsError( 'wikilove-err-header' ); return false;
+				$.wikiLove.showAddDetailsError( 'wikilove-err-header' );
+				return false;
 			}
 
 			// Check for a title if it is required, and otherwise use the header text
@@ -439,11 +440,13 @@
 			if ( currentTypeOrSubtype.fields.indexOf( 'message' ) !== -1 ) {
 				// Check for a message if it is required
 				if ( $( '#mw-wikilove-message' ).val().length <= 0 ) {
-					$.wikiLove.showAddDetailsError( 'wikilove-err-msg' ); return false;
+					$.wikiLove.showAddDetailsError( 'wikilove-err-msg' );
+					return false;
 				}
 				// If there's a signature already in the message, throw an error
 				if ( $( '#mw-wikilove-message' ).val().indexOf( '~~~' ) >= 0 ) {
-					$.wikiLove.showAddDetailsError( 'wikilove-err-sig' ); return false;
+					$.wikiLove.showAddDetailsError( 'wikilove-err-sig' );
+					return false;
 				}
 			}
 
@@ -488,7 +491,8 @@
 			} else { // a gallery
 				if ( $( '#mw-wikilove-image' ).val().length === 0 ) { // no image selected
 					// Display an error telling them to select an image.
-					$.wikiLove.showAddDetailsError( 'wikilove-err-image' ); return false;
+					$.wikiLove.showAddDetailsError( 'wikilove-err-image' );
+					return false;
 				} else { // image was selected
 					$.wikiLove.submitPreview();
 				}
@@ -606,7 +610,8 @@
 
 			// Check for a header if it is required
 			if ( currentTypeOrSubtype.fields.indexOf( 'header' ) !== -1 && $( '#mw-wikilove-header' ).val().length === 0 ) {
-				$.wikiLove.showAddDetailsError( 'wikilove-err-header' ); return false;
+				$.wikiLove.showAddDetailsError( 'wikilove-err-header' );
+				return false;
 			}
 
 			// Check for a title if it is required, and otherwise use the header text
@@ -617,7 +622,8 @@
 			if ( currentTypeOrSubtype.fields.indexOf( 'message' ) !== -1 ) {
 				// If there's a signature already in the message, throw an error
 				if ( $( '#mw-wikilove-message' ).val().indexOf( '~~~' ) >= 0 ) {
-					$.wikiLove.showAddDetailsError( 'wikilove-err-sig' ); return false;
+					$.wikiLove.showAddDetailsError( 'wikilove-err-sig' );
+					return false;
 				}
 			}
 
