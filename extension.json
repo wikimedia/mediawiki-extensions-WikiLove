@@ -248,9 +248,6 @@
 		"LoadExtensionSchemaUpdates": [
 			"WikiLoveHooks::onLoadExtensionSchemaUpdates"
 		],
-		"MakeGlobalVariablesScript": [
-			"WikiLoveHooks::onMakeGlobalVariablesScript"
-		],
 		"ListDefinedTags": [
 			"WikiLoveHooks::onListDefinedTags"
 		],

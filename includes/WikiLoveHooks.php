@@ -7,7 +7,6 @@
  */
 
 class WikiLoveHooks {
-	private static $recipient = null;
 
 	/**
 	 * LoadExtensionSchemaUpdates hook
@@ -58,24 +57,19 @@ class WikiLoveHooks {
 		$title = self::getUserTalkPage( $skin->getTitle(), $skin->getUser() );
 		// getUserTalkPage() returns an ApiMessage on error
 		if ( !$title instanceof ApiMessage ) {
-			$out->addModules( 'ext.wikiLove.init' );
-			$out->addModuleStyles( 'ext.wikiLove.icon' );
-			self::$recipient = $title->getBaseText();
-		}
-	}
+			$recipient = $title->getBaseText();
+			$receiver = User::newFromName( $recipient );
 
-	/**
-	 * Export page/user specific WikiLove variables to JS
-	 *
-	 * @param array &$vars
-	 */
-	public static function onMakeGlobalVariablesScript( &$vars ) {
-		if ( self::$recipient !== null ) {
-			$vars['wikilove-recipient'] = self::$recipient;
-			$receiver = User::newFromName( self::$recipient );
+			$vars = [];
+			$vars['wikilove-recipient'] = $recipient;
 			if ( $receiver === false || $receiver->isAnon() ) {
 				$vars['wikilove-anon'] = 1;
 			}
+
+			$out->addJsConfigVars( $vars );
+
+			$out->addModules( 'ext.wikiLove.init' );
+			$out->addModuleStyles( 'ext.wikiLove.icon' );
 		}
 	}
 
