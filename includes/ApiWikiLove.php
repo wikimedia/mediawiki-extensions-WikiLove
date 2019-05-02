@@ -1,16 +1,18 @@
 <?php
 
 use Wikimedia\Rdbms\DBQueryError;
+use MediaWiki\MediaWikiServices;
 
 class ApiWikiLove extends ApiBase {
 	/** @inheritDoc */
 	public function execute() {
-		global $wgWikiLoveLogging, $wgParser;
+		global $wgWikiLoveLogging;
 
 		$params = $this->extractRequestParams();
 
 		// In some cases we need the wiki mark-up stripped from the subject
-		$strippedSubject = $wgParser->stripSectionName( $params['subject'] );
+		$strippedSubject = MediaWikiServices::getInstance()->getParser()
+			->stripSectionName( $params['subject'] );
 
 		$title = Title::newFromText( $params['title'] );
 		if ( is_null( $title ) ) {
