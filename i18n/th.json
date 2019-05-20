@@ -5,6 +5,23 @@
 			"Aefgh39622"
 		]
 	},
+	"wikilove": "วิกิเลิฟ",
+	"wikilove-tab-text": "วิกิเลิฟ",
+	"wikilove-select-type": "เลือกชนิด",
+	"wikilove-get-started-header": "มาเริ่มกันเลย!",
+	"wikilove-get-started-list-1": "เลือกชนิดของวิกิเลิฟที่คุณต้องการส่ง",
+	"wikilove-get-started-list-2": "เพิ่มรายละเอียดให้กับวิกิเลิฟของคุณ",
+	"wikilove-get-started-list-3": "ส่งวิกิเลิฟของคุณ!",
+	"wikilove-add-details": "เพิ่มรายละเอียด",
+	"wikilove-image": "ป้อนขื่อไฟล์ภาพ:",
+	"wikilove-select-image": "เลือกภาพ:",
+	"wikilove-header": "เลือกส่วนหัว:",
+	"wikilove-title": "ป้อนชื่อรางวัล:",
+	"wikilove-enter-message": "ป้อนข้อความ:",
+	"wikilove-button-preview": "แสดงตัวอย่าง",
+	"wikilove-preview": "แสดงตัวอย่าง",
+	"wikilove-notify": "แจ้งเตือนผู้ใช้ผ่านอีเมล",
+	"wikilove-button-send": "ส่งวิกิเลิฟ",
 	"wikilove-err-not-logged-in": "คุณยังไม่ได้เข้าสู่ระบบ โปรดเข้าสู่ระบบเพื่อใช้ WikiLove",
 	"wikilove-err-invalid-username": "ชื่อผู้ใช้ไม่ถูกต้อง"
 }

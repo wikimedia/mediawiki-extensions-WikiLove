@@ -4,7 +4,16 @@
 			"Joetaras"
 		]
 	},
+	"apihelp-wikilove-description": "Dèje Uicchilove a 'n'otre utende.\n\nUicchilove jè 'nu messàgge positive mannate jndr'à le pàggene de le 0ngazzaminde ausanne 'n'inderfacce cu modelle preimbostate o definite localmende. St'azione aggiunge 'u uicchiteste specifiche jndr'à 'na certe pàgene de le 'ngazzaminde. Pe le ause statisteche, 'u tipe e otre date so reggìstrate.",
 	"apihelp-wikilove-summary": "Dà UicchiLove a 'n'otre utende.",
+	"apihelp-wikilove-extended-description": "Uicchilove jè 'nu messàgge positive mannate jndr'à le pàggene de le 0ngazzaminde ausanne 'n'inderfacce cu modelle preimbostate o definite localmende. St'azione aggiunge 'u uicchiteste specifiche jndr'à 'na certe pàgene de le 'ngazzaminde. Pe le ause statisteche, 'u tipe e otre date so reggìstrate.",
+	"apihelp-wikilove-param-title": "'U nome d'a pàgene comblete d'a pàgene utende o d'a pàgene de le 'ngazzaminde de 'utende da mannà 'u UicchiLove.",
+	"apihelp-wikilove-param-text": "Uicchiteste grezze da agigungere jndr'à seziona nove.",
+	"apihelp-wikilove-param-message": "Messàgge de mò a l'utende ha state mise, pe ause de tracciamende.",
+	"apihelp-wikilove-param-subject": "Testate de l'oggette d'a seziona nove.",
+	"apihelp-wikilove-param-type": "Tipe de UicchiLove (pe statisteche); quiste corresponne cu 'u tipe scacchiate jndr'à 'u menù e, a piacere 'nu sottetipe apprisse ca (e.g. cumme jndr'à \"{{int:wikilove-barnstar-original-title}}\" o \"{{int:wikilove-kittens-header}}\").",
+	"apihelp-wikilove-param-email": "Condenute d'u messàgge facoltative de l'email da mannà a l'utende. 'Nu avvise avène restituite ce l'utende non ge pò essere condattate. UicchiLove avène mannate jndr'à le pàggene de le 'ngazzaminde 'u stesse.",
 	"apihelp-wikilove-example-1": "Manne UicchiLove a \"[[User:Dummy]]\"",
+	"apiwarn-wikilove-ignoringunregistered": "Non ge se tracciate le recipiende non reggìstrate",
 	"apiwarn-wikilove-notlogged": "L'azione ere non collegate"
 }

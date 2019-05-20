@@ -17,7 +17,8 @@
 			"Zhxy 519",
 			"飞舞回堂前",
 			"Cwek",
-			"EagerLin"
+			"EagerLin",
+			"A2093064"
 		]
 	},
 	"wikilove-desc": "添加一个接口用以促进用户在用户讨论页上进行积极情绪的反馈",
@@ -197,6 +198,6 @@
 	"wikilove-commons-url": "//commons.wikimedia.org/wiki/首页",
 	"wikilove-terms": "提交，即表示您同意依据这些$1公开这些信息。",
 	"wikilove-terms-link": "条款",
-	"tag-wikilove-description": "使用维基有爱工具做出的编辑",
+	"tag-wikilove-description": "使用维基友爱工具做出的编辑",
 	"WikiLove.js": "/* 放置于这里的JavaScript定制WikiLove，请见https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }
