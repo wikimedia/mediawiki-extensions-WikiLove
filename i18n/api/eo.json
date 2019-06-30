@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mirin"
+		]
+	},
+	"apihelp-wikilove-summary": "Doni VikiAmon al aliulon.",
+	"apihelp-wikilove-param-text": "Kruda vikiteksto por la nova paragrafo.",
+	"apihelp-wikilove-param-subject": "Temo de nova paragrafo.",
+	"apihelp-wikilove-example-1": "Sendi VikiAmon al \"[[User:Dummy]]\""
+}
