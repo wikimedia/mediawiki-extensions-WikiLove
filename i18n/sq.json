@@ -2,9 +2,40 @@
 	"@metadata": {
 		"authors": [
 			"Liridon",
-			"Olsi"
+			"Olsi",
+			"Klein Muçi"
 		]
 	},
+	"wikilove-desc": "Shton një ndërfaqe për lehtësimin e dhurimit të stampave vlerësuese në faqet e diskutimit të përdoruesve",
+	"wikilove": "WikiDashuri",
+	"wikilove-enable-preference": "Aktivizo përdorimin e \"WikiDashuri\"",
+	"wikilove-tab-text": "WikiDashuri",
+	"tooltip-ca-wikilove": "Dhuroji pak WikiDashuri këtij përdoruesi",
+	"wikilove-dialog-title": "WikiDashuri - Dhuro stampa vlerësuese me lehtësi",
+	"wikilove-select-type": "Zgjidh llojin",
+	"wikilove-get-started-header": "Le të fillojmë!",
+	"wikilove-get-started-list-1": "Zgjidh çfarë do të dhurosh;",
+	"wikilove-get-started-list-2": "Kontrollo që gjithçka është në rregull;",
+	"wikilove-get-started-list-3": "Publikoje!",
+	"wikilove-add-details": "Përcakto detaje",
+	"wikilove-image": "Vendos titullin e një imazhi:",
+	"wikilove-select-image": "Zgjidh një imazh:",
+	"wikilove-header": "Vendos një titull:",
+	"wikilove-title": "Vendos një titull për çmimin:",
+	"wikilove-enter-message": "Vendos mesazhin:",
+	"wikilove-omit-sig": "(mos vendos firmën tënde në fund)",
+	"wikilove-image-example": "(për shembull: Trophy.png)",
+	"wikilove-button-preview": "Parashiko",
+	"wikilove-preview": "Parashikimi",
+	"wikilove-notify": "Njoftoje këtë përdorues me një mesazh elektronik",
+	"wikilove-button-send": "Publikoje",
+	"wikilove-err-header": "Ju lutemi, vendosni një titull.",
+	"wikilove-err-title": "Ju lutemi, vendosni një titull.",
+	"wikilove-err-msg": "Ju lutemi, vendosni një mesazh.",
+	"wikilove-err-image": "Ju lutemi, zgjidhni një imazh.",
+	"wikilove-err-image-bad": "Nuk ekziston një imazh me atë titull.",
+	"wikilove-err-image-api": "Pati probleme gjatë marrjes së imazhit. Ju lutemi, provojeni përsëri.",
+	"wikilove-err-sig": "Ju lutemi, mos vendosni një firmë te mesazhi.",
 	"wikilove-err-not-logged-in": "Ju nuk jeni të kyqur. Ju lutem kyquni që të përdorni WikiLove.",
 	"wikilove-err-invalid-username": "Emri i përdoruesit nuk është i vlefshëm."
 }
