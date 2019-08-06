@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Klein Muçi"
+		]
+	},
+	"apihelp-wikilove-description": "Jepi WikiDashuri një përdoruesi tjetër.\n\nWikiDashuria është një mesazh pozitiv i postuar në faqen e diskutimeve të një përdoruesi tjetër nëpërmjet një ndërfaqeje të thjeshtë duke përdorur stampa të gatshme. Ky veprim shton wikitekstin e zgjedhur te një faqe e caktuar diskutimesh. Për arsye statistike, lloji i WikiDashurisë dhe të dhënat e tjera në lidhje me të ruhen.",
+	"apihelp-wikilove-summary": "Jepi WikiDashuri një përdoruesi tjetër.",
+	"apihelp-wikilove-extended-description": "WikiDashuria është një mesazh pozitiv i postuar në faqen e diskutimeve të një përdoruesi tjetër nëpërmjet një ndërfaqeje të thjeshtë duke përdorur stampa të gatshme. Ky veprim shton wikitekstin e zgjedhur te një faqe e caktuar diskutimesh. Për arsye statistike, lloji i WikiDashurisë dhe të dhënat e tjera në lidhje me të ruhen.",
+	"apihelp-wikilove-param-title": "Emri i plotë i faqes së përdoruesit apo i faqes së diskutimeve të përdoruesit të cilit dëshiron t'i dhurosh WikiDashuri.",
+	"apihelp-wikilove-param-text": "Wikiteksti që dëshiron të shtosh te pjesa e re te faqja e diskutimeve.",
+	"apihelp-wikilove-param-message": "Mesazhi aktual që përdoruesi ka shtuar, për qëllime ruajtjeje.",
+	"apihelp-wikilove-param-subject": "Titulli i pjesës së re që do të shtohet te faqja e diskutimeve.",
+	"apihelp-wikilove-param-type": "Lloji i WikiDashurisë (për arsye statistikore). Një lloj i caktuar i zgjedhur nga lista e llojeve dhe mundësisht një nënlloj i llojit të mësipërm.",
+	"apihelp-wikilove-param-email": "Përmbajtja e mesazhit elektronik opsional për t'i dërguar përdoruesit. Do të lajmëroheni nëse përdoruesi i zgjedhur nuk mund t'i dërgohet mesazh elektronik. Gjithsesi WikiDashuria do të shkojë te faqja e diskutimeve të përdoruesit, pavarësisht nëse mund t'i dërgohet apo jo mesazh elektronik përdoruesit të zgjedhur.",
+	"apihelp-wikilove-example-1": "Dërgoji WikiDashuri \"[[User:Dummy]]\"",
+	"apiwarn-wikilove-ignoringunregistered": "Përdoruesit e parregjistruar nuk do të ruhen.",
+	"apiwarn-wikilove-notlogged": "Veprimi nuk u ruajt."
+}
