@@ -41,7 +41,7 @@
 	"wikilove-err-preview-api": "Pati një problem gjatë parashikimit. Ju lutemi, provojeni përsëri.",
 	"wikilove-err-send-api": "Pati probleme gjatë dërgimit të mesazhit. Ju lutemi, provojeni përsëri.",
 	"wikilove-err-invalid-token": "WikiDashuria nuk mund të dërgohej për shkak të humbjes së të dhënave. Provoni ta rifreskoni faqen ose të dilni e të hyni sërish nga llogaria juaj.",
-	"wikilove-err-not-logged-in": "Ju nuk jeni të kyqur. Ju lutem kyquni që të përdorni WikiLove.",
+	"wikilove-err-not-logged-in": "Nuk jeni të kyçur. Ju lutemi, kyçuni që të përdorni zgjatimin \"WikiDashuri\".",
 	"wikilove-err-invalid-username": "Emri i përdoruesit nuk është i vlefshëm.",
 	"wikilove-err-no-self-wikilove": "Nuk mund t'i dërgoni WikiDashuri vetes.",
 	"wikilove-err-redirect": "Faqja e diskutimit të këtij përdoruesi është një ridrejtim.",
