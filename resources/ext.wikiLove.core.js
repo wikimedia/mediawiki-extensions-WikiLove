@@ -245,14 +245,6 @@
 				currentTypeOrSubtype = options.types[ currentTypeId ]
 					.subtypes[ currentSubtypeId ];
 
-				// Insert the item description
-				if ( typeof currentTypeOrSubtype.descr === 'string' ) {
-					// Replace {{SITENAME}} in messages. Yes, we could have mediawiki.jqueryMsg
-					// handle this, but this is a much more lightweight solution.
-					currentTypeOrSubtype.descr = currentTypeOrSubtype.descr.replace( /\{\{SITENAME\}\}/g, mw.config.get( 'wgSiteName' ) );
-					$( '#mw-wikilove-subtype-description' ).text( currentTypeOrSubtype.descr );
-				}
-
 				if ( currentTypeOrSubtype.gallery === undefined && currentTypeOrSubtype.image ) { // not a gallery
 					$.wikiLove.showImagePreview();
 				} else {
@@ -362,6 +354,10 @@
 
 			// only show the description if it exists for this type or subtype
 			if ( typeof currentTypeOrSubtype.descr === 'string' ) {
+				// Replace {{SITENAME}} in messages. Yes, we could have mediawiki.jqueryMsg
+				// handle this, but this is a much more lightweight solution.
+				currentTypeOrSubtype.descr = currentTypeOrSubtype.descr.replace( /\{\{SITENAME\}\}/g, mw.config.get( 'wgSiteName' ) );
+				$( '#mw-wikilove-subtype-description' ).text( currentTypeOrSubtype.descr );
 				$( '#mw-wikilove-subtype-description' ).show();
 			} else {
 				$( '#mw-wikilove-subtype-description' ).hide();
