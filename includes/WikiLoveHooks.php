@@ -118,14 +118,14 @@ class WikiLoveHooks {
 	}
 
 	/**
-	 * Only show an icon when the global preference is enabled and the current skin is Vector.
+	 * Only show an icon when the global preference is enabled and the current skin isn't CologneBlue.
 	 *
 	 * @param Skin $skin
 	 * @return boolean
 	 */
 	private static function showIcon( $skin ) {
 		global $wgWikiLoveTabIcon;
-		return $wgWikiLoveTabIcon && $skin->getSkinName() == 'vector';
+		return $wgWikiLoveTabIcon && $skin->getSkinName() !== 'cologneblue';
 	}
 
 	/**

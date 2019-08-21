@@ -1,0 +1,30 @@
+div.vectorTabs li#ca-wikilove {
+	line-height: 1.4em; /* account for scripts with tall ascenders */
+}
+
+/* icon style */
+/* Only use icon if the menu item is not collapsed into the "More" dropdown
+ * (in which case it is inside .vectorMenu instead of .vectorTabs). */
+.vectorTabs #ca-wikilove.icon a {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	display: block;
+	width: 27px;
+	/* This hides the text but shows the background image */
+	padding-top: 3.1em;
+	margin-top: 0;
+	height: 0;
+	overflow: hidden;
+	background-image: url( images/heart-icons-red.png );
+	/* SVG support using a transparent gradient to guarantee cross-browser
+	* compatibility (browsers able to understand gradient syntax support also SVG) */
+	/* @embed */
+	background-image: linear-gradient( transparent, transparent ), url( images/heart-icons-red.svg );
+	background-position: 5px 60%;
+}
+
+.vectorTabs #ca-wikilove.icon a:hover,
+.vectorTabs #ca-wikilove.icon a:focus {
+	background-position: -19px 60%;
+}
