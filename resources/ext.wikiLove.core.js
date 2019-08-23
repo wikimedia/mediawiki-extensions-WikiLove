@@ -25,7 +25,6 @@
 			// current page. It will also disable redirecting the user after submitting.
 			if ( recipients ) {
 				if ( recipients.length > maxRecipients ) {
-					// eslint-disable-next-line no-alert
 					alert( mw.msg( 'wikilove-err-max-exceeded', maxRecipients ) );
 					return;
 				}
