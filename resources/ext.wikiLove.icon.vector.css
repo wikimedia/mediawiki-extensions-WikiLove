@@ -16,11 +16,7 @@ div.vectorTabs li#ca-wikilove {
 	margin-top: 0;
 	height: 0;
 	overflow: hidden;
-	background-image: url( images/heart-icons-red.png );
-	/* SVG support using a transparent gradient to guarantee cross-browser
-	* compatibility (browsers able to understand gradient syntax support also SVG) */
-	/* @embed */
-	background-image: linear-gradient( transparent, transparent ), url( images/heart-icons-red.svg );
+	background-image: url( images/heart-icons-red.svg );
 	background-position: 5px 60%;
 }
 
