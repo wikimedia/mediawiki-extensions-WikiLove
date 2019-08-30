@@ -2,9 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Naval Scene",
-			"Ardzun"
+			"Ardzun",
+			"Iwan Novirion"
 		]
 	},
-	"wikilove-err-not-logged-in": "Sanak alun masuak log. Silakan masuak log untuak manggunoan fitur WikiLove",
+	"wikilove-err-not-logged-in": "Sanak alun masuak log. Silakan masuak log untuak manggunoan fitua WikiLove",
 	"wikilove-err-invalid-username": "Namo pangguno indak valid."
 }
