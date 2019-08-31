@@ -67,6 +67,7 @@ class ApiWikiLove extends ApiBase {
 				'text' => $params['text'],
 				'token' => $params['token'],
 				'summary' => $summary,
+				'tags' => implode( '|', $params['tags'] ),
 				'notminor' => true
 			];
 		}
@@ -188,6 +189,10 @@ class ApiWikiLove extends ApiBase {
 			],
 			'email' => [
 				ApiBase::PARAM_TYPE => 'string',
+			],
+			'tags' => [
+				self::PARAM_TYPE => 'tags',
+				self::PARAM_ISMULTI => true,
 			],
 		];
 	}
