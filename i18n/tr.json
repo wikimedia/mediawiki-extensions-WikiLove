@@ -5,7 +5,8 @@
 			"Emperyan",
 			"Koc61",
 			"Vito Genovese",
-			"Rapsar"
+			"Rapsar",
+			"BaRaN6161 TURK"
 		]
 	},
 	"wikilove-desc": "Kullanıcı mesaj sayfalarına, kolaylıkla olumlu kullanıcı geribildirimi yollayabilmek için bir arayüz ekler",
@@ -155,6 +156,8 @@
 	"wikilove-food-stroopwafels-header": "Biraz şuruplu waffle da sizin için!",
 	"wikilove-type-kittens": "Yavru kediler",
 	"wikilove-kittens-header": "Bir yavru kedi de sizin için!",
+	"wikilove-type-goats": "Keçiler",
+	"wikilove-goats-header": "Senin için bir keçi!",
 	"wikilove-type-makeyourown": "Kendiniz hazırlayın",
 	"wikilove-err-header": "Lütfen bir başlık girin.",
 	"wikilove-err-title": "Lütfen bir ad girin.",
@@ -181,5 +184,6 @@
 	"wikilove-commons-text": "$1 bağlantısına gözatarak resim bulabilirsiniz.",
 	"wikilove-terms": "Gönderim yaparak $1 uyarınca saydamlığı kabul ediyorsunuz.",
 	"wikilove-terms-link": "koşullar",
+	"tag-wikilove-description": "WikiLove aracını kullanarak yapılan düzenleme",
 	"WikiLove.js": "/* Buraya yerleştirilen JavaScript, VikiSevgi'yi özelleştirir. Bkz: https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }
