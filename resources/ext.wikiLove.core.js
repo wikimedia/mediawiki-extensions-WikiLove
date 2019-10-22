@@ -1,3 +1,4 @@
+/* eslint-disable no-jquery/no-global-selector */
 ( function () {
 
 	var options = {}, // options modifiable by the user
@@ -25,6 +26,8 @@
 			// current page. It will also disable redirecting the user after submitting.
 			if ( recipients ) {
 				if ( recipients.length > maxRecipients ) {
+					// TODO: Don't use window.alert
+					// eslint-disable-next-line no-alert
 					alert( mw.msg( 'wikilove-err-max-exceeded', maxRecipients ) );
 					return;
 				}
@@ -38,13 +41,13 @@
 			}
 			if ( $dialog === null ) {
 				// Build a type list like this:
-				$typeList = $( '<ul id="mw-wikilove-types"></ul>' );
+				$typeList = $( '<ul>' ).attr( 'id', 'mw-wikilove-types' );
 				for ( typeId in options.types ) {
 					type = options.types[ typeId ];
 					if ( !$.isPlainObject( type ) ) {
 						continue;
 					}
-					$button = $( '<a href="#" class=""></a>' );
+					$button = $( '<a>' ).attr( 'href', '#' );
 
 					if ( typeof type.icon === 'string' ) {
 						$button.append( $( '<img>' ).attr( 'src', type.icon ) );
@@ -206,7 +209,7 @@
 						subtype = options.types[ currentTypeId ].subtypes[ subtypeId ];
 						if ( typeof subtype.option !== 'undefined' ) {
 							$( '#mw-wikilove-subtype' ).append(
-								$( '<option></option>' ).text( subtype.option ).data( 'subtypeId', subtypeId )
+								$( '<option>' ).text( subtype.option ).data( 'subtypeId', subtypeId )
 							);
 						}
 					}
@@ -234,6 +237,7 @@
 		 * Handler for changing the subtype.
 		 */
 		changeSubtype: function () {
+			// eslint-disable-next-line no-jquery/no-sizzle
 			var newSubtypeId = $( '#mw-wikilove-subtype option:selected' ).first().data( 'subtypeId' );
 
 			$.wikiLove.rememberInputData(); // remember previously entered data
@@ -300,6 +304,8 @@
 				loadingType = currentTypeOrSubtype;
 			$( '#mw-wikilove-image-preview' ).show();
 			$( '#mw-wikilove-image-preview-content' ).html( '' );
+			// TODO: Use CSS transitions
+			// eslint-disable-next-line no-jquery/no-fade
 			$( '#mw-wikilove-image-preview-spinner' ).fadeIn( 200 );
 			api.post( {
 				formatversion: 2,
@@ -312,6 +318,8 @@
 			} )
 				.done( function ( data ) {
 					if ( !data || !data.query || !data.query.pages ) {
+						// TODO: Use CSS transitions
+						// eslint-disable-next-line no-jquery/no-fade
 						$( '#mw-wikilove-image-preview-spinner' ).fadeOut( 200 );
 						return;
 					}
@@ -333,6 +341,8 @@
 					} );
 				} )
 				.fail( function () {
+					// TODO: Use CSS transitions
+					// eslint-disable-next-line no-jquery/no-fade
 					$( '#mw-wikilove-image-preview-spinner' ).fadeOut( 200 );
 				} );
 		},
@@ -455,6 +465,8 @@
 					} else { // image was entered by user
 						// Make sure the image exists
 						imageTitle = $.wikiLove.normalizeFilename( $( '#mw-wikilove-image' ).val() );
+						// TODO: Use CSS transitions
+						// eslint-disable-next-line no-jquery/no-fade
 						$( '#mw-wikilove-preview-spinner' ).fadeIn( 200 );
 
 						api.get( {
@@ -472,11 +484,15 @@
 								} else {
 									// Image does not exist
 									$.wikiLove.showAddDetailsError( 'wikilove-err-image-bad' );
+									// TODO: Use CSS transitions
+									// eslint-disable-next-line no-jquery/no-fade
 									$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
 								}
 							} )
 							.fail( function () {
 								$.wikiLove.showAddDetailsError( 'wikilove-err-image-api' );
+								// TODO: Use CSS transitions
+								// eslint-disable-next-line no-jquery/no-fade
 								$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
 							} );
 					}
@@ -504,11 +520,11 @@
 		},
 
 		showAddDetailsError: function ( errmsg ) {
-			$( '#mw-wikilove-add-details' ).append( $( '<div class="mw-wikilove-error"></div>' ).text( mw.msg( errmsg ) ) );
+			$( '#mw-wikilove-add-details' ).append( $( '<div>' ).addClass( 'mw-wikilove-error' ).text( mw.msg( errmsg ) ) );
 		},
 
 		showPreviewError: function ( errmsg ) {
-			$( '#mw-wikilove-preview' ).append( $( '<div class="mw-wikilove-error"></div>' ).text( mw.msg( errmsg ) ) );
+			$( '#mw-wikilove-preview' ).append( $( '<div>' ).addClass( 'mw-wikilove-error' ).text( mw.msg( errmsg ) ) );
 		},
 
 		showSuccessMsg: function ( msg ) {
@@ -562,6 +578,8 @@
 		 * @param {string} wikitext Wikitext to preview
 		 */
 		doPreview: function ( wikitext ) {
+			// TODO: Use CSS transitions
+			// eslint-disable-next-line no-jquery/no-fade
 			$( '#mw-wikilove-preview-spinner' ).fadeIn( 200 );
 			api.parse( wikitext, {
 				prop: 'text',
@@ -570,10 +588,14 @@
 			} )
 				.done( function ( html ) {
 					$.wikiLove.showPreview( html );
+					// TODO: Use CSS transitions
+					// eslint-disable-next-line no-jquery/no-fade
 					$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
 				} )
 				.fail( function () {
 					$.wikiLove.showAddDetailsError( 'wikilove-err-preview-api' );
+					// TODO: Use CSS transitions
+					// eslint-disable-next-line no-jquery/no-fade
 					$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
 				} );
 		},
@@ -585,6 +607,8 @@
 		 */
 		showPreview: function ( html ) {
 			$( '#mw-wikilove-preview-area' ).html( html );
+			// TODO: Use CSS transitions
+			// eslint-disable-next-line no-jquery/no-fade
 			$( '#mw-wikilove-preview' ).fadeIn( 200 );
 		},
 
@@ -653,6 +677,8 @@
 				wikiLoveNumberAttempted = 0,
 				wikiLoveNumberPosted = 0;
 
+			// TODO: Use CSS transitions
+			// eslint-disable-next-line no-jquery/no-fade
 			$( '#mw-wikilove-send-spinner' ).fadeIn( 200 );
 
 			// If the talk page is not a Wikitext page, remove the signature
@@ -660,7 +686,7 @@
 				wikitext = wikitext.replace( /\s*~~~~/, '' );
 			}
 
-			$.each( targets, function ( index, target ) {
+			targets.forEach( function ( target ) {
 				var sendData = {
 					action: 'wikilove',
 					title: 'User:' + target,
@@ -677,6 +703,8 @@
 					.done( function ( data ) {
 						wikiLoveNumberAttempted++;
 						if ( wikiLoveNumberAttempted === targets.length ) {
+							// TODO: Use CSS transitions
+							// eslint-disable-next-line no-jquery/no-fade
 							$( '#mw-wikilove-send-spinner' ).fadeOut( 200 );
 						}
 
@@ -734,6 +762,8 @@
 						$.wikiLove.showPreviewError( 'wikilove-err-send-api' );
 						wikiLoveNumberAttempted++;
 						if ( wikiLoveNumberAttempted === targets.length ) {
+							// TODO: Use CSS transitions
+							// eslint-disable-next-line no-jquery/no-fade
 							$( '#mw-wikilove-send-spinner' ).fadeOut( 200 );
 						}
 					} );
@@ -765,6 +795,8 @@
 
 			$( '#mw-wikilove-gallery-content' ).html( '' );
 			gallery = {};
+			// TODO: Use CSS transitions
+			// eslint-disable-next-line no-jquery/no-fade
 			$( '#mw-wikilove-gallery-spinner' ).fadeIn( 200 );
 			$( '#mw-wikilove-gallery-error' ).hide();
 
@@ -799,6 +831,8 @@
 				.done( function ( data ) {
 					if ( !data || !data.query || !data.query.pages ) {
 						$( '#mw-wikilove-gallery-error' ).show();
+						// TODO: Use CSS transitions
+						// eslint-disable-next-line no-jquery/no-fade
 						$( '#mw-wikilove-gallery-spinner' ).fadeOut( 200 );
 						return;
 					}
@@ -818,11 +852,14 @@
 									$( this ).css( 'display', 'inline-block' );
 									loadingIndex++;
 									if ( loadingIndex >= galleryNumber ) {
+										// TODO: Use CSS transitions
+										// eslint-disable-next-line no-jquery/no-fade
 										$( '#mw-wikilove-gallery-spinner' ).fadeOut( 200 );
 									}
 								} );
 							$( '#mw-wikilove-gallery-content' ).append(
-								$( '<a href="#"></a>' )
+								$( '<a>' )
+									.attr( 'href', '#' )
 									.attr( 'id', 'mw-wikilove-gallery-img-' + index )
 									.append( $img )
 									.on( 'click', function ( e ) {
@@ -841,6 +878,8 @@
 				} )
 				.fail( function () {
 					$( '#mw-wikilove-gallery-error' ).show();
+					// TODO: Use CSS transitions
+					// eslint-disable-next-line no-jquery/no-fade
 					$( '#mw-wikilove-gallery-spinner' ).fadeOut( 200 );
 				} );
 		},
