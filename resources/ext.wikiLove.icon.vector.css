@@ -2,25 +2,28 @@ div.vectorTabs li#ca-wikilove {
 	line-height: 1.4em; /* account for scripts with tall ascenders */
 }
 
+.vectorTabs #ca-wikilove.icon a {
+	display: block;
+	width: 28px;
+	padding: 15px 5px 0;
+	overflow: hidden;
+	outline: 0;
+}
+
 /* icon style */
 /* Only use icon if the menu item is not collapsed into the "More" dropdown
  * (in which case it is inside .vectorMenu instead of .vectorTabs). */
-.vectorTabs #ca-wikilove.icon a {
-	margin: 0;
-	padding: 0;
-	outline: 0;
+.vectorTabs #ca-wikilove.icon a:before {
+	content: '';
 	display: block;
-	width: 27px;
-	/* This hides the text but shows the background image */
-	padding-top: 3.1em;
-	margin-top: 0;
-	height: 0;
-	overflow: hidden;
+	width: 16px;
+	height: 16px;
+	margin-bottom: 15px;
 	background-image: url( images/heart-icons-red.svg );
-	background-position: 5px 60%;
+	background-position: -24px 0;
 }
 
-.vectorTabs #ca-wikilove.icon a:hover,
-.vectorTabs #ca-wikilove.icon a:focus {
-	background-position: -19px 60%;
+.vectorTabs #ca-wikilove.icon a:hover:before,
+.vectorTabs #ca-wikilove.icon a:focus:before {
+	background-position: 0 0;
 }
