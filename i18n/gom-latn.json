@@ -4,6 +4,7 @@
 			"The Discoverer"
 		]
 	},
-	"wikilove-err-not-logged-in": "Tunven sotrorombh korunk nam. Wikimog-acho upeog korchea khatir, upkar korun sotrorombh kor.",
-	"wikilove-err-invalid-username": "Hem vaporpeachem nanv sarkem na."
+	"wikilove-err-not-logged-in": "Tunven sotrorombh korunk nam. WikiMog-acho upeog korchea khatir, upkar korun sotrorombh kor.",
+	"wikilove-err-invalid-username": "Hem vaporpeachem nanv sarkem na.",
+	"tag-wikilove-description": "WikiMog sadhon vaprun kelolem sompadon"
 }
