@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"apihelp-wikilove-description": "Gi WikiLove til en annen bruker.\n\nWikiLove er en positiv melding postet på en annen brukers diskusjonsside med et enkelt grensesnitt med forhåndsdefinerte maler. Denne handlingen legger til den gitte wikiteksten på en viss diskusjonsside. Typen og andre data logges av statistiske årsaker.",
+	"apihelp-wikilove-summary": "Gi WikiLove til en annen bruker.",
+	"apihelp-wikilove-extended-description": "WikiLove er en positiv melding postet på en annen brukers diskusjonsside med et enkelt grensesnitt med forhåndsdefinerte maler. Denne handlingen legger til den gitte wikiteksten på en viss diskusjonsside. Typen og andre data logges av statistiske årsaker.",
+	"apihelp-wikilove-param-title": "Fullt sidenavn til brukersiden eller diskusjonssiden til brukeren som skal sendes WikiLove.",
+	"apihelp-wikilove-param-text": "Rå wikitekst som skal legges til i den nye seksjonen.",
+	"apihelp-wikilove-param-message": "Faktisk beskjed brukeren har skrevet inn, for loggformål.",
+	"apihelp-wikilove-param-subject": "Emnet til den nye seksjonen.",
+	"apihelp-wikilove-param-type": "Type WikiLove (for statistikk); dette samsvarer med en type valgt i menyen, og valgfritt en undertype etter det (f.eks. som i «{{int:wikilove-barnstar-original-title}}» eller «{{int:wikilove-kittens-header}}»).",
+	"apihelp-wikilove-param-email": "Innholdet til en valgfri epost som skal sendes til brukeren. En advarsel returneres hvis brukeren ikke kan sendes epost. WikiLove blir uansett sendt til brukerens diskusjonsside.",
+	"apihelp-wikilove-example-1": "Send WikiLove til «[[User:Dummy]]»",
+	"apiwarn-wikilove-ignoringunregistered": "Logger ikke uregistrerte mottakere",
+	"apiwarn-wikilove-notlogged": "Handlingen ble ikke logget"
+}
