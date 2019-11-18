@@ -15,6 +15,7 @@
 	"apihelp-wikilove-param-subject": "Subject header of the new section.",
 	"apihelp-wikilove-param-type": "Type of WikiLove (for statistics); this corresponds with a type selected in the menu, and optionally a subtype after that (e.g. as in \"{{int:wikilove-barnstar-original-title}}\" or \"{{int:wikilove-kittens-header}}\").",
 	"apihelp-wikilove-param-email": "Content of the optional email message to send to the user. A warning will be returned if the user cannot be emailed. WikiLove will be sent to the users talk page either way.",
+	"apihelp-wikilove-param-tags": "Change tags to apply to the revision.",
 	"apihelp-wikilove-example-1": "Send WikiLove to \"[[User:Dummy]]\"",
 	"apiwarn-wikilove-ignoringunregistered": "Not logging unregistered recipients",
 	"apiwarn-wikilove-notlogged": "Action was not logged"
