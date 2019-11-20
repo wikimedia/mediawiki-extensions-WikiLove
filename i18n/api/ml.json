@@ -13,5 +13,8 @@
 	"apihelp-wikilove-param-subject": "പുതിയ ഭാഗത്തിന്റെ വിഷയം.",
 	"apihelp-wikilove-param-type": "വിക്കിസ്നേഹത്തിന്റെ തരം (സ്ഥിതിവിവരക്കണക്കുകൾക്ക്); മെനുവിൽ ഏതാണെടുത്തതെന്ന് ഉപതരം അടക്കം (ഉദാ: \"{{int:wikilove-barnstar-original-title}}\" അല്ലെങ്കിൽ \"{{int:wikilove-kittens-header}}\" പോലെ).",
 	"apihelp-wikilove-param-email": "ഉപയോക്താവിന് അയയ്ക്കേണ്ട ഇമെയിൽ സന്ദേശത്തിന്റെ (ഐച്ഛികം) ഉള്ളടക്കം. ഉപയോക്താവിന് ഇമെയിൽ അയയ്ക്കാൻ കഴിഞ്ഞില്ലെങ്കിൽ അറിയിപ്പ് തരുന്നതാണ്. ഉപയോക്തൃസംവാദത്താളിൽ എന്തായാലും സന്ദേശം ചേർക്കുന്നതാണ്.",
-	"apihelp-wikilove-example-1": "\"[[User:Dummy]]\" എന്ന ഉപയോക്താവിന് വിക്കിസ്നേഹം അയയ്ക്കുക"
+	"apihelp-wikilove-param-tags": "നാൾപ്പതിപ്പ് ബാധകമാക്കാൻ റ്റാഗുകൾ മാറ്റുക.",
+	"apihelp-wikilove-example-1": "\"[[User:Dummy]]\" എന്ന ഉപയോക്താവിന് വിക്കിസ്നേഹം അയയ്ക്കുക",
+	"apiwarn-wikilove-ignoringunregistered": "രെജിസ്റ്റർ ചെയ്യാത്ത സ്വീകർത്താക്കളുടെ രേഖ സൂക്ഷിക്കുന്നില്ല",
+	"apiwarn-wikilove-notlogged": "പ്രവർത്തി രേഖപ്പെടുത്തിയിട്ടില്ല"
 }

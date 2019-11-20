@@ -13,6 +13,7 @@
 	"apihelp-wikilove-param-subject": "Testate de l'oggette d'a seziona nove.",
 	"apihelp-wikilove-param-type": "Tipe de UicchiLove (pe statisteche); quiste corresponne cu 'u tipe scacchiate jndr'à 'u menù e, a piacere 'nu sottetipe apprisse ca (e.g. cumme jndr'à \"{{int:wikilove-barnstar-original-title}}\" o \"{{int:wikilove-kittens-header}}\").",
 	"apihelp-wikilove-param-email": "Condenute d'u messàgge facoltative de l'email da mannà a l'utende. 'Nu avvise avène restituite ce l'utende non ge pò essere condattate. UicchiLove avène mannate jndr'à le pàggene de le 'ngazzaminde 'u stesse.",
+	"apihelp-wikilove-param-tags": "Cange le tag da applecà a 'a versione.",
 	"apihelp-wikilove-example-1": "Manne UicchiLove a \"[[User:Dummy]]\"",
 	"apiwarn-wikilove-ignoringunregistered": "Non ge se tracciate le recipiende non reggìstrate",
 	"apiwarn-wikilove-notlogged": "L'azione ere non collegate"
