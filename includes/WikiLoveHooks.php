@@ -13,7 +13,7 @@ class WikiLoveHooks {
 	 *
 	 * @param DatabaseUpdater|null $updater
 	 */
-	public static function onLoadExtensionSchemaUpdates( $updater = null ) {
+	public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $updater = null ) {
 		if ( $updater === null ) {
 			global $wgExtNewTables;
 			$wgExtNewTables[] = [ 'wikilove_log', dirname( __DIR__ ) . '/patches/WikiLoveLog.sql' ];
