@@ -11,16 +11,11 @@ class WikiLoveHooks {
 	/**
 	 * LoadExtensionSchemaUpdates hook
 	 *
-	 * @param DatabaseUpdater|null $updater
+	 * @param DatabaseUpdater $updater
 	 */
-	public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $updater = null ) {
-		if ( $updater === null ) {
-			global $wgExtNewTables;
-			$wgExtNewTables[] = [ 'wikilove_log', dirname( __DIR__ ) . '/patches/WikiLoveLog.sql' ];
-		} else {
-			$updater->addExtensionUpdate( [ 'addTable', 'wikilove_log',
-				dirname( __DIR__ ) . '/patches/WikiLoveLog.sql', true ] );
-		}
+	public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $updater ) {
+		$updater->addExtensionUpdate( [ 'addTable', 'wikilove_log',
+			dirname( __DIR__ ) . '/patches/WikiLoveLog.sql', true ] );
 	}
 
 	/**
