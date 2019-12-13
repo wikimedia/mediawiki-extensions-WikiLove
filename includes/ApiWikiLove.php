@@ -106,7 +106,7 @@ class ApiWikiLove extends ApiBase {
 	 * @param string $subject
 	 * @param string $message
 	 * @param string $type
-	 * @param string $email
+	 * @param int $email
 	 * @return void
 	 */
 	private function saveInDb( $talk, $subject, $message, $type, $email ) {
