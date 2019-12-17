@@ -6,7 +6,8 @@
 			"Saruman",
 			"Siebrand",
 			"Tjcool007",
-			"Robin van der Vliet"
+			"Robin van der Vliet",
+			"Mainframe98"
 		]
 	},
 	"wikilove-desc": "Voegt een interface toe voor het geven van positieve terugkoppeling op overlegpagina's van gebruikers",
@@ -156,6 +157,7 @@
 	"wikilove-food-stroopwafels-header": "Een paar stroopwafels voor u!",
 	"wikilove-type-kittens": "Katjes",
 	"wikilove-kittens-header": "Een katje voor u!",
+	"wikilove-type-goats": "Geiten",
 	"wikilove-type-makeyourown": "Uw eigen maken",
 	"wikilove-err-header": "Geef een koptekst op.",
 	"wikilove-err-title": "Geef een naam op.",
