@@ -19,5 +19,5 @@
 	"apihelp-wikilove-param-tags": "Modifier les balises à appliquer à la révision.",
 	"apihelp-wikilove-example-1": "Envoyer WikiLove à \"[[User:Dummy]]\"",
 	"apiwarn-wikilove-ignoringunregistered": "Pas de journalisation des destinataires non enregistrés.",
-	"apiwarn-wikilove-notlogged": "L'action n'a pas été enregistrée"
+	"apiwarn-wikilove-notlogged": "L’action n’a pas été enregistrée"
 }
