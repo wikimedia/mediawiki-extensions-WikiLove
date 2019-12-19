@@ -67,7 +67,7 @@ class ApiWikiLove extends ApiBase {
 				'text' => $params['text'],
 				'token' => $params['token'],
 				'summary' => $summary,
-				'tags' => implode( '|', $params['tags'] ),
+				'tags' => implode( '|', $params['tags'] ?? [] ),
 				'notminor' => true
 			];
 		}
