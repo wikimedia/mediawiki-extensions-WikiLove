@@ -18,8 +18,9 @@
 		/**
 		 * Opens the dialog and builds it if necessary.
 		 * @param {string[]} recipients Usernames of recipients (without namespace prefix)
+		 * @param {string[]} [extraTags] Extra tags to apply
 		 */
-		openDialog: function ( recipients ) {
+		openDialog: function ( recipients, extraTags ) {
 			var type, $typeList, typeId, $button, commonsLink, termsLink, dialogHtml;
 			// If a list of recipients are specified, this will override the normal
 			// behavior of WikiLove, which is to post on the Talk page of the
@@ -39,6 +40,9 @@
 				// Test to see if the 'E-mail this user' link exists
 				emailable = !!$( '#t-emailuser' ).length;
 			}
+
+			options.extraTags = extraTags || [];
+
 			if ( $dialog === null ) {
 				// Build a type list like this:
 				$typeList = $( '<ul>' ).attr( 'id', 'mw-wikilove-types' );
@@ -653,13 +657,14 @@
 				header: $( '#mw-wikilove-header' ).val(),
 				text: $.wikiLove.prepareMsg( currentTypeOrSubtype.text || options.types[ currentTypeId ].text || options.defaultText ),
 				message: $( '#mw-wikilove-message' ).val(),
-				type: currentTypeId + ( currentSubtypeId !== null ? '-' + currentSubtypeId : '' )
+				type: currentTypeId + ( currentSubtypeId !== null ? '-' + currentSubtypeId : '' ),
+				extraTags: options.extraTags
 			};
 			if ( $( '#mw-wikilove-notify-checkbox:checked' ).val() && emailable ) {
 				submitData.email = $.wikiLove.prepareMsg( currentTypeOrSubtype.email );
 			}
 			$.wikiLove.doSend( submitData.header, submitData.text,
-				submitData.message, submitData.type, submitData.email );
+				submitData.message, submitData.type, submitData.email, submitData.extraTags );
 			return true;
 		},
 
@@ -671,8 +676,9 @@
 		 * @param {string} message Message
 		 * @param {string} type Type ID
 		 * @param {string} email E-mail
+		 * @param {string[]} extraTags Additional tags to apply to the edit
 		 */
-		doSend: function ( subject, wikitext, message, type, email ) {
+		doSend: function ( subject, wikitext, message, type, email, extraTags ) {
 			var targetBaseUrl, currentBaseUrl,
 				wikiLoveNumberAttempted = 0,
 				wikiLoveNumberPosted = 0;
@@ -693,7 +699,8 @@
 					type: type,
 					text: wikitext,
 					message: message,
-					subject: subject
+					subject: subject,
+					tags: extraTags
 				};
 
 				if ( email ) {
