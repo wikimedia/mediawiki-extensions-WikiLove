@@ -19,6 +19,7 @@ class ApiWikiLove extends ApiBase {
 			$this->dieWithError( [ 'nosuchusershort', $params['title'] ], 'nosuchuser' );
 		}
 
+		// @phan-suppress-next-line PhanTypeMismatchArgumentNullable T240141
 		$talk = WikiLoveHooks::getUserTalkPage( $title, $this->getUser() );
 		// getUserTalkPage() returns an ApiMessage on error
 		if ( $talk instanceof ApiMessage ) {
