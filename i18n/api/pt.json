@@ -13,6 +13,7 @@
 	"apihelp-wikilove-param-subject": "Cabeçalho de assunto da nova secção.",
 	"apihelp-wikilove-param-type": "Tipo de WikiApreço (para fins estatísticos); isto corresponde a um tipo selecionado no menu e, opcionalmente, a um subtipo posterior (por exemplo, como em \"{{int:wikilove-barnstar-original-title}}\" ou \"{{int:wikilove-kittens-header}}\").",
 	"apihelp-wikilove-param-email": "Conteúdo da mensagem de correio opcional a ser enviada ao utilizador. Será devolvido um aviso se o utilizador não puder ser contactado por correio eletrónico. Independentemente, é enviado um WikiApreço para a página de discussão do utilizador.",
+	"apihelp-wikilove-param-tags": "Etiquetas de modificação a aplicar à revisão.",
 	"apihelp-wikilove-example-1": "Enviar um WikiApreço a \"[[User:Dummy]]\"",
 	"apiwarn-wikilove-ignoringunregistered": "Não são criados registos de destinatários não registados",
 	"apiwarn-wikilove-notlogged": "A ação não foi registada"
