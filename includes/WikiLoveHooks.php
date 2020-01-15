@@ -116,7 +116,7 @@ class WikiLoveHooks {
 	 * Only show an icon when the global preference is enabled and the current skin isn't CologneBlue.
 	 *
 	 * @param Skin $skin
-	 * @return boolean
+	 * @return bool
 	 */
 	private static function showIcon( $skin ) {
 		global $wgWikiLoveTabIcon;

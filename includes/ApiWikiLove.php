@@ -1,7 +1,7 @@
 <?php
 
-use Wikimedia\Rdbms\DBQueryError;
 use MediaWiki\MediaWikiServices;
+use Wikimedia\Rdbms\DBQueryError;
 
 class ApiWikiLove extends ApiBase {
 	/** @inheritDoc */
@@ -15,7 +15,7 @@ class ApiWikiLove extends ApiBase {
 			->stripSectionName( $params['subject'] );
 
 		$title = Title::newFromText( $params['title'] );
-		if ( is_null( $title ) ) {
+		if ( $title === null ) {
 			$this->dieWithError( [ 'nosuchusershort', $params['title'] ], 'nosuchuser' );
 		}
 
