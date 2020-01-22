@@ -56,7 +56,7 @@
 	"wikilove-err-preview-api": "Iu fuŝis dum antaŭvidado. Bonvolu reprovi.",
 	"wikilove-err-send-api": "Iu fuŝis kiam sendante la mesaĝon. Bonvolu reprovi.",
 	"wikilove-err-not-logged-in": "Vi ne estas ensalutinta. Bonvolu ensaluti por uzi VikiAmon.",
-	"wikilove-err-invalid-username": "La uzantonomo ne estas valida.",
+	"wikilove-err-invalid-username": "La uzantnomo ne estas valida.",
 	"wikilove-summary": "/* $1 */ nova mesaĝo VikiAmo",
 	"wikilove-what-is-this": "Kio estas?",
 	"wikilove-anon-warning": "Rimarko: Ĉi tiu uzanto ne estas registrita, do ĝi eble ne rimarkos ĉi tiun mesaĝon.",
