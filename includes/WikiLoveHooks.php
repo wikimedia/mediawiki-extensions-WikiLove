@@ -1,4 +1,7 @@
 <?php
+
+use MediaWiki\MediaWikiServices;
+
 /**
  * Hooks for WikiLove extension
  *
@@ -128,10 +131,12 @@ class WikiLoveHooks {
 	 * function also does some sanity checking to make sure we will actually
 	 * be able to send WikiLove to the target.
 	 *
+	 * Phan false positives are suppressed
+	 *
 	 * @param Title $title The title of a user page or user talk page
 	 * @param User $user the current user
 	 * @return Title|ApiMessage Returns either the Title object for the talk page or an error message
-	 * @suppress PhanPossiblyUndeclaredVariable,PhanTypeMismatchReturnNullable False positives
+	 * @suppress PhanPossiblyUndeclaredVariable,PhanTypeMismatchReturnNullable,PhanTypeMismatchArgumentNullable
 	 */
 	public static function getUserTalkPage( $title, $user ) {
 		// Exit early if the sending user isn't logged in
@@ -171,7 +176,8 @@ class WikiLoveHooks {
 		}
 
 		// Make sure we can edit the page
-		if ( !$talkTitle->quickUserCan( 'edit' ) ) {
+		if ( !MediaWikiServices::getInstance()->getPermissionManager()
+			->quickUserCan( 'edit', $user, $talkTitle ) ) {
 			return ApiMessage::create( 'wikilove-err-cannot-edit', 'cannotedit' );
 		}
 
