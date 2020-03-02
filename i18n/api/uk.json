@@ -14,6 +14,7 @@
 	"apihelp-wikilove-param-subject": "Заголовок нового розділу.",
 	"apihelp-wikilove-param-type": "Тип Вікісимпатії (для статистики); це співвідноситься з типом, обраним у меню, і за бажанням, підтипом після нього (наприклад, як «{{int:wikilove-barnstar-original-title}}»  або «{{int:wikilove-kittens-header}}»).",
 	"apihelp-wikilove-param-email": "Вміст додаткогового електронного листа користувачу. Якщо користувачу не можна написати, з'явиться попередження. Вікісимпатію можна дописати на сторінку обговорення користувача у будь-якому разі.",
+	"apihelp-wikilove-param-tags": "Теги змін, які слід застосувати до версії.",
 	"apihelp-wikilove-example-1": "Надіслати Вікісимпатію «[[User:Dummy]]»",
 	"apiwarn-wikilove-ignoringunregistered": "Незареєстровані отримувачі не журналюються",
 	"apiwarn-wikilove-notlogged": "Дія не потрапила в журнал"
