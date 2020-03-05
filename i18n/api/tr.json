@@ -8,7 +8,7 @@
 	"apihelp-wikilove-summary": "WikiLove uygulamasını başka bir kullanıcıya verin.",
 	"apihelp-wikilove-extended-description": "WikiLove, önceden belirlenmiş veya yerel olarak tanımlanmış şablonlara sahip uygun bir arayüz aracılığıyla bir kullanıcının konuşma sayfasına gönderilen olumlu bir mesajdır. Bu işlem belirtilen wiki metni belirli bir konuşma sayfasına ekler. İstatistiksel olarak, tür ve diğer veriler kaydedilir.",
 	"apihelp-wikilove-param-title": "WikiLove'a gönderilecek kullanıcı sayfasının veya kullanıcı konuşma sayfasının tam adı.",
-	"apihelp-wikilove-param-text": "Yeni bölüme eklenecek ham wiki metin.",
+	"apihelp-wikilove-param-text": "Yeni bölüme eklenecek ham vikimetin.",
 	"apihelp-wikilove-param-message": "Günlük amacıyla, kullanıcının girdiği gerçek mesaj.",
 	"apihelp-wikilove-param-subject": "Yeni bölümün konu başlığı.",
 	"apihelp-wikilove-param-type": "WikiLove Türü (istatistikler için); bu, menüde seçilen bir türe ve isteğe bağlı olarak bundan sonra bir alt türe karşılık gelir (örneğin, \"{{int:wikilove-barnstar-original-title}}\" veya \"{{int:wikilove-kittens-header}}\" içinde olduğu gibi) .",
