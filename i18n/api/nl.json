@@ -7,6 +7,14 @@
 	"apihelp-wikilove-description": "Laat Wikiwaardering blijken aan een andere gebruiker.\n\nWikiwaardering is een positieve boodschap, die op overlegpagina's van gebruikers geplaatst kan worden via een speciale interface met vooringestelde of lokaal gedefinieerde sjablonen. Deze actie voegt de wikitekst toe aan een bepaalde overlegpagina. Het type en andere gegevens worden gelogd voor statistische doeleinden.",
 	"apihelp-wikilove-summary": "Laat een andere gebruiker Wikiwaardering blijken",
 	"apihelp-wikilove-extended-description": "Wikiwaardering is een positieve boodschap, die op overlegpagina's van gebruikers geplaatst kan worden via een speciale interface met vooringestelde of lokaal gedefinieerde sjablonen. Deze actie voegt de wikitekst toe aan een bepaalde overlegpagina. Het type en andere gegevens worden gelogd voor statistische doeleinden.",
+	"apihelp-wikilove-param-title": "Volledige paginanaam van de gebruikerspagina of overlegpagina van de gebruiker die Wikiwaardering ontvangt.",
 	"apihelp-wikilove-param-text": "Onopgemaakte wikitext om in de nieuwe sectie toe te voegen.",
-	"apihelp-wikilove-example-1": "Laat Wikiwaardering blijken aan \"[[User:Dummy]]\""
+	"apihelp-wikilove-param-message": "Bericht dat de gebruiker heeft ingevoerd, voor logdoeleinden.",
+	"apihelp-wikilove-param-subject": "Onderwerp-header van de nieuwe sectie.",
+	"apihelp-wikilove-param-type": "Type van Wikiwaardering (voor statistische doeleinden); dit correspondeert met een type geselecteerd in het menu, en optioneel een subtype hierna (bijv. als in \"{{int:wikilove-barnstar-original-title}}\" of \"{{int:wikilove-kittens-header}}\")",
+	"apihelp-wikilove-param-email": "Inhoud van de optionele e-mail die naar de gebruiker verzonden wordt. Als de gebruiker niet gemaild kan worden, wordt een waarschuwing afgegeven. Wikiwaardering zal sowieso op de overlegpagina verstuurd worden.",
+	"apihelp-wikilove-param-tags": "De labels voor de revisie wijzigen.",
+	"apihelp-wikilove-example-1": "Laat Wikiwaardering blijken aan \"[[User:Dummy]]\"",
+	"apiwarn-wikilove-ignoringunregistered": "Log ongeregistreerde ontvangers niet.",
+	"apiwarn-wikilove-notlogged": "Actie is niet gelogd."
 }
