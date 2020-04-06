@@ -2,9 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Albinus",
-			"Ramjit Tudu"
+			"Ramjit Tudu",
+			"Manik Soren"
 		]
 	},
+	"wikilove": "ᱣᱤᱠᱤ ᱫᱩᱞᱟᱹᱲ",
+	"wikilove-tab-text": "ᱣᱤᱠᱤ ᱫᱩᱞᱟᱹᱲ",
 	"wikilove-err-not-logged-in": "ᱟᱢ ᱫᱚ ᱵᱟᱢ ᱵᱚᱞᱚ ᱟᱠᱟᱱᱟ᱾ ᱣᱤᱠᱤ ᱫᱩᱯᱞᱟᱹᱲ ᱵᱮᱵᱷᱟᱨ ᱞᱟᱹᱜᱤᱛ ᱵᱷᱤᱛᱨᱤ ᱵᱚᱞᱚᱜᱢᱮ᱾",
-	"wikilove-err-invalid-username": "ᱱᱚᱶᱟ ᱵᱮᱵᱷᱟᱨᱤᱭᱟᱹ ᱧᱩᱛᱩᱢ ᱫᱚ ᱡᱩᱛ ᱵᱟᱹᱱᱩᱜ-ᱟ ᱾"
+	"wikilove-err-invalid-username": "ᱱᱚᱶᱟ ᱵᱮᱵᱷᱟᱨᱤᱭᱟᱹ ᱧᱩᱛᱩᱢ ᱫᱚ ᱡᱩᱛ ᱵᱟᱹᱱᱩᱜ-ᱟ ᱾",
+	"wikilove-commons-link": "ᱣᱤᱠᱤᱢᱤᱰᱤᱭᱟ ᱠᱚᱢᱚᱱᱥ"
 }
