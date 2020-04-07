@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Max20091",
 			"Minh Nguyen",
 			"Prenn",
 			"Trần Nguyễn Minh Huy",
-			"Tuankiet65",
-			"Max20091"
+			"Tuankiet65"
 		]
 	},
 	"wikilove-desc": "Thêm một giao diện cho phép gửi phản hồi khen ngợi cho người dùng khác qua các trang thảo luận cá nhân",

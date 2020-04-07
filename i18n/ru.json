@@ -1,15 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
+			"Abiyoyo",
 			"Eugrus",
 			"Haffman",
 			"Kaganer",
 			"Kalan",
 			"Okras",
 			"Ole Yves",
-			"Александр Сигачёв",
-			"Abiyoyo",
-			"Stjn"
+			"Stjn",
+			"Александр Сигачёв"
 		]
 	},
 	"wikilove-desc": "Добавляет интерфейс для упрощения добавления положительных отзывов на страницы обсуждения участников",

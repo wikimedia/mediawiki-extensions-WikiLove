@@ -1,15 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bdijkstra",
 			"Effeietsanders",
+			"Encycloon",
+			"Mainframe98",
+			"Robin van der Vliet",
 			"SPQRobin",
 			"Saruman",
 			"Siebrand",
-			"Tjcool007",
-			"Robin van der Vliet",
-			"Mainframe98",
-			"Encycloon",
-			"Bdijkstra"
+			"Tjcool007"
 		]
 	},
 	"wikilove-desc": "Voegt een interface toe voor het geven van positieve terugkoppeling op overlegpagina's van gebruikers",
