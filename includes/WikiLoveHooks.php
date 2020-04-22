@@ -92,7 +92,7 @@ class WikiLoveHooks {
 	 * to configure views links.
 	 *
 	 * @param Skin $skin
-	 * @param array $views
+	 * @param array &$views
 	 */
 	private static function skinConfigViewsLinks( $skin, &$views ) {
 		global $wgWikiLoveGlobal;
