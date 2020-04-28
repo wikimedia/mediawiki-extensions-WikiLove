@@ -186,5 +186,5 @@
 	"wikilove-terms": "Gönderim yaparak $1 uyarınca saydamlığı kabul ediyorsunuz.",
 	"wikilove-terms-link": "koşullar",
 	"tag-wikilove-description": "WikiLove aracını kullanarak yapılan düzenleme",
-	"WikiLove.js": "/* Buraya yerleştirilen JavaScript, VikiSevgi'yi özelleştirir. Bkz: https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"WikiLove.js": "/* Buraya yerleştirilen JavaScript, VikiSevgi'yi özelleştirir. https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration sayfasına bakın */"
 }
