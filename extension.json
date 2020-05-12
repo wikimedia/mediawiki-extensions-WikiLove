@@ -262,9 +262,15 @@
 		]
 	},
 	"config": {
-		"WikiLoveGlobal": false,
-		"WikiLoveTabIcon": true,
-		"WikiLoveLogging": false
+		"WikiLoveGlobal": {
+			"value": false
+		},
+		"WikiLoveTabIcon": {
+			"value": true
+		},
+		"WikiLoveLogging": {
+			"value": false
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }
