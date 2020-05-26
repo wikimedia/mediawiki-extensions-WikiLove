@@ -184,7 +184,7 @@
 	"wikilove-summary": "/* $1 */ нова порука (Викиљубав)",
 	"wikilove-what-is-this": "Шта је ово?",
 	"wikilove-what-is-this-link": "https://www.mediawiki.org/wiki/Special:MyLanguage/WikiLove",
-	"wikilove-anon-warning": "Напомена: корисник нема налог, па зато можда неће приметити поруку.",
+	"wikilove-anon-warning": "Напомена: Корисник није регистрован, те вероватно неће приметити поруку.",
 	"wikilove-commons-text": "Слике можете да пронађете на пројекту $1.",
 	"wikilove-commons-link": "Викимедијина остава",
 	"wikilove-commons-url": "//commons.wikimedia.org",
