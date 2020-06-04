@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kkairri"
+		]
+	},
+	"apihelp-wikilove-summary": "別の利用者にウィキラブを贈ります。",
+	"apihelp-wikilove-extended-description": "ウィキラブは、既定のまたはローカルで定義されたテンプレートを使い、使いやすいインターフェースを通して利用者の会話ページに投稿される、前向きなメッセージです。この操作は、会話ページに指定したウィキテキストを追加します。For statistical purposes, the type and other data are logged.",
+	"apihelp-wikilove-param-title": "ウィキラブを贈る利用者の利用者ページまたは利用者会話ページの完全なページ名",
+	"apihelp-wikilove-param-text": "新しいセクションに追加する生のウィキテキスト",
+	"apihelp-wikilove-param-email": "利用者に送信する追加的な電子メールのメッセージの内容。利用者が電子メールを有効にしていない場合は、警告を返します。ウィキラブは警告の有無にかかわらず利用者の会話ページに投稿されます。"
+}
