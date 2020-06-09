@@ -1,7 +1,6 @@
 --
 -- WikiLove logging schema
 -- Logs all actions of giving WikiLove.
--- Not final, please apply this patch manually for now!
 --
 
 CREATE TABLE IF NOT EXISTS /*_*/wikilove_log (
