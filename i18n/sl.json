@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dbc334"
+			"Dbc334",
+			"Yerpo"
 		]
 	},
 	"wikilove-desc": "Doda vmesnik za olajšanje pozitivne povratne informacije uporabnika na uporabniških pogovornih straneh",
@@ -90,6 +91,8 @@
 	"wikilove-food-stroopwafels-header": "Vafelj s sirupom za vas!",
 	"wikilove-type-kittens": "Mucke",
 	"wikilove-kittens-header": "Mucka za vas!",
+	"wikilove-type-goats": "Koze",
+	"wikilove-goats-header": "Koza zate!",
 	"wikilove-type-makeyourown": "Naredite svojo",
 	"wikilove-err-header": "Prosimo, vnesite glavo.",
 	"wikilove-err-title": "Prosimo, vnesite naslov.",
@@ -102,8 +105,12 @@
 	"wikilove-err-gallery-again": "Poskusite znova",
 	"wikilove-err-preview-api": "Med predogledom je nekaj šlo narobe. Prosimo, poskusite znova.",
 	"wikilove-err-send-api": "Med pošiljanjem sporočila je nekaj šlo narobe. Prosimo, poskusite znova.",
+	"wikilove-err-invalid-token": "WikiLjubezni nismo mogli poslati zaradi izgube podatkov o seji. Poskusite osvežiti stran ali se odjaviti in ponovno prijaviti.",
 	"wikilove-err-not-logged-in": "Niste prijavljeni. Prosimo, da se za uporabo WikiLjubezni prijavite.",
 	"wikilove-err-invalid-username": "Uporabniško ime ni veljavno.",
+	"wikilove-err-no-self-wikilove": "Samemu sebi žal ne morete poslati WikiLjubezni.",
+	"wikilove-err-redirect": "Uporabnikova pogovorna stran je preusmeritev.",
+	"wikilove-err-cannot-edit": "Nimate dovoljenja za urejanje te strani.",
 	"wikilove-summary": "/* $1 */ novo sporočilo WikiLjubezen",
 	"wikilove-what-is-this": "Kaj je to?",
 	"wikilove-anon-warning": "Opomba: Uporabnik ni registriran, zato sporočila morda ne bo opazil.",
