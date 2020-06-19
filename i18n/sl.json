@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Dbc334",
+			"Mitjas1",
 			"Yerpo"
 		]
 	},
@@ -73,8 +74,16 @@
 	"wikilove-barnstar-writers-title": "Pisateljska zvezda",
 	"wikilove-type-food": "Hrana in pijača",
 	"wikilove-food-select": "Izberite hrano ali pijačo:",
+	"wikilove-food-baklava-option": "Baklava",
+	"wikilove-food-baklava-desc": "Baklava je dobra, sladka sladica narejena iz plasti zdrobljenih oreščkov in polita s sirupom ali medom",
+	"wikilove-food-baklava-header": "Baklava za vas!",
 	"wikilove-food-beer-option": "Pivo",
+	"wikilove-food-beer-desc": "Pivo je svetovno najbolje prodajana in najverjetneje najstarejša alkoholna pijača. Je tretja najbolj priljubljena pijača za vodo in čajem.",
 	"wikilove-food-beer-header": "Pivo za vas!",
+	"wikilove-food-brownie-option": "Brownie",
+	"wikilove-food-brownie-header": "Brownie za vas!",
+	"wikilove-food-bubbletea-option": "Mehurčkast čaj",
+	"wikilove-food-bubbletea-header": "Malo mehurčkastega čaja za vas!",
 	"wikilove-food-cheeseburger-option": "Sirni hamburger",
 	"wikilove-food-cheeseburger-header": "Sirni hamburger za vas!",
 	"wikilove-food-cookie-option": "Piškotek",
@@ -83,6 +92,9 @@
 	"wikilove-food-coffee-header": "Skodelica kave za vas!",
 	"wikilove-food-tea-option": "Skodelica čaja",
 	"wikilove-food-tea-header": "Skodelica čaja za vas!",
+	"wikilove-food-cupcake-option": "Tortica",
+	"wikilove-food-cupcake-desc": "Tortica je majhna torta ustvarjena za eno osebo. Se pogosto postrežejo z mrvicami ali drugimi okraski.",
+	"wikilove-food-cupcake-header": "Tortica za vas!",
 	"wikilove-food-pie-option": "Pita",
 	"wikilove-food-pie-header": "Pita za vas!",
 	"wikilove-food-strawberries-option": "Jagode",
@@ -111,11 +123,14 @@
 	"wikilove-err-no-self-wikilove": "Samemu sebi žal ne morete poslati WikiLjubezni.",
 	"wikilove-err-redirect": "Uporabnikova pogovorna stran je preusmeritev.",
 	"wikilove-err-cannot-edit": "Nimate dovoljenja za urejanje te strani.",
+	"wikilove-err-max-exceeded": "Ne moreš poslati WIkiLove več kot $1 {{PLURAL:$1|user|users}} naenkrat.",
+	"wikilove-success-number": "$1 WikiLove {{PLURAL:$1|message|messages}} poslano.",
 	"wikilove-summary": "/* $1 */ novo sporočilo WikiLjubezen",
 	"wikilove-what-is-this": "Kaj je to?",
 	"wikilove-anon-warning": "Opomba: Uporabnik ni registriran, zato sporočila morda ne bo opazil.",
 	"wikilove-commons-text": "Slike lahko najdete z brskanjem po $1.",
 	"wikilove-terms": "S potrditvijo se strinjate s preglednostjo pod temi $1.",
 	"wikilove-terms-link": "pogoji",
+	"tag-wikilove-description": "Urejanje narejeno z WikiLove orodjem",
 	"WikiLove.js": "/* Tukaj naveden JavaScript prilagaja WikiLove; oglejte si https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

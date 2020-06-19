@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mitjas1"
+		]
+	},
+	"apihelp-wikilove-summary": "Podari WikiLove drugemu uporabniku.",
+	"apihelp-wikilove-example-1": "Pošlji WikiLove sporočilo \"[[User:Dummy]]\"",
+	"apiwarn-wikilove-notlogged": "Vaše ukrepanje ni bilo zabeleženo"
+}
