@@ -88,7 +88,7 @@ class WikiLoveHooks {
 	/**
 	 * Configure views links.
 	 *
-	 * Helper function for SkinTemplateTabs and SkinTemplateNavigation hooks
+	 * Helper function for SkinTemplateNavigation hooks
 	 * to configure views links.
 	 *
 	 * @param Skin $skin
