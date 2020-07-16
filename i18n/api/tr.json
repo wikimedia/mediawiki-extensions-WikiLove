@@ -4,17 +4,17 @@
 			"BaRaN6161 TURK"
 		]
 	},
-	"apihelp-wikilove-description": "WikiLove uygulamasını başka bir kullanıcıya verin.\n\nWikiLove, önceden belirlenmiş veya yerel olarak tanımlanmış şablonlara sahip uygun bir arayüz aracılığıyla bir kullanıcının konuşma sayfasına gönderilen olumlu bir mesajdır. Bu işlem belirtilen wiki metni belirli bir konuşma sayfasına ekler. İstatistiksel olarak, tür ve diğer veriler kaydedilir.",
-	"apihelp-wikilove-summary": "WikiLove uygulamasını başka bir kullanıcıya verin.",
-	"apihelp-wikilove-extended-description": "WikiLove, önceden belirlenmiş veya yerel olarak tanımlanmış şablonlara sahip uygun bir arayüz aracılığıyla bir kullanıcının konuşma sayfasına gönderilen olumlu bir mesajdır. Bu işlem belirtilen wiki metni belirli bir konuşma sayfasına ekler. İstatistiksel olarak, tür ve diğer veriler kaydedilir.",
-	"apihelp-wikilove-param-title": "WikiLove'a gönderilecek kullanıcı sayfasının veya kullanıcı konuşma sayfasının tam adı.",
+	"apihelp-wikilove-description": "VikiSevgi'sini başka bir kullanıcıya verin.\n\nVikiSevgi, önceden belirlenmiş veya yerel olarak tanımlanmış şablonlara sahip uygun bir arayüz aracılığıyla bir kullanıcının konuşma sayfasına gönderilen olumlu bir mesajdır. Bu işlem belirtilen wiki metni belirli bir konuşma sayfasına ekler. İstatistiksel olarak, tür ve diğer veriler kaydedilir.",
+	"apihelp-wikilove-summary": "VikiSevgi'sini başka bir kullanıcıya verin.",
+	"apihelp-wikilove-extended-description": "VikiSevgi, önceden belirlenmiş veya yerel olarak tanımlanmış şablonlara sahip uygun bir arayüz aracılığıyla bir kullanıcının konuşma sayfasına gönderilen olumlu bir mesajdır. Bu işlem belirtilen wiki metni belirli bir konuşma sayfasına ekler. İstatistiksel olarak, tür ve diğer veriler kaydedilir.",
+	"apihelp-wikilove-param-title": "VikiSevgi'ye gönderilecek kullanıcı sayfasının veya kullanıcı mesaj sayfasının tam adı.",
 	"apihelp-wikilove-param-text": "Yeni bölüme eklenecek ham vikimetin.",
 	"apihelp-wikilove-param-message": "Günlük amacıyla, kullanıcının girdiği gerçek mesaj.",
 	"apihelp-wikilove-param-subject": "Yeni bölümün konu başlığı.",
-	"apihelp-wikilove-param-type": "WikiLove Türü (istatistikler için); bu, menüde seçilen bir türe ve isteğe bağlı olarak bundan sonra bir alt türe karşılık gelir (örneğin, \"{{int:wikilove-barnstar-original-title}}\" veya \"{{int:wikilove-kittens-header}}\" içinde olduğu gibi) .",
-	"apihelp-wikilove-param-email": "Kullanıcıya gönderilecek isteğe bağlı e-posta mesajının içeriği. Kullanıcı e-postayla gönderilemezse bir uyarı verilir. WikiLove, kullanıcıların konuşma sayfasına her iki şekilde de gönderilecektir.",
+	"apihelp-wikilove-param-type": "VikiSevgi türü (istatistikler için); bu, menüde seçilen bir türe ve isteğe bağlı olarak bundan sonra bir alt türe karşılık gelir (örneğin, \"{{int:wikilove-barnstar-original-title}}\" veya \"{{int:wikilove-kittens-header}}\" içinde olduğu gibi).",
+	"apihelp-wikilove-param-email": "Kullanıcıya gönderilecek isteğe bağlı e-posta mesajının içeriği. Kullanıcı e-postayla gönderilemezse bir uyarı verilir. VikiSevgi, kullanıcıların mesaj sayfasına her iki şekilde de gönderilecektir.",
 	"apihelp-wikilove-param-tags": "Düzeltmeye uygulanacak etiketleri değiştirin.",
-	"apihelp-wikilove-example-1": "WikiLove \"[[User:Dummy]] \"adresine gönderin.",
+	"apihelp-wikilove-example-1": "VikiSevgi'yi \"[[User:Dummy]]\" kullanıcıya gönderin.",
 	"apiwarn-wikilove-ignoringunregistered": "Kayıtsız alıcıları kaydetmemek",
-	"apiwarn-wikilove-notlogged": "İşlem kaydedilmedi"
+	"apiwarn-wikilove-notlogged": "Eylem kaydedilmedi"
 }
