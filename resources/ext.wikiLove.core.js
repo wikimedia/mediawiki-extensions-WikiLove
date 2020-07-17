@@ -17,6 +17,7 @@
 	$.wikiLove = {
 		/**
 		 * Opens the dialog and builds it if necessary.
+		 *
 		 * @param {string[]} recipients Usernames of recipients (without namespace prefix)
 		 * @param {string[]} [extraTags] Extra tags to apply
 		 */
