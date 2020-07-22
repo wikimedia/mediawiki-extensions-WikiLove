@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Deryck Chan",
+			"Moon0319",
 			"Yueman"
 		]
 	},
@@ -17,7 +18,7 @@
 	"wikilove-get-started-list-2": "加細節落你個愛心訊息",
 	"wikilove-get-started-list-3": "寄出維基愛心！",
 	"wikilove-add-details": "加細節",
-	"wikilove-image": "入檔案名：",
+	"wikilove-image": "入快勞名：",
 	"wikilove-select-image": "揀圖：",
 	"wikilove-header": "入標題：",
 	"wikilove-title": "入獎品題：",
@@ -25,7 +26,7 @@
 	"wikilove-omit-sig": "（唔使加簽名）",
 	"wikilove-image-example": "（例：Trophy.png）",
 	"wikilove-button-preview": "睇下",
-	"wikilove-preview": "預覽",
+	"wikilove-preview": "睇下",
 	"wikilove-notify": "電郵通知用戶",
 	"wikilove-button-send": "寄出維基愛心",
 	"wikilove-type-barnstars": "星章",
