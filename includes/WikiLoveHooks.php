@@ -17,8 +17,20 @@ class WikiLoveHooks {
 	 * @param DatabaseUpdater $updater
 	 */
 	public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $updater ) {
-		$updater->addExtensionUpdate( [ 'addTable', 'wikilove_log',
-			dirname( __DIR__ ) . '/patches/WikiLoveLog.sql', true ] );
+		$dbType = $updater->getDB()->getType();
+		if ( $dbType === 'mysql' ) {
+			$updater->addExtensionTable( 'wikilove_log',
+				dirname( __DIR__ ) . '/patches/tables-generated.sql'
+			);
+		} elseif ( $dbType === 'sqlite' ) {
+			$updater->addExtensionTable( 'wikilove_log',
+				dirname( __DIR__ ) . '/patches/sqlite/tables-generated.sql'
+			);
+		} elseif ( $dbType === 'postgres' ) {
+			$updater->addExtensionTable( 'wikilove_log',
+				dirname( __DIR__ ) . '/patches/postgres/tables-generated.sql'
+			);
+		}
 	}
 
 	/**
