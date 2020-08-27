@@ -158,7 +158,7 @@ class WikiLoveHooks {
 
 		// Exit early if the page is in the wrong namespace
 		$ns = $title->getNamespace();
-		if ( $ns != NS_USER && $ns != NS_USER_TALK ) {
+		if ( $ns !== NS_USER && $ns !== NS_USER_TALK ) {
 			return ApiMessage::create( 'wikilove-err-invalid-username', 'invalidusername' );
 		}
 
@@ -171,10 +171,10 @@ class WikiLoveHooks {
 		}
 
 		// Get the user talk page
-		if ( $ns == NS_USER_TALK ) {
+		if ( $ns === NS_USER_TALK ) {
 			// We're already on the user talk page
 			$talkTitle = $baseTitle;
-		} elseif ( $ns == NS_USER ) {
+		} elseif ( $ns === NS_USER ) {
 			// We're on the user page, so retrieve the user talk page instead
 			$talkTitle = $baseTitle->getTalkPage();
 		}
