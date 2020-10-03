@@ -198,5 +198,5 @@
 	"wikilove-terms-link": "The text that links to the terms of service. Should not be capitalized.\n{{Identical|Term}}",
 	"wikilove-terms-url": "{{Optional}}\nThis URL can be changed to point to a translated version of the page if it exists.",
 	"tag-wikilove-description": "Description for revision tag added when edit is made using WikiLove",
-	"WikiLove.js": "JavaScript comment indicating what the page is used for"
+	"wikiLove.js": "JavaScript comment indicating what the page is used for"
 }
