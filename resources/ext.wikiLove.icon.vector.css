@@ -1,8 +1,9 @@
-div.vectorTabs li#ca-wikilove {
+/* stylelint-disable no-descending-specificity */
+li#ca-wikilove {
 	line-height: 1.4em; /* account for scripts with tall ascenders */
 }
 
-.vectorTabs #ca-wikilove.icon a {
+#ca-wikilove.icon a {
 	display: block;
 	width: 28px;
 	padding: 15px 5px 0;
@@ -12,8 +13,8 @@ div.vectorTabs li#ca-wikilove {
 
 /* icon style */
 /* Only use icon if the menu item is not collapsed into the "More" dropdown
- * (in which case it is inside .vectorMenu instead of .vectorTabs). */
-.vectorTabs #ca-wikilove.icon a:before {
+ * (in which case it is inside #p-cactions not #p-views). */
+#p-views #ca-wikilove.icon a:before {
 	content: '';
 	display: block;
 	width: 16px;
@@ -23,7 +24,7 @@ div.vectorTabs li#ca-wikilove {
 	background-position: -24px 0;
 }
 
-.vectorTabs #ca-wikilove.icon a:hover:before,
-.vectorTabs #ca-wikilove.icon a:focus:before {
+#ca-wikilove.icon a:hover:before,
+#ca-wikilove.icon a:focus:before {
 	background-position: 0 0;
 }
