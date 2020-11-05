@@ -180,5 +180,5 @@
 	"wikilove-commons-text": "Voit etsiä kuvia selailemalla sivustoa $1.",
 	"wikilove-terms": "Lähettämällä sallit avoimuuden $1 mukaan.",
 	"wikilove-terms-link": "ehtojen",
-	"WikiLove.js": "/* Tämä JavaScript mukauttaa Wikirakkautta. Lisätietoja löytyy sivulta https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"wikiLove.js": "/* Tämä JavaScript mukauttaa Wikirakkautta. Lisätietoja löytyy sivulta https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

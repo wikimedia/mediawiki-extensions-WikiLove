@@ -196,5 +196,5 @@
 	"wikilove-terms-link": "termos",
 	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement",
 	"tag-wikilove-description": "Edição feita usando a ferramenta WikiLove",
-	"WikiLove.js": "/* O Javascript que colocar aqui personalizará a extensão WikiLove. Favor ler https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"wikiLove.js": "/* O Javascript que colocar aqui personalizará a extensão WikiLove. Favor ler https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

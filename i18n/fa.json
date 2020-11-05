@@ -197,5 +197,5 @@
 	"wikilove-terms-link": "شرایط",
 	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement/fa",
 	"tag-wikilove-description": "ویرایش با استفاده از ابزار ویکی‌هدیه",
-	"WikiLove.js": "/ * جاوااسکریپت مورد استفاده در اینجا ویکی‌هدیه را سفارشی می‌کند، نگاه کنید به https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration * /"
+	"wikiLove.js": "/ * جاوااسکریپت مورد استفاده در اینجا ویکی‌هدیه را سفارشی می‌کند، نگاه کنید به https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration * /"
 }

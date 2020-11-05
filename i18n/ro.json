@@ -79,5 +79,5 @@
 	"wikilove-commons-url": "//commons.wikimedia.org/wiki/Pagina_principală?uselang=ro",
 	"wikilove-terms": "Prin trimitere, sunteți de acord cu acești $1.",
 	"wikilove-terms-link": "termeni",
-	"WikiLove.js": "/* JavaScript plasat aici personalizează WikiLove; vedeți https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"wikiLove.js": "/* JavaScript plasat aici personalizează WikiLove; vedeți https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

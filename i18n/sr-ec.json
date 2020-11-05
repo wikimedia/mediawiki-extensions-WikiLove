@@ -193,5 +193,5 @@
 	"wikilove-terms-link": "услови",
 	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement?uselang=sr-ec",
 	"tag-wikilove-description": "Измена направљена користећи алатку Викиљубав",
-	"WikiLove.js": "/* Овде постављен јаваскрипт прилагођава Викиљубав. Погледајте https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"wikiLove.js": "/* Овде постављен јаваскрипт прилагођава Викиљубав. Погледајте https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

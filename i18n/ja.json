@@ -137,5 +137,5 @@
 	"wikilove-terms": "送信することで、これらの$1のもとで透明性に同意したと見なされます。",
 	"wikilove-terms-link": "規約",
 	"tag-wikilove-description": "ウィキラブツールを使用した編集",
-	"WikiLove.js": "/* ここに記述したJavaScriptはウィキラブの設定を変更します。https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration をご覧ください。 */"
+	"wikiLove.js": "/* ここに記述したJavaScriptはウィキラブの設定を変更します。https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration をご覧ください。 */"
 }

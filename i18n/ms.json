@@ -181,5 +181,5 @@
 	"wikilove-commons-url": "//commons.wikimedia.org",
 	"wikilove-terms": "Dengan penyerahan ini, anda bersetuju dengan ketelusan di bawah $1 ini.",
 	"wikilove-terms-link": "syarat-syarat",
-	"WikiLove.js": "/* JavaScript yang terletak di sini mengubah suai WikiLove, rujuk https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"wikiLove.js": "/* JavaScript yang terletak di sini mengubah suai WikiLove, rujuk https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

@@ -99,5 +99,5 @@
 	"wikilove-commons-url": "//commons.wikimedia.org",
 	"wikilove-terms": "Ved at sende accepterer du gennemsigtighed under disse $1.",
 	"wikilove-terms-link": "vilkår",
-	"WikiLove.js": "/* JavaScript, der placeres her, tilpasser WikiLove, se https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"wikiLove.js": "/* JavaScript, der placeres her, tilpasser WikiLove, se https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

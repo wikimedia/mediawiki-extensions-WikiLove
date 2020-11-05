@@ -180,5 +180,5 @@
 	"wikilove-commons-link": "Wikimedia Commons",
 	"wikilove-terms": "Með því að senda, samþykkir þú gegnsæi undir $1",
 	"wikilove-terms-link": "skilmálum",
-	"WikiLove.js": "/* JavaScript á þessari síðu sérsníður WikiLove, sjá https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"wikiLove.js": "/* JavaScript á þessari síðu sérsníður WikiLove, sjá https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

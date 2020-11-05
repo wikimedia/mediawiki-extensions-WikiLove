@@ -185,5 +185,5 @@
 	"wikilove-terms-link": "termos",
 	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement/gl",
 	"tag-wikilove-description": "Edición feita mediante a ferramenta de amor wiki",
-	"WikiLove.js": "/* O JavaScript que se coloque aquí afectará a extensión Amor wiki; lea https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"wikiLove.js": "/* O JavaScript que se coloque aquí afectará a extensión Amor wiki; lea https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

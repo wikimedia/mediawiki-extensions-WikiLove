@@ -182,5 +182,5 @@
 	"wikilove-terms": "अस्य समर्पणेन सहैव त्वं $1 इत्यन्तर्गते पारदर्शितां अनुमन्यसे।",
 	"wikilove-terms-link": "नियमाः",
 	"tag-wikilove-description": "विकिप्रेम्णः उपकरणेन कृतं सम्पादनम्",
-	"WikiLove.js": "/* अत्र लिखितं जावास्क्रिप्ट इति विकिप्रेम परिवर्तयति, दृश्यताम् https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"wikiLove.js": "/* अत्र लिखितं जावास्क्रिप्ट इति विकिप्रेम परिवर्तयति, दृश्यताम् https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

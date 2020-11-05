@@ -189,5 +189,5 @@
 	"wikilove-terms-link": "uslovi",
 	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement?uselang=sr-ec",
 	"tag-wikilove-description": "Izmena napravljena koristeći alatku Vikiljubav",
-	"WikiLove.js": "/* Ovde postavljen javaskript prilagođava Vikiljubav. Pogledajte https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"wikiLove.js": "/* Ovde postavljen javaskript prilagođava Vikiljubav. Pogledajte https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

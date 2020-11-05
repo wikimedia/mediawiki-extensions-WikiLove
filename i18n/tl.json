@@ -183,5 +183,5 @@
 	"wikilove-terms": "Sa pamamagitan ng pagpasa, sumasang-ayon ka sa pagkanaaaninag sa ilalim ng $1 na mga ito.",
 	"wikilove-terms-link": "mga kataga",
 	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement",
-	"WikiLove.js": "/* Ang JavaScript na inilalagay dito ay nagpapasadya ng WikiLove, tingnan ang https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"wikiLove.js": "/* Ang JavaScript na inilalagay dito ay nagpapasadya ng WikiLove, tingnan ang https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

@@ -202,5 +202,5 @@
 	"wikilove-terms": "送出即代表您同意依據這些$1公開傳送的內容。",
 	"wikilove-terms-link": "條款",
 	"tag-wikilove-description": "使用維基友愛工具完成的編輯",
-	"WikiLove.js": "/* 此處的 JavaScript 可自訂 WikiLove, 請參考 https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"wikiLove.js": "/* 此處的 JavaScript 可自訂 WikiLove, 請參考 https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

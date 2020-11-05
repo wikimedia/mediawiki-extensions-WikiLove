@@ -175,5 +175,5 @@
 	"wikilove-terms": "सबमिट गरेर तपाईं यस $1 को अन्तर्गत पारदर्शिता स्वीकार गर्नुहुन्छ।",
 	"wikilove-terms-link": "सर्तहरू",
 	"tag-wikilove-description": "विकिलभ उपकरणको प्रयोग गरी गरिएको सम्पादन",
-	"WikiLove.js": "/* यहाँ लेखिएको जावास्क्रिप्ट विकिलभलाई परिवर्तित गर्छन, हेर्नुहोस् https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"wikiLove.js": "/* यहाँ लेखिएको जावास्क्रिप्ट विकिलभलाई परिवर्तित गर्छन, हेर्नुहोस् https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

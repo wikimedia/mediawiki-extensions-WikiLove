@@ -132,5 +132,5 @@
 	"wikilove-terms": "S potrditvijo se strinjate s preglednostjo pod temi $1.",
 	"wikilove-terms-link": "pogoji",
 	"tag-wikilove-description": "Urejanje narejeno z WikiLove orodjem",
-	"WikiLove.js": "/* Tukaj naveden JavaScript prilagaja WikiLove; oglejte si https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"wikiLove.js": "/* Tukaj naveden JavaScript prilagaja WikiLove; oglejte si https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

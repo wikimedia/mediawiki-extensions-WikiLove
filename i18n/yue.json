@@ -186,5 +186,5 @@
 	"wikilove-terms-link": "條款",
 	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement",
 	"tag-wikilove-description": "用維基愛心 (WikiＬove)　做嘅修改",
-	"WikiLove.js": "/* 呢段　JavaScript　係用嚟設定《維基愛心》 (WikiLove)　嘅，詳情請睇 https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"wikiLove.js": "/* 呢段　JavaScript　係用嚟設定《維基愛心》 (WikiLove)　嘅，詳情請睇 https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

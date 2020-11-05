@@ -189,5 +189,5 @@
 	"wikilove-terms": "بإرسالها تكون قد وافقت بالشفافية على هذه $1.",
 	"wikilove-terms-link": "الشروط",
 	"tag-wikilove-description": "باستخدام أداة ويكي الحب",
-	"WikiLove.js": "/* JavaScript placed here customizes WikiLove, see https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"wikiLove.js": "/* JavaScript placed here customizes WikiLove, see https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

@@ -185,5 +185,5 @@
 	"wikilove-terms": "Ved å sende samtykker du til disse $1.",
 	"wikilove-terms-link": "vilkårene",
 	"tag-wikilove-description": "Redigering gjort med WikiLove-verktøyet",
-	"WikiLove.js": "/* JavaScript plassert her tilpasser WikiLove, se https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"wikiLove.js": "/* JavaScript plassert her tilpasser WikiLove, se https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

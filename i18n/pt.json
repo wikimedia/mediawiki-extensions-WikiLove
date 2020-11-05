@@ -185,5 +185,5 @@
 	"wikilove-terms": "Ao enviar, aceita transparência de acordo com $1.",
 	"wikilove-terms-link": "estas condições",
 	"tag-wikilove-description": "Edição feita usando a ferramenta WikiLove",
-	"WikiLove.js": "/* Código JavaScript colocado aqui personaliza o WikiApreço; consulte https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"wikiLove.js": "/* Código JavaScript colocado aqui personaliza o WikiApreço; consulte https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

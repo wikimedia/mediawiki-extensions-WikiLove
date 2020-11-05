@@ -134,5 +134,5 @@
 	"wikilove-commons-text": "آپ کو صفحہ $1 میں تصاویر مل جائے گی۔",
 	"wikilove-terms": "اس کو روانہ کرنے پر آپ کو ان $1 کے تحت شفافیت پر متفق تصور کیا جائے گے۔",
 	"wikilove-terms-link": "شرائط و ضوابط",
-	"WikiLove.js": "/* یہاں موجود جاوااسکرپٹ سے ویکی محبت کو اپنے انداز میں ڈھالا جاسکتا ہے، ملاحظہ فرمائیں https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"wikiLove.js": "/* یہاں موجود جاوااسکرپٹ سے ویکی محبت کو اپنے انداز میں ڈھالا جاسکتا ہے، ملاحظہ فرمائیں https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

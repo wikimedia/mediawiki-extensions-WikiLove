@@ -184,5 +184,5 @@
 	"wikilove-terms-link": "Bedingungen",
 	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement/de",
 	"tag-wikilove-description": "Bearbeitung mit dem WikiLove-Werkzeug durchgeführt",
-	"WikiLove.js": "/* Das folgende JavaScript passt die persönliche Wertschätzung an, siehe https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"wikiLove.js": "/* Das folgende JavaScript passt die persönliche Wertschätzung an, siehe https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

@@ -182,5 +182,5 @@
 	"wikilove-terms": "Հաստատելով, դու ընդունում ես $1 կանոնադրությունը։",
 	"wikilove-terms-link": "պայմաններ",
 	"tag-wikilove-description": "Խմբագրումը կատարվել է ՎիքիՍեր գործիքով",
-	"WikiLove.js": "/* JavaScript placed here customizes WikiLove, see https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"wikiLove.js": "/* JavaScript placed here customizes WikiLove, see https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }
