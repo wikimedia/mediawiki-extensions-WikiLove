@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"BaRaN6161 TURK"
+			"BaRaN6161 TURK",
+			"MuratTheTurkish"
 		]
 	},
-	"apihelp-wikilove-description": "VikiSevgi'sini başka bir kullanıcıya verin.\n\nVikiSevgi, önceden belirlenmiş veya yerel olarak tanımlanmış şablonlara sahip uygun bir arayüz aracılığıyla bir kullanıcının konuşma sayfasına gönderilen olumlu bir mesajdır. Bu işlem belirtilen wiki metni belirli bir konuşma sayfasına ekler. İstatistiksel olarak, tür ve diğer veriler kaydedilir.",
+	"apihelp-wikilove-description": "VikiSevgi'sini başka bir kullanıcıya verin.\n\nVikiSevgi, önceden belirlenmiş veya yerel olarak tanımlanmış şablonlara sahip uygun bir arayüzden bir kullanıcının mesaj sayfasına gönderilen olumlu bir mesajdır. Bu işlem belirtilen vikimetin belirli bir mesaj sayfasına ekler. İstatistiksel olarak, tür ve diğer veriler kaydedilir.",
 	"apihelp-wikilove-summary": "VikiSevgi'sini başka bir kullanıcıya verin.",
 	"apihelp-wikilove-extended-description": "VikiSevgi, önceden belirlenmiş veya yerel olarak tanımlanmış şablonlara sahip uygun bir arayüz aracılığıyla bir kullanıcının konuşma sayfasına gönderilen olumlu bir mesajdır. Bu işlem belirtilen wiki metni belirli bir konuşma sayfasına ekler. İstatistiksel olarak, tür ve diğer veriler kaydedilir.",
 	"apihelp-wikilove-param-title": "VikiSevgi'ye gönderilecek kullanıcı sayfasının veya kullanıcı mesaj sayfasının tam adı.",
