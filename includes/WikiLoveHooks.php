@@ -152,7 +152,7 @@ class WikiLoveHooks {
 	 */
 	public static function getUserTalkPage( $title, $user ) {
 		// Exit early if the sending user isn't logged in
-		if ( !$user->isLoggedIn() ) {
+		if ( !$user->isRegistered() ) {
 			return ApiMessage::create( 'wikilove-err-not-logged-in', 'notloggedin' );
 		}
 
