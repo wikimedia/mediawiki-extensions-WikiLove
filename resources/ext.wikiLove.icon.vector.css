@@ -3,7 +3,7 @@ li#ca-wikilove {
 	line-height: 1.4em; /* account for scripts with tall ascenders */
 }
 
-#ca-wikilove.icon a {
+#p-views #ca-wikilove.icon a {
 	display: block;
 	width: 28px;
 	padding: 15px 5px 0;
