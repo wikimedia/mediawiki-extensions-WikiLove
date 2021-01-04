@@ -3,6 +3,7 @@
 		"authors": [
 			"Anakmalaysia",
 			"Pizza1016",
+			"Tofeiku",
 			"Xabier Armendaritz"
 		]
 	},
@@ -153,6 +154,8 @@
 	"wikilove-food-stroopwafels-header": "Stroopwafel untuk anda!",
 	"wikilove-type-kittens": "Anak kucing",
 	"wikilove-kittens-header": "Seekor anak kucing untuk anda!",
+	"wikilove-type-goats": "Kambing",
+	"wikilove-goats-header": "Kambing untuk anda!",
 	"wikilove-type-makeyourown": "Bikin sendiri",
 	"wikilove-err-header": "Sila isikan pengatas.",
 	"wikilove-err-title": "Sila isikan tajuk.",
@@ -181,5 +184,6 @@
 	"wikilove-commons-url": "//commons.wikimedia.org",
 	"wikilove-terms": "Dengan penyerahan ini, anda bersetuju dengan ketelusan di bawah $1 ini.",
 	"wikilove-terms-link": "syarat-syarat",
+	"tag-wikilove-description": "Suntingan dibuat menggunakan alat WikiSayang",
 	"wikiLove.js": "/* JavaScript yang terletak di sini mengubah suai WikiLove, rujuk https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

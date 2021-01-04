@@ -4,6 +4,7 @@
 			"Gomoko",
 			"Thibaut120094",
 			"Urhixidur",
+			"Verdy p",
 			"Wladek92"
 		]
 	},
@@ -14,10 +15,10 @@
 	"apihelp-wikilove-param-text": "Wikitexte brut à ajouter dans la nouvelle section.",
 	"apihelp-wikilove-param-message": "Message réellement saisi par l’utilisateur, à des fins de traçage.",
 	"apihelp-wikilove-param-subject": "Entête de la nouvelle section.",
-	"apihelp-wikilove-param-type": "Type de WikiLove (pour les statistiques) ; cela correspond à un type sélectionné dans le menu, et éventuellement à un sous-type après cela (par ex. comme dans « {{int:wikilove-barnstar-original-title}} » ou « {{int:wikilove-kittens-header}} »).",
-	"apihelp-wikilove-param-email": "Contenu du message de courriel facultatif envoyé à l’utilisateur? Un avertissement sera renvoyé si l’utilisateur ne peut être joint par courriel. WikiLove sera sinon envoyé aux pages de discussion des utilisateurs.",
-	"apihelp-wikilove-param-tags": "Modifier les balises à appliquer à la révision.",
+	"apihelp-wikilove-param-type": "Type de WikiLove (pour les statistiques) ; cela correspond à un type sélectionné dans le menu et éventuellement à un sous-type précisé après (par ex. comme dans « {{int:wikilove-barnstar-original-title}} » ou « {{int:wikilove-kittens-header}} »).",
+	"apihelp-wikilove-param-email": "Contenu du message de courriel facultatif envoyé à l’utilisateur. Un avertissement sera renvoyé si l’utilisateur ne peut être joint par courriel. WikiLove sera de toute manière envoyé aux pages de discussion des utilisateurs.",
+	"apihelp-wikilove-param-tags": "Modifier les balises à appliquer à la version.",
 	"apihelp-wikilove-example-1": "Envoyer WikiLove à \"[[User:Dummy]]\"",
-	"apiwarn-wikilove-ignoringunregistered": "Pas de journalisation des destinataires non enregistrés.",
-	"apiwarn-wikilove-notlogged": "L’action n’a pas été enregistrée"
+	"apiwarn-wikilove-ignoringunregistered": "Les destinataires non inscrits ne sont pas journalisés.",
+	"apiwarn-wikilove-notlogged": "L’action n’a pas été journalisée"
 }

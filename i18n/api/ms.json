@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tofeiku"
+		]
+	},
+	"apihelp-wikilove-summary": "Berikan WikiSayang kepada pengguna lain.",
+	"apihelp-wikilove-param-email": "Kandungan pesanan e-mel pilihan untuk menghantar ke pengguna. Amaran akan dikembalikan jika pengguna tidak dapat di-e-melkan. WikiSayang akan dihantar ke laman perbincangan pengguna macam mana sekalipun.",
+	"apiwarn-wikilove-notlogged": "Tindakan tidak dilogkan"
+}

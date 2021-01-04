@@ -52,5 +52,6 @@
 	"wikilove-what-is-this": "Што гэта?",
 	"wikilove-anon-warning": "Заўвага: гэты ўдзельнік не зарэгістраваны, ён ці яна ня можа заўважыць гэтае паведамленьне.",
 	"wikilove-commons-text": "Вы можаце знайсьці выявы ў праекце $1.",
+	"tag-wikilove-description": "Рэдагаваньне зробленае з дапамогай інструмэнту WikiLove",
 	"wikiLove.js": "/* Разьмешчаны тут JavaScript-код зьмяняе WikiLove, глядзіце https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }
