@@ -68,15 +68,8 @@ class WikiLoveHooks {
 		// getUserTalkPage() returns an ApiMessage on error
 		if ( !$title instanceof ApiMessage ) {
 			$recipient = $title->getBaseText();
-			$receiver = User::newFromName( $recipient );
 
-			$vars = [];
-			$vars['wikilove-recipient'] = $recipient;
-			if ( $receiver === false || $receiver->isAnon() ) {
-				$vars['wikilove-anon'] = 1;
-			}
-
-			$out->addJsConfigVars( $vars );
+			$out->addJsConfigVars( [ 'wikilove-recipient' => $recipient ] );
 
 			$out->addModules( 'ext.wikiLove.init' );
 			$out->addModuleStyles( 'ext.wikiLove.icon' );
