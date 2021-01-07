@@ -168,7 +168,7 @@
 				$( '#mw-wikilove-preview-form' ).on( 'submit', $.wikiLove.validatePreviewForm );
 				$( '#mw-wikilove-send-form' ).on( 'click', $.wikiLove.submitSend );
 
-				if ( !mw.config.get( 'wikilove-anon' ) ) {
+				if ( !mw.util.isIPAddress( mw.config.get( 'wikilove-recipient' ) ) ) {
 					$( '#mw-wikilove-anon-warning' ).hide();
 				}
 
