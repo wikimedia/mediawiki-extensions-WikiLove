@@ -72,10 +72,6 @@ class WikiLoveHooks {
 	public static function onMakeGlobalVariablesScript( &$vars ) {
 		if ( self::$recipient !== null ) {
 			$vars['wikilove-recipient'] = self::$recipient;
-			$receiver = User::newFromName( self::$recipient );
-			if ( $receiver === false || $receiver->isAnon() ) {
-				$vars['wikilove-anon'] = 1;
-			}
 		}
 	}
 
