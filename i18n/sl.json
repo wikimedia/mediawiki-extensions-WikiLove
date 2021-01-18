@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Dbc334",
+			"Eleassar",
 			"Mitjas1",
 			"Yerpo"
 		]
@@ -116,7 +117,7 @@
 	"wikilove-err-gallery": "Nekaj je šlo narobe pri nalaganju slik!",
 	"wikilove-err-gallery-again": "Poskusite znova",
 	"wikilove-err-preview-api": "Med predogledom je nekaj šlo narobe. Prosimo, poskusite znova.",
-	"wikilove-err-send-api": "Med pošiljanjem sporočila je nekaj šlo narobe. Prosimo, poskusite znova.",
+	"wikilove-err-send-api": "Pri pošiljanju sporočila je prišlo do napake. Prosimo, poskusite znova.",
 	"wikilove-err-invalid-token": "WikiLjubezni nismo mogli poslati zaradi izgube podatkov o seji. Poskusite osvežiti stran ali se odjaviti in ponovno prijaviti.",
 	"wikilove-err-not-logged-in": "Niste prijavljeni. Prosimo, da se za uporabo WikiLjubezni prijavite.",
 	"wikilove-err-invalid-username": "Uporabniško ime ni veljavno.",
@@ -129,6 +130,7 @@
 	"wikilove-what-is-this": "Kaj je to?",
 	"wikilove-anon-warning": "Opomba: Uporabnik ni registriran, zato sporočila morda ne bo opazil.",
 	"wikilove-commons-text": "Slike lahko najdete z brskanjem po $1.",
+	"wikilove-commons-link": "Wikimedijina zbirka",
 	"wikilove-terms": "S potrditvijo se strinjate s preglednostjo pod temi $1.",
 	"wikilove-terms-link": "pogoji",
 	"tag-wikilove-description": "Urejanje narejeno z WikiLove orodjem",
