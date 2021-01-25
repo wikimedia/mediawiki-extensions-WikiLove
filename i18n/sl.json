@@ -133,6 +133,6 @@
 	"wikilove-commons-link": "Wikimedijina zbirka",
 	"wikilove-terms": "S potrditvijo se strinjate s preglednostjo pod temi $1.",
 	"wikilove-terms-link": "pogoji",
-	"tag-wikilove-description": "Urejanje narejeno z WikiLove orodjem",
+	"tag-wikilove-description": "Urejanje, opravljeno z orodjem WikiLove",
 	"wikiLove.js": "/* Tukaj naveden JavaScript prilagaja WikiLove; oglejte si https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }
