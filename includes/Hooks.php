@@ -1,6 +1,16 @@
 <?php
 
+namespace MediaWiki\Extension\WikiLove;
+
+use ApiMessage;
+use DatabaseUpdater;
+use IApiMessage;
 use MediaWiki\MediaWikiServices;
+use OutputPage;
+use Skin;
+use SkinTemplate;
+use Title;
+use User;
 
 /**
  * Hooks for WikiLove extension
@@ -9,7 +19,7 @@ use MediaWiki\MediaWikiServices;
  * @ingroup Extensions
  */
 
-class WikiLoveHooks {
+class Hooks {
 
 	/**
 	 * LoadExtensionSchemaUpdates hook

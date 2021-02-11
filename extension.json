@@ -14,7 +14,7 @@
 		"MediaWiki": ">= 1.35.0"
 	},
 	"APIModules": {
-		"wikilove": "ApiWikiLove"
+		"wikilove": "MediaWiki\\Extension\\WikiLove\\ApiWikiLove"
 	},
 	"MessagesDirs": {
 		"WikiLove": [
@@ -22,9 +22,8 @@
 			"i18n/api"
 		]
 	},
-	"AutoloadClasses": {
-		"ApiWikiLove": "includes/ApiWikiLove.php",
-		"WikiLoveHooks": "includes/WikiLoveHooks.php"
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\WikiLove\\": "includes/"
 	},
 	"ResourceModules": {
 		"ext.wikiLove.icon": {
@@ -240,25 +239,25 @@
 	},
 	"Hooks": {
 		"GetPreferences": [
-			"WikiLoveHooks::onGetPreferences"
+			"MediaWiki\\Extension\\WikiLove\\Hooks::onGetPreferences"
 		],
 		"SkinTemplateNavigation": [
-			"WikiLoveHooks::onSkinTemplateNavigation"
+			"MediaWiki\\Extension\\WikiLove\\Hooks::onSkinTemplateNavigation"
 		],
 		"BeforePageDisplay": [
-			"WikiLoveHooks::onBeforePageDisplay"
+			"MediaWiki\\Extension\\WikiLove\\Hooks::onBeforePageDisplay"
 		],
 		"LoadExtensionSchemaUpdates": [
-			"WikiLoveHooks::onLoadExtensionSchemaUpdates"
+			"MediaWiki\\Extension\\WikiLove\\Hooks::onLoadExtensionSchemaUpdates"
 		],
 		"ListDefinedTags": [
-			"WikiLoveHooks::onListDefinedTags"
+			"MediaWiki\\Extension\\WikiLove\\Hooks::onListDefinedTags"
 		],
 		"ChangeTagsListActive": [
-			"WikiLoveHooks::onListDefinedTags"
+			"MediaWiki\\Extension\\WikiLove\\Hooks::onListDefinedTags"
 		],
 		"UserMergeAccountFields": [
-			"WikiLoveHooks::onUserMergeAccountFields"
+			"MediaWiki\\Extension\\WikiLove\\Hooks::onUserMergeAccountFields"
 		]
 	},
 	"config": {

@@ -1,13 +1,25 @@
 <?php
 
+namespace MediaWiki\Extension\WikiLove;
+
+use ApiBase;
+use ApiMain;
+use ApiMessage;
+use ChangeTags;
+use DeferredUpdates;
+use DerivativeContext;
+use DerivativeRequest;
+use ExtensionRegistry;
+use LqtDispatch;
 use MediaWiki\MediaWikiServices;
+use Sanitizer;
+use Title;
+use User;
 use Wikimedia\Rdbms\DBQueryError;
 
 class ApiWikiLove extends ApiBase {
 	/** @inheritDoc */
 	public function execute() {
-		global $wgWikiLoveLogging;
-
 		$params = $this->extractRequestParams();
 
 		// In some cases we need the wiki mark-up stripped from the subject
@@ -20,13 +32,13 @@ class ApiWikiLove extends ApiBase {
 		}
 
 		// @phan-suppress-next-line PhanTypeMismatchArgumentNullable T240141
-		$talk = WikiLoveHooks::getUserTalkPage( $title, $this->getUser() );
+		$talk = Hooks::getUserTalkPage( $title, $this->getUser() );
 		// getUserTalkPage() returns an ApiMessage on error
 		if ( $talk instanceof ApiMessage ) {
 			$this->dieWithError( $talk );
 		}
 
-		if ( $wgWikiLoveLogging ) {
+		if ( $this->getConfig()->get( 'WikiLoveLogging' ) ) {
 			$this->saveInDb( $talk, $params['subject'], $params['message'], $params['type'],
 				isset( $params['email'] ) ? 1 : 0 );
 		}
@@ -98,7 +110,8 @@ class ApiWikiLove extends ApiBase {
 
 		$this->getResult()->addValue( 'redirect', 'pageName', $talk->getPrefixedDBkey() );
 		$this->getResult()->addValue( 'redirect', 'fragment',
-			Sanitizer::escapeIdForLink( $strippedSubject ) );
+			Sanitizer::escapeIdForLink( $strippedSubject )
+		);
 		// note that we cannot use Title::makeTitle here as it doesn't sanitize the fragment
 	}
 
