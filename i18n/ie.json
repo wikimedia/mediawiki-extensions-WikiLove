@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Renan",
 			"Stavanger7"
 		]
 	},
-	"wikilove-err-invalid-username": "Li nómine de usator es ínvalid."
+	"wikilove-err-invalid-username": "Li nómine de usator es ínvalid.",
+	"tag-wikilove-description": "Redaction fat usant li utensile WikiLove"
 }
