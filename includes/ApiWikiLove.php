@@ -124,7 +124,7 @@ class ApiWikiLove extends ApiBase {
 	 * @return void
 	 */
 	private function saveInDb( $talk, $subject, $message, $type, $email ) {
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 		$receiver = User::newFromName( $talk->getSubjectPage()->getBaseText() );
 		if ( $receiver === false || $receiver->isAnon() ) {
 			$this->addWarning( 'apiwarn-wikilove-ignoringunregistered' );
