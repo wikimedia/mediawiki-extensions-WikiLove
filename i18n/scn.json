@@ -1,12 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Aushulz",
 			"Gmelfi",
 			"Pippinu",
 			"Sarvaturi"
 		]
 	},
+	"wikilove-button-preview": "Antiprima",
+	"wikilove-preview": "Antiprima",
 	"wikilove-food-cookie-option": "Viscottu",
 	"wikilove-food-coffee-option": "Tazza di cafè",
 	"wikilove-err-gallery-again": "Prova arrè",
