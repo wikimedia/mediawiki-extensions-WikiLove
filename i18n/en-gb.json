@@ -13,6 +13,5 @@
 	"wikilove-food-coffee-desc": "Appreciated the world over, coffee is known for its energising effect on people.",
 	"wikilove-food-strawberries-desc": "The strawberry fruit (which is not actually a berry) is widely appreciated for its characteristic aroma, bright red colour, juicy texture, and sweetness.",
 	"wikilove-err-msg": "Please enter a personalised message.",
-	"wikilove-err-not-logged-in": "You are not logged in. Please log in to use WikiLove.",
 	"wikiLove.js": "/* JavaScript placed here customises WikiLove, see https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }
