@@ -8,12 +8,31 @@
 			"Sarvaturi"
 		]
 	},
+	"wikilove": "WikiAffettu",
+	"wikilove-tab-text": "WikiAffettu",
+	"wikilove-get-started-list-2": "Agghiunci dittagghî ô tò WikiAffettu",
 	"wikilove-add-details": "Agghiunci dittagghî",
+	"wikilove-enter-message": "Nzirisci nu missaggiu:",
+	"wikilove-omit-sig": "(senza firma)",
 	"wikilove-button-preview": "Antiprima",
 	"wikilove-preview": "Antiprima",
+	"wikilove-type-barnstars": "Barnstar",
+	"wikilove-barnstar-original-option": "Barnstar orìgginali",
+	"wikilove-barnstar-original-title": "La barnstar orìgginali",
+	"wikilove-barnstar-admins-option": "Barnstar di l'amministraturi",
+	"wikilove-barnstar-admins-title": "La barnstar di l'amministraturi",
+	"wikilove-food-baklava-option": "Baklava",
+	"wikilove-food-brownie-option": "Brownie",
+	"wikilove-food-cheeseburger-option": "Cheeseburger",
 	"wikilove-food-cookie-option": "Viscottu",
 	"wikilove-food-coffee-option": "Tazza di cafè",
+	"wikilove-food-pie-option": "Turta",
+	"wikilove-err-header": "Pi favuri nzirisci na ntistazzioni.",
+	"wikilove-err-title": "Pi favuri nzirisci nu tìtulu.",
+	"wikilove-err-image-bad": "La mmàggini nun esisti.",
 	"wikilove-err-gallery-again": "Prova arrè",
 	"wikilove-err-not-logged-in": "Nun sî trasutu. P'adupirari WikiLove pi favuri trasi.",
-	"wikilove-err-invalid-username": "Lu nomu di l'utenti nun è vàliddu."
+	"wikilove-err-invalid-username": "Lu nomu di l'utenti nun è vàliddu.",
+	"wikilove-err-redirect": "La pàggina di discussioni di l'utenti è nu rimannu",
+	"wikilove-summary": "/* $1 */ novu missaggiu di WikiAffettu"
 }
