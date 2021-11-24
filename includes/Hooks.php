@@ -70,7 +70,8 @@ class Hooks {
 	public static function onBeforePageDisplay( $out, $skin ) {
 		global $wgWikiLoveGlobal;
 
-		if ( !$wgWikiLoveGlobal && !$out->getUser()->getOption( 'wikilove-enabled' ) ) {
+		$userOptionsLookup = MediaWikiServices::getInstance()->getUserOptionsLookup();
+		if ( !$wgWikiLoveGlobal && !$userOptionsLookup->getOption( $out->getUser(), 'wikilove-enabled' ) ) {
 			return true;
 		}
 
@@ -112,8 +113,9 @@ class Hooks {
 	private static function skinConfigViewsLinks( $skin, &$views ) {
 		global $wgWikiLoveGlobal;
 
+		$userOptionsLookup = MediaWikiServices::getInstance()->getUserOptionsLookup();
 		// If WikiLove is turned off for this user, don't display tab.
-		if ( !$wgWikiLoveGlobal && !$skin->getUser()->getOption( 'wikilove-enabled' ) ) {
+		if ( !$wgWikiLoveGlobal && !$userOptionsLookup->getOption( $skin->getUser(), 'wikilove-enabled' ) ) {
 			return;
 		}
 
