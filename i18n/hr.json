@@ -5,7 +5,8 @@
 			"Fraxinus",
 			"Irus",
 			"MaGa",
-			"Roberta F."
+			"Roberta F.",
+			"Ponor"
 		]
 	},
 	"wikilove": "WikiLove",
@@ -126,7 +127,7 @@
 	"wikilove-err-msg": "Molimo Vas, unesite poosobljenu poruku.",
 	"wikilove-err-image": "Molimo, izaberite sliku",
 	"wikilove-err-image-bad": "Slika ne postoji.",
-	"wikilove-err-image-api": "Došlo je do pogrješke kod pronalaženja slike. Molimo, pokušajte ponovo.",
+	"wikilove-err-image-api": "Došlo je do pogreške kod pronalaženja slike. Molimo, pokušajte ponovo.",
 	"wikilove-err-sig": "Molimo Vas, nemojte u poruku uključivati Vaš potpis.",
 	"wikilove-err-gallery": "Dogodio se problem prilikom učitavanja slika.",
 	"wikilove-err-gallery-again": "Pokušajte ponovo",

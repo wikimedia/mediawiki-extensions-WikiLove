@@ -183,7 +183,7 @@
 	"wikilove-err-invalid-username": "שם המשתמש אינו תקני.",
 	"wikilove-err-no-self-wikilove": "לא ניתן לשלוח הודעת ויקי‏־אהבה לעצמך.",
 	"wikilove-err-redirect": "דף שיחת המשתמש הוא הפניה.",
-	"wikilove-err-cannot-edit": "אינך מורשה לערוך דף זה.",
+	"wikilove-err-cannot-edit": "אין לך הרשאה לערוך את הדף ההוא.",
 	"wikilove-err-max-exceeded": "אין באפשרותך לשלוח ויקי־אהבה ליותר מ{{PLURAL:$1|משתמש|$1 משתמשים}} בו-זמנית.",
 	"wikilove-success-number": "{{PLURAL:$1|הודעת|$1 הודעות}} ויקי־אהבה נשלחו.",
 	"wikilove-summary": "/* $1 */ הודעת ויקי־אהבה חדשה",
