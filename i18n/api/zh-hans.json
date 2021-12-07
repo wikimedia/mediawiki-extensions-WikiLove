@@ -4,14 +4,15 @@
 			"AnnAngela",
 			"Liuxinyu970226",
 			"Yfdyh000",
-			"Zhxy 519"
+			"Zhxy 519",
+			"Tranve"
 		]
 	},
-	"apihelp-wikilove-description": "发送维基有爱至其他用户。\n\n维基有爱（WikiLove）是通过预设或由本地定义的模板构造的界面，用于向用户讨论页发送正面消息。此操作会将指定的wiki文本加入某个讨论页。出于统计目的，类型和其他数据将被记录。",
+	"apihelp-wikilove-description": "发送维基有爱至其他用户。\n\n维基有爱（WikiLove）是通过预设或由本地定义的模板构造的界面，用于向用户讨论页发送正面消息。此操作会将指定的wikitext加入某个讨论页。出于统计目的，类型和其他数据将被记录。",
 	"apihelp-wikilove-summary": "给另一用户维基有爱。",
-	"apihelp-wikilove-extended-description": "维基有爱（WikiLove）是通过预设或由本地定义的模板构造的界面，用于向用户讨论页发送正面消息。此操作会将指定的wiki文本加入某个讨论页。出于统计目的，类型和其他数据将被记录。",
+	"apihelp-wikilove-extended-description": "维基友爱（WikiLove）是通过预设或由本地定义的模板构造的界面，用于向用户讨论页发送正面消息。此操作会将指定的wikitext加入某个讨论页。出于统计目的，类型和其他数据将被记录。",
 	"apihelp-wikilove-param-title": "要发送维基有爱的目标用户页或用户讨论页的完整页面名称。",
-	"apihelp-wikilove-param-text": "要在新章节中添加的原始wiki文本。",
+	"apihelp-wikilove-param-text": "要在新章节中添加的原始wikitext。",
 	"apihelp-wikilove-param-message": "用户输入的实际消息，用于日志记录。",
 	"apihelp-wikilove-param-subject": "新章节的主题标题。",
 	"apihelp-wikilove-param-type": "维基友爱的类型（用于统计）；这相当于在菜单中选择的一个类型，及之后可选的子类型（例如“{{int:wikilove-barnstar-original-title}}”或“{{int:wikilove-kittens-header}}”）。",

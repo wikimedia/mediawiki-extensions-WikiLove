@@ -9,7 +9,8 @@
 			"SPQRobin",
 			"Saruman",
 			"Siebrand",
-			"Tjcool007"
+			"Tjcool007",
+			"McDutchie"
 		]
 	},
 	"wikilove-desc": "Voegt een interface toe voor het geven van positieve terugkoppeling op overlegpagina's van gebruikers",
@@ -20,7 +21,7 @@
 	"wikilove-dialog-title": "Wikiwaardering - stuur een teken van waardering naar een andere gebruiker",
 	"wikilove-select-type": "Selecteer type",
 	"wikilove-get-started-header": "Starten maar!",
-	"wikilove-get-started-list-1": "Selecteer het type [[Wikipedia:Wikiwaardering|Wikiwaardering]] dat u wilt achterlaten",
+	"wikilove-get-started-list-1": "Selecteer het type Wikiwaardering dat u wilt achterlaten",
 	"wikilove-get-started-list-2": "Voeg details toe aan uw Wikiwaardering",
 	"wikilove-get-started-list-3": "Verzend uw Wikiwaardering!",
 	"wikilove-add-details": "Gegevens toevoegen",

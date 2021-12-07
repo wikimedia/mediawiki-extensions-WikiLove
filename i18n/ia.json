@@ -152,6 +152,8 @@
 	"wikilove-food-stroopwafels-header": "Waflas al sirop pro te!",
 	"wikilove-type-kittens": "Cattones",
 	"wikilove-kittens-header": "Un catton pro te!",
+	"wikilove-type-goats": "Capras",
+	"wikilove-goats-header": "Un capra pro te!",
 	"wikilove-type-makeyourown": "Crear le tue",
 	"wikilove-err-header": "Per favor entra un capite.",
 	"wikilove-err-title": "Per favor entra un titulo.",
@@ -180,5 +182,6 @@
 	"wikilove-commons-url": "//commons.wikimedia.org/wiki/Pagina_principal?uselang=ia",
 	"wikilove-terms": "Per submitter, tu te declara de accordo con transparentia sub iste $1.",
 	"wikilove-terms-link": "conditiones",
+	"tag-wikilove-description": "Modification facite con le utensile WikiLove",
 	"wikiLove.js": "/* Le JavaScript inserite hic personalisa WikiLove, vide https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

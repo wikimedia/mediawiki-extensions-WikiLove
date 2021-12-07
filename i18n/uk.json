@@ -13,7 +13,8 @@
 			"Steve.rusyn",
 			"SteveR",
 			"Ата",
-			"Тест"
+			"Тест",
+			"DDPAT"
 		]
 	},
 	"wikilove-desc": "Додає інтерфейс для залишення позитивних відгуків на сторінці обговорення користувача",
@@ -187,12 +188,14 @@
 	"wikilove-success-number": "$1 {{PLURAL:$1|повідомлення|повідомлення|повідомлень}} Вікісимпатії надіснано.",
 	"wikilove-summary": "/* $1 */ нова Вікісимпатія",
 	"wikilove-what-is-this": "Що це?",
+	"wikilove-what-is-this-link": "https://www.mediawiki.org/wiki/Special:MyLanguage/WikiLove",
 	"wikilove-anon-warning": "Примітка: Цей користувач не зареєстрований, він чи вона може не помітити це повідомлення.",
 	"wikilove-commons-text": "Ви можете знайти зображення в проекті $1.",
 	"wikilove-commons-link": "Вікісховище",
 	"wikilove-commons-url": "//commons.wikimedia.org/wiki/Головна_сторінка?uselang=uk",
 	"wikilove-terms": "Надсилаючи, ви погоджуєтесь з публічністю даних на таких $1.",
 	"wikilove-terms-link": "умовах",
+	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement",
 	"tag-wikilove-description": "Редагування зроблене з допомогою інструмента WikiLove",
 	"wikiLove.js": "/* Розміщений тут JavaScript налаштовує Вікісимпатію, див. https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

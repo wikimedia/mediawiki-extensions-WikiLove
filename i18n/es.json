@@ -8,7 +8,8 @@
 			"Imre",
 			"Jelou",
 			"Macofe",
-			"PoLuX124"
+			"PoLuX124",
+			"Jakeukalane"
 		]
 	},
 	"wikilove-desc": "Añade una interfaz para facilitar comentarios positivos de los usuarios a las páginas de discusión de otros usuarios",
@@ -67,9 +68,9 @@
 	"wikilove-barnstar-copyeditor-option": "Barnstar del corrector",
 	"wikilove-barnstar-copyeditor-desc": "La Insignia del Corrector se otorga por la excelencia en la corrección de ortografía, gramática, puntuación y cuestiones de estilo.",
 	"wikilove-barnstar-copyeditor-title": "El barnstar del corrector",
-	"wikilove-barnstar-defender-option": "Insignia de Defensor del Wiki",
-	"wikilove-barnstar-defender-desc": "La Insignia de Defensor del Wiki se otorga a aquellos que han destacado por impedir que Wikipedia sea utilizada con fines fraudulentos.",
-	"wikilove-barnstar-defender-title": "La Insignia de Defensor del Wiki",
+	"wikilove-barnstar-defender-option": "Insignia de Defensor de la Wiki",
+	"wikilove-barnstar-defender-desc": "La Insignia de Defensor de la Wiki se otorga a aquellos que han destacado por impedir que Wikipedia sea utilizada con fines fraudulentos.",
+	"wikilove-barnstar-defender-title": "La Insignia de Defensor de la Wiki",
 	"wikilove-barnstar-editors-option": "Barnstar del editor",
 	"wikilove-barnstar-editors-desc": "La Insignia de Editor se otorga a personas que adoptan decisiones especialmente buenas en la edición general.",
 	"wikilove-barnstar-editors-title": "El Barnstar del Editor",
@@ -92,7 +93,7 @@
 	"wikilove-barnstar-kindness-desc": "La Insignia por Actos Diversos de Amabilidad se otorga a aquellos que muestran una gentileza extremada, sin que se les pida.",
 	"wikilove-barnstar-kindness-title": "La Insignia por Actos Diversos de Amabilidad",
 	"wikilove-barnstar-reallife-option": "Barnstar de vida real",
-	"wikilove-barnstar-reallife-desc": "La Insignia de la Vida Real se otorga a los editores que hacen contribuciones en línea y sin conexión, organizando en la vida real eventos relacionados con el wiki.",
+	"wikilove-barnstar-reallife-desc": "La Insignia de la Vida Real se otorga a los editores que hacen contribuciones en línea y sin conexión, organizando en la vida real eventos relacionados con la wiki.",
 	"wikilove-barnstar-reallife-title": "La Insignia de la Vida Real",
 	"wikilove-barnstar-resilient-option": "La Insignia a la Determinación",
 	"wikilove-barnstar-resilient-desc": "La Insignia a la Determinación se otorga a aquellos editores que aprenden y mejoran de las críticas, y que no dejan nunca que los errores impidan su crecimiento como editor.",
