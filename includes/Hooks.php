@@ -145,7 +145,7 @@ class Hooks {
 
 	/**
 	 * Find the editable talk page of the user we want to send WikiLove to. This
-	 * function also does some sanity checking to make sure we will actually
+	 * function also does some sense-checking to make sure we will actually
 	 * be able to send WikiLove to the target.
 	 *
 	 * Phan false positives are suppressed
