@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Gazimagomedov",
+			"Omarov M.",
 			"Аль-Гимравий"
 		]
 	},
-	"wikilove-err-not-logged-in": "Нуж системаялда жанир лъигьинчӀо. Гьарула, WikiLove хӀалтӀизабизе бокьун батани, цин жанире лъугьаян.",
-	"wikilove-err-invalid-username": "Гьединаб гӀахьалчиясул цӀар данде кколаро.",
+	"wikilove-err-not-logged-in": "Нуж системаялде жанире лӀугьинчӀо. Цин жанире лӀугьа WikiLove хӀалтӀизабизе.",
+	"wikilove-err-invalid-username": "Гьадинаб хӀалтӀизабунцӀар бегьуларо.",
 	"wikilove-commons-link": "Викигъамас"
 }
