@@ -3,9 +3,11 @@
 		"authors": [
 			"ArmenBakkalian",
 			"Azniv Stepanian",
-			"Rajemian"
+			"Rajemian",
+			"Kareyac"
 		]
 	},
 	"wikilove-err-not-logged-in": "Մուտք գործած չէք։ ՈւիքիՍէրը օգտագործելու համար կը խնդրուի մուտք գործել։",
-	"wikilove-err-invalid-username": "Մասնակիցի անունը սխալ է։"
+	"wikilove-err-invalid-username": "Մասնակիցի անունը սխալ է։",
+	"wikilove-commons-link": "Ուիքիպահեստ"
 }

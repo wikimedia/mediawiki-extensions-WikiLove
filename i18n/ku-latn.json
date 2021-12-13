@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Bikarhêner",
-			"George Animal"
+			"George Animal",
+			"Guherto"
 		]
 	},
 	"wikilove-button-preview": "Pêşdîtin",
 	"wikilove-preview": "Pêşdîtin",
 	"wikilove-type-food": "Xwarin û vexwarin",
 	"wikilove-err-not-logged-in": "We hêj neket. Ji kerema xwe ji bo ku hûn WikiEvîn bikarin bikarbînin têkevin.",
-	"wikilove-err-invalid-username": "Navê bikarhênerîye derbasdar nîne."
+	"wikilove-err-invalid-username": "Navê bikarhêneriye ne derbasdar e."
 }

@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"apihelp-wikilove-description": "Da WikiLove a un altere usator.\n\nWikiLove es un message positive publicate sur le pagina de discussion de un usator per medio de un interfacie commode con patronos predefinite o definite localmente. Iste action adde le wikitexto specificate a un certe pagina de discussion. Le typo e altere datos es registrate pro le statisticas.",
+	"apihelp-wikilove-summary": "Dar WikiLove a un altere usator.",
+	"apihelp-wikilove-extended-description": "WikiLove es un message positive publicate sur le pagina de discussion de un usator per medio de un interfacie commode con patronos predefinite o definite localmente. Iste action adde le wikitexto specificate a un certe pagina de discussion. Le typo e altere datos es registrate pro le statisticas.",
+	"apihelp-wikilove-param-title": "Le nomine complete del pagina de usator o de discussion del usator a qui inviar WikiLove.",
+	"apihelp-wikilove-param-text": "Le wikitexto brute a inserer in le nove section.",
+	"apihelp-wikilove-param-message": "Le message original que le usator ha scribite, pro le registro.",
+	"apihelp-wikilove-param-subject": "Titulo de subjecto del nove section.",
+	"apihelp-wikilove-param-type": "Typo de WikiLove (pro le statisticas); isto corresponde a un typo seligite in le menu, optionalmente sequite per un subtypo (como p.ex. \"{{int:wikilove-barnstar-original-title}}\" o \"{{int:wikilove-kittens-header}}\").",
+	"apihelp-wikilove-param-tags": "Modificar le etiquettas a applicar al version.",
+	"apihelp-wikilove-example-1": "Inviar WikiLove a \"[[User:Dummy]]\"",
+	"apiwarn-wikilove-ignoringunregistered": "Le destinatarios sin conto non appare in le registro.",
+	"apiwarn-wikilove-notlogged": "Le action non ha essite registrate."
+}

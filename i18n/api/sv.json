@@ -1,8 +1,20 @@
 {
 	"@metadata": {
 		"authors": [
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Felba"
 		]
 	},
-	"apihelp-wikilove-example-1": "Skicka WikiLove till \"[[User:Dummy]]\""
+	"apihelp-wikilove-description": "Ge WikiLove till en annan användare.\n\nWikiLove är ett positivt meddelande postat på en annan användares diskussionsida genom ett enkelt gränssnitt med förhandsdefinierade mallar. Denna handlingen tillfogar den givna wiki-texten på en viss diskussionsida. I statistiskt ändamål loggas typen och annan data.",
+	"apihelp-wikilove-summary": "Ge WikiLove till en annan användare.",
+	"apihelp-wikilove-extended-description": "WikiLove är ett positivt meddelande postat på en annan användares diskussionsida genom ett enkelt gränssnitt med förhandsdefinierade mallar. Denna handling tillfogar den givna wiki-texten på en viss diskussionsida. I statistiskt ändamål loggas typen och annan data.",
+	"apihelp-wikilove-param-title": "Fullständigt namn på användarsidan eller användarens diskussionssida att skicka WikiLove till.",
+	"apihelp-wikilove-param-text": "Rå wiki-text som ska tillfogas i den nya sektionen.",
+	"apihelp-wikilove-param-message": "Faktiskt meddelande som användaren har skrivit in, i loggningssyfte.",
+	"apihelp-wikilove-param-subject": "Ämnesrubrik till den nya sektionen.",
+	"apihelp-wikilove-param-type": "Typ av WikiLove (för statistik); detta motsvarar en typ som valts i menyn, och valfritt en undertyp efter det (t.ex. som i «{{int:wikilove-barnstar-original-titel}}» eller «{{int:wikilove-katter-rubrik}}»).",
+	"apihelp-wikilove-param-tags": "Förändringstaggar att lägga till revideringen.",
+	"apihelp-wikilove-example-1": "Skicka WikiLove till \"[[User:Dummy]]\"",
+	"apiwarn-wikilove-ignoringunregistered": "Loggar inte oregistrerade mottagare",
+	"apiwarn-wikilove-notlogged": "Handlingen loggades inte"
 }

@@ -4,7 +4,8 @@
 			"Ansumang",
 			"Biggs ZA",
 			"Fwolff",
-			"Naudefj"
+			"Naudefj",
+			"Winstonza"
 		]
 	},
 	"wikilove-desc": "Voeg 'n koppelvlak by vir die fasilitering van positiewe terugvoer op gebruikers se besprekingsblaaie",
@@ -28,7 +29,7 @@
 	"wikilove-image-example": "(Voorbeeld: Trophy.png)",
 	"wikilove-button-preview": "Voorskou",
 	"wikilove-preview": "Voorskou",
-	"wikilove-notify": "Stuur gebruiker 'n kennisgewing via E-pos",
+	"wikilove-notify": "Stuur aan gebruiker 'n kennisgewing via e-pos",
 	"wikilove-button-send": "Stuur Wikiwaardering",
 	"wikilove-type-barnstars": "Sterre",
 	"wikilove-barnstar-header": "'n Ster vir jou!",
