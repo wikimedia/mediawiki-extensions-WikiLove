@@ -5,12 +5,13 @@
 			"Hkjacksonhk",
 			"Kly",
 			"LNDDYL",
+			"Tranve",
 			"Waihorace"
 		]
 	},
-	"apihelp-wikilove-description": "發送維基友愛給其他使用者。\n\n維基友愛（WikiLove）是用於透過帶有預設或本地端所定義模板的便利介面，來向使用者討論頁發送正面鼓勵的訊息。此操作會將指定 wiki 文字加入到特定的討論頁。出於統計目的，類型和其它資料將會被記錄下來。",
+	"apihelp-wikilove-description": "發送維基友愛給其他使用者。\n\n維基友愛（WikiLove）是用於透過帶有預設或本地端所定義模板的便利介面，來向使用者討論頁發送正面鼓勵的訊息。此操作會將指定 wikitext 加入到特定的討論頁。出於統計目的，類型和其它資料將會被記錄下來。",
 	"apihelp-wikilove-summary": "給其他使用者維基友愛。",
-	"apihelp-wikilove-extended-description": "維基友愛（WikiLove）是用於透過帶有預設或本地端所定義模板的便利介面，來向使用者討論頁發送正面鼓勵的訊息。此操作會將指定 wiki 文字加入到特定的討論頁。出於統計目的，類型和其它資料將會被記錄下來。",
+	"apihelp-wikilove-extended-description": "維基友愛（WikiLove）是用於透過帶有預設或本地端所定義模板的便利介面，來向使用者討論頁發送正面鼓勵的訊息。此操作會將指定 wikitext 加入到特定的討論頁。出於統計目的，類型和其它資料將會被記錄下來。",
 	"apihelp-wikilove-param-title": "使用者的使用者頁面或使用者討論頁的完整頁面名稱發送到維基友愛。",
 	"apihelp-wikilove-param-text": "原維基內容的在新的部分加入。",
 	"apihelp-wikilove-param-message": "實際的消息在使用者輸入，用於日誌記錄。",
