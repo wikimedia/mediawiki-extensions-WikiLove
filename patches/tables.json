@@ -31,7 +31,7 @@
 				"name": "wll_sender_editcount",
 				"comment": "wll_sender_editcount",
 				"type": "integer",
-				"options": { "notnull": false, "length": 11 }
+				"options": { "notnull": false }
 			},
 			{
 				"name": "wll_receiver",
@@ -49,7 +49,7 @@
 				"name": "wll_receiver_editcount",
 				"comment": "total number of edits for the receiver",
 				"type": "integer",
-				"options": { "notnull": true, "length": 11 }
+				"options": { "notnull": true }
 			},
 			{
 				"name": "wll_type",
@@ -73,7 +73,7 @@
 				"name": "wll_email",
 				"comment": "whether or not a notification mail has been sent",
 				"type": "integer",
-				"options": { "notnull": true, "length": 1, "default": 0 }
+				"options": { "notnull": true, "default": 0 }
 			}
 		],
 		"indexes": [
