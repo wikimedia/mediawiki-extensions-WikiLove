@@ -28,17 +28,33 @@ class Hooks {
 	 */
 	public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $updater ) {
 		$dbType = $updater->getDB()->getType();
+		$path = dirname( __DIR__ ) . '/patches';
 		if ( $dbType === 'mysql' ) {
 			$updater->addExtensionTable( 'wikilove_log',
-				dirname( __DIR__ ) . '/patches/tables-generated.sql'
+				$path . '/tables-generated.sql'
+			);
+			$updater->modifyExtensionField(
+				'wikilove_log',
+				'wll_timestamp',
+				$path . '/patch-wikilove_log-cleanup.sql'
 			);
 		} elseif ( $dbType === 'sqlite' ) {
 			$updater->addExtensionTable( 'wikilove_log',
-				dirname( __DIR__ ) . '/patches/sqlite/tables-generated.sql'
+				$path . '/sqlite/tables-generated.sql'
+			);
+			$updater->modifyExtensionField(
+				'wikilove_log',
+				'wll_timestamp',
+				$path . '/sqlite/patch-wikilove_log-cleanup.sql'
 			);
 		} elseif ( $dbType === 'postgres' ) {
 			$updater->addExtensionTable( 'wikilove_log',
-				dirname( __DIR__ ) . '/patches/postgres/tables-generated.sql'
+				$path . '/postgres/tables-generated.sql'
+			);
+			$updater->modifyExtensionField(
+				'wikilove_log',
+				'wll_timestamp',
+				$path . '/postgrespatch-wikilove_log-cleanup.sql'
 			);
 		}
 	}

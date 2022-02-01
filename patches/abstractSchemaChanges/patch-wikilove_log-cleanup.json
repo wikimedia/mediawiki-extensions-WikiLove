@@ -1,5 +1,107 @@
-[
-	{
+{
+	"comment": "Correct field type of timestamp columns after abstract schema migration - T299800",
+	"before": {
+		"name": "wikilove_log",
+		"comment": "WikiLove logging schema. Logs all actions of giving WikiLove.",
+		"columns": [
+			{
+				"name": "wll_id",
+				"comment": "unique id",
+				"type": "integer",
+				"options": { "notnull": true, "autoincrement": true }
+			},
+			{
+				"name": "wll_timestamp",
+				"comment": "timestamp",
+				"type": "binary",
+				"options": { "notnull": true, "length": 14 }
+			},
+			{
+				"name": "wll_sender",
+				"comment": "user id of the sender",
+				"type": "integer",
+				"options": { "notnull": true, "unsigned": true }
+			},
+			{
+				"name": "wll_sender_registration",
+				"comment": "registration date of the sender",
+				"type": "binary",
+				"options": { "notnull": false, "length": 14, "default": null }
+			},
+			{
+				"name": "wll_sender_editcount",
+				"comment": "wll_sender_editcount",
+				"type": "integer",
+				"options": { "notnull": false }
+			},
+			{
+				"name": "wll_receiver",
+				"comment": "user id of reciever",
+				"type": "integer",
+				"options": { "notnull": true, "unsigned": true }
+			},
+			{
+				"name": "wll_receiver_registration",
+				"comment": "registration date of the receiver",
+				"type": "integer",
+				"options": { "notnull": false, "default": null }
+			},
+			{
+				"name": "wll_receiver_editcount",
+				"comment": "total number of edits for the receiver",
+				"type": "integer",
+				"options": { "notnull": true }
+			},
+			{
+				"name": "wll_type",
+				"comment": "type (and subtype) of message",
+				"type": "string",
+				"options": { "notnull": true, "length": 64 }
+			},
+			{
+				"name": "wll_subject",
+				"comment": "subject line",
+				"type": "string",
+				"options": { "notnull": true, "length": 255 }
+			},
+			{
+				"name": "wll_message",
+				"comment": "actual message",
+				"type": "blob",
+				"options": { "notnull": true, "length": 65530 }
+			},
+			{
+				"name": "wll_email",
+				"comment": "whether or not a notification mail has been sent",
+				"type": "integer",
+				"options": { "notnull": true, "default": 0 }
+			}
+		],
+		"indexes": [
+			{
+				"name": "wll_timestamp",
+				"columns": [ "wll_timestamp" ],
+				"unique": false
+			},
+			{
+				"name": "wll_type_time",
+				"columns": [ "wll_type", "wll_timestamp" ],
+				"unique": false
+			},
+			{
+				"name": "wll_sender_time",
+				"columns": [ "wll_sender", "wll_timestamp" ],
+				"unique": false
+			},
+			{
+				"name": "wll_receiver_time",
+				"columns": [ "wll_receiver", "wll_timestamp" ],
+				"unique": false
+			}
+		],
+		"pk": [ "wll_id" ]
+	},
+	"after": {
 		"name": "wikilove_log",
 		"comment": "WikiLove logging schema. Logs all actions of giving WikiLove.",
 		"columns": [
@@ -101,4 +203,4 @@
 		],
 		"pk": [ "wll_id" ]
 	}
-]
+}
