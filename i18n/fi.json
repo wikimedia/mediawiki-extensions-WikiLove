@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Crt",
+			"Moj",
 			"Nedergard",
 			"Nike",
 			"Olli",
@@ -130,7 +131,7 @@
 	"wikilove-food-brownie-desc": "Suklaaleivos on litteä, tiivis ja suklaasta leivottu. Niitä tarjotaan yleensä neliönmuotoisina tai patukoina.",
 	"wikilove-food-brownie-header": "Suklaaleivos sinulle!",
 	"wikilove-food-bubbletea-option": "Kuplatee",
-	"wikilove-food-bubbletea-desc": "Kuplatee on teetä tai mehua, joka sisältää pieniä sitkeitä palloja, jotka on tehty tapioka-tärkkelyksestä tai marmelaadista. Se keksittiin ensin Taiwanissa, mutta nyt se on levinnyt ympäri maailman.",
+	"wikilove-food-bubbletea-desc": "Kuplatee on teetä tai mehua, joka sisältää pieniä sitkeitä palloja, jotka on tehty tapiokatärkkelyksestä tai marmelaadista. Se keksittiin ensin Taiwanissa, mutta nyt se on levinnyt ympäri maailman.",
 	"wikilove-food-bubbletea-header": "Hieman kuplateetä sinulle!",
 	"wikilove-food-cheeseburger-option": "Juustohampurilainen",
 	"wikilove-food-cheeseburger-desc": "Ravintoloiden ja pikaruokaloiden kulmakivi, juustohampurilaiset, tulivat suosituiksi ensimmäiseksi Yhdysvalloissa 1920- ja 1930-luvuilla.",
@@ -158,6 +159,7 @@
 	"wikilove-food-stroopwafels-header": "Hieman Stroop-vohveleita sinulle!",
 	"wikilove-type-kittens": "Kissanpennut",
 	"wikilove-kittens-header": "Kissanpentu sinulle!",
+	"wikilove-type-goats": "Vuohet",
 	"wikilove-type-makeyourown": "Tee oma",
 	"wikilove-err-header": "Kirjoita otsake.",
 	"wikilove-err-title": "Kirjoita otsikko.",
