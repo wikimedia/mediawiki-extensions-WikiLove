@@ -205,8 +205,8 @@ class ApiWikiLove extends ApiBase {
 				ParamValidator::PARAM_TYPE => 'string',
 			],
 			'tags' => [
-				self::PARAM_TYPE => 'tags',
-				self::PARAM_ISMULTI => true,
+				ParamValidator::PARAM_TYPE => 'tags',
+				ParamValidator::PARAM_ISMULTI => true,
 			],
 		];
 	}
