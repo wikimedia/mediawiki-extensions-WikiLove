@@ -1,4 +1,5 @@
 {
+	"name": "WikiLove",
 	"private": true,
 	"devDependencies": {
 		"eslint-config-wikimedia": "0.15.3",
