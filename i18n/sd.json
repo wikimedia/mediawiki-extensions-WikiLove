@@ -7,6 +7,7 @@
 		]
 	},
 	"wikilove-err-not-logged-in": "توھان داخل ٿيل ناھيو. مھرباني ڪري وڪي لَوِ استعمال ڪرڻ لاءِ داخل ٿيو.",
-	"wikilove-err-invalid-username": "اهو واپرائيندڙ-نانءُ ڪار ڪونھي.",
-	"wikilove-commons-link": "وڪيميڊيا العام"
+	"wikilove-err-invalid-username": "اهو واپرائيندڙنانءُ ڪار ڪونهي.",
+	"wikilove-commons-link": "وڪيميڊيا العام",
+	"tag-wikilove-description": "وڪي لَوْ اوزار جو استعمال ڪندي ڪيل سنوار"
 }
