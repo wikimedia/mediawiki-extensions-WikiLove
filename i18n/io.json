@@ -8,6 +8,8 @@
 	"wikilove-preview": "Previdar",
 	"wikilove-err-not-logged-in": "Vu ne esas konektita. Voluntez facar \"log in\" por uzar WikiLove.",
 	"wikilove-err-invalid-username": "La uzantonomo esas nevalida.",
+	"wikilove-what-is-this": "Quo esas to?",
+	"wikilove-what-is-this-link": "https://www.mediawiki.org/wiki/Special:MyLanguage/WikiLove",
 	"wikilove-anon-warning": "Noto: ica uzero ne esas enrejistrata, do il/el povas ne recevar ica mesajo.",
 	"wikilove-commons-link": "Wikimedia Commons"
 }
