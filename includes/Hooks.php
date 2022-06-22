@@ -142,6 +142,8 @@ class Hooks {
 				'href' => '#',
 			];
 			if ( self::showIcon( $skin ) ) {
+				$views['wikilove']['icon'] = 'heart';
+				$views['wikilove']['button'] = true;
 				$views['wikilove']['class'] = 'icon';
 				$views['wikilove']['primary'] = true;
 			}
