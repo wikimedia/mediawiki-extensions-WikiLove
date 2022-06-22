@@ -242,7 +242,7 @@
 		"GetPreferences": [
 			"MediaWiki\\Extension\\WikiLove\\Hooks::onGetPreferences"
 		],
-		"SkinTemplateNavigation": [
+		"SkinTemplateNavigation::Universal": [
 			"MediaWiki\\Extension\\WikiLove\\Hooks::onSkinTemplateNavigation"
 		],
 		"BeforePageDisplay": [
