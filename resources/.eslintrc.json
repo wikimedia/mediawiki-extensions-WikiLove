@@ -1,0 +1,12 @@
+{
+	"root": true,
+	"extends": [
+		"wikimedia/client-es5",
+		"wikimedia/jquery",
+		"wikimedia/mediawiki"
+	],
+	"rules": {
+		"no-multi-str": "off",
+		"max-len": "off"
+	}
+}
