@@ -1,4 +1,5 @@
-/* eslint-env node */
+'use strict';
+
 module.exports = function ( grunt ) {
 	grunt.loadNpmTasks( 'grunt-eslint' );
 	grunt.loadNpmTasks( 'grunt-banana-checker' );
@@ -27,8 +28,7 @@ module.exports = function ( grunt ) {
 		},
 		stylelint: {
 			all: [
-				'**/*.css',
-				'**/*.less',
+				'**/*.{css,less}',
 				'!node_modules/**',
 				'!vendor/**'
 			]
