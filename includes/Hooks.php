@@ -54,7 +54,7 @@ class Hooks {
 			$updater->modifyExtensionField(
 				'wikilove_log',
 				'wll_timestamp',
-				$path . '/postgrespatch-wikilove_log-cleanup.sql'
+				$path . '/postgres/patch-wikilove_log-cleanup.sql'
 			);
 		}
 	}
