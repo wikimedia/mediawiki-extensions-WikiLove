@@ -4,10 +4,12 @@
 			"Yupik"
 		]
 	},
+	"wikilove-select-image": "Vaʹlljed kaart:",
 	"wikilove-image-example": "(ouddmiârkk: Trophy.png)",
 	"wikilove-button-preview": "Ǩičč õõudǩiõʹtte",
 	"wikilove-preview": "Ouddǩiõččmõš",
 	"wikilove-button-send": "Vuõlttâd Wikirääʹǩǩesvuõđ",
+	"wikilove-err-image": "Vaʹlljed kaart.",
 	"wikilove-err-not-logged-in": "Jiõk leäkku ǩeeʹrjtõõttâm sizz. Ton õõlǥak leeʹd sizz ǩeeʹrjtõõttâm, jõs haaʹlääk Wikilove ââʹnned.",
 	"wikilove-commons-link": "Wikimedia Commons"
 }
