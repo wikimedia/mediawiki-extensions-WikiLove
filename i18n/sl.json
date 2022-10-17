@@ -168,7 +168,7 @@
 	"wikilove-err-gallery-again": "Poskusite znova",
 	"wikilove-err-preview-api": "Med predogledom je nekaj šlo narobe. Prosimo, poskusite znova.",
 	"wikilove-err-send-api": "Pri pošiljanju sporočila je prišlo do napake. Prosimo, poskusite znova.",
-	"wikilove-err-invalid-token": "WikiLjubezni nismo mogli poslati zaradi izgube podatkov o seji. Poskusite osvežiti stran ali se odjaviti in ponovno prijaviti.",
+	"wikilove-err-invalid-token": "VikiLjubezni nismo mogli poslati zaradi izgube podatkov o seji. Poskusite osvežiti stran ali se odjaviti in znova prijaviti.",
 	"wikilove-err-not-logged-in": "Niste prijavljeni. Prosimo, da se za uporabo WikiLjubezni prijavite.",
 	"wikilove-err-invalid-username": "Uporabniško ime ni veljavno.",
 	"wikilove-err-no-self-wikilove": "Samemu sebi žal ne morete poslati WikiLjubezni.",
