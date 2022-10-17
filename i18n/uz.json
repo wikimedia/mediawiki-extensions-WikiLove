@@ -1,9 +1,36 @@
 {
 	"@metadata": {
 		"authors": [
+			"Optima D",
 			"Sociologist"
 		]
 	},
+	"wikilove-desc": "Foydalanuvchi munozarasi sahifalariga foydalanuvchiga nisbatan bildirilgan ijobiy fikr-mulohazalarini osonlashtirish uchun interfeys qoʻshadi.",
+	"wikilove": "VikiSevgi",
+	"wikilove-enable-preference": "VikiSevgi asbobi yordamida boshqa foydalanuvchilarga minnatdorchilik bildirish imkoniyatidan foydalaning.",
+	"wikilove-tab-text": "VikiSevgi",
+	"tooltip-ca-wikilove": "Ushbu foydalanuvchiga oʻz minnatdorchilik xabaringizni yuboring.",
+	"wikilove-dialog-title": "VikiSevgi — Foydalanuvchiga minnatdorchilik xabarini yuborish",
+	"wikilove-select-type": "Tashakkur yoki mukofot turini tanlang",
+	"wikilove-get-started-header": "Qani boshlang!",
+	"wikilove-get-started-list-1": "Yuborilishi kerak boʻlgan VikiSevgi turini tanlang",
+	"wikilove-get-started-list-2": "Qoʻshimcha tafsilotlar kiriting!",
+	"wikilove-get-started-list-3": "VikiSevgingizni izhor eting!",
+	"wikilove-add-details": "Tafsilotlar qoʻshish",
+	"wikilove-image": "Tasvir nomini kiriting",
+	"wikilove-select-image": "Tasvirni tanlang",
+	"wikilove-header": "Sarlavha kiriting",
+	"wikilove-title": "Mukofot nomini kiriting:",
+	"wikilove-enter-message": "Tabrik matnini kiriting:",
+	"wikilove-omit-sig": "(imzosiz)",
+	"wikilove-image-example": "(masalan: Trophy.png)",
+	"wikilove-button-preview": "Ko‘rib chiqish",
+	"wikilove-preview": "Ko‘rib chiqish",
+	"wikilove-notify": "Foydalanuvchini elektron pochta orqali xabardor qilish",
+	"wikilove-button-send": "VikiSevgini yuborish",
+	"wikilove-type-barnstars": "Ordenlar",
+	"wikilove-barnstar-header": "Siz uchun orden!",
+	"wikilove-barnstar-select": "Ordenni tanlang",
 	"wikilove-err-invalid-username": "Bunday foydalanuvchi nomini yaratish mumkin emas.",
 	"wikilove-commons-link": "Vikiombor"
 }
