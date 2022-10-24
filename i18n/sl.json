@@ -174,7 +174,7 @@
 	"wikilove-err-no-self-wikilove": "Samemu sebi žal ne morete poslati WikiLjubezni.",
 	"wikilove-err-redirect": "Uporabnikova pogovorna stran je preusmeritev.",
 	"wikilove-err-cannot-edit": "Nimate dovoljenja za urejanje te strani.",
-	"wikilove-err-max-exceeded": "Ne moreš poslati WIkiLove več kot $1 {{PLURAL:$1|user|users}} naenkrat.",
+	"wikilove-err-max-exceeded": "VikLjubezni ne morete poslati več kot $1 {{PLURAL:$1|uporabniku|uporabnikoma|uporabnikom}} hkrati.",
 	"wikilove-success-number": "$1 WikiLove {{PLURAL:$1|message|messages}} poslano.",
 	"wikilove-summary": "/* $1 */ novo sporočilo WikiLjubezen",
 	"wikilove-what-is-this": "Kaj je to?",
