@@ -591,6 +591,7 @@
 			api.parse( wikitext, {
 				prop: 'text',
 				disableeditsection: true,
+				sectionpreview: true,
 				pst: true
 			} )
 				.done( function ( html ) {
