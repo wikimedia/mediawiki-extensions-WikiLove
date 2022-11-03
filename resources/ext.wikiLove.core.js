@@ -521,7 +521,7 @@
 		 */
 		submitPreview: function () {
 			var text = $.wikiLove.prepareMsg( currentTypeOrSubtype.text || options.types[ currentTypeId ].text || options.defaultText );
-			$.wikiLove.doPreview( '==' + $( '#mw-wikilove-header' ).val() + '==\n' + text );
+			$.wikiLove.doPreview( text, $( '#mw-wikilove-header' ).val() );
 		},
 
 		showAddDetailsError: function ( errmsg ) {
@@ -582,14 +582,18 @@
 		/**
 		 * Fires AJAX request for previewing wikitext.
 		 *
-		 * @param {string} wikitext Wikitext to preview
+		 * @param {string} wikitext Body of the message
+		 * @param {string} sectiontitle Title of the message
 		 */
-		doPreview: function ( wikitext ) {
+		doPreview: function ( wikitext, sectiontitle ) {
 			// TODO: Use CSS transitions
 			// eslint-disable-next-line no-jquery/no-fade
 			$( '#mw-wikilove-preview-spinner' ).fadeIn( 200 );
 			api.parse( wikitext, {
 				prop: 'text',
+				title: mw.config.get( 'wgPageName' ),
+				section: 'new',
+				sectiontitle: sectiontitle,
 				disableeditsection: true,
 				sectionpreview: true,
 				pst: true
