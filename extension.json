@@ -29,8 +29,7 @@
 		"ext.wikiLove.icon": {
 			"styles": "ext.wikiLove.icon.css",
 			"skinStyles": {
-				"vector": "ext.wikiLove.icon.vector.css",
-				"vector-2022": "ext.wikiLove.icon.vector-2022.less"
+				"vector": "ext.wikiLove.icon.vector.css"
 			}
 		},
 		"ext.wikiLove.startup": {
