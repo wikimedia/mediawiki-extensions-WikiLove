@@ -12,7 +12,7 @@
 	"apihelp-wikilove-param-message": "Le message original que le usator ha scribite, pro le registro.",
 	"apihelp-wikilove-param-subject": "Titulo de subjecto del nove section.",
 	"apihelp-wikilove-param-type": "Typo de WikiLove (pro le statisticas); isto corresponde a un typo seligite in le menu, optionalmente sequite per un subtypo (como p.ex. \"{{int:wikilove-barnstar-original-title}}\" o \"{{int:wikilove-kittens-header}}\").",
-	"apihelp-wikilove-param-tags": "Modificar le etiquettas a applicar al version.",
+	"apihelp-wikilove-param-tags": "Etiquettas de modification a applicar al version.",
 	"apihelp-wikilove-example-1": "Inviar WikiLove a \"[[User:Dummy]]\"",
 	"apiwarn-wikilove-ignoringunregistered": "Le destinatarios sin conto non appare in le registro.",
 	"apiwarn-wikilove-notlogged": "Le action non ha essite registrate."
