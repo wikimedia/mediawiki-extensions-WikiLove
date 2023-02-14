@@ -2,9 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Conquistador",
-			"OC Ripper"
+			"OC Ripper",
+			"Vlad5250"
 		]
 	},
+	"wikilove-desc": "Dodaje interfejs za iskazivanje pozitivnih povratnih informacija na korisničke stranice za razgovor",
+	"wikilove": "Vikiljubav",
+	"wikilove-enable-preference": "Omogući iskazivanje zahvalnosti drugim korisnicima pomoću kartice Vikiljubav",
+	"wikilove-tab-text": "Vikiljubav",
 	"wikilove-button-preview": "Pregled",
 	"wikilove-preview": "Pregled",
 	"wikilove-err-not-logged-in": "Niste prijavljeni. Molimo da se prijavite prije korištenja WikiLove.",
