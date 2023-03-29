@@ -14,7 +14,7 @@ li#ca-wikilove {
 /* icon style */
 /* Only use icon if the menu item is not collapsed into the "More" dropdown
  * (in which case it is inside #p-cactions not #p-views). */
-#p-views #ca-wikilove.icon a:before {
+#p-views #ca-wikilove.icon a::before {
 	content: '';
 	display: block;
 	width: 16px;
@@ -24,7 +24,7 @@ li#ca-wikilove {
 	background-position: -24px 0;
 }
 
-#ca-wikilove.icon a:hover:before,
-#ca-wikilove.icon a:focus:before {
+#ca-wikilove.icon a:hover::before,
+#ca-wikilove.icon a:focus::before {
 	background-position: 0 0;
 }
