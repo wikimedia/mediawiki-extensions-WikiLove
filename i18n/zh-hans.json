@@ -20,7 +20,8 @@
 			"Yfdyh000",
 			"Zhxy 519",
 			"乌拉跨氪",
-			"飞舞回堂前"
+			"飞舞回堂前",
+			"Winston Sung"
 		]
 	},
 	"wikilove-desc": "添加一个接口用以促进用户在用户讨论页上进行积极情绪的反馈",
@@ -188,7 +189,7 @@
 	"wikilove-err-not-logged-in": "您没有登录。请登录以使用维基友爱。",
 	"wikilove-err-invalid-username": "用户名无效。",
 	"wikilove-err-no-self-wikilove": "您不能给自己发送维基友爱，抱歉！",
-	"wikilove-err-redirect": "此用户的对话页是重定向。",
+	"wikilove-err-redirect": "此用户的讨论页是重定向。",
 	"wikilove-err-cannot-edit": "您没有标记那个页面的权限。",
 	"wikilove-err-max-exceeded": "您不能一次给超过$1个{{PLURAL:$1|用户}}发送维基友爱。",
 	"wikilove-success-number": "已发送$1条维基友爱{{PLURAL:$1|信息}}。",
