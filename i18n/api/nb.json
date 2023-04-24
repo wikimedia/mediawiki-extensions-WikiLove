@@ -13,7 +13,7 @@
 	"apihelp-wikilove-param-subject": "Emnet til den nye seksjonen.",
 	"apihelp-wikilove-param-type": "Type WikiLove (for statistikk); dette samsvarer med en type valgt i menyen, og valgfritt en undertype etter det (f.eks. som i «{{int:wikilove-barnstar-original-title}}» eller «{{int:wikilove-kittens-header}}»).",
 	"apihelp-wikilove-param-email": "Innholdet til en valgfri epost som skal sendes til brukeren. En advarsel returneres hvis brukeren ikke kan sendes epost. WikiLove blir uansett sendt til brukerens diskusjonsside.",
-	"apihelp-wikilove-param-tags": "Endringstagger som skal brukes på revisjonen.",
+	"apihelp-wikilove-param-tags": "Endringstagger som skal brukes på sideversjonen.",
 	"apihelp-wikilove-example-1": "Send WikiLove til «[[User:Dummy]]»",
 	"apiwarn-wikilove-ignoringunregistered": "Logger ikke uregistrerte mottakere",
 	"apiwarn-wikilove-notlogged": "Handlingen ble ikke logget"
