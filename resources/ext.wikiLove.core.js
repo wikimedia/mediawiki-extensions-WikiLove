@@ -162,6 +162,7 @@
 				$( '#mw-wikilove-button-send' ).text( mw.msg( 'wikilove-button-send' ) );
 				$( '#mw-wikilove-add-details' ).hide();
 				$( '#mw-wikilove-preview' ).hide();
+				$( '#mw-wikilove-anon-warning' ).hide();
 				$( '#mw-wikilove-types' ).replaceWith( $typeList );
 				$( '#mw-wikilove-gallery-error-again' ).on( 'click', $.wikiLove.showGallery );
 				$( '#mw-wikilove-types a' ).on( 'click', $.wikiLove.clickType );
@@ -169,8 +170,10 @@
 				$( '#mw-wikilove-preview-form' ).on( 'submit', $.wikiLove.validatePreviewForm );
 				$( '#mw-wikilove-send-form' ).on( 'click', $.wikiLove.submitSend );
 
-				if ( !mw.util.isIPAddress( mw.config.get( 'wikilove-recipient' ) ) ) {
-					$( '#mw-wikilove-anon-warning' ).hide();
+				if ( mw.util.isIPAddress( mw.config.get( 'wikilove-recipient' ) ) ||
+					mw.util.isTemporaryUser( mw.config.get( 'wikilove-recipient' ) )
+				) {
+					$( '#mw-wikilove-anon-warning' ).show();
 				}
 
 				// When the image changes, we want to reset the preview and error message.
