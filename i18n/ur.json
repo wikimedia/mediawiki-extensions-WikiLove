@@ -132,6 +132,7 @@
 	"wikilove-what-is-this": "یہ کیا ہے؟",
 	"wikilove-anon-warning": "انتباہ: یہ غیر اندراج شدہ صارف ہے، شاید اسے اس پیغام کی اطلاع نہ ملے۔",
 	"wikilove-commons-text": "آپ کو صفحہ $1 میں تصاویر مل جائے گی۔",
+	"wikilove-commons-link": "ویکی ذخائر",
 	"wikilove-terms": "اس کو روانہ کرنے پر آپ کو ان $1 کے تحت شفافیت پر متفق تصور کیا جائے گے۔",
 	"wikilove-terms-link": "شرائط و ضوابط",
 	"WikiLove.js": "/* یہاں موجود جاوااسکرپٹ سے ویکی محبت کو اپنے انداز میں ڈھالا جاسکتا ہے، ملاحظہ فرمائیں https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
