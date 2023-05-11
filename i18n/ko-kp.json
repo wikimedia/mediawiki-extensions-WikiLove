@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Delim"
+		]
+	},
+	"wikilove-err-not-logged-in": "가입하지 않았습니다. 위키사랑을 사용하려면 가입하세요.",
+	"wikilove-err-invalid-username": "사용자 이름이 옳바르지 않습니다."
+}
