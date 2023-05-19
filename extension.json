@@ -35,7 +35,15 @@
 		"ext.wikiLove.startup": {
 			"packageFiles": [
 				"ext.wikiLove.startup/main.js",
+				{
+					"name": "ext.wikiLove.startup/icons.json",
+					"callback": "MediaWiki\\ResourceLoader\\CodexModule::getIcons",
+					"callbackParam": [
+						"cdxIconClose"
+					]
+				},
 				"ext.wikiLove.startup/wikiLove.js",
+				"ext.wikiLove.startup/WikiLoveDialog.vue",
 				"ext.wikiLove.startup/defaultOptions.js"
 			],
 			"styles": "ext.wikiLove.less",
@@ -212,10 +220,11 @@
 				"wikilove-success-number"
 			],
 			"dependencies": [
+				"vue",
+				"@wikimedia/codex",
 				"mediawiki.api",
 				"mediawiki.Title",
 				"mediawiki.util",
-				"jquery.ui",
 				"mediawiki.ui.button"
 			]
 		},

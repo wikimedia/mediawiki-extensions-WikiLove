@@ -1,8 +1,9 @@
 /* eslint-disable no-jquery/no-global-selector */
 ( function () {
-
+	const overlayContainer = document.createElement( 'div' );
+	const WikiLoveDialog = require( './WikiLoveDialog.vue' );
+	const Vue = require( 'vue' );
 	var options = {}, // options modifiable by the user
-		$dialog = null, // dialog jQuery object
 		currentTypeId = null, // id of the currently selected type (e.g. 'barnstar' or 'makeyourown')
 		currentSubtypeId = null, // id of the currently selected subtype (e.g. 'original' or 'special')
 		currentTypeOrSubtype = null, // content of the current (sub)type (i.e. an object with title, descr, text, etc.)
@@ -22,7 +23,7 @@
 		 * @param {string[]} [extraTags] Extra tags to apply
 		 */
 		openDialog: function ( recipients, extraTags ) {
-			var type, $typeList, typeId, $button, commonsLink, termsLink, dialogHtml;
+			var type, $typeList, typeId, $button, commonsLink, termsLink;
 			// If a list of recipients are specified, this will override the normal
 			// behavior of WikiLove, which is to post on the Talk page of the
 			// current page. It will also disable redirecting the user after submitting.
@@ -44,146 +45,76 @@
 
 			options.extraTags = extraTags || [];
 
-			if ( $dialog === null ) {
-				// Build a type list like this:
-				$typeList = $( '<ul>' ).attr( 'id', 'mw-wikilove-types' );
-				for ( typeId in options.types ) {
-					type = options.types[ typeId ];
-					if ( !$.isPlainObject( type ) ) {
-						continue;
-					}
-					$button = $( '<a>' ).attr( 'href', '#' );
+			// Build a type list like this:
+			$typeList = $( '<ul>' ).attr( 'id', 'mw-wikilove-types' );
+			for ( typeId in options.types ) {
+				type = options.types[ typeId ];
+				if ( !$.isPlainObject( type ) ) {
+					continue;
+				}
+				$button = $( '<a>' ).attr( 'href', '#' );
 
-					if ( typeof type.icon === 'string' ) {
-						$button.append( $( '<img>' ).attr( 'src', type.icon ) );
-					} else {
-						$button.addClass( 'mw-wikilove-no-icon' );
-					}
-
-					$button.append( $( '<span>' ).text( type.name ) );
-
-					$button.data( 'typeId', typeId );
-					$typeList.append( $( '<li>' ).append( $button ) );
+				if ( typeof type.icon === 'string' ) {
+					$button.append( $( '<img>' ).attr( 'src', type.icon ) );
+				} else {
+					$button.addClass( 'mw-wikilove-no-icon' );
 				}
 
-				commonsLink = mw.html.element( 'a', {
-					href: mw.msg( 'wikilove-commons-url' ),
-					target: '_blank'
-				}, mw.msg( 'wikilove-commons-link' ) );
-				termsLink = mw.html.element( 'a', {
-					href: mw.msg( 'wikilove-terms-url' ),
-					target: '_blank'
-				}, mw.msg( 'wikilove-terms-link' ) );
+				$button.append( $( '<span>' ).text( type.name ) );
 
-				dialogHtml = '<div id="mw-wikilove-dialog">\
-<div id="mw-wikilove-select-type">\
-	<span class="mw-wikilove-number">1</span>\
-	<h3>' + mw.message( 'wikilove-select-type' ).escaped() + '</h3>\
-	<ul id="mw-wikilove-types"></ul>\
-</div>\
-<div id="mw-wikilove-get-started">\
-	<h2><span id="mwe-wikilove-pointer-arrow"></span>' + mw.message( 'wikilove-get-started-header' ).escaped() + '</h2>\
-	<ol>\
-		<li>' + mw.message( 'wikilove-get-started-list-1' ).escaped() + '</li>\
-		<li>' + mw.message( 'wikilove-get-started-list-2' ).escaped() + '</li>\
-		<li>' + mw.message( 'wikilove-get-started-list-3' ).escaped() + '</li>\
-	</ol>\
-	<p><a target="_blank" href="' + mw.message( 'wikilove-what-is-this-link' ).escaped() + '">\
-		' + mw.message( 'wikilove-what-is-this' ).escaped() + '\
-	</a></p>\
-	<p id="mw-wikilove-anon-warning"><strong>' + mw.message( 'wikilove-anon-warning' ).escaped() + '</strong></p>\
-</div>\
-<div id="mw-wikilove-add-details">\
-	<span class="mw-wikilove-number">2</span>\
-	<h3>' + mw.message( 'wikilove-add-details' ).escaped() + '</h3>\
-	<form id="mw-wikilove-preview-form">\
-		<div id="mw-wikilove-image-preview">\
-			<div id="mw-wikilove-image-preview-spinner" class="mw-wikilove-spinner"></div>\
-			<div id="mw-wikilove-image-preview-content"></div>\
-		</div>\
-		<label for="mw-wikilove-subtype" id="mw-wikilove-subtype-label"></label>\
-		<select id="mw-wikilove-subtype"></select>\
-		<div id="mw-wikilove-subtype-description"></div>\
-		<label id="mw-wikilove-gallery-label">' + mw.message( 'wikilove-select-image' ).escaped() + '</label>\
-		<div id="mw-wikilove-gallery">\
-			<div id="mw-wikilove-gallery-error">\
-				' + mw.message( 'wikilove-err-gallery' ).escaped() + '\
-				<a href="#" id="mw-wikilove-gallery-error-again">' + mw.message( 'wikilove-err-gallery-again' ).escaped() + '</a>\
-			</div>\
-			<div id="mw-wikilove-gallery-spinner" class="mw-wikilove-spinner"></div>\
-			<div id="mw-wikilove-gallery-content"></div>\
-		</div>\
-		<label for="mw-wikilove-header" id="mw-wikilove-header-label">' + mw.message( 'wikilove-header' ).escaped() + '</label>\
-		<input type="text" class="text" id="mw-wikilove-header"/>\
-		<label for="mw-wikilove-title" id="mw-wikilove-title-label">' + mw.message( 'wikilove-title' ).escaped() + '</label>\
-		<input type="text" class="text" id="mw-wikilove-title"/>\
-		<label for="mw-wikilove-image" id="mw-wikilove-image-label">' + mw.message( 'wikilove-image' ).escaped() + '</label>\
-		<span class="mw-wikilove-note" id="mw-wikilove-image-note">' + mw.message( 'wikilove-image-example' ).escaped() + '</span>\
-		<input type="text" class="text" id="mw-wikilove-image"/>\
-		<div id="mw-wikilove-commons-text">\
-		' + mw.message( 'wikilove-commons-text' ).escaped().replace( /\$1/, commonsLink ) + '\
-		</div>\
-		<label for="mw-wikilove-message" id="mw-wikilove-message-label">' + mw.message( 'wikilove-enter-message' ).escaped() + '</label>\
-		<span class="mw-wikilove-note" id="mw-wikilove-message-note">' + mw.message( 'wikilove-omit-sig' ).escaped() + '</span>\
-		<textarea id="mw-wikilove-message" rows="4"></textarea>\
-		<div id="mw-wikilove-notify">\
-			<input type="checkbox" id="mw-wikilove-notify-checkbox" name="notify"/>\
-			<label for="mw-wikilove-notify-checkbox">' + mw.message( 'wikilove-notify' ).escaped() + '</label>\
-		</div>\
-		<button class="submit mw-ui-button mw-ui-progressive" id="mw-wikilove-button-preview" type="submit"></button>\
-		<div id="mw-wikilove-preview-spinner" class="mw-wikilove-spinner"></div>\
-	</form>\
-</div>\
-<div id="mw-wikilove-preview">\
-	<span class="mw-wikilove-number">3</span>\
-	<h3>' + mw.message( 'wikilove-preview' ).escaped() + '</h3>\
-	<div id="mw-wikilove-preview-area"></div>\
-	<div id="mw-wikilove-terms">\
-	' + mw.message( 'wikilove-terms' ).escaped().replace( /\$1/, termsLink ) + '\
-	</div>\
-	<form id="mw-wikilove-send-form">\
-		<button class="submit mw-ui-button mw-ui-progressive" id="mw-wikilove-button-send" type="submit"></button>\
-		<div id="mw-wikilove-send-spinner" class="mw-wikilove-spinner"></div>\
-	</form>\
-	<div id="mw-wikilove-success"></div>\
-</div>\
-</div>';
-				$dialog = $( dialogHtml ).dialog( {
-					width: 800,
-					position: [ 'center', 80 ],
-					autoOpen: false,
-					title: mw.msg( 'wikilove-dialog-title' ),
-					modal: true,
-					resizable: false
-				} );
-				$dialog.parent().attr( 'id', 'mw-wikilove-overlay' );
-
-				$( '#mw-wikilove-button-preview' ).text( mw.msg( 'wikilove-button-preview' ) );
-				$( '#mw-wikilove-button-send' ).text( mw.msg( 'wikilove-button-send' ) );
-				$( '#mw-wikilove-add-details' ).hide();
-				$( '#mw-wikilove-preview' ).hide();
-				$( '#mw-wikilove-anon-warning' ).hide();
-				$( '#mw-wikilove-types' ).replaceWith( $typeList );
-				$( '#mw-wikilove-gallery-error-again' ).on( 'click', $.wikiLove.showGallery );
-				$( '#mw-wikilove-types a' ).on( 'click', $.wikiLove.clickType );
-				$( '#mw-wikilove-subtype' ).on( 'change', $.wikiLove.changeSubtype );
-				$( '#mw-wikilove-preview-form' ).on( 'submit', $.wikiLove.validatePreviewForm );
-				$( '#mw-wikilove-send-form' ).on( 'click', $.wikiLove.submitSend );
-
-				if ( mw.util.isIPAddress( mw.config.get( 'wikilove-recipient' ) ) ||
-					mw.util.isTemporaryUser( mw.config.get( 'wikilove-recipient' ) )
-				) {
-					$( '#mw-wikilove-anon-warning' ).show();
-				}
-
-				// When the image changes, we want to reset the preview and error message.
-				$( '#mw-wikilove-image' ).on( 'change', function () {
-					$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
-					$( '#mw-wikilove-preview' ).hide();
-				} );
+				$button.data( 'typeId', typeId );
+				$typeList.append( $( '<li>' ).append( $button ) );
 			}
 
-			$dialog.dialog( 'open' );
+			commonsLink = mw.html.element( 'a', {
+				href: mw.msg( 'wikilove-commons-url' ),
+				target: '_blank'
+			}, mw.msg( 'wikilove-commons-link' ) );
+			termsLink = mw.html.element( 'a', {
+				href: mw.msg( 'wikilove-terms-url' ),
+				target: '_blank'
+			}, mw.msg( 'wikilove-terms-link' ) );
+
+			overlayContainer.classList.add( 'wikilove-overlay-container' );
+			overlayContainer.style.display = '';
+
+			if ( overlayContainer.parentNode ) {
+				return;
+			}
+			// render.
+			document.body.appendChild( overlayContainer );
+			Vue.createMwApp( WikiLoveDialog, {
+				commonsLink,
+				termsLink,
+				onClose: () => {
+					this.reset();
+				}
+			} ).mount( overlayContainer );
+
+			// @todo: Move logic to WikiLoveDialog.vue
+			$( '#mw-wikilove-button-preview' ).text( mw.msg( 'wikilove-button-preview' ) );
+			$( '#mw-wikilove-button-send' ).text( mw.msg( 'wikilove-button-send' ) );
+			$( '#mw-wikilove-add-details' ).hide();
+			$( '#mw-wikilove-preview' ).hide();
+			$( '#mw-wikilove-anon-warning' ).hide();
+			$( '#mw-wikilove-types' ).replaceWith( $typeList );
+			$( '#mw-wikilove-gallery-error-again' ).on( 'click', $.wikiLove.showGallery );
+			$( '#mw-wikilove-types a' ).on( 'click', $.wikiLove.clickType );
+			$( '#mw-wikilove-subtype' ).on( 'change', $.wikiLove.changeSubtype );
+			$( '#mw-wikilove-preview-form' ).on( 'submit', $.wikiLove.validatePreviewForm );
+			$( '#mw-wikilove-send-form' ).on( 'click', $.wikiLove.submitSend );
+
+			if ( mw.util.isIPAddress( mw.config.get( 'wikilove-recipient' ) ) ||
+				mw.util.isTemporaryUser( mw.config.get( 'wikilove-recipient' ) )
+			) {
+				$( '#mw-wikilove-anon-warning' ).show();
+			}
+
+			// When the image changes, we want to reset the preview and error message.
+			$( '#mw-wikilove-image' ).on( 'change', function () {
+				$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
+				$( '#mw-wikilove-preview' ).hide();
+			} );
 		},
 
 		/**
@@ -703,7 +634,7 @@
 				wikitext = wikitext.replace( /\s*~~~~/, '' );
 			}
 
-			targets.forEach( function ( target ) {
+			targets.forEach( ( target ) => {
 				var sendData = {
 					action: 'wikilove',
 					title: 'User:' + target,
@@ -718,7 +649,7 @@
 					sendData.email = email;
 				}
 				api.postWithToken( 'csrf', sendData )
-					.done( function ( data ) {
+					.done( ( data ) => {
 						wikiLoveNumberAttempted++;
 						if ( wikiLoveNumberAttempted === targets.length ) {
 							// TODO: Use CSS transitions
@@ -766,9 +697,8 @@
 								$.wikiLove.showSuccessMsg( mw.msg( 'wikilove-success-number', wikiLoveNumberPosted ) );
 								// If there were no errors, close the dialog and reset WikiLove
 								if ( wikiLoveNumberPosted === targets.length ) {
-									setTimeout( function () {
-										$dialog.dialog( 'close' );
-										$.wikiLove.reset();
+									setTimeout( () => {
+										this.reset();
 									}, 1000 );
 								}
 							}
@@ -789,17 +719,10 @@
 		},
 
 		/**
-		 * Resets WikiLove to its itialized state – removes the dialog box from the
-		 * DOM and resets the pseudo-global variables.
+		 * Hides the WikiLove overlay. The overlay is retained in the DOM for future clicks.
 		 */
 		reset: function () {
-			$dialog.dialog( 'destroy' );
-			$( '#mw-wikilove-dialog' ).remove();
-			$dialog = null;
-			currentTypeId = null;
-			currentSubtypeId = null;
-			currentTypeOrSubtype = null;
-			rememberData = null;
+			overlayContainer.style.display = 'none';
 		},
 
 		/**
