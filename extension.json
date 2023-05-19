@@ -33,9 +33,10 @@
 			}
 		},
 		"ext.wikiLove.startup": {
-			"scripts": [
-				"ext.wikiLove.defaultOptions.js",
-				"ext.wikiLove.core.js"
+			"packageFiles": [
+				"ext.wikiLove.startup/main.js",
+				"ext.wikiLove.startup/wikiLove.js",
+				"ext.wikiLove.startup/defaultOptions.js"
 			],
 			"styles": "ext.wikiLove.less",
 			"messages": [

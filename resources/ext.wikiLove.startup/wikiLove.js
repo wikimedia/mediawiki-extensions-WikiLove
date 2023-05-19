@@ -14,7 +14,7 @@
 		gallery = {},
 		api = new mw.Api();
 
-	$.wikiLove = {
+	module.exports = {
 		/**
 		 * Opens the dialog and builds it if necessary.
 		 *
@@ -922,5 +922,4 @@
 		}
 	};
 
-	$( $.wikiLove.init );
 }() );

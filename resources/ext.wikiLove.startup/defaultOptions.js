@@ -1,7 +1,7 @@
 // See https://www.mediawiki.org/wiki/Extension:WikiLove for basic documentation on configuration.
 
 ( function () {
-	$.wikiLoveOptions = {
+	module.exports = {
 		defaultText:
 			'{| style="background-color: $5; border: 1px solid $6;"\n' +
 			'|rowspan="2" style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n' +
