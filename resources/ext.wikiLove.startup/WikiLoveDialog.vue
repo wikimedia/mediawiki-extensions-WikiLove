@@ -122,7 +122,7 @@ module.exports = Vue.defineComponent( {
 @import 'mediawiki.skin.variables.less';
 
 .wikilove-overlay-container {
-	position: fixed;
+	position: absolute;
 	left: 0;
 	top: 0;
 	right: 0;
@@ -141,6 +141,7 @@ module.exports = Vue.defineComponent( {
 	box-shadow: 0 2px 2px 0 rgba( 0, 0, 0, 0.25 );
 	width: 800px;
 	font-size: 13px;
+	margin: auto;
 }
 
 .wikilove-dialog header {
