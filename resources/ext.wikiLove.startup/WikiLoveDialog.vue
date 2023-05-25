@@ -130,14 +130,14 @@ module.exports = Vue.defineComponent( {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	z-index: 999;
+	z-index: @z-index-overlay-backdrop;
 }
 
 
 .wikilove-dialog {
 	background: #f2f5f7;
 	padding: 0.5em 1em;
-	border: 1px solid #a2a9b1;
+	border: @border-base;
 	box-shadow: 0 2px 2px 0 rgba( 0, 0, 0, 0.25 );
 	width: 800px;
 	font-size: 13px;
@@ -163,12 +163,12 @@ module.exports = Vue.defineComponent( {
 }
 
 .wikilove-dialog-body {
-	z-index: 2;
 	position: relative;
+	z-index: @z-index-stacking-2;
 }
 
 .wikilove-transparent-overlay {
-	opacity: 0.4;
+	opacity: @opacity-medium;
 	background: white;
 	position: absolute;
 	left: 0;
