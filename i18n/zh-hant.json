@@ -22,6 +22,7 @@
 			"Zhxy 519",
 			"和平至上",
 			"捍粵者",
+			"沈澄心",
 			"飞舞回堂前"
 		]
 	},
@@ -196,7 +197,7 @@
 	"wikilove-success-number": "已傳送 $1 則維基友愛{{PLURAL:$1|訊息}}。",
 	"wikilove-summary": "/* $1 */ 新的維基友愛訊息",
 	"wikilove-what-is-this": "這是什麼？",
-	"wikilove-anon-warning": "注意：此使用者尚未註冊，他或她可能無法收到此訊息。",
+	"wikilove-anon-warning": "注意：此使用者尚未註冊，可能無法收到此訊息。",
 	"wikilove-commons-text": "您可以瀏覽$1尋找合適的圖片。",
 	"wikilove-commons-link": "維基共享資源",
 	"wikilove-commons-url": "//commons.wikimedia.org/wiki/首頁",

@@ -21,6 +21,7 @@
 			"Yfdyh000",
 			"Zhxy 519",
 			"乌拉跨氪",
+			"沈澄心",
 			"飞舞回堂前"
 		]
 	},
@@ -195,7 +196,7 @@
 	"wikilove-success-number": "已发送$1条维基友爱{{PLURAL:$1|信息}}。",
 	"wikilove-summary": "/* $1 */ 新维基友爱信息",
 	"wikilove-what-is-this": "这是什么？",
-	"wikilove-anon-warning": "注意：此用户未注册，他或她可能不会注意到该信息。",
+	"wikilove-anon-warning": "注意：此用户未注册，可能不会注意到该信息。",
 	"wikilove-commons-text": "您可以通过浏览$1找到图像。",
 	"wikilove-commons-link": "维基共享资源",
 	"wikilove-commons-url": "//commons.wikimedia.org/wiki/首页",

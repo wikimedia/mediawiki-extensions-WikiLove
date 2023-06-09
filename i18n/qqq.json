@@ -191,7 +191,7 @@
 	"wikilove-summary": "Used as Edit Summary. Parameters:\n* $1 - subject (section name?)",
 	"wikilove-what-is-this": "[[File:Wiki Love 002.png|thumb]]\n{{Identical|What is this}}",
 	"wikilove-what-is-this-link": "{{optional}}",
-	"wikilove-anon-warning": "{{doc-singularthey}}\nUsed as hint with JavaScript",
+	"wikilove-anon-warning": "Used as hint with JavaScript",
 	"wikilove-commons-text": "[[File:Wiki Love 004.png|thumb]]\nParameters:\n* $1 - {{msg-mw|wikilove-commons-link}} as caption and {{msg-mw|wikilove-commons-url}} as URL",
 	"wikilove-commons-link": "{{optional}}\n{{Identical|Wikimedia Commons}}",
 	"wikilove-commons-url": "{{optional}}\nThis URL can be changed to point at a localised page on Wikimedia Commons.",
