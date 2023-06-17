@@ -21,7 +21,7 @@ module.exports = function ( grunt ) {
 				fix: grunt.option( 'fix' )
 			},
 			all: [
-				'**/*.{js,json}',
+				'**/*.{js,json,vue}',
 				'!node_modules/**',
 				'!vendor/**'
 			]
