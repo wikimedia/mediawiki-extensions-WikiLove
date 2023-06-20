@@ -1,10 +1,14 @@
 <template>
-	<div id="mw-wikilove-overlay" class="wikilove-dialog" tabindex="-1">
+	<div
+		id="mw-wikilove-overlay"
+		class="wikilove-dialog"
+		tabindex="-1"
+	>
 		<div class="wikilove-transparent-overlay"></div>
 		<div class="wikilove-dialog-body">
 			<header class="wikilove-dialog-titlebar">
-				<strong>{{ $i18n( 'wikilove-dialog-title' )}}</strong>
-				<cdx-icon @click="$emit( 'close' )" :icon="closeIcon" />
+				<strong>{{ $i18n( 'wikilove-dialog-title' ) }}</strong>
+				<cdx-icon :icon="closeIcon" @click="$emit( 'close' )"></cdx-icon>
 			</header>
 			<div id="mw-wikilove-dialog">
 				<div id="mw-wikilove-select-type">
@@ -19,10 +23,14 @@
 						<li>{{ $i18n( 'wikilove-get-started-list-2' ) }}</li>
 						<li>{{ $i18n( 'wikilove-get-started-list-3' ) }}</li>
 					</ol>
-					<p><a target="_blank" href="{{ $i18n( 'wikilove-what-is-this-link' ) }}">
-						{{ $i18n( 'wikilove-what-is-this' ) }}
-					</a></p>
-					<p id="mw-wikilove-anon-warning"><strong>{{ $i18n( 'wikilove-anon-warning' ) }}</strong></p>
+					<p>
+						<a target="_blank" href="{{ $i18n( 'wikilove-what-is-this-link' ) }}">
+							{{ $i18n( 'wikilove-what-is-this' ) }}
+						</a>
+					</p>
+					<p id="mw-wikilove-anon-warning">
+						<strong>{{ $i18n( 'wikilove-anon-warning' ) }}</strong>
+					</p>
 				</div>
 				<div id="mw-wikilove-add-details">
 					<span class="mw-wikilove-number">2</span>
@@ -32,34 +40,56 @@
 							<div id="mw-wikilove-image-preview-spinner" class="mw-wikilove-spinner"></div>
 							<div id="mw-wikilove-image-preview-content"></div>
 						</div>
-						<label for="mw-wikilove-subtype" id="mw-wikilove-subtype-label"></label>
+						<label id="mw-wikilove-subtype-label" for="mw-wikilove-subtype"></label>
 						<select id="mw-wikilove-subtype"></select>
 						<div id="mw-wikilove-subtype-description"></div>
 						<label id="mw-wikilove-gallery-label">{{ $i18n( 'wikilove-select-image' ) }}</label>
 						<div id="mw-wikilove-gallery">
 							<div id="mw-wikilove-gallery-error">
 								{{ $i18n( 'wikilove-err-gallery' ) }}
-								<a href="#" id="mw-wikilove-gallery-error-again">{{ $i18n( 'wikilove-err-gallery-again' ) }}</a>
+								<a id="mw-wikilove-gallery-error-again" href="#">{{ $i18n( 'wikilove-err-gallery-again' ) }}</a>
 							</div>
 							<div id="mw-wikilove-gallery-spinner" class="mw-wikilove-spinner"></div>
 							<div id="mw-wikilove-gallery-content"></div>
 						</div>
-						<label for="mw-wikilove-header" id="mw-wikilove-header-label">{{ $i18n( 'wikilove-header' ) }}</label>
-						<input type="text" class="text" id="mw-wikilove-header"/>
-						<label for="mw-wikilove-title" id="mw-wikilove-title-label">{{ $i18n( 'wikilove-title' ) }}</label>
-						<input type="text" class="text" id="mw-wikilove-title"/>
-						<label for="mw-wikilove-image" id="mw-wikilove-image-label">{{ $i18n( 'wikilove-image' ) }}</label>
-						<span class="mw-wikilove-note" id="mw-wikilove-image-note">{{ $i18n( 'wikilove-image-example' ) }}</span>
-						<input type="text" class="text" id="mw-wikilove-image" @change="onImageChange" />
+						<label id="mw-wikilove-header-label" for="mw-wikilove-header">{{ $i18n( 'wikilove-header' ) }}</label>
+						<input
+							id="mw-wikilove-header"
+							type="text"
+							class="text"
+						>
+						<label id="mw-wikilove-title-label" for="mw-wikilove-title">{{ $i18n( 'wikilove-title' ) }}</label>
+						<input
+							id="mw-wikilove-title"
+							type="text"
+							class="text"
+						>
+						<label id="mw-wikilove-image-label" for="mw-wikilove-image">{{ $i18n( 'wikilove-image' ) }}</label>
+						<span id="mw-wikilove-image-note" class="mw-wikilove-note">{{ $i18n( 'wikilove-image-example' ) }}</span>
+						<input
+							id="mw-wikilove-image"
+							type="text"
+							class="text"
+							@change="onImageChange"
+						>
+						<!-- eslint-disable-next-line vue/no-v-html -->
 						<div id="mw-wikilove-commons-text" v-html="commonsText"></div>
-						<label for="mw-wikilove-message" id="mw-wikilove-message-label">{{ $i18n( 'wikilove-enter-message' ) }}</label>
-						<span class="mw-wikilove-note" id="mw-wikilove-message-note">{{ $i18n( 'wikilove-omit-sig' ) }}</span>
+						<label id="mw-wikilove-message-label" for="mw-wikilove-message">{{ $i18n( 'wikilove-enter-message' ) }}</label>
+						<span id="mw-wikilove-message-note" class="mw-wikilove-note">{{ $i18n( 'wikilove-omit-sig' ) }}</span>
 						<textarea id="mw-wikilove-message" rows="4"></textarea>
 						<div id="mw-wikilove-notify">
-							<input type="checkbox" id="mw-wikilove-notify-checkbox" name="notify"/>
+							<input
+								id="mw-wikilove-notify-checkbox"
+								type="checkbox"
+								name="notify"
+							>
 							<label for="mw-wikilove-notify-checkbox">{{ $i18n( 'wikilove-notify' ) }}</label>
 						</div>
-						<button class="submit mw-ui-button mw-ui-progressive" id="mw-wikilove-button-preview" type="submit"></button>
+						<button
+							id="mw-wikilove-button-preview"
+							class="submit mw-ui-button mw-ui-progressive"
+							type="submit">
+						</button>
 						<div id="mw-wikilove-preview-spinner" class="mw-wikilove-spinner"></div>
 					</form>
 				</div>
@@ -67,9 +97,14 @@
 					<span class="mw-wikilove-number">3</span>
 					<h3>{{ $i18n( 'wikilove-preview' ) }}</h3>
 					<div id="mw-wikilove-preview-area"></div>
+					<!-- eslint-disable-next-line vue/no-v-html -->
 					<div id="mw-wikilove-terms" v-html="terms"></div>
 					<form id="mw-wikilove-send-form">
-						<button class="submit mw-ui-button mw-ui-progressive" id="mw-wikilove-button-send" type="submit"></button>
+						<button
+							id="mw-wikilove-button-send"
+							class="submit mw-ui-button mw-ui-progressive"
+							type="submit">
+						</button>
 						<div id="mw-wikilove-send-spinner" class="mw-wikilove-spinner"></div>
 					</form>
 					<div id="mw-wikilove-success"></div>
@@ -78,18 +113,20 @@
 		</div>
 	</div>
 </template>
+
 <script>
 const { cdxIconClose } = require( './icons.json' );
 const { CdxIcon } = require( '@wikimedia/codex' );
 const Vue = require( 'vue' );
+
+// @vue/component
 module.exports = Vue.defineComponent( {
 	name: 'WikiLoveDialog',
 	compatConfig: {
 		MODE: 3
 	},
-	emits: [ 'close' ],
 	components: {
-		cdxIcon: CdxIcon
+		CdxIcon: CdxIcon
 	},
 	props: {
 		closeIcon: {
@@ -97,24 +134,32 @@ module.exports = Vue.defineComponent( {
 			default: cdxIconClose
 		},
 		commonsLink: {
-			type: String
+			type: String,
+			required: true
 		},
 		termsLink: {
-			type: String
+			type: String,
+			required: true
 		}
 	},
+	emits: [ 'close' ],
 	computed: {
 		terms() {
-			return mw.msg( 'wikilove-terms' ).replace( '$1', this.termsLink );
+			// TODO improve this logic so that v-html isn't needed
+			return mw.message( 'wikilove-terms' ).parse().replace( '$1', this.termsLink );
 		},
 		commonsText() {
-			return mw.msg( 'wikilove-commons-text' ).replace( '$1', this.commonsLink );
+			// TODO improve this logic so that v-html isn't needed
+			return mw.message( 'wikilove-commons-text' ).parse().replace( '$1', this.commonsLink );
 		}
 	},
 	methods: {
 		onImageChange: function () {
-				$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
-				$( '#mw-wikilove-preview' ).hide();
+			// FIXME jQuery should not be used here, this showing and hiding should be done through Vue
+			/* eslint-disable no-jquery/no-global-selector */
+			$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
+			$( '#mw-wikilove-preview' ).hide();
+			/* eslint-enable no-jquery/no-global-selector */
 		}
 	}
 } );
@@ -135,7 +180,6 @@ module.exports = Vue.defineComponent( {
 	justify-content: center;
 	z-index: @z-index-overlay-backdrop;
 }
-
 
 .wikilove-dialog {
 	background: #f2f5f7;
