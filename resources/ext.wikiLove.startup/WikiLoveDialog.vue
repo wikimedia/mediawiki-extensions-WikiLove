@@ -84,6 +84,9 @@ const { CdxIcon } = require( '@wikimedia/codex' );
 const Vue = require( 'vue' );
 module.exports = Vue.defineComponent( {
 	name: 'WikiLoveDialog',
+	compatConfig: {
+		MODE: 3
+	},
 	emits: [ 'close' ],
 	components: {
 		cdxIcon: CdxIcon
