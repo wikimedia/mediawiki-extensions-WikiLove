@@ -24,7 +24,7 @@
 						<li>{{ $i18n( 'wikilove-get-started-list-3' ) }}</li>
 					</ol>
 					<p>
-						<a target="_blank" href="{{ $i18n( 'wikilove-what-is-this-link' ) }}">
+						<a target="_blank" :href="$i18n( 'wikilove-what-is-this-link' )">
 							{{ $i18n( 'wikilove-what-is-this' ) }}
 						</a>
 					</p>
