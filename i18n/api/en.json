@@ -6,7 +6,6 @@
 			"Zoranzoki21"
 		]
 	},
-	"apihelp-wikilove-description": "Give WikiLove to another user.\n\nWikiLove is a positive message posted to a user's talk page through a convenient interface with preset or locally defined templates. This action adds the specified wikitext to a certain talk page. For statistical purposes, the type and other data are logged.",
 	"apihelp-wikilove-summary": "Give WikiLove to another user.",
 	"apihelp-wikilove-extended-description": "WikiLove is a positive message posted to a user's talk page through a convenient interface with preset or locally defined templates. This action adds the specified wikitext to a certain talk page. For statistical purposes, the type and other data are logged.",
 	"apihelp-wikilove-param-title": "Full pagename of the user page or user talk page of the user to send WikiLove to.",
