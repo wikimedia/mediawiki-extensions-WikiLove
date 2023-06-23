@@ -224,8 +224,7 @@
 				"@wikimedia/codex",
 				"mediawiki.api",
 				"mediawiki.Title",
-				"mediawiki.util",
-				"mediawiki.ui.button"
+				"mediawiki.util"
 			]
 		},
 		"ext.wikiLove.local": {

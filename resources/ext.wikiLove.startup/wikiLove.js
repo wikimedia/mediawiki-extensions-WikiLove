@@ -92,8 +92,6 @@
 			} ).mount( overlayContainer );
 
 			// @todo: Move logic to WikiLoveDialog.vue
-			$( '#mw-wikilove-button-preview' ).text( mw.msg( 'wikilove-button-preview' ) );
-			$( '#mw-wikilove-button-send' ).text( mw.msg( 'wikilove-button-send' ) );
 			$( '#mw-wikilove-add-details' ).hide();
 			$( '#mw-wikilove-preview' ).hide();
 			$( '#mw-wikilove-anon-warning' ).hide();

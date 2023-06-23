@@ -85,11 +85,13 @@
 							>
 							<label for="mw-wikilove-notify-checkbox">{{ $i18n( 'wikilove-notify' ) }}</label>
 						</div>
-						<button
+
+						<cdx-button
 							id="mw-wikilove-button-preview"
-							class="submit mw-ui-button mw-ui-progressive"
-							type="submit">
-						</button>
+							class="submit"
+							action="progressive">
+							{{ $i18n( 'wikilove-button-preview' ) }}
+						</cdx-button>
 						<div id="mw-wikilove-preview-spinner" class="mw-wikilove-spinner"></div>
 					</form>
 				</div>
@@ -100,11 +102,12 @@
 					<!-- eslint-disable-next-line vue/no-v-html -->
 					<div id="mw-wikilove-terms" v-html="terms"></div>
 					<form id="mw-wikilove-send-form">
-						<button
+						<cdx-button
 							id="mw-wikilove-button-send"
-							class="submit mw-ui-button mw-ui-progressive"
-							type="submit">
-						</button>
+							class="submit"
+							action="progressive">
+							{{ $i18n( 'wikilove-button-send' ) }}
+						</cdx-button>
 						<div id="mw-wikilove-send-spinner" class="mw-wikilove-spinner"></div>
 					</form>
 					<div id="mw-wikilove-success"></div>
@@ -116,7 +119,7 @@
 
 <script>
 const { cdxIconClose } = require( './icons.json' );
-const { CdxIcon } = require( '@wikimedia/codex' );
+const { CdxIcon, CdxButton } = require( '@wikimedia/codex' );
 const Vue = require( 'vue' );
 
 // @vue/component
@@ -126,7 +129,8 @@ module.exports = Vue.defineComponent( {
 		MODE: 3
 	},
 	components: {
-		CdxIcon: CdxIcon
+		CdxButton,
+		CdxIcon
 	},
 	props: {
 		closeIcon: {
