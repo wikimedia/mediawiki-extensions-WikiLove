@@ -4,7 +4,6 @@
 			"Jon Harald Søby"
 		]
 	},
-	"apihelp-wikilove-description": "Gi WikiLove til en annen bruker.\n\nWikiLove er en positiv melding postet på en annen brukers diskusjonsside med et enkelt grensesnitt med forhåndsdefinerte maler. Denne handlingen legger til den gitte wikiteksten på en viss diskusjonsside. Typen og andre data logges av statistiske årsaker.",
 	"apihelp-wikilove-summary": "Gi WikiLove til en annen bruker.",
 	"apihelp-wikilove-extended-description": "WikiLove er en positiv melding postet på en annen brukers diskusjonsside med et enkelt grensesnitt med forhåndsdefinerte maler. Denne handlingen legger til den gitte wikiteksten på en viss diskusjonsside. Typen og andre data logges av statistiske årsaker.",
 	"apihelp-wikilove-param-title": "Fullt sidenavn til brukersiden eller diskusjonssiden til brukeren som skal sendes WikiLove.",

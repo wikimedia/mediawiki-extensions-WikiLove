@@ -5,7 +5,6 @@
 			"HanV"
 		]
 	},
-	"apihelp-wikilove-description": "Laat Wikiwaardering blijken aan een andere gebruiker.\n\nWikiwaardering is een positieve boodschap, die op overlegpagina's van gebruikers geplaatst kan worden via een speciale interface met ingestelde of lokaal gedefinieerde sjablonen. Deze actie voegt de wikitext toe aan een bepaalde overlegpagina. Het type en andere gegevens worden gelogd voor statistische doeleinden.",
 	"apihelp-wikilove-summary": "Laat een andere gebruiker Wikiwaardering blijken",
 	"apihelp-wikilove-extended-description": "Wikiwaardering is een positieve boodschap, die op overlegpagina's van gebruikers geplaatst kan worden via een speciale interface met ingestelde of lokaal gedefinieerde sjablonen. Deze actie voegt de wikitext toe aan een bepaalde overlegpagina. Het type en andere gegevens worden gelogd voor statistische doeleinden.",
 	"apihelp-wikilove-param-title": "Volledige paginanaam van de gebruikerspagina of overlegpagina van de gebruiker die Wikiwaardering ontvangt.",

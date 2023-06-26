@@ -4,7 +4,6 @@
 			"Deryck Chan"
 		]
 	},
-	"apihelp-wikilove-description": "送維基愛心畀另一個用戶。\n\n維基愛心係一個用嚟傳統正能量嘅用戶傾偈版留言，內容可以預設倒模，亦都可以本站自製。呢個工具會自動將預設嘅維基字加落一個傾偈版度。維基愛心嘅種類同埋其他數據會收集做統計用途。",
 	"apihelp-wikilove-summary": "送維基愛心畀另一個用戶",
 	"apihelp-wikilove-extended-description": "維基愛心係一個用嚟傳統正能量嘅用戶傾偈版留言，內容可以預設倒模，亦都可以本站自製。呢個工具會自動將預設嘅維基字加落一個傾偈版度。維基愛心嘅種類同埋其他數據會收集做統計用途。",
 	"apihelp-wikilove-param-title": "維基愛心收件人個用戶版或者傾偈版嘅完整版名",

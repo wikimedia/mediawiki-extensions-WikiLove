@@ -4,7 +4,6 @@
 			"Hamilton Abreu"
 		]
 	},
-	"apihelp-wikilove-description": "Envie um WikiApreço a outro utilizador.\n\nUm WikiApreço é uma mensagem positiva publicada na página de discussão de um utilizador, através de uma interface conveniente, com predefinições gerais ou definidas localmente. Esta ação adiciona a uma determinada página de discussão o texto wiki especificado. Para fins estatísticos, será registado o tipo e outros dados.",
 	"apihelp-wikilove-summary": "Envie um WikiApreço a outro utilizador.",
 	"apihelp-wikilove-extended-description": "Um WikiApreço é uma mensagem positiva publicada na página de discussão de um utilizador, através de uma interface conveniente, com predefinições gerais ou definidas localmente. Esta ação adiciona a uma determinada página de discussão o texto wiki especificado. Para fins estatísticos, será registado o tipo e outros dados.",
 	"apihelp-wikilove-param-title": "Nome completo da página de utilizador ou de discussão, do utilizador a quem será enviado o WikiApreço.",

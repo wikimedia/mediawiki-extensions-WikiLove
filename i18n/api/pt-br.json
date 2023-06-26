@@ -7,7 +7,6 @@
 			"Felipe L. Ewald"
 		]
 	},
-	"apihelp-wikilove-description": "Dê WikiLove para outro usuário.\n\nWikiLove é uma mensagem positiva postada numa página de discussão de um usuário através de uma interface conveniente, com modelos predefinidos ou definidos localmente. Essa ação adiciona o wikitexto especificado para uma determinada página de conversa. Para fins estatísticos, o tipo e outros dados são registrados.",
 	"apihelp-wikilove-summary": "Dê o WikiLove a outro usuário.",
 	"apihelp-wikilove-extended-description": "WikiLove é uma mensagem positiva postada na página de de discussão de um usuário através de uma interface conveniente com predefinições ou preset definidos localmente. Esta ação adiciona o texto wiki especificado a uma determinada página de discussão. Para fins estatísticos, o tipo e outros dados são registrados.",
 	"apihelp-wikilove-param-title": "Nome de página completo da página do usuário ou página de discussão do usuário para enviar WikiLove.",

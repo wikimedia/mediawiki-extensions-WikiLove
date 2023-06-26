@@ -4,7 +4,6 @@
 			"McDutchie"
 		]
 	},
-	"apihelp-wikilove-description": "Da WikiLove a un altere usator.\n\nWikiLove es un message positive publicate sur le pagina de discussion de un usator per medio de un interfacie commode con patronos predefinite o definite localmente. Iste action adde le wikitexto specificate a un certe pagina de discussion. Le typo e altere datos es registrate pro le statisticas.",
 	"apihelp-wikilove-summary": "Dar WikiLove a un altere usator.",
 	"apihelp-wikilove-extended-description": "WikiLove es un message positive publicate sur le pagina de discussion de un usator per medio de un interfacie commode con patronos predefinite o definite localmente. Iste action adde le wikitexto specificate a un certe pagina de discussion. Le typo e altere datos es registrate pro le statisticas.",
 	"apihelp-wikilove-param-title": "Le nomine complete del pagina de usator o de discussion del usator a qui inviar WikiLove.",

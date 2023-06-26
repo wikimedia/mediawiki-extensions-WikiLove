@@ -6,7 +6,6 @@
 			"Mitjas1"
 		]
 	},
-	"apihelp-wikilove-description": "WikiLjubezen je pozitivno sporočilo, objavljeno na pogovorni strani uporabnika prek priročnega vmesnika s prednastavljenimi ali lokalno določenimi predlogami. To dejanje doda navedeno vikibesedilo na določeno pogovorno stran. Za statistične namene se zabeležijo vrsta in drugi podatki.",
 	"apihelp-wikilove-summary": "Podarite drugemu uporabniku WikiLjubezen.",
 	"apihelp-wikilove-extended-description": "WikiLjubezen je pozitivno sporočilo, objavljeno na pogovorni strani uporabnika prek priročnega vmesnika s prednastavljenimi ali lokalno določenimi predlogami. To dejanje doda navedeno vikibesedilo na določeno pogovorno stran. Za statistične namene se zabeležijo vrsta in drugi podatki.",
 	"apihelp-wikilove-param-title": "Celotno ime uporabniške strani ali uporabniške pogovorne strani uporabnika, ki mu želite poslati WikiLjubezen.",

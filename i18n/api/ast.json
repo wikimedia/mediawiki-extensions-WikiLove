@@ -4,7 +4,6 @@
 			"Xuacu"
 		]
 	},
-	"apihelp-wikilove-description": "Unviar WikiCiñu a otru usuariu.\n\nWikiCiñu ye un mensaxe positivu que s'espubliza na páxina d'alderique d'un usuariu usando una interfaz conveniente con plantíes predefiníes o definíes de mou llocal. Esta aición amiesta'l testu wiki especificáu a cierta páxina d'alderique. Pa propósitos estadísticos, rexístrense'l tipu y otros datos.",
 	"apihelp-wikilove-summary": "Unviar WikiCiñu a otru usuariu.",
 	"apihelp-wikilove-extended-description": "WikiCiñu ye un mensaxe positivu que s'espubliza na páxina d'alderique d'un usuariu usando una interfaz conviniente con plantíes predefiníes o definíes de mou llocal. Esta aición amiesta'l testu wiki especificáu a cierta páxina d'alderique. Pa propósitos estadísticos, rexístrense'l tipu y otros datos.",
 	"apihelp-wikilove-param-title": "Nome completu de la páxina d'usuariu o de la páxina d'alderique d'usuariu del usuariu al qu'unviar WikiCiñu.",

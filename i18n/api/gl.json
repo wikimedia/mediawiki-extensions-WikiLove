@@ -5,7 +5,6 @@
 			"Elisardojm"
 		]
 	},
-	"apihelp-wikilove-description": "Dar WikiAmor a outro usuario.\n\nWikiAmor é unha mensaxe positiva enviada á páxina de conversa dun usuario a través dunha interface práctica con modelos predefinidos ou definidos localmente. Esta acción engade o wikitexto especificado á páxina de conversa indicada. Por temas estatísticos, o tipo e outros datos son rexistrados.",
 	"apihelp-wikilove-summary": "Envíe un WikiAmor a outro usuario.",
 	"apihelp-wikilove-param-title": "Nome completo da páxina de usuario ou páxina de conversa do usuario ó que enviar o WikiAmor.",
 	"apihelp-wikilove-param-text": "Texto wiki en bruto a engadir na nova sección.",

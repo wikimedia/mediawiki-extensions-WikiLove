@@ -4,7 +4,6 @@
 			"Klein Muçi"
 		]
 	},
-	"apihelp-wikilove-description": "Jepi WikiDashuri një përdoruesi tjetër.\n\nWikiDashuria është një mesazh pozitiv i postuar në faqen e diskutimeve të një përdoruesi tjetër nëpërmjet një ndërfaqeje të thjeshtë duke përdorur stampa të gatshme. Ky veprim shton wikitekstin e zgjedhur te një faqe e caktuar diskutimesh. Për arsye statistike, lloji i WikiDashurisë dhe të dhënat e tjera në lidhje me të ruhen.",
 	"apihelp-wikilove-summary": "Jepi WikiDashuri një përdoruesi tjetër.",
 	"apihelp-wikilove-extended-description": "WikiDashuria është një mesazh pozitiv i postuar në faqen e diskutimeve të një përdoruesi tjetër nëpërmjet një ndërfaqeje të thjeshtë duke përdorur stampa të gatshme. Ky veprim shton wikitekstin e zgjedhur te një faqe e caktuar diskutimesh. Për arsye statistike, lloji i WikiDashurisë dhe të dhënat e tjera në lidhje me të ruhen.",
 	"apihelp-wikilove-param-title": "Emri i plotë i faqes së përdoruesit apo i faqes së diskutimeve të përdoruesit të cilit dëshiron t'i dhurosh WikiDashuri.",
