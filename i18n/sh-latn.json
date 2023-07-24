@@ -1,9 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
-			"Conquistador",
-			"OC Ripper",
-			"Vlad5250"
+			"Winston Sung"
 		]
 	},
 	"wikilove-desc": "Dodaje interfejs za iskazivanje pozitivnih povratnih informacija na korisničke stranice za razgovor",
