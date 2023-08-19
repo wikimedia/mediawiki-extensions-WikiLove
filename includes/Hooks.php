@@ -6,10 +6,10 @@ use ApiMessage;
 use DatabaseUpdater;
 use IApiMessage;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 use OutputPage;
 use Skin;
 use SkinTemplate;
-use Title;
 use User;
 
 /**
