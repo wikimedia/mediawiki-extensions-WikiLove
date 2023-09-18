@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Purodha"
 		]
 	},
@@ -9,6 +10,6 @@
 	"apihelp-wikilove-param-message": "Wat dä Metmaacher tatsäschlesch enjejovve hät, för et Logbohch.",
 	"apihelp-wikilove-param-subject": "De Övverschreff för dä neue Affschnett",
 	"apihelp-wikilove-param-type": "De Zoot päsöhnlesche Aanäkännong för de Schtatestek. Se deiht zesammehange met dä Zoot, di em Mennüh ußjewähld wood un och dä Ongerzoot derfun, wi för e Beijschpell „{{int:wikilove-barnstar-original-title}}“ udder „{{int:wikilove-kittens-header}}“.",
-	"apihelp-wikilove-param-email": "Der Ennhald vun dä <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"„de eläktrohnesche Poß“\">e-mail</i>, di mer aan dä Metmaacher scheke künne, wadd ävver nit nühdesch es. Mer kridd en Warnong, wann mer dämm Metmaacher jaa kein <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"„de eläktrohnesche Poß“\">e-mail</i> scheke künne. De päsöhnlesche Aanäkännong  küdd äver esu udder esu op däm Metmaacher sing Klaafsigg drop.",
+	"apihelp-wikilove-param-email": "Der Ennhald vun dä <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"„de eläktrohnesche Poß“\">e-mail</i>, di mer aan dä Metmaacher scheke künne, wadd ävver nit nühdesch es. Mer kridd en Warnong, wann mer dämm Metmaacher jaa kein <i lang=\"en\" xml:lang=\"en\" dir=\"ltr\" title=\"„de eläktrohnesche Poß“\">e-mail</i> scheke künne. De päsöhnlesche Aanäkännong küdd äver esu udder esu op däm Metmaacher sing Klaafsigg drop.",
 	"apihelp-wikilove-example-1": "Schegg en päsöhnlesche Aanäkännong aan dä Metmaacher „<code lang=\"en\" xml:lang=\"en\" dir=\"ltr\">[[User:Dummy]]</code>“"
 }

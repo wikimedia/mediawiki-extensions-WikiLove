@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Piramidion",
 			"Ата"
 		]
@@ -11,7 +12,7 @@
 	"apihelp-wikilove-param-text": "Сирий вікітекст, який буде додано новим розділом.",
 	"apihelp-wikilove-param-message": "Власне повідомлення, введене користувачем, для цілей журналу.",
 	"apihelp-wikilove-param-subject": "Заголовок нового розділу.",
-	"apihelp-wikilove-param-type": "Тип Вікісимпатії (для статистики); це співвідноситься з типом, обраним у меню, і за бажанням, підтипом після нього (наприклад, як «{{int:wikilove-barnstar-original-title}}»  або «{{int:wikilove-kittens-header}}»).",
+	"apihelp-wikilove-param-type": "Тип Вікісимпатії (для статистики); це співвідноситься з типом, обраним у меню, і за бажанням, підтипом після нього (наприклад, як «{{int:wikilove-barnstar-original-title}}» або «{{int:wikilove-kittens-header}}»).",
 	"apihelp-wikilove-param-email": "Вміст додаткогового електронного листа користувачу. Якщо користувачу не можна написати, з'явиться попередження. Вікісимпатію можна дописати на сторінку обговорення користувача у будь-якому разі.",
 	"apihelp-wikilove-param-tags": "Мітки змін, які слід застосувати до цієї версії.",
 	"apihelp-wikilove-example-1": "Надіслати Вікісимпатію «[[User:Dummy]]»",
