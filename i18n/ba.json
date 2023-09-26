@@ -3,17 +3,18 @@
 		"authors": [
 			"Haqmar",
 			"Ләйсән",
-			"Рустам Нурыев"
+			"Рустам Нурыев",
+			"З. ӘЙЛЕ"
 		]
 	},
 	"wikilove-select-image": "Рәсем һайлағыҙ:",
-	"wikilove-header": "Исем яҙығыҙ:",
+	"wikilove-header": "Атама яҙығыҙ:",
 	"wikilove-title": "Бүләк исемен яҙығыҙ:",
 	"wikilove-enter-message": "Хәбәр яҙығыҙ:",
 	"wikilove-omit-sig": "(имзаһыҙ)",
 	"wikilove-image-example": "(мәҫәлән: Trophy.png)",
-	"wikilove-button-preview": "Алдан байҡау",
-	"wikilove-preview": "Алдан байҡау",
-	"wikilove-err-not-logged-in": "Һеҙ системала танылмағанһығыҙ. WikiLove менән ҡулланыу өсөн танылығыҙ.",
-	"wikilove-err-invalid-username": "Бындай ҡулланыусы исеме алырға ярамай"
+	"wikilove-button-preview": "Ҡарап сығырға",
+	"wikilove-preview": "Ҡарап сығырға",
+	"wikilove-err-not-logged-in": "Һеҙ системала танылмағанһығыҙ. WikiLove  ҡулланыу өсөн танылығыҙ.",
+	"wikilove-err-invalid-username": "Ҡатнашыусының бындай исеме рөхсәт ителмәй."
 }
