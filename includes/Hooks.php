@@ -1,11 +1,17 @@
 <?php
 
+// phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
+
 namespace MediaWiki\Extension\WikiLove;
 
 use ApiMessage;
-use DatabaseUpdater;
 use IApiMessage;
+use MediaWiki\ChangeTags\Hook\ChangeTagsListActiveHook;
+use MediaWiki\ChangeTags\Hook\ListDefinedTagsHook;
+use MediaWiki\Hook\BeforePageDisplayHook;
+use MediaWiki\Hook\SkinTemplateNavigation__UniversalHook;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Preferences\Hook\GetPreferencesHook;
 use MediaWiki\Title\Title;
 use OutputPage;
 use Skin;
@@ -19,45 +25,13 @@ use User;
  * @ingroup Extensions
  */
 
-class Hooks {
-
-	/**
-	 * LoadExtensionSchemaUpdates hook
-	 *
-	 * @param DatabaseUpdater $updater
-	 */
-	public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $updater ) {
-		$dbType = $updater->getDB()->getType();
-		$path = dirname( __DIR__ ) . '/patches';
-		if ( $dbType === 'mysql' ) {
-			$updater->addExtensionTable( 'wikilove_log',
-				$path . '/tables-generated.sql'
-			);
-			$updater->modifyExtensionField(
-				'wikilove_log',
-				'wll_timestamp',
-				$path . '/patch-wikilove_log-cleanup.sql'
-			);
-		} elseif ( $dbType === 'sqlite' ) {
-			$updater->addExtensionTable( 'wikilove_log',
-				$path . '/sqlite/tables-generated.sql'
-			);
-			$updater->modifyExtensionField(
-				'wikilove_log',
-				'wll_timestamp',
-				$path . '/sqlite/patch-wikilove_log-cleanup.sql'
-			);
-		} elseif ( $dbType === 'postgres' ) {
-			$updater->addExtensionTable( 'wikilove_log',
-				$path . '/postgres/tables-generated.sql'
-			);
-			$updater->modifyExtensionField(
-				'wikilove_log',
-				'wll_timestamp',
-				$path . '/postgres/patch-wikilove_log-cleanup.sql'
-			);
-		}
-	}
+class Hooks implements
+	GetPreferencesHook,
+	SkinTemplateNavigation__UniversalHook,
+	BeforePageDisplayHook,
+	ListDefinedTagsHook,
+	ChangeTagsListActiveHook
+{
 
 	/**
 	 * Add the preference in the user preferences with the GetPreferences hook.
@@ -65,7 +39,7 @@ class Hooks {
 	 * @param User $user
 	 * @param array &$preferences
 	 */
-	public static function onGetPreferences( $user, &$preferences ) {
+	public function onGetPreferences( $user, &$preferences ) {
 		global $wgWikiLoveGlobal;
 		if ( !$wgWikiLoveGlobal ) {
 			$preferences['wikilove-enabled'] = [
@@ -81,14 +55,13 @@ class Hooks {
 	 *
 	 * @param OutputPage $out
 	 * @param Skin $skin
-	 * @return true
 	 */
-	public static function onBeforePageDisplay( $out, $skin ) {
+	public function onBeforePageDisplay( $out, $skin ): void {
 		global $wgWikiLoveGlobal;
 
 		$userOptionsLookup = MediaWikiServices::getInstance()->getUserOptionsLookup();
 		if ( !$wgWikiLoveGlobal && !$userOptionsLookup->getOption( $out->getUser(), 'wikilove-enabled' ) ) {
-			return true;
+			return;
 		}
 
 		$title = self::getUserTalkPage( $skin->getTitle(), $skin->getUser() );
@@ -106,10 +79,10 @@ class Hooks {
 	/**
 	 * Add a tab or an icon the new way (MediaWiki 1.18+)
 	 *
-	 * @param SkinTemplate &$skin
+	 * @param SkinTemplate $skin
 	 * @param array &$links Navigation links
 	 */
-	public static function onSkinTemplateNavigation( &$skin, &$links ) {
+	public function onSkinTemplateNavigation__Universal( $skin, &$links ): void {
 		if ( self::showIcon( $skin ) ) {
 			self::skinConfigViewsLinks( $skin, $links['views'] );
 		} else {
@@ -219,13 +192,22 @@ class Hooks {
 	}
 
 	/**
-	 * ListDefinedTags and ChangeTagsListActive hook handler
+	 * ListDefinedTags hook handler
 	 *
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/ListDefinedTags
+	 * @param array &$tags
+	 */
+	public function onListDefinedTags( &$tags ) {
+		$tags[] = 'wikilove';
+	}
+
+	/**
+	 * ChangeTagsListActive hook handler
+	 *
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/ChangeTagsListActive
 	 * @param array &$tags
 	 */
-	public static function onListDefinedTags( &$tags ) {
+	public function onChangeTagsListActive( &$tags ) {
 		$tags[] = 'wikilove';
 	}
 

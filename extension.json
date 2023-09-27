@@ -247,27 +247,23 @@
 		"remoteExtPath": "WikiLove/resources"
 	},
 	"Hooks": {
-		"GetPreferences": [
-			"MediaWiki\\Extension\\WikiLove\\Hooks::onGetPreferences"
-		],
-		"SkinTemplateNavigation::Universal": [
-			"MediaWiki\\Extension\\WikiLove\\Hooks::onSkinTemplateNavigation"
-		],
-		"BeforePageDisplay": [
-			"MediaWiki\\Extension\\WikiLove\\Hooks::onBeforePageDisplay"
-		],
-		"LoadExtensionSchemaUpdates": [
-			"MediaWiki\\Extension\\WikiLove\\Hooks::onLoadExtensionSchemaUpdates"
-		],
-		"ListDefinedTags": [
-			"MediaWiki\\Extension\\WikiLove\\Hooks::onListDefinedTags"
-		],
-		"ChangeTagsListActive": [
-			"MediaWiki\\Extension\\WikiLove\\Hooks::onListDefinedTags"
-		],
+		"GetPreferences": "main",
+		"SkinTemplateNavigation::Universal": "main",
+		"BeforePageDisplay": "main",
+		"LoadExtensionSchemaUpdates": "schema",
+		"ListDefinedTags": "main",
+		"ChangeTagsListActive": "main",
 		"UserMergeAccountFields": [
 			"MediaWiki\\Extension\\WikiLove\\Hooks::onUserMergeAccountFields"
 		]
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\WikiLove\\Hooks"
+		},
+		"schema": {
+			"class": "MediaWiki\\Extension\\WikiLove\\SchemaHooks"
+		}
 	},
 	"config": {
 		"WikiLoveGlobal": {
