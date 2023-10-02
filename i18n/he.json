@@ -6,6 +6,7 @@
 			"Guycn2",
 			"Ijon",
 			"LaG roiL",
+			"Neriah",
 			"Ofekalef",
 			"Ofrahod",
 			"Rotemliss",
@@ -194,5 +195,5 @@
 	"wikilove-terms": "שליחה מביעה את הסכמתך לשקיפות לפי $1 הבאים.",
 	"wikilove-terms-link": "התנאים",
 	"tag-wikilove-description": "עריכה שנעשתה באמצעות ויקי־אהבה",
-	"wikiLove.js": "/* זהו דף ג'אווה סקריפט להגדרות של ויקי־אהבה. למידע נוסף ר׳\n   https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
+	"wikiLove.js": "/* זהו דף ג'אווה סקריפט להגדרות של ויקי־אהבה. למידע נוסף ר'\n   https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }
