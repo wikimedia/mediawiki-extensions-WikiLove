@@ -259,7 +259,10 @@
 	},
 	"HookHandlers": {
 		"main": {
-			"class": "MediaWiki\\Extension\\WikiLove\\Hooks"
+			"class": "MediaWiki\\Extension\\WikiLove\\Hooks",
+			"services": [
+				"UserOptionsLookup"
+			]
 		},
 		"schema": {
 			"class": "MediaWiki\\Extension\\WikiLove\\SchemaHooks"

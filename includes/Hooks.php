@@ -15,6 +15,7 @@ use MediaWiki\Output\OutputPage;
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
+use MediaWiki\User\UserOptionsLookup;
 use Skin;
 use SkinTemplate;
 
@@ -32,6 +33,18 @@ class Hooks implements
 	ListDefinedTagsHook,
 	ChangeTagsListActiveHook
 {
+
+	/** @var UserOptionsLookup */
+	private $userOptionsLookup;
+
+	/**
+	 * @param UserOptionsLookup $userOptionsLookup
+	 */
+	public function __construct(
+		UserOptionsLookup $userOptionsLookup
+	) {
+		$this->userOptionsLookup = $userOptionsLookup;
+	}
 
 	/**
 	 * Add the preference in the user preferences with the GetPreferences hook.
@@ -59,8 +72,10 @@ class Hooks implements
 	public function onBeforePageDisplay( $out, $skin ): void {
 		global $wgWikiLoveGlobal;
 
-		$userOptionsLookup = MediaWikiServices::getInstance()->getUserOptionsLookup();
-		if ( !$wgWikiLoveGlobal && !$userOptionsLookup->getOption( $out->getUser(), 'wikilove-enabled' ) ) {
+		if (
+			!$wgWikiLoveGlobal &&
+			!$this->userOptionsLookup->getOption( $out->getUser(), 'wikilove-enabled' )
+		) {
 			return;
 		}
 
@@ -84,9 +99,9 @@ class Hooks implements
 	 */
 	public function onSkinTemplateNavigation__Universal( $skin, &$links ): void {
 		if ( self::showIcon( $skin ) ) {
-			self::skinConfigViewsLinks( $skin, $links['views'] );
+			$this->skinConfigViewsLinks( $skin, $links['views'] );
 		} else {
-			self::skinConfigViewsLinks( $skin, $links['actions'] );
+			$this->skinConfigViewsLinks( $skin, $links['actions'] );
 		}
 	}
 
@@ -99,12 +114,14 @@ class Hooks implements
 	 * @param Skin $skin
 	 * @param array &$views
 	 */
-	private static function skinConfigViewsLinks( $skin, &$views ) {
+	private function skinConfigViewsLinks( $skin, &$views ) {
 		global $wgWikiLoveGlobal;
 
-		$userOptionsLookup = MediaWikiServices::getInstance()->getUserOptionsLookup();
 		// If WikiLove is turned off for this user, don't display tab.
-		if ( !$wgWikiLoveGlobal && !$userOptionsLookup->getOption( $skin->getUser(), 'wikilove-enabled' ) ) {
+		if (
+			!$wgWikiLoveGlobal &&
+			!$this->userOptionsLookup->getOption( $skin->getUser(), 'wikilove-enabled' )
+		) {
 			return;
 		}
 
