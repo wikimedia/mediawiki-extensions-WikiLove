@@ -10,22 +10,38 @@ use DeferredUpdates;
 use DerivativeContext;
 use ExtensionRegistry;
 use LqtDispatch;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Parser\Sanitizer;
 use MediaWiki\Request\DerivativeRequest;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
+use Parser;
 use Wikimedia\ParamValidator\ParamValidator;
 use Wikimedia\Rdbms\DBQueryError;
 
 class ApiWikiLove extends ApiBase {
+	/** @var Parser */
+	private $parser;
+
+	/**
+	 * @param ApiMain $main
+	 * @param string $action
+	 * @param Parser $parser
+	 */
+	public function __construct(
+		ApiMain $main,
+		$action,
+		Parser $parser
+	) {
+		parent::__construct( $main, $action );
+		$this->parser = $parser;
+	}
+
 	/** @inheritDoc */
 	public function execute() {
 		$params = $this->extractRequestParams();
 
 		// In some cases we need the wiki mark-up stripped from the subject
-		$strippedSubject = MediaWikiServices::getInstance()->getParser()
-			->stripSectionName( $params['subject'] );
+		$strippedSubject = $this->parser->stripSectionName( $params['subject'] );
 
 		$title = Title::newFromText( $params['title'] );
 		if ( $title === null ) {

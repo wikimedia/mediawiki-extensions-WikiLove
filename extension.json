@@ -14,7 +14,12 @@
 		"MediaWiki": ">= 1.41"
 	},
 	"APIModules": {
-		"wikilove": "MediaWiki\\Extension\\WikiLove\\ApiWikiLove"
+		"wikilove": {
+			"class": "MediaWiki\\Extension\\WikiLove\\ApiWikiLove",
+			"services": [
+				"Parser"
+			]
+		}
 	},
 	"MessagesDirs": {
 		"WikiLove": [
