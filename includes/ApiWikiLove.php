@@ -11,10 +11,10 @@ use DerivativeContext;
 use ExtensionRegistry;
 use LqtDispatch;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Parser\Sanitizer;
 use MediaWiki\Request\DerivativeRequest;
 use MediaWiki\Title\Title;
-use Sanitizer;
-use User;
+use MediaWiki\User\User;
 use Wikimedia\ParamValidator\ParamValidator;
 use Wikimedia\Rdbms\DBQueryError;
 
@@ -146,7 +146,7 @@ class ApiWikiLove extends ApiBase {
 			'wll_email' => $email,
 		];
 
-		try{
+		try {
 			$dbw->insert( 'wikilove_log', $values, __METHOD__ );
 		} catch ( DBQueryError $dbqe ) {
 			$this->addWarning( 'Action was not logged' );

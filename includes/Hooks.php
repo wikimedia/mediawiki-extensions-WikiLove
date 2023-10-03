@@ -11,12 +11,12 @@ use MediaWiki\ChangeTags\Hook\ListDefinedTagsHook;
 use MediaWiki\Hook\BeforePageDisplayHook;
 use MediaWiki\Hook\SkinTemplateNavigation__UniversalHook;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Output\OutputPage;
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
 use MediaWiki\Title\Title;
-use OutputPage;
+use MediaWiki\User\User;
 use Skin;
 use SkinTemplate;
-use User;
 
 /**
  * Hooks for WikiLove extension
