@@ -6,7 +6,6 @@
 		"wikimedia/mediawiki"
 	],
 	"rules": {
-		"no-multi-str": "off",
 		"max-len": "off",
 		"no-var": "warn"
 	}
