@@ -17,22 +17,29 @@ use MediaWiki\User\User;
 use Parser;
 use Wikimedia\ParamValidator\ParamValidator;
 use Wikimedia\Rdbms\DBQueryError;
+use Wikimedia\Rdbms\IConnectionProvider;
 
 class ApiWikiLove extends ApiBase {
+	/** @var IConnectionProvider */
+	private $dbProvider;
+
 	/** @var Parser */
 	private $parser;
 
 	/**
 	 * @param ApiMain $main
 	 * @param string $action
+	 * @param IConnectionProvider $dbProvider
 	 * @param Parser $parser
 	 */
 	public function __construct(
 		ApiMain $main,
 		$action,
+		IConnectionProvider $dbProvider,
 		Parser $parser
 	) {
 		parent::__construct( $main, $action );
+		$this->dbProvider = $dbProvider;
 		$this->parser = $parser;
 	}
 
@@ -140,7 +147,7 @@ class ApiWikiLove extends ApiBase {
 	 * @return void
 	 */
 	private function saveInDb( $talk, $subject, $message, $type, $email ) {
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = $this->dbProvider->getPrimaryDatabase();
 		$receiver = User::newFromName( $talk->getSubjectPage()->getBaseText() );
 		if ( $receiver === false || $receiver->isAnon() || $receiver->isTemp() ) {
 			$this->addWarning( 'apiwarn-wikilove-ignoringunregistered' );
