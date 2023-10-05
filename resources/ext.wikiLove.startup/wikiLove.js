@@ -153,7 +153,9 @@
 					$( '#mw-wikilove-subtype' ).show();
 
 					// change and show the subtype label depending on the type
-					$( '#mw-wikilove-subtype-label' ).text( options.types[ currentTypeId ].select || mw.msg( 'wikilove-select-type' ) );
+					$( '#mw-wikilove-subtype-label' ).text(
+						options.types[ currentTypeId ].select || mw.msg( 'wikilove-select-type' )
+					);
 					$( '#mw-wikilove-subtype-label' ).show();
 					$.wikiLove.changeSubtype(); // update controls depending on the currently selected (i.e. first) subtype
 				} else {

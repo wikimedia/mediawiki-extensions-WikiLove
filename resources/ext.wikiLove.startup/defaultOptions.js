@@ -240,7 +240,9 @@
 						image: 'Writers Barnstar Hires.png'
 					}
 				},
-				icon: mw.config.get( 'wgExtensionAssetsPath' ) + '/WikiLove/resources/images/icons/wikilove-icon-barnstar.png' // icon for left-side menu
+				// icon for left-side menu
+				icon: mw.config.get( 'wgExtensionAssetsPath' ) +
+					'/WikiLove/resources/images/icons/wikilove-icon-barnstar.png'
 			},
 			food: {
 				name: mw.msg( 'wikilove-type-food' ), // name of the type (appears in the types menu)
@@ -350,7 +352,8 @@
 						imageSize: '135px'
 					}
 				},
-				icon: mw.config.get( 'wgExtensionAssetsPath' ) + '/WikiLove/resources/images/icons/wikilove-icon-food.png'
+				icon: mw.config.get( 'wgExtensionAssetsPath' ) +
+					'/WikiLove/resources/images/icons/wikilove-icon-food.png'
 			},
 			kitten: {
 				name: mw.msg( 'wikilove-type-kittens' ),
@@ -358,12 +361,20 @@
 				header: mw.msg( 'wikilove-kittens-header' ),
 				text: '[[$3|left|150px]]\n$1\n\n~~~~\n<br style="clear: both;"/>', // $3 is the image filename
 				gallery: {
-					imageList: [ 'Cucciolo gatto Bibo.jpg', 'Kitten (06) by Ron.jpg', 'Kitten-stare.jpg', 'Red Kitten 01.jpg', 'Kitten in a helmet.jpg', 'Cute grey kitten.jpg' ],
+					imageList: [
+						'Cucciolo gatto Bibo.jpg',
+						'Kitten (06) by Ron.jpg',
+						'Kitten-stare.jpg',
+						'Red Kitten 01.jpg',
+						'Kitten in a helmet.jpg',
+						'Cute grey kitten.jpg'
+					],
 					width: 145,
 					height: 150,
 					number: 3
 				},
-				icon: mw.config.get( 'wgExtensionAssetsPath' ) + '/WikiLove/resources/images/icons/wikilove-icon-kitten.png'
+				icon: mw.config.get( 'wgExtensionAssetsPath' ) +
+					'/WikiLove/resources/images/icons/wikilove-icon-kitten.png'
 			},
 			goat: {
 				name: mw.msg( 'wikilove-type-goats' ),
@@ -371,18 +382,24 @@
 				header: mw.msg( 'wikilove-goats-header' ),
 				text: '[[$3|left|150px]]\n$1\n\n~~~~\n<br style="clear: both;"/>', // $3 is the image filename
 				gallery: {
-					imageList: [ 'A aesthetic goat.JPG', 'Boer Goat (8742860752).jpg', 'Házikecske portré.JPG' ],
+					imageList: [
+						'A aesthetic goat.JPG',
+						'Boer Goat (8742860752).jpg',
+						'Házikecske portré.JPG'
+					],
 					width: 145,
 					height: 150,
 					number: 3
 				},
-				icon: mw.config.get( 'wgExtensionAssetsPath' ) + '/WikiLove/resources/images/icons/wikilove-icon-goat.png'
+				icon: mw.config.get( 'wgExtensionAssetsPath' ) +
+					'/WikiLove/resources/images/icons/wikilove-icon-goat.png'
 			},
 			// default type, nice to leave this one in place when adding other types
 			makeyourown: {
 				name: mw.msg( 'wikilove-type-makeyourown' ),
 				fields: [ 'header', 'title', 'image', 'message' ],
-				icon: mw.config.get( 'wgExtensionAssetsPath' ) + '/WikiLove/resources/images/icons/wikilove-icon-create.png'
+				icon: mw.config.get( 'wgExtensionAssetsPath' ) +
+					'/WikiLove/resources/images/icons/wikilove-icon-create.png'
 			}
 		}
 	};
