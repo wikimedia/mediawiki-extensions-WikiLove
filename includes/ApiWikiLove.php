@@ -14,7 +14,7 @@ use MediaWiki\Parser\Sanitizer;
 use MediaWiki\Request\DerivativeRequest;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
-use Parser;
+use ParserFactory;
 use Wikimedia\ParamValidator\ParamValidator;
 use Wikimedia\Rdbms\DBQueryError;
 use Wikimedia\Rdbms\IConnectionProvider;
@@ -23,24 +23,24 @@ class ApiWikiLove extends ApiBase {
 	/** @var IConnectionProvider */
 	private $dbProvider;
 
-	/** @var Parser */
-	private $parser;
+	/** @var ParserFactory */
+	private $parserFactory;
 
 	/**
 	 * @param ApiMain $main
 	 * @param string $action
 	 * @param IConnectionProvider $dbProvider
-	 * @param Parser $parser
+	 * @param ParserFactory $parserFactory
 	 */
 	public function __construct(
 		ApiMain $main,
 		$action,
 		IConnectionProvider $dbProvider,
-		Parser $parser
+		ParserFactory $parserFactory
 	) {
 		parent::__construct( $main, $action );
 		$this->dbProvider = $dbProvider;
-		$this->parser = $parser;
+		$this->parserFactory = $parserFactory;
 	}
 
 	/** @inheritDoc */
@@ -48,7 +48,7 @@ class ApiWikiLove extends ApiBase {
 		$params = $this->extractRequestParams();
 
 		// In some cases we need the wiki mark-up stripped from the subject
-		$strippedSubject = $this->parser->stripSectionName( $params['subject'] );
+		$strippedSubject = $this->parserFactory->getInstance()->stripSectionName( $params['subject'] );
 
 		$title = Title::newFromText( $params['title'] );
 		if ( $title === null ) {
