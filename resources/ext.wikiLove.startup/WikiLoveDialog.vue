@@ -200,7 +200,6 @@ module.exports = Vue.defineComponent( {
 	background: #f0f0f0;
 	padding: 0.9em 1.4em 0.6em;
 	font-weight: bold;
-
 	display: flex;
 	align-items: center;
 
@@ -220,7 +219,7 @@ module.exports = Vue.defineComponent( {
 
 .wikilove-transparent-overlay {
 	opacity: @opacity-medium;
-	background: white;
+	background: #fff;
 	position: absolute;
 	left: 0;
 	right: 0;
