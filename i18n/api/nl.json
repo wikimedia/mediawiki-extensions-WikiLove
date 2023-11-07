@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Encycloon",
-			"HanV"
+			"HanV",
+			"McDutchie"
 		]
 	},
 	"apihelp-wikilove-description": "Laat Wikiwaardering blijken aan een andere gebruiker.\n\nWikiwaardering is een positieve boodschap, die op overlegpagina's van gebruikers geplaatst kan worden via een speciale interface met ingestelde of lokaal gedefinieerde sjablonen. Deze actie voegt de wikitext toe aan een bepaalde overlegpagina. Het type en andere gegevens worden gelogd voor statistische doeleinden.",
 	"apihelp-wikilove-summary": "Laat een andere gebruiker Wikiwaardering blijken",
-	"apihelp-wikilove-extended-description": "Wikiwaardering is een positieve boodschap, die op overlegpagina's van gebruikers geplaatst kan worden via een speciale interface met ingestelde of lokaal gedefinieerde sjablonen. Deze actie voegt de wikitext toe aan een bepaalde overlegpagina. Het type en andere gegevens worden gelogd voor statistische doeleinden.",
+	"apihelp-wikilove-extended-description": "Wikiwaardering is een positieve boodschap die op overlegpagina’s van gebruikers geplaatst kan worden via een speciale interface met ingestelde of lokaal gedefinieerde sjablonen. Deze handeling voegt de wikitekst toe aan een bepaalde overlegpagina. Het type wordt samen met andere gegevens gelogd voor statistische doeleinden.",
 	"apihelp-wikilove-param-title": "Volledige paginanaam van de gebruikerspagina of overlegpagina van de gebruiker die Wikiwaardering ontvangt.",
 	"apihelp-wikilove-param-text": "Onopgemaakte wikitext om in de nieuwe sectie toe te voegen.",
 	"apihelp-wikilove-param-message": "Bericht dat de gebruiker heeft ingevoerd, voor het loggen.",
@@ -17,5 +18,5 @@
 	"apihelp-wikilove-param-tags": "De labels voor de revisie wijzigen.",
 	"apihelp-wikilove-example-1": "Laat Wikiwaardering blijken aan \"[[User:Dummy]]\"",
 	"apiwarn-wikilove-ignoringunregistered": "Log ongeregistreerde ontvangers niet.",
-	"apiwarn-wikilove-notlogged": "Actie is niet gelogd."
+	"apiwarn-wikilove-notlogged": "De handeling is niet gelogd"
 }
