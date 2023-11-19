@@ -259,9 +259,7 @@
 		"LoadExtensionSchemaUpdates": "schema",
 		"ListDefinedTags": "main",
 		"ChangeTagsListActive": "main",
-		"UserMergeAccountFields": [
-			"MediaWiki\\Extension\\WikiLove\\Hooks::onUserMergeAccountFields"
-		]
+		"UserMergeAccountFields": "usermerge"
 	},
 	"HookHandlers": {
 		"main": {
@@ -269,6 +267,9 @@
 			"services": [
 				"UserOptionsLookup"
 			]
+		},
+		"usermerge": {
+			"class": "MediaWiki\\Extension\\WikiLove\\UserMergeHooks"
 		},
 		"schema": {
 			"class": "MediaWiki\\Extension\\WikiLove\\SchemaHooks"
