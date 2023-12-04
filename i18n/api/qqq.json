@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"McDutchie",
 			"Zoranzoki21"
 		]
 	},
@@ -12,7 +13,7 @@
 	"apihelp-wikilove-param-subject": "{{doc-apihelp-param|wikilove|subject}}",
 	"apihelp-wikilove-param-type": "{{doc-apihelp-param|wikilove|type}}",
 	"apihelp-wikilove-param-email": "{{doc-apihelp-param|wikilove|email}}",
-	"apihelp-wikilove-param-tags": "{{doc-apihelp-param|wikilove|tags}}",
+	"apihelp-wikilove-param-tags": "A '''[[mw:Help:Tags|change tag]]''' is an annotation associated with an edit or log entry. \n\n{{doc-apihelp-param|wikilove|tags}}",
 	"apihelp-wikilove-example-1": "{{doc-apihelp-example|wikilove}}",
 	"apiwarn-wikilove-ignoringunregistered": "{{doc-apierror}}",
 	"apiwarn-wikilove-notlogged": "{{doc-apierror}}"
