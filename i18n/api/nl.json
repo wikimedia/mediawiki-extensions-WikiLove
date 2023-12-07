@@ -15,7 +15,7 @@
 	"apihelp-wikilove-param-subject": "Kop onderwerp van de nieuwe sectie.",
 	"apihelp-wikilove-param-type": "Type van Wikiwaardering (voor statistische doeleinden); dit correspondeert met een type geselecteerd in het menu, en optioneel een subtype hierna (bijv. als in \"{{int:wikilove-barnstar-original-title}}\" of \"{{int:wikilove-kittens-header}}\")",
 	"apihelp-wikilove-param-email": "Inhoud van de optionele e-mail die naar de gebruiker verzonden wordt. Als de gebruiker niet gemaild kan worden, wordt een waarschuwing afgegeven. Wikiwaardering zal sowieso op de overlegpagina geplaatst worden.",
-	"apihelp-wikilove-param-tags": "De labels voor de revisie wijzigen.",
+	"apihelp-wikilove-param-tags": "Wijzigingslabels om op de versie toe te passen.",
 	"apihelp-wikilove-example-1": "Laat Wikiwaardering blijken aan \"[[User:Dummy]]\"",
 	"apiwarn-wikilove-ignoringunregistered": "Log ongeregistreerde ontvangers niet.",
 	"apiwarn-wikilove-notlogged": "De handeling is niet gelogd"
