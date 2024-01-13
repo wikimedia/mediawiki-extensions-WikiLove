@@ -234,7 +234,7 @@
 			]
 		},
 		"ext.wikiLove.local": {
-			"class": "ResourceLoaderWikiModule",
+			"class": "MediaWiki\\ResourceLoader\\WikiModule",
 			"scripts": [
 				"MediaWiki:WikiLove.js"
 			]
