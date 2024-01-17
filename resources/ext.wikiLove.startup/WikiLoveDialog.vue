@@ -125,9 +125,6 @@ const Vue = require( 'vue' );
 // @vue/component
 module.exports = Vue.defineComponent( {
 	name: 'WikiLoveDialog',
-	compatConfig: {
-		MODE: 3
-	},
 	components: {
 		CdxButton,
 		CdxIcon
