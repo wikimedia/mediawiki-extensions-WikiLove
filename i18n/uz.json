@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Sociologist",
-			"Optima D"
+			"Optima D",
+			"Malikxan"
 		]
 	},
 	"wikilove-desc": "Foydalanuvchi munozaralari sahifalarida tegishli foydalanuvchiga nisbatan bildirilajak ijobiy fikr-mulohazalarini osonlashtirish uchun interfeys qoʻshish",
@@ -183,6 +184,6 @@
 	"wikilove-terms": "Tugmani bosish orqali siz ushbu $1ga rozi ekanligingizni bildirmoqdasiz.",
 	"wikilove-terms-link": "shartlar",
 	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement",
-	"tag-wikilove-description": "VikiSevgi asbobi orqali qilingan tahrir",
+	"tag-wikilove-description": "VikiSevgi asbobi yordamida qilingan tahrir",
 	"wikiLove.js": "/* JavaScript placed here customizes WikiLove, see https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }
