@@ -3,7 +3,7 @@
 	const overlayContainer = document.createElement( 'div' );
 	const WikiLoveDialog = require( './WikiLoveDialog.vue' );
 	const Vue = require( 'vue' );
-	var options = {}, // options modifiable by the user
+	let options = {}, // options modifiable by the user
 		currentTypeId = null, // id of the currently selected type (e.g. 'barnstar' or 'makeyourown')
 		currentSubtypeId = null, // id of the currently selected subtype (e.g. 'original' or 'special')
 		currentTypeOrSubtype = null, // content of the current (sub)type (i.e. an object with title, descr, text, etc.)
@@ -23,7 +23,7 @@
 		 * @param {string[]} [extraTags] Extra tags to apply
 		 */
 		openDialog: function ( recipients, extraTags ) {
-			var type, $typeList, typeId, $button, commonsLink, termsLink;
+			let type, $typeList, typeId, $button, commonsLink, termsLink;
 			// If a list of recipients are specified, this will override the normal
 			// behavior of WikiLove, which is to post on the Talk page of the
 			// current page. It will also disable redirecting the user after submitting.
@@ -122,7 +122,7 @@
 		 * @param {jQuery.Event} e Click event
 		 */
 		clickType: function ( e ) {
-			var subtypeId, subtype,
+			let subtypeId, subtype,
 				newTypeId = $( this ).data( 'typeId' );
 
 			e.preventDefault();
@@ -175,7 +175,7 @@
 		 */
 		changeSubtype: function () {
 			// eslint-disable-next-line no-jquery/no-sizzle
-			var newSubtypeId = $( '#mw-wikilove-subtype option:selected' ).first().data( 'subtypeId' );
+			const newSubtypeId = $( '#mw-wikilove-subtype option:selected' ).first().data( 'subtypeId' );
 
 			$.wikiLove.rememberInputData(); // remember previously entered data
 
@@ -236,7 +236,7 @@
 		 * Show a preview of the image for a subtype.
 		 */
 		showImagePreview: function () {
-			var $img,
+			let $img,
 				title = $.wikiLove.normalizeFilename( currentTypeOrSubtype.image ),
 				loadingType = currentTypeOrSubtype;
 			$( '#mw-wikilove-image-preview' ).show();
@@ -289,7 +289,7 @@
 		 */
 		updateAllDetails: function () {
 			// use remembered data for fields that can be set by the user
-			var currentRememberData = {
+			const currentRememberData = {
 				header: ( currentTypeOrSubtype.fields.indexOf( 'header' ) !== -1 ? rememberData.header : '' ),
 				title: ( currentTypeOrSubtype.fields.indexOf( 'title' ) !== -1 ? rememberData.title : '' ),
 				message: ( currentTypeOrSubtype.fields.indexOf( 'message' ) !== -1 ? rememberData.message : '' ),
@@ -361,7 +361,7 @@
 		 * @return {boolean} Event propagates
 		 */
 		validatePreviewForm: function ( e ) {
-			var imageTitle;
+			let imageTitle;
 
 			e.preventDefault();
 			$( '#mw-wikilove-success' ).hide();
@@ -413,7 +413,7 @@
 							prop: 'imageinfo'
 						} )
 							.done( function ( data ) {
-								var page = data.query.pages[ 0 ];
+								const page = data.query.pages[ 0 ];
 								// See if image exists locally or through InstantCommons
 								if ( !page.missing || page.imageinfo ) {
 									// Image exists
@@ -452,7 +452,7 @@
 		 * After the form is validated, perform preview.
 		 */
 		submitPreview: function () {
-			var text = $.wikiLove.prepareMsg( currentTypeOrSubtype.text || options.types[ currentTypeId ].text || options.defaultText );
+			const text = $.wikiLove.prepareMsg( currentTypeOrSubtype.text || options.types[ currentTypeId ].text || options.defaultText );
 			$.wikiLove.doPreview( text, $( '#mw-wikilove-header' ).val() );
 		},
 
@@ -504,7 +504,7 @@
 		 * @return {string} Normalized filename with prefix
 		 */
 		normalizeFilename: function ( filename ) {
-			var title = mw.Title.newFromImg( { src: filename } ) || mw.Title.newFromText( filename, mw.config.get( 'wgNamespaceIds' ).file );
+			const title = mw.Title.newFromImg( { src: filename } ) || mw.Title.newFromText( filename, mw.config.get( 'wgNamespaceIds' ).file );
 			if ( !title ) {
 				return filename;
 			}
@@ -565,7 +565,7 @@
 		 * @return {boolean} Event propagates
 		 */
 		submitSend: function ( e ) {
-			var submitData;
+			let submitData;
 
 			e.preventDefault();
 			$( '#mw-wikilove-success' ).hide();
@@ -619,7 +619,7 @@
 		 * @param {string[]} extraTags Additional tags to apply to the edit
 		 */
 		doSend: function ( subject, wikitext, message, type, email, extraTags ) {
-			var targetBaseUrl, currentBaseUrl,
+			let targetBaseUrl, currentBaseUrl,
 				wikiLoveNumberAttempted = 0,
 				wikiLoveNumberPosted = 0;
 
@@ -633,7 +633,7 @@
 			}
 
 			targets.forEach( ( target ) => {
-				var sendData = {
+				const sendData = {
 					action: 'wikilove',
 					title: 'User:' + target,
 					type: type,
@@ -728,7 +728,7 @@
 		 * thumbnails from the API, and constructs a thumbnail gallery with them.
 		 */
 		showGallery: function () {
-			var i, id, index, loadingType, loadingIndex, galleryNumber, $img,
+			let i, id, index, loadingType, loadingIndex, galleryNumber, $img,
 				titles = [],
 				imageList = currentTypeOrSubtype.gallery.imageList.slice();
 
@@ -827,7 +827,7 @@
 		 * Init function which is called upon page load. Binds the WikiLove icon to opening the dialog.
 		 */
 		init: function () {
-			var $wikiLoveLink = $( [] );
+			let $wikiLoveLink = $( [] );
 			options = $.wikiLoveOptions;
 
 			if ( $( '#ca-wikilove' ).length ) {
