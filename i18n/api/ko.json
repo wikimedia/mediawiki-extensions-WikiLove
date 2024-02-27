@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ykhwong"
+			"Ykhwong",
+			"Dr1t jg"
 		]
 	},
 	"apihelp-wikilove-description": "위키사랑을 다른 사용자에게 부여합니다.\n\n위키사랑은 프리셋이나 지역적으로 정의된 틀이 있는 편리한 인터페이스를 통해 사용자의 토론 문서에 게시되는 긍정적인 메시지입니다. 이 동작은 지정된 위키텍스트를 특정 토론 문서에 추가합니다. 통계적인 목적의 경우 유형과 기타 데이터가 기록됩니다.",
@@ -13,5 +14,8 @@
 	"apihelp-wikilove-param-subject": "새 문단의 제목 머릿말입니다.",
 	"apihelp-wikilove-param-type": "위키사랑의 유형 (통계용). 이것은 메뉴에서 선택한 유형과 일치하며 그 뒤에 선택적으로 아형이 올 수 있습니다. (예: {{int:wikilove-barnstar-original-title}}\" 또는 \"{{int:wikilove-kittens-header}}\" 안에서)",
 	"apihelp-wikilove-param-email": "사용자에게 보낼 선택적 이메일 메시지의 내용. 사용자가 이메일을 받을 수 없으면 경고가 반환됩니다. 위키사랑은 어떠한 방식으로든 사용자의 토론 문서에 전달됩니다.",
-	"apihelp-wikilove-example-1": "위키사랑을 \"[[User:Dummy]]\"로 보내기"
+	"apihelp-wikilove-param-tags": "수정에 적용하기 위해 태그를 변경해.",
+	"apihelp-wikilove-example-1": "위키사랑을 \"[[User:Dummy]]\"로 보내기",
+	"apiwarn-wikilove-ignoringunregistered": "등록되지 않은 수신자를 기록하지 않음",
+	"apiwarn-wikilove-notlogged": "작업이 기록되지 않았음."
 }
