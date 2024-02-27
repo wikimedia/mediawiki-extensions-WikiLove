@@ -269,7 +269,10 @@
 			]
 		},
 		"usermerge": {
-			"class": "MediaWiki\\Extension\\WikiLove\\UserMergeHooks"
+			"class": "MediaWiki\\Extension\\WikiLove\\UserMergeHooks",
+			"services": [
+				"DBLoadBalancer"
+			]
 		},
 		"schema": {
 			"class": "MediaWiki\\Extension\\WikiLove\\SchemaHooks"
