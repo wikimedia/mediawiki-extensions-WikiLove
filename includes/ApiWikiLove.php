@@ -11,6 +11,7 @@ use ExtensionRegistry;
 use LqtDispatch;
 use MediaWiki\Deferred\DeferredUpdates;
 use MediaWiki\Parser\Sanitizer;
+use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Request\DerivativeRequest;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
@@ -26,21 +27,27 @@ class ApiWikiLove extends ApiBase {
 	/** @var ParserFactory */
 	private $parserFactory;
 
+	/** @var PermissionManager */
+	private $permissionManager;
+
 	/**
 	 * @param ApiMain $main
 	 * @param string $action
 	 * @param IConnectionProvider $dbProvider
 	 * @param ParserFactory $parserFactory
+	 * @param PermissionManager $permissionManager
 	 */
 	public function __construct(
 		ApiMain $main,
 		$action,
 		IConnectionProvider $dbProvider,
-		ParserFactory $parserFactory
+		ParserFactory $parserFactory,
+		PermissionManager $permissionManager
 	) {
 		parent::__construct( $main, $action );
 		$this->dbProvider = $dbProvider;
 		$this->parserFactory = $parserFactory;
+		$this->permissionManager = $permissionManager;
 	}
 
 	/** @inheritDoc */
@@ -55,7 +62,7 @@ class ApiWikiLove extends ApiBase {
 			$this->dieWithError( [ 'nosuchusershort', $params['title'] ], 'nosuchuser' );
 		}
 
-		$talk = Hooks::getUserTalkPage( $title, $this->getUser() );
+		$talk = Hooks::getUserTalkPage( $this->permissionManager, $title, $this->getUser() );
 		// getUserTalkPage() returns an ApiMessage on error
 		if ( $talk instanceof ApiMessage ) {
 			$this->dieWithError( $talk );

@@ -18,7 +18,8 @@
 			"class": "MediaWiki\\Extension\\WikiLove\\ApiWikiLove",
 			"services": [
 				"DBLoadBalancerFactory",
-				"ParserFactory"
+				"ParserFactory",
+				"PermissionManager"
 			]
 		}
 	},
@@ -266,6 +267,7 @@
 			"class": "MediaWiki\\Extension\\WikiLove\\Hooks",
 			"services": [
 				"MainConfig",
+				"PermissionManager",
 				"UserOptionsLookup"
 			]
 		},
