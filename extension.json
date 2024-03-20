@@ -265,12 +265,14 @@
 		"main": {
 			"class": "MediaWiki\\Extension\\WikiLove\\Hooks",
 			"services": [
+				"MainConfig",
 				"UserOptionsLookup"
 			]
 		},
 		"usermerge": {
 			"class": "MediaWiki\\Extension\\WikiLove\\UserMergeHooks",
 			"services": [
+				"MainConfig",
 				"DBLoadBalancer"
 			]
 		},
