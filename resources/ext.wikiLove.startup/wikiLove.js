@@ -10,10 +10,10 @@
 		rememberData = null, // input data to remember when switching types or subtypes
 		emailable = false, // whether or not the target user is emailable
 		redirect = true, // whether or not to redirect the user to the WikiLove message after it has been posted
-		targets = [], // the recipients of the WikiLove
-		maxRecipients = 10, // maximum number of simultaneous recipients
-		gallery = {},
-		api = new mw.Api();
+		targets = []; // the recipients of the WikiLove
+	const maxRecipients = 10; // maximum number of simultaneous recipients
+	let gallery = {};
+	const api = new mw.Api();
 
 	module.exports = {
 		/**
@@ -23,7 +23,7 @@
 		 * @param {string[]} [extraTags] Extra tags to apply
 		 */
 		openDialog: function ( recipients, extraTags ) {
-			let type, $typeList, typeId, $button, commonsLink, termsLink;
+			let type, typeId, $button;
 			// If a list of recipients are specified, this will override the normal
 			// behavior of WikiLove, which is to post on the Talk page of the
 			// current page. It will also disable redirecting the user after submitting.
@@ -46,7 +46,7 @@
 			options.extraTags = extraTags || [];
 
 			// Build a type list like this:
-			$typeList = $( '<ul>' ).attr( 'id', 'mw-wikilove-types' );
+			const $typeList = $( '<ul>' ).attr( 'id', 'mw-wikilove-types' );
 			for ( typeId in options.types ) {
 				type = options.types[ typeId ];
 				if ( !$.isPlainObject( type ) ) {
@@ -66,11 +66,11 @@
 				$typeList.append( $( '<li>' ).append( $button ) );
 			}
 
-			commonsLink = mw.html.element( 'a', {
+			const commonsLink = mw.html.element( 'a', {
 				href: mw.msg( 'wikilove-commons-url' ),
 				target: '_blank'
 			}, mw.msg( 'wikilove-commons-link' ) );
-			termsLink = mw.html.element( 'a', {
+			const termsLink = mw.html.element( 'a', {
 				href: mw.msg( 'wikilove-terms-url' ),
 				target: '_blank'
 			}, mw.msg( 'wikilove-terms-link' ) );
@@ -122,8 +122,8 @@
 		 * @param {jQuery.Event} e Click event
 		 */
 		clickType: function ( e ) {
-			let subtypeId, subtype,
-				newTypeId = $( this ).data( 'typeId' );
+			let subtypeId, subtype;
+			const newTypeId = $( this ).data( 'typeId' );
 
 			e.preventDefault();
 			$.wikiLove.rememberInputData(); // remember previously entered data
@@ -236,9 +236,9 @@
 		 * Show a preview of the image for a subtype.
 		 */
 		showImagePreview: function () {
-			let $img,
-				title = $.wikiLove.normalizeFilename( currentTypeOrSubtype.image ),
-				loadingType = currentTypeOrSubtype;
+			let $img;
+			const title = $.wikiLove.normalizeFilename( currentTypeOrSubtype.image );
+			const loadingType = currentTypeOrSubtype;
 			$( '#mw-wikilove-image-preview' ).show();
 			$( '#mw-wikilove-image-preview-content' ).html( '' );
 			// TODO: Use CSS transitions
@@ -565,8 +565,6 @@
 		 * @return {boolean} Event propagates
 		 */
 		submitSend: function ( e ) {
-			let submitData;
-
 			e.preventDefault();
 			$( '#mw-wikilove-success' ).hide();
 			$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
@@ -593,7 +591,7 @@
 			// We don't need to do any image validation here since its not actually possible to click
 			// Send WikiLove without having a valid image entered.
 
-			submitData = {
+			const submitData = {
 				header: $( '#mw-wikilove-header' ).val(),
 				text: $.wikiLove.prepareMsg( currentTypeOrSubtype.text || options.types[ currentTypeId ].text || options.defaultText ),
 				message: $( '#mw-wikilove-message' ).val(),
@@ -728,9 +726,9 @@
 		 * thumbnails from the API, and constructs a thumbnail gallery with them.
 		 */
 		showGallery: function () {
-			let i, id, index, loadingType, loadingIndex, galleryNumber, $img,
-				titles = [],
-				imageList = currentTypeOrSubtype.gallery.imageList.slice();
+			let i, id, index, loadingIndex, galleryNumber, $img;
+			const titles = [];
+			const imageList = currentTypeOrSubtype.gallery.imageList.slice();
 
 			$( '#mw-wikilove-gallery-content' ).html( '' );
 			gallery = {};
@@ -756,7 +754,7 @@
 			}
 
 			index = 0;
-			loadingType = currentTypeOrSubtype;
+			const loadingType = currentTypeOrSubtype;
 			loadingIndex = 0;
 			api.post( {
 				formatversion: 2,

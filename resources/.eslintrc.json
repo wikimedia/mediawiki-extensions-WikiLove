@@ -7,7 +7,7 @@
 	],
 	"rules": {
 		"max-len": "off",
-		"no-var": "warn",
-		"prefer-const": "warn"
+		"no-var": "error",
+		"prefer-const": "error"
 	}
 }
