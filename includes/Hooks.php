@@ -8,6 +8,7 @@ use ApiMessage;
 use IApiMessage;
 use MediaWiki\ChangeTags\Hook\ChangeTagsListActiveHook;
 use MediaWiki\ChangeTags\Hook\ListDefinedTagsHook;
+use MediaWiki\Config\Config;
 use MediaWiki\Hook\BeforePageDisplayHook;
 use MediaWiki\Hook\SkinTemplateNavigation__UniversalHook;
 use MediaWiki\MediaWikiServices;
@@ -34,15 +35,21 @@ class Hooks implements
 	ChangeTagsListActiveHook
 {
 
+	/** @var Config */
+	private $config;
+
 	/** @var UserOptionsLookup */
 	private $userOptionsLookup;
 
 	/**
+	 * @param Config $config
 	 * @param UserOptionsLookup $userOptionsLookup
 	 */
 	public function __construct(
+		Config $config,
 		UserOptionsLookup $userOptionsLookup
 	) {
+		$this->config = $config;
 		$this->userOptionsLookup = $userOptionsLookup;
 	}
 
@@ -53,8 +60,7 @@ class Hooks implements
 	 * @param array &$preferences
 	 */
 	public function onGetPreferences( $user, &$preferences ) {
-		global $wgWikiLoveGlobal;
-		if ( !$wgWikiLoveGlobal ) {
+		if ( !$this->config->get( 'WikiLoveGlobal' ) ) {
 			$preferences['wikilove-enabled'] = [
 				'type' => 'check',
 				'section' => 'editing/advancedediting',
@@ -70,10 +76,8 @@ class Hooks implements
 	 * @param Skin $skin
 	 */
 	public function onBeforePageDisplay( $out, $skin ): void {
-		global $wgWikiLoveGlobal;
-
 		if (
-			!$wgWikiLoveGlobal &&
+			!$this->config->get( 'WikiLoveGlobal' ) &&
 			!$this->userOptionsLookup->getOption( $out->getUser(), 'wikilove-enabled' )
 		) {
 			return;
@@ -98,7 +102,7 @@ class Hooks implements
 	 * @param array &$links Navigation links
 	 */
 	public function onSkinTemplateNavigation__Universal( $skin, &$links ): void {
-		if ( self::showIcon( $skin ) ) {
+		if ( $this->showIcon( $skin ) ) {
 			$this->skinConfigViewsLinks( $skin, $links['views'] );
 		} else {
 			$this->skinConfigViewsLinks( $skin, $links['actions'] );
@@ -115,11 +119,9 @@ class Hooks implements
 	 * @param array &$views
 	 */
 	private function skinConfigViewsLinks( $skin, &$views ) {
-		global $wgWikiLoveGlobal;
-
 		// If WikiLove is turned off for this user, don't display tab.
 		if (
-			!$wgWikiLoveGlobal &&
+			!$this->config->get( 'WikiLoveGlobal' ) &&
 			!$this->userOptionsLookup->getOption( $skin->getUser(), 'wikilove-enabled' )
 		) {
 			return;
@@ -131,7 +133,7 @@ class Hooks implements
 				'text' => $skin->msg( 'wikilove-tab-text' )->text(),
 				'href' => '#',
 			];
-			if ( self::showIcon( $skin ) ) {
+			if ( $this->showIcon( $skin ) ) {
 				$views['wikilove']['icon'] = 'heart';
 				$views['wikilove']['button'] = true;
 				$views['wikilove']['primary'] = true;
@@ -145,9 +147,9 @@ class Hooks implements
 	 * @param Skin $skin
 	 * @return bool
 	 */
-	private static function showIcon( $skin ) {
-		global $wgWikiLoveTabIcon;
-		return $wgWikiLoveTabIcon && $skin->getSkinName() !== 'cologneblue';
+	private function showIcon( $skin ) {
+		return $this->config->get( 'WikiLoveTabIcon' ) &&
+			$skin->getSkinName() !== 'cologneblue';
 	}
 
 	/**
