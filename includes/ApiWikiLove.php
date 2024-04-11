@@ -170,7 +170,11 @@ class ApiWikiLove extends ApiBase {
 		];
 
 		try {
-			$dbw->insert( 'wikilove_log', $values, __METHOD__ );
+			$dbw->newInsertQueryBuilder()
+				->insertInto( 'wikilove_log' )
+				->row( $values )
+				->caller( __METHOD__ )
+				->execute();
 		} catch ( DBQueryError $dbqe ) {
 			$this->addWarning( 'Action was not logged' );
 		}
