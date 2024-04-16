@@ -170,7 +170,7 @@
 	"wikilove-err-image-api": "그림을 찾을 때 문제가 생겼습니다. 다시 시도하세요.",
 	"wikilove-err-sig": "글에 서명을 넣지 마세요.",
 	"wikilove-err-gallery": "그림을 불러올 때 문제가 생겼습니다.",
-	"wikilove-err-gallery-again": "다시 시도하세요.",
+	"wikilove-err-gallery-again": "다시 시도",
 	"wikilove-err-preview-api": "미리 보는 동안 문제가 생겼습니다. 다시 시도하세요.",
 	"wikilove-err-send-api": "글을 보낼 때 문제가 생겼습니다. 다시 시도하세요.",
 	"wikilove-err-invalid-token": "세션 데이터를 잃어버려서 위키사랑을 보낼 수 없습니다. 페이지를 새로 고치거나 로그아웃하고 다시 로그인하세요.",
