@@ -11,8 +11,8 @@ use MediaWiki\ChangeTags\Hook\ListDefinedTagsHook;
 use MediaWiki\Config\Config;
 use MediaWiki\Hook\BeforePageDisplayHook;
 use MediaWiki\Hook\SkinTemplateNavigation__UniversalHook;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\OutputPage;
+use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
 use MediaWiki\Title\Title;
 use MediaWiki\User\Options\UserOptionsLookup;
@@ -38,18 +38,24 @@ class Hooks implements
 	/** @var Config */
 	private $config;
 
+	/** @var PermissionManager */
+	private $permissionManager;
+
 	/** @var UserOptionsLookup */
 	private $userOptionsLookup;
 
 	/**
 	 * @param Config $config
+	 * @param PermissionManager $permissionManager
 	 * @param UserOptionsLookup $userOptionsLookup
 	 */
 	public function __construct(
 		Config $config,
+		PermissionManager $permissionManager,
 		UserOptionsLookup $userOptionsLookup
 	) {
 		$this->config = $config;
+		$this->permissionManager = $permissionManager;
 		$this->userOptionsLookup = $userOptionsLookup;
 	}
 
@@ -83,7 +89,11 @@ class Hooks implements
 			return;
 		}
 
-		$title = self::getUserTalkPage( $skin->getTitle(), $skin->getUser() );
+		$title = self::getUserTalkPage(
+			$this->permissionManager,
+			$skin->getTitle(),
+			$skin->getUser()
+		);
 		// getUserTalkPage() returns an ApiMessage on error
 		if ( !$title instanceof ApiMessage ) {
 			$recipient = $title->getBaseText();
@@ -128,7 +138,12 @@ class Hooks implements
 		}
 
 		// getUserTalkPage() returns an ApiMessage on error
-		if ( !self::getUserTalkPage( $skin->getTitle(), $skin->getUser() ) instanceof ApiMessage ) {
+		if ( !self::getUserTalkPage(
+				$this->permissionManager,
+				$skin->getTitle(),
+				$skin->getUser()
+			) instanceof ApiMessage
+		) {
 			$views['wikilove'] = [
 				'text' => $skin->msg( 'wikilove-tab-text' )->text(),
 				'href' => '#',
@@ -159,12 +174,13 @@ class Hooks implements
 	 *
 	 * Phan false positives are suppressed
 	 *
+	 * @param PermissionManager $permissionManager
 	 * @param Title $title The title of a user page or user talk page
 	 * @param User $user the current user
 	 * @return Title|IApiMessage Returns either the Title object for the talk page or an error message
 	 * @suppress PhanPossiblyUndeclaredVariable,PhanTypeMismatchReturnNullable,PhanTypeMismatchArgumentNullable
 	 */
-	public static function getUserTalkPage( $title, $user ) {
+	public static function getUserTalkPage( PermissionManager $permissionManager, $title, $user ) {
 		// Exit early if the sending user isn't logged in
 		if ( !$user->isRegistered() || $user->isTemp() ) {
 			return ApiMessage::create( 'wikilove-err-not-logged-in', 'notloggedin' );
@@ -202,8 +218,7 @@ class Hooks implements
 		}
 
 		// Make sure we can edit the page
-		if ( !MediaWikiServices::getInstance()->getPermissionManager()
-			->quickUserCan( 'edit', $user, $talkTitle ) ) {
+		if ( !$permissionManager->quickUserCan( 'edit', $user, $talkTitle ) ) {
 			return ApiMessage::create( 'wikilove-err-cannot-edit', 'cannotedit' );
 		}
 
