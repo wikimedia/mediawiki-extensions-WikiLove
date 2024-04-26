@@ -139,7 +139,7 @@
 				if ( typeof options.types[ currentTypeId ].subtypes === 'object' ) {
 					// we're dealing with subtypes here
 					currentTypeOrSubtype = null; // reset the (sub)type object until a subtype is selected
-					$( '#mw-wikilove-subtype' ).html( '' ); // clear the subtype menu
+					$( '#mw-wikilove-subtype' ).empty(); // clear the subtype menu
 
 					for ( subtypeId in options.types[ currentTypeId ].subtypes ) {
 						// add all the subtypes to the menu while setting their subtype ids in jQuery data
@@ -242,7 +242,7 @@
 			const title = $.wikiLove.normalizeFilename( currentTypeOrSubtype.image );
 			const loadingType = currentTypeOrSubtype;
 			$( '#mw-wikilove-image-preview' ).show();
-			$( '#mw-wikilove-image-preview-content' ).html( '' );
+			$( '#mw-wikilove-image-preview-content' ).empty();
 			// TODO: Use CSS transitions
 			// eslint-disable-next-line no-jquery/no-fade
 			$( '#mw-wikilove-image-preview-spinner' ).fadeIn( 200 );
@@ -732,7 +732,7 @@
 			const titles = [];
 			const imageList = currentTypeOrSubtype.gallery.imageList.slice();
 
-			$( '#mw-wikilove-gallery-content' ).html( '' );
+			$( '#mw-wikilove-gallery-content' ).empty();
 			gallery = {};
 			// TODO: Use CSS transitions
 			// eslint-disable-next-line no-jquery/no-fade
