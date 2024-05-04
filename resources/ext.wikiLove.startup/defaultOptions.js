@@ -393,6 +393,24 @@ module.exports = {
 			icon: mw.config.get( 'wgExtensionAssetsPath' ) +
 				'/WikiLove/resources/images/icons/wikilove-icon-goat.png'
 		},
+		fox: {
+			name: mw.msg( 'wikilove-type-foxes' ),
+			fields: [ 'header', 'message' ],
+			header: mw.msg( 'wikilove-foxes-header' ),
+			text: '[[$3|left|150px]]\n$1\n\n~~~~\n<br style="clear: both;"/>', // $3 is the image filename
+			gallery: {
+				imageList: [
+					'Vulpes vulpes laying in snow.jpg',
+					'Foxes (4848876670).jpg',
+					'Fox get me out of here eyes (5751742737).jpg'
+				],
+				width: 145,
+				height: 150,
+				number: 3
+			},
+			icon: mw.config.get( 'wgExtensionAssetsPath' ) +
+				'/WikiLove/resources/images/icons/wikilove-icon-fox.png'
+		},
 		// default type, nice to leave this one in place when adding other types
 		makeyourown: {
 			name: mw.msg( 'wikilove-type-makeyourown' ),

@@ -168,6 +168,8 @@
 	"wikilove-kittens-header": "Used as header with JavaScript",
 	"wikilove-type-goats": "[[File:Wiki Love 002.png|thumb]]\nLabel for a button. Should be no longer than 22 characters.\n{{Identical|Goat}}",
 	"wikilove-goats-header": "Used as header with JavaScript",
+	"wikilove-type-foxes": "[[File:Wiki Love 002.png|thumb]]\nLabel for a button. Should be no longer than 22 characters.",
+	"wikilove-foxes-header": "Used as header with JavaScript",
 	"wikilove-type-makeyourown": "[[File:Wiki Love 002.png|thumb]]\nLabel for a button. Should be no longer than 22 characters.",
 	"wikilove-err-header": "[[File:Wiki Love 004.png|thumb]]\nUse the same translation for \"header\" as was used for {{msg-mw|wikilove-header}}.",
 	"wikilove-err-title": "\nTitle is the title of the wikilove box (e.g. \"Barnstar\")",
