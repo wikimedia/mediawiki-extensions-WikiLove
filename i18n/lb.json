@@ -3,7 +3,8 @@
 		"authors": [
 			"Les Meloures",
 			"Robby",
-			"Soued031"
+			"Soued031",
+			"Volvox"
 		]
 	},
 	"wikilove-desc": "Setzt en Interface derbäi deen et erliichtert fir e positive Benotzer-Feedback op d'Benotzer-Diskussiounssäiten ze setzen",
@@ -116,6 +117,8 @@
 	"wikilove-kittens-header": "Eng Kaz fir Iech!",
 	"wikilove-type-goats": "Geessen",
 	"wikilove-goats-header": "Eng Gees fir Iech!",
+	"wikilove-type-foxes": "Fiiss",
+	"wikilove-foxes-header": "E Fuuss fir Iech!",
 	"wikilove-type-makeyourown": "Maacht Ären Eegenen",
 	"wikilove-err-header": "Gitt wgl. eng Iwwerschrëft un.",
 	"wikilove-err-title": "Gitt wgl. en Titel un.",
