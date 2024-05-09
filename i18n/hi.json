@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Abijeet Patro",
 			"Adithyavr",
 			"Ansumang",
 			"Kaldari",
@@ -156,6 +157,7 @@
 	"wikilove-food-stroopwafels-header": "आपके लिए स्त्रोपवाफ़ल!",
 	"wikilove-type-kittens": "नन्ही बिल्लियाँ",
 	"wikilove-kittens-header": "आपके लिए नन्ही बिल्ली!",
+	"wikilove-type-foxes": "लोमड़ी",
 	"wikilove-type-makeyourown": "अपना खुद का बनाएँ",
 	"wikilove-err-header": "कृपया शीर्षक जोड़ें।",
 	"wikilove-err-title": "कृपया पुरस्कार का नाम जोड़ें।",
