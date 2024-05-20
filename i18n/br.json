@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Adriendelucca",
 			"Fohanno",
 			"Fulup",
 			"Gwenn-Ael",
@@ -75,6 +76,8 @@
 	"wikilove-food-stroopwafels-header": "Tammoù galfrez evidoc'h !",
 	"wikilove-type-kittens": "Bisigoù",
 	"wikilove-kittens-header": "Ur c'hazhig bihan evidoc'h !",
+	"wikilove-type-foxes": "Lern",
+	"wikilove-foxes-header": "Ul louarn evidout!",
 	"wikilove-type-makeyourown": "Savit hoc'h-hini deoc'h-c'hwi",
 	"wikilove-err-header": "Merkit un talbenn.",
 	"wikilove-err-title": "Merkit un titl.",
