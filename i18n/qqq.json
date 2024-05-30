@@ -16,7 +16,8 @@
 			"Siebrand",
 			"Umherirrender",
 			"Whym",
-			"Zoranzoki21"
+			"Zoranzoki21",
+			"Pppery"
 		]
 	},
 	"wikilove-desc": "{{desc|name=Wiki Love|url=https://www.mediawiki.org/wiki/Extension:WikiLove}}",
@@ -131,7 +132,7 @@
 	"wikilove-food-baklava-option": "A text of a [[:wikipedia:Barnstar]] of type \"food\" that appears inside of a select list.",
 	"wikilove-food-baklava-desc": "A description for a [[:wikipedia:Barnstar]] of type \"food\".",
 	"wikilove-food-baklava-header": "A header of a [[:wikipedia:Barnstar]] of type \"food\" appears at the top of the talk page post.",
-	"wikilove-food-beer-option": "A text of a [[:wikipedia:Barnstar]] of type \"food\" that appears inside of a select list.\n\n{{Identical|Beer}}",
+	"wikilove-food-beer-option": "A text of a [[:wikipedia:Barnstar]] of type \"food\" that appears inside of a select list.",
 	"wikilove-food-beer-desc": "A description for a [[:wikipedia:Barnstar]] of type \"food\".",
 	"wikilove-food-beer-header": "A header of a [[:wikipedia:Barnstar]] of type \"food\" appears at the top of the talk page post.",
 	"wikilove-food-brownie-option": "A text of a [[:wikipedia:Barnstar]] of type \"food\" that appears inside of a select list.",
