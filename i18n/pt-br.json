@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			555,
 			"Araceletorres",
 			"Cainamarques",
 			"Dianakc",
@@ -13,8 +14,7 @@
 			"Luckas",
 			"MetalBrasil",
 			"Pedroca cerebral",
-			"Raylton P. Sousa",
-			555
+			"Raylton P. Sousa"
 		]
 	},
 	"wikilove-desc": "Adiciona uma interface para facilitar a demonstrações de apreço nas páginas de discussão dos usuários",
