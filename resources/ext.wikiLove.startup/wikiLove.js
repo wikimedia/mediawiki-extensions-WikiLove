@@ -108,7 +108,7 @@ module.exports = {
 		}
 
 		// When the image changes, we want to reset the preview and error message.
-		$( '#mw-wikilove-image' ).on( 'change', function () {
+		$( '#mw-wikilove-image' ).on( 'change', () => {
 			$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
 			$( '#mw-wikilove-preview' ).hide();
 		} );
@@ -254,7 +254,7 @@ module.exports = {
 			iiurlwidth: 75,
 			iiurlheight: 68
 		} )
-			.done( function ( data ) {
+			.done( ( data ) => {
 				if ( !data || !data.query || !data.query.pages ) {
 					// TODO: Use CSS transitions
 					// eslint-disable-next-line no-jquery/no-fade
@@ -264,7 +264,7 @@ module.exports = {
 				if ( loadingType !== currentTypeOrSubtype ) {
 					return;
 				}
-				data.query.pages.forEach( function ( page ) {
+				data.query.pages.forEach( ( page ) => {
 					if ( page.imageinfo && page.imageinfo.length ) {
 						// build an image tag with the correct url
 						$img = $( '<img>' )
@@ -278,7 +278,7 @@ module.exports = {
 					}
 				} );
 			} )
-			.fail( function () {
+			.fail( () => {
 				// TODO: Use CSS transitions
 				// eslint-disable-next-line no-jquery/no-fade
 				$( '#mw-wikilove-image-preview-spinner' ).fadeOut( 200 );
@@ -413,7 +413,7 @@ module.exports = {
 						titles: imageTitle,
 						prop: 'imageinfo'
 					} )
-						.done( function ( data ) {
+						.done( ( data ) => {
 							const page = data.query.pages[ 0 ];
 							// See if image exists locally or through InstantCommons
 							if ( !page.missing || page.imageinfo ) {
@@ -427,7 +427,7 @@ module.exports = {
 								$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
 							}
 						} )
-						.fail( function () {
+						.fail( () => {
 							$.wikiLove.showAddDetailsError( 'wikilove-err-image-api' );
 							// TODO: Use CSS transitions
 							// eslint-disable-next-line no-jquery/no-fade
@@ -531,13 +531,13 @@ module.exports = {
 			sectionpreview: true,
 			pst: true
 		} )
-			.done( function ( html ) {
+			.done( ( html ) => {
 				$.wikiLove.showPreview( html );
 				// TODO: Use CSS transitions
 				// eslint-disable-next-line no-jquery/no-fade
 				$( '#mw-wikilove-preview-spinner' ).fadeOut( 200 );
 			} )
-			.fail( function () {
+			.fail( () => {
 				$.wikiLove.showAddDetailsError( 'wikilove-err-preview-api' );
 				// TODO: Use CSS transitions
 				// eslint-disable-next-line no-jquery/no-fade
@@ -703,7 +703,7 @@ module.exports = {
 						$.wikiLove.showPreviewError( 'wikilove-err-send-api' );
 					}
 				} )
-				.fail( function () {
+				.fail( () => {
 					$.wikiLove.showPreviewError( 'wikilove-err-send-api' );
 					wikiLoveNumberAttempted++;
 					if ( wikiLoveNumberAttempted === targets.length ) {
@@ -766,7 +766,7 @@ module.exports = {
 			iiurlwidth: currentTypeOrSubtype.gallery.width,
 			iiurlheight: currentTypeOrSubtype.gallery.height
 		} )
-			.done( function ( data ) {
+			.done( ( data ) => {
 				if ( !data || !data.query || !data.query.pages ) {
 					$( '#mw-wikilove-gallery-error' ).show();
 					// TODO: Use CSS transitions
@@ -780,7 +780,7 @@ module.exports = {
 				}
 				galleryNumber = currentTypeOrSubtype.gallery.number;
 
-				data.query.pages.forEach( function ( page ) {
+				data.query.pages.forEach( ( page ) => {
 					if ( page.imageinfo && page.imageinfo.length ) {
 						// build an image tag with the correct url
 						$img = $( '<img>' )
@@ -814,7 +814,7 @@ module.exports = {
 				// Pre-select first image
 				/* $( '#mw-wikilove-gallery-img-0 img' ).trigger( 'click' ); */
 			} )
-			.fail( function () {
+			.fail( () => {
 				$( '#mw-wikilove-gallery-error' ).show();
 				// TODO: Use CSS transitions
 				// eslint-disable-next-line no-jquery/no-fade
@@ -835,7 +835,7 @@ module.exports = {
 			$wikiLoveLink = $( '#topbar a:contains(' + mw.msg( 'wikilove-tab-text' ) + ')' );
 		}
 		$wikiLoveLink.off( 'click' );
-		$wikiLoveLink.on( 'click', function ( e ) {
+		$wikiLoveLink.on( 'click', ( e ) => {
 			e.preventDefault();
 			$.wikiLove.openDialog();
 		} );
