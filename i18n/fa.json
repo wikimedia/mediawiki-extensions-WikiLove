@@ -18,7 +18,9 @@
 			"Rmashhadi",
 			"Wayiran",
 			"ZxxZxxZ",
-			"Af420"
+			"Af420",
+			"Darafsh",
+			"Ebrahim"
 		]
 	},
 	"wikilove-desc": "رابطی برای فرستادن راحت نظر مثبت به صفحه‌های بحث کاربران می‌افزاید",
@@ -195,7 +197,7 @@
 	"wikilove-anon-warning": "توجه: این کاربر نام‌نویسی نکرده‌است و ممکن است متوجه این پیام نشود.",
 	"wikilove-commons-text": "می‌توانید برای یافتن تصاویر $1 را مرور کنید.",
 	"wikilove-commons-link": "ویکی‌انبار",
-	"wikilove-terms": "با ارسال فرم، شما با شفاف‌سازی‌های مطابق $1 موافقت می‌کنید.",
+	"wikilove-terms": "با ارسال فرم، با شفاف‌سازی‌های مطابق $1 موافقت می‌کنید.",
 	"wikilove-terms-link": "شرایط",
 	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement/fa",
 	"tag-wikilove-description": "ویرایش با استفاده از ابزار ویکی‌هدیه",
