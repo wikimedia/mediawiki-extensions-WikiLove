@@ -19,10 +19,6 @@ class UserMergeHooks implements AccountFieldsHook {
 	private Config $config;
 	private ILoadBalancer $loadBalancer;
 
-	/**
-	 * @param Config $config
-	 * @param ILoadBalancer $loadBalancer
-	 */
 	public function __construct(
 		Config $config,
 		ILoadBalancer $loadBalancer
@@ -33,8 +29,6 @@ class UserMergeHooks implements AccountFieldsHook {
 
 	/**
 	 * Tables that Extension:UserMerge needs to update
-	 *
-	 * @param array &$updateFields
 	 */
 	public function onUserMergeAccountFields( array &$updateFields ): void {
 		$dbr = $this->loadBalancer->getMaintenanceConnectionRef( DB_REPLICA );

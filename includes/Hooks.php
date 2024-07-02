@@ -34,21 +34,10 @@ class Hooks implements
 	ListDefinedTagsHook,
 	ChangeTagsListActiveHook
 {
+	private Config $config;
+	private PermissionManager $permissionManager;
+	private UserOptionsLookup $userOptionsLookup;
 
-	/** @var Config */
-	private $config;
-
-	/** @var PermissionManager */
-	private $permissionManager;
-
-	/** @var UserOptionsLookup */
-	private $userOptionsLookup;
-
-	/**
-	 * @param Config $config
-	 * @param PermissionManager $permissionManager
-	 * @param UserOptionsLookup $userOptionsLookup
-	 */
 	public function __construct(
 		Config $config,
 		PermissionManager $permissionManager,
@@ -124,11 +113,8 @@ class Hooks implements
 	 *
 	 * Helper function for SkinTemplateNavigation hooks
 	 * to configure views links.
-	 *
-	 * @param Skin $skin
-	 * @param array &$views
 	 */
-	private function skinConfigViewsLinks( $skin, &$views ) {
+	private function skinConfigViewsLinks( Skin $skin, array &$views ): void {
 		// If WikiLove is turned off for this user, don't display tab.
 		if (
 			!$this->config->get( 'WikiLoveGlobal' ) &&
@@ -158,11 +144,8 @@ class Hooks implements
 
 	/**
 	 * Only show an icon when the global preference is enabled and the current skin isn't CologneBlue.
-	 *
-	 * @param Skin $skin
-	 * @return bool
 	 */
-	private function showIcon( $skin ) {
+	private function showIcon( Skin $skin ): bool {
 		return $this->config->get( 'WikiLoveTabIcon' ) &&
 			$skin->getSkinName() !== 'cologneblue';
 	}
@@ -180,7 +163,7 @@ class Hooks implements
 	 * @return Title|IApiMessage Returns either the Title object for the talk page or an error message
 	 * @suppress PhanPossiblyUndeclaredVariable,PhanTypeMismatchReturnNullable,PhanTypeMismatchArgumentNullable
 	 */
-	public static function getUserTalkPage( PermissionManager $permissionManager, $title, $user ) {
+	public static function getUserTalkPage( PermissionManager $permissionManager, Title $title, User $user ) {
 		// Exit early if the sending user isn't logged in
 		if ( !$user->isRegistered() || $user->isTemp() ) {
 			return ApiMessage::create( 'wikilove-err-not-logged-in', 'notloggedin' );

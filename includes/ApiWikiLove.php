@@ -21,25 +21,13 @@ use Wikimedia\Rdbms\DBQueryError;
 use Wikimedia\Rdbms\IConnectionProvider;
 
 class ApiWikiLove extends ApiBase {
-	/** @var IConnectionProvider */
-	private $dbProvider;
+	private IConnectionProvider $dbProvider;
+	private ParserFactory $parserFactory;
+	private PermissionManager $permissionManager;
 
-	/** @var ParserFactory */
-	private $parserFactory;
-
-	/** @var PermissionManager */
-	private $permissionManager;
-
-	/**
-	 * @param ApiMain $main
-	 * @param string $action
-	 * @param IConnectionProvider $dbProvider
-	 * @param ParserFactory $parserFactory
-	 * @param PermissionManager $permissionManager
-	 */
 	public function __construct(
 		ApiMain $main,
-		$action,
+		string $action,
 		IConnectionProvider $dbProvider,
 		ParserFactory $parserFactory,
 		PermissionManager $permissionManager
@@ -145,15 +133,7 @@ class ApiWikiLove extends ApiBase {
 		// note that we cannot use Title::makeTitle here as it doesn't sanitize the fragment
 	}
 
-	/**
-	 * @param Title $talk
-	 * @param string $subject
-	 * @param string $message
-	 * @param string $type
-	 * @param int $email
-	 * @return void
-	 */
-	private function saveInDb( $talk, $subject, $message, $type, $email ) {
+	private function saveInDb( Title $talk, string $subject, string $message, string $type, int $email ): void {
 		$dbw = $this->dbProvider->getPrimaryDatabase();
 		$receiver = User::newFromName( $talk->getSubjectPage()->getBaseText() );
 		if ( $receiver === false || $receiver->isAnon() || $receiver->isTemp() ) {
@@ -187,13 +167,7 @@ class ApiWikiLove extends ApiBase {
 		}
 	}
 
-	/**
-	 * @param Title $talk
-	 * @param string $subject
-	 * @param string $text
-	 * @param string $token
-	 */
-	private function emailUser( $talk, $subject, $text, $token ) {
+	private function emailUser( Title $talk, string $subject, string $text, string $token ): void {
 		$context = new DerivativeContext( $this->getContext() );
 		$context->setRequest( new DerivativeRequest(
 			$this->getRequest(),
