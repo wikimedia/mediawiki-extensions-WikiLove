@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Ykhwong",
-			"Dr1t jg"
+			"Dr1t jg",
+			"Suleiman the Magnificent Television"
 		]
 	},
 	"apihelp-wikilove-summary": "다른 사용자에게 위키사랑을 수여합니다.",
@@ -15,6 +16,6 @@
 	"apihelp-wikilove-param-email": "사용자에게 보낼 선택적 이메일 메시지의 내용. 사용자가 이메일을 받을 수 없으면 경고가 반환됩니다. 위키사랑은 어떠한 방식으로든 사용자의 토론 문서에 전달됩니다.",
 	"apihelp-wikilove-param-tags": "수정에 적용하기 위해 태그를 변경해.",
 	"apihelp-wikilove-example-1": "위키사랑을 \"[[User:Dummy]]\"로 보내기",
-	"apiwarn-wikilove-ignoringunregistered": "등록되지 않은 수신자를 기록하지 않음",
-	"apiwarn-wikilove-notlogged": "작업이 기록되지 않았음."
+	"apiwarn-wikilove-ignoringunregistered": "등록되지 않은 수신자를 기록하지 않음.",
+	"apiwarn-wikilove-notlogged": "작동이 기록되지 않았습니다."
 }
