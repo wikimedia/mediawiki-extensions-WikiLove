@@ -9,10 +9,15 @@
 	"wikilove-button-preview": "Хьалххе хьажар",
 	"wikilove-preview": "Хьалххе хьажар",
 	"wikilove-type-food": "Даар а, маларш а",
+	"wikilove-food-beer-option": "Йий",
+	"wikilove-food-beer-desc": "Йий ― уггаре а шуьйра лелош долу алкоголан малар ду дуьненахь, уггаре а шира хила а тарло. Хи а, чай а тӀаьхьа кхоалгӀа меттиг дӀалоцуш ду иза.",
+	"wikilove-food-cupcake-option": "Кексик",
+	"wikilove-food-cupcake-desc": "Кексик ― цхьана стагана лерина жима кхача. Уьш дукха хьолахь луш йу тӀехула глазурь а, карамелан цуьрг а йиллина.",
 	"wikilove-err-title": "Дехар до, дӀайазйе цӀе.",
 	"wikilove-err-gallery-again": "Кхин цӀа гӀорта",
 	"wikilove-err-not-logged-in": "Дехар до, WikiLove лелаян системин чугӀо.",
 	"wikilove-err-invalid-username": "Иштта цӀе декъашхочуна магийна йац.",
 	"wikilove-commons-link": "Викиларма",
-	"tag-wikilove-description": "Нисдар дина WikiLove гӀирсан гӀоьнца"
+	"tag-wikilove-description": "Нисдар дина WikiLove гӀирсан гӀоьнца",
+	"wikiLove.js": "/* Кхузахь йиллинчу JavaScript-о шен лаамехь хийцамаш бо WikiLove-на, хьажа https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }
