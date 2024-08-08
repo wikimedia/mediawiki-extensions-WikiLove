@@ -4,15 +4,31 @@
 			"Умар"
 		]
 	},
+	"wikilove-desc": "Декъашхойн дийцарийн агӀонашна дика мах хадор тӀетоха атта хилийта интерфейс тӀетуху",
+	"wikilove": "Вики-синтем",
+	"wikilove-enable-preference": "Вики-синтем гӀоьнца кхечу декъашхошна баркалла алар латаде",
 	"wikilove-title": "ДӀайазйе совгӀатан цӀе:",
 	"wikilove-enter-message": "ДӀабазбе хаам:",
 	"wikilove-button-preview": "Хьалххе хьажар",
 	"wikilove-preview": "Хьалххе хьажар",
+	"wikilove-barnstar-admins-option": "Администраторийн орден",
+	"wikilove-barnstar-admins-desc": "Администраторийн орден луш йу хала сацам биначу йа чогӀа хала болу, амма оьшуш болу административан ардам чекхбаьккхинчу администраторна.",
+	"wikilove-barnstar-admins-title": "Администраторийн орден",
+	"wikilove-barnstar-antivandalism-option": "Анти-вандализман орден",
+	"wikilove-barnstar-antivandalism-desc": "Антивандализман орден йала мегар ду {{SITENAME}} тӀехь вандализмах ларйарехь а, цуьнан тӀаьхьалонаш дӀайахарехь а къахьегначунна.",
+	"wikilove-barnstar-diligence-desc": "«Къинхьегаман орден» йала мегар ду, дика ларам беш, цо нийса, а йукъараллина гӀуллакх дарна а.",
+	"wikilove-barnstar-diplomacy-desc": "Дипломатин орден йела мегар ду {{SITENAME}} тӀехь конфликташ машаре йерзош гӀо динчу декъашхошна.",
+	"wikilove-barnstar-goodhumor-desc": "Дикачу забаран орден йала йиш йу хаддаза синхаам тобеш, конфликташ дӀайохуш, {{SITENAME}} дика меттиг йеш болчу википедихошна.",
 	"wikilove-type-food": "Даар а, маларш а",
+	"wikilove-food-beer-option": "Йий",
+	"wikilove-food-beer-desc": "Йий ― уггаре а шуьйра лелош долу алкоголан малар ду дуьненахь, уггаре а шира хила а тарло. Хи а, чай а тӀаьхьа кхоалгӀа меттиг дӀалоцуш ду иза.",
+	"wikilove-food-cupcake-option": "Кексик",
+	"wikilove-food-cupcake-desc": "Кексик ― цхьана стагана лерина жима кхача. Уьш дукха хьолахь луш йу тӀехула глазурь а, карамелан цуьрг а йиллина.",
 	"wikilove-err-title": "Дехар до, дӀайазйе цӀе.",
 	"wikilove-err-gallery-again": "Кхин цӀа гӀорта",
 	"wikilove-err-not-logged-in": "Дехар до, WikiLove лелаян системин чугӀо.",
 	"wikilove-err-invalid-username": "Иштта цӀе декъашхочуна магийна йац.",
 	"wikilove-commons-link": "Викиларма",
-	"tag-wikilove-description": "Нисдар дина WikiLove гӀирсан гӀоьнца"
+	"tag-wikilove-description": "Нисдар дина WikiLove гӀирсан гӀоьнца",
+	"wikiLove.js": "/* Кхузахь йиллинчу JavaScript-о шен лаамехь хийцамаш бо WikiLove-на, хьажа https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }
