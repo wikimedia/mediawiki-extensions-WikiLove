@@ -4,7 +4,8 @@
 			"Anakmalaysia",
 			"Pizza1016",
 			"Tofeiku",
-			"Xabier Armendaritz"
+			"Xabier Armendaritz",
+			"Hakimi97"
 		]
 	},
 	"wikilove-desc": "Menambahkan antara muka untuk memudahkan maklum balas pengguna yang positif kepada laman perbincangan pengguna",
@@ -172,7 +173,7 @@
 	"wikilove-err-not-logged-in": "Anda belum log masuk. Sila log masuk untuk menggunakan WikiLove.",
 	"wikilove-err-invalid-username": "Nama pengguna ini tidak sah.",
 	"wikilove-err-no-self-wikilove": "Maaf, anda tidak boleh menghantar WikiLove kepada diri sendiri.",
-	"wikilove-err-redirect": "Halaman perbincangan pengguna ini merupakan lencongan.",
+	"wikilove-err-redirect": "Laman perbincangan pengguna ini merupakan lencongan.",
 	"wikilove-err-cannot-edit": "Anda tiada kebenaran untuk menyunting laman itu.",
 	"wikilove-err-max-exceeded": "Anda tidak boleh menghantar WikiLove kepada lebih daripada $1 orang pengguna sekaligus.",
 	"wikilove-success-number": "$1 pesanan WikiLove dihantar.",
