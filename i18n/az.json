@@ -5,6 +5,7 @@
 			"Cekli829",
 			"Dağlı95",
 			"Melikov Memmed",
+			"Nemoralis",
 			"Serkanland",
 			"Wertuose"
 		]
@@ -66,6 +67,7 @@
 	"wikilove-barnstar-copyeditor-desc": "Redaktəçi ulduzu orfoqrafik, qrammatik, punktuasiya və stilistik səhvlərin aradan qaldırılmasında mükəmməl əməyi olan redaktəçilərə verilir.",
 	"wikilove-barnstar-copyeditor-title": "Redaktəçi ulduzu",
 	"wikilove-barnstar-defender-option": "Viki müdafiəçisi ulduzu",
+	"wikilove-barnstar-defender-desc": "Viki Müdafiəçisi {{SITENAME}} saytının fırıldaqçılıq məqsədləri üçün istifadə edilməsinin qarşısını almaq üçün fəaliyyət göstərənlərə verilir.",
 	"wikilove-barnstar-defender-title": "Viki müdafiəçisi ulduzu",
 	"wikilove-barnstar-editors-option": "Redaktor ulduzu",
 	"wikilove-barnstar-editors-desc": "Redaktəçi ulduzu gözəl redaktələri ilə yadda qalan istifadəçilərə verilir.",
@@ -83,6 +85,7 @@
 	"wikilove-barnstar-antispam-desc": "Antispam ulduzu spama qarşı mübarizə aparan istifadəçilərə verilir.",
 	"wikilove-barnstar-antispam-title": "Antispam ulduzu",
 	"wikilove-barnstar-photographers-option": "Fotoqraf ulduzu",
+	"wikilove-barnstar-photographers-desc": "Fotoqraf Ulduzu mükafatı öz fotoqrafiya bacarıqları və töhfələri ilə {{SITENAME}} saytını yorulmadan təkmilləşdirən şəxslərə verilir.",
 	"wikilove-barnstar-photographers-title": "Fotoqraf ulduzu",
 	"wikilove-barnstar-kindness-option": "Səmimilik ulduzu",
 	"wikilove-barnstar-kindness-desc": "Səmimilik ulduzu səmimiyyəti ilə seçilən istifadəçilərə verilir.",
@@ -135,6 +138,8 @@
 	"wikilove-kittens-header": "Sizin üçün pişik balası!",
 	"wikilove-type-goats": "Keçilər",
 	"wikilove-goats-header": "Sizin üçün bir keçi!",
+	"wikilove-type-foxes": "Tülkülər",
+	"wikilove-foxes-header": "Sizin üçün bir tülkü!",
 	"wikilove-type-makeyourown": "Özün hazırla",
 	"wikilove-err-header": "Zəhmət olmasa, sərlövhə daxil edin.",
 	"wikilove-err-title": "Zəhmət olmasa, başlıq daxil edin.",
