@@ -1,6 +1,7 @@
 'use strict';
 
 module.exports = function ( grunt ) {
+	const conf = grunt.file.readJSON( 'extension.json' );
 	grunt.loadNpmTasks( 'grunt-eslint' );
 	grunt.loadNpmTasks( 'grunt-banana-checker' );
 	grunt.loadNpmTasks( 'grunt-stylelint' );
@@ -10,10 +11,7 @@ module.exports = function ( grunt ) {
 			options: {
 				requireLowerCase: false
 			},
-			all: [
-				'i18n/',
-				'i18n/api'
-			]
+			...conf.MessagesDirs
 		},
 		eslint: {
 			options: {
