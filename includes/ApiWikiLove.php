@@ -5,11 +5,11 @@ namespace MediaWiki\Extension\WikiLove;
 use ApiBase;
 use ApiMain;
 use ApiMessage;
-use ChangeTags;
 use ExtensionRegistry;
 use LqtDispatch;
 use MediaWiki\Context\DerivativeContext;
 use MediaWiki\Deferred\DeferredUpdates;
+use MediaWiki\MediaWikiServices;
 use MediaWiki\Parser\Sanitizer;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Request\DerivativeRequest;
@@ -118,7 +118,8 @@ class ApiWikiLove extends ApiBase {
 		if ( isset( $result['edit'] ) && $result['edit']['result'] === "Success" ) {
 			$revId = $result['edit']['newrevid'];
 			DeferredUpdates::addCallableUpdate( static function () use ( $revId ) {
-				ChangeTags::addTags( "wikilove", null, $revId );
+				MediaWikiServices::getInstance()->getChangeTagsStore()
+					->addTags( [ 'wikilove' ], null, $revId );
 			} );
 		}
 
