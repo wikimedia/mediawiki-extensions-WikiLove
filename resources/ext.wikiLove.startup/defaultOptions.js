@@ -402,7 +402,9 @@ module.exports = {
 				imageList: [
 					'Vulpes vulpes laying in snow.jpg',
 					'Foxes (4848876670).jpg',
-					'Fox get me out of here eyes (5751742737).jpg'
+					'Fox get me out of here eyes (5751742737).jpg',
+					'Twemoji12_1f98a.svg',
+					'Fox sleeping (51901885260).jpg'
 				],
 				width: 145,
 				height: 150,
