@@ -10,7 +10,7 @@
 			"Nemoralis"
 		]
 	},
-	"wikilove-desc": "İstifəçilərin müzakirə səhifələrinə müsbət istifadəçi fidbəki göndərmək üçün interfeys əlavə edir",
+	"wikilove-desc": "İstifadəçi müzakirə səhifələrinə müsbət istifadəçi rəyini asanlaşdırmaq üçün interfeys əlavə edir",
 	"wikilove": "VikiRəğbət",
 	"wikilove-enable-preference": "VikiRəğbət işarəsi ilə digər istifadəçilərə ehtiram bildirişinin görünməsini mümkün et",
 	"wikilove-tab-text": "VikiRəğbət",
@@ -91,6 +91,7 @@
 	"wikilove-barnstar-kindness-desc": "Səmimilik ulduzu səmimiyyəti ilə seçilən istifadəçilərə verilir.",
 	"wikilove-barnstar-kindness-title": "Səmimilik ulduzu",
 	"wikilove-barnstar-reallife-option": "Real həyat ulduzu",
+	"wikilove-barnstar-reallife-desc": "Real Həyat Ulduzu, viki ilə əlaqəli real həyat hadisələrini təşkil etməklə həm onlayn, həm də oflayn olaraq töhfə verən redaktorlara verilir.",
 	"wikilove-barnstar-reallife-title": "Real həyat ulduzu",
 	"wikilove-barnstar-resilient-option": "Müntəzəmlik ulduzu",
 	"wikilove-barnstar-resilient-title": "Müntəzəmlik ulduzu",
