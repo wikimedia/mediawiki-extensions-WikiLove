@@ -4,8 +4,8 @@
 
 namespace MediaWiki\Extension\WikiLove;
 
-use ApiMessage;
-use IApiMessage;
+use MediaWiki\Api\ApiMessage;
+use MediaWiki\Api\IApiMessage;
 use MediaWiki\ChangeTags\Hook\ChangeTagsListActiveHook;
 use MediaWiki\ChangeTags\Hook\ListDefinedTagsHook;
 use MediaWiki\Config\Config;
