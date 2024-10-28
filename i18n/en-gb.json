@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Chase me ladies, I'm the Cavalry",
+			"Samthecrazyman",
 			"Shirayuki"
 		]
 	},
@@ -10,7 +11,7 @@
 	"wikilove-barnstar-surreal-desc": "The Surreal Barnstar is awarded to any user who adds \"special flavour\" to the community by acting as a sort of wildcard.",
 	"wikilove-food-cheeseburger-desc": "A staple of diners and fast-food restaurants, cheeseburgers were first popularised in the United States during the 1920s and 30s.",
 	"wikilove-food-cookie-desc": "Cookies (known as biscuits in the UK) are small baked treats that come in a wide array of flavours, shapes, and sizes.",
-	"wikilove-food-coffee-desc": "Appreciated the world over, coffee is known for its energising effect on people.",
+	"wikilove-food-coffee-desc": "Appreciated all over the world, coffee is known for its energising effect on people.",
 	"wikilove-food-strawberries-desc": "The strawberry fruit (which is not actually a berry) is widely appreciated for its characteristic aroma, bright red colour, juicy texture, and sweetness.",
 	"wikilove-err-msg": "Please enter a personalised message.",
 	"wikiLove.js": "/* JavaScript placed here customises WikiLove, see https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
