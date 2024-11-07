@@ -3,6 +3,7 @@
 		"authors": [
 			"Athena in Wonderland",
 			"Elisardojm",
+			"McDutchie",
 			"Toliño"
 		]
 	},
@@ -14,7 +15,7 @@
 	"apihelp-wikilove-param-subject": "Cabeceira de tema na nova sección.",
 	"apihelp-wikilove-param-type": "Tipo de amor wiki (para estatísticas); isto corresponde co tipo seleccionado no menú e opcionalmente un subtipo despois dese (p. ex. como en \"{{int:wikilove-barnstar-original-title}}\" ou \"{{int:wikilove-kittens-header}}\").",
 	"apihelp-wikilove-param-email": "Contido da mensaxe de correo electrónico opcional a enviar ó usuario. Devolverase un aviso se non se lle poden enviar correos ó usuario. Enviarase o amor wiki á páxina de conversa do usuario de tódolos xeitos.",
-	"apihelp-wikilove-param-tags": "Cambiar as etiquetas a aplicar á revisión.",
+	"apihelp-wikilove-param-tags": "As etiquetas de cambio que se aplicarán á revisión.",
 	"apihelp-wikilove-example-1": "Enviar amor wiki a \"[[User:Dummy]]\"",
 	"apiwarn-wikilove-ignoringunregistered": "Non se rexistran os destinatarios non rexistrados",
 	"apiwarn-wikilove-notlogged": "A acción non foi rexistrada"

@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
+			"McDutchie",
 			"Thibaut120094",
 			"Urhixidur",
 			"Verdy p",
@@ -16,7 +17,7 @@
 	"apihelp-wikilove-param-subject": "Entête de la nouvelle section.",
 	"apihelp-wikilove-param-type": "Type de WikiLove (pour les statistiques) ; cela correspond à un type sélectionné dans le menu et éventuellement à un sous-type précisé après (par ex. comme dans « {{int:wikilove-barnstar-original-title}} » ou « {{int:wikilove-kittens-header}} »).",
 	"apihelp-wikilove-param-email": "Contenu du message de courriel facultatif envoyé à l’utilisateur. Un avertissement sera renvoyé si l’utilisateur ne peut être joint par courriel. WikiLove sera de toute manière envoyé aux pages de discussion des utilisateurs.",
-	"apihelp-wikilove-param-tags": "Modifier les balises à appliquer à la version.",
+	"apihelp-wikilove-param-tags": "Les balises de modification à appliquer à la version.",
 	"apihelp-wikilove-example-1": "Envoyer WikiLove à \"[[User:Dummy]]\"",
 	"apiwarn-wikilove-ignoringunregistered": "Les destinataires non inscrits ne sont pas journalisés.",
 	"apiwarn-wikilove-notlogged": "L’action n’a pas été journalisée"
