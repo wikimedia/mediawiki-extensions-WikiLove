@@ -4,7 +4,8 @@
 			"Araceletorres",
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
-			"Felipe L. Ewald"
+			"Felipe L. Ewald",
+			"McDutchie"
 		]
 	},
 	"apihelp-wikilove-summary": "Dê o WikiLove a outro usuário.",
@@ -15,7 +16,7 @@
 	"apihelp-wikilove-param-subject": "Cabeçalho do assunto da nova seção.",
 	"apihelp-wikilove-param-type": "Tipo de WikiLove (para estatísticas); Isso corresponde a um tipo selecionado no menu e, opcionalmente, um subtipo depois (por exemplo, em \"{{int: wikilove-barnstar-original-title}}\" ou \"{{int: wikilove-kittens-header}}\") .",
 	"apihelp-wikilove-param-email": "Conteúdo da mensagem de e-mail opcional para enviar ao usuário. Um aviso será retornado se o usuário não puder receber e-mail. O WikiLove será enviado para a página de conversação dos usuários de qualquer maneira.",
-	"apihelp-wikilove-param-tags": "Alterar as etiquetas para aplicar à revisão.",
+	"apihelp-wikilove-param-tags": "As tags de alteração a serem aplicadas à revisão.",
 	"apihelp-wikilove-example-1": "Enviar WikiLove a \"[[User:Dummy]]\"",
 	"apiwarn-wikilove-ignoringunregistered": "Não registrar destinatários não registrados",
 	"apiwarn-wikilove-notlogged": "A ação não foi registrada"
