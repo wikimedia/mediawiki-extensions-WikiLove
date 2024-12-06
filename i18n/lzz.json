@@ -1,9 +1,0 @@
-{
-	"@metadata": {
-		"authors": [
-			"Cem Rize"
-		]
-	},
-	"wikilove-err-not-logged-in": "Oturumunuz açık değil. VikiSevgi'yi kullanabilmek için lütfen oturum açınız.",
-	"wikilove-err-invalid-username": "Kullanıcı adı geçerli değil."
-}
