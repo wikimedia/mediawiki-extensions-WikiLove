@@ -183,7 +183,7 @@ module.exports = Vue.defineComponent( {
 }
 
 .wikilove-dialog {
-	background: #f2f5f7;
+	background: @background-color-neutral-subtle;
 	padding: 0.5em 1em;
 	border: @border-base;
 	box-shadow: 0 2px 2px 0 rgba( 0, 0, 0, 0.25 );
@@ -194,7 +194,7 @@ module.exports = Vue.defineComponent( {
 
 .wikilove-dialog header {
 	border: 1px solid #aed0ea;
-	background: #f0f0f0;
+	background: @background-color-neutral;
 	padding: 0.9em 1.4em 0.6em;
 	font-weight: bold;
 	display: flex;
@@ -216,7 +216,7 @@ module.exports = Vue.defineComponent( {
 
 .wikilove-transparent-overlay {
 	opacity: @opacity-medium;
-	background: #fff;
+	background: @background-color-base;
 	position: absolute;
 	left: 0;
 	right: 0;

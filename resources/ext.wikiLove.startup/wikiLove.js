@@ -74,7 +74,7 @@ module.exports = {
 			target: '_blank'
 		}, mw.msg( 'wikilove-terms-link' ) );
 
-		overlayContainer.classList.add( 'wikilove-overlay-container', 'notheme' );
+		overlayContainer.classList.add( 'wikilove-overlay-container' );
 		overlayContainer.style.display = '';
 
 		if ( overlayContainer.parentNode ) {
