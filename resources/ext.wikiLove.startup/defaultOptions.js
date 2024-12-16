@@ -2,14 +2,15 @@
 
 module.exports = {
 	defaultText:
-		'{| style="background-color: $5; border: 1px solid $6;"\n' +
+		'{| style="background-color: $5; border: 1px solid $6; color: $8;"\n' +
 		'|rowspan="2" style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n' +
 		'|style="font-size: x-large; padding: 3px 3px 0 3px; height: 1.5em;" | \'\'\'$2\'\'\'\n' +
 		'|-\n' +
 		'|style="vertical-align: middle; padding: 3px;" | $1 ~~~~\n' +
 		'|}',
-	defaultBackgroundColor: '#fdffe7',
-	defaultBorderColor: '#fceb92',
+	defaultBackgroundColor: 'var(--background-color-success-subtle, #fdffe7)',
+	defaultBorderColor: 'var(--border-color-success, #fceb92)',
+	defaultColor: 'var(--color-base, #202122)',
 	defaultImageSize: '100px',
 	defaultImage: 'Trophy.png',
 
@@ -247,7 +248,7 @@ module.exports = {
 			name: mw.msg( 'wikilove-type-food' ), // name of the type (appears in the types menu)
 			select: mw.msg( 'wikilove-food-select' ), // subtype select label
 			text:
-				'{| style="background-color: $5; border: 1px solid $6;"\n' +
+				'{| style="background-color: $5; border: 1px solid $6; color: $8;"\n' +
 				'|style="vertical-align: middle; padding: 5px;" | [[$3|$4]]\n' +
 				'|style="vertical-align: middle; padding: 3px;" | $1 ~~~~\n' +
 				'|}', // custom text

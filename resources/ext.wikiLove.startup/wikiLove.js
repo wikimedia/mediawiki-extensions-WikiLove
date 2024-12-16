@@ -492,6 +492,7 @@ module.exports = {
 		msg = msg.replace( '$5', currentTypeOrSubtype.backgroundColor || options.defaultBackgroundColor ); // replace the background color
 		msg = msg.replace( '$6', currentTypeOrSubtype.borderColor || options.defaultBorderColor ); // replace the border color
 		msg = msg.replace( '$7', '<nowiki>' + mw.config.get( 'wikilove-recipient', '' ) + '</nowiki>' ); // replace the username we're sending to
+		msg = msg.replace( '$8', currentTypeOrSubtype.defaultColor || options.defaultColor ); // replace the text color
 
 		return msg;
 	},
