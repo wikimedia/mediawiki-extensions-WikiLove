@@ -6,3 +6,4 @@
 .*.swp
 composer.lock
 /.eslintcache
+/.stylelintcache
