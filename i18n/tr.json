@@ -7,7 +7,8 @@
 			"Koc61",
 			"MuratTheTurkish",
 			"Rapsar",
-			"Vito Genovese"
+			"Vito Genovese",
+			"Leo"
 		]
 	},
 	"wikilove-desc": "Kullanıcı mesaj sayfalarına, kolaylıkla olumlu kullanıcı geri bildirimi yollayabilmek için bir arayüz ekler",
@@ -186,6 +187,6 @@
 	"wikilove-commons-link": "Wikimedia Commons",
 	"wikilove-terms": "Gönderim yaparak $1 uyarınca saydamlığı kabul ediyorsunuz.",
 	"wikilove-terms-link": "koşullar",
-	"tag-wikilove-description": "VikiSevgi aracını kullanarak yapılan düzenleme",
+	"tag-wikilove-description": "VikiSevgi aracı kullanılarak yapılan düzenleme",
 	"wikiLove.js": "/* Buraya yerleştirilen JavaScript, VikiSevgi'yi özelleştirir. https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration sayfasına bakın */"
 }
