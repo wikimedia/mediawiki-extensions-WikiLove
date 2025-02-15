@@ -185,7 +185,7 @@
 	"wikilove-commons-url": "//commons.wikimedia.org",
 	"wikilove-terms": "By submitting, you agree to transparency under these $1.",
 	"wikilove-terms-link": "terms",
-	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement",
+	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Legal:Wikimedia_Foundation_Feedback_Privacy_Statement",
 	"tag-wikilove-description": "Edit made using the WikiLove tool",
 	"wikiLove.js": "/* JavaScript placed here customizes WikiLove, see https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }
