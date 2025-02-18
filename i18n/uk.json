@@ -196,7 +196,7 @@
 	"wikilove-commons-url": "//commons.wikimedia.org/wiki/Головна_сторінка?uselang=uk",
 	"wikilove-terms": "Надсилаючи, ви погоджуєтесь з публічністю даних на таких $1.",
 	"wikilove-terms-link": "умовах",
-	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement",
+	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Legal:Wikimedia_Foundation_Feedback_Privacy_Statement",
 	"tag-wikilove-description": "Редагування зроблене з допомогою інструмента WikiLove",
 	"wikiLove.js": "/* Розміщений тут JavaScript налаштовує Вікісимпатію, див. https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

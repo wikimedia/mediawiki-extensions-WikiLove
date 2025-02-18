@@ -185,7 +185,7 @@
 	"wikilove-commons-url": "//commons.wikimedia.org/wiki/Hauptseite?uselang=de",
 	"wikilove-terms": "Mit dem Speichern erklärst du dich mit diesen $1 einverstanden.",
 	"wikilove-terms-link": "Bedingungen",
-	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement/de",
+	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Legal:Wikimedia_Foundation_Feedback_Privacy_Statement/de",
 	"tag-wikilove-description": "Bearbeitung mit dem WikiLove-Werkzeug durchgeführt",
 	"wikiLove.js": "/* Das folgende JavaScript passt die persönliche Wertschätzung an, siehe https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

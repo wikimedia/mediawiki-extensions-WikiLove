@@ -190,7 +190,7 @@
 	"wikilove-commons-text": "Puedes encontrar imágenes navegando por $1.",
 	"wikilove-terms": "Al enviarlo, usted acepta la transparencia según $1.",
 	"wikilove-terms-link": "condiciones",
-	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement/es",
+	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Legal:Wikimedia_Foundation_Feedback_Privacy_Statement/es",
 	"tag-wikilove-description": "Edición hecha con la herramienta WikiLove",
 	"wikiLove.js": "/ * El código JavaScript colocado aquí personaliza WikiLove, consulte https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration * /"
 }

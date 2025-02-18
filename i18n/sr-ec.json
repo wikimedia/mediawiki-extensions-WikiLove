@@ -193,7 +193,7 @@
 	"wikilove-commons-url": "//commons.wikimedia.org",
 	"wikilove-terms": "Слањем прихватате транспарентност коју налажу ови $1.",
 	"wikilove-terms-link": "услови",
-	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement?uselang=sr-ec",
+	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Legal:Wikimedia_Foundation_Feedback_Privacy_Statement?uselang=sr-ec",
 	"tag-wikilove-description": "Измена направљена користећи алатку Викиљубав",
 	"wikiLove.js": "/* Овде постављен јаваскрипт прилагођава Викиљубав. Погледајте https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }
