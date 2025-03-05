@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Armando-Martin",
+			"Balunhnoh",
 			"Dalton2",
 			"Dgstranz",
 			"Eulalio",
@@ -163,7 +164,7 @@
 	"wikilove-kittens-header": "¡Un gatito para ti!",
 	"wikilove-type-goats": "Cabras",
 	"wikilove-goats-header": "¡Una cabra para ti!",
-	"wikilove-type-foxes": "Zorros",
+	"wikilove-type-foxes": "Foxes",
 	"wikilove-foxes-header": "¡Premio!",
 	"wikilove-type-makeyourown": "Personalizado",
 	"wikilove-err-header": "Escribe una cabecera.",
