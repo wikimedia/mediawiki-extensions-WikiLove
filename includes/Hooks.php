@@ -71,6 +71,10 @@ class Hooks implements
 	 * @param Skin $skin
 	 */
 	public function onBeforePageDisplay( $out, $skin ): void {
+		// WikiLove currently doesn't support Minerva.
+		if ( $skin->getSkinName() === 'minerva' ) {
+			return;
+		}
 		if (
 			!$this->config->get( 'WikiLoveGlobal' ) &&
 			!$this->userOptionsLookup->getOption( $out->getUser(), 'wikilove-enabled' )
@@ -101,6 +105,10 @@ class Hooks implements
 	 * @param array &$links Navigation links
 	 */
 	public function onSkinTemplateNavigation__Universal( $skin, &$links ): void {
+		// WikiLove currently doesn't support Minerva.
+		if ( $skin->getSkinName() === 'minerva' ) {
+			return;
+		}
 		if ( $this->showIcon( $skin ) ) {
 			$this->skinConfigViewsLinks( $skin, $links['views'] );
 		} else {
