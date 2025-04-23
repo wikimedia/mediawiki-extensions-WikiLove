@@ -14,11 +14,11 @@ use MediaWiki\Output\Hook\BeforePageDisplayHook;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
+use MediaWiki\Skin\Skin;
+use MediaWiki\Skin\SkinTemplate;
 use MediaWiki\Title\Title;
 use MediaWiki\User\Options\UserOptionsLookup;
 use MediaWiki\User\User;
-use Skin;
-use SkinTemplate;
 
 /**
  * Hooks for WikiLove extension
