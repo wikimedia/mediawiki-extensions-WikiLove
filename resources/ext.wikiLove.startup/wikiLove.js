@@ -210,22 +210,22 @@ module.exports = {
 			};
 		}
 		if ( currentTypeOrSubtype !== null ) {
-			if ( currentTypeOrSubtype.fields.indexOf( 'header' ) !== -1 &&
+			if ( currentTypeOrSubtype.fields.includes( 'header' ) &&
 				( !currentTypeOrSubtype.header || $( '#mw-wikilove-header' ).val() !== currentTypeOrSubtype.header )
 			) {
 				rememberData.header = $( '#mw-wikilove-header' ).val();
 			}
-			if ( currentTypeOrSubtype.fields.indexOf( 'title' ) !== -1 &&
+			if ( currentTypeOrSubtype.fields.includes( 'title' ) &&
 				( !currentTypeOrSubtype.title || $( '#mw-wikilove-title' ).val() !== currentTypeOrSubtype.title )
 			) {
 				rememberData.title = $( '#mw-wikilove-title' ).val();
 			}
-			if ( currentTypeOrSubtype.fields.indexOf( 'message' ) !== -1 &&
+			if ( currentTypeOrSubtype.fields.includes( 'message' ) &&
 				( !currentTypeOrSubtype.message || $( '#mw-wikilove-message' ).val() !== currentTypeOrSubtype.message )
 			) {
 				rememberData.message = $( '#mw-wikilove-message' ).val();
 			}
-			if ( currentTypeOrSubtype.gallery === undefined && currentTypeOrSubtype.fields.indexOf( 'image' ) !== -1 &&
+			if ( currentTypeOrSubtype.gallery === undefined && currentTypeOrSubtype.fields.includes( 'image' ) &&
 				( !currentTypeOrSubtype.image || $( '#mw-wikilove-image' ).val() !== currentTypeOrSubtype.image )
 			) {
 				rememberData.image = $( '#mw-wikilove-image' ).val();
@@ -291,10 +291,10 @@ module.exports = {
 	updateAllDetails: function () {
 		// use remembered data for fields that can be set by the user
 		const currentRememberData = {
-			header: ( currentTypeOrSubtype.fields.indexOf( 'header' ) !== -1 ? rememberData.header : '' ),
-			title: ( currentTypeOrSubtype.fields.indexOf( 'title' ) !== -1 ? rememberData.title : '' ),
-			message: ( currentTypeOrSubtype.fields.indexOf( 'message' ) !== -1 ? rememberData.message : '' ),
-			image: ( currentTypeOrSubtype.fields.indexOf( 'image' ) !== -1 ? rememberData.image : '' )
+			header: ( currentTypeOrSubtype.fields.includes( 'header' ) ? rememberData.header : '' ),
+			title: ( currentTypeOrSubtype.fields.includes( 'title' ) ? rememberData.title : '' ),
+			message: ( currentTypeOrSubtype.fields.includes( 'message' ) ? rememberData.message : '' ),
+			image: ( currentTypeOrSubtype.fields.includes( 'image' ) ? rememberData.image : '' )
 		};
 
 		$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
@@ -312,21 +312,21 @@ module.exports = {
 
 		// show or hide header label and textbox depending on fields configuration
 		$( '#mw-wikilove-header, #mw-wikilove-header-label' )
-			.toggle( currentTypeOrSubtype.fields.indexOf( 'header' ) !== -1 );
+			.toggle( currentTypeOrSubtype.fields.includes( 'header' ) );
 
 		// set the new text for the header textbox
 		$( '#mw-wikilove-header' ).val( currentRememberData.header || currentTypeOrSubtype.header || '' );
 
 		// show or hide title label and textbox depending on fields configuration
 		$( '#mw-wikilove-title, #mw-wikilove-title-label' )
-			.toggle( currentTypeOrSubtype.fields.indexOf( 'title' ) !== -1 );
+			.toggle( currentTypeOrSubtype.fields.includes( 'title' ) );
 
 		// set the new text for the title textbox
 		$( '#mw-wikilove-title' ).val( currentRememberData.title || currentTypeOrSubtype.title || '' );
 
 		// show or hide image label and textbox depending on fields configuration
 		$( '#mw-wikilove-image, #mw-wikilove-image-label, #mw-wikilove-image-note, #mw-wikilove-commons-text' )
-			.toggle( currentTypeOrSubtype.fields.indexOf( 'image' ) !== -1 );
+			.toggle( currentTypeOrSubtype.fields.includes( 'image' ) );
 
 		// set the new text for the image textbox
 		$( '#mw-wikilove-image' ).val( currentRememberData.image || currentTypeOrSubtype.image || '' );
@@ -342,12 +342,12 @@ module.exports = {
 
 		// show or hide message label and textbox depending on fields configuration
 		$( '#mw-wikilove-message, #mw-wikilove-message-label, #mw-wikilove-message-note' )
-			.toggle( currentTypeOrSubtype.fields.indexOf( 'message' ) !== -1 );
+			.toggle( currentTypeOrSubtype.fields.includes( 'message' ) );
 
 		// set the new text for the message textbox
 		$( '#mw-wikilove-message' ).val( currentRememberData.message || currentTypeOrSubtype.message || '' );
 
-		if ( currentTypeOrSubtype.fields.indexOf( 'notify' ) !== -1 && emailable ) {
+		if ( currentTypeOrSubtype.fields.includes( 'notify' ) && emailable ) {
 			$( '#mw-wikilove-notify' ).show();
 		} else {
 			$( '#mw-wikilove-notify' ).hide();
@@ -370,24 +370,24 @@ module.exports = {
 		$( '#mw-wikilove-preview' ).hide();
 
 		// Check for a header if it is required
-		if ( currentTypeOrSubtype.fields.indexOf( 'header' ) !== -1 && $( '#mw-wikilove-header' ).val().length === 0 ) {
+		if ( currentTypeOrSubtype.fields.includes( 'header' ) && $( '#mw-wikilove-header' ).val().length === 0 ) {
 			$.wikiLove.showAddDetailsError( 'wikilove-err-header' );
 			return false;
 		}
 
 		// Check for a title if it is required, and otherwise use the header text
-		if ( currentTypeOrSubtype.fields.indexOf( 'title' ) !== -1 && $( '#mw-wikilove-title' ).val().length === 0 ) {
+		if ( currentTypeOrSubtype.fields.includes( 'title' ) && $( '#mw-wikilove-title' ).val().length === 0 ) {
 			$( '#mw-wikilove-title' ).val( $( '#mw-wikilove-header' ).val() );
 		}
 
-		if ( currentTypeOrSubtype.fields.indexOf( 'message' ) !== -1 ) {
+		if ( currentTypeOrSubtype.fields.includes( 'message' ) ) {
 			// Check for a message if it is required
 			if ( $( '#mw-wikilove-message' ).val().length <= 0 ) {
 				$.wikiLove.showAddDetailsError( 'wikilove-err-msg' );
 				return false;
 			}
 			// If there's a signature already in the message, throw an error
-			if ( $( '#mw-wikilove-message' ).val().indexOf( '~~~' ) >= 0 ) {
+			if ( $( '#mw-wikilove-message' ).val().includes( '~~~' ) ) {
 				$.wikiLove.showAddDetailsError( 'wikilove-err-sig' );
 				return false;
 			}
@@ -395,7 +395,7 @@ module.exports = {
 
 		// Split image validation depending on whether or not it is a gallery
 		if ( typeof currentTypeOrSubtype.gallery === 'undefined' ) { // not a gallery
-			if ( currentTypeOrSubtype.fields.indexOf( 'image' ) !== -1 ) { // asks for an image
+			if ( currentTypeOrSubtype.fields.includes( 'image' ) ) { // asks for an image
 				if ( $( '#mw-wikilove-image' ).val().length === 0 ) { // no image entered
 					// Give them the default image and continue with preview.
 					$( '#mw-wikilove-image' ).val( options.defaultImage );
@@ -572,19 +572,19 @@ module.exports = {
 		$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
 
 		// Check for a header if it is required
-		if ( currentTypeOrSubtype.fields.indexOf( 'header' ) !== -1 && $( '#mw-wikilove-header' ).val().length === 0 ) {
+		if ( currentTypeOrSubtype.fields.includes( 'header' ) && $( '#mw-wikilove-header' ).val().length === 0 ) {
 			$.wikiLove.showAddDetailsError( 'wikilove-err-header' );
 			return false;
 		}
 
 		// Check for a title if it is required, and otherwise use the header text
-		if ( currentTypeOrSubtype.fields.indexOf( 'title' ) !== -1 && $( '#mw-wikilove-title' ).val().length === 0 ) {
+		if ( currentTypeOrSubtype.fields.includes( 'title' ) && $( '#mw-wikilove-title' ).val().length === 0 ) {
 			$( '#mw-wikilove-title' ).val( $( '#mw-wikilove-header' ).val() );
 		}
 
-		if ( currentTypeOrSubtype.fields.indexOf( 'message' ) !== -1 ) {
+		if ( currentTypeOrSubtype.fields.includes( 'message' ) ) {
 			// If there's a signature already in the message, throw an error
-			if ( $( '#mw-wikilove-message' ).val().indexOf( '~~~' ) >= 0 ) {
+			if ( $( '#mw-wikilove-message' ).val().includes( '~~~' ) ) {
 				$.wikiLove.showAddDetailsError( 'wikilove-err-sig' );
 				return false;
 			}
