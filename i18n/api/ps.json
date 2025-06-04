@@ -2,9 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان",
 			"عثمان خان شاہ"
 		]
 	},
 	"apihelp-wikilove-param-subject": "د نوې برخې د سکالو سرليک.",
-	"apihelp-wikilove-example-1": "[[User:Dummy]]ته ويکي مينه وليږه."
+	"apihelp-wikilove-example-1": "[[کارن:نمونه]] ته ويکي‌مينه لېږل."
 }
