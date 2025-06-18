@@ -11,7 +11,8 @@
 			"Smigles",
 			"Stjn",
 			"Александр Сигачёв",
-			"Умар"
+			"Умар",
+			"Michgrig"
 		]
 	},
 	"wikilove-desc": "Добавляет интерфейс для упрощения добавления положительных отзывов на страницы обсуждения участников",
@@ -22,9 +23,9 @@
 	"wikilove-dialog-title": "Вики-симпатия — выразите признательность другому участнику",
 	"wikilove-select-type": "Выберите тип",
 	"wikilove-get-started-header": "Давайте начнём!",
-	"wikilove-get-started-list-1": "Выберите тип ВикиСимпатии, которую вы хотите выразить",
-	"wikilove-get-started-list-2": "Добавьте подробности к вашей ВикиСимпатии",
-	"wikilove-get-started-list-3": "Отправьте вашу ВикиСимпатию!",
+	"wikilove-get-started-list-1": "Выберите тип Вики-симпатии, которую вы хотите выразить",
+	"wikilove-get-started-list-2": "Добавьте подробности к вашей Вики-симпатии",
+	"wikilove-get-started-list-3": "Отправьте вашу Вики-симпатию!",
 	"wikilove-add-details": "Добавить подробности",
 	"wikilove-image": "Введите имя файла с изображением:",
 	"wikilove-select-image": "Выберите изображение:",
@@ -36,7 +37,7 @@
 	"wikilove-button-preview": "Предпросмотр",
 	"wikilove-preview": "Предпросмотр",
 	"wikilove-notify": "Уведомить участника по электронной почте",
-	"wikilove-button-send": "Отправить ВикиСимпатию",
+	"wikilove-button-send": "Отправить Вики-симпатию",
 	"wikilove-type-barnstars": "Ордена",
 	"wikilove-barnstar-header": "Орден для вас!",
 	"wikilove-barnstar-select": "Выбрать орден:",
