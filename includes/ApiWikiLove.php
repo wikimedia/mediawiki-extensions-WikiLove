@@ -76,7 +76,7 @@ class ApiWikiLove extends ApiBase {
 				'subject' => $params['subject'],
 				'reason' => $summary,
 				'text' => $params['text'],
-				'token' => $params['token']
+				'token' => $params['token'],
 			];
 		// If Flow is installed and enabled, use it.
 		} elseif ( $extReg->isLoaded( 'Flow' ) && $talk->hasContentModel( CONTENT_MODEL_FLOW_BOARD ) ) {
@@ -86,7 +86,7 @@ class ApiWikiLove extends ApiBase {
 				'page' => $talk->getFullText(),
 				'nttopic' => $params['subject'],
 				'ntcontent' => $params['text'],
-				'token' => $params['token']
+				'token' => $params['token'],
 			];
 		} else {
 			// Requires MediaWiki 1.19 or later
@@ -99,7 +99,7 @@ class ApiWikiLove extends ApiBase {
 				'token' => $params['token'],
 				'summary' => $summary,
 				'tags' => implode( '|', $params['tags'] ?? [] ),
-				'notminor' => true
+				'notminor' => true,
 			];
 		}
 
@@ -177,7 +177,7 @@ class ApiWikiLove extends ApiBase {
 				'target' => User::newFromName( $talk->getSubjectPage()->getBaseText() )->getName(),
 				'subject' => $subject,
 				'text' => $text,
-				'token' => $token
+				'token' => $token,
 			],
 			true
 		) );
