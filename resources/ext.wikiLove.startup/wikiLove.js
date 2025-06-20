@@ -67,11 +67,11 @@ module.exports = {
 
 		const commonsLink = mw.html.element( 'a', {
 			href: mw.msg( 'wikilove-commons-url' ),
-			target: '_blank'
+			target: '_blank',
 		}, mw.msg( 'wikilove-commons-link' ) );
 		const termsLink = mw.html.element( 'a', {
 			href: mw.msg( 'wikilove-terms-url' ),
-			target: '_blank'
+			target: '_blank',
 		}, mw.msg( 'wikilove-terms-link' ) );
 
 		overlayContainer.classList.add( 'wikilove-overlay-container' );
@@ -87,7 +87,7 @@ module.exports = {
 			termsLink,
 			onClose: () => {
 				this.reset();
-			}
+			},
 		} ).mount( overlayContainer );
 
 		// @todo: Move logic to WikiLoveDialog.vue
@@ -145,7 +145,7 @@ module.exports = {
 					subtype = options.types[ currentTypeId ].subtypes[ subtypeId ];
 					if ( typeof subtype.option !== 'undefined' ) {
 						$( '#mw-wikilove-subtype' ).append(
-							$( '<option>' ).text( subtype.option ).data( 'subtypeId', subtypeId )
+							$( '<option>' ).text( subtype.option ).data( 'subtypeId', subtypeId ),
 						);
 					}
 				}
@@ -153,7 +153,7 @@ module.exports = {
 
 				// change and show the subtype label depending on the type
 				$( '#mw-wikilove-subtype-label' ).text(
-					options.types[ currentTypeId ].select || mw.msg( 'wikilove-select-type' )
+					options.types[ currentTypeId ].select || mw.msg( 'wikilove-select-type' ),
 				);
 				$( '#mw-wikilove-subtype-label' ).show();
 				$.wikiLove.changeSubtype(); // update controls depending on the currently selected (i.e. first) subtype
@@ -206,7 +206,7 @@ module.exports = {
 				header: '',
 				title: '',
 				message: '',
-				image: ''
+				image: '',
 			};
 		}
 		if ( currentTypeOrSubtype !== null ) {
@@ -252,7 +252,7 @@ module.exports = {
 			iiprop: 'mime|url',
 			titles: title,
 			iiurlwidth: 75,
-			iiurlheight: 68
+			iiurlheight: 68,
 		} )
 			.done( ( data ) => {
 				if ( !data || !data.query || !data.query.pages ) {
@@ -294,7 +294,7 @@ module.exports = {
 			header: ( currentTypeOrSubtype.fields.includes( 'header' ) ? rememberData.header : '' ),
 			title: ( currentTypeOrSubtype.fields.includes( 'title' ) ? rememberData.title : '' ),
 			message: ( currentTypeOrSubtype.fields.includes( 'message' ) ? rememberData.message : '' ),
-			image: ( currentTypeOrSubtype.fields.includes( 'image' ) ? rememberData.image : '' )
+			image: ( currentTypeOrSubtype.fields.includes( 'image' ) ? rememberData.image : '' ),
 		};
 
 		$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
@@ -411,7 +411,7 @@ module.exports = {
 						formatversion: 2,
 						action: 'query',
 						titles: imageTitle,
-						prop: 'imageinfo'
+						prop: 'imageinfo',
 					} )
 						.done( ( data ) => {
 							const page = data.query.pages[ 0 ];
@@ -530,7 +530,7 @@ module.exports = {
 			sectiontitle: sectiontitle,
 			disableeditsection: true,
 			sectionpreview: true,
-			pst: true
+			pst: true,
 		} )
 			.done( ( html ) => {
 				$.wikiLove.showPreview( html );
@@ -598,7 +598,7 @@ module.exports = {
 			text: $.wikiLove.prepareMsg( currentTypeOrSubtype.text || options.types[ currentTypeId ].text || options.defaultText ),
 			message: $( '#mw-wikilove-message' ).val(),
 			type: currentTypeId + ( currentSubtypeId !== null ? '-' + currentSubtypeId : '' ),
-			extraTags: options.extraTags
+			extraTags: options.extraTags,
 		};
 		if ( $( '#mw-wikilove-notify-checkbox:checked' ).val() && emailable ) {
 			submitData.email = $.wikiLove.prepareMsg( currentTypeOrSubtype.email );
@@ -640,7 +640,7 @@ module.exports = {
 				text: wikitext,
 				message: message,
 				subject: subject,
-				tags: extraTags
+				tags: extraTags,
 			};
 
 			if ( email ) {
@@ -765,7 +765,7 @@ module.exports = {
 			iiprop: 'mime|url',
 			titles: titles,
 			iiurlwidth: currentTypeOrSubtype.gallery.width,
-			iiurlheight: currentTypeOrSubtype.gallery.height
+			iiurlheight: currentTypeOrSubtype.gallery.height,
 		} )
 			.done( ( data ) => {
 				if ( !data || !data.query || !data.query.pages ) {
@@ -806,7 +806,7 @@ module.exports = {
 									$( '#mw-wikilove-gallery a' ).removeClass( 'selected' );
 									$( this ).addClass( 'selected' );
 									$( '#mw-wikilove-image' ).val( gallery[ $( this ).attr( 'id' ) ] );
-								} )
+								} ),
 						);
 						gallery[ 'mw-wikilove-gallery-img-' + index ] = page.title;
 						index++;
@@ -840,5 +840,5 @@ module.exports = {
 			e.preventDefault();
 			$.wikiLove.openDialog();
 		} );
-	}
+	},
 };

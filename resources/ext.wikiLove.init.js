@@ -1,4 +1,4 @@
 $.when(
 	mw.loader.using( 'ext.wikiLove.local' ),
-	$.ready
+	$.ready,
 ).done( $.wikiLove.init );
