@@ -8,6 +8,10 @@
 	"rules": {
 		"no-var": "error",
 		"prefer-const": "error",
-		"no-jquery/no-done-fail": "warn"
+		"no-jquery/no-done-fail": "warn",
+		"comma-dangle": [
+			"error",
+			"always-multiline"
+		]
 	}
 }

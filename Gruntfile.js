@@ -9,31 +9,31 @@ module.exports = function ( grunt ) {
 	grunt.initConfig( {
 		banana: {
 			options: {
-				requireLowerCase: false
+				requireLowerCase: false,
 			},
-			...conf.MessagesDirs
+			...conf.MessagesDirs,
 		},
 		eslint: {
 			options: {
 				cache: true,
-				fix: grunt.option( 'fix' )
+				fix: grunt.option( 'fix' ),
 			},
 			all: [
 				'**/*.{js,json,vue}',
 				'!node_modules/**',
-				'!vendor/**'
-			]
+				'!vendor/**',
+			],
 		},
 		stylelint: {
 			options: {
-				cache: true
+				cache: true,
 			},
 			all: [
 				'**/*.{css,less,vue}',
 				'!node_modules/**',
-				'!vendor/**'
-			]
-		}
+				'!vendor/**',
+			],
+		},
 	} );
 
 	grunt.registerTask( 'lint', [ 'banana', 'eslint', 'stylelint' ] );

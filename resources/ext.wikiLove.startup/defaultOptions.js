@@ -28,7 +28,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-original-desc' ), // description
 					header: mw.msg( 'wikilove-barnstar-header' ), // header that appears at the top of the talk page post (optional)
 					title: mw.msg( 'wikilove-barnstar-original-title' ), // title that appears inside the award box (optional)
-					image: 'Original Barnstar Hires.png' // image for the award
+					image: 'Original Barnstar Hires.png', // image for the award
 				},
 				admins: {
 					fields: [ 'message' ],
@@ -36,7 +36,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-admins-desc' ),
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-admins-title' ),
-					image: 'Administrator Barnstar Hires.png'
+					image: 'Administrator Barnstar Hires.png',
 				},
 				antivandalism: {
 					fields: [ 'message' ],
@@ -44,7 +44,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-antivandalism-desc' ),
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-antivandalism-title' ),
-					image: 'Barnstar of Reversion Hires.png'
+					image: 'Barnstar of Reversion Hires.png',
 				},
 				diligence: {
 					fields: [ 'message' ],
@@ -52,7 +52,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-diligence-desc' ),
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-diligence-title' ),
-					image: 'Barnstar of Diligence Hires.png'
+					image: 'Barnstar of Diligence Hires.png',
 				},
 				diplomacy: {
 					fields: [ 'message' ],
@@ -60,7 +60,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-diplomacy-desc' ),
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-diplomacy-title' ),
-					image: 'Peace Barnstar Hires.png'
+					image: 'Peace Barnstar Hires.png',
 				},
 				goodhumor: {
 					fields: [ 'message' ],
@@ -68,7 +68,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-goodhumor-desc' ),
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-goodhumor-title' ),
-					image: 'Barnstar of Humour Hires.png'
+					image: 'Barnstar of Humour Hires.png',
 				},
 				brilliant: {
 					fields: [ 'message' ],
@@ -76,7 +76,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-brilliant-desc' ),
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-brilliant-title' ),
-					image: 'Brilliant Idea Barnstar Hires.png'
+					image: 'Brilliant Idea Barnstar Hires.png',
 				},
 				citation: {
 					fields: [ 'message' ],
@@ -84,7 +84,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-citation-desc' ),
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-citation-title' ),
-					image: 'Citation Barnstar Hires.png'
+					image: 'Citation Barnstar Hires.png',
 				},
 				civility: {
 					fields: [ 'message' ],
@@ -92,7 +92,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-civility-desc' ),
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-civility-title' ),
-					image: 'Civility Barnstar Hires.png'
+					image: 'Civility Barnstar Hires.png',
 				},
 				copyeditor: {
 					fields: [ 'message' ],
@@ -100,7 +100,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-copyeditor-desc' ),
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-copyeditor-title' ),
-					image: 'Copyeditor Barnstar Hires.png'
+					image: 'Copyeditor Barnstar Hires.png',
 				},
 				defender: {
 					fields: [ 'message' ],
@@ -108,7 +108,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-defender-desc' ),
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-defender-title' ),
-					image: 'WikiDefender Barnstar Hires.png'
+					image: 'WikiDefender Barnstar Hires.png',
 				},
 				editors: {
 					fields: [ 'message' ],
@@ -116,7 +116,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-editors-desc' ),
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-editors-title' ),
-					image: 'Editors Barnstar Hires.png'
+					image: 'Editors Barnstar Hires.png',
 				},
 				designers: {
 					fields: [ 'message' ],
@@ -124,7 +124,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-designers-desc' ),
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-designers-title' ),
-					image: 'Graphic Designer Barnstar Hires.png'
+					image: 'Graphic Designer Barnstar Hires.png',
 				},
 				half: {
 					fields: [ 'message' ],
@@ -133,7 +133,7 @@ module.exports = {
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-half-title' ),
 					image: 'Halfstar Hires.png',
-					imageSize: '60px'
+					imageSize: '60px',
 				},
 				minor: {
 					fields: [ 'message' ],
@@ -141,7 +141,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-minor-desc' ),
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-minor-title' ),
-					image: 'Minor Barnstar Hires.png'
+					image: 'Minor Barnstar Hires.png',
 				},
 				antispam: {
 					fields: [ 'message' ],
@@ -149,7 +149,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-antispam-desc' ),
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-antispam-title' ),
-					image: 'No Spam Barnstar Hires.png'
+					image: 'No Spam Barnstar Hires.png',
 				},
 				photographers: {
 					fields: [ 'message' ],
@@ -157,7 +157,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-photographers-desc' ),
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-photographers-title' ),
-					image: 'Camera Barnstar Hires.png'
+					image: 'Camera Barnstar Hires.png',
 				},
 				kindness: {
 					fields: [ 'message' ],
@@ -165,7 +165,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-kindness-desc' ),
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-kindness-title' ),
-					image: 'Kindness Barnstar Hires.png'
+					image: 'Kindness Barnstar Hires.png',
 				},
 				reallife: {
 					fields: [ 'message' ],
@@ -173,7 +173,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-reallife-desc' ),
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-reallife-title' ),
-					image: 'Real Life Barnstar.jpg'
+					image: 'Real Life Barnstar.jpg',
 				},
 				resilient: {
 					fields: [ 'message' ],
@@ -181,7 +181,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-resilient-desc' ),
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-resilient-title' ),
-					image: 'Resilient Barnstar Hires.png'
+					image: 'Resilient Barnstar Hires.png',
 				},
 				rosetta: {
 					fields: [ 'message' ],
@@ -189,7 +189,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-rosetta-desc' ),
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-rosetta-title' ),
-					image: 'Rosetta Barnstar Hires.png'
+					image: 'Rosetta Barnstar Hires.png',
 				},
 				special: {
 					fields: [ 'message' ],
@@ -197,7 +197,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-special-desc' ),
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-special-title' ),
-					image: 'Special Barnstar Hires.png'
+					image: 'Special Barnstar Hires.png',
 				},
 				surreal: {
 					fields: [ 'message' ],
@@ -205,7 +205,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-surreal-desc' ),
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-surreal-title' ),
-					image: 'Surreal Barnstar Hires.png'
+					image: 'Surreal Barnstar Hires.png',
 				},
 				teamwork: {
 					fields: [ 'message' ],
@@ -213,7 +213,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-teamwork-desc' ),
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-teamwork-title' ),
-					image: 'Team Barnstar Hires.png'
+					image: 'Team Barnstar Hires.png',
 				},
 				technical: {
 					fields: [ 'message' ],
@@ -221,7 +221,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-technical-desc' ),
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-technical-title' ),
-					image: 'Vitruvian Barnstar Hires.png'
+					image: 'Vitruvian Barnstar Hires.png',
 				},
 				tireless: {
 					fields: [ 'message' ],
@@ -229,7 +229,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-tireless-desc' ),
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-tireless-title' ),
-					image: 'Tireless Contributor Barnstar Hires.gif'
+					image: 'Tireless Contributor Barnstar Hires.gif',
 				},
 				writers: {
 					fields: [ 'message' ],
@@ -237,12 +237,12 @@ module.exports = {
 					descr: mw.msg( 'wikilove-barnstar-writers-desc' ),
 					header: mw.msg( 'wikilove-barnstar-header' ),
 					title: mw.msg( 'wikilove-barnstar-writers-title' ),
-					image: 'Writers Barnstar Hires.png'
-				}
+					image: 'Writers Barnstar Hires.png',
+				},
 			},
 			// icon for left-side menu
 			icon: mw.config.get( 'wgExtensionAssetsPath' ) +
-				'/WikiLove/resources/images/icons/wikilove-icon-barnstar.png'
+				'/WikiLove/resources/images/icons/wikilove-icon-barnstar.png',
 		},
 		food: {
 			name: mw.msg( 'wikilove-type-food' ), // name of the type (appears in the types menu)
@@ -261,7 +261,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-food-baklava-desc' ),
 					header: mw.msg( 'wikilove-food-baklava-header' ), // header that appears at the top of the talk page post (optional)
 					image: 'Baklava - Turkish special, 80-ply.JPEG', // image for the award
-					imageSize: '135px' // size to display image
+					imageSize: '135px', // size to display image
 				},
 				beer: {
 					fields: [ 'header', 'message' ],
@@ -269,7 +269,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-food-beer-desc' ),
 					header: mw.msg( 'wikilove-food-beer-header' ),
 					image: 'Export hell seidel steiner.png',
-					imageSize: '70px'
+					imageSize: '70px',
 				},
 				brownie: {
 					fields: [ 'header', 'message' ],
@@ -277,7 +277,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-food-brownie-desc' ),
 					header: mw.msg( 'wikilove-food-brownie-header' ),
 					image: 'Brownie transparent.png',
-					imageSize: '120px'
+					imageSize: '120px',
 				},
 				bubbletea: {
 					fields: [ 'header', 'message' ],
@@ -285,7 +285,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-food-bubbletea-desc' ),
 					header: mw.msg( 'wikilove-food-bubbletea-header' ),
 					image: 'Bubble_Tea.png',
-					imageSize: '65px'
+					imageSize: '65px',
 				},
 				cheeseburger: {
 					fields: [ 'header', 'message' ],
@@ -293,7 +293,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-food-cheeseburger-desc' ),
 					header: mw.msg( 'wikilove-food-cheeseburger-header' ),
 					image: 'Cheeseburger.png',
-					imageSize: '120px'
+					imageSize: '120px',
 				},
 				cookie: {
 					fields: [ 'header', 'message' ],
@@ -301,7 +301,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-food-cookie-desc' ),
 					header: mw.msg( 'wikilove-food-cookie-header' ),
 					image: 'Choco_chip_cookie.png',
-					imageSize: '120px'
+					imageSize: '120px',
 				},
 				coffee: {
 					fields: [ 'header', 'message' ],
@@ -309,7 +309,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-food-coffee-desc' ),
 					header: mw.msg( 'wikilove-food-coffee-header' ),
 					image: 'Cup-o-coffee-simple.svg',
-					imageSize: '120px'
+					imageSize: '120px',
 				},
 				tea: {
 					fields: [ 'header', 'message' ],
@@ -317,7 +317,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-food-tea-desc' ),
 					header: mw.msg( 'wikilove-food-tea-header' ),
 					image: 'Meissen-teacup pinkrose01.jpg',
-					imageSize: '120px'
+					imageSize: '120px',
 				},
 				cupcake: {
 					fields: [ 'header', 'message' ],
@@ -325,7 +325,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-food-cupcake-desc' ),
 					header: mw.msg( 'wikilove-food-cupcake-header' ),
 					image: 'Choco-Nut Bake with Meringue Top cropped.jpg',
-					imageSize: '120px'
+					imageSize: '120px',
 				},
 				pie: {
 					fields: [ 'header', 'message' ],
@@ -333,7 +333,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-food-pie-desc' ),
 					header: mw.msg( 'wikilove-food-pie-header' ),
 					image: 'A very beautiful Nectarine Pie.jpg',
-					imageSize: '120px'
+					imageSize: '120px',
 				},
 				strawberries: {
 					fields: [ 'header', 'message' ],
@@ -341,7 +341,7 @@ module.exports = {
 					descr: mw.msg( 'wikilove-food-strawberries-desc' ),
 					header: mw.msg( 'wikilove-food-strawberries-header' ),
 					image: 'Erdbeerteller01.jpg',
-					imageSize: '120px'
+					imageSize: '120px',
 				},
 				stroopwafels: {
 					fields: [ 'header', 'message' ],
@@ -349,11 +349,11 @@ module.exports = {
 					descr: mw.msg( 'wikilove-food-stroopwafels-desc' ),
 					header: mw.msg( 'wikilove-food-stroopwafels-header' ),
 					image: 'Gaufre biscuit.jpg',
-					imageSize: '135px'
-				}
+					imageSize: '135px',
+				},
 			},
 			icon: mw.config.get( 'wgExtensionAssetsPath' ) +
-				'/WikiLove/resources/images/icons/wikilove-icon-food.png'
+				'/WikiLove/resources/images/icons/wikilove-icon-food.png',
 		},
 		kitten: {
 			name: mw.msg( 'wikilove-type-kittens' ),
@@ -367,14 +367,14 @@ module.exports = {
 					'Kitten-stare.jpg',
 					'Red Kitten 01.jpg',
 					'Kitten in a helmet.jpg',
-					'Cute grey kitten.jpg'
+					'Cute grey kitten.jpg',
 				],
 				width: 145,
 				height: 150,
-				number: 3
+				number: 3,
 			},
 			icon: mw.config.get( 'wgExtensionAssetsPath' ) +
-				'/WikiLove/resources/images/icons/wikilove-icon-kitten.png'
+				'/WikiLove/resources/images/icons/wikilove-icon-kitten.png',
 		},
 		goat: {
 			name: mw.msg( 'wikilove-type-goats' ),
@@ -385,14 +385,14 @@ module.exports = {
 				imageList: [
 					'A aesthetic goat.JPG',
 					'Boer Goat (8742860752).jpg',
-					'Házikecske portré.JPG'
+					'Házikecske portré.JPG',
 				],
 				width: 145,
 				height: 150,
-				number: 3
+				number: 3,
 			},
 			icon: mw.config.get( 'wgExtensionAssetsPath' ) +
-				'/WikiLove/resources/images/icons/wikilove-icon-goat.png'
+				'/WikiLove/resources/images/icons/wikilove-icon-goat.png',
 		},
 		fox: {
 			name: mw.msg( 'wikilove-type-foxes' ),
@@ -405,21 +405,21 @@ module.exports = {
 					'Foxes (4848876670).jpg',
 					'Fox get me out of here eyes (5751742737).jpg',
 					'Twemoji12_1f98a.svg',
-					'Fox sleeping (51901885260).jpg'
+					'Fox sleeping (51901885260).jpg',
 				],
 				width: 145,
 				height: 150,
-				number: 3
+				number: 3,
 			},
 			icon: mw.config.get( 'wgExtensionAssetsPath' ) +
-				'/WikiLove/resources/images/icons/wikilove-icon-fox.png'
+				'/WikiLove/resources/images/icons/wikilove-icon-fox.png',
 		},
 		// default type, nice to leave this one in place when adding other types
 		makeyourown: {
 			name: mw.msg( 'wikilove-type-makeyourown' ),
 			fields: [ 'header', 'title', 'image', 'message' ],
 			icon: mw.config.get( 'wgExtensionAssetsPath' ) +
-				'/WikiLove/resources/images/icons/wikilove-icon-create.png'
-		}
-	}
+				'/WikiLove/resources/images/icons/wikilove-icon-create.png',
+		},
+	},
 };

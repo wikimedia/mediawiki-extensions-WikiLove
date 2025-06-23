@@ -2,5 +2,18 @@
 	"root": true,
 	"extends": [
 		"wikimedia/server"
+	],
+	"overrides": [
+		{
+			"files": [
+				"!**/*.json"
+			],
+			"rules": {
+				"comma-dangle": [
+					"error",
+					"always-multiline"
+				]
+			}
+		}
 	]
 }

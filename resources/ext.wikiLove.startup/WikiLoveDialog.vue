@@ -127,21 +127,21 @@ module.exports = Vue.defineComponent( {
 	name: 'WikiLoveDialog',
 	components: {
 		CdxButton,
-		CdxIcon
+		CdxIcon,
 	},
 	props: {
 		closeIcon: {
 			type: String,
-			default: cdxIconClose
+			default: cdxIconClose,
 		},
 		commonsLink: {
 			type: String,
-			required: true
+			required: true,
 		},
 		termsLink: {
 			type: String,
-			required: true
-		}
+			required: true,
+		},
 	},
 	emits: [ 'close' ],
 	computed: {
@@ -152,7 +152,7 @@ module.exports = Vue.defineComponent( {
 		commonsText() {
 			// TODO improve this logic so that v-html isn't needed
 			return mw.message( 'wikilove-commons-text' ).parse().replace( '$1', this.commonsLink );
-		}
+		},
 	},
 	methods: {
 		onImageChange: function () {
@@ -161,8 +161,8 @@ module.exports = Vue.defineComponent( {
 			$( '#mw-wikilove-dialog' ).find( '.mw-wikilove-error' ).remove();
 			$( '#mw-wikilove-preview' ).hide();
 			/* eslint-enable no-jquery/no-global-selector */
-		}
-	}
+		},
+	},
 } );
 
 </script>
