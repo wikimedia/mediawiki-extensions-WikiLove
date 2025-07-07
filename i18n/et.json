@@ -84,6 +84,8 @@
 	"wikilove-food-beer-header": "Sulle on õlut!",
 	"wikilove-food-brownie-option": "Šokolaadikoogike",
 	"wikilove-food-brownie-header": "Sulle on šokolaadikoogike!",
+	"wikilove-food-bubbletea-option": "Mullitee",
+	"wikilove-food-bubbletea-header": "Sulle on mulliteed!",
 	"wikilove-food-cheeseburger-option": "Juustuburger",
 	"wikilove-food-cheeseburger-desc": "Juustuburgerid on kiirtoidukohtade peamisi söögipooliseid, mis said esmalt populaarseks 1920. ja 1930. aastatel Ühendriikides.",
 	"wikilove-food-cheeseburger-header": "Sulle on juustuburger!",
@@ -138,5 +140,7 @@
 	"wikilove-commons-text": "Pilte leiad $1.",
 	"wikilove-commons-link": "Wikimedia Commonsist",
 	"wikilove-commons-url": "//commons.wikimedia.org/wiki/Esileht?uselang=et",
+	"wikilove-terms": "Saates nõustud läbipaistvusega vastavalt neile $1.",
+	"wikilove-terms-link": "tingimustele",
 	"tag-wikilove-description": "Muudatus tehtud vikitervituse tööriista abil"
 }
