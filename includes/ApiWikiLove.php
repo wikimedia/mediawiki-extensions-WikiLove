@@ -163,7 +163,7 @@ class ApiWikiLove extends ApiBase {
 				->row( $values )
 				->caller( __METHOD__ )
 				->execute();
-		} catch ( DBQueryError $dbqe ) {
+		} catch ( DBQueryError ) {
 			$this->addWarning( 'Action was not logged' );
 		}
 	}
