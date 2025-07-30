@@ -6,9 +6,9 @@ use LqtDispatch;
 use MediaWiki\Api\ApiBase;
 use MediaWiki\Api\ApiMain;
 use MediaWiki\Api\ApiMessage;
+use MediaWiki\ChangeTags\ChangeTagsStore;
 use MediaWiki\Context\DerivativeContext;
 use MediaWiki\Deferred\DeferredUpdates;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Parser\ParserFactory;
 use MediaWiki\Parser\Sanitizer;
 use MediaWiki\Permissions\PermissionManager;
@@ -21,6 +21,7 @@ use Wikimedia\Rdbms\DBQueryError;
 use Wikimedia\Rdbms\IConnectionProvider;
 
 class ApiWikiLove extends ApiBase {
+	private ChangeTagsStore $changeTagsStore;
 	private IConnectionProvider $dbProvider;
 	private ParserFactory $parserFactory;
 	private PermissionManager $permissionManager;
@@ -28,11 +29,13 @@ class ApiWikiLove extends ApiBase {
 	public function __construct(
 		ApiMain $main,
 		string $action,
+		ChangeTagsStore $changeTagsStore,
 		IConnectionProvider $dbProvider,
 		ParserFactory $parserFactory,
 		PermissionManager $permissionManager
 	) {
 		parent::__construct( $main, $action );
+		$this->changeTagsStore = $changeTagsStore;
 		$this->dbProvider = $dbProvider;
 		$this->parserFactory = $parserFactory;
 		$this->permissionManager = $permissionManager;
@@ -117,9 +120,8 @@ class ApiWikiLove extends ApiBase {
 		$result = $api->getResult()->getResultData();
 		if ( isset( $result['edit'] ) && $result['edit']['result'] === "Success" ) {
 			$revId = $result['edit']['newrevid'];
-			DeferredUpdates::addCallableUpdate( static function () use ( $revId ) {
-				MediaWikiServices::getInstance()->getChangeTagsStore()
-					->addTags( [ 'wikilove' ], null, $revId );
+			DeferredUpdates::addCallableUpdate( function () use ( $revId ) {
+				$this->changeTagsStore->addTags( [ 'wikilove' ], null, $revId );
 			} );
 		}
 

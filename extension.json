@@ -17,6 +17,7 @@
 		"wikilove": {
 			"class": "MediaWiki\\Extension\\WikiLove\\ApiWikiLove",
 			"services": [
+				"ChangeTagsStore",
 				"DBLoadBalancerFactory",
 				"ParserFactory",
 				"PermissionManager"
