@@ -34,18 +34,11 @@ class Hooks implements
 	ListDefinedTagsHook,
 	ChangeTagsListActiveHook
 {
-	private Config $config;
-	private PermissionManager $permissionManager;
-	private UserOptionsLookup $userOptionsLookup;
-
 	public function __construct(
-		Config $config,
-		PermissionManager $permissionManager,
-		UserOptionsLookup $userOptionsLookup
+		private readonly Config $config,
+		private readonly PermissionManager $permissionManager,
+		private readonly UserOptionsLookup $userOptionsLookup,
 	) {
-		$this->config = $config;
-		$this->permissionManager = $permissionManager;
-		$this->userOptionsLookup = $userOptionsLookup;
 	}
 
 	/**

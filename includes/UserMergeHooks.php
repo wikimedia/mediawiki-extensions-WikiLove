@@ -16,15 +16,10 @@ use Wikimedia\Rdbms\ILoadBalancer;
  */
 
 class UserMergeHooks implements AccountFieldsHook {
-	private Config $config;
-	private ILoadBalancer $loadBalancer;
-
 	public function __construct(
-		Config $config,
-		ILoadBalancer $loadBalancer
+		private readonly Config $config,
+		private readonly ILoadBalancer $loadBalancer,
 	) {
-		$this->config = $config;
-		$this->loadBalancer = $loadBalancer;
 	}
 
 	/**

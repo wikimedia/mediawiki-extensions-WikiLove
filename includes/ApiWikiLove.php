@@ -21,24 +21,15 @@ use Wikimedia\Rdbms\DBQueryError;
 use Wikimedia\Rdbms\IConnectionProvider;
 
 class ApiWikiLove extends ApiBase {
-	private ChangeTagsStore $changeTagsStore;
-	private IConnectionProvider $dbProvider;
-	private ParserFactory $parserFactory;
-	private PermissionManager $permissionManager;
-
 	public function __construct(
 		ApiMain $main,
 		string $action,
-		ChangeTagsStore $changeTagsStore,
-		IConnectionProvider $dbProvider,
-		ParserFactory $parserFactory,
-		PermissionManager $permissionManager
+		private readonly ChangeTagsStore $changeTagsStore,
+		private readonly IConnectionProvider $dbProvider,
+		private readonly ParserFactory $parserFactory,
+		private readonly PermissionManager $permissionManager,
 	) {
 		parent::__construct( $main, $action );
-		$this->changeTagsStore = $changeTagsStore;
-		$this->dbProvider = $dbProvider;
-		$this->parserFactory = $parserFactory;
-		$this->permissionManager = $permissionManager;
 	}
 
 	/** @inheritDoc */
