@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Winston Sung"
+			"Ktchankt",
+			"Winston Sung",
+			"Yueman"
 		]
 	},
 	"wikilove-desc": "加個介面，方便留言讚賞同鼓勵其他人",
@@ -153,6 +155,8 @@
 	"wikilove-kittens-header": "送隻貓仔畀你！",
 	"wikilove-type-goats": "山羊",
 	"wikilove-goats-header": "送隻羊畀你！",
+	"wikilove-type-foxes": "狐狸",
+	"wikilove-foxes-header": "送隻狐狸畀你！",
 	"wikilove-type-makeyourown": "自製",
 	"wikilove-err-header": "入標題。",
 	"wikilove-err-title": "入獎名。",
@@ -183,6 +187,6 @@
 	"wikilove-terms": "你撳送出，代表你同意$1嘅透明度政策。",
 	"wikilove-terms-link": "條款",
 	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Legal:Wikimedia_Foundation_Feedback_Privacy_Statement",
-	"tag-wikilove-description": "用維基愛心 (WikiＬove)　做嘅修改",
+	"tag-wikilove-description": "用維基愛心（WikiLove）做嘅修改",
 	"wikiLove.js": "/* 呢段　JavaScript　係用嚟設定《維基愛心》 (WikiLove)　嘅，詳情請睇 https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }

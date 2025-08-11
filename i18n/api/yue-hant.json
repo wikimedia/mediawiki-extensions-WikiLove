@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ktchankt",
 			"Winston Sung"
 		]
 	},
@@ -12,6 +13,7 @@
 	"apihelp-wikilove-param-subject": "新小節嘅標題。",
 	"apihelp-wikilove-param-type": "維基愛心種類（統計用）；對應選單上面揀嘅種類，有時亦包括細類，例如（「{{int:wikilove-barnstar-original-title}}」、「{{int:wikilove-kittens-header}}」）。",
 	"apihelp-wikilove-param-email": "額外寄畀呢個用戶嘅電郵嘅內容。如果個用戶唔俾人寄電郵畀佢，會出錯誤訊息。點都好，收件人都會收到維基愛心訊息。",
+	"apihelp-wikilove-param-tags": "更改標籤嚟套用喺修訂版本。",
 	"apihelp-wikilove-example-1": "送贈維基愛心畀\"[[User:Dummy]]\"",
 	"apiwarn-wikilove-ignoringunregistered": "唔會記低無簽到嘅收信人",
 	"apiwarn-wikilove-notlogged": "冇登錄到呢個動作"
