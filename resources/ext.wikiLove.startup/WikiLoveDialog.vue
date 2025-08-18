@@ -24,7 +24,7 @@
 						<li>{{ $i18n( 'wikilove-get-started-list-3' ) }}</li>
 					</ol>
 					<p>
-						<a target="_blank" :href="$i18n( 'wikilove-what-is-this-link' )">
+						<a target="_blank" :href="whatIsThisLink">
 							{{ $i18n( 'wikilove-what-is-this' ) }}
 						</a>
 					</p>
@@ -119,6 +119,7 @@
 
 <script>
 const { cdxIconClose } = require( './icons.json' );
+const { whatIsThisLink } = require( './data.json' );
 const { CdxIcon, CdxButton } = require( '@wikimedia/codex' );
 const Vue = require( 'vue' );
 
@@ -144,6 +145,9 @@ module.exports = Vue.defineComponent( {
 		}
 	},
 	emits: [ 'close' ],
+	data: () => ( {
+		whatIsThisLink
+	} ),
 	computed: {
 		terms() {
 			// TODO improve this logic so that v-html isn't needed

@@ -51,7 +51,11 @@
 				},
 				"ext.wikiLove.startup/wikiLove.js",
 				"ext.wikiLove.startup/WikiLoveDialog.vue",
-				"ext.wikiLove.startup/defaultOptions.js"
+				"ext.wikiLove.startup/defaultOptions.js",
+				{
+					"name": "ext.wikiLove.startup/data.json",
+					"callback": "MediaWiki\\Extension\\WikiLove\\Hooks::getStartupData"
+				}
 			],
 			"styles": "ext.wikiLove.less",
 			"messages": [
@@ -215,7 +219,6 @@
 				"wikilove-err-gallery-again",
 				"wikilove-err-invalid-token",
 				"wikilove-what-is-this",
-				"wikilove-what-is-this-link",
 				"wikilove-anon-warning",
 				"wikilove-commons-text",
 				"wikilove-commons-link",

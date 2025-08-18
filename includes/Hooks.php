@@ -14,6 +14,7 @@ use MediaWiki\Output\Hook\BeforePageDisplayHook;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Preferences\Hook\GetPreferencesHook;
+use MediaWiki\ResourceLoader\Context;
 use MediaWiki\Skin\Skin;
 use MediaWiki\Skin\SkinTemplate;
 use MediaWiki\Title\Title;
@@ -234,6 +235,20 @@ class Hooks implements
 	 */
 	public function onChangeTagsListActive( &$tags ) {
 		$tags[] = 'wikilove';
+	}
+
+	/**
+	 * Generate the content of the virtual `data.json` file in the `ext.wikiLove.startup`
+	 * ResourceLoader module.
+	 * @param Context $context
+	 * @return array JSON data
+	 */
+	public static function getStartupData( Context $context ) {
+		return [
+			'whatIsThisLink' => Skin::makeInternalOrExternalUrl(
+				$context->msg( 'wikilove-what-is-this-link' )->text()
+			),
+		];
 	}
 
 }
