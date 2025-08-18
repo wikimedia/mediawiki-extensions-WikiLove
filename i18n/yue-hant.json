@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Winston Sung"
+			"Winston Sung",
+			"Ktchankt",
+			"Yueman"
 		]
 	},
 	"wikilove-desc": "加個介面，方便留言讚賞同鼓勵其他人",
@@ -182,6 +184,6 @@
 	"wikilove-terms": "你撳送出，代表你同意$1嘅透明度政策。",
 	"wikilove-terms-link": "條款",
 	"wikilove-terms-url": "//foundation.wikimedia.org/wiki/Feedback_privacy_statement",
-	"tag-wikilove-description": "用維基愛心 (WikiＬove)　做嘅修改",
+	"tag-wikilove-description": "用維基愛心（WikiLove）做嘅修改",
 	"wikiLove.js": "/* 呢段　JavaScript　係用嚟設定《維基愛心》 (WikiLove)　嘅，詳情請睇 https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }
