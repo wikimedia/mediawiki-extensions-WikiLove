@@ -3,7 +3,8 @@
 		"authors": [
 			"Klein Muçi",
 			"Liridon",
-			"Olsi"
+			"Olsi",
+			"Xhulianoo"
 		]
 	},
 	"wikilove-desc": "Shton një ndërfaqe për lehtësimin e dhurimit të stampave vlerësuese në faqet e diskutimit të përdoruesve",
@@ -54,6 +55,6 @@
 	"wikilove-commons-text": "Mund të gjesh imazhe duke shfletuar $1.",
 	"wikilove-terms": "Duke e publikuar, ju po bini dakord me parimin e transparencës nën këto $1.",
 	"wikilove-terms-link": "kushte",
-	"tag-wikilove-description": "Redaktim i bërë me anë të veglës së WikiDashurisë",
+	"tag-wikilove-description": "Redaktim i bërë duke përdorur mjetin WikiDashuri",
 	"wikiLove.js": "/* Kodet e vendosura këtu ndryshojnë përdorimin e WikiDashurisë. Për më shumë informacion, shikoni: https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }
