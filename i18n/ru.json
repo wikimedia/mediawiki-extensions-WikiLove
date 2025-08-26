@@ -12,7 +12,8 @@
 			"Stjn",
 			"Александр Сигачёв",
 			"Умар",
-			"Michgrig"
+			"Michgrig",
+			"Mitte27"
 		]
 	},
 	"wikilove-desc": "Добавляет интерфейс для упрощения добавления положительных отзывов на страницы обсуждения участников",
@@ -164,6 +165,8 @@
 	"wikilove-kittens-header": "Котёночек для вас!",
 	"wikilove-type-goats": "Козы",
 	"wikilove-goats-header": "Вам коза!",
+	"wikilove-type-foxes": "Лисы",
+	"wikilove-foxes-header": "Лисичка для тебя!",
 	"wikilove-type-makeyourown": "Сделать собственный",
 	"wikilove-err-header": "Пожалуйста, введите заголовок.",
 	"wikilove-err-title": "Пожалуйста, введите название.",
