@@ -1,7 +1,5 @@
 <?php
 
-// phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
-
 namespace MediaWiki\Extension\WikiLove;
 
 use MediaWiki\Api\ApiMessage;
@@ -23,10 +21,8 @@ use MediaWiki\User\User;
 /**
  * Hooks for WikiLove extension
  *
- * @file
  * @ingroup Extensions
  */
-
 class Hooks implements
 	GetPreferencesHook,
 	SkinTemplateNavigation__UniversalHook,

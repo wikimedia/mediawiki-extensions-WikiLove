@@ -8,10 +8,8 @@ use MediaWiki\Installer\Hook\LoadExtensionSchemaUpdatesHook;
 /**
  * Schema hooks for WikiLove extension
  *
- * @file
  * @ingroup Extensions
  */
-
 class SchemaHooks implements LoadExtensionSchemaUpdatesHook {
 
 	/**
