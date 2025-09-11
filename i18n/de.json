@@ -173,7 +173,7 @@
 	"wikilove-err-invalid-token": "Da die Sitzungsdaten verlorengegangen sind, konnte die Wertschätzung nicht gesandt werden. Versuche die Seite erneut zu laden oder melde dich ab und anschließend wieder an.",
 	"wikilove-err-not-logged-in": "Du bist nicht angemeldet. Bitte melde dich an, um WikiLove nutzen zu können.",
 	"wikilove-err-invalid-username": "Dieser Benutzername ist ungültig.",
-	"wikilove-err-no-self-wikilove": "Du kannst dir selbst gegenüber keine Wertschätzung ausdrücken.",
+	"wikilove-err-no-self-wikilove": "{{#FORMAL:Du kannst dir|Sie können sich}} selbst gegenüber keine Wertschätzung ausdrücken.",
 	"wikilove-err-redirect": "Bei der Diskussionsseite des Benutzers handelt es sich um eine Weiterleitung.",
 	"wikilove-err-cannot-edit": "Du hast nicht die erforderliche Berechtigung, um diese Seite bearbeiten zu können.",
 	"wikilove-err-max-exceeded": "Du kannst nicht mehr als {{PLURAL:$1|einem Benutzer|$1 Benutzern}} gleichzeitig deine Wertschätzung ausdrücken.",
