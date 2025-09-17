@@ -14,6 +14,18 @@
 		gallery = {},
 		api = new mw.Api();
 
+	var whatIsThisUrl = mw.msg( 'wikilove-what-is-this-link' );
+	var validUrl;
+	try {
+		var uri = new mw.Uri( whatIsThisUrl );
+		validUrl = uri.protocol === 'http' || uri.protocol === 'https';
+	} catch ( e ) {
+		validUrl = false;
+	}
+	if ( !validUrl ) {
+		whatIsThisUrl = mw.util.getUrl( whatIsThisUrl );
+	}
+
 	$.wikiLove = {
 		/**
 		 * Opens the dialog and builds it if necessary.
@@ -88,7 +100,7 @@
 		<li>' + mw.message( 'wikilove-get-started-list-2' ).escaped() + '</li>\
 		<li>' + mw.message( 'wikilove-get-started-list-3' ).escaped() + '</li>\
 	</ol>\
-	<p><a target="_blank" href="' + mw.message( 'wikilove-what-is-this-link' ).escaped() + '">\
+	<p><a target="_blank" href="' + mw.html.escape( whatIsThisUrl ) + '">\
 		' + mw.message( 'wikilove-what-is-this' ).escaped() + '\
 	</a></p>\
 	<p id="mw-wikilove-anon-warning"><strong>' + mw.message( 'wikilove-anon-warning' ).escaped() + '</strong></p>\

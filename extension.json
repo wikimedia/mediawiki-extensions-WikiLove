@@ -214,6 +214,7 @@
 			"dependencies": [
 				"mediawiki.api",
 				"mediawiki.Title",
+				"mediawiki.Uri",
 				"mediawiki.util",
 				"jquery.ui",
 				"mediawiki.ui.button"
