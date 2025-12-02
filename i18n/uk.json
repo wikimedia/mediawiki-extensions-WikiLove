@@ -15,7 +15,8 @@
 			"Steve.rusyn",
 			"SteveR",
 			"Ата",
-			"Тест"
+			"Тест",
+			"Movses"
 		]
 	},
 	"wikilove-desc": "Додає інтерфейс для залишення позитивних відгуків на сторінці обговорення користувача",
@@ -41,7 +42,7 @@
 	"wikilove-preview": "Попередній перегляд",
 	"wikilove-notify": "Повідомити користувача електронним листом",
 	"wikilove-button-send": "Надіслати Вікісимпатію",
-	"wikilove-type-barnstars": "Вікізірки",
+	"wikilove-type-barnstars": "Ордени",
 	"wikilove-barnstar-header": "Орден для вас!",
 	"wikilove-barnstar-select": "Вибрати орден:",
 	"wikilove-barnstar-original-option": "Орден за заслуги",
@@ -135,7 +136,7 @@
 	"wikilove-food-beer-header": "Пиво для вас!",
 	"wikilove-food-brownie-option": "Домовичок",
 	"wikilove-food-brownie-desc": "Домовичок — це плоский випечений рясно политий шоколадом торт. Він зазвичай подається у вигляді квадратів або брусків.",
-	"wikilove-food-brownie-header": "Домовичок для вас!",
+	"wikilove-food-brownie-header": "Брауні для вас!",
 	"wikilove-food-bubbletea-option": "Бульбашковий чай",
 	"wikilove-food-bubbletea-desc": "Бульбашковий чай — напій на основі чаю чи соку, що містить маленькі жувальні кульки з тапіокового крохмалю або желе. Вперше виготовлений на Тайвані, тепер популярний у багатьох частинах світу.",
 	"wikilove-food-bubbletea-header": "Трохи бульбашкового чаю для вас!",
@@ -166,7 +167,9 @@
 	"wikilove-type-kittens": "Пухнастики",
 	"wikilove-kittens-header": "Кошеня для вас!",
 	"wikilove-type-goats": "Козеня",
-	"wikilove-goats-header": "Козеня для Вас!",
+	"wikilove-goats-header": "Козеня для вас!",
+	"wikilove-type-foxes": "Лисички",
+	"wikilove-foxes-header": "Лисичка для вас!",
 	"wikilove-type-makeyourown": "Зробити свій власний",
 	"wikilove-err-header": "Будь ласка, введіть заголовок.",
 	"wikilove-err-title": "Будь ласка, введіть назву.",
