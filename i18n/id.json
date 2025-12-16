@@ -3,12 +3,13 @@
 		"authors": [
 			"Iwan Novirion",
 			"Kaldari",
-			"Kenrick95"
+			"Kenrick95",
+			"Penyuwangi"
 		]
 	},
 	"wikilove-desc": "Menambahkan penghargaan ke halaman pembicaraan pengguna atas kontribusi positifnya",
 	"wikilove": "WikiSalut",
-	"wikilove-enable-preference": "Aktifkan tab WikiSalut untuk mengirim penghargaan bagi pengguna lain",
+	"wikilove-enable-preference": "Nyalakan tab WikiSalut untuk mengirim penghargaan bagi pengguna lain",
 	"wikilove-tab-text": "WikiSalut",
 	"tooltip-ca-wikilove": "Kirim pesan ke pengguna ini untuk menunjukkan apresiasi Anda",
 	"wikilove-dialog-title": "WikiSalut - Kirim pesan penghargaan kepada pengguna lain",
