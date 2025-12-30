@@ -14,7 +14,8 @@
 			"Luckas",
 			"MetalBrasil",
 			"Pedroca cerebral",
-			"Raylton P. Sousa"
+			"Raylton P. Sousa",
+			"Fúlvio"
 		]
 	},
 	"wikilove-desc": "Adiciona uma interface para facilitar a demonstrações de apreço nas páginas de discussão dos usuários",
@@ -166,6 +167,8 @@
 	"wikilove-kittens-header": "Um gatinho para você!",
 	"wikilove-type-goats": "Cabras",
 	"wikilove-goats-header": "Uma cabra para você!",
+	"wikilove-type-foxes": "Raposas",
+	"wikilove-foxes-header": "Uma raposa para você!",
 	"wikilove-type-makeyourown": "Crie o seu",
 	"wikilove-err-header": "Introduza um cabeçalho, por favor.",
 	"wikilove-err-title": "Introduza um título, por favor.",
