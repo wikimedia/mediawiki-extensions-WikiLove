@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"AmazingJus",
 			"Peter57770"
 		]
 	},
-	"wikilove-err-not-logged-in": "Čhažé onígwa šni. WikiLove núŋ yačhíŋ héči čhaž’óigwa yo/ye."
+	"wikilove-err-not-logged-in": "Čhažé onígwa šni. WikiLove núŋ yačhíŋ héči čhaž’óigwa {{GENDER:|yo|ye|yo/ye}}."
 }
