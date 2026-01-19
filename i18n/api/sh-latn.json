@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aca",
 			"Winston Sung"
 		]
 	},
 	"apihelp-wikilove-summary": "Daruj wikiljubav drugom korisniku.",
-	"apihelp-wikilove-extended-description": "WikiLove je pozitivna poruka objavljena na stranici za razgovor korisnika putem prikladnog sučelja s unaprijed ili lokalno definiranim predlošcima. Ova radnja stavi navedeni wikitekst na određenu stranicu za razgovor. U statističke svrhe vrsta i drugi podaci se bilježe."
+	"apihelp-wikilove-extended-description": "WikiLove je pozitivna poruka objavljena na stranici za razgovor korisnika putem prikladnog interfejsa s unaprijed ili lokalno definiranim šablonima. Ova radnja stavi navedeni wikitekst na određenu stranicu za razgovor. U statističke svrhe vrsta i drugi podaci se bilježe."
 }
