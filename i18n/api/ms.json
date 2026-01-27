@@ -5,6 +5,15 @@
 		]
 	},
 	"apihelp-wikilove-summary": "Berikan WikiSayang kepada pengguna lain.",
+	"apihelp-wikilove-extended-description": "WikiSayang ialah pesanan positif yang dihantar pada laman perbincangan pengguna melalui antara muka yang mudah dengan templat pratetap atau yang ditetapkan setempat. Tindakan ini menambahkan wikiteks yang ditentukan ke laman perbincangan tertentu. Untuk tujuan perangkaan, jenis dan data lain dilogkan.",
+	"apihelp-wikilove-param-title": "Nama laman penuh bagi laman pengguna atau laman perbincangan pengguna untuk pengguna untuk menghantar WikiSayang kepada.",
+	"apihelp-wikilove-param-text": "Wikiteks mentah untuk ditambah dalam bahagian baharu.",
+	"apihelp-wikilove-param-message": "Pesanan sebenar yang pengguna masukkan, untuk tujuan log.",
+	"apihelp-wikilove-param-subject": "Pengepala tajuk bagi bahagian baharu.",
+	"apihelp-wikilove-param-type": "Jenis WikiSayang (untuk statistik); ini sepadan dengan jenis yang dipilih dalam menu, dan secara pilihan jenis kecil selepas itu (contohnya seperti dalam \"{{int:wikilove-barnstar-original-title}}\" atau \"{{int:wikilove-kittens-header}}\").",
 	"apihelp-wikilove-param-email": "Kandungan pesanan e-mel pilihan untuk menghantar ke pengguna. Amaran akan dikembalikan jika pengguna tidak dapat di-e-melkan. WikiSayang akan dihantar ke laman perbincangan pengguna macam mana sekalipun.",
+	"apihelp-wikilove-param-tags": "Ubah tag untuk digunakan pada semakan.",
+	"apihelp-wikilove-example-1": "Hantar WikiSayang ke \"[[User:Dummy|Pengguna:Dummy]]\"",
+	"apiwarn-wikilove-ignoringunregistered": "Tidak melog penerima yang tidak berdaftar",
 	"apiwarn-wikilove-notlogged": "Tindakan tidak dilogkan"
 }
