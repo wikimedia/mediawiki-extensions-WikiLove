@@ -72,8 +72,7 @@
 							class="text"
 							@change="onImageChange"
 						>
-						<!-- eslint-disable-next-line vue/no-v-html -->
-						<div id="mw-wikilove-commons-text" v-html="commonsText"></div>
+						<div id="mw-wikilove-commons-text" v-i18n-html:wikilove-commons-text="[ commonsLink ]"></div>
 						<label id="mw-wikilove-message-label" for="mw-wikilove-message">{{ $i18n( 'wikilove-enter-message' ) }}</label>
 						<span id="mw-wikilove-message-note" class="mw-wikilove-note">{{ $i18n( 'wikilove-omit-sig' ) }}</span>
 						<textarea id="mw-wikilove-message" rows="4"></textarea>
@@ -99,8 +98,7 @@
 					<span class="mw-wikilove-number">3</span>
 					<h3>{{ $i18n( 'wikilove-preview' ) }}</h3>
 					<div id="mw-wikilove-preview-area"></div>
-					<!-- eslint-disable-next-line vue/no-v-html -->
-					<div id="mw-wikilove-terms" v-html="terms"></div>
+					<div id="mw-wikilove-terms" v-i18n-html:wikilove-terms="[ termsLink ]"></div>
 					<form id="mw-wikilove-send-form">
 						<cdx-button
 							id="mw-wikilove-button-send"
@@ -119,7 +117,7 @@
 
 <script>
 const { cdxIconClose } = require( './icons.json' );
-const { whatIsThisLink } = require( './data.json' );
+const { whatIsThisLink, commonsUrl, termsUrl } = require( './data.json' );
 const { CdxIcon, CdxButton } = require( '@wikimedia/codex' );
 const Vue = require( 'vue' );
 
@@ -135,27 +133,23 @@ module.exports = Vue.defineComponent( {
 			type: String,
 			default: cdxIconClose,
 		},
-		commonsLink: {
-			type: String,
-			required: true,
-		},
-		termsLink: {
-			type: String,
-			required: true,
-		},
 	},
 	emits: [ 'close' ],
 	data: () => ( {
 		whatIsThisLink,
 	} ),
 	computed: {
-		terms() {
-			// TODO improve this logic so that v-html isn't needed
-			return mw.message( 'wikilove-terms' ).parse().replace( '$1', this.termsLink );
+		termsLink() {
+			return $( '<a>' )
+				.attr( 'href', termsUrl )
+				.attr( 'target', '_blank' )
+				.text( mw.msg( 'wikilove-terms-link' ) );
 		},
-		commonsText() {
-			// TODO improve this logic so that v-html isn't needed
-			return mw.message( 'wikilove-commons-text' ).parse().replace( '$1', this.commonsLink );
+		commonsLink() {
+			return $( '<a>' )
+				.attr( 'href', commonsUrl )
+				.attr( 'target', '_blank' )
+				.text( mw.msg( 'wikilove-commons-link' ) );
 		},
 	},
 	methods: {
