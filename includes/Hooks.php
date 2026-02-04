@@ -240,6 +240,12 @@ class Hooks implements
 			'whatIsThisLink' => Skin::makeInternalOrExternalUrl(
 				$context->msg( 'wikilove-what-is-this-link' )->text()
 			),
+			'commonsUrl' => Skin::makeInternalOrExternalUrl(
+				$context->msg( 'wikilove-commons-url' )->text()
+			),
+			'termsUrl' => Skin::makeInternalOrExternalUrl(
+				$context->msg( 'wikilove-terms-url' )->text()
+			),
 		];
 	}
 

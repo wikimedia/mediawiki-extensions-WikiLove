@@ -65,15 +65,6 @@ module.exports = {
 			$typeList.append( $( '<li>' ).append( $button ) );
 		}
 
-		const commonsLink = mw.html.element( 'a', {
-			href: mw.msg( 'wikilove-commons-url' ),
-			target: '_blank'
-		}, mw.msg( 'wikilove-commons-link' ) );
-		const termsLink = mw.html.element( 'a', {
-			href: mw.msg( 'wikilove-terms-url' ),
-			target: '_blank'
-		}, mw.msg( 'wikilove-terms-link' ) );
-
 		overlayContainer.classList.add( 'wikilove-overlay-container', 'notheme' );
 		overlayContainer.style.display = '';
 
@@ -83,8 +74,6 @@ module.exports = {
 		// render.
 		document.body.appendChild( overlayContainer );
 		Vue.createMwApp( WikiLoveDialog, {
-			commonsLink,
-			termsLink,
 			onClose: () => {
 				this.reset();
 			}
