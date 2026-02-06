@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Babanwalia",
+			"Cabal",
 			"Satdeep gill",
 			"Sony dandiwal"
 		]
@@ -44,8 +45,8 @@
 	"wikilove-barnstar-brilliant-title": "ਸ਼ਾਨਦਾਰ ਸੁਝਾਅ ਲਈ ਬਾਰਨਸਟਾਰ",
 	"wikilove-barnstar-citation-option": "ਹਵਾਲਾ ਬਾਰਨਸਟਾਰ",
 	"wikilove-barnstar-citation-title": "ਹਵਾਲਾ ਬਾਰਨਸਟਾਰ",
-	"wikilove-barnstar-editors-option": "ਸੰਪਾਦਕ ਬਾਰਨਸਟਾਰ",
-	"wikilove-barnstar-editors-title": "ਸੰਪਾਦਕ ਬਾਰਨਸਟਾਰ",
+	"wikilove-barnstar-editors-option": "ਸੋਧਕ ਬਾਰਨਸਟਾਰ",
+	"wikilove-barnstar-editors-title": "ਸੋਧਕ ਬਾਰਨਸਟਾਰ",
 	"wikilove-barnstar-half-option": "ਅੱਧਾ ਬਾਰਨਸਟਾਰ",
 	"wikilove-barnstar-half-title": "ਅੱਧਾ ਬਾਰਨਸਟਾਰ",
 	"wikilove-barnstar-minor-option": "ਛੋਟੀਆਂ ਸੋਧਾਂ ਬਾਰਨਸਟਾਰ",
@@ -58,9 +59,9 @@
 	"wikilove-barnstar-technical-option": "ਤਕਨੀਕੀ ਬਾਰਨਸਟਾਰ",
 	"wikilove-barnstar-technical-desc": "ਜਦੋਂ ਕੋਈ ਵਰਤੋਂਕਾਰ ਕਿਸੇ ਤਕਨੀਕੀ ਕਾਰਜ ਲਈ ਆਪਣਾ ਯੋਗਦਾਨ ਪਾਉਂਦਾ ਹੈ।",
 	"wikilove-barnstar-technical-title": "ਤਕਨੀਕੀ ਬਾਰਨਸਟਾਰ",
-	"wikilove-barnstar-writers-option": "ਸੰਪਾਦਕ ਬਾਰਨਸਟਾਰ",
+	"wikilove-barnstar-writers-option": "ਲਿਖਾਰੀ ਬਾਰਨਸਟਾਰ",
 	"wikilove-barnstar-writers-desc": "ਜਦੋਂ ਕੋਈ ਵਰਤੋਂਕਾਰ ਬਹੁਤ ਜ਼ਿਆਦਾ ਲੇਖ ਬਣਾਉਂਦਾ ਹੈ ਅਤੇ ਬਹੁਤ ਸਾਰੀਆਂ ਸੋਧਾਂ ਕਰਦਾ ਹੈ।",
-	"wikilove-barnstar-writers-title": "ਸੰਪਾਦਕ ਬਾਰਨਸਟਾਰ",
+	"wikilove-barnstar-writers-title": "ਲਿਖਾਰੀ ਬਾਰਨਸਟਾਰ",
 	"wikilove-type-food": "ਖਾਣਾ ਅਤੇ ਪੀਣਾ",
 	"wikilove-err-not-logged-in": "ਤੁਸੀਂ ਦਾਖ਼ਲ ਨਹੀਂ ਹੋਂ। ਵਿਕੀਲਵ ਵਰਤਣ ਵਾਸਤੇ ਮਿਹਰਬਾਨੀ ਕਰਕੇ ਦਾਖ਼ਲ ਹੋਵੋ।",
 	"wikilove-err-invalid-username": "ਇਹ ਵਰਤੋਂਕਾਰੀ ਨਾਂ ਸਹੀ ਨਹੀਂ ਹੈ।"
