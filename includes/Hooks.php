@@ -159,7 +159,7 @@ class Hooks implements
 	 * @param Title $title The title of a user page or user talk page
 	 * @param User $user the current user
 	 * @return Title|IApiMessage Returns either the Title object for the talk page or an error message
-	 * @suppress PhanPossiblyUndeclaredVariable,PhanTypeMismatchReturnNullable,PhanTypeMismatchArgumentNullable
+	 * @suppress PhanPossiblyUndeclaredVariable
 	 */
 	public static function getUserTalkPage( PermissionManager $permissionManager, Title $title, User $user ) {
 		// Exit early if the sending user isn't logged in
