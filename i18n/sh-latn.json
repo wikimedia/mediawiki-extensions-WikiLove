@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aca",
 			"Winston Sung"
 		]
 	},
@@ -10,6 +11,6 @@
 	"wikilove-tab-text": "Vikiljubav",
 	"wikilove-button-preview": "Pregled",
 	"wikilove-preview": "Pregled",
-	"wikilove-err-not-logged-in": "Niste prijavljeni. Molimo da se prijavite prije korištenja WikiLove.",
-	"wikilove-err-invalid-username": "Korisničko ime nije valjano."
+	"wikilove-err-not-logged-in": "Niste prijavljeni. Prijavite se prije korištenja WikiLove.",
+	"wikilove-err-invalid-username": "Korisničko ime nije ispravno."
 }
