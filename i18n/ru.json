@@ -15,7 +15,8 @@
 			"Александр Сигачёв",
 			"Умар",
 			"Megitsune-chan",
-			"Vonavy"
+			"Vonavy",
+			"Shabe"
 		]
 	},
 	"wikilove-desc": "Добавляет интерфейс для упрощения добавления положительных отзывов на страницы обсуждения участников",
@@ -197,6 +198,6 @@
 	"wikilove-commons-url": "//commons.wikimedia.org/wiki/Заглавная_страница?uselang=ru",
 	"wikilove-terms": "Отправляя, вы соглашаетесь об оглашении на этих $1.",
 	"wikilove-terms-link": "условиях",
-	"tag-wikilove-description": "Правка сделана с помощью инструмента WikiLove",
+	"tag-wikilove-description": "Правка сделана с помощью инструмента [[Wikipedia:WikiLove|WikiLove]]",
 	"wikiLove.js": "/* Размещенный здесь JavaScript кастомизирует WikiLove, см. https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }
