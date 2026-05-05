@@ -449,12 +449,12 @@ module.exports = {
 	},
 
 	showAddDetailsError: function ( errmsg ) {
-		// eslint-disable-next-line mediawiki/msg-doc
+
 		$( '#mw-wikilove-add-details' ).append( $( '<div>' ).addClass( 'mw-wikilove-error' ).text( mw.msg( errmsg ) ) );
 	},
 
 	showPreviewError: function ( errmsg ) {
-		// eslint-disable-next-line mediawiki/msg-doc
+
 		$( '#mw-wikilove-preview' ).append( $( '<div>' ).addClass( 'mw-wikilove-error' ).text( mw.msg( errmsg ) ) );
 	},
 
