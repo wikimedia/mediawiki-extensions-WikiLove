@@ -85,9 +85,9 @@
 	"wikilove-barnstar-kindness-option": "Spomenica za ljubaznost",
 	"wikilove-barnstar-kindness-desc": "Spomenica za ljubaznost dodjeljuje se korisnicima koji redovno pokazuju posebnu ljubaznost na vlastitu inicijativu.",
 	"wikilove-barnstar-kindness-title": "Spomenica za ljubaznost",
-	"wikilove-barnstar-reallife-option": "Spomenica za wiki-aktivnosti uživo",
-	"wikilove-barnstar-reallife-desc": "Spomenica za wiki-aktivnosti uživo dodjeljuje se korisnicima koji doprinose kako na {{GRAMMAR:lokativ|{{SITENAME}}}} tako i van wikija organiziranjem wiki-događaja u stvarnom životu.",
-	"wikilove-barnstar-reallife-title": "Spomenica za wiki-aktivnosti uživo",
+	"wikilove-barnstar-reallife-option": "Spomenica uživo",
+	"wikilove-barnstar-reallife-desc": "Spomenica uživo dodjeljuje se korisnicima koji doprinose kako na {{GRAMMAR:lokativ|{{SITENAME}}}} tako i van wikija organiziranjem wiki-događaja u stvarnom životu.",
+	"wikilove-barnstar-reallife-title": "Spomenica uživo",
 	"wikilove-barnstar-resilient-option": "Spomenica za istrajnost",
 	"wikilove-barnstar-resilient-desc": "Spomenica za istrajnost dodjeljuje se korisnicima koji uče iz kritika, usavršavaju se i ne dopuštaju da im greške sputaju urednički razvoj.",
 	"wikilove-barnstar-resilient-title": "Spomenica za istrajnost",
@@ -182,7 +182,7 @@
 	"wikilove-commons-text": "Slike možete pronaći pretragom $1.",
 	"wikilove-commons-link": "Wikimedijine ostave",
 	"wikilove-terms": "Slanjem pristajete na transparentnost u skladu s određenim $1.",
-	"wikilove-terms-link": "uslovima",
+	"wikilove-terms-link": "uvjetima",
 	"tag-wikilove-description": "Izmjena načinjena pomoću alatke Wikiljubav",
 	"wikiLove.js": "/* JavaScript postavljen ovdje prilagođava Wikiljubav. Pogledajte https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }
