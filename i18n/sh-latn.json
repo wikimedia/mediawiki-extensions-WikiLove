@@ -182,7 +182,7 @@
 	"wikilove-commons-text": "Slike možete pronaći pretragom $1.",
 	"wikilove-commons-link": "Wikimedijine ostave",
 	"wikilove-terms": "Slanjem pristajete na transparentnost u skladu s određenim $1.",
-	"wikilove-terms-link": "uslovima",
+	"wikilove-terms-link": "uvjetima",
 	"tag-wikilove-description": "Izmjena načinjena pomoću alatke Wikiljubav",
 	"wikiLove.js": "/* JavaScript postavljen ovdje prilagođava Wikiljubav. Pogledajte https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:WikiLove#Custom_configuration */"
 }
