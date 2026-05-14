@@ -179,7 +179,7 @@
 	"wikilove-err-send-api": "Er is iets misgegaan bij het verzenden van de afbeelding. Probeer het opnieuw.",
 	"wikilove-err-invalid-token": "Het verzenden is mislukt vanwege het verlies van sessiegegevens. Probeer de pagina opnieuw te laden, of meld u af en aan als dat niet lukt.",
 	"wikilove-err-not-logged-in": "U bent niet aangemeld. Meld u aan om Wikiwaardering te gebruiken.",
-	"wikilove-err-invalid-username": "Deze gebruikersnaam is ongeldig.",
+	"wikilove-err-invalid-username": "Deze gebruikersnaam is onjuist.",
 	"wikilove-err-no-self-wikilove": "U kunt uzelf helaas geen Wikiwaardering geven.",
 	"wikilove-err-redirect": "De overlegpagina van de gebruiker is een doorverwijspagina.",
 	"wikilove-err-cannot-edit": "U hebt geen rechten om die pagina te bewerken.",
