@@ -23,6 +23,7 @@
 				"ParserFactory",
 				"PermissionManager",
 				"RevisionLookup",
+				"UserFactory",
 				"UserIdentityLookup"
 			]
 		}

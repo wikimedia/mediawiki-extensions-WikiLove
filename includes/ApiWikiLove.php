@@ -17,7 +17,7 @@ use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\Request\DerivativeRequest;
 use MediaWiki\Revision\RevisionLookup;
 use MediaWiki\Title\Title;
-use MediaWiki\User\User;
+use MediaWiki\User\UserFactory;
 use MediaWiki\User\UserIdentityLookup;
 use Wikimedia\ParamValidator\ParamValidator;
 use Wikimedia\Rdbms\DBQueryError;
@@ -34,6 +34,7 @@ class ApiWikiLove extends ApiBase {
 		private readonly ParserFactory $parserFactory,
 		private readonly PermissionManager $permissionManager,
 		private readonly RevisionLookup $revisionLookup,
+		private readonly UserFactory $userFactory,
 		private readonly UserIdentityLookup $userIdentityLookup,
 	) {
 		parent::__construct( $main, $action );
@@ -163,8 +164,8 @@ class ApiWikiLove extends ApiBase {
 
 	private function saveInDb( Title $talk, string $subject, string $message, string $type, int $email ): void {
 		$dbw = $this->dbProvider->getPrimaryDatabase();
-		$receiver = User::newFromName( $talk->getSubjectPage()->getBaseText() );
-		if ( $receiver === false || $receiver->isAnon() || $receiver->isTemp() ) {
+		$receiver = $this->userFactory->newFromName( $talk->getSubjectPage()->getBaseText() );
+		if ( !$receiver || $receiver->isAnon() || $receiver->isTemp() ) {
 			$this->addWarning( 'apiwarn-wikilove-ignoringunregistered' );
 			return;
 		}
@@ -196,12 +197,13 @@ class ApiWikiLove extends ApiBase {
 	}
 
 	private function emailUser( Title $talk, string $subject, string $text, string $token ): void {
+		$user = $this->userFactory->newFromName( $talk->getSubjectPage()->getBaseText() );
 		$context = new DerivativeContext( $this->getContext() );
 		$context->setRequest( new DerivativeRequest(
 			$this->getRequest(),
 			[
 				'action' => 'emailuser',
-				'target' => User::newFromName( $talk->getSubjectPage()->getBaseText() )->getName(),
+				'target' => $user->getName(),
 				'subject' => $subject,
 				'text' => $text,
 				'token' => $token,
