@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
+	"apihelp-wikilove-param-tags": "Ännerungsmarkéierunge fir op d'Versioun z'applizéieren.",
 	"apiwarn-wikilove-notlogged": "Aktioun gouf net geloggt"
 }

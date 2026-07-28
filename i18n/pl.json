@@ -6,7 +6,8 @@
 			"Przemub",
 			"Rezonansowy",
 			"Sp5uhe",
-			"WTM"
+			"WTM",
+			"PanWor"
 		]
 	},
 	"wikilove-desc": "Dodaje interfejs ułatwiający dodawanie pozytywnych opinii do stron dyskusji innych użytkowników.",
@@ -42,13 +43,13 @@
 	"wikilove-barnstar-admins-desc": "Gwiazda Administratora jest przyznawana administratorom, którzy podjęli szczególnie trudne decyzje lub wykonali nużące a jednak potrzebne zadanie administracyjne.",
 	"wikilove-barnstar-admins-title": "Gwiazda Administratora",
 	"wikilove-barnstar-antivandalism-option": "Gwiazda Walki z Wandalizmem",
-	"wikilove-barnstar-antivandalism-desc": "Gwiazda Walki z Wandalizmem przyznawana jest tym, znacznie przyczynili się do ochrony i przywracania danych po atakach wandalizmu na Wikipedii.",
+	"wikilove-barnstar-antivandalism-desc": "Gwiazda Walki z Wandalizmem przyznawana jest tym, znacznie przyczynili się do ochrony i przywracania danych po atakach wandalizmu w {{GRAMMAR:MS.lp|{{SITENAME}}}}.",
 	"wikilove-barnstar-antivandalism-title": "Gwiazda Walki z Wandalizmem",
 	"wikilove-barnstar-diligence-option": "Gwiazda Pracowitości",
 	"wikilove-barnstar-diligence-desc": "Gwiazda Pracowitości jest przyznawana w uznaniu połączenia nadzwyczajne weryfikacji, precyzji i służby wspólnocie.",
 	"wikilove-barnstar-diligence-title": "Gwiazda Pracowitości",
 	"wikilove-barnstar-diplomacy-option": "Gwiazda Dyplomacji",
-	"wikilove-barnstar-diplomacy-desc": "Gwiazda Dyplomacji jest przyznawana użytkownikom, którzy pomogli pokojowo rozwiązać konflikty na Wikipedii.",
+	"wikilove-barnstar-diplomacy-desc": "Gwiazda Dyplomacji jest przyznawana użytkownikom, którzy pomogli pokojowo rozwiązać konflikty w {{GRAMMAR:MS.lp|{{SITENAME}}}}.",
 	"wikilove-barnstar-diplomacy-title": "Gwiazda Dyplomacji",
 	"wikilove-barnstar-goodhumor-option": "Gwiazda Dobrego Humoru",
 	"wikilove-barnstar-goodhumor-title": "Gwiazda Dobrego Humoru",

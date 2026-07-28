@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"apihelp-wikilove-summary": "Sii Wiki jacayl isticmaale kale.",
+	"apihelp-wikilove-extended-description": "Wiki jacayl waa fariin wanaagsan oo lagu dhajiyo bogga wada hadalka ee isticmaale iyadoo loo marayo is dhexgal fudud oo leh habyaallo horay loo dejiyay ama kuwa maxalli ahaan loo qeexay. Ficilkani wuxuu ku darayaa wikitext-ka la cayimay bog wada hadal gaar ah. Ujeeddooyin tirakoob awgood, nooca iyo xog kale ayaa la diiwaangeliyaa.",
+	"apihelp-wikilove-param-title": "Magaca buuxa ee bogga isticmaalaha ama bogga wada hadalka isticmaalaha ee qofka loo dirayo Wiki jacayl.",
+	"apihelp-wikilove-param-text": "Wikitext ceeriin ah oo lagu darayo qaybta cusub.",
+	"apihelp-wikilove-param-message": "Fariinta dhabta ah ee isticmaaluhu geliyay, ujeeddooyin diiwaangelin awgood.",
+	"apihelp-wikilove-param-subject": "Cinwaanka mawduuca ee qaybta cusub.",
+	"apihelp-wikilove-param-type": "Nooca Wiki jacayl (tirakoob ahaan); tani waxay u dhigantaa nooca laga doortay liiska, waxaana ikhtiyaar ahaan ka dambeeya nooc-hoosaad (tusaale ahaan sida ku jirta \"{{int:wikilove-barnstar-original-title}}\" ama \"{{int:wikilove-kittens-header}}\").",
+	"apihelp-wikilove-param-email": "Nuxurka fariinta iimaylka ee ikhtiyaariga ah ee loo dirayo isticmaalaha. Digniin ayaa la soo celin doonaa haddii isticmaalaha aan loo diri karin iimayl. Wiki jacayl waxaa si kastaba ha ahaatee loogu diri doonaa bogga wada hadalka isticmaalaha.",
+	"apihelp-wikilove-param-tags": "Beddel calaamadaha lagu dabaqayo dib u eegista.",
+	"apihelp-wikilove-example-1": "U dir Wiki jacayl \"[[User:Dummy]]\"",
+	"apiwarn-wikilove-ignoringunregistered": "Lama diiwaangelinayo dadka aan diiwaangashanayn ee la helayo",
+	"apiwarn-wikilove-notlogged": "Ficilka lama diiwaangelin"
+}
