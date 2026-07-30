@@ -6,6 +6,10 @@
 			"عثمان خان شاہ"
 		]
 	},
+	"apihelp-wikilove-summary": "بل کارن ته ويکي‌مينه ورکړئ.",
 	"apihelp-wikilove-param-subject": "د نوې برخې د سکالو سرليک.",
-	"apihelp-wikilove-example-1": "\"[[User:Dummy]]\" ته ويکي‌مينه لېږل."
+	"apihelp-wikilove-param-tags": "په بياليدنه کې د پلي‌‌کولو لپاره نښلنونه بدلول.",
+	"apihelp-wikilove-example-1": "\"[[User:Dummy]]\" ته ويکي‌مينه لېږل.",
+	"apiwarn-wikilove-ignoringunregistered": "نانوم‌ليکلي ترلاسه‌کوونکي نه ثبتول",
+	"apiwarn-wikilove-notlogged": "چاره ثبت شوې نه وه"
 }
