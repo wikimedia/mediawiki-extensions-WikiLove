@@ -3,7 +3,8 @@
 		"authors": [
 			"Encycloon",
 			"HanV",
-			"McDutchie"
+			"McDutchie",
+			"Siebrand"
 		]
 	},
 	"apihelp-wikilove-summary": "Laat een andere gebruiker Wikiwaardering blijken",
@@ -16,6 +17,6 @@
 	"apihelp-wikilove-param-email": "Inhoud van de optionele e-mail die naar de gebruiker verzonden wordt. Als de gebruiker niet gemaild kan worden, wordt een waarschuwing afgegeven. Wikiwaardering zal sowieso op de overlegpagina geplaatst worden.",
 	"apihelp-wikilove-param-tags": "Wijzigingslabels om op de versie toe te passen.",
 	"apihelp-wikilove-example-1": "Laat Wikiwaardering blijken aan \"[[User:Dummy]]\"",
-	"apiwarn-wikilove-ignoringunregistered": "Log ongeregistreerde ontvangers niet.",
+	"apiwarn-wikilove-ignoringunregistered": "Ongeregistreerde ontvangers niet registreren.",
 	"apiwarn-wikilove-notlogged": "De handeling is niet gelogd"
 }
