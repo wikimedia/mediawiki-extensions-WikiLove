@@ -109,7 +109,7 @@
 	"wikilove-err-gallery-again": "Spróbuj ponownie",
 	"wikilove-err-preview-api": "Coś poszło nie tak podczas wyświetlania podglądu. Spróbuj ponownie.",
 	"wikilove-err-send-api": "Coś poszło nie tak podczas wysyłania wiadomości. Spróbuj ponownie.",
-	"wikilove-err-not-logged-in": "Nie jesteś zalogowany. Zaloguj się, aby móc korzystać z WikiLove.",
+	"wikilove-err-not-logged-in": "Nie zalogowano się. Zaloguj się, aby móc korzystać z WikiLove.",
 	"wikilove-err-invalid-username": "Ta nazwa użytkownika jest nieprawidłowa.",
 	"wikilove-err-redirect": "Strona dyskusji użytkownika jest przekierowaniem.",
 	"wikilove-err-cannot-edit": "Nie masz uprawnień do edytowania tej strony.",
