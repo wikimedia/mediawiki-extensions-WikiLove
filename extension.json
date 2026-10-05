@@ -19,8 +19,11 @@
 			"services": [
 				"ChangeTagsStore",
 				"DBLoadBalancerFactory",
+				"DomainEventDispatcher",
 				"ParserFactory",
-				"PermissionManager"
+				"PermissionManager",
+				"RevisionLookup",
+				"UserIdentityLookup"
 			]
 		}
 	},

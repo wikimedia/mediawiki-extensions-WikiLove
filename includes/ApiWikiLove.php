@@ -9,16 +9,20 @@ use MediaWiki\Api\ApiMessage;
 use MediaWiki\ChangeTags\ChangeTagsStore;
 use MediaWiki\Context\DerivativeContext;
 use MediaWiki\Deferred\DeferredUpdates;
+use MediaWiki\DomainEvent\DomainEventDispatcher;
 use MediaWiki\Parser\ParserFactory;
 use MediaWiki\Parser\Sanitizer;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Registration\ExtensionRegistry;
 use MediaWiki\Request\DerivativeRequest;
+use MediaWiki\Revision\RevisionLookup;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
+use MediaWiki\User\UserIdentityLookup;
 use Wikimedia\ParamValidator\ParamValidator;
 use Wikimedia\Rdbms\DBQueryError;
 use Wikimedia\Rdbms\IConnectionProvider;
+use Wikimedia\Rdbms\IDBAccessObject;
 
 class ApiWikiLove extends ApiBase {
 	public function __construct(
@@ -26,8 +30,11 @@ class ApiWikiLove extends ApiBase {
 		string $action,
 		private readonly ChangeTagsStore $changeTagsStore,
 		private readonly IConnectionProvider $dbProvider,
+		private readonly DomainEventDispatcher $eventDispatcher,
 		private readonly ParserFactory $parserFactory,
 		private readonly PermissionManager $permissionManager,
+		private readonly RevisionLookup $revisionLookup,
+		private readonly UserIdentityLookup $userIdentityLookup,
 	) {
 		parent::__construct( $main, $action );
 	}
@@ -114,6 +121,9 @@ class ApiWikiLove extends ApiBase {
 			DeferredUpdates::addCallableUpdate( function () use ( $revId ) {
 				$this->changeTagsStore->addTags( [ 'wikilove' ], null, $revId );
 			} );
+			DeferredUpdates::addCallableUpdate( function () use ( $talk, $revId ) {
+				$this->dispatchReceivedEvent( $talk, $revId );
+			} );
 		}
 
 		if ( isset( $params['email'] ) ) {
@@ -125,6 +135,30 @@ class ApiWikiLove extends ApiBase {
 			Sanitizer::escapeIdForLink( $strippedSubject )
 		);
 		// note that we cannot use Title::makeTitle here as it doesn't sanitize the fragment
+	}
+
+	private function dispatchReceivedEvent( Title $talk, int $revId ): void {
+		$recipient = $this->userIdentityLookup->getUserIdentityByName( $talk->getRootText() );
+		// Only emit the event for registered recipients (including temporary accounts). Talk pages of
+		// IP addresses and of usernames that don't exist are skipped.
+		if ( !$recipient || !$recipient->isRegistered() ) {
+			return;
+		}
+
+		$revision = $this->revisionLookup->getRevisionById( $revId, IDBAccessObject::READ_LATEST );
+		if ( !$revision ) {
+			return;
+		}
+
+		$this->eventDispatcher->dispatch(
+			new UserWikiLoveReceivedEvent(
+				$this->getUser(),
+				$recipient,
+				$talk,
+				$revision
+			),
+			$this->dbProvider
+		);
 	}
 
 	private function saveInDb( Title $talk, string $subject, string $message, string $type, int $email ): void {
