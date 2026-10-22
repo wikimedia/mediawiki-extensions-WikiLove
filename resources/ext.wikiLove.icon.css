@@ -1,4 +1,5 @@
 .client-nojs li#ca-wikilove {
-	/* WikiLove only works with JS, so hide tab otherwise. */
-	display: none;
+	/* WikiLove only works with JS, so hide tab otherwise. This needs !important, as skins
+	such as MonoBook set the display of all tabs with more specific selectors (T304781). */
+	display: none !important; /* stylelint-disable-line declaration-no-important */
 }
