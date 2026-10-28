@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"apihelp-wikilove-summary": "Dať WikiLove inému používateľovi.",
+	"apihelp-wikilove-extended-description": "WikiLove je pozitívna správa uverejnená na diskusnej stránke používateľa cez pohodlné rozhranie s prednastavenými alebo miestne definovanými šablónami. Táto akcia pridá zadaný wikitext na určitú diskusnú stránku. Na štatistické účely sa zaznamená typ a ďalšie údaje.",
+	"apihelp-wikilove-param-title": "Celý názov používateľskej alebo diskusnej stránky používateľa, ktorému sa má poslať WikiLove.",
+	"apihelp-wikilove-param-text": "Surový wikitext, ktorý sa pridá do novej sekcie.",
+	"apihelp-wikilove-param-message": "Skutočná správa, ktorú používateľ zadal, na účely záznamu.",
+	"apihelp-wikilove-param-subject": "Nadpis novej sekcie.",
+	"apihelp-wikilove-param-type": "Typ WikiLove (pre štatistiky); zodpovedá typu vybranému v ponuke a voliteľne podtypu za ním (napr. ako v „{{int:wikilove-barnstar-original-title}}“ alebo „{{int:wikilove-kittens-header}}“).",
+	"apihelp-wikilove-param-email": "Obsah voliteľnej e-mailovej správy pre používateľa. Ak používateľovi nemožno poslať e-mail, vráti sa upozornenie. WikiLove sa v každom prípade pošle na diskusnú stránku používateľa.",
+	"apihelp-wikilove-param-tags": "Značky zmien, ktoré sa majú použiť na revíziu.",
+	"apihelp-wikilove-example-1": "Poslať WikiLove používateľovi „[[User:Dummy]]“",
+	"apiwarn-wikilove-ignoringunregistered": "Neprihlásení príjemcovia sa nezaznamenávajú",
+	"apiwarn-wikilove-notlogged": "Akcia nebola zaznamenaná"
+}
