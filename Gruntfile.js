@@ -18,11 +18,7 @@ module.exports = function ( grunt ) {
 				cache: true,
 				fix: grunt.option( 'fix' ),
 			},
-			all: [
-				'**/*.{js,json,vue}',
-				'!node_modules/**',
-				'!vendor/**',
-			],
+			all: [ '.' ],
 		},
 		stylelint: {
 			options: {
